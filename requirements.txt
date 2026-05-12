@@ -1,0 +1,5 @@
+llama-cloud>=2.1
+python-dotenv>=1.0
+pandas>=2.2
+jupyter>=1.1
+

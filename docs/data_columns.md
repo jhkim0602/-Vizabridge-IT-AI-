@@ -10,8 +10,12 @@
 | `manual_type` | 사증민원 또는 체류민원 |
 | `page_start` | 근거 시작 페이지 |
 | `page_end` | 근거 종료 페이지 |
+| `printed_page_start` | 문서 안에 인쇄된 시작 쪽번호 |
+| `printed_page_end` | 문서 안에 인쇄된 종료 쪽번호 |
 | `visa_code` | A-1, D-8, E-7 등 명시 코드. 없으면 빈 값 |
 | `visa_name_ko` | 비자 또는 체류자격 한글명 |
+| `petition_type` | 사증발급, 사증발급인정서, 체류자격 변경, 기간연장, 근무처 변경 등 |
+| `subsection_type` | 대상, 요건, 첨부서류, 절차, 제한, FAQ, 점수표, 붙임 등 |
 | `section_title` | 원문 섹션 제목 |
 | `user_intent` | 퇴사, 법인설립, 초청, 연장, 변경, 서류문의 등 고객 질문 의도 |
 | `applicant_context` | 신청자 상황: 외국인 근로자, 투자자, 가족, 유학생 등 |
@@ -22,4 +26,3 @@
 | `raw_text` | LlamaParse로 추출한 원문 |
 | `normalized_text` | 임베딩에 사용할 정제 텍스트 |
 | `evidence_quote` | 답변 근거로 보여줄 짧은 원문 |
-

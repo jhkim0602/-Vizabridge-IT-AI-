@@ -32,4 +32,17 @@ pip install -r requirements.txt
 LLAMA_CLOUD_API_KEY=llx-...
 ```
 
-API 키 확인은 [notebooks/01_setup_llamaparse_api_key.ipynb](notebooks/01_setup_llamaparse_api_key.ipynb)에서 실행합니다.
+## Workflow
+
+1. [notebooks/01_setup_llamaparse_api_key.ipynb](notebooks/01_setup_llamaparse_api_key.ipynb)에서 API 키 로딩을 확인합니다.
+2. `scripts/build_manual_csvs.py`로 원본 PDF 2개를 LlamaParse `agentic_plus` tier로 다시 파싱합니다.
+3. 파싱 결과는 `data/parsed/`에 Markdown과 metadata JSON으로 저장합니다.
+4. RAG 검토용 clean CSV는 `data/processed/`에 PDF당 하나씩 생성합니다.
+
+```bash
+/opt/anaconda3/bin/python scripts/build_manual_csvs.py
+```
+
+완성 CSV는 `data/processed/stay_manual_clean.csv`와 `data/processed/visa_manual_clean.csv` 두 개만 유지합니다.
+
+파이프라인 설계 판단은 [docs/pipeline_strategy.md](docs/pipeline_strategy.md)에 정리되어 있습니다.

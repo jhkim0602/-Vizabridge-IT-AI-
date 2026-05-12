@@ -1,28 +1,54 @@
-# Visa RAG Data Columns
+# Final Semantic CSV Columns
 
-비자 챗봇은 사용자가 비자코드를 모르는 상태에서 질문하는 경우가 많습니다. 따라서 CSV는 단순히 비자코드별 문단을 저장하는 구조보다, 사용자 의도와 상황을 함께 검색할 수 있는 구조로 설계합니다.
+최종 산출물은 PDF당 하나씩만 유지합니다.
 
-## Initial Column Plan
+- `data/processed/stay_manual_semantic_clean.csv`
+- `data/processed/visa_manual_semantic_clean.csv`
 
-| Column | Purpose |
+최종 CSV에는 PDF 페이지 번호, 원문 근거, raw text, review/debug 컬럼을 넣지 않습니다.
+
+## 공통 컬럼
+
+| Column | 설명 |
 | --- | --- |
+| `manual_type` | `체류민원` 또는 `사증민원` |
 | `source_pdf` | 원본 PDF 파일명 |
-| `manual_type` | 사증민원 또는 체류민원 |
-| `page_start` | 근거 시작 페이지 |
-| `page_end` | 근거 종료 페이지 |
-| `printed_page_start` | 문서 안에 인쇄된 시작 쪽번호 |
-| `printed_page_end` | 문서 안에 인쇄된 종료 쪽번호 |
-| `visa_code` | A-1, D-8, E-7 등 명시 코드. 없으면 빈 값 |
-| `visa_name_ko` | 비자 또는 체류자격 한글명 |
-| `petition_type` | 사증발급, 사증발급인정서, 체류자격 변경, 기간연장, 근무처 변경 등 |
-| `subsection_type` | 대상, 요건, 첨부서류, 절차, 제한, FAQ, 점수표, 붙임 등 |
-| `section_title` | 원문 섹션 제목 |
-| `user_intent` | 퇴사, 법인설립, 초청, 연장, 변경, 서류문의 등 고객 질문 의도 |
-| `applicant_context` | 신청자 상황: 외국인 근로자, 투자자, 가족, 유학생 등 |
-| `question_examples` | 고객이 실제로 물을 법한 질문 예시 |
-| `requirements` | 필요 서류 또는 요건 |
+| `item_type` | `common_rule`, `stay_status_rule`, `visa_rule`, `required_documents`, `fee`, `score_table`, `quota`, `restriction`, `exception` 등 |
+| `section_title` | 정제된 섹션 제목 |
+| `subtype_or_program` | `E-7-4`, `지역특화형`, `복수사증`, `사증발급인정서` 같은 세부 제도 |
+| `petition_type` | 체류자격 변경, 체류기간 연장, 사증발급, 사증발급인정서 등 민원 유형 |
+| `subsection_type` | 대상, 요건, 제출서류, 절차, 제한, 예외, 수수료, 점수표, 쿼터 등 |
+| `applicant_context` | 신청자 상황 또는 적용 맥락 |
+| `eligibility` | 대상/자격 조건 |
+| `target_persons` | 해당자 또는 발급 대상 |
+| `common_documents` | 공통 제출서류 |
+| `mandatory_documents` | 필수 제출서류 |
+| `other_documents` | 추가/해당자별/심사용 서류 |
+| `requirements` | 심사요건, 자격요건 |
 | `procedure` | 신청 절차 |
-| `restrictions` | 제한, 예외, 주의사항 |
-| `raw_text` | LlamaParse로 추출한 원문 |
-| `normalized_text` | 임베딩에 사용할 정제 텍스트 |
-| `evidence_quote` | 답변 근거로 보여줄 짧은 원문 |
+| `restrictions` | 제한사항, 불허 사유 |
+| `exceptions` | 예외, 특례, 면제 |
+| `fees` | 수수료 |
+| `duration_or_validity` | 체류기간, 유효기간, 단수/복수 정보 |
+| `quota_or_limit` | 쿼터, 선발인원, 허용인원, 상한 |
+| `score_criteria` | 점수표, 배점 기준 |
+| `table_summary` | 표의 주제 |
+| `table_rows` | 정제된 주요 표 행 |
+| `normalized_text` | 검색/검수에 쓰는 정제 텍스트 |
+
+## 체류민원 전용 컬럼
+
+| Column | 설명 |
+| --- | --- |
+| `stay_status_code` | D-2, E-7, F-2-R 등 체류자격 코드 |
+| `stay_status_name_ko` | 유학, 특정활동, 거주 등 체류자격명 |
+| `obligations` | 신고의무, 교육의무, 거주의무 등 |
+
+## 사증민원 전용 컬럼
+
+| Column | 설명 |
+| --- | --- |
+| `visa_code` | C-3, D-8, E-7, F-6 등 사증 코드 |
+| `visa_name_ko` | 단기방문, 기업투자, 특정활동, 결혼이민 등 사증명 |
+| `inviter_context` | 초청인, 고용주, 유치기관 등 초청자 맥락 |
+| `recommendation_or_approval` | 고용추천서, 관계기관 승인, 추천기관 등 |

@@ -87,9 +87,9 @@ LlamaParse는 PDF의 레이아웃, 표, 페이지, 마크다운 구조를 추출
 - 체류민원 가로 페이지의 좌우 두 쪽 순서가 뒤섞이지 않는가?
 - 근거 표시용으로 PDF 페이지와 인쇄 쪽번호를 추적할 수 있는가?
 
-## RAG Design Principle
+## Final CSV Design Principle
 
-고객은 보통 비자코드를 모릅니다. 따라서 최종 CSV는 `visa_code`만으로 검색되면 안 됩니다.
+고객은 보통 비자코드를 모릅니다. 따라서 최종 CSV는 코드만이 아니라 대상, 요건, 제출서류, 절차, 제한, 예외, 수수료, 점수표, 쿼터 등 행정 항목별 정제 필드를 함께 가져야 합니다.
 
 예를 들어 `D-8`이라는 코드보다 다음 표현이 더 중요합니다.
 
@@ -97,13 +97,11 @@ LlamaParse는 PDF의 레이아웃, 표, 페이지, 마크다운 구조를 추출
 - 외국인이 한국에서 사업하려면 어떤 비자가 필요한가요
 - 투자자로 한국에 체류하고 싶어요
 
-그래서 최종 데이터에는 원문 근거와 함께 `user_intent`, `applicant_context`, `question_examples`, `normalized_text`를 넣어야 합니다.
+현재 최종 CSV는 PDF당 하나씩 유지합니다.
 
-## Evidence Tracking
+- `data/processed/stay_manual_semantic_clean.csv`
+- `data/processed/visa_manual_semantic_clean.csv`
 
-최종 답변에서 "근거가 어디냐"를 보여주려면 아래 둘을 분리해 저장해야 합니다.
+최종 CSV에는 PDF 페이지 번호, 원문 근거, raw text, review/debug 컬럼을 넣지 않습니다. 원문 확인이 필요할 때는 `data/raw/` PDF와 `data/parsed/` Markdown을 별도로 참조합니다.
 
-- `pdf_page`: PDF 파일에서의 실제 페이지 번호
-- `printed_page_label`: 문서 안에 인쇄된 쪽번호, 예: `- 151 -`
-
-특히 체류민원 매뉴얼은 가로 A4 형식으로 두 쪽이 한 화면에 보이는 구간이 있어, PDF 페이지 번호만으로는 사용자가 원문을 찾기 어려울 수 있습니다.
+정제 CSV의 주 목적은 downstream RAG 전처리의 입력이므로, 목차/표지/양식 노이즈는 최대한 제거하고 semantic field 중심으로 보존합니다.

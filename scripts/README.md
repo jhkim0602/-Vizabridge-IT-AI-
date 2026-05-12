@@ -1,18 +1,18 @@
 # Scripts
 
-반복 실행이 필요한 파싱, 정제, CSV 생성 코드를 이 폴더에 둡니다.
+반복 실행이 필요한 정제 및 CSV 생성 코드를 이 폴더에 둡니다.
 
-## CSV 생성
+## 최종 CSV 생성
 
-`data/raw/`의 원본 PDF 2개를 LlamaParse `agentic_plus` tier로 다시 파싱하고, PDF당 clean CSV 하나씩만 생성합니다.
+`data/parsed/`의 LlamaParse Markdown을 읽어 PDF당 최종 semantic CSV 하나씩 생성합니다.
 
 ```bash
-/opt/anaconda3/bin/python scripts/build_manual_csvs.py
+.venv/bin/python scripts/build_semantic_manual_csvs.py
 ```
 
 산출물:
 
-- `data/processed/stay_manual_clean.csv`
-- `data/processed/visa_manual_clean.csv`
+- `data/processed/stay_manual_semantic_clean.csv`
+- `data/processed/visa_manual_semantic_clean.csv`
 
-기본 실행은 기존 `data/processed/*.csv`를 먼저 지워서 완성 CSV가 위 두 개만 남게 합니다.
+최종 CSV에는 PDF 페이지 번호, 원문 근거, raw text, review/debug 컬럼을 포함하지 않습니다.

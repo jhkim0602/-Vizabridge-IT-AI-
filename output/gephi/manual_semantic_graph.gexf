@@ -1,0 +1,2654 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-05-13">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="kind" type="string" />
+      <attribute id="1" title="size" type="long" />
+      <attribute id="2" title="viz_color" type="string" />
+      <attribute id="3" title="viz_size" type="long" />
+    </attributes>
+    <nodes>
+      <node id="manual:체류민원" label="체류민원">
+        <attvalues>
+          <attvalue for="0" value="manual" />
+          <attvalue for="1" value="3434" />
+          <attvalue for="2" value="#2f6f73" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="code:공통/무코드" label="공통/무코드">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="34" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="17.492855684535904" />
+        </attvalues>
+      </node>
+      <node id="petition_type:미분류" label="미분류">
+        <attvalues>
+          <attvalue for="0" value="petition_type" />
+          <attvalue for="1" value="5" />
+          <attvalue for="2" value="#b36b32" />
+          <attvalue for="3" value="6.708203932499369" />
+        </attvalues>
+      </node>
+      <node id="subsection_type:기타" label="기타">
+        <attvalues>
+          <attvalue for="0" value="subsection_type" />
+          <attvalue for="1" value="1799" />
+          <attvalue for="2" value="#7a5aa6" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="item_type:stay_status_rule" label="stay_status_rule">
+        <attvalues>
+          <attvalue for="0" value="item_type" />
+          <attvalue for="1" value="2639" />
+          <attvalue for="2" value="#6d7f3f" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="subsection_type:제출서류" label="제출서류">
+        <attvalues>
+          <attvalue for="0" value="subsection_type" />
+          <attvalue for="1" value="472" />
+          <attvalue for="2" value="#7a5aa6" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="item_type:required_documents" label="required_documents">
+        <attvalues>
+          <attvalue for="0" value="item_type" />
+          <attvalue for="1" value="472" />
+          <attvalue for="2" value="#6d7f3f" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="document_bucket:필수서류" label="필수서류">
+        <attvalues>
+          <attvalue for="0" value="document_bucket" />
+          <attvalue for="1" value="1328" />
+          <attvalue for="2" value="#c45454" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="code:D-9" label="D-9">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="27" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="15.588457268119896" />
+        </attvalues>
+      </node>
+      <node id="code:E-1" label="E-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="119" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="32.72613634390714" />
+        </attvalues>
+      </node>
+      <node id="petition_type:체류자격 변경" label="체류자격 변경">
+        <attvalues>
+          <attvalue for="0" value="petition_type" />
+          <attvalue for="1" value="1331" />
+          <attvalue for="2" value="#b36b32" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="subsection_type:절차" label="절차">
+        <attvalues>
+          <attvalue for="0" value="subsection_type" />
+          <attvalue for="1" value="161" />
+          <attvalue for="2" value="#7a5aa6" />
+          <attvalue for="3" value="38.06573262134856" />
+        </attvalues>
+      </node>
+      <node id="document_bucket:기타서류" label="기타서류">
+        <attvalues>
+          <attvalue for="0" value="document_bucket" />
+          <attvalue for="1" value="706" />
+          <attvalue for="2" value="#c45454" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="document_bucket:공통서류" label="공통서류">
+        <attvalues>
+          <attvalue for="0" value="document_bucket" />
+          <attvalue for="1" value="601" />
+          <attvalue for="2" value="#c45454" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="code:A-1" label="A-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="69" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="24.919871588754226" />
+        </attvalues>
+      </node>
+      <node id="subsection_type:대상" label="대상">
+        <attvalues>
+          <attvalue for="0" value="subsection_type" />
+          <attvalue for="1" value="1064" />
+          <attvalue for="2" value="#7a5aa6" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="petition_type:근무처 변경/추가" label="근무처 변경/추가">
+        <attvalues>
+          <attvalue for="0" value="petition_type" />
+          <attvalue for="1" value="356" />
+          <attvalue for="2" value="#b36b32" />
+          <attvalue for="3" value="56.60388679233962" />
+        </attvalues>
+      </node>
+      <node id="subsection_type:요건" label="요건">
+        <attvalues>
+          <attvalue for="0" value="subsection_type" />
+          <attvalue for="1" value="937" />
+          <attvalue for="2" value="#7a5aa6" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="code:F-4" label="F-4">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="350" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="56.124860801609124" />
+        </attvalues>
+      </node>
+      <node id="petition_type:체류자격외 활동허가" label="체류자격외 활동허가">
+        <attvalues>
+          <attvalue for="0" value="petition_type" />
+          <attvalue for="1" value="171" />
+          <attvalue for="2" value="#b36b32" />
+          <attvalue for="3" value="39.230090491866065" />
+        </attvalues>
+      </node>
+      <node id="subsection_type:기간" label="기간">
+        <attvalues>
+          <attvalue for="0" value="subsection_type" />
+          <attvalue for="1" value="368" />
+          <attvalue for="2" value="#7a5aa6" />
+          <attvalue for="3" value="57.54997827975263" />
+        </attvalues>
+      </node>
+      <node id="code:C-4" label="C-4">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="45" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="20.12461179749811" />
+        </attvalues>
+      </node>
+      <node id="petition_type:외국인등록" label="외국인등록">
+        <attvalues>
+          <attvalue for="0" value="petition_type" />
+          <attvalue for="1" value="899" />
+          <attvalue for="2" value="#b36b32" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="subsection_type:제한" label="제한">
+        <attvalues>
+          <attvalue for="0" value="subsection_type" />
+          <attvalue for="1" value="295" />
+          <attvalue for="2" value="#7a5aa6" />
+          <attvalue for="3" value="51.526692111953" />
+        </attvalues>
+      </node>
+      <node id="item_type:restriction" label="restriction">
+        <attvalues>
+          <attvalue for="0" value="item_type" />
+          <attvalue for="1" value="295" />
+          <attvalue for="2" value="#6d7f3f" />
+          <attvalue for="3" value="51.526692111953" />
+        </attvalues>
+      </node>
+      <node id="subsection_type:추천/승인" label="추천/승인">
+        <attvalues>
+          <attvalue for="0" value="subsection_type" />
+          <attvalue for="1" value="125" />
+          <attvalue for="2" value="#7a5aa6" />
+          <attvalue for="3" value="33.54101966249685" />
+        </attvalues>
+      </node>
+      <node id="subsection_type:예외" label="예외">
+        <attvalues>
+          <attvalue for="0" value="subsection_type" />
+          <attvalue for="1" value="221" />
+          <attvalue for="2" value="#7a5aa6" />
+          <attvalue for="3" value="44.598206241955516" />
+        </attvalues>
+      </node>
+      <node id="item_type:exception" label="exception">
+        <attvalues>
+          <attvalue for="0" value="item_type" />
+          <attvalue for="1" value="221" />
+          <attvalue for="2" value="#6d7f3f" />
+          <attvalue for="3" value="44.598206241955516" />
+        </attvalues>
+      </node>
+      <node id="petition_type:초청" label="초청">
+        <attvalues>
+          <attvalue for="0" value="petition_type" />
+          <attvalue for="1" value="726" />
+          <attvalue for="2" value="#b36b32" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="petition_type:재입국허가" label="재입국허가">
+        <attvalues>
+          <attvalue for="0" value="petition_type" />
+          <attvalue for="1" value="134" />
+          <attvalue for="2" value="#b36b32" />
+          <attvalue for="3" value="34.72751070837067" />
+        </attvalues>
+      </node>
+      <node id="code:A-2" label="A-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="31" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="16.703293088490064" />
+        </attvalues>
+      </node>
+      <node id="petition_type:체류기간 연장" label="체류기간 연장">
+        <attvalues>
+          <attvalue for="0" value="petition_type" />
+          <attvalue for="1" value="247" />
+          <attvalue for="2" value="#b36b32" />
+          <attvalue for="3" value="47.148700936505136" />
+        </attvalues>
+      </node>
+      <node id="subsection_type:수수료" label="수수료">
+        <attvalues>
+          <attvalue for="0" value="subsection_type" />
+          <attvalue for="1" value="218" />
+          <attvalue for="2" value="#7a5aa6" />
+          <attvalue for="3" value="44.294469180700204" />
+        </attvalues>
+      </node>
+      <node id="item_type:fee" label="fee">
+        <attvalues>
+          <attvalue for="0" value="item_type" />
+          <attvalue for="1" value="218" />
+          <attvalue for="2" value="#6d7f3f" />
+          <attvalue for="3" value="44.294469180700204" />
+        </attvalues>
+      </node>
+      <node id="code:A-3-99" label="A-3-99">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:A-3" label="A-3">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="15" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="11.618950038622252" />
+        </attvalues>
+      </node>
+      <node id="code:C-3" label="C-3">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="243" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="46.76537180435969" />
+        </attvalues>
+      </node>
+      <node id="code:C-3-1" label="C-3-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="8" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="8.485281374238571" />
+        </attvalues>
+      </node>
+      <node id="code:C-3-2" label="C-3-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:C-3-3" label="C-3-3">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="petition_type:사증발급인정서" label="사증발급인정서">
+        <attvalues>
+          <attvalue for="0" value="petition_type" />
+          <attvalue for="1" value="437" />
+          <attvalue for="2" value="#b36b32" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="code:C-3-4" label="C-3-4">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="5" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.708203932499369" />
+        </attvalues>
+      </node>
+      <node id="code:C-3-5" label="C-3-5">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:C-3-6" label="C-3-6">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:C-3-7" label="C-3-7">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:C-3-9" label="C-3-9">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:C-3-10" label="C-3-10">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="petition_type:사증발급" label="사증발급">
+        <attvalues>
+          <attvalue for="0" value="petition_type" />
+          <attvalue for="1" value="1296" />
+          <attvalue for="2" value="#b36b32" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="code:D-1" label="D-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="5" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.708203932499369" />
+        </attvalues>
+      </node>
+      <node id="code:B-1" label="B-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="170" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="39.1152144312159" />
+        </attvalues>
+      </node>
+      <node id="code:F-6" label="F-6">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="392" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="59.39696961966999" />
+        </attvalues>
+      </node>
+      <node id="code:D-2" label="D-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="473" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="code:D-2-1D" label="D-2-1D">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:D-2-5" label="D-2-5">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="5" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.708203932499369" />
+        </attvalues>
+      </node>
+      <node id="subsection_type:신고의무" label="신고의무">
+        <attvalues>
+          <attvalue for="0" value="subsection_type" />
+          <attvalue for="1" value="4" />
+          <attvalue for="2" value="#7a5aa6" />
+          <attvalue for="3" value="6.0" />
+        </attvalues>
+      </node>
+      <node id="code:D-4-2" label="D-4-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:D-4" label="D-4">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="129" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="34.07345007480164" />
+        </attvalues>
+      </node>
+      <node id="code:D-4-6" label="D-4-6">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:D-3" label="D-3">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="112" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="31.74901573277509" />
+        </attvalues>
+      </node>
+      <node id="subsection_type:쿼터" label="쿼터">
+        <attvalues>
+          <attvalue for="0" value="subsection_type" />
+          <attvalue for="1" value="26" />
+          <attvalue for="2" value="#7a5aa6" />
+          <attvalue for="3" value="15.297058540778353" />
+        </attvalues>
+      </node>
+      <node id="item_type:quota" label="quota">
+        <attvalues>
+          <attvalue for="0" value="item_type" />
+          <attvalue for="1" value="26" />
+          <attvalue for="2" value="#6d7f3f" />
+          <attvalue for="3" value="15.297058540778353" />
+        </attvalues>
+      </node>
+      <node id="code:D-4-1" label="D-4-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:D-4-2K" label="D-4-2K">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="4" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.0" />
+        </attvalues>
+      </node>
+      <node id="code:D-4-3" label="D-4-3">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:D-5" label="D-5">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="5" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.708203932499369" />
+        </attvalues>
+      </node>
+      <node id="code:E-2" label="E-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="342" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="55.47972602672078" />
+        </attvalues>
+      </node>
+      <node id="item_type:common_rule" label="common_rule">
+        <attvalues>
+          <attvalue for="0" value="item_type" />
+          <attvalue for="1" value="57" />
+          <attvalue for="2" value="#6d7f3f" />
+          <attvalue for="3" value="22.64950330581225" />
+        </attvalues>
+      </node>
+      <node id="code:D-6" label="D-6">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="24" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="14.696938456699067" />
+        </attvalues>
+      </node>
+      <node id="code:D-8" label="D-8">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="143" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="35.874782229304195" />
+        </attvalues>
+      </node>
+      <node id="code:D-7" label="D-7">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="76" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="26.153393661244046" />
+        </attvalues>
+      </node>
+      <node id="code:D-8-1" label="D-8-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="6" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="7.348469228349534" />
+        </attvalues>
+      </node>
+      <node id="code:D-8-2" label="D-8-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="subsection_type:점수표" label="점수표">
+        <attvalues>
+          <attvalue for="0" value="subsection_type" />
+          <attvalue for="1" value="55" />
+          <attvalue for="2" value="#7a5aa6" />
+          <attvalue for="3" value="22.24859546128699" />
+        </attvalues>
+      </node>
+      <node id="item_type:score_table" label="score_table">
+        <attvalues>
+          <attvalue for="0" value="item_type" />
+          <attvalue for="1" value="55" />
+          <attvalue for="2" value="#6d7f3f" />
+          <attvalue for="3" value="22.24859546128699" />
+        </attvalues>
+      </node>
+      <node id="code:D-8-4" label="D-8-4">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="4" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.0" />
+        </attvalues>
+      </node>
+      <node id="petition_type:체류자격 부여" label="체류자격 부여">
+        <attvalues>
+          <attvalue for="0" value="petition_type" />
+          <attvalue for="1" value="96" />
+          <attvalue for="2" value="#b36b32" />
+          <attvalue for="3" value="29.393876913398135" />
+        </attvalues>
+      </node>
+      <node id="code:D-9-1" label="D-9-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:D-10-1" label="D-10-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="17" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="12.36931687685298" />
+        </attvalues>
+      </node>
+      <node id="code:D-10" label="D-10">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="207" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="43.16248370981448" />
+        </attvalues>
+      </node>
+      <node id="code:D-10-2" label="D-10-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="4" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.0" />
+        </attvalues>
+      </node>
+      <node id="code:D-10-3" label="D-10-3">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="4" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.0" />
+        </attvalues>
+      </node>
+      <node id="code:D-10-T" label="D-10-T">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:C-4-5" label="C-4-5">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="6" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="7.348469228349534" />
+        </attvalues>
+      </node>
+      <node id="code:E-3" label="E-3">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="15" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="11.618950038622252" />
+        </attvalues>
+      </node>
+      <node id="code:E-4" label="E-4">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="6" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="7.348469228349534" />
+        </attvalues>
+      </node>
+      <node id="code:E-5" label="E-5">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="5" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.708203932499369" />
+        </attvalues>
+      </node>
+      <node id="code:E-6-1" label="E-6-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:E-6" label="E-6">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="66" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="24.372115213907882" />
+        </attvalues>
+      </node>
+      <node id="code:E-6-2" label="E-6-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:E-7-3" label="E-7-3">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:E-7-4" label="E-7-4">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="5" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.708203932499369" />
+        </attvalues>
+      </node>
+      <node id="code:E-7-S" label="E-7-S">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="4" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.0" />
+        </attvalues>
+      </node>
+      <node id="code:E-7-Y" label="E-7-Y">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="6" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="7.348469228349534" />
+        </attvalues>
+      </node>
+      <node id="code:E-7" label="E-7">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="759" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="code:D-2-7" label="D-2-7">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:E-9" label="E-9">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="272" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="49.47726750741192" />
+        </attvalues>
+      </node>
+      <node id="code:E-7-T" label="E-7-T">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:F-2-7" label="F-2-7">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="8" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="8.485281374238571" />
+        </attvalues>
+      </node>
+      <node id="code:F-2" label="F-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="319" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="53.58171329847525" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-16" label="F-5-16">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="4" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.0" />
+        </attvalues>
+      </node>
+      <node id="code:F-5" label="F-5">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="477" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="code:G-1" label="G-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="59" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="23.043437243605823" />
+        </attvalues>
+      </node>
+      <node id="code:F-1" label="F-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="134" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="34.72751070837067" />
+        </attvalues>
+      </node>
+      <node id="code:F-1-13" label="F-1-13">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-1-16" label="F-1-16">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-1-28" label="F-1-28">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-1-51" label="F-1-51">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-1-52" label="F-1-52">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-1-D" label="F-1-D">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-2-2" label="F-2-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="4" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.0" />
+        </attvalues>
+      </node>
+      <node id="code:F-1-1" label="F-1-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-2-8" label="F-2-8">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-2-12" label="F-2-12">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-2-16" label="F-2-16">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-2-99" label="F-2-99">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="5" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.708203932499369" />
+        </attvalues>
+      </node>
+      <node id="code:F-6-2" label="F-6-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="5" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.708203932499369" />
+        </attvalues>
+      </node>
+      <node id="code:F-2-4" label="F-2-4">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-2-5" label="F-2-5">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-2-71" label="F-2-71">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="5" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.708203932499369" />
+        </attvalues>
+      </node>
+      <node id="code:H-2" label="H-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="208" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="43.26661530556787" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-1" label="F-5-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="5" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.708203932499369" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-4" label="F-5-4">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-5" label="F-5-5">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="4" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.0" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-6" label="F-5-6">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-7" label="F-5-7">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-9" label="F-5-9">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-10" label="F-5-10">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-11" label="F-5-11">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-12" label="F-5-12">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-13" label="F-5-13">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-14" label="F-5-14">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-15" label="F-5-15">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-17" label="F-5-17">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-18" label="F-5-18">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-19" label="F-5-19">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-20" label="F-5-20">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-21" label="F-5-21">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-22" label="F-5-22">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-23" label="F-5-23">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-24" label="F-5-24">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-25" label="F-5-25">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-26" label="F-5-26">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-27" label="F-5-27">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-8" label="F-5-8">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-2" label="F-5-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-6-1" label="F-6-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="6" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="7.348469228349534" />
+        </attvalues>
+      </node>
+      <node id="code:F-6-3" label="F-6-3">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:G-1-5" label="G-1-5">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:G-1-12" label="G-1-12">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:G-1-1" label="G-1-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:G-1-2" label="G-1-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:G-1-9" label="G-1-9">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:G-1-10" label="G-1-10">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:G-1-11" label="G-1-11">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:G-1-4" label="G-1-4">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:H-1" label="H-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="6" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="7.348469228349534" />
+        </attvalues>
+      </node>
+      <node id="code:C-3-8" label="C-3-8">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="4" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.0" />
+        </attvalues>
+      </node>
+      <node id="code:F-4-41" label="F-4-41">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-4-42" label="F-4-42">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-4-R" label="F-4-R">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="4" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.0" />
+        </attvalues>
+      </node>
+      <node id="code:F-3" label="F-3">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="31" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="16.703293088490064" />
+        </attvalues>
+      </node>
+      <node id="code:F-2-R" label="F-2-R">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="8" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="8.485281374238571" />
+        </attvalues>
+      </node>
+      <node id="code:E-7-4R" label="E-7-4R">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="4" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="6.0" />
+        </attvalues>
+      </node>
+      <node id="code:F-1-11" label="F-1-11">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="petition_type:전자사증" label="전자사증">
+        <attvalues>
+          <attvalue for="0" value="petition_type" />
+          <attvalue for="1" value="47" />
+          <attvalue for="2" value="#b36b32" />
+          <attvalue for="3" value="20.56696380120313" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-S1" label="F-5-S1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-S2" label="F-5-S2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="manual:사증민원" label="사증민원">
+        <attvalues>
+          <attvalue for="0" value="manual" />
+          <attvalue for="1" value="2311" />
+          <attvalue for="2" value="#2f6f73" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="item_type:visa_rule" label="visa_rule">
+        <attvalues>
+          <attvalue for="0" value="item_type" />
+          <attvalue for="1" value="1762" />
+          <attvalue for="2" value="#6d7f3f" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </node>
+      <node id="code:B-2" label="B-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:C-1" label="C-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:C-3-11" label="C-3-11">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:E-8" label="E-8">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="43" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="19.672315572906" />
+        </attvalues>
+      </node>
+      <node id="code:C-4-14" label="C-4-14">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:D-2-1" label="D-2-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:D-2-8" label="D-2-8">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:D-2-6" label="D-2-6">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:D-4-5" label="D-4-5">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:D-8-3" label="D-8-3">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:D-8-4S" label="D-8-4S">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:E-2-1" label="E-2-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:E-6-3" label="E-6-3">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:E-7-1" label="E-7-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:E-7-2" label="E-7-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:E-8-2" label="E-8-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:E-8-4" label="E-8-4">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:E-8-5" label="E-8-5">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:E-8-6" label="E-8-6">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:E-10-1" label="E-10-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:E-10-2" label="E-10-2">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:E-10-3" label="E-10-3">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:E-10" label="E-10">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="11" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="9.9498743710662" />
+        </attvalues>
+      </node>
+      <node id="code:F-1-21" label="F-1-21">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-1-22" label="F-1-22">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-1-5" label="F-1-5">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5.196152422706632" />
+        </attvalues>
+      </node>
+      <node id="code:F-1-15" label="F-1-15">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-1-12" label="F-1-12">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:D-3-1" label="D-3-1">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:D-3-11" label="D-3-11">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:D-3-12" label="D-3-12">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:D-3-13" label="D-3-13">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="code:F-5-T" label="F-5-T">
+        <attvalues>
+          <attvalue for="0" value="code" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="#4d79a8" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="manual:체류민원" target="code:공통/무코드" id="0" weight="17" />
+      <edge source="manual:체류민원" target="code:D-9" id="1" weight="2" />
+      <edge source="manual:체류민원" target="code:E-1" id="2" weight="66" />
+      <edge source="manual:체류민원" target="code:A-1" id="3" weight="45" />
+      <edge source="manual:체류민원" target="code:F-4" id="4" weight="203" />
+      <edge source="manual:체류민원" target="code:C-4" id="5" weight="10" />
+      <edge source="manual:체류민원" target="code:A-2" id="6" weight="21" />
+      <edge source="manual:체류민원" target="code:A-3-99" id="7" weight="1" />
+      <edge source="manual:체류민원" target="code:A-3" id="8" weight="14" />
+      <edge source="manual:체류민원" target="code:C-3" id="9" weight="57" />
+      <edge source="manual:체류민원" target="code:C-3-1" id="10" weight="1" />
+      <edge source="manual:체류민원" target="code:C-3-2" id="11" weight="2" />
+      <edge source="manual:체류민원" target="code:C-3-3" id="12" weight="1" />
+      <edge source="manual:체류민원" target="code:C-3-4" id="13" weight="4" />
+      <edge source="manual:체류민원" target="code:C-3-5" id="14" weight="1" />
+      <edge source="manual:체류민원" target="code:C-3-6" id="15" weight="1" />
+      <edge source="manual:체류민원" target="code:C-3-7" id="16" weight="1" />
+      <edge source="manual:체류민원" target="code:C-3-9" id="17" weight="1" />
+      <edge source="manual:체류민원" target="code:C-3-10" id="18" weight="1" />
+      <edge source="manual:체류민원" target="code:D-1" id="19" weight="1" />
+      <edge source="manual:체류민원" target="code:B-1" id="20" weight="60" />
+      <edge source="manual:체류민원" target="code:F-6" id="21" weight="284" />
+      <edge source="manual:체류민원" target="code:D-2" id="22" weight="428" />
+      <edge source="manual:체류민원" target="code:D-2-1D" id="23" weight="2" />
+      <edge source="manual:체류민원" target="code:D-2-5" id="24" weight="4" />
+      <edge source="manual:체류민원" target="code:D-4-2" id="25" weight="1" />
+      <edge source="manual:체류민원" target="code:D-4" id="26" weight="60" />
+      <edge source="manual:체류민원" target="code:D-4-6" id="27" weight="2" />
+      <edge source="manual:체류민원" target="code:D-3" id="28" weight="52" />
+      <edge source="manual:체류민원" target="code:D-4-1" id="29" weight="1" />
+      <edge source="manual:체류민원" target="code:D-4-2K" id="30" weight="2" />
+      <edge source="manual:체류민원" target="code:D-4-3" id="31" weight="1" />
+      <edge source="manual:체류민원" target="code:D-5" id="32" weight="3" />
+      <edge source="manual:체류민원" target="code:E-2" id="33" weight="49" />
+      <edge source="manual:체류민원" target="code:D-6" id="34" weight="24" />
+      <edge source="manual:체류민원" target="code:D-8" id="35" weight="72" />
+      <edge source="manual:체류민원" target="code:D-7" id="36" weight="42" />
+      <edge source="manual:체류민원" target="code:D-8-1" id="37" weight="4" />
+      <edge source="manual:체류민원" target="code:D-8-2" id="38" weight="1" />
+      <edge source="manual:체류민원" target="code:D-8-4" id="39" weight="2" />
+      <edge source="manual:체류민원" target="code:D-9-1" id="40" weight="1" />
+      <edge source="manual:체류민원" target="code:D-10-1" id="41" weight="10" />
+      <edge source="manual:체류민원" target="code:D-10" id="42" weight="106" />
+      <edge source="manual:체류민원" target="code:D-10-2" id="43" weight="2" />
+      <edge source="manual:체류민원" target="code:D-10-3" id="44" weight="4" />
+      <edge source="manual:체류민원" target="code:D-10-T" id="45" weight="2" />
+      <edge source="manual:체류민원" target="code:C-4-5" id="46" weight="3" />
+      <edge source="manual:체류민원" target="code:E-3" id="47" weight="15" />
+      <edge source="manual:체류민원" target="code:E-4" id="48" weight="6" />
+      <edge source="manual:체류민원" target="code:E-5" id="49" weight="5" />
+      <edge source="manual:체류민원" target="code:E-6-1" id="50" weight="1" />
+      <edge source="manual:체류민원" target="code:E-6" id="51" weight="34" />
+      <edge source="manual:체류민원" target="code:E-6-2" id="52" weight="2" />
+      <edge source="manual:체류민원" target="code:E-7-3" id="53" weight="1" />
+      <edge source="manual:체류민원" target="code:E-7-4" id="54" weight="3" />
+      <edge source="manual:체류민원" target="code:E-7-S" id="55" weight="1" />
+      <edge source="manual:체류민원" target="code:E-7-Y" id="56" weight="4" />
+      <edge source="manual:체류민원" target="code:E-7" id="57" weight="489" />
+      <edge source="manual:체류민원" target="code:D-2-7" id="58" weight="2" />
+      <edge source="manual:체류민원" target="code:E-9" id="59" weight="200" />
+      <edge source="manual:체류민원" target="code:E-7-T" id="60" weight="2" />
+      <edge source="manual:체류민원" target="code:F-2-7" id="61" weight="6" />
+      <edge source="manual:체류민원" target="code:F-2" id="62" weight="287" />
+      <edge source="manual:체류민원" target="code:F-5-16" id="63" weight="4" />
+      <edge source="manual:체류민원" target="code:F-5" id="64" weight="295" />
+      <edge source="manual:체류민원" target="code:G-1" id="65" weight="55" />
+      <edge source="manual:체류민원" target="code:F-1" id="66" weight="91" />
+      <edge source="manual:체류민원" target="code:F-1-13" id="67" weight="1" />
+      <edge source="manual:체류민원" target="code:F-1-16" id="68" weight="1" />
+      <edge source="manual:체류민원" target="code:F-1-28" id="69" weight="1" />
+      <edge source="manual:체류민원" target="code:F-1-51" id="70" weight="1" />
+      <edge source="manual:체류민원" target="code:F-1-52" id="71" weight="2" />
+      <edge source="manual:체류민원" target="code:F-1-D" id="72" weight="1" />
+      <edge source="manual:체류민원" target="code:F-2-2" id="73" weight="2" />
+      <edge source="manual:체류민원" target="code:F-1-1" id="74" weight="1" />
+      <edge source="manual:체류민원" target="code:F-2-8" id="75" weight="2" />
+      <edge source="manual:체류민원" target="code:F-2-12" id="76" weight="2" />
+      <edge source="manual:체류민원" target="code:F-2-16" id="77" weight="1" />
+      <edge source="manual:체류민원" target="code:F-2-99" id="78" weight="5" />
+      <edge source="manual:체류민원" target="code:F-6-2" id="79" weight="3" />
+      <edge source="manual:체류민원" target="code:F-2-4" id="80" weight="1" />
+      <edge source="manual:체류민원" target="code:F-2-5" id="81" weight="1" />
+      <edge source="manual:체류민원" target="code:F-2-71" id="82" weight="3" />
+      <edge source="manual:체류민원" target="code:H-2" id="83" weight="111" />
+      <edge source="manual:체류민원" target="code:F-5-1" id="84" weight="5" />
+      <edge source="manual:체류민원" target="code:F-5-4" id="85" weight="2" />
+      <edge source="manual:체류민원" target="code:F-5-5" id="86" weight="4" />
+      <edge source="manual:체류민원" target="code:F-5-6" id="87" weight="1" />
+      <edge source="manual:체류민원" target="code:F-5-7" id="88" weight="2" />
+      <edge source="manual:체류민원" target="code:F-5-9" id="89" weight="3" />
+      <edge source="manual:체류민원" target="code:F-5-10" id="90" weight="3" />
+      <edge source="manual:체류민원" target="code:F-5-11" id="91" weight="3" />
+      <edge source="manual:체류민원" target="code:F-5-12" id="92" weight="2" />
+      <edge source="manual:체류민원" target="code:F-5-13" id="93" weight="3" />
+      <edge source="manual:체류민원" target="code:F-5-14" id="94" weight="1" />
+      <edge source="manual:체류민원" target="code:F-5-15" id="95" weight="2" />
+      <edge source="manual:체류민원" target="code:F-5-17" id="96" weight="3" />
+      <edge source="manual:체류민원" target="code:F-5-18" id="97" weight="2" />
+      <edge source="manual:체류민원" target="code:F-5-19" id="98" weight="2" />
+      <edge source="manual:체류민원" target="code:F-5-20" id="99" weight="2" />
+      <edge source="manual:체류민원" target="code:F-5-21" id="100" weight="3" />
+      <edge source="manual:체류민원" target="code:F-5-22" id="101" weight="2" />
+      <edge source="manual:체류민원" target="code:F-5-23" id="102" weight="2" />
+      <edge source="manual:체류민원" target="code:F-5-24" id="103" weight="2" />
+      <edge source="manual:체류민원" target="code:F-5-25" id="104" weight="3" />
+      <edge source="manual:체류민원" target="code:F-5-26" id="105" weight="3" />
+      <edge source="manual:체류민원" target="code:F-5-27" id="106" weight="1" />
+      <edge source="manual:체류민원" target="code:F-5-8" id="107" weight="2" />
+      <edge source="manual:체류민원" target="code:F-5-2" id="108" weight="1" />
+      <edge source="manual:체류민원" target="code:F-6-1" id="109" weight="5" />
+      <edge source="manual:체류민원" target="code:F-6-3" id="110" weight="2" />
+      <edge source="manual:체류민원" target="code:G-1-5" id="111" weight="3" />
+      <edge source="manual:체류민원" target="code:G-1-12" id="112" weight="1" />
+      <edge source="manual:체류민원" target="code:G-1-1" id="113" weight="1" />
+      <edge source="manual:체류민원" target="code:G-1-2" id="114" weight="1" />
+      <edge source="manual:체류민원" target="code:G-1-9" id="115" weight="1" />
+      <edge source="manual:체류민원" target="code:G-1-10" id="116" weight="1" />
+      <edge source="manual:체류민원" target="code:G-1-11" id="117" weight="1" />
+      <edge source="manual:체류민원" target="code:G-1-4" id="118" weight="1" />
+      <edge source="manual:체류민원" target="code:H-1" id="119" weight="6" />
+      <edge source="manual:체류민원" target="code:C-3-8" id="120" weight="2" />
+      <edge source="manual:체류민원" target="code:F-4-41" id="121" weight="1" />
+      <edge source="manual:체류민원" target="code:F-4-42" id="122" weight="1" />
+      <edge source="manual:체류민원" target="code:F-4-R" id="123" weight="3" />
+      <edge source="manual:체류민원" target="code:F-3" id="124" weight="16" />
+      <edge source="manual:체류민원" target="code:F-2-R" id="125" weight="8" />
+      <edge source="manual:체류민원" target="code:E-7-4R" id="126" weight="4" />
+      <edge source="manual:체류민원" target="code:F-1-11" id="127" weight="1" />
+      <edge source="manual:체류민원" target="code:F-5-S1" id="128" weight="1" />
+      <edge source="manual:체류민원" target="code:F-5-S2" id="129" weight="1" />
+      <edge source="code:공통/무코드" target="petition_type:미분류" id="130" weight="3" />
+      <edge source="code:공통/무코드" target="document_bucket:필수서류" id="131" weight="14" />
+      <edge source="code:공통/무코드" target="petition_type:체류자격 변경" id="132" weight="16" />
+      <edge source="code:공통/무코드" target="document_bucket:기타서류" id="133" weight="5" />
+      <edge source="code:공통/무코드" target="document_bucket:공통서류" id="134" weight="4" />
+      <edge source="code:공통/무코드" target="petition_type:근무처 변경/추가" id="135" weight="1" />
+      <edge source="code:공통/무코드" target="petition_type:체류자격외 활동허가" id="136" weight="3" />
+      <edge source="code:공통/무코드" target="petition_type:사증발급" id="137" weight="11" />
+      <edge source="petition_type:미분류" target="subsection_type:기타" id="138" weight="3" />
+      <edge source="petition_type:미분류" target="subsection_type:제출서류" id="139" weight="2" />
+      <edge source="subsection_type:기타" target="item_type:stay_status_rule" id="140" weight="1025" />
+      <edge source="subsection_type:기타" target="item_type:common_rule" id="141" weight="21" />
+      <edge source="subsection_type:기타" target="item_type:visa_rule" id="142" weight="753" />
+      <edge source="subsection_type:제출서류" target="item_type:required_documents" id="143" weight="472" />
+      <edge source="code:D-9" target="petition_type:미분류" id="144" weight="1" />
+      <edge source="code:D-9" target="petition_type:체류자격 변경" id="145" weight="1" />
+      <edge source="code:D-9" target="document_bucket:필수서류" id="146" weight="12" />
+      <edge source="code:D-9" target="document_bucket:기타서류" id="147" weight="8" />
+      <edge source="code:D-9" target="petition_type:사증발급" id="148" weight="20" />
+      <edge source="code:D-9" target="document_bucket:공통서류" id="149" weight="6" />
+      <edge source="code:D-9" target="petition_type:사증발급인정서" id="150" weight="3" />
+      <edge source="code:D-9" target="petition_type:초청" id="151" weight="2" />
+      <edge source="code:E-1" target="petition_type:미분류" id="152" weight="1" />
+      <edge source="code:E-1" target="petition_type:외국인등록" id="153" weight="26" />
+      <edge source="code:E-1" target="document_bucket:필수서류" id="154" weight="29" />
+      <edge source="code:E-1" target="document_bucket:기타서류" id="155" weight="19" />
+      <edge source="code:E-1" target="petition_type:체류자격외 활동허가" id="156" weight="5" />
+      <edge source="code:E-1" target="document_bucket:공통서류" id="157" weight="17" />
+      <edge source="code:E-1" target="petition_type:체류자격 변경" id="158" weight="12" />
+      <edge source="code:E-1" target="petition_type:체류기간 연장" id="159" weight="3" />
+      <edge source="code:E-1" target="petition_type:재입국허가" id="160" weight="17" />
+      <edge source="code:E-1" target="petition_type:근무처 변경/추가" id="161" weight="2" />
+      <edge source="code:E-1" target="petition_type:초청" id="162" weight="10" />
+      <edge source="code:E-1" target="petition_type:사증발급" id="163" weight="38" />
+      <edge source="code:E-1" target="petition_type:전자사증" id="164" weight="1" />
+      <edge source="code:E-1" target="petition_type:사증발급인정서" id="165" weight="3" />
+      <edge source="code:E-1" target="petition_type:체류자격 부여" id="166" weight="1" />
+      <edge source="petition_type:체류자격 변경" target="subsection_type:기타" id="167" weight="508" />
+      <edge source="petition_type:체류자격 변경" target="subsection_type:제출서류" id="168" weight="70" />
+      <edge source="petition_type:체류자격 변경" target="subsection_type:절차" id="169" weight="29" />
+      <edge source="petition_type:체류자격 변경" target="subsection_type:대상" id="170" weight="221" />
+      <edge source="petition_type:체류자격 변경" target="subsection_type:제한" id="171" weight="101" />
+      <edge source="petition_type:체류자격 변경" target="subsection_type:예외" id="172" weight="42" />
+      <edge source="petition_type:체류자격 변경" target="subsection_type:기간" id="173" weight="60" />
+      <edge source="petition_type:체류자격 변경" target="subsection_type:요건" id="174" weight="216" />
+      <edge source="petition_type:체류자격 변경" target="subsection_type:수수료" id="175" weight="37" />
+      <edge source="petition_type:체류자격 변경" target="subsection_type:점수표" id="176" weight="24" />
+      <edge source="petition_type:체류자격 변경" target="subsection_type:추천/승인" id="177" weight="21" />
+      <edge source="petition_type:체류자격 변경" target="subsection_type:쿼터" id="178" weight="2" />
+      <edge source="subsection_type:절차" target="item_type:stay_status_rule" id="179" weight="81" />
+      <edge source="subsection_type:절차" target="item_type:visa_rule" id="180" weight="80" />
+      <edge source="code:A-1" target="petition_type:체류자격 변경" id="181" weight="9" />
+      <edge source="code:A-1" target="petition_type:체류자격외 활동허가" id="182" weight="21" />
+      <edge source="code:A-1" target="document_bucket:필수서류" id="183" weight="15" />
+      <edge source="code:A-1" target="document_bucket:기타서류" id="184" weight="5" />
+      <edge source="code:A-1" target="document_bucket:공통서류" id="185" weight="12" />
+      <edge source="code:A-1" target="petition_type:초청" id="186" weight="5" />
+      <edge source="code:A-1" target="petition_type:재입국허가" id="187" weight="4" />
+      <edge source="code:A-1" target="petition_type:외국인등록" id="188" weight="9" />
+      <edge source="code:A-1" target="petition_type:사증발급" id="189" weight="13" />
+      <edge source="code:A-1" target="petition_type:사증발급인정서" id="190" weight="4" />
+      <edge source="code:A-1" target="petition_type:체류기간 연장" id="191" weight="4" />
+      <edge source="subsection_type:대상" target="item_type:stay_status_rule" id="192" weight="631" />
+      <edge source="subsection_type:대상" target="item_type:common_rule" id="193" weight="14" />
+      <edge source="subsection_type:대상" target="item_type:visa_rule" id="194" weight="419" />
+      <edge source="petition_type:근무처 변경/추가" target="subsection_type:요건" id="195" weight="67" />
+      <edge source="petition_type:근무처 변경/추가" target="subsection_type:기타" id="196" weight="137" />
+      <edge source="petition_type:근무처 변경/추가" target="subsection_type:예외" id="197" weight="4" />
+      <edge source="petition_type:근무처 변경/추가" target="subsection_type:대상" id="198" weight="56" />
+      <edge source="petition_type:근무처 변경/추가" target="subsection_type:기간" id="199" weight="10" />
+      <edge source="petition_type:근무처 변경/추가" target="subsection_type:수수료" id="200" weight="6" />
+      <edge source="petition_type:근무처 변경/추가" target="subsection_type:제출서류" id="201" weight="23" />
+      <edge source="petition_type:근무처 변경/추가" target="subsection_type:절차" id="202" weight="10" />
+      <edge source="petition_type:근무처 변경/추가" target="subsection_type:추천/승인" id="203" weight="13" />
+      <edge source="petition_type:근무처 변경/추가" target="subsection_type:점수표" id="204" weight="5" />
+      <edge source="petition_type:근무처 변경/추가" target="subsection_type:제한" id="205" weight="18" />
+      <edge source="petition_type:근무처 변경/추가" target="subsection_type:신고의무" id="206" weight="1" />
+      <edge source="petition_type:근무처 변경/추가" target="subsection_type:쿼터" id="207" weight="6" />
+      <edge source="subsection_type:요건" target="item_type:stay_status_rule" id="208" weight="599" />
+      <edge source="subsection_type:요건" target="item_type:common_rule" id="209" weight="20" />
+      <edge source="subsection_type:요건" target="item_type:visa_rule" id="210" weight="318" />
+      <edge source="code:F-4" target="petition_type:체류자격외 활동허가" id="211" weight="1" />
+      <edge source="code:F-4" target="document_bucket:공통서류" id="212" weight="17" />
+      <edge source="code:F-4" target="petition_type:체류자격 변경" id="213" weight="157" />
+      <edge source="code:F-4" target="petition_type:외국인등록" id="214" weight="23" />
+      <edge source="code:F-4" target="petition_type:체류자격 부여" id="215" weight="4" />
+      <edge source="code:F-4" target="petition_type:사증발급" id="216" weight="10" />
+      <edge source="code:F-4" target="document_bucket:필수서류" id="217" weight="37" />
+      <edge source="code:F-4" target="document_bucket:기타서류" id="218" weight="27" />
+      <edge source="code:F-4" target="petition_type:체류기간 연장" id="219" weight="25" />
+      <edge source="code:F-4" target="petition_type:초청" id="220" weight="13" />
+      <edge source="code:F-4" target="petition_type:사증발급인정서" id="221" weight="95" />
+      <edge source="code:F-4" target="petition_type:근무처 변경/추가" id="222" weight="11" />
+      <edge source="code:F-4" target="petition_type:전자사증" id="223" weight="11" />
+      <edge source="petition_type:체류자격외 활동허가" target="subsection_type:기간" id="224" weight="16" />
+      <edge source="petition_type:체류자격외 활동허가" target="subsection_type:기타" id="225" weight="41" />
+      <edge source="petition_type:체류자격외 활동허가" target="subsection_type:요건" id="226" weight="17" />
+      <edge source="petition_type:체류자격외 활동허가" target="subsection_type:제출서류" id="227" weight="20" />
+      <edge source="petition_type:체류자격외 활동허가" target="subsection_type:대상" id="228" weight="36" />
+      <edge source="petition_type:체류자격외 활동허가" target="subsection_type:제한" id="229" weight="13" />
+      <edge source="petition_type:체류자격외 활동허가" target="subsection_type:추천/승인" id="230" weight="3" />
+      <edge source="petition_type:체류자격외 활동허가" target="subsection_type:수수료" id="231" weight="4" />
+      <edge source="petition_type:체류자격외 활동허가" target="subsection_type:예외" id="232" weight="4" />
+      <edge source="petition_type:체류자격외 활동허가" target="subsection_type:절차" id="233" weight="16" />
+      <edge source="petition_type:체류자격외 활동허가" target="subsection_type:점수표" id="234" weight="1" />
+      <edge source="subsection_type:기간" target="item_type:stay_status_rule" id="235" weight="237" />
+      <edge source="subsection_type:기간" target="item_type:common_rule" id="236" weight="2" />
+      <edge source="subsection_type:기간" target="item_type:visa_rule" id="237" weight="129" />
+      <edge source="code:C-4" target="petition_type:외국인등록" id="238" weight="10" />
+      <edge source="code:C-4" target="document_bucket:필수서류" id="239" weight="23" />
+      <edge source="code:C-4" target="document_bucket:기타서류" id="240" weight="11" />
+      <edge source="code:C-4" target="document_bucket:공통서류" id="241" weight="7" />
+      <edge source="code:C-4" target="petition_type:사증발급" id="242" weight="11" />
+      <edge source="code:C-4" target="petition_type:전자사증" id="243" weight="1" />
+      <edge source="code:C-4" target="petition_type:초청" id="244" weight="16" />
+      <edge source="code:C-4" target="petition_type:사증발급인정서" id="245" weight="5" />
+      <edge source="code:C-4" target="petition_type:체류자격외 활동허가" id="246" weight="2" />
+      <edge source="petition_type:외국인등록" target="subsection_type:대상" id="247" weight="174" />
+      <edge source="petition_type:외국인등록" target="subsection_type:예외" id="248" weight="22" />
+      <edge source="petition_type:외국인등록" target="subsection_type:제출서류" id="249" weight="72" />
+      <edge source="petition_type:외국인등록" target="subsection_type:기타" id="250" weight="288" />
+      <edge source="petition_type:외국인등록" target="subsection_type:기간" id="251" weight="78" />
+      <edge source="petition_type:외국인등록" target="subsection_type:수수료" id="252" weight="86" />
+      <edge source="petition_type:외국인등록" target="subsection_type:요건" id="253" weight="109" />
+      <edge source="petition_type:외국인등록" target="subsection_type:제한" id="254" weight="38" />
+      <edge source="petition_type:외국인등록" target="subsection_type:추천/승인" id="255" weight="6" />
+      <edge source="petition_type:외국인등록" target="subsection_type:절차" id="256" weight="15" />
+      <edge source="petition_type:외국인등록" target="subsection_type:점수표" id="257" weight="10" />
+      <edge source="petition_type:외국인등록" target="subsection_type:신고의무" id="258" weight="1" />
+      <edge source="subsection_type:제한" target="item_type:restriction" id="259" weight="295" />
+      <edge source="subsection_type:추천/승인" target="item_type:stay_status_rule" id="260" weight="62" />
+      <edge source="subsection_type:추천/승인" target="item_type:visa_rule" id="261" weight="63" />
+      <edge source="subsection_type:예외" target="item_type:exception" id="262" weight="221" />
+      <edge source="petition_type:초청" target="subsection_type:제출서류" id="263" weight="95" />
+      <edge source="petition_type:초청" target="subsection_type:기타" id="264" weight="207" />
+      <edge source="petition_type:초청" target="subsection_type:수수료" id="265" weight="13" />
+      <edge source="petition_type:초청" target="subsection_type:요건" id="266" weight="125" />
+      <edge source="petition_type:초청" target="subsection_type:대상" id="267" weight="145" />
+      <edge source="petition_type:초청" target="subsection_type:추천/승인" id="268" weight="11" />
+      <edge source="petition_type:초청" target="subsection_type:절차" id="269" weight="26" />
+      <edge source="petition_type:초청" target="subsection_type:제한" id="270" weight="43" />
+      <edge source="petition_type:초청" target="subsection_type:쿼터" id="271" weight="3" />
+      <edge source="petition_type:초청" target="subsection_type:기간" id="272" weight="17" />
+      <edge source="petition_type:초청" target="subsection_type:예외" id="273" weight="34" />
+      <edge source="petition_type:초청" target="subsection_type:점수표" id="274" weight="7" />
+      <edge source="petition_type:재입국허가" target="subsection_type:대상" id="275" weight="14" />
+      <edge source="petition_type:재입국허가" target="subsection_type:제출서류" id="276" weight="8" />
+      <edge source="petition_type:재입국허가" target="subsection_type:예외" id="277" weight="40" />
+      <edge source="petition_type:재입국허가" target="subsection_type:기타" id="278" weight="25" />
+      <edge source="petition_type:재입국허가" target="subsection_type:기간" id="279" weight="34" />
+      <edge source="petition_type:재입국허가" target="subsection_type:수수료" id="280" weight="3" />
+      <edge source="petition_type:재입국허가" target="subsection_type:신고의무" id="281" weight="1" />
+      <edge source="petition_type:재입국허가" target="subsection_type:절차" id="282" weight="1" />
+      <edge source="petition_type:재입국허가" target="subsection_type:요건" id="283" weight="5" />
+      <edge source="petition_type:재입국허가" target="subsection_type:추천/승인" id="284" weight="1" />
+      <edge source="petition_type:재입국허가" target="subsection_type:제한" id="285" weight="2" />
+      <edge source="code:A-2" target="petition_type:체류자격외 활동허가" id="286" weight="12" />
+      <edge source="code:A-2" target="document_bucket:기타서류" id="287" weight="7" />
+      <edge source="code:A-2" target="document_bucket:공통서류" id="288" weight="10" />
+      <edge source="code:A-2" target="document_bucket:필수서류" id="289" weight="8" />
+      <edge source="code:A-2" target="petition_type:체류기간 연장" id="290" weight="1" />
+      <edge source="code:A-2" target="petition_type:재입국허가" id="291" weight="2" />
+      <edge source="code:A-2" target="petition_type:외국인등록" id="292" weight="6" />
+      <edge source="code:A-2" target="petition_type:초청" id="293" weight="3" />
+      <edge source="code:A-2" target="petition_type:사증발급" id="294" weight="6" />
+      <edge source="code:A-2" target="petition_type:사증발급인정서" id="295" weight="1" />
+      <edge source="petition_type:체류기간 연장" target="subsection_type:기간" id="296" weight="60" />
+      <edge source="petition_type:체류기간 연장" target="subsection_type:제출서류" id="297" weight="18" />
+      <edge source="petition_type:체류기간 연장" target="subsection_type:기타" id="298" weight="40" />
+      <edge source="petition_type:체류기간 연장" target="subsection_type:제한" id="299" weight="7" />
+      <edge source="petition_type:체류기간 연장" target="subsection_type:대상" id="300" weight="45" />
+      <edge source="petition_type:체류기간 연장" target="subsection_type:수수료" id="301" weight="6" />
+      <edge source="petition_type:체류기간 연장" target="subsection_type:요건" id="302" weight="63" />
+      <edge source="petition_type:체류기간 연장" target="subsection_type:추천/승인" id="303" weight="2" />
+      <edge source="petition_type:체류기간 연장" target="subsection_type:절차" id="304" weight="2" />
+      <edge source="petition_type:체류기간 연장" target="subsection_type:예외" id="305" weight="4" />
+      <edge source="subsection_type:수수료" target="item_type:fee" id="306" weight="218" />
+      <edge source="code:A-3-99" target="petition_type:초청" id="307" weight="1" />
+      <edge source="code:A-3-99" target="document_bucket:공통서류" id="308" weight="1" />
+      <edge source="code:A-3-99" target="document_bucket:필수서류" id="309" weight="1" />
+      <edge source="code:A-3" target="petition_type:체류자격 변경" id="310" weight="6" />
+      <edge source="code:A-3" target="document_bucket:공통서류" id="311" weight="6" />
+      <edge source="code:A-3" target="document_bucket:필수서류" id="312" weight="7" />
+      <edge source="code:A-3" target="petition_type:재입국허가" id="313" weight="2" />
+      <edge source="code:A-3" target="petition_type:외국인등록" id="314" weight="2" />
+      <edge source="code:A-3" target="document_bucket:기타서류" id="315" weight="2" />
+      <edge source="code:A-3" target="petition_type:체류기간 연장" id="316" weight="1" />
+      <edge source="code:A-3" target="petition_type:체류자격외 활동허가" id="317" weight="3" />
+      <edge source="code:A-3" target="petition_type:사증발급" id="318" weight="1" />
+      <edge source="code:C-3" target="petition_type:체류기간 연장" id="319" weight="9" />
+      <edge source="code:C-3" target="petition_type:사증발급" id="320" weight="149" />
+      <edge source="code:C-3" target="petition_type:체류자격 변경" id="321" weight="13" />
+      <edge source="code:C-3" target="document_bucket:공통서류" id="322" weight="40" />
+      <edge source="code:C-3" target="petition_type:외국인등록" id="323" weight="14" />
+      <edge source="code:C-3" target="petition_type:초청" id="324" weight="20" />
+      <edge source="code:C-3" target="document_bucket:필수서류" id="325" weight="51" />
+      <edge source="code:C-3" target="petition_type:근무처 변경/추가" id="326" weight="9" />
+      <edge source="code:C-3" target="document_bucket:기타서류" id="327" weight="37" />
+      <edge source="code:C-3" target="petition_type:체류자격외 활동허가" id="328" weight="1" />
+      <edge source="code:C-3" target="petition_type:재입국허가" id="329" weight="7" />
+      <edge source="code:C-3" target="petition_type:사증발급인정서" id="330" weight="18" />
+      <edge source="code:C-3" target="petition_type:전자사증" id="331" weight="3" />
+      <edge source="code:C-3-1" target="petition_type:체류기간 연장" id="332" weight="1" />
+      <edge source="code:C-3-1" target="petition_type:사증발급" id="333" weight="7" />
+      <edge source="code:C-3-2" target="petition_type:체류기간 연장" id="334" weight="1" />
+      <edge source="code:C-3-2" target="petition_type:체류자격 변경" id="335" weight="1" />
+      <edge source="code:C-3-2" target="petition_type:사증발급" id="336" weight="1" />
+      <edge source="code:C-3-2" target="document_bucket:필수서류" id="337" weight="1" />
+      <edge source="code:C-3-3" target="petition_type:사증발급인정서" id="338" weight="2" />
+      <edge source="code:C-3-3" target="petition_type:전자사증" id="339" weight="1" />
+      <edge source="petition_type:사증발급인정서" target="subsection_type:대상" id="340" weight="88" />
+      <edge source="petition_type:사증발급인정서" target="subsection_type:기타" id="341" weight="188" />
+      <edge source="petition_type:사증발급인정서" target="subsection_type:요건" id="342" weight="59" />
+      <edge source="petition_type:사증발급인정서" target="subsection_type:절차" id="343" weight="12" />
+      <edge source="petition_type:사증발급인정서" target="subsection_type:제한" id="344" weight="27" />
+      <edge source="petition_type:사증발급인정서" target="subsection_type:기간" id="345" weight="19" />
+      <edge source="petition_type:사증발급인정서" target="subsection_type:제출서류" id="346" weight="20" />
+      <edge source="petition_type:사증발급인정서" target="subsection_type:추천/승인" id="347" weight="11" />
+      <edge source="petition_type:사증발급인정서" target="subsection_type:쿼터" id="348" weight="1" />
+      <edge source="petition_type:사증발급인정서" target="subsection_type:예외" id="349" weight="8" />
+      <edge source="petition_type:사증발급인정서" target="subsection_type:점수표" id="350" weight="2" />
+      <edge source="petition_type:사증발급인정서" target="subsection_type:수수료" id="351" weight="2" />
+      <edge source="code:C-3-4" target="petition_type:사증발급인정서" id="352" weight="1" />
+      <edge source="code:C-3-4" target="petition_type:체류자격 변경" id="353" weight="3" />
+      <edge source="code:C-3-4" target="document_bucket:필수서류" id="354" weight="1" />
+      <edge source="code:C-3-4" target="petition_type:사증발급" id="355" weight="1" />
+      <edge source="code:C-3-5" target="petition_type:사증발급인정서" id="356" weight="1" />
+      <edge source="code:C-3-6" target="petition_type:초청" id="357" weight="2" />
+      <edge source="code:C-3-7" target="petition_type:초청" id="358" weight="1" />
+      <edge source="code:C-3-9" target="petition_type:초청" id="359" weight="1" />
+      <edge source="code:C-3-9" target="petition_type:사증발급인정서" id="360" weight="1" />
+      <edge source="code:C-3-10" target="petition_type:초청" id="361" weight="1" />
+      <edge source="code:C-3-10" target="petition_type:사증발급인정서" id="362" weight="1" />
+      <edge source="petition_type:사증발급" target="subsection_type:기간" id="363" weight="71" />
+      <edge source="petition_type:사증발급" target="subsection_type:제한" id="364" weight="39" />
+      <edge source="petition_type:사증발급" target="subsection_type:대상" id="365" weight="252" />
+      <edge source="petition_type:사증발급" target="subsection_type:기타" id="366" weight="318" />
+      <edge source="petition_type:사증발급" target="subsection_type:요건" id="367" weight="256" />
+      <edge source="petition_type:사증발급" target="subsection_type:제출서류" id="368" weight="124" />
+      <edge source="petition_type:사증발급" target="subsection_type:신고의무" id="369" weight="1" />
+      <edge source="petition_type:사증발급" target="subsection_type:예외" id="370" weight="61" />
+      <edge source="petition_type:사증발급" target="subsection_type:추천/승인" id="371" weight="56" />
+      <edge source="petition_type:사증발급" target="subsection_type:절차" id="372" weight="43" />
+      <edge source="petition_type:사증발급" target="subsection_type:수수료" id="373" weight="57" />
+      <edge source="petition_type:사증발급" target="subsection_type:쿼터" id="374" weight="14" />
+      <edge source="petition_type:사증발급" target="subsection_type:점수표" id="375" weight="4" />
+      <edge source="code:D-1" target="petition_type:체류자격 변경" id="376" weight="1" />
+      <edge source="code:D-1" target="petition_type:사증발급" id="377" weight="3" />
+      <edge source="code:D-1" target="petition_type:사증발급인정서" id="378" weight="1" />
+      <edge source="code:D-1" target="document_bucket:공통서류" id="379" weight="1" />
+      <edge source="code:D-1" target="document_bucket:필수서류" id="380" weight="1" />
+      <edge source="code:D-1" target="document_bucket:기타서류" id="381" weight="1" />
+      <edge source="code:B-1" target="petition_type:체류자격 변경" id="382" weight="44" />
+      <edge source="code:B-1" target="document_bucket:필수서류" id="383" weight="12" />
+      <edge source="code:B-1" target="document_bucket:기타서류" id="384" weight="10" />
+      <edge source="code:B-1" target="petition_type:초청" id="385" weight="5" />
+      <edge source="code:B-1" target="petition_type:외국인등록" id="386" weight="22" />
+      <edge source="code:B-1" target="document_bucket:공통서류" id="387" weight="42" />
+      <edge source="code:B-1" target="petition_type:재입국허가" id="388" weight="10" />
+      <edge source="code:B-1" target="petition_type:사증발급" id="389" weight="80" />
+      <edge source="code:B-1" target="petition_type:사증발급인정서" id="390" weight="9" />
+      <edge source="code:F-6" target="petition_type:재입국허가" id="391" weight="15" />
+      <edge source="code:F-6" target="petition_type:외국인등록" id="392" weight="117" />
+      <edge source="code:F-6" target="document_bucket:공통서류" id="393" weight="80" />
+      <edge source="code:F-6" target="document_bucket:필수서류" id="394" weight="137" />
+      <edge source="code:F-6" target="document_bucket:기타서류" id="395" weight="77" />
+      <edge source="code:F-6" target="petition_type:체류자격외 활동허가" id="396" weight="14" />
+      <edge source="code:F-6" target="petition_type:초청" id="397" weight="191" />
+      <edge source="code:F-6" target="petition_type:사증발급" id="398" weight="23" />
+      <edge source="code:F-6" target="petition_type:근무처 변경/추가" id="399" weight="3" />
+      <edge source="code:F-6" target="petition_type:체류자격 부여" id="400" weight="2" />
+      <edge source="code:F-6" target="petition_type:체류자격 변경" id="401" weight="13" />
+      <edge source="code:F-6" target="petition_type:사증발급인정서" id="402" weight="3" />
+      <edge source="code:F-6" target="petition_type:체류기간 연장" id="403" weight="11" />
+      <edge source="code:D-2" target="petition_type:체류자격외 활동허가" id="404" weight="22" />
+      <edge source="code:D-2" target="document_bucket:필수서류" id="405" weight="84" />
+      <edge source="code:D-2" target="petition_type:사증발급" id="406" weight="86" />
+      <edge source="code:D-2" target="petition_type:외국인등록" id="407" weight="79" />
+      <edge source="code:D-2" target="document_bucket:공통서류" id="408" weight="31" />
+      <edge source="code:D-2" target="petition_type:체류자격 변경" id="409" weight="57" />
+      <edge source="code:D-2" target="document_bucket:기타서류" id="410" weight="40" />
+      <edge source="code:D-2" target="petition_type:체류기간 연장" id="411" weight="30" />
+      <edge source="code:D-2" target="petition_type:재입국허가" id="412" weight="9" />
+      <edge source="code:D-2" target="petition_type:사증발급인정서" id="413" weight="61" />
+      <edge source="code:D-2" target="petition_type:초청" id="414" weight="43" />
+      <edge source="code:D-2" target="petition_type:근무처 변경/추가" id="415" weight="86" />
+      <edge source="code:D-2-1D" target="petition_type:외국인등록" id="416" weight="2" />
+      <edge source="code:D-2-5" target="petition_type:외국인등록" id="417" weight="1" />
+      <edge source="code:D-2-5" target="petition_type:체류기간 연장" id="418" weight="3" />
+      <edge source="code:D-2-5" target="petition_type:초청" id="419" weight="1" />
+      <edge source="code:D-2-5" target="document_bucket:기타서류" id="420" weight="1" />
+      <edge source="subsection_type:신고의무" target="item_type:stay_status_rule" id="421" weight="4" />
+      <edge source="code:D-4-2" target="petition_type:외국인등록" id="422" weight="1" />
+      <edge source="code:D-4" target="petition_type:외국인등록" id="423" weight="18" />
+      <edge source="code:D-4" target="document_bucket:공통서류" id="424" weight="20" />
+      <edge source="code:D-4" target="document_bucket:기타서류" id="425" weight="24" />
+      <edge source="code:D-4" target="petition_type:체류자격 변경" id="426" weight="28" />
+      <edge source="code:D-4" target="document_bucket:필수서류" id="427" weight="39" />
+      <edge source="code:D-4" target="petition_type:초청" id="428" weight="36" />
+      <edge source="code:D-4" target="petition_type:체류기간 연장" id="429" weight="3" />
+      <edge source="code:D-4" target="petition_type:재입국허가" id="430" weight="4" />
+      <edge source="code:D-4" target="petition_type:체류자격외 활동허가" id="431" weight="2" />
+      <edge source="code:D-4" target="petition_type:사증발급" id="432" weight="22" />
+      <edge source="code:D-4" target="petition_type:근무처 변경/추가" id="433" weight="1" />
+      <edge source="code:D-4" target="petition_type:사증발급인정서" id="434" weight="15" />
+      <edge source="code:D-4-6" target="petition_type:초청" id="435" weight="2" />
+      <edge source="code:D-4-6" target="petition_type:체류기간 연장" id="436" weight="1" />
+      <edge source="code:D-4-6" target="document_bucket:필수서류" id="437" weight="1" />
+      <edge source="code:D-3" target="petition_type:체류자격 변경" id="438" weight="5" />
+      <edge source="code:D-3" target="petition_type:초청" id="439" weight="31" />
+      <edge source="code:D-3" target="document_bucket:필수서류" id="440" weight="30" />
+      <edge source="code:D-3" target="document_bucket:기타서류" id="441" weight="13" />
+      <edge source="code:D-3" target="petition_type:체류기간 연장" id="442" weight="9" />
+      <edge source="code:D-3" target="petition_type:체류자격외 활동허가" id="443" weight="14" />
+      <edge source="code:D-3" target="petition_type:사증발급인정서" id="444" weight="38" />
+      <edge source="code:D-3" target="petition_type:외국인등록" id="445" weight="10" />
+      <edge source="code:D-3" target="petition_type:근무처 변경/추가" id="446" weight="2" />
+      <edge source="code:D-3" target="document_bucket:공통서류" id="447" weight="7" />
+      <edge source="code:D-3" target="petition_type:사증발급" id="448" weight="3" />
+      <edge source="subsection_type:쿼터" target="item_type:quota" id="449" weight="26" />
+      <edge source="code:D-4-1" target="petition_type:체류기간 연장" id="450" weight="1" />
+      <edge source="code:D-4-1" target="petition_type:사증발급" id="451" weight="1" />
+      <edge source="code:D-4-1" target="petition_type:사증발급인정서" id="452" weight="1" />
+      <edge source="code:D-4-2K" target="petition_type:체류기간 연장" id="453" weight="1" />
+      <edge source="code:D-4-2K" target="document_bucket:필수서류" id="454" weight="2" />
+      <edge source="code:D-4-2K" target="petition_type:외국인등록" id="455" weight="1" />
+      <edge source="code:D-4-2K" target="petition_type:사증발급인정서" id="456" weight="1" />
+      <edge source="code:D-4-2K" target="petition_type:초청" id="457" weight="1" />
+      <edge source="code:D-4-2K" target="document_bucket:공통서류" id="458" weight="1" />
+      <edge source="code:D-4-3" target="petition_type:체류기간 연장" id="459" weight="1" />
+      <edge source="code:D-4-3" target="document_bucket:필수서류" id="460" weight="1" />
+      <edge source="code:D-4-3" target="petition_type:사증발급" id="461" weight="1" />
+      <edge source="code:D-4-3" target="petition_type:사증발급인정서" id="462" weight="1" />
+      <edge source="code:D-5" target="petition_type:체류자격 변경" id="463" weight="2" />
+      <edge source="code:D-5" target="petition_type:체류자격외 활동허가" id="464" weight="1" />
+      <edge source="code:D-5" target="petition_type:사증발급" id="465" weight="2" />
+      <edge source="code:D-5" target="document_bucket:공통서류" id="466" weight="1" />
+      <edge source="code:D-5" target="document_bucket:필수서류" id="467" weight="1" />
+      <edge source="code:D-5" target="document_bucket:기타서류" id="468" weight="1" />
+      <edge source="code:E-2" target="petition_type:체류자격외 활동허가" id="469" weight="12" />
+      <edge source="code:E-2" target="petition_type:외국인등록" id="470" weight="38" />
+      <edge source="code:E-2" target="document_bucket:필수서류" id="471" weight="100" />
+      <edge source="code:E-2" target="document_bucket:공통서류" id="472" weight="17" />
+      <edge source="code:E-2" target="document_bucket:기타서류" id="473" weight="43" />
+      <edge source="code:E-2" target="petition_type:초청" id="474" weight="47" />
+      <edge source="code:E-2" target="petition_type:체류자격 변경" id="475" weight="29" />
+      <edge source="code:E-2" target="petition_type:사증발급" id="476" weight="138" />
+      <edge source="code:E-2" target="petition_type:사증발급인정서" id="477" weight="23" />
+      <edge source="code:E-2" target="petition_type:체류기간 연장" id="478" weight="4" />
+      <edge source="code:E-2" target="petition_type:전자사증" id="479" weight="2" />
+      <edge source="code:E-2" target="petition_type:근무처 변경/추가" id="480" weight="49" />
+      <edge source="code:D-6" target="petition_type:체류자격외 활동허가" id="481" weight="3" />
+      <edge source="code:D-6" target="document_bucket:필수서류" id="482" weight="4" />
+      <edge source="code:D-6" target="petition_type:외국인등록" id="483" weight="2" />
+      <edge source="code:D-6" target="document_bucket:기타서류" id="484" weight="3" />
+      <edge source="code:D-6" target="petition_type:근무처 변경/추가" id="485" weight="1" />
+      <edge source="code:D-6" target="petition_type:체류자격 변경" id="486" weight="11" />
+      <edge source="code:D-6" target="document_bucket:공통서류" id="487" weight="2" />
+      <edge source="code:D-6" target="petition_type:체류기간 연장" id="488" weight="7" />
+      <edge source="code:D-8" target="petition_type:체류자격외 활동허가" id="489" weight="11" />
+      <edge source="code:D-8" target="document_bucket:기타서류" id="490" weight="40" />
+      <edge source="code:D-8" target="document_bucket:공통서류" id="491" weight="20" />
+      <edge source="code:D-8" target="document_bucket:필수서류" id="492" weight="60" />
+      <edge source="code:D-8" target="petition_type:근무처 변경/추가" id="493" weight="3" />
+      <edge source="code:D-8" target="petition_type:외국인등록" id="494" weight="30" />
+      <edge source="code:D-8" target="petition_type:체류자격 변경" id="495" weight="27" />
+      <edge source="code:D-8" target="petition_type:초청" id="496" weight="15" />
+      <edge source="code:D-8" target="petition_type:사증발급" id="497" weight="47" />
+      <edge source="code:D-8" target="petition_type:재입국허가" id="498" weight="4" />
+      <edge source="code:D-8" target="petition_type:사증발급인정서" id="499" weight="6" />
+      <edge source="code:D-7" target="petition_type:외국인등록" id="500" weight="12" />
+      <edge source="code:D-7" target="document_bucket:필수서류" id="501" weight="22" />
+      <edge source="code:D-7" target="document_bucket:기타서류" id="502" weight="13" />
+      <edge source="code:D-7" target="petition_type:체류자격 부여" id="503" weight="1" />
+      <edge source="code:D-7" target="document_bucket:공통서류" id="504" weight="11" />
+      <edge source="code:D-7" target="petition_type:체류자격 변경" id="505" weight="20" />
+      <edge source="code:D-7" target="petition_type:체류기간 연장" id="506" weight="8" />
+      <edge source="code:D-7" target="petition_type:체류자격외 활동허가" id="507" weight="1" />
+      <edge source="code:D-7" target="petition_type:초청" id="508" weight="15" />
+      <edge source="code:D-7" target="petition_type:사증발급" id="509" weight="17" />
+      <edge source="code:D-7" target="petition_type:사증발급인정서" id="510" weight="2" />
+      <edge source="code:D-8-1" target="petition_type:외국인등록" id="511" weight="1" />
+      <edge source="code:D-8-1" target="petition_type:체류자격 변경" id="512" weight="2" />
+      <edge source="code:D-8-1" target="document_bucket:필수서류" id="513" weight="1" />
+      <edge source="code:D-8-1" target="petition_type:체류기간 연장" id="514" weight="1" />
+      <edge source="code:D-8-1" target="petition_type:사증발급" id="515" weight="1" />
+      <edge source="code:D-8-1" target="petition_type:초청" id="516" weight="1" />
+      <edge source="code:D-8-2" target="petition_type:외국인등록" id="517" weight="1" />
+      <edge source="code:D-8-2" target="petition_type:사증발급" id="518" weight="1" />
+      <edge source="subsection_type:점수표" target="item_type:score_table" id="519" weight="55" />
+      <edge source="code:D-8-4" target="petition_type:체류자격 변경" id="520" weight="1" />
+      <edge source="code:D-8-4" target="petition_type:체류기간 연장" id="521" weight="1" />
+      <edge source="code:D-8-4" target="petition_type:사증발급" id="522" weight="2" />
+      <edge source="petition_type:체류자격 부여" target="subsection_type:수수료" id="523" weight="2" />
+      <edge source="petition_type:체류자격 부여" target="subsection_type:제출서류" id="524" weight="5" />
+      <edge source="petition_type:체류자격 부여" target="subsection_type:제한" id="525" weight="4" />
+      <edge source="petition_type:체류자격 부여" target="subsection_type:기타" id="526" weight="35" />
+      <edge source="petition_type:체류자격 부여" target="subsection_type:기간" id="527" weight="1" />
+      <edge source="petition_type:체류자격 부여" target="subsection_type:대상" id="528" weight="25" />
+      <edge source="petition_type:체류자격 부여" target="subsection_type:요건" id="529" weight="18" />
+      <edge source="petition_type:체류자격 부여" target="subsection_type:절차" id="530" weight="2" />
+      <edge source="petition_type:체류자격 부여" target="subsection_type:점수표" id="531" weight="2" />
+      <edge source="petition_type:체류자격 부여" target="subsection_type:예외" id="532" weight="2" />
+      <edge source="code:D-9-1" target="petition_type:체류자격 변경" id="533" weight="1" />
+      <edge source="code:D-10-1" target="petition_type:체류자격 변경" id="534" weight="5" />
+      <edge source="code:D-10-1" target="petition_type:초청" id="535" weight="11" />
+      <edge source="code:D-10-1" target="document_bucket:공통서류" id="536" weight="1" />
+      <edge source="code:D-10-1" target="petition_type:사증발급" id="537" weight="1" />
+      <edge source="code:D-10" target="petition_type:체류자격 변경" id="538" weight="43" />
+      <edge source="code:D-10" target="petition_type:초청" id="539" weight="95" />
+      <edge source="code:D-10" target="document_bucket:공통서류" id="540" weight="41" />
+      <edge source="code:D-10" target="document_bucket:필수서류" id="541" weight="73" />
+      <edge source="code:D-10" target="document_bucket:기타서류" id="542" weight="51" />
+      <edge source="code:D-10" target="petition_type:사증발급" id="543" weight="41" />
+      <edge source="code:D-10" target="petition_type:재입국허가" id="544" weight="4" />
+      <edge source="code:D-10" target="petition_type:체류자격외 활동허가" id="545" weight="1" />
+      <edge source="code:D-10" target="petition_type:근무처 변경/추가" id="546" weight="1" />
+      <edge source="code:D-10" target="petition_type:외국인등록" id="547" weight="5" />
+      <edge source="code:D-10" target="petition_type:사증발급인정서" id="548" weight="4" />
+      <edge source="code:D-10" target="petition_type:전자사증" id="549" weight="13" />
+      <edge source="code:D-10-2" target="petition_type:체류자격 변경" id="550" weight="4" />
+      <edge source="code:D-10-3" target="petition_type:체류자격 변경" id="551" weight="2" />
+      <edge source="code:D-10-3" target="petition_type:초청" id="552" weight="2" />
+      <edge source="code:D-10-T" target="petition_type:체류자격 변경" id="553" weight="1" />
+      <edge source="code:D-10-T" target="petition_type:초청" id="554" weight="1" />
+      <edge source="code:C-4-5" target="petition_type:외국인등록" id="555" weight="3" />
+      <edge source="code:C-4-5" target="document_bucket:공통서류" id="556" weight="1" />
+      <edge source="code:C-4-5" target="document_bucket:필수서류" id="557" weight="3" />
+      <edge source="code:C-4-5" target="petition_type:초청" id="558" weight="1" />
+      <edge source="code:C-4-5" target="petition_type:사증발급" id="559" weight="2" />
+      <edge source="code:E-3" target="petition_type:사증발급인정서" id="560" weight="3" />
+      <edge source="code:E-3" target="petition_type:체류자격 변경" id="561" weight="5" />
+      <edge source="code:E-3" target="petition_type:외국인등록" id="562" weight="6" />
+      <edge source="code:E-3" target="petition_type:체류기간 연장" id="563" weight="1" />
+      <edge source="code:E-3" target="document_bucket:필수서류" id="564" weight="2" />
+      <edge source="code:E-3" target="document_bucket:기타서류" id="565" weight="2" />
+      <edge source="code:E-4" target="petition_type:외국인등록" id="566" weight="5" />
+      <edge source="code:E-4" target="document_bucket:기타서류" id="567" weight="3" />
+      <edge source="code:E-4" target="petition_type:근무처 변경/추가" id="568" weight="1" />
+      <edge source="code:E-4" target="document_bucket:필수서류" id="569" weight="2" />
+      <edge source="code:E-5" target="petition_type:외국인등록" id="570" weight="4" />
+      <edge source="code:E-5" target="document_bucket:기타서류" id="571" weight="3" />
+      <edge source="code:E-5" target="petition_type:근무처 변경/추가" id="572" weight="1" />
+      <edge source="code:E-5" target="document_bucket:필수서류" id="573" weight="1" />
+      <edge source="code:E-6-1" target="petition_type:체류자격 부여" id="574" weight="1" />
+      <edge source="code:E-6-1" target="petition_type:초청" id="575" weight="1" />
+      <edge source="code:E-6-1" target="document_bucket:공통서류" id="576" weight="1" />
+      <edge source="code:E-6" target="petition_type:체류자격 변경" id="577" weight="21" />
+      <edge source="code:E-6" target="petition_type:근무처 변경/추가" id="578" weight="1" />
+      <edge source="code:E-6" target="document_bucket:필수서류" id="579" weight="15" />
+      <edge source="code:E-6" target="document_bucket:기타서류" id="580" weight="6" />
+      <edge source="code:E-6" target="petition_type:재입국허가" id="581" weight="3" />
+      <edge source="code:E-6" target="petition_type:초청" id="582" weight="27" />
+      <edge source="code:E-6" target="petition_type:사증발급" id="583" weight="9" />
+      <edge source="code:E-6" target="petition_type:외국인등록" id="584" weight="2" />
+      <edge source="code:E-6" target="petition_type:사증발급인정서" id="585" weight="3" />
+      <edge source="code:E-6" target="document_bucket:공통서류" id="586" weight="6" />
+      <edge source="code:E-6-2" target="petition_type:근무처 변경/추가" id="587" weight="1" />
+      <edge source="code:E-6-2" target="document_bucket:필수서류" id="588" weight="1" />
+      <edge source="code:E-6-2" target="petition_type:체류자격 변경" id="589" weight="1" />
+      <edge source="code:E-6-2" target="petition_type:초청" id="590" weight="1" />
+      <edge source="code:E-7-3" target="petition_type:외국인등록" id="591" weight="1" />
+      <edge source="code:E-7-3" target="petition_type:근무처 변경/추가" id="592" weight="1" />
+      <edge source="code:E-7-4" target="petition_type:외국인등록" id="593" weight="1" />
+      <edge source="code:E-7-4" target="petition_type:체류자격 변경" id="594" weight="1" />
+      <edge source="code:E-7-4" target="petition_type:근무처 변경/추가" id="595" weight="2" />
+      <edge source="code:E-7-4" target="petition_type:초청" id="596" weight="1" />
+      <edge source="code:E-7-S" target="petition_type:외국인등록" id="597" weight="1" />
+      <edge source="code:E-7-S" target="petition_type:초청" id="598" weight="1" />
+      <edge source="code:E-7-S" target="petition_type:근무처 변경/추가" id="599" weight="1" />
+      <edge source="code:E-7-S" target="petition_type:체류자격 변경" id="600" weight="1" />
+      <edge source="code:E-7-Y" target="petition_type:외국인등록" id="601" weight="1" />
+      <edge source="code:E-7-Y" target="petition_type:근무처 변경/추가" id="602" weight="2" />
+      <edge source="code:E-7-Y" target="petition_type:체류자격 변경" id="603" weight="1" />
+      <edge source="code:E-7-Y" target="petition_type:체류자격외 활동허가" id="604" weight="1" />
+      <edge source="code:E-7-Y" target="petition_type:초청" id="605" weight="1" />
+      <edge source="code:E-7" target="petition_type:외국인등록" id="606" weight="77" />
+      <edge source="code:E-7" target="petition_type:사증발급인정서" id="607" weight="23" />
+      <edge source="code:E-7" target="document_bucket:필수서류" id="608" weight="207" />
+      <edge source="code:E-7" target="petition_type:체류자격 변경" id="609" weight="133" />
+      <edge source="code:E-7" target="document_bucket:기타서류" id="610" weight="60" />
+      <edge source="code:E-7" target="petition_type:체류자격외 활동허가" id="611" weight="12" />
+      <edge source="code:E-7" target="petition_type:초청" id="612" weight="44" />
+      <edge source="code:E-7" target="document_bucket:공통서류" id="613" weight="27" />
+      <edge source="code:E-7" target="petition_type:체류기간 연장" id="614" weight="20" />
+      <edge source="code:E-7" target="petition_type:재입국허가" id="615" weight="4" />
+      <edge source="code:E-7" target="petition_type:근무처 변경/추가" id="616" weight="92" />
+      <edge source="code:E-7" target="petition_type:사증발급" id="617" weight="350" />
+      <edge source="code:E-7" target="petition_type:체류자격 부여" id="618" weight="4" />
+      <edge source="code:D-2-7" target="petition_type:초청" id="619" weight="2" />
+      <edge source="code:E-9" target="petition_type:체류자격 변경" id="620" weight="92" />
+      <edge source="code:E-9" target="document_bucket:공통서류" id="621" weight="24" />
+      <edge source="code:E-9" target="document_bucket:필수서류" id="622" weight="39" />
+      <edge source="code:E-9" target="document_bucket:기타서류" id="623" weight="23" />
+      <edge source="code:E-9" target="petition_type:체류기간 연장" id="624" weight="18" />
+      <edge source="code:E-9" target="petition_type:체류자격 부여" id="625" weight="1" />
+      <edge source="code:E-9" target="petition_type:근무처 변경/추가" id="626" weight="10" />
+      <edge source="code:E-9" target="petition_type:재입국허가" id="627" weight="15" />
+      <edge source="code:E-9" target="petition_type:외국인등록" id="628" weight="57" />
+      <edge source="code:E-9" target="petition_type:체류자격외 활동허가" id="629" weight="6" />
+      <edge source="code:E-9" target="petition_type:사증발급인정서" id="630" weight="66" />
+      <edge source="code:E-9" target="petition_type:사증발급" id="631" weight="7" />
+      <edge source="code:E-7-T" target="petition_type:근무처 변경/추가" id="632" weight="2" />
+      <edge source="code:E-7-T" target="petition_type:체류자격 변경" id="633" weight="1" />
+      <edge source="code:F-2-7" target="petition_type:체류자격 변경" id="634" weight="2" />
+      <edge source="code:F-2-7" target="petition_type:외국인등록" id="635" weight="3" />
+      <edge source="code:F-2-7" target="document_bucket:공통서류" id="636" weight="1" />
+      <edge source="code:F-2-7" target="document_bucket:필수서류" id="637" weight="2" />
+      <edge source="code:F-2-7" target="petition_type:체류기간 연장" id="638" weight="1" />
+      <edge source="code:F-2-7" target="petition_type:근무처 변경/추가" id="639" weight="1" />
+      <edge source="code:F-2-7" target="petition_type:사증발급" id="640" weight="1" />
+      <edge source="code:F-2" target="petition_type:체류자격 변경" id="641" weight="121" />
+      <edge source="code:F-2" target="petition_type:외국인등록" id="642" weight="70" />
+      <edge source="code:F-2" target="document_bucket:기타서류" id="643" weight="50" />
+      <edge source="code:F-2" target="document_bucket:공통서류" id="644" weight="37" />
+      <edge source="code:F-2" target="document_bucket:필수서류" id="645" weight="73" />
+      <edge source="code:F-2" target="petition_type:초청" id="646" weight="18" />
+      <edge source="code:F-2" target="petition_type:체류기간 연장" id="647" weight="22" />
+      <edge source="code:F-2" target="petition_type:사증발급" id="648" weight="20" />
+      <edge source="code:F-2" target="petition_type:사증발급인정서" id="649" weight="10" />
+      <edge source="code:F-2" target="petition_type:체류자격 부여" id="650" weight="24" />
+      <edge source="code:F-2" target="petition_type:근무처 변경/추가" id="651" weight="20" />
+      <edge source="code:F-2" target="petition_type:전자사증" id="652" weight="14" />
+      <edge source="code:F-5-16" target="petition_type:체류자격 변경" id="653" weight="1" />
+      <edge source="code:F-5-16" target="petition_type:체류자격 부여" id="654" weight="1" />
+      <edge source="code:F-5-16" target="petition_type:외국인등록" id="655" weight="1" />
+      <edge source="code:F-5-16" target="petition_type:근무처 변경/추가" id="656" weight="1" />
+      <edge source="code:F-5" target="petition_type:체류자격 변경" id="657" weight="201" />
+      <edge source="code:F-5" target="petition_type:사증발급" id="658" weight="50" />
+      <edge source="code:F-5" target="document_bucket:필수서류" id="659" weight="104" />
+      <edge source="code:F-5" target="petition_type:외국인등록" id="660" weight="109" />
+      <edge source="code:F-5" target="petition_type:체류자격 부여" id="661" weight="23" />
+      <edge source="code:F-5" target="petition_type:체류기간 연장" id="662" weight="31" />
+      <edge source="code:F-5" target="document_bucket:공통서류" id="663" weight="19" />
+      <edge source="code:F-5" target="document_bucket:기타서류" id="664" weight="36" />
+      <edge source="code:F-5" target="petition_type:재입국허가" id="665" weight="7" />
+      <edge source="code:F-5" target="petition_type:근무처 변경/추가" id="666" weight="37" />
+      <edge source="code:F-5" target="petition_type:체류자격외 활동허가" id="667" weight="1" />
+      <edge source="code:F-5" target="petition_type:초청" id="668" weight="18" />
+      <edge source="code:G-1" target="petition_type:체류자격 변경" id="669" weight="2" />
+      <edge source="code:G-1" target="petition_type:체류자격외 활동허가" id="670" weight="15" />
+      <edge source="code:G-1" target="document_bucket:공통서류" id="671" weight="24" />
+      <edge source="code:G-1" target="document_bucket:기타서류" id="672" weight="25" />
+      <edge source="code:G-1" target="document_bucket:필수서류" id="673" weight="13" />
+      <edge source="code:G-1" target="petition_type:외국인등록" id="674" weight="30" />
+      <edge source="code:G-1" target="petition_type:체류기간 연장" id="675" weight="2" />
+      <edge source="code:G-1" target="petition_type:사증발급인정서" id="676" weight="4" />
+      <edge source="code:G-1" target="petition_type:재입국허가" id="677" weight="5" />
+      <edge source="code:G-1" target="petition_type:사증발급" id="678" weight="1" />
+      <edge source="code:F-1" target="petition_type:외국인등록" id="679" weight="33" />
+      <edge source="code:F-1" target="petition_type:체류자격외 활동허가" id="680" weight="1" />
+      <edge source="code:F-1" target="document_bucket:공통서류" id="681" weight="39" />
+      <edge source="code:F-1" target="document_bucket:필수서류" id="682" weight="47" />
+      <edge source="code:F-1" target="petition_type:근무처 변경/추가" id="683" weight="5" />
+      <edge source="code:F-1" target="document_bucket:기타서류" id="684" weight="35" />
+      <edge source="code:F-1" target="petition_type:체류자격 부여" id="685" weight="2" />
+      <edge source="code:F-1" target="petition_type:체류자격 변경" id="686" weight="30" />
+      <edge source="code:F-1" target="petition_type:사증발급" id="687" weight="34" />
+      <edge source="code:F-1" target="petition_type:체류기간 연장" id="688" weight="10" />
+      <edge source="code:F-1" target="petition_type:재입국허가" id="689" weight="4" />
+      <edge source="code:F-1" target="petition_type:사증발급인정서" id="690" weight="2" />
+      <edge source="code:F-1" target="petition_type:초청" id="691" weight="12" />
+      <edge source="code:F-1" target="petition_type:전자사증" id="692" weight="1" />
+      <edge source="code:F-1-13" target="petition_type:체류자격 변경" id="693" weight="2" />
+      <edge source="code:F-1-16" target="petition_type:체류자격 변경" id="694" weight="1" />
+      <edge source="code:F-1-28" target="petition_type:외국인등록" id="695" weight="1" />
+      <edge source="code:F-1-51" target="petition_type:체류자격 변경" id="696" weight="1" />
+      <edge source="code:F-1-51" target="petition_type:사증발급" id="697" weight="1" />
+      <edge source="code:F-1-52" target="petition_type:체류자격 변경" id="698" weight="1" />
+      <edge source="code:F-1-52" target="petition_type:체류기간 연장" id="699" weight="1" />
+      <edge source="code:F-1-D" target="petition_type:외국인등록" id="700" weight="1" />
+      <edge source="code:F-2-2" target="petition_type:체류자격 변경" id="701" weight="1" />
+      <edge source="code:F-2-2" target="petition_type:외국인등록" id="702" weight="1" />
+      <edge source="code:F-2-2" target="document_bucket:공통서류" id="703" weight="1" />
+      <edge source="code:F-2-2" target="document_bucket:기타서류" id="704" weight="1" />
+      <edge source="code:F-2-2" target="petition_type:사증발급" id="705" weight="2" />
+      <edge source="code:F-1-1" target="petition_type:사증발급" id="706" weight="1" />
+      <edge source="code:F-1-1" target="document_bucket:공통서류" id="707" weight="1" />
+      <edge source="code:F-1-1" target="document_bucket:필수서류" id="708" weight="1" />
+      <edge source="code:F-2-8" target="petition_type:사증발급인정서" id="709" weight="1" />
+      <edge source="code:F-2-8" target="petition_type:체류자격 변경" id="710" weight="1" />
+      <edge source="code:F-2-12" target="petition_type:체류자격 변경" id="711" weight="1" />
+      <edge source="code:F-2-12" target="petition_type:체류기간 연장" id="712" weight="1" />
+      <edge source="code:F-2-16" target="petition_type:체류자격 변경" id="713" weight="1" />
+      <edge source="code:F-2-99" target="petition_type:체류자격 변경" id="714" weight="3" />
+      <edge source="code:F-2-99" target="document_bucket:공통서류" id="715" weight="2" />
+      <edge source="code:F-2-99" target="petition_type:체류자격 부여" id="716" weight="1" />
+      <edge source="code:F-2-99" target="petition_type:외국인등록" id="717" weight="1" />
+      <edge source="code:F-2-99" target="document_bucket:필수서류" id="718" weight="1" />
+      <edge source="code:F-2-99" target="document_bucket:기타서류" id="719" weight="1" />
+      <edge source="code:F-6-2" target="petition_type:체류자격 변경" id="720" weight="2" />
+      <edge source="code:F-6-2" target="petition_type:외국인등록" id="721" weight="1" />
+      <edge source="code:F-6-2" target="petition_type:사증발급" id="722" weight="2" />
+      <edge source="code:F-2-4" target="petition_type:외국인등록" id="723" weight="1" />
+      <edge source="code:F-2-4" target="document_bucket:공통서류" id="724" weight="1" />
+      <edge source="code:F-2-4" target="document_bucket:기타서류" id="725" weight="1" />
+      <edge source="code:F-2-5" target="petition_type:외국인등록" id="726" weight="1" />
+      <edge source="code:F-2-5" target="document_bucket:공통서류" id="727" weight="1" />
+      <edge source="code:F-2-5" target="document_bucket:기타서류" id="728" weight="1" />
+      <edge source="code:F-2-71" target="petition_type:체류기간 연장" id="729" weight="1" />
+      <edge source="code:F-2-71" target="petition_type:사증발급인정서" id="730" weight="4" />
+      <edge source="code:H-2" target="petition_type:체류자격 변경" id="731" weight="159" />
+      <edge source="code:H-2" target="document_bucket:공통서류" id="732" weight="12" />
+      <edge source="code:H-2" target="document_bucket:기타서류" id="733" weight="10" />
+      <edge source="code:H-2" target="petition_type:체류기간 연장" id="734" weight="5" />
+      <edge source="code:H-2" target="document_bucket:필수서류" id="735" weight="17" />
+      <edge source="code:H-2" target="petition_type:재입국허가" id="736" weight="10" />
+      <edge source="code:H-2" target="petition_type:외국인등록" id="737" weight="14" />
+      <edge source="code:H-2" target="petition_type:사증발급" id="738" weight="16" />
+      <edge source="code:H-2" target="petition_type:근무처 변경/추가" id="739" weight="2" />
+      <edge source="code:H-2" target="petition_type:초청" id="740" weight="2" />
+      <edge source="code:F-5-1" target="petition_type:체류자격 부여" id="741" weight="1" />
+      <edge source="code:F-5-1" target="petition_type:체류자격 변경" id="742" weight="1" />
+      <edge source="code:F-5-1" target="petition_type:사증발급" id="743" weight="1" />
+      <edge source="code:F-5-1" target="petition_type:외국인등록" id="744" weight="1" />
+      <edge source="code:F-5-1" target="petition_type:재입국허가" id="745" weight="1" />
+      <edge source="code:F-5-4" target="petition_type:체류자격 부여" id="746" weight="1" />
+      <edge source="code:F-5-4" target="petition_type:외국인등록" id="747" weight="1" />
+      <edge source="code:F-5-5" target="petition_type:체류자격 부여" id="748" weight="1" />
+      <edge source="code:F-5-5" target="petition_type:외국인등록" id="749" weight="3" />
+      <edge source="code:F-5-5" target="document_bucket:필수서류" id="750" weight="1" />
+      <edge source="code:F-5-6" target="petition_type:체류자격 부여" id="751" weight="1" />
+      <edge source="code:F-5-7" target="petition_type:체류자격 부여" id="752" weight="1" />
+      <edge source="code:F-5-7" target="petition_type:외국인등록" id="753" weight="1" />
+      <edge source="code:F-5-7" target="petition_type:체류기간 연장" id="754" weight="1" />
+      <edge source="code:F-5-9" target="petition_type:체류자격 부여" id="755" weight="1" />
+      <edge source="code:F-5-9" target="petition_type:외국인등록" id="756" weight="2" />
+      <edge source="code:F-5-10" target="petition_type:체류자격 부여" id="757" weight="1" />
+      <edge source="code:F-5-10" target="petition_type:외국인등록" id="758" weight="1" />
+      <edge source="code:F-5-10" target="petition_type:근무처 변경/추가" id="759" weight="1" />
+      <edge source="code:F-5-11" target="petition_type:체류자격 부여" id="760" weight="1" />
+      <edge source="code:F-5-11" target="petition_type:외국인등록" id="761" weight="1" />
+      <edge source="code:F-5-11" target="petition_type:근무처 변경/추가" id="762" weight="1" />
+      <edge source="code:F-5-12" target="petition_type:체류자격 부여" id="763" weight="1" />
+      <edge source="code:F-5-12" target="petition_type:근무처 변경/추가" id="764" weight="1" />
+      <edge source="code:F-5-13" target="petition_type:체류자격 부여" id="765" weight="1" />
+      <edge source="code:F-5-13" target="petition_type:외국인등록" id="766" weight="1" />
+      <edge source="code:F-5-13" target="petition_type:근무처 변경/추가" id="767" weight="1" />
+      <edge source="code:F-5-14" target="petition_type:체류자격 부여" id="768" weight="1" />
+      <edge source="code:F-5-15" target="petition_type:체류자격 부여" id="769" weight="1" />
+      <edge source="code:F-5-15" target="petition_type:외국인등록" id="770" weight="1" />
+      <edge source="code:F-5-17" target="petition_type:체류자격 부여" id="771" weight="1" />
+      <edge source="code:F-5-17" target="petition_type:외국인등록" id="772" weight="1" />
+      <edge source="code:F-5-17" target="petition_type:근무처 변경/추가" id="773" weight="1" />
+      <edge source="code:F-5-18" target="petition_type:체류자격 부여" id="774" weight="1" />
+      <edge source="code:F-5-18" target="petition_type:외국인등록" id="775" weight="1" />
+      <edge source="code:F-5-19" target="petition_type:체류자격 부여" id="776" weight="1" />
+      <edge source="code:F-5-19" target="petition_type:외국인등록" id="777" weight="1" />
+      <edge source="code:F-5-20" target="petition_type:체류자격 부여" id="778" weight="2" />
+      <edge source="code:F-5-21" target="petition_type:체류자격 부여" id="779" weight="2" />
+      <edge source="code:F-5-21" target="petition_type:외국인등록" id="780" weight="1" />
+      <edge source="code:F-5-22" target="petition_type:체류자격 부여" id="781" weight="1" />
+      <edge source="code:F-5-22" target="petition_type:외국인등록" id="782" weight="1" />
+      <edge source="code:F-5-23" target="petition_type:체류자격 부여" id="783" weight="1" />
+      <edge source="code:F-5-23" target="petition_type:외국인등록" id="784" weight="1" />
+      <edge source="code:F-5-24" target="petition_type:체류자격 부여" id="785" weight="1" />
+      <edge source="code:F-5-24" target="petition_type:외국인등록" id="786" weight="1" />
+      <edge source="code:F-5-25" target="petition_type:체류자격 부여" id="787" weight="1" />
+      <edge source="code:F-5-25" target="petition_type:외국인등록" id="788" weight="2" />
+      <edge source="code:F-5-26" target="petition_type:체류자격 부여" id="789" weight="1" />
+      <edge source="code:F-5-26" target="petition_type:외국인등록" id="790" weight="2" />
+      <edge source="code:F-5-27" target="petition_type:체류자격 부여" id="791" weight="1" />
+      <edge source="code:F-5-8" target="petition_type:사증발급" id="792" weight="1" />
+      <edge source="code:F-5-8" target="petition_type:외국인등록" id="793" weight="1" />
+      <edge source="code:F-5-2" target="petition_type:재입국허가" id="794" weight="1" />
+      <edge source="code:F-5-2" target="document_bucket:필수서류" id="795" weight="1" />
+      <edge source="code:F-6-1" target="petition_type:사증발급" id="796" weight="2" />
+      <edge source="code:F-6-1" target="document_bucket:필수서류" id="797" weight="1" />
+      <edge source="code:F-6-1" target="petition_type:체류기간 연장" id="798" weight="2" />
+      <edge source="code:F-6-1" target="petition_type:외국인등록" id="799" weight="2" />
+      <edge source="code:F-6-3" target="petition_type:외국인등록" id="800" weight="1" />
+      <edge source="code:F-6-3" target="petition_type:체류기간 연장" id="801" weight="1" />
+      <edge source="code:F-6-3" target="petition_type:사증발급" id="802" weight="1" />
+      <edge source="code:G-1-5" target="petition_type:체류자격외 활동허가" id="803" weight="3" />
+      <edge source="code:G-1-12" target="petition_type:체류자격외 활동허가" id="804" weight="1" />
+      <edge source="code:G-1-1" target="petition_type:체류자격외 활동허가" id="805" weight="1" />
+      <edge source="code:G-1-2" target="petition_type:체류자격외 활동허가" id="806" weight="1" />
+      <edge source="code:G-1-9" target="petition_type:외국인등록" id="807" weight="1" />
+      <edge source="code:G-1-10" target="petition_type:외국인등록" id="808" weight="1" />
+      <edge source="code:G-1-10" target="petition_type:사증발급" id="809" weight="1" />
+      <edge source="code:G-1-11" target="petition_type:외국인등록" id="810" weight="1" />
+      <edge source="code:G-1-4" target="petition_type:체류기간 연장" id="811" weight="1" />
+      <edge source="code:H-1" target="petition_type:재입국허가" id="812" weight="6" />
+      <edge source="code:C-3-8" target="petition_type:외국인등록" id="813" weight="1" />
+      <edge source="code:C-3-8" target="petition_type:사증발급" id="814" weight="2" />
+      <edge source="code:C-3-8" target="petition_type:초청" id="815" weight="1" />
+      <edge source="code:F-4-41" target="petition_type:체류자격 변경" id="816" weight="2" />
+      <edge source="code:F-4-41" target="document_bucket:필수서류" id="817" weight="2" />
+      <edge source="code:F-4-42" target="petition_type:체류자격 변경" id="818" weight="2" />
+      <edge source="code:F-4-42" target="document_bucket:공통서류" id="819" weight="2" />
+      <edge source="code:F-4-42" target="document_bucket:필수서류" id="820" weight="2" />
+      <edge source="code:F-4-R" target="petition_type:체류자격 변경" id="821" weight="3" />
+      <edge source="code:F-4-R" target="petition_type:외국인등록" id="822" weight="1" />
+      <edge source="code:F-4-R" target="document_bucket:필수서류" id="823" weight="1" />
+      <edge source="code:F-3" target="petition_type:사증발급" id="824" weight="9" />
+      <edge source="code:F-3" target="petition_type:외국인등록" id="825" weight="5" />
+      <edge source="code:F-3" target="document_bucket:공통서류" id="826" weight="2" />
+      <edge source="code:F-3" target="document_bucket:기타서류" id="827" weight="6" />
+      <edge source="code:F-3" target="document_bucket:필수서류" id="828" weight="6" />
+      <edge source="code:F-3" target="petition_type:체류자격 변경" id="829" weight="17" />
+      <edge source="code:F-2-R" target="petition_type:체류기간 연장" id="830" weight="2" />
+      <edge source="code:F-2-R" target="petition_type:초청" id="831" weight="1" />
+      <edge source="code:F-2-R" target="petition_type:외국인등록" id="832" weight="3" />
+      <edge source="code:F-2-R" target="document_bucket:공통서류" id="833" weight="1" />
+      <edge source="code:F-2-R" target="document_bucket:기타서류" id="834" weight="1" />
+      <edge source="code:F-2-R" target="document_bucket:필수서류" id="835" weight="2" />
+      <edge source="code:F-2-R" target="petition_type:체류자격 변경" id="836" weight="2" />
+      <edge source="code:E-7-4R" target="petition_type:외국인등록" id="837" weight="2" />
+      <edge source="code:E-7-4R" target="petition_type:초청" id="838" weight="1" />
+      <edge source="code:E-7-4R" target="petition_type:체류자격 변경" id="839" weight="1" />
+      <edge source="code:E-7-4R" target="document_bucket:공통서류" id="840" weight="1" />
+      <edge source="code:E-7-4R" target="document_bucket:기타서류" id="841" weight="1" />
+      <edge source="code:F-1-11" target="petition_type:체류자격 변경" id="842" weight="1" />
+      <edge source="code:F-1-11" target="document_bucket:기타서류" id="843" weight="1" />
+      <edge source="petition_type:전자사증" target="subsection_type:기타" id="844" weight="9" />
+      <edge source="petition_type:전자사증" target="subsection_type:제출서류" id="845" weight="15" />
+      <edge source="petition_type:전자사증" target="subsection_type:요건" id="846" weight="2" />
+      <edge source="petition_type:전자사증" target="subsection_type:대상" id="847" weight="8" />
+      <edge source="petition_type:전자사증" target="subsection_type:제한" id="848" weight="3" />
+      <edge source="petition_type:전자사증" target="subsection_type:기간" id="849" weight="2" />
+      <edge source="petition_type:전자사증" target="subsection_type:절차" id="850" weight="5" />
+      <edge source="petition_type:전자사증" target="subsection_type:추천/승인" id="851" weight="1" />
+      <edge source="petition_type:전자사증" target="subsection_type:수수료" id="852" weight="2" />
+      <edge source="code:F-5-S1" target="petition_type:외국인등록" id="853" weight="1" />
+      <edge source="code:F-5-S1" target="petition_type:사증발급" id="854" weight="1" />
+      <edge source="code:F-5-S2" target="petition_type:외국인등록" id="855" weight="1" />
+      <edge source="code:F-5-S2" target="petition_type:체류기간 연장" id="856" weight="1" />
+      <edge source="manual:사증민원" target="code:공통/무코드" id="857" weight="17" />
+      <edge source="manual:사증민원" target="code:A-1" id="858" weight="24" />
+      <edge source="manual:사증민원" target="code:A-2" id="859" weight="10" />
+      <edge source="manual:사증민원" target="code:A-3" id="860" weight="1" />
+      <edge source="manual:사증민원" target="code:B-1" id="861" weight="110" />
+      <edge source="manual:사증민원" target="code:B-2" id="862" weight="1" />
+      <edge source="manual:사증민원" target="code:C-1" id="863" weight="1" />
+      <edge source="manual:사증민원" target="code:C-3" id="864" weight="186" />
+      <edge source="manual:사증민원" target="code:C-4" id="865" weight="35" />
+      <edge source="manual:사증민원" target="code:D-1" id="866" weight="4" />
+      <edge source="manual:사증민원" target="code:D-2" id="867" weight="45" />
+      <edge source="manual:사증민원" target="code:D-3" id="868" weight="60" />
+      <edge source="manual:사증민원" target="code:D-4" id="869" weight="69" />
+      <edge source="manual:사증민원" target="code:C-3-9" id="870" weight="1" />
+      <edge source="manual:사증민원" target="code:C-3-10" id="871" weight="1" />
+      <edge source="manual:사증민원" target="code:C-3-2" id="872" weight="1" />
+      <edge source="manual:사증민원" target="code:C-3-11" id="873" weight="1" />
+      <edge source="manual:사증민원" target="code:C-3-1" id="874" weight="7" />
+      <edge source="manual:사증민원" target="code:C-3-4" id="875" weight="1" />
+      <edge source="manual:사증민원" target="code:G-1-10" id="876" weight="1" />
+      <edge source="manual:사증민원" target="code:G-1" id="877" weight="4" />
+      <edge source="manual:사증민원" target="code:C-3-6" id="878" weight="1" />
+      <edge source="manual:사증민원" target="code:E-8" id="879" weight="43" />
+      <edge source="manual:사증민원" target="code:E-6" id="880" weight="32" />
+      <edge source="manual:사증민원" target="code:E-1" id="881" weight="53" />
+      <edge source="manual:사증민원" target="code:C-4-5" id="882" weight="3" />
+      <edge source="manual:사증민원" target="code:C-4-14" id="883" weight="1" />
+      <edge source="manual:사증민원" target="code:D-4-1" id="884" weight="2" />
+      <edge source="manual:사증민원" target="code:D-2-1" id="885" weight="3" />
+      <edge source="manual:사증민원" target="code:D-2-8" id="886" weight="2" />
+      <edge source="manual:사증민원" target="code:D-2-6" id="887" weight="2" />
+      <edge source="manual:사증민원" target="code:D-2-5" id="888" weight="1" />
+      <edge source="manual:사증민원" target="code:D-4-3" id="889" weight="2" />
+      <edge source="manual:사증민원" target="code:D-4-2K" id="890" weight="2" />
+      <edge source="manual:사증민원" target="code:D-4-5" id="891" weight="1" />
+      <edge source="manual:사증민원" target="code:D-4-6" id="892" weight="1" />
+      <edge source="manual:사증민원" target="code:D-7" id="893" weight="34" />
+      <edge source="manual:사증민원" target="code:D-8" id="894" weight="71" />
+      <edge source="manual:사증민원" target="code:D-8-1" id="895" weight="2" />
+      <edge source="manual:사증민원" target="code:D-8-2" id="896" weight="1" />
+      <edge source="manual:사증민원" target="code:D-8-3" id="897" weight="2" />
+      <edge source="manual:사증민원" target="code:D-8-4" id="898" weight="2" />
+      <edge source="manual:사증민원" target="code:D-8-4S" id="899" weight="1" />
+      <edge source="manual:사증민원" target="code:D-9" id="900" weight="25" />
+      <edge source="manual:사증민원" target="code:D-10-1" id="901" weight="7" />
+      <edge source="manual:사증민원" target="code:D-10" id="902" weight="101" />
+      <edge source="manual:사증민원" target="code:D-10-2" id="903" weight="2" />
+      <edge source="manual:사증민원" target="code:E-2" id="904" weight="293" />
+      <edge source="manual:사증민원" target="code:E-2-1" id="905" weight="1" />
+      <edge source="manual:사증민원" target="code:C-3-3" id="906" weight="2" />
+      <edge source="manual:사증민원" target="code:E-6-1" id="907" weight="1" />
+      <edge source="manual:사증민원" target="code:E-6-2" id="908" weight="1" />
+      <edge source="manual:사증민원" target="code:E-6-3" id="909" weight="1" />
+      <edge source="manual:사증민원" target="code:E-7-4" id="910" weight="2" />
+      <edge source="manual:사증민원" target="code:E-7-S" id="911" weight="3" />
+      <edge source="manual:사증민원" target="code:E-7-Y" id="912" weight="2" />
+      <edge source="manual:사증민원" target="code:E-7" id="913" weight="270" />
+      <edge source="manual:사증민원" target="code:E-7-1" id="914" weight="1" />
+      <edge source="manual:사증민원" target="code:E-7-2" id="915" weight="1" />
+      <edge source="manual:사증민원" target="code:E-7-3" id="916" weight="1" />
+      <edge source="manual:사증민원" target="code:E-7-T" id="917" weight="1" />
+      <edge source="manual:사증민원" target="code:F-2" id="918" weight="32" />
+      <edge source="manual:사증민원" target="code:F-2-7" id="919" weight="2" />
+      <edge source="manual:사증민원" target="code:E-8-2" id="920" weight="1" />
+      <edge source="manual:사증민원" target="code:E-8-4" id="921" weight="1" />
+      <edge source="manual:사증민원" target="code:E-8-5" id="922" weight="2" />
+      <edge source="manual:사증민원" target="code:E-8-6" id="923" weight="2" />
+      <edge source="manual:사증민원" target="code:E-9" id="924" weight="72" />
+      <edge source="manual:사증민원" target="code:E-10-1" id="925" weight="2" />
+      <edge source="manual:사증민원" target="code:E-10-2" id="926" weight="2" />
+      <edge source="manual:사증민원" target="code:E-10-3" id="927" weight="2" />
+      <edge source="manual:사증민원" target="code:E-10" id="928" weight="11" />
+      <edge source="manual:사증민원" target="code:F-1-13" id="929" weight="1" />
+      <edge source="manual:사증민원" target="code:F-1" id="930" weight="43" />
+      <edge source="manual:사증민원" target="code:F-1-21" id="931" weight="1" />
+      <edge source="manual:사증민원" target="code:F-1-22" id="932" weight="2" />
+      <edge source="manual:사증민원" target="code:F-1-5" id="933" weight="3" />
+      <edge source="manual:사증민원" target="code:F-1-51" id="934" weight="1" />
+      <edge source="manual:사증민원" target="code:F-1-15" id="935" weight="1" />
+      <edge source="manual:사증민원" target="code:F-5" id="936" weight="182" />
+      <edge source="manual:사증민원" target="code:F-2-2" id="937" weight="2" />
+      <edge source="manual:사증민원" target="code:F-1-12" id="938" weight="1" />
+      <edge source="manual:사증민원" target="code:D-5" id="939" weight="2" />
+      <edge source="manual:사증민원" target="code:F-4" id="940" weight="147" />
+      <edge source="manual:사증민원" target="code:H-2" id="941" weight="97" />
+      <edge source="manual:사증민원" target="code:F-6" id="942" weight="108" />
+      <edge source="manual:사증민원" target="code:F-6-1" id="943" weight="1" />
+      <edge source="manual:사증민원" target="code:F-6-2" id="944" weight="2" />
+      <edge source="manual:사증민원" target="code:F-6-3" id="945" weight="1" />
+      <edge source="manual:사증민원" target="code:D-3-1" id="946" weight="1" />
+      <edge source="manual:사증민원" target="code:D-3-11" id="947" weight="1" />
+      <edge source="manual:사증민원" target="code:D-3-12" id="948" weight="1" />
+      <edge source="manual:사증민원" target="code:D-3-13" id="949" weight="1" />
+      <edge source="manual:사증민원" target="code:C-3-8" id="950" weight="2" />
+      <edge source="manual:사증민원" target="code:F-4-41" id="951" weight="1" />
+      <edge source="manual:사증민원" target="code:F-4-42" id="952" weight="1" />
+      <edge source="manual:사증민원" target="code:F-4-R" id="953" weight="1" />
+      <edge source="manual:사증민원" target="code:F-5-7" id="954" weight="1" />
+      <edge source="manual:사증민원" target="code:F-3" id="955" weight="15" />
+      <edge source="manual:사증민원" target="code:F-5-T" id="956" weight="1" />
+      <edge source="manual:사증민원" target="code:F-5-S1" id="957" weight="1" />
+      <edge source="manual:사증민원" target="code:F-2-71" id="958" weight="2" />
+      <edge source="manual:사증민원" target="code:F-5-S2" id="959" weight="1" />
+      <edge source="code:B-2" target="petition_type:사증발급" id="960" weight="1" />
+      <edge source="code:C-1" target="petition_type:사증발급" id="961" weight="1" />
+      <edge source="code:C-3-11" target="petition_type:사증발급" id="962" weight="1" />
+      <edge source="code:E-8" target="petition_type:사증발급" id="963" weight="26" />
+      <edge source="code:E-8" target="petition_type:체류자격 부여" id="964" weight="2" />
+      <edge source="code:E-8" target="petition_type:사증발급인정서" id="965" weight="1" />
+      <edge source="code:E-8" target="petition_type:초청" id="966" weight="14" />
+      <edge source="code:E-8" target="document_bucket:공통서류" id="967" weight="2" />
+      <edge source="code:E-8" target="document_bucket:필수서류" id="968" weight="3" />
+      <edge source="code:E-8" target="document_bucket:기타서류" id="969" weight="1" />
+      <edge source="code:C-4-14" target="petition_type:사증발급인정서" id="970" weight="1" />
+      <edge source="code:D-2-1" target="petition_type:사증발급" id="971" weight="3" />
+      <edge source="code:D-2-1" target="document_bucket:필수서류" id="972" weight="1" />
+      <edge source="code:D-2-8" target="petition_type:사증발급" id="973" weight="2" />
+      <edge source="code:D-2-8" target="document_bucket:필수서류" id="974" weight="1" />
+      <edge source="code:D-2-6" target="petition_type:사증발급" id="975" weight="1" />
+      <edge source="code:D-2-6" target="petition_type:초청" id="976" weight="1" />
+      <edge source="code:D-2-6" target="document_bucket:필수서류" id="977" weight="1" />
+      <edge source="code:D-2-6" target="document_bucket:기타서류" id="978" weight="1" />
+      <edge source="code:D-4-5" target="petition_type:사증발급인정서" id="979" weight="1" />
+      <edge source="code:D-4-5" target="document_bucket:필수서류" id="980" weight="1" />
+      <edge source="code:D-8-3" target="petition_type:사증발급" id="981" weight="1" />
+      <edge source="code:D-8-3" target="petition_type:초청" id="982" weight="1" />
+      <edge source="code:D-8-4S" target="petition_type:사증발급" id="983" weight="1" />
+      <edge source="code:E-2-1" target="petition_type:사증발급인정서" id="984" weight="1" />
+      <edge source="code:E-6-3" target="petition_type:초청" id="985" weight="1" />
+      <edge source="code:E-7-1" target="petition_type:근무처 변경/추가" id="986" weight="1" />
+      <edge source="code:E-7-2" target="petition_type:근무처 변경/추가" id="987" weight="1" />
+      <edge source="code:E-8-2" target="petition_type:체류자격 부여" id="988" weight="1" />
+      <edge source="code:E-8-4" target="petition_type:체류자격 부여" id="989" weight="1" />
+      <edge source="code:E-8-5" target="petition_type:체류자격 부여" id="990" weight="1" />
+      <edge source="code:E-8-5" target="petition_type:사증발급인정서" id="991" weight="1" />
+      <edge source="code:E-8-6" target="petition_type:체류자격 부여" id="992" weight="1" />
+      <edge source="code:E-8-6" target="petition_type:사증발급인정서" id="993" weight="1" />
+      <edge source="code:E-10-1" target="petition_type:사증발급인정서" id="994" weight="1" />
+      <edge source="code:E-10-1" target="petition_type:사증발급" id="995" weight="1" />
+      <edge source="code:E-10-1" target="document_bucket:필수서류" id="996" weight="1" />
+      <edge source="code:E-10-2" target="petition_type:사증발급인정서" id="997" weight="1" />
+      <edge source="code:E-10-2" target="petition_type:사증발급" id="998" weight="1" />
+      <edge source="code:E-10-2" target="document_bucket:필수서류" id="999" weight="1" />
+      <edge source="code:E-10-3" target="petition_type:사증발급인정서" id="1000" weight="1" />
+      <edge source="code:E-10-3" target="petition_type:사증발급" id="1001" weight="1" />
+      <edge source="code:E-10-3" target="document_bucket:필수서류" id="1002" weight="1" />
+      <edge source="code:E-10" target="petition_type:사증발급인정서" id="1003" weight="6" />
+      <edge source="code:E-10" target="document_bucket:필수서류" id="1004" weight="7" />
+      <edge source="code:E-10" target="petition_type:사증발급" id="1005" weight="3" />
+      <edge source="code:E-10" target="petition_type:초청" id="1006" weight="1" />
+      <edge source="code:E-10" target="document_bucket:공통서류" id="1007" weight="1" />
+      <edge source="code:E-10" target="petition_type:체류자격 변경" id="1008" weight="1" />
+      <edge source="code:F-1-21" target="petition_type:사증발급인정서" id="1009" weight="1" />
+      <edge source="code:F-1-22" target="petition_type:초청" id="1010" weight="2" />
+      <edge source="code:F-1-5" target="petition_type:초청" id="1011" weight="1" />
+      <edge source="code:F-1-5" target="petition_type:사증발급" id="1012" weight="2" />
+      <edge source="code:F-1-15" target="petition_type:초청" id="1013" weight="1" />
+      <edge source="code:F-1-12" target="petition_type:사증발급인정서" id="1014" weight="1" />
+      <edge source="code:D-3-1" target="petition_type:사증발급인정서" id="1015" weight="1" />
+      <edge source="code:D-3-11" target="petition_type:사증발급인정서" id="1016" weight="1" />
+      <edge source="code:D-3-12" target="petition_type:사증발급인정서" id="1017" weight="1" />
+      <edge source="code:D-3-13" target="petition_type:사증발급인정서" id="1018" weight="1" />
+      <edge source="code:F-5-T" target="petition_type:체류자격 변경" id="1019" weight="1" />
+    </edges>
+  </graph>
+</gexf>

@@ -2,9 +2,9 @@
 
 ## Objective
 
-Create final cleaned semantic CSVs from the parsed Korean immigration manuals.
-The output is no longer a review dataset. It is the cleaned dataset used as the
-next source for downstream RAG preprocessing.
+Create final cleaned semantic CSVs and chatbot-ready CSVs from the parsed Korean
+immigration manuals. The output is no longer a review dataset. It is the cleaned
+dataset used as the next source for downstream RAG/chatbot preprocessing.
 
 In plain terms: this pipeline does not preserve the PDF's page shape. It keeps
 the administrative meaning. A paragraph, table row, or heading is kept only when
@@ -13,10 +13,16 @@ what restrictions apply, what fees exist, or how a visa/stay petition works.
 
 ## Output Files
 
-Only these processed files should remain:
+Semantic clean CSVs:
 
 - `data/processed/stay_manual_semantic_clean.csv`
 - `data/processed/visa_manual_semantic_clean.csv`
+
+Chatbot-ready CSVs:
+
+- `data/processed/stay_manual_chatbot_ready.csv`
+- `data/processed/visa_manual_chatbot_ready.csv`
+- `data/processed/chatbot_intent_routes.csv`
 
 ## Method
 
@@ -28,11 +34,14 @@ Only these processed files should remain:
 6. It removes blank forms and broken table fragments that do not carry useful standalone meaning.
 7. It classifies rows into clean administrative fields such as 대상, 요건, 제출서류, 절차, 제한, 예외, 수수료, 점수표, 쿼터.
 8. It writes one final semantic CSV per PDF.
+9. Run `scripts/build_chatbot_ready_manual_csvs.py`.
+10. It adds user-situation tags, natural-language intent keywords, follow-up question hints, routing hints, and search text.
 
 ## Rebuild Command
 
 ```bash
 .venv/bin/python scripts/build_semantic_manual_csvs.py
+.venv/bin/python scripts/build_chatbot_ready_manual_csvs.py
 ```
 
 ## Quality Review Command
@@ -55,4 +64,4 @@ Only these processed files should remain:
 ## Cleanup Rule
 
 Do not keep old review/debug CSVs in `data/processed/`. The processed directory
-should contain only `.gitkeep` and the two final semantic CSVs.
+should contain only `.gitkeep`, semantic clean CSVs, and chatbot-ready CSVs.

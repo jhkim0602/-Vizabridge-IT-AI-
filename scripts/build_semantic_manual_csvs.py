@@ -212,6 +212,14 @@ FORM_TITLE_NOISE_MARKERS = [
     "검 사 내 용",
 ]
 
+FORM_ATTACHMENT_NOISE_MARKERS = [
+    "ROWSPANCONTINUE",
+    "근로계약서 견본",
+    "Labor Contract(Sample)",
+    "Employment Permit",
+    "Payment methods",
+]
+
 SHORT_TABLE_FRAGMENT_TITLES = {
     "구분",
     "구 분",
@@ -227,7 +235,7 @@ SHORT_TABLE_FRAGMENT_TITLES = {
 # broader requirement/default rules.
 SUBSECTION_RULES = [
     ("common_documents", "제출서류", ["공통서류", "공통 제출서류"]),
-    ("mandatory_documents", "제출서류", ["제출서류", "제출 서류", "필수서류", "첨부서류", "구비서류", "신청서류"]),
+    ("mandatory_documents", "제출서류", ["제출서류", "제출 서류", "필수서류", "첨부서류", "구비서류", "신청서류", "사증발급신청서", "사증발급인정신청서", "여권사본", "표준규격사진"]),
     ("eligibility", "대상", ["해당자", "신청대상", "신청 대상", "적용대상", "대상자", "발급대상", "발급 대상", "대상"]),
     ("requirements", "요건", ["기본요건", "허가요건", "자격요건", "요건", "심사기준", "기준"]),
     ("procedure", "절차", ["신청기관", "신청 장소", "발급절차", "신청절차", "절차", "접수", "하이코리아"]),
@@ -241,12 +249,57 @@ SUBSECTION_RULES = [
     ("recommendation_or_approval", "추천/승인", ["고용추천서", "추천서", "추천기관", "관계기관", "승인"]),
 ]
 
+DOCUMENT_WORDS = [
+    "신청서",
+    "여권",
+    "사진",
+    "수수료",
+    "증명서",
+    "등본",
+    "계약서",
+    "등록증",
+    "허가증",
+    "면허증",
+    "추천서",
+    "공한",
+    "입증서류",
+    "확인서",
+    "사본",
+    "초청장",
+    "신원보증서",
+    "진술서",
+    "건강진단서",
+    "범죄경력",
+    "가족관계",
+    "사업자등록증",
+    "준비서류",
+    "첨부서류",
+    "구비서류",
+    "제출서류",
+]
+
+DOCUMENT_CONTEXT_WORDS = [
+    "제출",
+    "서류",
+    "준비서류",
+    "첨부",
+    "구비",
+    "해당자",
+    "필요시",
+    "신청 시",
+]
+
+SCORE_WORDS = ["점수", "배점", "평가항목", "총점", "득점", "가점", "감점", "만점", "점 이상"]
+QUOTA_WORDS = ["쿼터", "선발인원", "허용인원", "허용 인원", "배정인원", "명 이내", "명 이하", "인원"]
+EXCEPTION_WORDS = ["예외", "면제", "특례", "완화", "제출할 필요가 없", "제출 불요"]
+RESTRICTION_WORDS = ["제외", "제한", "불허", "금지", "불가", "억제", "결격"]
+
 PETITION_RULES = [
     ("체류자격외 활동허가", ["체류자격외 활동", "체류자격외활동", "자격외 활동"]),
     ("근무처 변경/추가", ["근무처의 변경·추가", "근무처 변경", "근무처 추가"]),
     ("체류자격 부여", ["체류자격 부여"]),
     ("체류자격 변경", ["체류자격 변경허가", "체류자격 변경", "자격변경"]),
-    ("체류기간 연장", ["체류기간 연장허가", "체류기간연장", "기간연장"]),
+    ("체류기간 연장", ["체류기간 연장허가", "체류기간 연장", "체류기간연장", "기간연장"]),
     ("재입국허가", ["재입국허가"]),
     ("외국인등록", ["외국인등록", "등록사항 변경신고", "체류지변경신고", "거소신고"]),
     ("사증발급인정서", ["사증발급인정서", "비자발급인정서"]),
@@ -254,6 +307,23 @@ PETITION_RULES = [
     ("사증발급", ["사증발급", "사증 발급", "비자발급", "공관장 재량", "단수사증", "복수사증"]),
     ("초청", ["초청"]),
 ]
+
+STAY_PETITION_TYPES = {
+    "체류자격외 활동허가",
+    "근무처 변경/추가",
+    "체류자격 부여",
+    "체류자격 변경",
+    "체류기간 연장",
+    "재입국허가",
+    "외국인등록",
+}
+
+VISA_PETITION_TYPES = {
+    "사증발급인정서",
+    "전자사증",
+    "사증발급",
+    "초청",
+}
 
 
 @dataclass
@@ -263,6 +333,8 @@ class Element:
     title: str
     raw: str
     is_table: bool = False
+    section_code: str = ""
+    section_title: str = ""
 
 
 def normalize_code_text(text: str) -> str:
@@ -322,6 +394,51 @@ def code_name(code: str) -> str:
     return BASE_CODE_NAMES.get(base_code(code), "")
 
 
+def default_petition(manual_key: str) -> str:
+    return "사증발급" if manual_key == "visa" else ""
+
+
+def is_reference_code_context(text: str) -> bool:
+    reference_terms = ["제외", "참조", "준용", "가능", "불가", "내지", "부터", "까지", "관련", "소지자", "해당하지"]
+    return any(term in text for term in reference_terms)
+
+
+def primary_section_code(title: str) -> str:
+    """Return a section code only for real code headings, not references."""
+    clean = clean_title(title)
+    if clean in {"유 의 사 항", "유의사항", "공 통 사 항", "공통사항"}:
+        return ""
+    codes = detect_codes(clean)
+    if len(codes) != 1:
+        return ""
+    code = codes[0]
+    if not code_name(code):
+        return ""
+    if is_reference_code_context(clean) and not re.search(rf"\({re.escape(code)}\)\s*$", clean):
+        return ""
+    if len(clean) > 100 and not re.search(rf"\({re.escape(code)}\)\s*$", clean):
+        return ""
+    return code
+
+
+def should_promote_title_code(title: str, raw: str, section_code: str, is_table: bool) -> bool:
+    """Decide whether a code inside the current row is its primary code.
+
+    Section context usually wins. Row-level codes are promoted only when the row
+    itself is a code-bearing table/heading and the wording is not just a
+    reference, exception, or exclusion.
+    """
+    title_codes = detect_codes(title)
+    if len(title_codes) != 1 or not code_name(title_codes[0]):
+        return False
+    haystack = compact(f"{title} {raw[:300]}", 600)
+    if "제외" in haystack or "참조" in haystack or "해당하지" in haystack:
+        return False
+    if section_code and base_code(title_codes[0]) == base_code(section_code):
+        return True
+    return is_table or bool(primary_section_code(title))
+
+
 def parse_pipe_row(line: str) -> list[str]:
     row = line.strip().strip("|")
     cells = [strip_markup(cell).strip() for cell in re.split(r"(?<!\\)\|", row)]
@@ -333,7 +450,7 @@ def is_table_line(line: str) -> bool:
     return stripped.startswith("|") and stripped.count("|") >= 2
 
 
-def table_elements(lines: list[str]) -> list[Element]:
+def table_elements(lines: list[str], section_code: str = "", section_title: str = "") -> list[Element]:
     elements: list[Element] = []
     for raw_line in lines:
         if PIPE_SEPARATOR_RE.match(raw_line):
@@ -344,7 +461,7 @@ def table_elements(lines: list[str]) -> list[Element]:
         label = clean_title(cells[0])
         value = "\n".join(cells[1:])
         if label and len(compact(value, 1600)) >= 20:
-            elements.append(Element(title=label, raw=f"{label}\n{value}", is_table=True))
+            elements.append(Element(title=label, raw=f"{label}\n{value}", is_table=True, section_code=section_code, section_title=section_title))
     return elements
 
 
@@ -353,13 +470,13 @@ def is_topic_marker_line(line: str) -> bool:
     return bool(title) and len(title) <= 90 and any(marker in title for marker in TOPIC_MARKERS)
 
 
-def flush_text_element(buffer: list[str], title: str, out: list[Element]) -> None:
+def flush_text_element(buffer: list[str], title: str, out: list[Element], section_code: str = "", section_title: str = "") -> None:
     raw = "\n".join(buffer).strip()
     plain = compact(raw, 2000)
     clean = clean_title(title) or clean_title(buffer[0] if buffer else "")
     if len(plain) < 35:
         return
-    out.append(Element(title=clean, raw=raw))
+    out.append(Element(title=clean, raw=raw, section_code=section_code, section_title=section_title))
 
 
 def iter_elements(markdown: str) -> list[Element]:
@@ -372,13 +489,15 @@ def iter_elements(markdown: str) -> list[Element]:
     elements: list[Element] = []
     buffer: list[str] = []
     buffer_title = ""
+    current_section_code = ""
+    current_section_title = ""
     lines = markdown.splitlines()
     i = 0
     while i < len(lines):
         line = lines[i]
         if PAGE_RE.search(line):
             if buffer:
-                flush_text_element(buffer, buffer_title, elements)
+                flush_text_element(buffer, buffer_title, elements, current_section_code, current_section_title)
                 buffer = []
                 buffer_title = ""
             i += 1
@@ -390,25 +509,33 @@ def iter_elements(markdown: str) -> list[Element]:
             continue
         if is_table_line(line):
             if buffer:
-                flush_text_element(buffer, buffer_title, elements)
+                flush_text_element(buffer, buffer_title, elements, current_section_code, current_section_title)
                 buffer = []
                 buffer_title = ""
             table_lines: list[str] = []
             while i < len(lines) and is_table_line(lines[i]):
                 table_lines.append(lines[i])
                 i += 1
-            elements.extend(table_elements(table_lines))
+            elements.extend(table_elements(table_lines, current_section_code, current_section_title))
             continue
         heading = HEADING_RE.match(line)
         if heading:
             if buffer:
-                flush_text_element(buffer, buffer_title, elements)
+                flush_text_element(buffer, buffer_title, elements, current_section_code, current_section_title)
+            heading_title = heading.group(2)
+            heading_code = primary_section_code(heading_title)
+            if heading_code:
+                current_section_code = heading_code
+                current_section_title = clean_title(heading_title)
+            elif clean_title(heading_title) in {"유 의 사 항", "유의사항", "공 통 사 항", "공통사항"}:
+                current_section_code = ""
+                current_section_title = clean_title(heading_title)
             buffer = [line]
-            buffer_title = heading.group(2)
+            buffer_title = heading_title
             i += 1
             continue
         if is_topic_marker_line(line) and buffer:
-            flush_text_element(buffer, buffer_title, elements)
+            flush_text_element(buffer, buffer_title, elements, current_section_code, current_section_title)
             buffer = [line]
             buffer_title = line
             i += 1
@@ -418,7 +545,7 @@ def iter_elements(markdown: str) -> list[Element]:
             buffer_title = line
         i += 1
     if buffer:
-        flush_text_element(buffer, buffer_title, elements)
+        flush_text_element(buffer, buffer_title, elements, current_section_code, current_section_title)
     return elements
 
 
@@ -445,9 +572,68 @@ def key_text(raw: str, max_lines: int = 8, max_chars: int = 1300) -> str:
     return compact("; ".join(selected), max_chars)
 
 
+def looks_like_document_text(title: str, raw: str) -> bool:
+    """True when a block is mostly a 제출서류/document list.
+
+    Administrative manuals often list documents as numbered lines without a
+    nearby "제출서류" heading. A short title such as "근로자파견사업허가증(해당자)"
+    should therefore be treated as a document row, not as 대상/요건.
+    """
+    text = compact(f"{title}\n{raw}", 1600)
+    if not any(word in text for word in DOCUMENT_WORDS):
+        return False
+    if any(word in text for word in DOCUMENT_CONTEXT_WORDS):
+        return True
+
+    lines = meaningful_lines(raw)
+    if not lines:
+        return False
+    doc_like_lines = sum(1 for line in lines if any(word in line for word in DOCUMENT_WORDS))
+    return doc_like_lines >= 2 or len(text) <= 180
+
+
+def looks_like_score_text(title: str, raw: str) -> bool:
+    text = compact(f"{title}\n{raw}", 1200)
+    if any(word in text for word in SCORE_WORDS):
+        return True
+    has_point_value = bool(re.search(r"\(\s*\d{1,3}\s*\)", title))
+    has_score_context = any(word in text for word in ["우수 재능", "연령", "소득", "학력", "한국어", "사회통합"])
+    has_quota_context = any(word in text for word in QUOTA_WORDS)
+    return has_point_value and has_score_context and not has_quota_context
+
+
+def looks_like_quota_text(title: str, raw: str) -> bool:
+    text = compact(f"{title}\n{raw}", 1200)
+    return any(word in text for word in QUOTA_WORDS)
+
+
+def looks_like_strong_restriction_title(title: str) -> bool:
+    title = clean_title(title)
+    if any(word in title for word in ["제출서류", "준비서류", "첨부서류", "구비서류"]):
+        return False
+    return any(
+        word in title
+        for word in ["취업제한", "발급 제한", "발급제한", "제한 대상", "제한대상", "제한 업종", "불허", "금지", "결격", "불가"]
+    )
+
+
 def classify_subsection(title: str, raw: str) -> tuple[str, str]:
     """Return the output field and Korean subsection label for one block."""
     title_first = title + "\n" + raw[:1200]
+    if any(keyword in title_first for keyword in ["제출할 필요가 없", "제출 불요", "면제 대상자는"]):
+        return "exceptions", "예외"
+    if looks_like_strong_restriction_title(title):
+        return "restrictions", "제한"
+    if looks_like_document_text(title, raw):
+        return "mandatory_documents", "제출서류"
+    if looks_like_score_text(title, raw):
+        return "score_criteria", "점수표"
+    if looks_like_quota_text(title, raw):
+        return "quota_or_limit", "쿼터"
+    if any(keyword in title_first for keyword in RESTRICTION_WORDS):
+        return "restrictions", "제한"
+    if any(keyword in title_first for keyword in EXCEPTION_WORDS):
+        return "exceptions", "예외"
     for field, label, keywords in SUBSECTION_RULES:
         if any(keyword in title_first for keyword in keywords):
             return field, label
@@ -457,12 +643,13 @@ def classify_subsection(title: str, raw: str) -> tuple[str, str]:
 def classify_petition(title: str, raw: str, manual_key: str, inherited: str) -> str:
     """Detect the 민원유형 and inherit the previous one when the PDF omits it."""
     haystacks = [title, raw[:350]]
+    allowed = VISA_PETITION_TYPES if manual_key == "visa" else STAY_PETITION_TYPES
     for label, keywords in PETITION_RULES:
-        if manual_key == "visa" and label in {"외국인등록", "재입국허가"}:
+        if label not in allowed:
             continue
         if any(any(keyword in haystack for keyword in keywords) for haystack in haystacks):
             return label
-    return inherited or ("사증발급" if manual_key == "visa" else "")
+    return inherited or default_petition(manual_key)
 
 
 def classify_item_type(manual_key: str, subsection: str, raw: str) -> str:
@@ -486,14 +673,13 @@ def classify_item_type(manual_key: str, subsection: str, raw: str) -> str:
 
 def document_buckets(raw: str) -> tuple[str, str, str]:
     """Split document-looking lines into common, mandatory, and other buckets."""
-    doc_words = ["신청서", "여권", "사진", "수수료", "증명서", "등본", "계약서", "등록증", "추천서", "공한", "입증서류", "확인서", "사본", "초청장", "신원보증서", "진술서", "건강진단서", "범죄경력", "가족관계", "사업자등록증"]
     common_terms = ["통합신청서", "사증발급신청서", "여권", "사진", "수수료", "외국인등록증"]
     common: list[str] = []
     mandatory: list[str] = []
     other: list[str] = []
     for line in meaningful_lines(raw):
         stripped = ENUM_PREFIX_RE.sub("", line).strip()
-        if not any(word in stripped for word in doc_words):
+        if not any(word in stripped for word in DOCUMENT_WORDS):
             continue
         target = common if any(term in stripped for term in common_terms) else mandatory
         if any(term in stripped for term in ["필요시", "해당자", "추가", "입증", "심사"]):
@@ -526,6 +712,8 @@ def is_noise_row(title: str, raw: str) -> bool:
     """Return True for rows that should never reach the final clean CSV."""
     text = compact(f"{title} {raw}", 1400)
     title_clean = clean_title(title)
+    if any(marker in text for marker in FORM_ATTACHMENT_NOISE_MARKERS):
+        return True
     if title_clean in {"目 次", "次", "목차", "▶ 목차", "▣ 목차"}:
         return True
     if is_cover_or_manual_title_noise(title_clean, text):
@@ -621,6 +809,8 @@ def is_low_value_semantic_row(row: dict[str, str]) -> bool:
 
     if "참조" in text and "안내매뉴얼" in text:
         return False
+    if any(marker in text for marker in FORM_ATTACHMENT_NOISE_MARKERS):
+        return True
     if normalized and len(normalized) > 90:
         return False
     if any(marker in title or marker in title_joined for marker in FORM_TITLE_NOISE_MARKERS):
@@ -672,7 +862,7 @@ def build_semantic_rows(manual_key: str, markdown: str) -> list[dict[str, str]]:
     current_code = ""
     current_name = "공통사항"
     current_context = ""
-    current_petition = "사증발급" if manual_key == "visa" else ""
+    current_petition = default_petition(manual_key)
 
     for element in elements:
         title = clean_title(element.title)
@@ -680,18 +870,21 @@ def build_semantic_rows(manual_key: str, markdown: str) -> list[dict[str, str]]:
         if len(compact(raw, 2000)) < 35 or is_noise_row(title, raw):
             continue
 
+        if element.section_code != current_code:
+            current_code = element.section_code
+            current_name = code_name(current_code) if current_code else "공통사항"
+            current_context = ""
+            current_petition = default_petition(manual_key)
+
         title_codes = detect_codes(title)
         raw_codes = detect_codes(raw[:1200])
-        if title_codes and code_name(title_codes[0]):
-            current_code = base_code(title_codes[0])
-            current_name = code_name(current_code)
-            current_context = ""
-
         row_code = current_code
-        if title_codes and code_name(title_codes[0]):
-            row_code = title_codes[0] if base_code(title_codes[0]) == current_code else base_code(title_codes[0])
+        if should_promote_title_code(title, raw, current_code, element.is_table):
+            row_code = title_codes[0]
         elif not row_code and raw_codes and code_name(raw_codes[0]):
-            row_code = base_code(raw_codes[0])
+            raw_context = compact(raw[:500], 700)
+            if not is_reference_code_context(raw_context):
+                row_code = base_code(raw_codes[0])
 
         row_name = code_name(row_code) if row_code else "공통사항"
         if title in {"유 의 사 항", "유의사항", "공 통 사 항", "공통사항"}:
@@ -699,6 +892,7 @@ def build_semantic_rows(manual_key: str, markdown: str) -> list[dict[str, str]]:
             row_name = "공통사항"
             current_code = ""
             current_name = "공통사항"
+            current_petition = default_petition(manual_key)
 
         current_petition = classify_petition(title, raw, manual_key, current_petition)
         field, subsection = classify_subsection(title, raw)

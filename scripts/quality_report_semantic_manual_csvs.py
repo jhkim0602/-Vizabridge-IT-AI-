@@ -138,6 +138,10 @@ def issue_actions(issue_keys: list[str]) -> str:
         actions.append("item_type/subsection_type과 실제 채움 필드가 맞는지 확인")
     if any("document" in key for key in issue_keys):
         actions.append("공통/필수/기타서류 버킷 재분류")
+    if any("score" in key for key in issue_keys):
+        actions.append("점수표/배점 행인지 확인")
+    if any("quota" in key for key in issue_keys):
+        actions.append("쿼터/인원 제한 행인지 확인")
     if any("noise" in key for key in issue_keys):
         actions.append("목차/양식/페이지 노이즈 여부 확인 후 제거")
     if any("ocr" in key for key in issue_keys):
@@ -175,13 +179,6 @@ def row_issues(row: pd.Series, manual_key: str, is_duplicate: bool) -> list[tupl
 
     if not str(row.get(code_col, "")).strip() and item_type not in {"common_rule"} and status_name != "공통사항":
         issues.append(("missing_code_on_non_common_row", "high", "공통사항이 아닌 행에 코드가 비어 있음"))
-    if (
-        not str(row.get("petition_type", "")).strip()
-        and manual_key == "stay"
-        and item_type not in {"common_rule"}
-        and status_name != "공통사항"
-    ):
-        issues.append(("missing_petition_type", "high", "체류민원 행에 민원유형이 비어 있음"))
     if not subsection:
         issues.append(("missing_subsection_type", "high", "subsection_type이 비어 있음"))
     if item_type == "required_documents" and not any(
@@ -203,6 +200,18 @@ def row_issues(row: pd.Series, manual_key: str, is_duplicate: bool) -> list[tupl
         str(row.get(column, "")).strip() for column in ["quota_or_limit", "table_rows"]
     ):
         issues.append(("quota_without_limit_or_table_rows", "high", "쿼터 행인데 제한/표 필드가 비어 있음"))
+    if any(marker in text for marker in builder.FORM_ATTACHMENT_NOISE_MARKERS):
+        issues.append(("form_attachment_noise", "high", "양식/붙임/표 병합 노이즈로 보임"))
+    if (
+        item_type not in {"required_documents", "exception"}
+        and subsection not in {"추천/승인", "수수료"}
+        and builder.looks_like_document_text(section_title, normalized or text)
+    ):
+        issues.append(("document_like_row_outside_required_documents", "high", "제출서류처럼 보이나 제출서류 행이 아님"))
+    if item_type not in {"score_table", "required_documents"} and builder.looks_like_score_text(section_title, normalized or text):
+        issues.append(("score_like_row_outside_score_table", "high", "점수표처럼 보이나 점수표 행이 아님"))
+    if item_type == "quota" and builder.looks_like_score_text(section_title, normalized or text):
+        issues.append(("score_like_quota_row", "high", "점수표 행이 쿼터로 분류된 것으로 보임"))
     if section_title in {"목차", "目 次", "次", "▶ 목차", "▣ 목차"}:
         issues.append(("noise_like_title", "high", "목차성 제목이 남아 있음"))
     if (

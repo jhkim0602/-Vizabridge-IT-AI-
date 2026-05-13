@@ -97,10 +97,18 @@ LlamaParse는 PDF의 레이아웃, 표, 페이지, 마크다운 구조를 추출
 - 외국인이 한국에서 사업하려면 어떤 비자가 필요한가요
 - 투자자로 한국에 체류하고 싶어요
 
-현재 최종 CSV는 PDF당 하나씩 유지합니다.
+현재 semantic clean CSV는 PDF당 하나씩 유지합니다.
 
 - `data/processed/stay_manual_semantic_clean.csv`
 - `data/processed/visa_manual_semantic_clean.csv`
+
+그 다음 챗봇 검색용 파생 CSV를 만듭니다.
+
+- `data/processed/stay_manual_chatbot_ready.csv`
+- `data/processed/visa_manual_chatbot_ready.csv`
+- `data/processed/chatbot_intent_routes.csv`
+
+semantic clean CSV는 "매뉴얼이 무엇을 말하는가"를 보존하고, chatbot-ready CSV는 "사용자가 어떤 상황을 말했을 때 어디로 연결할 것인가"를 보강합니다. `chatbot_intent_routes.csv`는 행 단위 검색 전에 결혼/배우자, 유학생 아르바이트, 외국인 직원 채용, 부모 초청, 숙련기능 전환, 스타트업 창업 같은 대표 질문을 코드군과 민원유형으로 먼저 좁히는 라우팅 색인입니다.
 
 최종 CSV에는 PDF 페이지 번호, 원문 근거, raw text, review/debug 컬럼을 넣지 않습니다. 원문 확인이 필요할 때는 `data/raw/` PDF와 `data/parsed/` Markdown을 별도로 참조합니다.
 

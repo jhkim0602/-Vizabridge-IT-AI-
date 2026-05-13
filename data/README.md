@@ -20,9 +20,19 @@ LlamaParse가 PDF를 Markdown으로 변환한 결과입니다.
 
 ## `processed/`
 
-최종 clean CSV만 보관합니다.
+반복 생성 가능한 최종 CSV를 보관합니다. 사람이 직접 한 줄씩 수정하지 않고, `scripts/`의 생성 스크립트로 다시 만듭니다.
+
+Semantic clean CSV는 PDF 매뉴얼의 행정 의미를 정리한 기본 데이터입니다.
 
 - `stay_manual_semantic_clean.csv`
 - `visa_manual_semantic_clean.csv`
+
+Chatbot-ready CSV는 사용자가 코드를 몰라도 자기 상황으로 검색할 수 있게 semantic clean CSV에서 파생한 데이터입니다.
+
+- `stay_manual_chatbot_ready.csv`
+- `visa_manual_chatbot_ready.csv`
+- `chatbot_intent_routes.csv`
+
+`chatbot_intent_routes.csv`는 "결혼비자", "유학생 알바", "외국인 직원 채용" 같은 질문을 어떤 코드군/민원유형으로 먼저 보낼지 정리한 작은 라우팅 색인입니다.
 
 이 폴더에는 검수용 CSV, 임시 CSV, debug 파일을 두지 않습니다. 검수 산출물은 `output/quality/`와 `output/review/`에 생성합니다.

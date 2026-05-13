@@ -33,12 +33,20 @@ Vizabridge/
 | `data/parsed/` | LlamaParse가 PDF를 Markdown으로 바꾼 결과 | 보통 직접 수정하지 않음 |
 | `data/processed/` | 최종 clean CSV 산출물 | 스크립트로만 재생성 |
 
-`data/processed/`에는 최종 파일 두 개만 유지합니다.
+`data/processed/`에는 반복 생성 가능한 최종 CSV만 유지합니다.
+
+Semantic clean CSV:
 
 - `stay_manual_semantic_clean.csv`
 - `visa_manual_semantic_clean.csv`
 
-이 두 CSV에는 검수용 컬럼, PDF 페이지 번호, 원문 근거, raw text를 넣지 않습니다. 최종 CSV는 downstream RAG 또는 서비스 데이터의 입력이므로 최대한 깨끗하게 유지합니다.
+Chatbot-ready CSV:
+
+- `stay_manual_chatbot_ready.csv`
+- `visa_manual_chatbot_ready.csv`
+- `chatbot_intent_routes.csv`
+
+semantic clean CSV는 매뉴얼의 행정 구조를 보존하고, chatbot-ready CSV는 사용자의 자연어 상황 질문과 연결하기 위한 검색/라우팅 필드를 추가합니다. 이 CSV들에는 검수용 컬럼, PDF 페이지 번호, 원문 근거, raw text를 넣지 않습니다.
 
 ## `scripts/`
 
@@ -47,12 +55,14 @@ Vizabridge/
 | Script | 역할 |
 | --- | --- |
 | `build_semantic_manual_csvs.py` | parsed Markdown을 읽어 최종 CSV 2개를 만듭니다. |
+| `build_chatbot_ready_manual_csvs.py` | semantic clean CSV를 읽어 챗봇 검색용 CSV와 intent route CSV를 만듭니다. |
 | `quality_report_semantic_manual_csvs.py` | 최종 CSV를 점검하고 검수용 Excel/리포트를 만듭니다. |
 
 실행 순서는 항상 다음과 같습니다.
 
 ```bash
 .venv/bin/python scripts/build_semantic_manual_csvs.py
+.venv/bin/python scripts/build_chatbot_ready_manual_csvs.py
 .venv/bin/python scripts/quality_report_semantic_manual_csvs.py
 ```
 
@@ -118,8 +128,9 @@ PDF 또는 정제 규칙을 바꾼 뒤에는 항상 아래 순서로 확인합�
 
 1. 테스트 실행
 2. 최종 CSV 재생성
-3. 품질 리포트/검수 Excel 재생성
-4. 노트북 전체 실행
+3. 챗봇용 CSV 재생성
+4. 품질 리포트/검수 Excel 재생성
+5. 노트북 전체 실행
 5. `output/quality/semantic_manual_quality_report.md`에서 검수 후보 수 확인
 
 명령:
@@ -127,6 +138,7 @@ PDF 또는 정제 규칙을 바꾼 뒤에는 항상 아래 순서로 확인합�
 ```bash
 .venv/bin/python -m pytest tests -q
 .venv/bin/python scripts/build_semantic_manual_csvs.py
+.venv/bin/python scripts/build_chatbot_ready_manual_csvs.py
 .venv/bin/python scripts/quality_report_semantic_manual_csvs.py
 .venv/bin/jupyter nbconvert --to notebook --execute notebooks/03_review_semantic_manual_csvs.ipynb --output /tmp/semantic_review_executed.ipynb --ExecutePreprocessor.timeout=180
 ```

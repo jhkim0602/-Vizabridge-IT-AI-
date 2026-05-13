@@ -1,6 +1,6 @@
 # Final Semantic CSV Columns
 
-최종 산출물은 PDF당 하나씩만 유지합니다.
+기본 semantic 산출물은 PDF당 하나씩 유지합니다.
 
 - `data/processed/stay_manual_semantic_clean.csv`
 - `data/processed/visa_manual_semantic_clean.csv`
@@ -52,3 +52,49 @@
 | `visa_name_ko` | 단기방문, 기업투자, 특정활동, 결혼이민 등 사증명 |
 | `inviter_context` | 초청인, 고용주, 유치기관 등 초청자 맥락 |
 | `recommendation_or_approval` | 고용추천서, 관계기관 승인, 추천기관 등 |
+
+## Chatbot-Ready CSV Columns
+
+챗봇용 CSV는 semantic clean CSV를 입력으로 다시 만든 파생 데이터입니다.
+
+- `data/processed/stay_manual_chatbot_ready.csv`
+- `data/processed/visa_manual_chatbot_ready.csv`
+
+사용자가 코드를 모르는 상태에서 자기 상황을 말해도 관련 행을 찾기 쉽도록 아래 필드를 추가합니다.
+
+| Column | 설명 |
+| --- | --- |
+| `record_id` | 챗봇용 행 식별자 |
+| `source_dataset` | 입력으로 사용한 semantic clean CSV |
+| `code_type` | `stay_status` 또는 `visa` |
+| `primary_code` | 체류자격/사증 코드 |
+| `primary_name_ko` | 코드의 한국어 이름 |
+| `source_section_title` | semantic CSV의 원래 섹션 제목 |
+| `user_situation_tags` | 결혼/배우자, 유학/연수, 취업/고용, 창업/투자 등 사용자 상황 태그 |
+| `intent_keywords` | 사용자가 실제로 입력할 만한 자연어 검색어 |
+| `applicant_profile` | 외국인 본인, 유학생/연수생, 초청인/고용주, 배우자/가족 등 |
+| `current_location_context` | 입국 전 비자 신청인지, 국내 체류 중 민원인지 |
+| `current_status_context` | 현재 체류자격 또는 현재 상태 확인 힌트 |
+| `plain_language_summary` | 일반 사용자가 읽기 쉬운 한 줄 요약 |
+| `required_user_info` | 챗봇이 답변 전 추가로 물어봐야 할 정보 |
+| `routing_hint` | 사증민원/체류민원/민원유형으로 보내는 힌트 |
+| `answer_focus` | 제출서류, 제한사항, 점수표, 쿼터 등 답변 초점 |
+| `search_text` | 검색/RAG 색인에 넣기 좋은 통합 텍스트 |
+
+## Intent Route CSV
+
+`data/processed/chatbot_intent_routes.csv`는 행 단위 검색 전에 쓰는 작은 라우팅 색인입니다.
+
+| Column | 설명 |
+| --- | --- |
+| `route_id` | 라우팅 규칙 식별자 |
+| `user_intent` | 사용자의 실제 목적 |
+| `example_questions` | 대표 질문 예시 |
+| `situation_tags` | 관련 상황 태그 |
+| `target_manuals` | 우선 조회할 매뉴얼 |
+| `likely_codes` | 우선 후보 코드 |
+| `likely_petition_types` | 우선 후보 민원유형 |
+| `primary_filters` | chatbot-ready CSV에서 먼저 적용할 필터 |
+| `required_user_info` | 챗봇이 되물을 정보 |
+| `answer_strategy` | 답변 구성 순서 |
+| `search_boost_terms` | 검색 가중치로 쓸 키워드 |

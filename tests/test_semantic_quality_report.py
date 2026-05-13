@@ -9,7 +9,7 @@ def base_stay_row(**overrides):
         "stay_status_name_ko": "유학",
         "manual_type": "체류민원",
         "source_pdf": "stay.pdf",
-        "item_type": "stay_status_rule",
+        "item_type": "required_documents",
         "section_title": "제출서류",
         "subtype_or_program": "",
         "petition_type": "체류기간 연장",
@@ -70,6 +70,58 @@ def test_collect_review_reasons_flags_typed_field_mismatches_and_noise():
     reasons = " ".join(candidates["review_reason"].tolist())
     assert "restriction_without_restrictions" in reasons
     assert "noise_like_title" in reasons
+
+
+def test_collect_review_reasons_flags_document_score_and_form_noise():
+    df = pd.DataFrame(
+        [
+            base_stay_row(
+                item_type="stay_status_rule",
+                subsection_type="대상",
+                section_title="3. (외국인 본인) 국내 운전면허증사본(가점 해당자만 제출)",
+                normalized_text="3. (외국인 본인) 국내 운전면허증사본(가점 해당자만 제출)",
+            ),
+            base_stay_row(
+                item_type="quota",
+                subsection_type="쿼터",
+                section_title="우수 재능 보유 (25)",
+                normalized_text="우수 재능 보유 (25); 과학·경영·교육·문화예술·체육 등의 분야에 우수한 재능 보유",
+                quota_or_limit="우수 재능 보유 (25)",
+            ),
+            base_stay_row(
+                item_type="stay_status_rule",
+                subsection_type="기타",
+                section_title="ROWSPANCONTINUE",
+                normalized_text="ROWSPANCONTINUE; 입국한 날로부터 1년 범위 내에서 연장",
+            ),
+        ]
+    )
+
+    candidates = quality.collect_review_candidates(df, "stay")
+    reasons = " ".join(candidates["review_reason"].tolist())
+
+    assert "document_like_row_outside_required_documents" in reasons
+    assert "score_like_row_outside_score_table" in reasons
+    assert "form_attachment_noise" in reasons
+
+
+def test_stay_general_status_rows_may_have_blank_petition_type():
+    df = pd.DataFrame(
+        [
+            base_stay_row(
+                item_type="stay_status_rule",
+                petition_type="",
+                section_title="유학(D-2) 해당자",
+                subsection_type="대상",
+                eligibility="유학(D-2) 자격 해당자",
+                normalized_text="유학(D-2) 체류자격에 해당하는 외국인 유학생 대상 설명",
+            )
+        ]
+    )
+
+    candidates = quality.collect_review_candidates(df, "stay")
+
+    assert candidates.empty
 
 
 def test_build_summary_reports_counts_candidates_and_fill_rates():

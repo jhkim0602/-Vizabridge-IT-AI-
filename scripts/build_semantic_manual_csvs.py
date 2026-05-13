@@ -1,14 +1,28 @@
 #!/usr/bin/env python3
-"""Build final cleaned semantic CSVs for Korean stay and visa manuals.
+"""Build the two final semantic CSV files from parsed immigration manuals.
 
-The final contract is intentionally narrow at the artifact level:
+This script is the main "PDF manual -> clean CSV" converter.
 
-- one CSV per PDF:
+It does not try to copy the PDF page layout into a spreadsheet. Instead it
+turns the manual into rows that match the administrative meaning of the text:
+visa/stay code, petition type, 대상, 요건, 제출서류, 절차, 제한, 예외,
+수수료, 점수표, 쿼터, and similar fields.
+
+The final artifact contract is intentionally strict:
+
+- one CSV per PDF
   - data/processed/stay_manual_semantic_clean.csv
   - data/processed/visa_manual_semantic_clean.csv
 - no PDF page columns
 - no evidence quote, raw source text, review flags, or debug columns
-- remove table-of-contents/navigation noise as much as possible
+- no cover page, table-of-contents, blank form, or broken table-header rows
+
+Maintenance guide:
+
+1. Add or adjust schema columns in STAY_COLUMNS/VISA_COLUMNS.
+2. Add domain keywords in SUBSECTION_RULES or PETITION_RULES.
+3. Add OCR/noise cleanup in is_noise_row() or is_low_value_semantic_row().
+4. Run tests, rebuild CSVs, then run the quality report script.
 """
 
 from __future__ import annotations
@@ -40,7 +54,9 @@ MANUALS = {
     },
 }
 
-
+# Final CSV schema. The two manuals share most columns, but stay manuals have
+# stay_status_* and obligations while visa manuals have visa_* and inviter /
+# recommendation fields.
 COMMON_COLUMNS = [
     "manual_type",
     "source_pdf",
@@ -124,7 +140,9 @@ BASE_CODE_NAMES = {
     "H-2": "방문취업",
 }
 
-
+# Regular expressions used while reading the LlamaParse Markdown. These are
+# intentionally centralized because OCR often changes spaces around code values
+# such as "E - 7" or "F - 2 - R".
 CODE_RE = re.compile(r"\b[A-Z]-\d{1,2}(?:-[A-Z]?\d{1,2}[A-Z]?|-[A-Z]\d*|-[A-Z])?[A-Z]?\b")
 SPACED_CODE_RE = re.compile(r"\b([A-Z])\s*-\s*(\d{1,2})(?:\s*-\s*([A-Z]?\d{1,2}[A-Z]?|[A-Z]\d*|[A-Z]))?([A-Z]?)\b")
 PAGE_RE = re.compile(r"<!--\s*PDF_PAGE:(\d+)\s+SUCCESS:(True|False)\s*-->")
@@ -182,6 +200,31 @@ TOPIC_MARKERS = [
     "고용추천서",
 ]
 
+# Blank attachment/form titles are usually not useful as RAG records by
+# themselves. If the form text contains real requirements/documents elsewhere,
+# those meaningful rows should remain; this list filters title-only fragments.
+FORM_TITLE_NOISE_MARKERS = [
+    "확인서",
+    "계획서",
+    "카드(예시)",
+    "신상 기술서",
+    "signature/seal",
+    "검 사 내 용",
+]
+
+SHORT_TABLE_FRAGMENT_TITLES = {
+    "구분",
+    "구 분",
+    "내용",
+    "일반",
+    "일반식당",
+    "소득",
+    "쿼터",
+}
+
+# These rules map Korean administrative headings to the output fields. The
+# first matching rule wins, so put more specific document/target rules before
+# broader requirement/default rules.
 SUBSECTION_RULES = [
     ("common_documents", "제출서류", ["공통서류", "공통 제출서류"]),
     ("mandatory_documents", "제출서류", ["제출서류", "제출 서류", "필수서류", "첨부서류", "구비서류", "신청서류"]),
@@ -191,7 +234,7 @@ SUBSECTION_RULES = [
     ("duration_or_validity", "기간", ["체류기간", "유효기간", "허가기간", "기간의 상한", "체류허가기간", "단수사증", "복수사증"]),
     ("restrictions", "제한", ["제한", "불허", "금지", "결격", "제외", "억제"]),
     ("exceptions", "예외", ["예외", "면제", "특례", "완화"]),
-    ("fees", "수수료", ["수수료", "만원", "천원"]),
+    ("fees", "수수료", ["수수료", "수입인지", "납부금"]),
     ("score_criteria", "점수표", ["점수표", "배점표", "점수제", "배점"]),
     ("quota_or_limit", "쿼터", ["쿼터", "선발인원", "허용인원", "상한"]),
     ("obligations", "신고의무", ["신고의무", "신고하여야", "제출 의무", "교육의무", "거주의무"]),
@@ -215,6 +258,8 @@ PETITION_RULES = [
 
 @dataclass
 class Element:
+    """One extracted Markdown block before it becomes a final CSV row."""
+
     title: str
     raw: str
     is_table: bool = False
@@ -318,6 +363,12 @@ def flush_text_element(buffer: list[str], title: str, out: list[Element]) -> Non
 
 
 def iter_elements(markdown: str) -> list[Element]:
+    """Split parsed Markdown into candidate semantic blocks.
+
+    A block can come from a Markdown heading, a topic marker line such as
+    "제출서류", or a table row. Later functions decide whether the block is
+    useful enough to keep.
+    """
     elements: list[Element] = []
     buffer: list[str] = []
     buffer_title = ""
@@ -395,6 +446,7 @@ def key_text(raw: str, max_lines: int = 8, max_chars: int = 1300) -> str:
 
 
 def classify_subsection(title: str, raw: str) -> tuple[str, str]:
+    """Return the output field and Korean subsection label for one block."""
     title_first = title + "\n" + raw[:1200]
     for field, label, keywords in SUBSECTION_RULES:
         if any(keyword in title_first for keyword in keywords):
@@ -403,6 +455,7 @@ def classify_subsection(title: str, raw: str) -> tuple[str, str]:
 
 
 def classify_petition(title: str, raw: str, manual_key: str, inherited: str) -> str:
+    """Detect the 민원유형 and inherit the previous one when the PDF omits it."""
     haystacks = [title, raw[:350]]
     for label, keywords in PETITION_RULES:
         if manual_key == "visa" and label in {"외국인등록", "재입국허가"}:
@@ -413,6 +466,7 @@ def classify_petition(title: str, raw: str, manual_key: str, inherited: str) -> 
 
 
 def classify_item_type(manual_key: str, subsection: str, raw: str) -> str:
+    """Reduce a subsection into the machine-friendly item_type enum."""
     if subsection == "제출서류":
         return "required_documents"
     if subsection == "수수료":
@@ -431,6 +485,7 @@ def classify_item_type(manual_key: str, subsection: str, raw: str) -> str:
 
 
 def document_buckets(raw: str) -> tuple[str, str, str]:
+    """Split document-looking lines into common, mandatory, and other buckets."""
     doc_words = ["신청서", "여권", "사진", "수수료", "증명서", "등본", "계약서", "등록증", "추천서", "공한", "입증서류", "확인서", "사본", "초청장", "신원보증서", "진술서", "건강진단서", "범죄경력", "가족관계", "사업자등록증"]
     common_terms = ["통합신청서", "사증발급신청서", "여권", "사진", "수수료", "외국인등록증"]
     common: list[str] = []
@@ -468,9 +523,20 @@ def subtype_or_program(raw: str) -> str:
 
 
 def is_noise_row(title: str, raw: str) -> bool:
+    """Return True for rows that should never reach the final clean CSV."""
     text = compact(f"{title} {raw}", 1400)
     title_clean = clean_title(title)
     if title_clean in {"目 次", "次", "목차", "▶ 목차", "▣ 목차"}:
+        return True
+    if is_cover_or_manual_title_noise(title_clean, text):
+        return True
+    if is_stray_toc_entry(title_clean, text):
+        return True
+    if is_blank_form_title_noise(title_clean, text):
+        return True
+    if is_short_table_fragment_noise(title_clean, text):
+        return True
+    if is_blank_bilingual_form_noise(text):
         return True
     if "目 次" in text and len(text) < 1500:
         return True
@@ -484,6 +550,90 @@ def is_noise_row(title: str, raw: str) -> bool:
         "Alien Registration No.",
     ]
     return any(marker in text for marker in noise_markers)
+
+
+def is_cover_or_manual_title_noise(title: str, text: str) -> bool:
+    """Detect cover-page titles, not valid cross-references to another manual."""
+    if "참조" in text:
+        return False
+    title_markers = ["안내매뉴얼", "안 내 매 뉴 얼"]
+    org_markers = ["법무부", "출입국", "외국인정책본부"]
+    if any(marker in title for marker in title_markers) and (
+        any(marker in text for marker in org_markers) or len(text) <= 180
+    ):
+        return True
+    return False
+
+
+def is_stray_toc_entry(title: str, text: str) -> bool:
+    """Detect short table-of-contents fragments that only name a code/section."""
+    if len(text) > 180:
+        return False
+    if not re.match(r"^\d{1,2}\.\s*", title):
+        return False
+    codes = detect_codes(text)
+    if not codes:
+        return False
+    toc_only_markers = ["관련", "체류제도", "국내 성장 기반", "외국국적동포"]
+    return any(marker in text for marker in toc_only_markers) or len(meaningful_lines(text)) <= 3
+
+
+def is_blank_form_title_noise(title: str, text: str) -> bool:
+    """Drop standalone blank form titles when no actual requirement/document content follows."""
+    if len(text) > 120:
+        return False
+    title_joined = re.sub(r"\s+", "", title)
+    return any(marker in title or marker in title_joined for marker in FORM_TITLE_NOISE_MARKERS)
+
+
+def is_short_table_fragment_noise(title: str, text: str) -> bool:
+    """Drop table headers or broken numeric fragments that are not meaningful alone."""
+    if len(text) > 90:
+        return False
+    if title in SHORT_TABLE_FRAGMENT_TITLES:
+        return True
+    table_header_markers = ["사업장 면적", "허용 인원", "허용인원", "인 가구", "종 류", "상 세 설 명"]
+    return any(marker in text for marker in table_header_markers)
+
+
+def is_blank_bilingual_form_noise(text: str) -> bool:
+    """Drop blank bilingual contract/form templates extracted as long pseudo-rules."""
+    form_markers = [
+        "Monthly Normal wages",
+        "Accommo-dations and Meals",
+        "Both employees and employers shall comply",
+        "Payment methods",
+    ]
+    return sum(1 for marker in form_markers if marker in text) >= 2
+
+
+def is_low_value_semantic_row(row: dict[str, str]) -> bool:
+    """Drop rows that only repeat a blank form title or a broken table header.
+
+    This runs after row classification because some fragments look non-empty in
+    raw Markdown but collapse to a title-only row after normalization.
+    """
+    title = clean_title(row.get("section_title", ""))
+    title_joined = re.sub(r"\s+", "", title)
+    normalized = compact(row.get("normalized_text", ""), 300)
+    table_rows = compact(row.get("table_rows", ""), 300)
+    text = compact("; ".join(part for part in [title, normalized, table_rows] if part), 500)
+
+    if "참조" in text and "안내매뉴얼" in text:
+        return False
+    if normalized and len(normalized) > 90:
+        return False
+    if any(marker in title or marker in title_joined for marker in FORM_TITLE_NOISE_MARKERS):
+        return True
+    if title in SHORT_TABLE_FRAGMENT_TITLES and (
+        len(normalized) < 80 or any(marker in normalized for marker in ["허용 인원", "허용인원", "인 가구"])
+    ):
+        return True
+    if any(marker in normalized for marker in ["허용 인원", "허용인원", "종 류; 상 세 설 명"]):
+        return True
+    if re.fullmatch(r"[,0-9]+만원(?:; [,0-9]+만원)+", normalized):
+        return True
+    return False
 
 
 def clean_row_values(row: dict[str, str]) -> dict[str, str]:
@@ -515,6 +665,7 @@ def empty_row(manual_key: str) -> dict[str, str]:
 
 
 def build_semantic_rows(manual_key: str, markdown: str) -> list[dict[str, str]]:
+    """Convert one parsed manual Markdown file into final CSV row dictionaries."""
     manual = MANUALS[manual_key]
     elements = iter_elements(markdown)
     rows: list[dict[str, str]] = []
@@ -588,7 +739,10 @@ def build_semantic_rows(manual_key: str, markdown: str) -> list[dict[str, str]]:
         if manual_key == "visa" and any(word in raw for word in ["초청인", "고용주", "유치기관", "초청자"]):
             row["inviter_context"] = key_text(raw, max_lines=6, max_chars=1200)
 
-        rows.append(clean_row_values(row))
+        cleaned_row = clean_row_values(row)
+        if is_low_value_semantic_row(cleaned_row):
+            continue
+        rows.append(cleaned_row)
 
     return dedupe_rows(rows, manual_key)
 

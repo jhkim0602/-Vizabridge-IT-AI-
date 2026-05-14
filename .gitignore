@@ -2,10 +2,20 @@
 .venv/
 __pycache__/
 .ipynb_checkpoints/
-*.csv
-*.jsonl
+
+# Claude Code: worktree-local settings only
+.claude/settings.local.json
+
+# Generated outputs
 output/
-data/parsed/*
-!data/parsed/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
+
+# Kordoc raw markdown: regenerable from HWP, large
+data/parsed/raw/*.md
+data/parsed/raw/*.json
+
+# Final CSVs: regenerable from normalized MD
+data/processed/*.csv
+data/processed/*.jsonl
+
+# Always keep folder placeholders
+!**/.gitkeep

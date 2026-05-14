@@ -1,0 +1,330 @@
+{
+  "manual_key": "stay",
+  "normalized_chunks": 5,
+  "total_rows": 38,
+  "rows_with_issues": 0,
+  "chunks_with_issues": 0,
+  "chunks": [
+    {
+      "chunk_id": "stay_001",
+      "source_hash_index": "6585d8469715e2d9",
+      "source_hash_block": "6585d8469715e2d9",
+      "hash_drift": false,
+      "row_count": 12,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "공통사항: 각종 체류허가 등에 관한 심사수수료",
+          "petition_type": "공통사항",
+          "subsection_type": "수수료",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "공통사항: 여권 유효기간 범위 내 체류기간 부여",
+          "petition_type": "공통사항",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "공통사항: 직업 및 연간소득금액 신고 의무",
+          "petition_type": "공통사항",
+          "subsection_type": "신고의무",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "공통사항: 만 6세 이상 만 18세 이하 재학증명서 제출 의무",
+          "petition_type": "공통사항",
+          "subsection_type": "신고의무",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "공통사항: 외국인 결핵진단서 제출 의무",
+          "petition_type": "공통사항",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "A-1 외교 / 자격 해당자 및 활동범위",
+          "petition_type": "공통사항",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "A-1 외교 / 체류자격외 활동허가",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "A-1 외교 / 체류자격 부여 (출생자)",
+          "petition_type": "체류자격 부여",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "A-1 외교 / 체류자격 변경허가",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "A-1 외교 / 체류기간 연장허가",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 11,
+          "section_title": "A-1 외교 / 재입국허가",
+          "petition_type": "재입국허가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 12,
+          "section_title": "A-1 외교 / 외국인등록",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_002",
+      "source_hash_index": "a256ecebdf088632",
+      "source_hash_block": "a256ecebdf088632",
+      "hash_drift": false,
+      "row_count": 17,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "A-2 공무",
+          "petition_type": "공통사항",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "A-2 공무 / 체류자격외 활동허가",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "A-2 공무 / 체류자격 부여",
+          "petition_type": "체류자격 부여",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "A-2 공무 / 체류자격 변경허가",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "A-2 공무 / 체류기간 연장허가",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "A-3 협정",
+          "petition_type": "공통사항",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "A-3 협정 / 체류자격외 활동허가",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "A-3 협정 / 체류자격 부여",
+          "petition_type": "체류자격 부여",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "B-1 사증면제",
+          "petition_type": "공통사항",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "B-2 관광통과",
+          "petition_type": "공통사항",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 11,
+          "section_title": "C-1 일시취재",
+          "petition_type": "공통사항",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 12,
+          "section_title": "C-3 단기방문",
+          "petition_type": "공통사항",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 13,
+          "section_title": "C-3 단기방문 / 체류기간 연장허가",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 14,
+          "section_title": "C-4 단기취업",
+          "petition_type": "공통사항",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 15,
+          "section_title": "C-4 단기취업 / 근무처 변경·추가",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 16,
+          "section_title": "D-1 문화예술",
+          "petition_type": "공통사항",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 17,
+          "section_title": "D-1 문화예술 / 외국인등록",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_003",
+      "source_hash_index": "9305cde278f6500d",
+      "source_hash_block": "9305cde278f6500d",
+      "hash_drift": false,
+      "row_count": 5,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "D-2 유학",
+          "petition_type": "공통사항",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "D-2 유학 / 시간제취업 활동 허가",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "D-2 유학 / 체류자격 변경허가",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "D-2 유학 / 체류기간 연장허가",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "D-2 유학 / 외국인등록",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_004",
+      "source_hash_index": "03ca55041eaa25ee",
+      "source_hash_block": "03ca55041eaa25ee",
+      "hash_drift": false,
+      "row_count": 2,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "D-3 기술연수",
+          "petition_type": "공통사항",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "D-3 기술연수 / 체류기간 연장",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_005",
+      "source_hash_index": "7963ca19408945b0",
+      "source_hash_block": "7963ca19408945b0",
+      "hash_drift": false,
+      "row_count": 2,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "D-4 일반연수",
+          "petition_type": "공통사항",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "D-4 일반연수 / 어학연수(D-4-1, D-4-7) 자격 변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    }
+  ]
+}

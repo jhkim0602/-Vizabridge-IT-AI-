@@ -116,6 +116,23 @@ python scripts/build_chatbot_csv.py
 python scripts/quality_report_semantic_manual_csvs.py
 ```
 
+## 파이프라인 단계별 시각화
+
+전체 9 단계의 산출물(청크, 정규화 MD, semantic/chatbot CSV, 품질 리포트)을 pandas + plotly로 한눈에 검토할 수 있는 노트북이 있습니다.
+
+```bash
+.venv/bin/jupyter notebook notebooks/04_pipeline_stages_visualization.ipynb
+```
+
+각 단계마다:
+- 청크 크기 분포, 비자코드 종류 분포
+- 정규화 행 수, validator 이슈 빈도
+- semantic CSV의 비자코드별/민원유형별 분포, 컬럼 누락률 히트맵
+- chatbot CSV의 상황 태그·키워드·라우팅 힌트 빈도
+- 품질 리포트의 검수 후보 목록
+
+노트북은 실행본을 커밋해 두어 GitHub에서도 시각화를 그대로 볼 수 있습니다.
+
 ## What To Edit
 
 - 매뉴얼이 새로 나오면: `data/raw/`의 HWP를 교체하고 Stage 1부터 다시.

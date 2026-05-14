@@ -1,7 +1,7 @@
 # HWP/kordoc + Skill-Based LLM Pipeline Redesign
 
 - **Date**: 2026-05-14
-- **Author**: ghibli2026team@gmail.com + Claude (collaborative)
+- **Author**: ghibli2026team@gmail.com
 - **Status**: Implemented
 - **Scope**: Replace PDF/LlamaParse ingestion with HWP/kordoc. Replace regex-based CSV builders with Claude Code skill-driven normalization through a canonical intermediate Markdown.
 

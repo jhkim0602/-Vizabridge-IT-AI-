@@ -4,151 +4,132 @@
 
 ## One-Line Summary
 
-이 프로젝트는 출입국/비자 PDF 매뉴얼을 그대로 베끼는 작업이 아니라, PDF 속 행정 정보를 체류자격/사증코드, 민원유형, 대상, 요건, 제출서류, 제한, 예외, 수수료 같은 의미 단위로 정리하는 데이터 전처리 파이프라인입니다.
+비자/체류 HWP 매뉴얼을 kordoc으로 Markdown으로 변환하고, Claude Code 스킬로 의미 단위 정규화한 뒤, 결정적 Python으로 RAG/챗봇용 CSV를 만드는 9단계 데이터 전처리 파이프라인입니다. LLM은 3단계에서만 사용합니다.
 
 ## Folder Map
 
 ```text
 Vizabridge/
 ├── data/
-│   ├── raw/
+│   ├── raw/                          # 원본 HWP
+│   │   └── legacy_pdf/               # 기존 PDF 백업
 │   ├── parsed/
-│   └── processed/
-├── docs/
-├── notebooks/
+│   │   ├── raw/                      # kordoc → MD (.gitignored)
+│   │   ├── chunks/                   # 청크 인덱스 .jsonl (커밋)
+│   │   ├── normalized/               # 정규화 MD (커밋) ← LLM 결과
+│   │   ├── normalized_chatbot/       # 챗봇 정규화 MD (커밋)
+│   │   └── validation/               # validator 산출 .json (커밋)
+│   └── processed/                    # 최종 CSV (.gitignored)
 ├── scripts/
+│   └── legacy/                       # 과거 정규식 빌더
+├── .claude/skills/
+│   ├── vizabridge-normalize/
+│   ├── vizabridge-enrich-chatbot/
+│   └── vizabridge-repair/
+├── notebooks/
+├── docs/
 ├── tests/
-├── output/
-├── requirements.txt
-└── README.md
+├── output/                           # 검수 산출물 (.gitignored)
+└── requirements.txt
 ```
 
 ## `data/`
 
-데이터가 단계별로 지나가는 공간입니다.
+| Folder | 역할 | 직접 수정 여부 | git |
+| --- | --- | --- | --- |
+| `data/raw/` | 원본 HWP 보관 | 원본 교체 외엔 수정하지 않음 | 커밋 |
+| `data/raw/legacy_pdf/` | 과거 PDF 백업 | 보존만 | 커밋 |
+| `data/parsed/raw/` | kordoc Markdown | 스크립트가 재생성 | 비커밋 (regenerable) |
+| `data/parsed/chunks/` | 청크 인덱스 | 스크립트가 재생성 | 커밋 (작고 유용) |
+| `data/parsed/normalized/` | 정규화 MD | Claude Code 스킬이 작성 | **커밋** |
+| `data/parsed/normalized_chatbot/` | 챗봇 정규화 MD | 스킬이 작성 | **커밋** |
+| `data/parsed/validation/` | validator 산출 | 스크립트 재생성 | 커밋 |
+| `data/processed/` | 최종 semantic/chatbot CSV | 스크립트 재생성 | 비커밋 |
 
-| Folder | 역할 | 직접 수정 여부 |
-| --- | --- | --- |
-| `data/raw/` | 원본 PDF 보관소 | 원본 교체 외에는 수정하지 않음 |
-| `data/parsed/` | LlamaParse가 PDF를 Markdown으로 바꾼 결과 | 보통 직접 수정하지 않음 |
-| `data/processed/` | 최종 clean CSV 산출물 | 스크립트로만 재생성 |
-
-`data/processed/`에는 반복 생성 가능한 최종 CSV만 유지합니다.
-
-Semantic clean CSV:
-
-- `stay_manual_semantic_clean.csv`
-- `visa_manual_semantic_clean.csv`
-
-Chatbot-ready CSV:
-
-- `stay_manual_chatbot_ready.csv`
-- `visa_manual_chatbot_ready.csv`
-- `chatbot_intent_routes.csv`
-
-semantic clean CSV는 매뉴얼의 행정 구조를 보존하고, chatbot-ready CSV는 사용자의 자연어 상황 질문과 연결하기 위한 검색/라우팅 필드를 추가합니다. 이 CSV들에는 검수용 컬럼, PDF 페이지 번호, 원문 근거, raw text를 넣지 않습니다.
+**정규화 MD를 커밋하는 이유**: 같은 입력에서 같은 CSV가 나오게 만드는 결정성 보장 장치입니다. LLM이 다시 안 돌아도 됩니다.
 
 ## `scripts/`
 
-반복 실행하는 핵심 코드입니다.
+| Script | 단계 | 역할 |
+| --- | --- | --- |
+| `parse_hwp_to_markdown.py` | 1 | HWP → kordoc → MD |
+| `index_markdown_chunks.py` | 2 | MD → 청크 인덱스 (table 경계 기반) |
+| `validate_normalization.py` | 4 | 정규화 MD ↔ 원본 MD 교차 검증 |
+| `build_semantic_csv.py` | 6 | 정규화 MD → semantic CSV |
+| `build_chatbot_csv.py` | 8 | 챗봇 정규화 MD → chatbot CSV |
+| `quality_report_semantic_manual_csvs.py` | 9 | 검수용 리포트 + Excel |
 
-| Script | 역할 |
-| --- | --- |
-| `build_semantic_manual_csvs.py` | parsed Markdown을 읽어 최종 CSV 2개를 만듭니다. |
-| `build_chatbot_ready_manual_csvs.py` | semantic clean CSV를 읽어 챗봇 검색용 CSV와 intent route CSV를 만듭니다. |
-| `quality_report_semantic_manual_csvs.py` | 최종 CSV를 점검하고 검수용 Excel/리포트를 만듭니다. |
+`scripts/legacy/`는 과거 정규식 빌더입니다. 직접 호출하지 않습니다 (quality_report가 상수/분류기 함수만 import).
 
-실행 순서는 항상 다음과 같습니다.
+## `.claude/skills/`
 
-```bash
-.venv/bin/python scripts/build_semantic_manual_csvs.py
-.venv/bin/python scripts/build_chatbot_ready_manual_csvs.py
-.venv/bin/python scripts/quality_report_semantic_manual_csvs.py
-```
+Claude Code 세션에서 `/vizabridge-normalize`, `/vizabridge-enrich-chatbot`, `/vizabridge-repair`로 호출되는 스킬들. SKILL.md + references/ + scripts/ 구조.
 
-정제 규칙을 고칠 때는 테스트를 먼저 추가한 뒤 스크립트를 수정합니다.
+| Skill | 단계 | 입력 | 출력 |
+| --- | --- | --- | --- |
+| `vizabridge-normalize` | 3 | 청크 인덱스 + raw MD | 정규화 MD (append) |
+| `vizabridge-repair` | 5 | validator 산출 | 정규화 MD (replace) |
+| `vizabridge-enrich-chatbot` | 7 | semantic CSV | 챗봇 정규화 MD (append) |
+
+각 스킬은 청크/행 단위로 처리하고 진행률을 마커로 기록하므로 세션 한도에 닿으면 다음 세션에서 자연스럽게 재개됩니다.
 
 ## `output/`
 
-검수와 분석을 위한 재생성 산출물이 생기는 곳입니다. Git에는 올리지 않습니다.
+검수 산출물. Git에는 올리지 않습니다.
 
 | Folder | 내용 |
 | --- | --- |
 | `output/quality/` | 품질 요약 CSV, 검수 후보 CSV, Markdown 리포트 |
 | `output/review/` | 사람이 필터링하면서 볼 수 있는 Excel 파일 |
 
-주요 파일:
-
-- `output/quality/semantic_manual_quality_report.md`
-- `output/review/stay_manual_review.xlsx`
-- `output/review/visa_manual_review.xlsx`
-
-검수 Excel의 `all_rows_with_flags` 시트는 전체 행을 보여주고, 앞쪽에 `needs_review`, `review_priority`, `review_reason`, `suggested_action`을 붙입니다.
-
 ## `notebooks/`
 
-분석과 확인용입니다. 운영 파이프라인의 주 실행 경로는 `scripts/`이고, 노트북은 결과를 눈으로 확인하는 도구입니다.
+분석/시각화 도구. 운영 경로 아님.
 
 | Notebook | 역할 |
 | --- | --- |
-| `01_setup_llamaparse_api_key.ipynb` | API 키 로딩 확인 |
-| `02_parse_pdfs_with_llamaparse.ipynb` | PDF를 Markdown으로 파싱 |
 | `03_review_semantic_manual_csvs.ipynb` | 최종 CSV 분포, 누락률, 검수 후보 확인 |
 
-## `docs/`
+(과거 `01_setup_llamaparse_api_key.ipynb`, `02_parse_pdfs_with_llamaparse.ipynb`은 제거됨 — kordoc은 API 키도, 별도 노트북도 필요 없음.)
 
-프로젝트 판단 기준을 설명합니다.
+## `docs/`
 
 | Document | 내용 |
 | --- | --- |
 | `data_columns.md` | 최종 CSV 컬럼 정의 |
 | `data_preprocessing_runbook.md` | 재생성/검수 실행 절차 |
-| `pipeline_strategy.md` | 왜 이런 파이프라인을 선택했는지 |
-| `project_structure.md` | 폴더 구조와 운영 방식 |
+| `pipeline_strategy.md` | 왜 이 파이프라인을 선택했는가 |
+| `project_structure.md` | 이 문서 |
+| `superpowers/specs/` | 설계 사양서 |
 
 ## `tests/`
 
-정제 규칙이 실수로 깨지지 않게 막는 안전장치입니다.
-
-예를 들어 다음을 확인합니다.
-
-- 최종 CSV에 페이지 번호/raw/evidence/review 컬럼이 들어가지 않는지
-- 목차, 표지, 빈 양식, 깨진 표 조각이 제거되는지
-- 검수 후보 탐지 규칙이 정상 동작하는지
-
-실행:
-
 ```bash
 .venv/bin/python -m pytest tests -q
 ```
+
+정제 규칙이 깨지지 않게 막는 안전장치. 기존 테스트는 legacy 빌더 기준이라 일부 미적용 — 새 파이프라인용 테스트는 점진 추가.
 
 ## Maintenance Checklist
 
-PDF 또는 정제 규칙을 바꾼 뒤에는 항상 아래 순서로 확인합니다.
+HWP 또는 정규화 규칙을 바꾼 뒤:
 
-1. 테스트 실행
-2. 최종 CSV 재생성
-3. 챗봇용 CSV 재생성
-4. 품질 리포트/검수 Excel 재생성
-5. 노트북 전체 실행
-5. `output/quality/semantic_manual_quality_report.md`에서 검수 후보 수 확인
-
-명령:
-
-```bash
-.venv/bin/python -m pytest tests -q
-.venv/bin/python scripts/build_semantic_manual_csvs.py
-.venv/bin/python scripts/build_chatbot_ready_manual_csvs.py
-.venv/bin/python scripts/quality_report_semantic_manual_csvs.py
-.venv/bin/jupyter nbconvert --to notebook --execute notebooks/03_review_semantic_manual_csvs.ipynb --output /tmp/semantic_review_executed.ipynb --ExecutePreprocessor.timeout=180
-```
+1. `python scripts/parse_hwp_to_markdown.py` (필요 시 `--force`)
+2. `python scripts/index_markdown_chunks.py`
+3. Claude Code에서 `/vizabridge-normalize stay`, `/vizabridge-normalize visa`
+4. `python scripts/validate_normalization.py`
+5. 필요 시 `/vizabridge-repair` → 다시 validator
+6. `python scripts/build_semantic_csv.py`
+7. Claude Code에서 `/vizabridge-enrich-chatbot stay`, `/vizabridge-enrich-chatbot visa`
+8. `python scripts/build_chatbot_csv.py`
+9. `python scripts/quality_report_semantic_manual_csvs.py`
 
 ## Practical Rule
 
-최종 CSV를 직접 손으로 수정하지 않습니다. 문제가 보이면 원인은 보통 세 곳 중 하나입니다.
+최종 CSV를 직접 손으로 수정하지 않습니다. 문제는 보통 세 곳 중 하나입니다.
 
-- PDF 파싱 결과가 깨진 경우: `data/parsed/` 확인
-- 의미 분류 규칙이 부족한 경우: `build_semantic_manual_csvs.py` 수정
-- 검수 후보 기준이 과하거나 약한 경우: `quality_report_semantic_manual_csvs.py` 수정
+- kordoc 파싱이 깨진 경우: `data/parsed/raw/`의 MD 확인. HWP 자체 문제일 수도 있음.
+- 의미 분류 규칙이 부족한 경우: `.claude/skills/vizabridge-normalize/references/*.md` 수정 → 해당 청크 재실행
+- 검수 후보 기준이 과하거나 약한 경우: `scripts/quality_report_semantic_manual_csvs.py`의 `row_issues()` 수정
 
-이렇게 해야 같은 PDF를 다시 처리해도 같은 품질의 CSV를 재현할 수 있습니다.
+이렇게 해야 같은 HWP를 다시 처리해도 같은 품질의 CSV를 재현할 수 있습니다.

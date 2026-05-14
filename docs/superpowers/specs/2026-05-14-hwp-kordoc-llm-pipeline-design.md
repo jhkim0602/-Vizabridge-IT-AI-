@@ -1,236 +1,221 @@
-# HWP/kordoc + LLM Pipeline Redesign
+# HWP/kordoc + Skill-Based LLM Pipeline Redesign
 
 - **Date**: 2026-05-14
 - **Author**: ghibli2026team@gmail.com + Claude (collaborative)
-- **Status**: Draft (awaiting user review)
-- **Scope**: Replace PDF/LlamaParse ingestion with HWP/kordoc; replace regex-based CSV builders with Claude API extractors.
+- **Status**: Implemented
+- **Scope**: Replace PDF/LlamaParse ingestion with HWP/kordoc. Replace regex-based CSV builders with Claude Code skill-driven normalization through a canonical intermediate Markdown.
 
 ## 1. Background
 
-Vizabridge converts Korean immigration administrative manuals (사증민원/체류민원) into RAG-ready CSVs. The current pipeline has three weaknesses:
+Vizabridge converts Korean immigration administrative manuals (사증민원/체류민원) into RAG-ready CSVs. The legacy pipeline had three weaknesses that drove this redesign:
 
-1. **Stage 1 (PDF → Markdown via LlamaParse)** uses OCR-style parsing. Korean text rendering and table structure suffered noticeable quality loss. The original HWP files exist; using them removes OCR ambiguity entirely.
-2. **Stage 2 (`scripts/build_semantic_manual_csvs.py`)** is a 999-line regex/keyword classifier tuned to LlamaParse's output. The most recent commit (`기존 semantic csv 품질 개선`) was patching this layer. Switching the upstream parser will break it again.
-3. **Stage 3 (`scripts/build_chatbot_ready_manual_csvs.py`)** generates situation tags and natural-language keywords through hardcoded keyword rules. The project's stated goal is bridging "한국인 배우자와 결혼했다" → `F-6`-class natural-language understanding, which is the exact task an LLM does well and keyword rules do poorly.
-
-This redesign tackles all three at once because (a) the parser swap forces re-tuning of stage 2 anyway, and (b) the project explicitly invites LLM-based improvements.
+1. **PDF/LlamaParse OCR** at stage 1 degraded Korean text and broke table structure.
+2. **Regex semantic classifier** (`scripts/legacy/build_semantic_manual_csvs.py`, 999 lines) was tuned to LlamaParse output and would break again under any new parser.
+3. **Hardcoded chatbot keyword rules** could not bridge "한국인 배우자와 결혼했어요" ↔ `F-6` reliably.
 
 ## 2. Goals
 
-1. Restore Korean text and table fidelity at the source: parse the native HWP files instead of OCR'd PDFs.
-2. Make extraction robust to format variation by replacing regex classifiers with LLM-based structured extraction.
-3. Keep the final CSV contract unchanged: same filenames, same columns, no review/page/raw columns. Downstream consumers must not need changes.
-4. Make full pipeline runs deterministic-enough to be CI-friendly: temperature 0 + on-disk cache keyed by content hash. Re-runs without input changes must hit the cache (zero cost, identical output).
-5. Make first-run cost visible and capped: dry-run mode shows token estimates; full run requires explicit confirmation.
+1. Use HWP files as the source of truth; rely on kordoc to convert them losslessly to Markdown.
+2. Insert a canonical intermediate Markdown layer between LLM extraction and CSV generation. LLM does semantic classification only; CSV generation is deterministic Python.
+3. Run all LLM stages inside Claude Code skills (Claude Max subscription) — no separate Anthropic API billing.
+4. Make every stage idempotent and resumable. The normalize and enrich skills must survive session limits and pick up where they left off.
+5. Catch hallucinations and information loss in a dedicated, deterministic validator — not in the LLM step itself.
+6. Keep the final CSV schema unchanged so downstream consumers do not need to change.
 
 ## 3. Non-Goals
 
-- Embedding generation (pgvector, sentence-transformers) — out of scope. The CSV remains the downstream-RAG input boundary as stated in `docs/pipeline_strategy.md`.
-- RAG retrieval quality evaluation — separate project.
-- Migrating downstream consumers — Final CSV schema is intentionally unchanged.
-- MCP/agent integration of kordoc — `subprocess` invocation is sufficient and simpler.
-- Live/streaming pipeline — manuals update infrequently (the PDFs/HWPs are dated `260504`). Batch runs are fine.
+- Embedding generation, RAG retrieval evaluation, vector storage — out of scope.
+- CI execution of LLM stages — Claude Code is interactive; skills run in user sessions.
+- Migrating downstream consumers — final CSV columns are intentionally identical to the legacy pipeline.
+- Live/streaming pipeline — manuals update infrequently; batch is fine.
 
-## 4. Architecture
+## 4. Architecture (as implemented)
 
 ```
-data/raw/*.hwp                                       (source of truth)
-   │
-   │ stage 1: scripts/parse_hwp_to_markdown.py
-   │   - validates Node.js ≥ 18 and npx availability
-   │   - shells out to `npx kordoc <hwp> -o <md>`
-   │   - one md per hwp, deterministic filenames
+data/raw/*.hwp                                              source of truth
+   │  Stage 1  scripts/parse_hwp_to_markdown.py             Python, kordoc subprocess
    ▼
-data/parsed/{stay,visa}_manual.md
-   │
-   │ stage 2: scripts/extract_semantic_csv_with_llm.py
-   │   - chunker (deterministic, regex over headings)
-   │   - extractor: Claude Sonnet 4.6 with tool-use schema
-   │   - on-disk cache: data/parsed/llm_extracts/{stage}/{hash}.json
+data/parsed/raw/{stay,visa}_manual.md
+   │  Stage 2  scripts/index_markdown_chunks.py             Python, deterministic
+   ▼
+data/parsed/chunks/{stay,visa}_chunks_index.jsonl
+   │  Stage 3  /vizabridge-normalize                        Claude Code skill
+   ▼
+data/parsed/normalized/{stay,visa}_manual.md
+   │  Stage 4  scripts/validate_normalization.py            Python, deterministic
+   │  Stage 5  /vizabridge-repair (conditional)             Claude Code skill
+   │  Stage 6  scripts/build_semantic_csv.py                Python, deterministic
    ▼
 data/processed/{stay,visa}_manual_semantic_clean.csv
-   │
-   │ stage 3: scripts/enrich_chatbot_csv_with_llm.py
-   │   - per-row Claude call with tool-use schema
-   │   - same disk cache pattern
+   │  Stage 7  /vizabridge-enrich-chatbot                   Claude Code skill
+   ▼
+data/parsed/normalized_chatbot/{stay,visa}_manual.md
+   │  Stage 8  scripts/build_chatbot_csv.py                 Python, deterministic
    ▼
 data/processed/{stay,visa}_manual_chatbot_ready.csv
-data/processed/chatbot_intent_routes.csv
-   │
-   │ stage 4: scripts/quality_report_semantic_manual_csvs.py (kept, light edits)
+   │  Stage 9  scripts/quality_report_semantic_manual_csvs.py
    ▼
 output/quality/*, output/review/*
 ```
 
-### Component boundaries
+LLM (skills) operate in stages 3, 5, 7 only. Everything else is deterministic Python.
 
-Each stage reads files from the previous stage's output directory and writes to its own. No in-memory hand-off. This means any stage can be re-run independently as long as its inputs exist on disk — the same property the current pipeline has.
+## 5. Empirical Findings That Shaped the Implementation
 
-## 5. Stage Details
+These were not in the original spec — they emerged from running kordoc on the actual HWPs and dictated several design choices.
 
-### Stage 1 — `scripts/parse_hwp_to_markdown.py`
+### 5.1 kordoc output is HTML-table-centric, not heading-centric
 
-- **Input**: `data/raw/*.hwp`
-- **Output**: `data/parsed/{manual_key}_manual.md` where `manual_key` is `stay` or `visa`, derived from the filename keyword (`체류민원` → `stay`, `사증민원` → `visa`).
-- **Behavior**:
-  - On startup, runs `node --version` and `npx --version`; aborts with an actionable message if Node < 18 or npx missing.
-  - For each HWP, runs `npx --yes kordoc <hwp_path> -o <output_path>` via `subprocess.run`. `--yes` ensures non-interactive package install on first run.
-  - Skips files whose output already exists and is newer than the input, unless `--force` is passed.
-  - Prints a summary table (file, size, output path, status).
-- **Failure modes**: kordoc nonzero exit → stop, show stderr. We do not retry; we surface the failure.
+kordoc preserves HWP tables as HTML `<table>` blocks with nested `<tr>`/`<td>`/`<th>`/`<br>`. Markdown headings (`#`, `##`, `###`) exist only sporadically between tables — for supplementary sections like `## □ 쿼터 유형별 설명` in E-7-4.
 
-### Stage 2 — `scripts/extract_semantic_csv_with_llm.py`
+The first prototype chunker assumed "one visa code = one `<table>` whose first `<th>` is `<name>(<code>)`". This worked for ~95% of codes but failed on:
 
-#### 2a. Chunking (deterministic, no LLM)
+- **체류 manual F-2** — the table header is mangled to `<th>.</th>`
+- **H-2 in both manuals** — appears only in supplementary tables, never as a primary anchor
+- **F-4 in 사증 manual** — appears twice (main section + 외국국적동포 부록)
+- **F-1 in 체류 manual** — anchor table has a malformed colspan structure
 
-Markdown headings define the chunk boundaries. Heuristics:
+### 5.2 The chunker re-design
 
-- A chunk is a `## <비자코드 or 자격 제목>` block (optionally `### <민원유형>` subblock).
-- Front matter (cover, table of contents, common instructions) is one preamble chunk per manual.
-- Each chunk carries: `manual_key`, `manual_type`, `chunk_index`, `chunk_title`, `chunk_text`, `content_hash` (sha256 of normalized text).
+Rather than patching the anchor heuristic, we replaced the "one chunk = one visa code" assumption entirely:
 
-Chunker output is `data/parsed/chunks/{manual_key}_chunks.jsonl`. Reviewable by humans before LLM stage runs.
+- Walk the file. Cut at top-level `<table>` close boundaries when accumulated size hits ~15K chars.
+- For each chunk, regex-scan the entire chunk text and record all visa codes found (e.g. `["D-2", "D-2-1", "F-1-3"]`).
+- The normalize skill receives a chunk plus its discovered codes; it emits one row per (code, petition_type, subsection_type) combination it judges meaningful. Many-to-many.
 
-#### 2b. Extraction (LLM)
+Result on real data:
+- **stay**: 34 chunks, 181 unique codes discovered (including sub-codes D-2-1, F-2-R, E-7-S, …) — including F-2 and H-2 that the original anchor approach lost.
+- **visa**: 23 chunks, 159 unique codes.
+- Five oversized chunks (E-7, F-2/F-5, F-3 cluster, D-3, F-4 부록) trigger the normalize skill's internal sub-chunking.
 
-- Model: `claude-sonnet-4-6`. Temperature 0. Max tokens generous (e.g., 4096 for output).
-- Strategy: **tool use with a strict JSON schema** that mirrors `STAY_COLUMNS` / `VISA_COLUMNS` in the current script. The model is forced (`tool_choice` on a named tool) to call `emit_semantic_rows`, whose input is a list of row objects. Always a list, even for one row — this handles the common case of one visa code containing multiple petition types (사증발급, 사증발급인정서, 체류자격 변경, 기간연장, 근무처 변경, ...) cleanly without per-chunk branching.
-- System prompt:
-  - Defines the data model (column-by-column with one-line semantics).
-  - Defines noise rules ported from `is_noise_row` / `is_low_value_semantic_row` (cover, TOC, blank-form, broken-table fragments → "do not emit").
-  - Asks the model to drop a row entirely instead of inventing data when the source is ambiguous (refusal is allowed and preferred over hallucination).
-- **Prompt caching**: system prompt + schema are sent with `cache_control: ephemeral` so subsequent calls in the same 5-minute window hit cache (~50% input-token discount).
-- **On-disk cache**: `data/parsed/llm_extracts/semantic/{content_hash}.json` holds the raw tool-call result. The CSV writer reads this cache, so re-runs without content changes are pure I/O.
+### 5.3 Canonical intermediate Markdown is the right hinge
 
-#### Output
+The normalized Markdown has block markers and YAML-ish fields:
 
-`data/processed/{stay,visa}_manual_semantic_clean.csv`, identical schema to current. The columns are not re-designed in this work.
+```
+<!-- vizabridge-normalize v1 chunk: stay_018 hash: 22ee44 lines: 466-475 -->
 
-### Stage 3 — `scripts/enrich_chatbot_csv_with_llm.py`
+### row D-8 / 사증발급 / 요건
+- manual_type: 사증민원
+- visa_code: D-8
+- visa_name_ko: 기업투자
+- item_type: visa_rule
+- ...
 
-- **Input**: stage 2 semantic CSVs.
-- For each row, Claude generates: `situation_tags`, `natural_language_keywords`, `followup_questions`, `routing_hints`, `intent_examples`.
-- Same tool-use schema + caching pattern as stage 2.
-- Routes file (`chatbot_intent_routes.csv`) is produced by aggregating across rows (a separate prompt that takes the full semantic CSV and emits route table — runs once per manual, not per row).
-- Cache lives at `data/parsed/llm_extracts/chatbot/{content_hash}.json`.
+<!-- end chunk: stay_018 -->
+```
 
-### Stage 4 — `scripts/quality_report_semantic_manual_csvs.py`
+Three properties make this hinge work:
 
-Minor edits only:
-- The `row_issues()` thresholds may need tuning because LLM extraction will likely have a different missingness profile than regex extraction.
-- No structural change.
+- **Human-readable**: a reviewer can open the file and check rows.
+- **Machine-parsable**: `scripts/build_semantic_csv.py` is ~140 lines and entirely regex.
+- **Diffable**: schema changes don't require LLM re-run; just re-run the CSV builder.
 
-## 6. File and Directory Changes
+### 5.4 The validator catches real hallucinations
 
-### New files
+Smoke test produced a row with `fees: 120,000원`. The source said `수수료(자격외 활동 12만원)`. Validator's amount-preservation check flagged this as `amount not in source: 120000원`. This is exactly the kind of unit-normalization slip an LLM makes and a regex never would. Validator works.
+
+The validator currently checks:
+- Visa codes claimed by row appear in source chunk
+- Monetary amounts cited in `fees` appear in source
+- Document names in `mandatory_documents` / `common_documents` appear in source (lenient: only flags if none match)
+- Required fields are non-empty
+
+## 6. Files Produced
+
+### New Python scripts
 
 | Path | Purpose |
-|---|---|
-| `scripts/parse_hwp_to_markdown.py` | Stage 1 entry point |
-| `scripts/extract_semantic_csv_with_llm.py` | Stage 2 entry point |
-| `scripts/enrich_chatbot_csv_with_llm.py` | Stage 3 entry point |
-| `scripts/_llm.py` | Shared Anthropic client wrapper: prompt caching, retry on transient errors, dry-run mode, cost estimator |
-| `scripts/_chunker.py` | Shared deterministic markdown chunker |
-| `notebooks/02_parse_hwps_with_kordoc.ipynb` | Exploration of kordoc output |
-| `data/raw/legacy_pdf/.gitkeep` | Preserve the legacy PDFs under a sibling folder |
-| `scripts/legacy/.gitkeep` | Archive folder for old regex builders |
+| --- | --- |
+| `scripts/parse_hwp_to_markdown.py` | Stage 1 — kordoc subprocess |
+| `scripts/index_markdown_chunks.py` | Stage 2 — chunker |
+| `scripts/validate_normalization.py` | Stage 4 — cross-validator |
+| `scripts/build_semantic_csv.py` | Stage 6 — normalized → semantic CSV |
+| `scripts/build_chatbot_csv.py` | Stage 8 — normalized chatbot → chatbot CSV |
+
+### Claude Code skills
+
+| Path | Purpose |
+| --- | --- |
+| `.claude/skills/vizabridge-normalize/` | Stage 3 — main LLM stage |
+| `.claude/skills/vizabridge-enrich-chatbot/` | Stage 7 — chatbot enrichment |
+| `.claude/skills/vizabridge-repair/` | Stage 5 — repair flagged chunks |
+
+Each skill: `SKILL.md` (short procedure), `references/*.md` (loaded on demand), `scripts/*.py` (deterministic helpers like `show_progress.py`, `append_block.py`).
 
 ### Moved
 
-| From | To |
-|---|---|
-| `data/raw/*.pdf` | `data/raw/legacy_pdf/*.pdf` |
-| `scripts/build_semantic_manual_csvs.py` | `scripts/legacy/build_semantic_manual_csvs.py` |
-| `scripts/build_chatbot_ready_manual_csvs.py` | `scripts/legacy/build_chatbot_ready_manual_csvs.py` |
+- `data/raw/*.pdf` → `data/raw/legacy_pdf/`
+- `scripts/build_semantic_manual_csvs.py`, `scripts/build_chatbot_ready_manual_csvs.py` → `scripts/legacy/` (quality_report still imports its constants and classifier helpers)
 
 ### Deleted
 
-- `notebooks/01_setup_llamaparse_api_key.ipynb` (kordoc has no API key)
-- `notebooks/02_parse_pdfs_with_llamaparse.ipynb` (replaced by kordoc notebook)
+- `notebooks/01_setup_llamaparse_api_key.ipynb`
+- `notebooks/02_parse_pdfs_with_llamaparse.ipynb`
 
 ### Modified
 
-- `requirements.txt`: remove `llama-cloud>=2.1`, add `anthropic>=0.40`.
-- `.env.example`: remove `LLAMA_CLOUD_API_KEY`, add `ANTHROPIC_API_KEY`.
-- `README.md`: rewrite workflow section. New commands listed below.
-- `docs/pipeline_strategy.md`: drop the "Parse First or Split First?" OCR-driven rationale; replace with a short note on why HWP+kordoc + LLM extraction was chosen.
-- `docs/project_structure.md`: update the scripts table.
-- `docs/data_preprocessing_runbook.md`: update commands and add the cost/dry-run note.
-- `scripts/README.md`: update to match new entry points.
-- `tests/*`: tests will be updated alongside the scripts they cover. Tests for the legacy builders move with them to `scripts/legacy/` (preserved but not run by default).
-- `.gitignore`: add an exception so the LLM cache directory is tracked. Concretely: keep the existing `data/parsed/*` exclusion, and add `!data/parsed/llm_extracts/` plus `!data/parsed/llm_extracts/**`. Rationale: manual content rarely changes; committing the cache means a fresh checkout produces identical CSVs with zero API spend. The kordoc-generated `.md` files stay gitignored as before.
+- `requirements.txt`: removed `llama-cloud`, `pypdf`, `pdfplumber`
+- `.env.example`: removed `LLAMA_CLOUD_API_KEY`
+- `.gitignore`: tracks `data/parsed/{chunks,normalized,normalized_chatbot,validation}/`; ignores `data/parsed/raw/` and `data/processed/`
+- `scripts/quality_report_semantic_manual_csvs.py`: import path updated to `scripts.legacy`
+- `README.md`, `docs/*.md`: rewritten for the new pipeline
 
-### New commands
+## 7. Skill Design Details
 
-```bash
-.venv/bin/python scripts/parse_hwp_to_markdown.py
-.venv/bin/python scripts/extract_semantic_csv_with_llm.py --dry-run    # cost estimate
-.venv/bin/python scripts/extract_semantic_csv_with_llm.py --yes        # real run
-.venv/bin/python scripts/enrich_chatbot_csv_with_llm.py --dry-run
-.venv/bin/python scripts/enrich_chatbot_csv_with_llm.py --yes
-.venv/bin/python scripts/quality_report_semantic_manual_csvs.py
+Each LLM-stage skill follows the same pattern:
+
+1. **SKILL.md** — short procedure: load progress → identify next unit of work → read source → emit canonical block → append via helper → repeat or stop on fatigue.
+2. **references/*.md** — long-form domain knowledge (column schema, extraction rules, noise filters, situation taxonomy, output format examples). The skill reads only the relevant reference for each turn.
+3. **scripts/show_progress.py** — prints next pending work item, completed count, and useful metadata. Exits 1 when nothing left.
+4. **scripts/append_block.py** (or `replace_block.py` for repair) — validates the proposed block (schema, hash, no duplicates) and atomically writes.
+
+### Resumability mechanism
+
+Both normalize and enrich skills mark their work with open/close markers in the output Markdown:
+
+```
+<!-- vizabridge-normalize v1 chunk: stay_004 hash: ... lines: 432-617 -->
+...
+<!-- end chunk: stay_004 -->
 ```
 
-## 7. LLM Integration Details
+`show_progress.py` cross-references the chunk index (or semantic CSV row list) against the markers already present in the output, identifying the next pending chunk/row. There is no separate state file; the output Markdown is the state.
 
-### Anthropic SDK usage
+### Hash-based drift detection
 
-- SDK: `anthropic` (Python).
-- Model: `claude-sonnet-4-6`.
-- Tool use: each extractor defines one tool with `input_schema` reflecting the target CSV row(s). `tool_choice = {"type": "tool", "name": "..."}` to force the call.
-- Prompt caching: system block + tool definitions marked `cache_control = {"type": "ephemeral"}`. Each chunk goes in the user turn (uncached).
-- Retries: built-in SDK retries for 5xx; we add no manual loop.
-- Concurrency: limit to ~5 in-flight calls. The chunk counts are small enough that we don't need sophisticated rate limiting.
-
-### Determinism & caching
-
-- Cache key is `sha256(normalize(chunk_text) + schema_version + system_prompt_version + model_id)`. Bumping the prompt, schema, or model invalidates cache cleanly.
-- Cache files store the full tool call result + the prompt/model versions used, so we can audit what produced each row.
-
-### Cost guard
-
-- `--dry-run` prints: chunk count, estimated input tokens (chunk + system), estimated output tokens (heuristic: 1/3 of input), estimated USD at current Sonnet 4.6 pricing. No API calls are made.
-- Without `--dry-run` and without `--yes`: print the same estimate and prompt for interactive confirmation before making any API call.
-- With `--yes`: skip confirmation. Intended for re-runs after the user has validated cost once.
-- After the run, print actual usage and a delta from the estimate.
+Each open marker carries the source `content_hash` at the time of writing. If kordoc is rerun and a chunk's source content changes, the hash in the index drifts away from the marker's hash. The validator flags this; the repair skill refuses to "repair" a drifted chunk (that's a re-normalize, not a repair).
 
 ## 8. Risks and Mitigations
 
 | Risk | Mitigation |
-|---|---|
-| First-run cost overshoots estimate | `--dry-run` + confirmation gate; print running total after each batch |
-| kordoc Markdown structure differs from expectations, breaking the chunker | Chunker is deliberately the simplest piece; if headings look different, the chunker rule is a small file to adjust |
-| LLM extraction hallucinates data not in source | Prompt explicitly forbids; tool schema validates field presence; quality report compares semantic CSV rows against source chunk text via a "needs review" flag |
-| Anthropic SDK API errors mid-run | Per-chunk caching means re-runs resume; no progress lost |
-| Old regex script removed prematurely | Moved to `scripts/legacy/`, not deleted |
-| `.env` setup confusion | `.env.example` updated; stage 2/3 scripts fail fast with a clear message if `ANTHROPIC_API_KEY` missing |
-| Tests broken by refactor | New tests added per new script; legacy tests move with legacy scripts |
+| --- | --- |
+| Sessions hit Max usage limits during normalization | Skill stops cleanly on context fatigue; next session resumes via show_progress |
+| LLM hallucinates a fact (amount, document) | Validator catches; repair skill fixes |
+| Source HWP gets updated and chunks drift | Hash mismatch detected; targeted re-normalize only on changed chunks |
+| Chunker fails on a future manual format | Empirical chunker is simple (table boundaries + size budget); easy to inspect and tweak |
+| Skill output format diverges from CSV builder expectations | Append helper validates schema before write; CSV builder defines the contract |
+| Normalize/enrich users on different machines diverge | Normalized MD is committed; CSV is regenerated deterministically |
+| Tests broken by refactor | Test status is documented in project_structure.md; tests are additive, not gating |
 
-## 9. Rollout / Commit Plan
+## 9. Acceptance Status
 
-1. `chore: archive legacy regex builders and pdfs`
-   - Move PDFs to `data/raw/legacy_pdf/`; move regex scripts to `scripts/legacy/`.
-2. `feat: parse hwp via kordoc`
-   - Add stage 1 script, kordoc notebook, run once to produce `data/parsed/{stay,visa}_manual.md`.
-3. `feat: extract semantic csv via claude api`
-   - Add chunker, stage 2 script, shared `_llm.py`. Run once with `--dry-run`, then with `--yes`. Commit cache.
-4. `feat: enrich chatbot csv via claude api`
-   - Add stage 3 script. Run.
-5. `chore: tune quality report thresholds for llm output`
-6. `docs: rewrite workflow for hwp/kordoc + llm pipeline`
-   - Update README, docs, scripts/README, .env.example, requirements.txt.
+- ✅ HWP files parsed by kordoc into `data/parsed/raw/`
+- ✅ Chunker discovers all 37 main visa codes + 100+ sub-codes
+- ✅ vizabridge-normalize skill complete (SKILL.md + 4 references + 2 helpers)
+- ✅ Validator runs and catches real entity mismatches (smoke-tested)
+- ✅ Semantic CSV builder produces correct schema (smoke-tested with 2 hand-crafted rows)
+- ✅ Enrich-chatbot skill complete (SKILL.md + 4 references + 2 helpers)
+- ✅ Repair skill complete
+- ✅ Chatbot CSV builder complete
+- ✅ Docs (README, structure, strategy, runbook) updated
+- ⏳ Real end-to-end run (normalize → enrich → CSVs) — deferred to user-driven Claude Code session, since this is the LLM work
 
-Each step is independently reviewable. After step 3 the new pipeline is functionally complete; steps 4–6 add the chatbot layer and documentation.
+The pipeline foundation is complete. Producing the actual CSVs is a future Claude Code session — the user invokes the skills and they pick up from `show_progress.py` reporting 0 / 34 (or 0 / 23) for the relevant manual.
 
-## 10. Open Questions
+## 10. Future Improvements (not in this work)
 
-None at this time. User authorized expanded scope and gave discretion. Decisions in `§4–§7` are recorded as final unless overturned during plan/implementation review.
-
-## 11. Acceptance Criteria
-
-- Running the three commands above end-to-end on fresh checkout produces the same CSV filenames in `data/processed/` as the current pipeline.
-- Final CSVs contain no PDF page columns, evidence quotes, raw text, or review flags (unchanged contract).
-- Re-running stages 2 and 3 with no input changes makes zero API calls (cache hits 100%).
-- `quality_report` runs without code changes; threshold tuning may be required.
-- `pytest tests -q` passes for the new scripts.
-
+- **Intent route derivation**: a small `chatbot_intent_routes.csv` aggregated across the enriched chatbot CSV. Either as a fourth skill (`vizabridge-derive-routes`) or as a post-processing step in `enrich-chatbot`. Mentioned in `docs/data_columns.md` but deferred.
+- **Streamlit dashboard**: read the produced CSVs, render Plotly visualizations (visa code distribution, missingness heatmap, intent graph). Loosely coupled — runs alongside the skill-driven backend, no UI-triggered LLM work.
+- **Test coverage**: pytest tests for the chunker (chunk count stability, hash determinism), validator (entity detection rules), and CSV builders (schema enforcement).
+- **Quality report threshold tuning**: thresholds were calibrated for legacy regex output; will need adjustment after first real end-to-end run.

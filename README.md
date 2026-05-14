@@ -1,83 +1,134 @@
 # Vizabridge Visa RAG
 
-대한민국 비자/체류 매뉴얼 PDF를 LlamaParse로 파싱하고, semantic CSV와 챗봇용 CSV 데이터셋으로 정리하기 위한 작업 공간입니다.
+대한민국 비자/체류 매뉴얼 **HWP** 원본을 [kordoc](https://github.com/chrisryugj/kordoc)으로 Markdown으로 변환한 뒤, **Claude Code 스킬**로 의미 단위 정규화 → **결정적 Python**으로 RAG/챗봇용 CSV를 생성하는 데이터 전처리 파이프라인입니다.
 
 이 저장소의 핵심 목표는 PDF를 단순히 표 형태로 옮기는 것이 아니라, 행정 매뉴얼의 의미 구조를 이해하기 쉬운 데이터로 바꾸는 것입니다. 최종 CSV는 체류자격/사증코드, 민원유형, 대상, 요건, 제출서류, 제한, 예외, 수수료, 점수표, 쿼터 같은 행정 단위로 정리합니다.
 
-새 목표는 여기서 한 단계 더 나아갑니다. 사용자는 보통 `E-7`, `F-6`, `D-2` 같은 코드를 모른 채 "한국인 배우자와 결혼했다", "유학생인데 아르바이트를 하고 싶다", "외국인 직원을 채용하고 싶다"처럼 자기 상황을 말합니다. 그래서 챗봇용 CSV에는 상황 태그, 자연어 검색 키워드, 되물어야 할 정보, 라우팅 힌트를 추가합니다.
+사용자는 보통 `E-7`, `F-6`, `D-2` 같은 코드를 모른 채 "한국인 배우자와 결혼했다", "유학생인데 아르바이트를 하고 싶다", "외국인 직원을 채용하고 싶다"처럼 자기 상황을 말합니다. 그래서 챗봇용 CSV에는 상황 태그, 자연어 검색 키워드, 되물어야 할 정보, 라우팅 힌트를 추가합니다.
+
+## Pipeline
+
+```
+data/raw/*.hwp                                            (source of truth)
+   │  Stage 1  scripts/parse_hwp_to_markdown.py           (Python, kordoc)
+   ▼
+data/parsed/raw/{stay,visa}_manual.md
+   │  Stage 2  scripts/index_markdown_chunks.py           (Python, deterministic)
+   ▼
+data/parsed/chunks/{stay,visa}_chunks_index.jsonl
+   │  Stage 3  /vizabridge-normalize                      (Claude Code skill)
+   ▼
+data/parsed/normalized/{stay,visa}_manual.md              ← canonical intermediate
+   │  Stage 4  scripts/validate_normalization.py          (Python, deterministic)
+   │  Stage 5  /vizabridge-repair                         (Claude Code skill, optional)
+   │  Stage 6  scripts/build_semantic_csv.py              (Python, deterministic)
+   ▼
+data/processed/{stay,visa}_manual_semantic_clean.csv
+   │  Stage 7  /vizabridge-enrich-chatbot                 (Claude Code skill)
+   ▼
+data/parsed/normalized_chatbot/{stay,visa}_manual.md
+   │  Stage 8  scripts/build_chatbot_csv.py               (Python, deterministic)
+   ▼
+data/processed/{stay,visa}_manual_chatbot_ready.csv
+   │  Stage 9  scripts/quality_report_semantic_manual_csvs.py
+   ▼
+output/quality/*, output/review/*
+```
+
+LLM은 stages 3, 5, 7 에서만 사용합니다. 나머지 6단계는 결정적 Python으로, 다시 실행해도 같은 결과가 나옵니다. **정규화 MD**(stages 3 / 7 산출물)는 의도적으로 git에 커밋합니다 — 같은 입력에서 같은 CSV가 재생성되도록.
 
 ## Folder Structure
 
 ```text
 .
 ├── data/
-│   ├── raw/          # 사람이 받은 원본 PDF. 직접 수정하지 않음
-│   ├── parsed/       # LlamaParse가 PDF를 Markdown으로 풀어낸 결과
-│   └── processed/    # semantic clean CSV와 chatbot-ready CSV
-├── docs/             # 왜 이런 구조로 만들었는지 설명하는 문서
-├── notebooks/        # CSV를 눈으로 확인하고 시각화하는 분석 노트북
-├── scripts/          # 반복 실행 가능한 파이프라인 코드
-├── tests/            # 정제 규칙이 깨지지 않도록 확인하는 테스트
-├── output/           # 품질 리포트/검수 Excel 같은 재생성 산출물, git 제외
-├── .env              # 로컬 API 키, git 제외
-└── requirements.txt  # 실행에 필요한 Python 패키지
+│   ├── raw/                  # 원본 HWP (원본 교체 외 수정하지 않음)
+│   │   └── legacy_pdf/       # 과거 PDF 백업
+│   ├── parsed/
+│   │   ├── raw/              # kordoc 출력 (.gitignored, 재생성 가능)
+│   │   ├── chunks/           # 청크 인덱스 .jsonl (커밋)
+│   │   ├── normalized/       # 정규화 MD — LLM 결과 (커밋)
+│   │   ├── normalized_chatbot/  # 챗봇 정규화 MD (커밋)
+│   │   └── validation/       # validator 산출 .json (커밋)
+│   └── processed/            # 최종 CSV (.gitignored, 재생성 가능)
+├── scripts/                  # 결정적 단계 Python
+│   └── legacy/               # 과거 정규식 빌더 (quality_report에서 상수 재사용)
+├── .claude/skills/
+│   ├── vizabridge-normalize/
+│   ├── vizabridge-enrich-chatbot/
+│   └── vizabridge-repair/
+├── notebooks/                # 분석 노트북
+├── docs/                     # 설계/운영 문서
+├── tests/                    # 정제 규칙 보호 테스트
+├── output/                   # 검수 리포트/Excel (.gitignored)
+└── requirements.txt
 ```
 
-더 자세한 폴더별 관리 기준은 [docs/project_structure.md](docs/project_structure.md)에 정리되어 있습니다.
+자세한 폴더별 관리 기준은 [docs/project_structure.md](docs/project_structure.md), 단계별 명령은 [scripts/README.md](scripts/README.md)에 있습니다.
 
 ## Setup
 
 ```bash
+# Python
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+
+# Node.js 18+ 필요 (kordoc 실행용)
+node --version    # v18 이상이어야 함
 ```
 
-`.env` 파일에는 실제 LlamaCloud API 키를 저장합니다.
-
-```bash
-LLAMA_CLOUD_API_KEY=llx-...
-```
+별도 API 키는 필요하지 않습니다. LLM 단계는 Claude Code 세션 안에서 동작하는 스킬이고, kordoc은 첫 실행 시 `npx`가 자동으로 받아옵니다.
 
 ## Workflow
 
-1. 원본 PDF는 `data/raw/`에 보관합니다.
-2. [notebooks/01_setup_llamaparse_api_key.ipynb](notebooks/01_setup_llamaparse_api_key.ipynb)에서 API 키 로딩을 확인합니다.
-3. [notebooks/02_parse_pdfs_with_llamaparse.ipynb](notebooks/02_parse_pdfs_with_llamaparse.ipynb)로 PDF를 Markdown으로 파싱합니다.
-4. `scripts/build_semantic_manual_csvs.py`로 semantic clean CSV 2개를 생성합니다.
-5. `scripts/build_chatbot_ready_manual_csvs.py`로 사용자 상황 기반 chatbot-ready CSV와 intent route CSV를 생성합니다.
-6. `scripts/quality_report_semantic_manual_csvs.py`로 자동 품질검사와 검수용 Excel을 생성합니다.
-7. [notebooks/03_review_semantic_manual_csvs.ipynb](notebooks/03_review_semantic_manual_csvs.ipynb)에서 semantic/chatbot CSV 분포, 누락률, 검수 후보를 확인합니다.
-
 ```bash
-.venv/bin/python scripts/build_semantic_manual_csvs.py
-.venv/bin/python scripts/build_chatbot_ready_manual_csvs.py
-.venv/bin/python scripts/quality_report_semantic_manual_csvs.py
+# 1) HWP → Markdown (kordoc, 1~2분)
+python scripts/parse_hwp_to_markdown.py
+
+# 2) 청크 분할 (즉시)
+python scripts/index_markdown_chunks.py
+
+# 3) Claude Code 세션에서 정규화
+#    /vizabridge-normalize stay
+#    /vizabridge-normalize visa
+#    (세션 한도 닿으면 다음 세션에서 재개)
+
+# 4) 결정적 검증
+python scripts/validate_normalization.py
+
+# 5) 필요 시 Claude Code 세션에서 수리
+#    /vizabridge-repair stay
+#    /vizabridge-repair visa
+python scripts/validate_normalization.py   # 재검증
+
+# 6) semantic CSV 빌드
+python scripts/build_semantic_csv.py
+
+# 7) Claude Code 세션에서 챗봇 풍부화
+#    /vizabridge-enrich-chatbot stay
+#    /vizabridge-enrich-chatbot visa
+
+# 8) chatbot CSV 빌드
+python scripts/build_chatbot_csv.py
+
+# 9) 품질 리포트 + 검수용 Excel
+python scripts/quality_report_semantic_manual_csvs.py
 ```
-
-`data/processed/`의 산출물은 목적별로 나뉩니다.
-
-Semantic clean CSV:
-
-- `data/processed/stay_manual_semantic_clean.csv`
-- `data/processed/visa_manual_semantic_clean.csv`
-
-Chatbot-ready CSV:
-
-- `data/processed/stay_manual_chatbot_ready.csv`
-- `data/processed/visa_manual_chatbot_ready.csv`
-- `data/processed/chatbot_intent_routes.csv`
-
-CSV에는 PDF 페이지 번호, 원문 근거, raw text, review/debug 컬럼을 포함하지 않습니다.
-
-검수용 산출물은 `output/quality/`와 `output/review/` 아래에 생성합니다. 최종 CSV는 깨끗하게 유지하고, 검수 플래그와 수정 우선순위는 별도 Excel에서 확인합니다.
 
 ## What To Edit
 
-- PDF가 바뀌면 `data/raw/`와 `data/parsed/`를 갱신한 뒤 빌드 명령을 다시 실행합니다.
-- semantic 컬럼 정의를 바꾸려면 [docs/data_columns.md](docs/data_columns.md)와 `scripts/build_semantic_manual_csvs.py`의 `STAY_COLUMNS`, `VISA_COLUMNS`를 함께 수정합니다.
-- 챗봇용 상황 태그, 검색 키워드, intent route를 바꾸려면 `scripts/build_chatbot_ready_manual_csvs.py`를 수정합니다.
-- 목차, 표지, 빈 양식, 깨진 표 조각이 남으면 `is_noise_row()` 또는 `is_low_value_semantic_row()`에 규칙을 추가합니다.
-- 검수 후보 기준을 바꾸려면 `scripts/quality_report_semantic_manual_csvs.py`의 `row_issues()`를 수정합니다.
+- 매뉴얼이 새로 나오면: `data/raw/`의 HWP를 교체하고 Stage 1부터 다시.
+- 컬럼 스키마를 바꾸려면: [docs/data_columns.md](docs/data_columns.md), [.claude/skills/vizabridge-normalize/references/column_schema.md](.claude/skills/vizabridge-normalize/references/column_schema.md), `scripts/build_semantic_csv.py`의 `STAY_COLUMNS`/`VISA_COLUMNS`를 함께 수정.
+- 정규화 규칙을 손보려면: `.claude/skills/vizabridge-normalize/references/*.md` 수정.
+- 챗봇 상황 태그/키워드 규칙을 손보려면: `.claude/skills/vizabridge-enrich-chatbot/references/*.md` 수정.
+- 검수 임계값을 바꾸려면: `scripts/quality_report_semantic_manual_csvs.py`의 `row_issues()` 수정.
 
-파이프라인 설계 판단은 [docs/pipeline_strategy.md](docs/pipeline_strategy.md)에 정리되어 있습니다.
+## Design Rationale
+
+설계 결정 배경은 [docs/pipeline_strategy.md](docs/pipeline_strategy.md), 전체 사양서는 [docs/superpowers/specs/2026-05-14-hwp-kordoc-llm-pipeline-design.md](docs/superpowers/specs/2026-05-14-hwp-kordoc-llm-pipeline-design.md)에 있습니다.
+
+핵심 요약:
+- **HWP/kordoc**: PDF/LlamaParse OCR가 한글·표 구조를 망쳤음. HWP는 원본 디지털 포맷이라 손실이 없음.
+- **정규화 MD 중간 표현**: LLM은 의미 분류만 담당. 그 결과를 결정적 Python이 CSV로 변환. 할루시네이션을 별도 layer에서 잡고 (Stage 4 validator), 수정도 일관된 흐름으로 (Stage 5 repair).
+- **Claude Code 스킬**: 별도 API 결제 없이 동일한 Claude 모델로 처리. 재현성은 정규화 MD 커밋으로 확보.

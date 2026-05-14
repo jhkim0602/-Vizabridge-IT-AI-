@@ -32,7 +32,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from scripts import build_semantic_manual_csvs as builder
+from scripts.legacy import build_semantic_manual_csvs as builder  # constants + classifier helpers
 
 PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 QUALITY_DIR = PROJECT_ROOT / "output" / "quality"

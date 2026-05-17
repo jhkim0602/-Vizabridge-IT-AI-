@@ -38,8 +38,6 @@ export type Answers = Record<string, string | string[]>;
 
 export interface InterviewSubmission {
   intervieweeName: string;
-  intervieweeEmail: string;
-  intervieweeRole: string;
   submittedAt: string;
   durationSeconds: number;
   answers: Answers;

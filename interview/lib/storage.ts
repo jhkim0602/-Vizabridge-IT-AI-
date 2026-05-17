@@ -4,8 +4,6 @@ const STORAGE_KEY = "vizabridge-interview-draft-v1";
 
 interface Draft {
   intervieweeName: string;
-  intervieweeEmail: string;
-  intervieweeRole: string;
   answers: Answers;
   startedAt: string;
   sectionIndex: number;

@@ -34,8 +34,6 @@ export function InterviewForm() {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [answers, setAnswers] = useState<Answers>({});
   const [intervieweeName, setName] = useState("");
-  const [intervieweeEmail, setEmail] = useState("");
-  const [intervieweeRole, setRole] = useState("");
   const startedAtRef = useRef<string>(new Date().toISOString());
 
   useEffect(() => {
@@ -44,8 +42,6 @@ export function InterviewForm() {
       setSectionIndex(draft.sectionIndex ?? 0);
       setAnswers(draft.answers ?? {});
       setName(draft.intervieweeName ?? "");
-      setEmail(draft.intervieweeEmail ?? "");
-      setRole(draft.intervieweeRole ?? "");
       startedAtRef.current = draft.startedAt ?? startedAtRef.current;
     }
     setHydrated(true);
@@ -55,20 +51,11 @@ export function InterviewForm() {
     if (!hydrated) return;
     saveDraft({
       intervieweeName,
-      intervieweeEmail,
-      intervieweeRole,
       answers,
       startedAt: startedAtRef.current,
       sectionIndex,
     });
-  }, [
-    hydrated,
-    intervieweeName,
-    intervieweeEmail,
-    intervieweeRole,
-    answers,
-    sectionIndex,
-  ]);
+  }, [hydrated, intervieweeName, answers, sectionIndex]);
 
   const section = SECTIONS[sectionIndex];
   const isLast = sectionIndex === SECTIONS.length - 1;
@@ -81,8 +68,7 @@ export function InterviewForm() {
   );
 
   const introNeedsContact = isFirst;
-  const contactValid =
-    intervieweeName.trim().length > 0 && intervieweeEmail.trim().length > 0;
+  const contactValid = intervieweeName.trim().length > 0;
 
   const sectionComplete = useMemo(() => {
     if (introNeedsContact && !contactValid) return false;
@@ -125,8 +111,6 @@ export function InterviewForm() {
   function finishInterview() {
     const submission = {
       intervieweeName,
-      intervieweeEmail,
-      intervieweeRole,
       submittedAt: new Date().toISOString(),
       startedAt: startedAtRef.current,
       durationSeconds: Math.round(
@@ -142,6 +126,14 @@ export function InterviewForm() {
     } catch {
       // ignore
     }
+    fetch("/api/submissions", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(submission),
+      keepalive: true,
+    }).catch(() => {
+      // ignore — local download still works as a backup
+    });
     clearDraft();
     router.push("/done");
   }
@@ -184,48 +176,19 @@ export function InterviewForm() {
         )}
 
         {introNeedsContact && (
-          <div className="mt-6 grid gap-4 border-t border-ink-200 pt-6 sm:grid-cols-2">
-            <div>
-              <label className="field-label" htmlFor="name">
-                Your name *
-              </label>
-              <input
-                id="name"
-                type="text"
-                className="input-base"
-                placeholder="e.g. Jeanne Dupont"
-                value={intervieweeName}
-                onChange={(e) => setName(e.target.value)}
-                required
-              />
-            </div>
-            <div>
-              <label className="field-label" htmlFor="email">
-                Email *
-              </label>
-              <input
-                id="email"
-                type="email"
-                className="input-base"
-                placeholder="you@example.com"
-                value={intervieweeEmail}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
-            <div className="sm:col-span-2">
-              <label className="field-label" htmlFor="role">
-                One-line role description (optional)
-              </label>
-              <input
-                id="role"
-                type="text"
-                className="input-base"
-                placeholder="e.g. Intern, full-stack & LLM integration"
-                value={intervieweeRole}
-                onChange={(e) => setRole(e.target.value)}
-              />
-            </div>
+          <div className="mt-6 border-t border-ink-200 pt-6">
+            <label className="field-label" htmlFor="name">
+              Your name *
+            </label>
+            <input
+              id="name"
+              type="text"
+              className="input-base"
+              placeholder="e.g. Jeanne Dupont"
+              value={intervieweeName}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
           </div>
         )}
       </header>
@@ -280,7 +243,7 @@ export function InterviewForm() {
           {!sectionComplete && (
             <p className="text-right text-xs text-ink-500">
               {introNeedsContact && !contactValid
-                ? "Please fill in your name and email to begin."
+                ? "Please enter your name to begin."
                 : "Answer the remaining required questions to continue."}
             </p>
           )}

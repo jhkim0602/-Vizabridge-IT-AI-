@@ -17,5 +17,9 @@ data/parsed/raw/*.json
 data/processed/*.csv
 data/processed/*.jsonl
 
+# Interview app: interviewee submissions (server-stored)
+data/submissions.json
+interview/data/
+
 # Always keep folder placeholders
 !**/.gitkeep

@@ -1,3 +1,5 @@
+> 🌐 **언어:** **한국어** | [English](README_EN.md)
+
 # Vizabridge Visa RAG
 
 대한민국 비자/체류 매뉴얼 **HWP** 원본을 [kordoc](https://github.com/chrisryugj/kordoc)으로 Markdown으로 변환한 뒤, **Claude Code 스킬**로 의미 단위 정규화 → **결정적 Python**으로 RAG/챗봇용 CSV를 생성하는 데이터 전처리 파이프라인입니다.

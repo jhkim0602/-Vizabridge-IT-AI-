@@ -7,8 +7,6 @@ import type { Answers, Question } from "@/lib/types";
 
 interface Submission {
   intervieweeName: string;
-  intervieweeEmail: string;
-  intervieweeRole: string;
   submittedAt: string;
   startedAt: string;
   durationSeconds: number;
@@ -16,7 +14,6 @@ interface Submission {
 }
 
 const SUBMISSION_KEY = "vizabridge-interview-submission-v1";
-const RECIPIENT_EMAIL = "data-team@vizabridge.example";
 
 function formatValue(q: Question, value: string | string[] | undefined): string {
   if (value === undefined) return "(no answer)";
@@ -37,8 +34,6 @@ function buildMarkdown(sub: Submission): string {
   lines.push("# Vizabridge Intern Interview Response");
   lines.push("");
   lines.push(`- **Name:** ${sub.intervieweeName || "(blank)"}`);
-  lines.push(`- **Email:** ${sub.intervieweeEmail || "(blank)"}`);
-  if (sub.intervieweeRole) lines.push(`- **Role:** ${sub.intervieweeRole}`);
   lines.push(`- **Submitted:** ${sub.submittedAt}`);
   lines.push(
     `- **Duration:** ${Math.round(sub.durationSeconds / 60)} minutes`,
@@ -122,14 +117,6 @@ export function DonePanel() {
     }
   }
 
-  const mailtoBody = encodeURIComponent(
-    `Hi Vizabridge data team,\n\nMy interview response is below.\n\n${markdown}`,
-  );
-  const mailtoSubject = encodeURIComponent(
-    `Vizabridge interview response — ${submission.intervieweeName || "intern"}`,
-  );
-  const mailtoHref = `mailto:${RECIPIENT_EMAIL}?subject=${mailtoSubject}&body=${mailtoBody}`;
-
   return (
     <div className="space-y-6">
       <section className="card">
@@ -138,9 +125,9 @@ export function DonePanel() {
           Thanks, {submission.intervieweeName || "there"}.
         </h1>
         <p className="mt-2 text-sm text-ink-600">
-          Your answers are saved in this browser tab. To get them to the data
-          team, pick one of the options below — nothing is uploaded
-          automatically.
+          Your answers are saved in this browser tab. Download one of the
+          files below and send it to us via your usual channel (KakaoTalk,
+          Slack, etc.). Nothing is uploaded automatically.
         </p>
 
         <div className="mt-5 flex flex-wrap items-center gap-3">
@@ -167,15 +154,7 @@ export function DonePanel() {
           >
             {copied ? "Copied!" : "Copy Markdown"}
           </button>
-          <a className="btn-ghost" href={mailtoHref}>
-            Email to the data team
-          </a>
         </div>
-        <p className="mt-2 text-xs text-ink-500">
-          Default recipient is{" "}
-          <span className="font-mono">{RECIPIENT_EMAIL}</span> — change it in
-          your mail client if needed.
-        </p>
       </section>
 
       <section className="card">

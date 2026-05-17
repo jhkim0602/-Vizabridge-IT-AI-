@@ -86,8 +86,37 @@ export default function LandingPage() {
         <p className="mt-2 text-sm text-ink-600">
           This site does not have a backend database. Your answers are kept in
           your browser as you go. When you finish, you'll be shown a summary
-          and given the option to download a JSON file, copy your answers, or
-          send them by email. Nothing is uploaded anywhere automatically.
+          and given the option to download a JSON or Markdown file. Nothing is
+          uploaded anywhere automatically — please send the downloaded file to
+          us via your usual channel.
+        </p>
+      </section>
+
+      <section className="card">
+        <span className="chip">A note from us</span>
+        <h2 className="mt-3 text-lg font-semibold tracking-tight text-ink-900">
+          Who we are
+        </h2>
+        <p className="mt-3 text-sm leading-6 text-ink-600">
+          We are <strong>Jeonghwan Kim (김정환)</strong> and{" "}
+          <strong>Nahyun Kim (김나현)</strong>, two students taking part in the{" "}
+          <em>Youth Future Work Experience Program (청년미래일경험)</em>{" "}
+          organized by the Korean Ministry of Employment and Labor (고용노동부).
+          The program gives students like us a chance to work alongside a real
+          company and experience what building a product actually looks like.
+        </p>
+        <p className="mt-3 text-sm leading-6 text-ink-600">
+          We are honest about where we stand: there is a lot we still don't
+          know, and a lot we are not yet good at. But we will do our best,
+          listen carefully, and put in the work. Thank you sincerely for taking
+          the time to talk with us — your answers will directly shape how we
+          build the data pipeline going forward.
+        </p>
+        <p className="mt-3 text-xs text-ink-500">
+          저희는 고용노동부 주관 <strong>청년미래일경험</strong> 프로그램에
+          참여 중인 학생 <strong>김정환</strong>, <strong>김나현</strong>{" "}
+          입니다. 아직 잘 모르고 부족하지만 열심히 하겠습니다. 시간 내주셔서
+          진심으로 감사드립니다.
         </p>
       </section>
     </div>

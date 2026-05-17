@@ -40,7 +40,7 @@ export default function RootLayout({
             <p>
               Vizabridge — Korean immigration/visa data pipeline. This interview
               is for internal research only. Responses stay in your browser
-              unless you choose to download or email them.
+              unless you choose to download and send them to us.
             </p>
           </footer>
         </div>

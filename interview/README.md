@@ -8,15 +8,16 @@ Vizabridge AI chatbot. Used to:
 2. **Share** the structured CSVs our preprocessing pipeline produced and how
    to plug them in.
 
-Lives as `interview/` inside the larger Vizabridge data-pipeline monorepo. No
-backend — answers stay in the browser; the interviewee downloads or emails
-their response at the end.
+Lives as `interview/` inside the larger Vizabridge data-pipeline monorepo.
+The questionnaire is public — interns fill it without logging in. Submissions
+are written to Vercel KV. The team reviews them at `/admin` with a hardcoded
+password (`1234` / `1234`).
 
 ## Stack
 
 - Next.js 14 (App Router) + TypeScript
 - Tailwind CSS
-- No database, no auth, no analytics
+- Vercel KV (Upstash Redis) for submissions
 
 ## Local dev
 
@@ -27,6 +28,11 @@ npm run dev
 # http://localhost:3000
 ```
 
+Without `KV_REST_API_URL` / `KV_REST_API_TOKEN` set locally, submissions
+silently fall back to download-only and `/admin` shows "storage not
+configured". To exercise the full flow locally, pull the env vars from your
+Vercel project with `vercel env pull` and put them in `.env.local`.
+
 ## Build / typecheck
 
 ```bash
@@ -36,10 +42,17 @@ npm run typecheck
 
 ## Deploy to Vercel
 
-1. Import the repo on Vercel.
-2. Set **Root Directory** to `interview/`.
-3. Framework preset: Next.js (auto-detected).
-4. No environment variables required.
+1. Import the repo on Vercel. Set **Root Directory** to `interview/`.
+2. Framework preset: Next.js (auto-detected).
+3. In the project's **Storage** tab, create a KV store and click "Connect".
+   Vercel injects `KV_REST_API_URL` and `KV_REST_API_TOKEN` automatically.
+4. Redeploy.
+
+## Viewing submissions
+
+- Go to `/admin`, sign in with `1234` / `1234`.
+- Expand any row to see the section-by-section answers and the raw JSON.
+- Submissions are stored in the Redis list `vizabridge:submissions`.
 
 ## Editing the interview
 
@@ -48,6 +61,6 @@ npm run typecheck
   questions use `dependsOn`.
 - The data briefing shown mid-interview is in
   [`components/DataBriefing.tsx`](./components/DataBriefing.tsx).
-- The recipient email on the done page is the `RECIPIENT_EMAIL` constant in
-  [`components/DonePanel.tsx`](./components/DonePanel.tsx) — change it before
-  sharing the link with the interns.
+- The admin password (currently `1234` / `1234`) is set in
+  [`components/AdminPanel.tsx`](./components/AdminPanel.tsx) and
+  [`app/api/submissions/route.ts`](./app/api/submissions/route.ts).

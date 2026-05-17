@@ -80,19 +80,6 @@ export default function LandingPage() {
       </section>
 
       <section className="card">
-        <h2 className="text-lg font-semibold tracking-tight text-ink-900">
-          Privacy
-        </h2>
-        <p className="mt-2 text-sm text-ink-600">
-          This site does not have a backend database. Your answers are kept in
-          your browser as you go. When you finish, you'll be shown a summary
-          and given the option to download a JSON or Markdown file. Nothing is
-          uploaded anywhere automatically — please send the downloaded file to
-          us via your usual channel.
-        </p>
-      </section>
-
-      <section className="card">
         <span className="chip">A note from us</span>
         <h2 className="mt-3 text-lg font-semibold tracking-tight text-ink-900">
           Who we are
@@ -109,8 +96,7 @@ export default function LandingPage() {
           We are honest about where we stand: there is a lot we still don't
           know, and a lot we are not yet good at. But we will do our best,
           listen carefully, and put in the work. Thank you sincerely for taking
-          the time to talk with us — your answers will directly shape how we
-          build the data pipeline going forward.
+          the time to talk with us.
         </p>
         <p className="mt-3 text-xs text-ink-500">
           저희는 고용노동부 주관 <strong>청년미래일경험</strong> 프로그램에

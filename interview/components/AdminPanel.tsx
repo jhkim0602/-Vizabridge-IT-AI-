@@ -37,6 +37,7 @@ export function AdminPanel() {
   const [pw, setPw] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [items, setItems] = useState<StoredSubmission[] | null>(null);
+  const [storageConfigured, setStorageConfigured] = useState<boolean>(true);
   const [openIdx, setOpenIdx] = useState<number | null>(null);
   const [loading, setLoading] = useState(false);
 
@@ -53,6 +54,7 @@ export function AdminPanel() {
         if (!r.ok) throw new Error(String(r.status));
         const j = await r.json();
         setItems(j.items ?? []);
+        setStorageConfigured(j.storageConfigured !== false);
       })
       .catch(() => {
         setError("Failed to load submissions.");
@@ -129,7 +131,7 @@ export function AdminPanel() {
             </span>
           </h1>
           <p className="mt-1 text-xs text-ink-500">
-            Stored on the server at <span className="font-mono">data/submissions.json</span>.
+            Stored in Vercel KV.
           </p>
         </div>
         <button type="button" onClick={logout} className="btn-ghost">
@@ -137,9 +139,16 @@ export function AdminPanel() {
         </button>
       </section>
 
-      {loading && (
-        <div className="card text-sm text-ink-500">Loading…</div>
+      {!storageConfigured && (
+        <div className="card border-red-200 bg-red-50 text-sm text-red-700">
+          Vercel KV is not configured for this deployment. Add{" "}
+          <span className="font-mono">KV_REST_API_URL</span> and{" "}
+          <span className="font-mono">KV_REST_API_TOKEN</span> env vars (or
+          connect a KV store) so submissions can be saved.
+        </div>
       )}
+
+      {loading && <div className="card text-sm text-ink-500">Loading…</div>}
 
       {!loading && items && items.length === 0 && (
         <div className="card text-sm text-ink-500">No submissions yet.</div>
@@ -211,8 +220,8 @@ export function AdminPanel() {
         })}
 
       <p className="text-xs text-ink-400">
-        Tip: only {ALL_QUESTIONS.length} questions are defined; older
-        submissions may have fewer answers if the form changed.
+        {ALL_QUESTIONS.length} questions defined. Older submissions may have
+        fewer answers if the form changed.
       </p>
     </div>
   );

@@ -79,17 +79,6 @@ export const SECTIONS: Section[] = [
         ],
       },
       {
-        id: "q_team_split",
-        number: "Q3-b",
-        type: "long",
-        prompt:
-          "How are the three of you splitting the work? (Who owns what — frontend, retrieval, LLM, data, infra…)",
-        promptKo:
-          "세 분이 일을 어떻게 나누고 있나요? (누가 무엇을 담당하는지 — 프론트엔드, 검색, LLM, 데이터, 인프라 등)",
-        placeholder:
-          "e.g. Person A: frontend + UX, Person B: retrieval + data, Person C: LLM prompts + evaluation.",
-      },
-      {
         id: "q4_manual_read",
         number: "Q4",
         type: "single",
@@ -270,31 +259,11 @@ export const SECTIONS: Section[] = [
         number: "Q10-d",
         type: "long",
         prompt:
-          "What is your full tech stack? (Frontend framework, backend, database/vector store, hosting, LLM provider…)",
+          "How is the chatbot actually wired up? Are you using a framework like LangChain / LlamaIndex / Haystack, or building it from scratch? What is the RAG database / vector store, and how is the indexing + retrieval pipeline structured?",
         promptKo:
-          "전체 기술 스택은 무엇인가요? (프론트엔드 프레임워크, 백엔드, DB/벡터 스토어, 호스팅, LLM 제공자 등)",
+          "챗봇은 실제로 어떻게 구성되어 있나요? LangChain / LlamaIndex / Haystack 같은 프레임워크를 쓰고 있나요, 아니면 직접 구현하고 있나요? RAG 데이터베이스/벡터 스토어는 무엇이고, 인덱싱·검색 파이프라인은 어떻게 짜여 있나요?",
         placeholder:
-          "e.g. Next.js + FastAPI, Postgres + pgvector on Supabase, OpenAI gpt-4o-mini, deployed on Vercel + Railway.",
-      },
-      {
-        id: "q_examples",
-        number: "Q10-e",
-        type: "long",
-        prompt:
-          "Give us one concrete user query your chatbot answers well today, and one where it clearly fails. Paste both the question and the chatbot's reply if you can.",
-        promptKo:
-          "현재 챗봇이 잘 답하는 사용자 질문 하나와, 명확히 실패하는 질문 하나를 보여주세요. 가능하면 질문과 챗봇의 답변을 함께 붙여 주세요.",
-        placeholder:
-          "Works: 'I'm a student wanting to start a startup, what visa?' → ...\nFails: 'My E-7 employer changed, do I need to reapply?' → ...",
-      },
-      {
-        id: "q_eval",
-        number: "Q10-f",
-        type: "long",
-        prompt:
-          "How do you currently evaluate whether an answer is correct? (Manual review, test set, user feedback, LLM-as-judge, none yet?)",
-        promptKo:
-          "현재 답변이 맞는지 어떻게 평가하고 있나요? (수동 검토, 테스트 세트, 사용자 피드백, LLM 평가, 아직 없음 등)",
+          "e.g. LangChain + Chroma for vectors, custom retriever wrapping BM25 + cosine, OpenAI embeddings, FastAPI serving the agent — or 'no framework, plain Python calling the OpenAI API directly'.",
       },
       {
         id: "q10c_multihop",
@@ -436,24 +405,6 @@ export const SECTIONS: Section[] = [
         type: "long",
         prompt: "What is your most pressing blocker right now?",
         promptKo: "지금 가장 시급한 막힌 부분은 무엇인가요?",
-      },
-      {
-        id: "q_timeline",
-        number: "Q19",
-        type: "long",
-        prompt:
-          "What is your timeline / target launch date for the chatbot, and what does 'done' look like for this phase?",
-        promptKo:
-          "챗봇 출시 일정/목표일은 언제이고, 이번 단계의 '완료'는 어떤 모습인가요?",
-      },
-      {
-        id: "q_help",
-        number: "Q20",
-        type: "long",
-        prompt:
-          "If we could do ONE thing on the data side in the next two weeks that would unblock you the most, what would it be?",
-        promptKo:
-          "앞으로 2주 안에 데이터 쪽에서 딱 한 가지만 해드릴 수 있다면, 무엇을 해드리는 게 가장 큰 도움이 될까요?",
       },
     ],
   },

@@ -3,19 +3,9 @@
 __pycache__/
 .ipynb_checkpoints/
 
-# Claude Code: worktree-local settings only
+# Claude Code: worktree-local settings + worktrees dir
 .claude/settings.local.json
-
-# Generated outputs
-output/
-
-# Kordoc raw markdown: regenerable from HWP, large
-data/parsed/raw/*.md
-data/parsed/raw/*.json
-
-# Final CSVs: regenerable from normalized MD
-data/processed/*.csv
-data/processed/*.jsonl
+.claude/worktrees/
 
 # Always keep folder placeholders
 !**/.gitkeep

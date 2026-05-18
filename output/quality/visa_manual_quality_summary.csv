@@ -1,0 +1,11 @@
+﻿metric,value
+manual_key,visa
+manual_label,사증민원
+row_count,6
+column_count,28
+review_candidate_count,3
+review_candidate_rate,50.00%
+high_priority_count,3
+medium_priority_count,0
+low_priority_count,0
+lowest_fill_rate_fields,common_documents:0%; exceptions:0%; fees:0%; inviter_context:0%; normalized_text:0%; other_documents:0%; quota_or_limit:0%; recommendation_or_approval:0%; requirements:0%; score_criteria:0%; table_rows:0%; table_summary:0%; target_persons:0%; subtype_or_program:17%; applicant_context:33%; procedure:33%; restrictions:33%; mandatory_documents:50%; duration_or_validity:83%; eligibility:83%; item_type:100%; manual_type:100%; petition_type:100%; section_title:100%; source_pdf:100%; subsection_type:100%; visa_code:100%; visa_name_ko:100%

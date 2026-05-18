@@ -1,9 +1,9 @@
 {
   "manual_key": "stay",
-  "normalized_chunks": 5,
-  "total_rows": 38,
-  "rows_with_issues": 0,
-  "chunks_with_issues": 0,
+  "normalized_chunks": 34,
+  "total_rows": 364,
+  "rows_with_issues": 10,
+  "chunks_with_issues": 5,
   "chunks": [
     {
       "chunk_id": "stay_001",
@@ -321,6 +321,2628 @@
           "section_title": "D-4 일반연수 / 어학연수(D-4-1, D-4-7) 자격 변경",
           "petition_type": "체류자격 변경",
           "subsection_type": "제출서류",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_006",
+      "source_hash_index": "03d1842e4cff8e85",
+      "source_hash_block": "03d1842e4cff8e85",
+      "hash_drift": false,
+      "row_count": 27,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "D-5 취재 / 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "예외",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "D-5 취재 / 근무처 변경·추가",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "D-5 취재 / 체류자격 변경허가",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "D-5 취재 / 체류자격 변경 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "D-5 취재 / 체류기간 연장 제출서류",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "D-5 취재 / 재입국허가",
+          "petition_type": "재입국허가",
+          "subsection_type": "예외",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "D-5 취재 / 복수재입국허가 제출서류",
+          "petition_type": "재입국허가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "D-5 취재 / 외국인등록 신청서류",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "D-5 취재 / 외국인등록사항 변경신고",
+          "petition_type": "외국인등록",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "D-6 종교 / 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "예외",
+          "issues": []
+        },
+        {
+          "row_index": 11,
+          "section_title": "D-6 종교 → 교수(E-1) 자격외 활동 제출서류",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 12,
+          "section_title": "D-6 종교 / 근무처 변경·추가",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 13,
+          "section_title": "D-6 종교 / 체류자격 변경허가",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 14,
+          "section_title": "D-6 종교 / 체류자격 변경 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 15,
+          "section_title": "D-6 종교 / 체류기간 연장 제출서류",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 16,
+          "section_title": "D-6 종교 / 재입국허가",
+          "petition_type": "재입국허가",
+          "subsection_type": "예외",
+          "issues": []
+        },
+        {
+          "row_index": 17,
+          "section_title": "D-6 종교 / 외국인등록 신청서류",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 18,
+          "section_title": "D-7 주재 / 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "예외",
+          "issues": []
+        },
+        {
+          "row_index": 19,
+          "section_title": "D-7 주재 / 외국인투자기업 CEO 등 대학 강연활동 자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 20,
+          "section_title": "D-7 주재 / 근무처 변경·추가",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 21,
+          "section_title": "D-7 주재 / 체류자격 변경 대상",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 22,
+          "section_title": "D-7 주재 / 체류자격 변경 제출서류 (D-8 → D-7)",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 23,
+          "section_title": "D-7 주재 / 칠레국민 체류자격 변경 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 24,
+          "section_title": "D-7 주재 / 체류기간 연장 제출서류",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 25,
+          "section_title": "D-7 주재 / 외국인등록 신청서류",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 26,
+          "section_title": "D-7 주재 / 체류기간 상한",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 27,
+          "section_title": "D-7 주재 / 자격 해당자",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_007",
+      "source_hash_index": "55f594e188f11162",
+      "source_hash_block": "55f594e188f11162",
+      "hash_drift": false,
+      "row_count": 30,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "D-8 기업투자 / 자격 해당자",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "D-8 기업투자 / 체류기간 상한",
+          "petition_type": "사증발급",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "D-8 기업투자 / 체류자격외 활동 대상",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "D-8 기업투자 / 대학 강연활동 자격외 활동 제출서류",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "D-8 기업투자 / 근무처 변경·추가",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "D-8-1 법인에 투자 / 허가요건",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "D-8-2 벤처투자 / 허가요건",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "D-8-3 개인기업에 투자 / 허가요건",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "D-8-4 기술창업 / 허가요건 (점수제 적용 대상자)",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "D-8-4 기술창업 / 점수제 적용 면제 (K-Startup 그랜드챌린지)",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "예외",
+          "issues": []
+        },
+        {
+          "row_index": 11,
+          "section_title": "D-8 기업투자 / 자격변경 불가 대상",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 12,
+          "section_title": "D-8-1 법인에 투자 / 체류자격 변경 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 13,
+          "section_title": "D-8-2 벤처투자 / 체류자격 변경 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 14,
+          "section_title": "D-8-3 개인기업 투자 / 체류자격 변경 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 15,
+          "section_title": "D-8-4 기술창업 / 체류자격 변경 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 16,
+          "section_title": "D-8-4 기술창업 / 점수제 항목 및 점수",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "점수표",
+          "issues": []
+        },
+        {
+          "row_index": 17,
+          "section_title": "D-8-1 법인에 투자 / 체류기간 연장 제출서류",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 18,
+          "section_title": "D-8-2 벤처투자 / 체류기간 연장 제출서류",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 19,
+          "section_title": "D-8-4 기술창업 / 체류기간 연장 제출서류",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 20,
+          "section_title": "D-8 기업투자 / 재입국허가",
+          "petition_type": "재입국허가",
+          "subsection_type": "예외",
+          "issues": []
+        },
+        {
+          "row_index": 21,
+          "section_title": "D-8 기업투자 / 외국인등록 신청서류",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 22,
+          "section_title": "D-9 무역경영 / 활동범위 및 해당자",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 23,
+          "section_title": "D-9 무역경영 / 체류기간 상한",
+          "petition_type": "사증발급",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 24,
+          "section_title": "D-9-1 무역업 / 점수제 체류자격 변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 25,
+          "section_title": "D-9 무역경영 / 외국인 개인사업자 체류자격 변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 26,
+          "section_title": "D-9 무역경영 / 외국인 개인사업자 체류자격 변경 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 27,
+          "section_title": "D-9-1 무역업 / 점수제 체류기간 연장 요건",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 28,
+          "section_title": "D-9-1 무역업 / 점수제 체류기간 연장 제출서류",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 29,
+          "section_title": "D-9 무역경영 / 산업설비 설치·운영 체류기간 연장 제출서류",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 30,
+          "section_title": "D-9 무역경영 / 외국인등록 신청서류",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_008",
+      "source_hash_index": "f71e5025a0604f4e",
+      "source_hash_block": "f71e5025a0604f4e",
+      "hash_drift": false,
+      "row_count": 25,
+      "rows_with_issues": 4,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "D-9-1 무역업 / 사증발급인정서 및 체류자격 변경 점수제",
+          "petition_type": "사증발급",
+          "subsection_type": "점수표",
+          "issues": [
+            "visa code not in source: ['D-9']"
+          ]
+        },
+        {
+          "row_index": 2,
+          "section_title": "D-9-1 무역업 / 체류기간 연장 점수제",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "점수표",
+          "issues": [
+            "visa code not in source: ['D-9']"
+          ]
+        },
+        {
+          "row_index": 3,
+          "section_title": "D-9-1 무역업 / 무역관련분야 전공 인정 기준",
+          "petition_type": "사증발급",
+          "subsection_type": "점수표",
+          "issues": [
+            "visa code not in source: ['D-9']"
+          ]
+        },
+        {
+          "row_index": 4,
+          "section_title": "D-9-1 무역업 / 무역전문교육 인정 대상",
+          "petition_type": "사증발급",
+          "subsection_type": "점수표",
+          "issues": [
+            "visa code not in source: ['D-9']"
+          ]
+        },
+        {
+          "row_index": 5,
+          "section_title": "D-10 구직 / 활동범위 및 해당자",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "D-10 구직 / 체류기간 상한",
+          "petition_type": "사증발급",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "D-10-1 일반구직 / 시간제 취업활동 허가 특례",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "D-10-1 일반구직 / 시간제 취업 신청서류",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "D-10-1 일반구직 / 점수제 적용 대상자",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "D-10-1 일반구직 / 점수제 면제 특례자",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "예외",
+          "issues": []
+        },
+        {
+          "row_index": 11,
+          "section_title": "D-10-2 기술창업준비 / 허용대상",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 12,
+          "section_title": "D-10-3 첨단기술인턴 / 허용대상",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 13,
+          "section_title": "D-10-T 최우수인재 / 허용대상",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 14,
+          "section_title": "D-10 구직 / 체류자격 변경 제한대상",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 15,
+          "section_title": "D-10-1 일반구직 / 점수제 배점표",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "점수표",
+          "issues": []
+        },
+        {
+          "row_index": 16,
+          "section_title": "D-10-1 일반구직 / 점수제 적용 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 17,
+          "section_title": "D-10-1 일반구직 / 점수제 면제 특례자 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 18,
+          "section_title": "D-10-2 기술창업준비 / 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 19,
+          "section_title": "D-10-3 첨단기술인턴 / 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 20,
+          "section_title": "D-10-T 최우수인재 / 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 21,
+          "section_title": "D-10 구직 / 체류기간 상한",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 22,
+          "section_title": "D-10 구직 / 외국인등록 제출서류",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 23,
+          "section_title": "D-10-1 일반구직 / 연수 개시 및 연수기관 변경 신고",
+          "petition_type": "외국인등록",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 24,
+          "section_title": "D-10-3 첨단기술인턴 / 기관 변경 신고",
+          "petition_type": "외국인등록",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 25,
+          "section_title": "D-10-3 첨단기술인턴 / 체류지원 특례",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "예외",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_009",
+      "source_hash_index": "a826875609c4b1d0",
+      "source_hash_block": "a826875609c4b1d0",
+      "hash_drift": false,
+      "row_count": 20,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "D-10-1 일반구직 / 점수제 배점표 (요약 표)",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "점수표",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "D-8-4 기술창업 / 점수제 항목 및 배점표 (재기록)",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "점수표",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "E-1 교수 / 활동범위 및 해당자",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "E-1 교수 / 체류기간 상한",
+          "petition_type": "사증발급",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "E-1 교수 / 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "E-1 교수 / E-3 상호간 체류자격외 활동 제출서류",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "E-1 교수 / 근무처 변경·추가 사후신고제",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "E-1 교수 / 외국고급인력 체류자격 변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "E-1 교수 / 외국고급인력 체류자격 변경 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "E-1 교수 / 유학·구직에서 교수 자격 변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 11,
+          "section_title": "E-1 교수 / 체류기간 연장 제출서류",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 12,
+          "section_title": "E-1 교수 / 외국인등록 신청서류",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 13,
+          "section_title": "E-2 회화지도 / 활동범위",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 14,
+          "section_title": "E-2 회화지도 / 해당자 자격요건",
+          "petition_type": "사증발급",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 15,
+          "section_title": "E-2 회화지도 / 체류기간 상한",
+          "petition_type": "사증발급",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 16,
+          "section_title": "E-2 회화지도 / 등록외국인 체류자격외 활동 제출서류",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 17,
+          "section_title": "E-2 회화지도 / 근무처 변경·추가 신고",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 18,
+          "section_title": "E-2 회화지도 / 체류자격 변경 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 19,
+          "section_title": "E-2 회화지도 / 체류기간 연장 제출서류",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 20,
+          "section_title": "E-2 회화지도 / 외국인등록 신청서류",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_010",
+      "source_hash_index": "b70e992541195230",
+      "source_hash_block": "b70e992541195230",
+      "hash_drift": false,
+      "row_count": 30,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "E-3 연구",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "E-3 연구",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "E-3 연구",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "E-3 연구",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "E-3 연구",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "E-3 연구 / 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "E-3 연구 / 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "E-3 연구 / 근무처 변경·추가",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "E-3 연구 / 근무처 변경·추가",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "E-3 연구 / 근무처 변경·추가",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 11,
+          "section_title": "E-3 연구 / 재입국허가",
+          "petition_type": "재입국허가",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 12,
+          "section_title": "E-3 연구 / 재입국허가",
+          "petition_type": "재입국허가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 13,
+          "section_title": "E-3 연구 / 외국인등록",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 14,
+          "section_title": "E-3 연구 / 외국인등록사항 변경신고",
+          "petition_type": "외국인등록",
+          "subsection_type": "신고의무",
+          "issues": []
+        },
+        {
+          "row_index": 15,
+          "section_title": "E-3 연구 / 방문연구원 특례",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "예외",
+          "issues": []
+        },
+        {
+          "row_index": 16,
+          "section_title": "E-4 기술지도",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 17,
+          "section_title": "E-4 기술지도",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 18,
+          "section_title": "E-4 기술지도",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 19,
+          "section_title": "E-4 기술지도",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 20,
+          "section_title": "E-4 기술지도",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 21,
+          "section_title": "E-4 기술지도 / 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 22,
+          "section_title": "E-4 기술지도 / 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 23,
+          "section_title": "E-4 기술지도 / 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 24,
+          "section_title": "E-4 기술지도 / 근무처 변경·추가",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 25,
+          "section_title": "E-4 기술지도 / 근무처 변경·추가",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 26,
+          "section_title": "E-4 기술지도 / 근무처 변경·추가",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 27,
+          "section_title": "E-4 기술지도 / 재입국허가",
+          "petition_type": "재입국허가",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 28,
+          "section_title": "E-4 기술지도 / 재입국허가",
+          "petition_type": "재입국허가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 29,
+          "section_title": "E-4 기술지도 / 외국인등록",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 30,
+          "section_title": "E-4 기술지도 / 외국인등록사항 변경신고",
+          "petition_type": "외국인등록",
+          "subsection_type": "신고의무",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_011",
+      "source_hash_index": "03cee0b9693156e4",
+      "source_hash_block": "03cee0b9693156e4",
+      "hash_drift": false,
+      "row_count": 17,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "E-5 전문직업 / 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "E-5 전문직업 / 근무처 변경·추가",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "E-5 전문직업 / 체류자격 변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "E-5 전문직업 / 체류기간 연장",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "E-5 전문직업 / 재입국허가",
+          "petition_type": "재입국허가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "E-5 전문직업 / 외국인등록",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "E-6 예술흥행 / 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "E-6 예술흥행 / 근무처 변경·추가",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "E-6 예술흥행 / 체류자격 변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "E-6 예술흥행 / 체류기간 연장",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 11,
+          "section_title": "E-6 예술흥행 / 외국인등록",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 12,
+          "section_title": "E-7 특정활동 / 적용대상 및 도입기준",
+          "petition_type": "체류자격 부여",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 13,
+          "section_title": "E-7 특정활동 / 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 14,
+          "section_title": "E-7 특정활동 / 근무처 변경·추가",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 15,
+          "section_title": "E-7 특정활동 / 체류자격 변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 16,
+          "section_title": "E-7 특정활동 / 체류기간 연장",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 17,
+          "section_title": "E-7 특정활동 / 외국인등록",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_012",
+      "source_hash_index": "efdb4d7a41074620",
+      "source_hash_block": "efdb4d7a41074620",
+      "hash_drift": false,
+      "row_count": 6,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "E-7 특정활동 / 허용직종 현황 (94개)",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "E-7-1 전문인력 / 직종별 세부관리기준",
+          "petition_type": "사증발급",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "E-7-2 준전문인력 / 직종별 세부관리기준",
+          "petition_type": "사증발급",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "E-7-3 일반기능인력 / 직종별 세부관리기준",
+          "petition_type": "사증발급",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "E-7-S2 첨단산업 분야 네거티브 비자 점수표",
+          "petition_type": "사증발급",
+          "subsection_type": "점수표",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "E-7-4 숙련기능인력 / 선발인원 및 유형별 배정",
+          "petition_type": "사증발급",
+          "subsection_type": "쿼터",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_013",
+      "source_hash_index": "5cc0ed6a1534d206",
+      "source_hash_block": "5cc0ed6a1534d206",
+      "hash_drift": false,
+      "row_count": 5,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "E-7-4 숙련기능인력(K-point E74) / 신청 대상 및 쿼터 유형",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "E-7-4 숙련기능인력(K-point E74) / 외국인 본인 기본 요건",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "E-7-4 숙련기능인력 / K-point E74 점수표",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "점수표",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "E-7-4 숙련기능인력(K-point E74) / 제출 서류 목록",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "E-7-4 숙련기능인력 / 고용기업(사업장) 요건",
+          "petition_type": "사증발급",
+          "subsection_type": "쿼터",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_014",
+      "source_hash_index": "bdc5d2eb31042bd7",
+      "source_hash_block": "bdc5d2eb31042bd7",
+      "hash_drift": false,
+      "row_count": 3,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "E-7-4 숙련기능인력 / 추천 절차 안내",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "E-7-4 숙련기능인력 / 한국어능력 시험 안내",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "E-7-4 숙련기능인력 / 표준 고용계약서 견본",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_015",
+      "source_hash_index": "5c56ae76bd64d2e0",
+      "source_hash_block": "5c56ae76bd64d2e0",
+      "hash_drift": false,
+      "row_count": 11,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "E-8 계절근로 / 외국인등록",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "E-8 계절근로 / 근무처 변경 (고용주재배정)",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "E-8 계절근로 / 자격외 활동허가",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "E-8 계절근로 / 체류기간 연장",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "E-9 비전문취업 / 고용허가제",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "E-9 비전문취업 / 근무처 변경·추가",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "E-9 비전문취업 / 기타(G-1)에서 회복",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "E-9 비전문취업 / 체류기간 연장",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "E-9 비전문취업 / 재입국허가",
+          "petition_type": "재입국허가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "E-9 비전문취업 / 외국인등록",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 11,
+          "section_title": "E-9 비전문취업 / 고용변동 신고",
+          "petition_type": "외국인등록",
+          "subsection_type": "절차",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_016",
+      "source_hash_index": "0510506d64af92e9",
+      "source_hash_block": "0510506d64af92e9",
+      "hash_drift": false,
+      "row_count": 19,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "E-10 선원취업 / 근무처 변경·추가",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "E-10 선원취업 / 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "E-10 선원취업 / 체류기간 연장",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "E-10 선원취업 / 체류기간 연장",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "E-10 선원취업 / 구직 중 연장",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "예외",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "E-10 선원취업 / 외국인등록",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "E-10 선원취업 / 고용변동신고",
+          "petition_type": "외국인등록",
+          "subsection_type": "신고의무",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "F-1 방문동거 / 활동범위 및 해당자",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "F-1 방문동거 / 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "F-1-12 점수제 우수인재 가족",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 11,
+          "section_title": "F-1 방문동거 / 체류자격 부여",
+          "petition_type": "체류자격 부여",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 12,
+          "section_title": "F-1 방문동거 / 외국공관원 가사보조인 변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 13,
+          "section_title": "F-1-6 혼인단절 결혼이민자",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 14,
+          "section_title": "F-1-13 외국인유학생 동반부모",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 15,
+          "section_title": "F-1-D 디지털노마드(워케이션) 비자",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 16,
+          "section_title": "F-1 방문동거 / 체류기간 연장",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 17,
+          "section_title": "F-1-5 결혼이민자의 부모 등 가족",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 18,
+          "section_title": "F-1 방문동거 / 재입국허가",
+          "petition_type": "재입국허가",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 19,
+          "section_title": "F-1 방문동거 / 외국인등록",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_017",
+      "source_hash_index": "4d4c0fd9550ef7a9",
+      "source_hash_block": "4d4c0fd9550ef7a9",
+      "hash_drift": false,
+      "row_count": 19,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "F-2 거주 / 활동범위 및 해당자",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "F-2-99 기타 장기거주자 / 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "F-2-7 점수제 우수인재 / 동반가족 취업",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "F-2 거주 / 체류자격 부여",
+          "petition_type": "체류자격 부여",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "F-2-2 국민의 미성년 외국인자녀",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "F-2-3 영주자격 배우자 및 미성년 자녀",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "F-2-5 고액투자자",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "F-2-7 점수제 우수인재 / 점수표",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "점수표",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "F-2-7 점수제 우수인재 / 자격변경 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "F-2-8/F-2-81 관광·휴양시설 투자",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 11,
+          "section_title": "F-2-12/13/14 공익사업투자",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 12,
+          "section_title": "F-2-16 특별기여자",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 13,
+          "section_title": "F-2-99 기타 장기체류자",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 14,
+          "section_title": "F-2 공무원 임용자",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 15,
+          "section_title": "F-6-2 → F-2 자녀성년 자녀양육자",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 16,
+          "section_title": "F-2 거주 / 체류기간 연장",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 17,
+          "section_title": "F-2-7 점수제 우수인재 / 체류기간 연장 차등",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 18,
+          "section_title": "F-2 거주 / 재입국허가",
+          "petition_type": "재입국허가",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 19,
+          "section_title": "F-2 거주 / 외국인등록",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_018",
+      "source_hash_index": "44cab41d22619c2f",
+      "source_hash_block": "44cab41d22619c2f",
+      "hash_drift": false,
+      "row_count": 8,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "F-3 동반 / 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "F-3 동반 / 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "F-3 동반 / 체류자격 부여",
+          "petition_type": "체류자격 부여",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "F-3 동반 / 체류자격 변경허가",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "F-3 동반 / 체류기간 연장허가",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "F-5 영주 / 해당자",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "F-5 영주 / 체류자격 부여",
+          "petition_type": "체류자격 부여",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "F-5 영주 / 재입국허가",
+          "petition_type": "재입국허가",
+          "subsection_type": "기간",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_019",
+      "source_hash_index": "b38259963889418e",
+      "source_hash_block": "b38259963889418e",
+      "hash_drift": false,
+      "row_count": 7,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "F-5 영주 / 코로나19 영주자격 상실자 구제",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "예외",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "F-6 결혼이민 / 자격 해당자 및 활동범위",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "F-6-1 / 체류자격 변경허가",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "F-6-1 / 체류자격 변경허가",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "F-6-2 자녀 양육자 / 체류자격 변경허가",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "F-6-3 혼인단절자 / 체류자격 변경허가",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "F-6 결혼이민 / 체류자격 부여",
+          "petition_type": "체류자격 부여",
+          "subsection_type": "대상",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_020",
+      "source_hash_index": "69878fda2051d5e6",
+      "source_hash_block": "69878fda2051d5e6",
+      "hash_drift": false,
+      "row_count": 8,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "G-1 기타 / 해당자",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "G-1 기타 / 난민신청자 체류자격외 활동허가",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "G-1-1 산업재해 / 체류자격 변경허가",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "G-1-5 난민신청자 / 체류자격 변경허가",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "G-1-10 외국인환자 / 체류자격 변경허가",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "G-1 기타 / 체류기간 연장허가",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "H-1 관광취업 / 체류자격 변경허가",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "H-1 관광취업 / 체류기간 연장허가",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "기간",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_021",
+      "source_hash_index": "899005a4f09631e8",
+      "source_hash_block": "899005a4f09631e8",
+      "hash_drift": false,
+      "row_count": 8,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "동포방문(C-3-8) 사증 발급 절차",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "방문취업제(H-2) 체류관리 / 외국인등록",
+          "petition_type": "외국인등록",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "방문취업(H-2) / 체류기간 연장허가",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "재외동포(F-4) 자격부여 / 기본대상",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "재외동포(F-4) / 자격변경 절차",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "재외동포(F-4) / 체류자격 외 활동허가",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "외국국적동포 영주(F-5) / 기본요건",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "외국국적동포 영주(F-5-6) / 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_022",
+      "source_hash_index": "95092384c3c7fc3a",
+      "source_hash_block": "95092384c3c7fc3a",
+      "hash_drift": false,
+      "row_count": 5,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "재외동포(F-4) / 체류기간 연장 기준",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "방문취업(H-2) / 취업 활동범위 - 법적 근거 및 지정 방식",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "방문취업(H-2) / 허용업종 (농업·임업·어업·광업·제조업·건설업)",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "방문취업(H-2) / 서비스업 제외업종",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "방문취업(H-2) / 취업 절차 및 의무",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "절차",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_023",
+      "source_hash_index": "892ac88eb84b145d",
+      "source_hash_block": "892ac88eb84b145d",
+      "hash_drift": false,
+      "row_count": 5,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "별첨 4 / E-9·E-10·H-2 자격 건강상태 확인서",
+          "petition_type": "사증발급",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "재외동포(F-4) 취업활동 제한범위 / 일반 기준 및 예외",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "재외동포(F-4) 단순노무 제한직업 (붙임 1)",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "재외동포(F-4) 그 밖의 취업제한 직업 (붙임 2)",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "재외동포(F-4) 비취업 서약서 (별첨 8-1·8-2)",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "제출서류",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_024",
+      "source_hash_index": "585325f1a37d791e",
+      "source_hash_block": "585325f1a37d791e",
+      "hash_drift": false,
+      "row_count": 7,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "F-4 재외동포 / 취업활동 제한직업 비취업 서약",
+          "petition_type": "외국인등록",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "F-5-14 영주 / 부여 자격 종목 및 등급",
+          "petition_type": "체류자격 부여",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "F-2-R 지역특화형 우수인재 / 자격변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "F-2-R 지역특화형 우수인재 / 자격변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "F-2-R 지역특화형 우수인재 / 자격변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "F-2-R 지역특화형 우수인재 / 자격변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "F-2-R 지역특화형 우수인재 / 자격변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "기간",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_025",
+      "source_hash_index": "a707a0c9660b4973",
+      "source_hash_block": "a707a0c9660b4973",
+      "hash_drift": false,
+      "row_count": 8,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "F-2-R 지역특화형 우수인재 / 자격변경 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "F-2-R 지역특화형 우수인재 / 체류기간 연장",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "F-2-R 지역특화형 우수인재 / 체류기간 연장 제출서류",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "F-2-R 지역특화형 우수인재 / 허가조건 변경(근무처 변경) 및 근무처 추가",
+          "petition_type": "근무처 변경/추가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "F-3-1R 지역우수인재 동반가족 / 자격변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "F-3-1R 지역우수인재 동반가족 / 자격변경 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "E-7-4R 지역특화 숙련기능인력 / 자격변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "E-7-4R 지역특화 숙련기능인력 / 자격변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_026",
+      "source_hash_index": "2f1226d39b26acc5",
+      "source_hash_block": "2f1226d39b26acc5",
+      "hash_drift": false,
+      "row_count": 8,
+      "rows_with_issues": 1,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "F-4-R 지역특화 재외동포 / 자격변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "F-4-R 지역특화 재외동포 / 자격변경 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "F-4-R 지역특화 재외동포 / 체류기간 연장 제출서류",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "F-4 재외동포 / 지역특화동포(F-4-R) 사업지역 거주자 취업활동 범위",
+          "petition_type": "외국인등록",
+          "subsection_type": "예외",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "F-5-6R 지역동포영주 / 체류허가 기준",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": [
+            "visa code not in source: ['F-5']",
+            "subtype_or_program code not in source: ['F-5']"
+          ]
+        },
+        {
+          "row_index": 6,
+          "section_title": "F-3-2R 지역동포가족 / 자격변경 및 연장",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "F-3-2R 지역동포가족 / 자격변경 및 연장 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "F-3-2R 지역동포가족 / 체류자격외 활동허가",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "요건",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_027",
+      "source_hash_index": "7bb1f65c6be61bee",
+      "source_hash_block": "7bb1f65c6be61bee",
+      "hash_drift": false,
+      "row_count": 5,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "F-2 거주 / 준법시민교육",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "F-2-R 지역특화형 우수인재 / 허가조건 안내",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "E-7-4R 지역특화형 숙련기능인력 / 허가조건 안내",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "F-4-R 지역특화형 재외동포 / 허가조건 안내",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "F-3-1R/F-3-2R/F-3-3R 지역특화형 동반가족 / 허가조건 안내",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "기간",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_028",
+      "source_hash_index": "5fece05ce4ad63aa",
+      "source_hash_block": "5fece05ce4ad63aa",
+      "hash_drift": false,
+      "row_count": 8,
+      "rows_with_issues": 1,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "F-4 재외동포 / 취업 제한 분야",
+          "petition_type": "외국인등록",
+          "subsection_type": "제한",
+          "issues": [
+            "visa code not in source: ['F-4']"
+          ]
+        },
+        {
+          "row_index": 2,
+          "section_title": "F-1 방문동거 / 국내 성장 기반 외국인 청소년",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "D-10-1 국내 성장 기반 외국인 청소년 / 자격변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "D-10-1 국내 성장 기반 외국인 청소년 / 자격변경 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "E-7-Y 국내성장인력 / 자격변경",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "E-7-Y 국내성장인력 / 자격변경 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "F-2-R 지역특화 우수인재 / 국내 성장 기반 외국인 청소년 트랙",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "F-2 최우수인재 거주 / Top-Tier 자격 기준",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_029",
+      "source_hash_index": "000351ca52ed1375",
+      "source_hash_block": "000351ca52ed1375",
+      "hash_drift": false,
+      "row_count": 8,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "D-10-T 최우수인재 구직 / 탑티어 비자",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "D-10-T 최우수인재 구직 / 제출서류",
+          "petition_type": "사증발급",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "E-7-T 최우수인재 특정활동 / 탑티어 비자",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "E-7-T 최우수인재 특정활동 / 제출서류",
+          "petition_type": "사증발급",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "F-2-T 최우수인재 거주 / 탑티어 비자",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "F-5-T 최우수인재 영주 / 탑티어 비자",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "F-3 동반 / 최우수인재(Top-Tier) 동반가족 및 부모·가사보조인",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "D-2 유학 / 광역형 비자 시범사업",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_030",
+      "source_hash_index": "10a861863ff79e4d",
+      "source_hash_block": "10a861863ff79e4d",
+      "hash_drift": false,
+      "row_count": 8,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "D-2 유학 / 광역형 비자(인천)",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "D-2 유학 / 광역형 비자 학기 중 인턴활동 특례",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "D-2 유학 / 광역형 비자(광주) 재정능력 특례",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "D-2 유학 / 광역형 비자(강원) 재정능력 특례",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "D-2 유학 / 광역형 비자 시간제 취업 허용시간 확대",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "D-2 유학 / 광역형 비자(충북) 재정능력 특례",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "D-2 유학 / 광역형 비자(충남) 재정능력 특례",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "D-2 유학 / 광역형 비자(전북) 재정능력 특례",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_031",
+      "source_hash_index": "4dcc3ecb204877e9",
+      "source_hash_block": "4dcc3ecb204877e9",
+      "hash_drift": false,
+      "row_count": 6,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "D-2 유학 / 광역형 비자 시간제 취업 허용시간 확대",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "D-2 유학 / 광역형 비자 시간제 취업 대상활동 예외 적용",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "예외",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "D-2 유학 / 제주특별자치도 광역형 비자 재정능력 기준 특례",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "E-7 특정활동 / 광역형 비자 지자체별 요건 - 대구광역시",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "E-7 특정활동 / 광역형 비자 지자체별 요건 - 울산광역시(조선업)",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "E-7 특정활동 / 광역형 비자 지자체별 요건 - 경기도·경상북도·경상남도",
+          "petition_type": "사증발급인정서",
+          "subsection_type": "요건",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_032",
+      "source_hash_index": "38e572bd184e808d",
+      "source_hash_block": "38e572bd184e808d",
+      "hash_drift": false,
+      "row_count": 5,
+      "rows_with_issues": 2,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "F-2-7S K-STAR 거주 / 신청대상",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "F-2-7S K-STAR 거주 / 자격요건",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "F-2-7S K-STAR 거주 / 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "F-5-S1 K-STAR 영주 / 신청대상",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": [
+            "visa code not in source: ['F-5']"
+          ]
+        },
+        {
+          "row_index": 5,
+          "section_title": "F-5-S1 K-STAR 영주 / 점수제 평가 항목별 배점",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "점수표",
+          "issues": [
+            "visa code not in source: ['F-5']"
+          ]
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_033",
+      "source_hash_index": "2214cdb1f53a0667",
+      "source_hash_block": "2214cdb1f53a0667",
+      "hash_drift": false,
+      "row_count": 5,
+      "rows_with_issues": 0,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "F-5-S1 K-STAR 영주 / 점수제 항목별 세부 배점",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "점수표",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "F-5-S1 K-STAR 영주 / 자격요건",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "F-5-S1 K-STAR 영주 / 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "F-2-71 K-STAR 거주의 동반가족",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "우수인재 특별귀화 (국적법 제7조 제1항 3호)",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        }
+      ],
+      "chunk_level_issues": []
+    },
+    {
+      "chunk_id": "stay_034",
+      "source_hash_index": "3148f8084a70e141",
+      "source_hash_block": "3148f8084a70e141",
+      "hash_drift": false,
+      "row_count": 5,
+      "rows_with_issues": 2,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "F-5-S1 K-STAR 영주 / 민원인 제출용 점수표",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "점수표",
+          "issues": [
+            "subtype_or_program code not in source: ['F-5-S1']"
+          ]
+        },
+        {
+          "row_index": 2,
+          "section_title": "F-5-S1 K-STAR 영주 / 평가항목별 입증서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": [
+            "subtype_or_program code not in source: ['F-5-S1']"
+          ]
+        },
+        {
+          "row_index": 3,
+          "section_title": "우수인재 특별귀화 평가기준 / 저명인사 및 학술분야 연구실적 우수자",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "우수인재 특별귀화 평가기준 / 문화·예술·스포츠 우수능력자",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "우수인재 특별귀화 평가기준 / 기업·신산업·지식재산권·국제기구",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
           "issues": []
         }
       ],

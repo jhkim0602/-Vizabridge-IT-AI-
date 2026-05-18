@@ -1,11 +1,11 @@
 ﻿metric,value
 manual_key,stay
 manual_label,체류민원
-row_count,38
+row_count,364
 column_count,27
-review_candidate_count,26
-review_candidate_rate,68.42%
-high_priority_count,26
+review_candidate_count,144
+review_candidate_rate,39.56%
+high_priority_count,144
 medium_priority_count,0
 low_priority_count,0
-lowest_fill_rate_fields,common_documents:0%; normalized_text:0%; other_documents:0%; quota_or_limit:0%; score_criteria:0%; subtype_or_program:3%; table_rows:8%; obligations:11%; target_persons:11%; procedure:13%; table_summary:13%; fees:16%; requirements:16%; exceptions:21%; restrictions:37%; eligibility:45%; applicant_context:47%; duration_or_validity:50%; mandatory_documents:66%; item_type:100%; manual_type:100%; petition_type:100%; section_title:100%; source_pdf:100%; stay_status_code:100%; stay_status_name_ko:100%; subsection_type:100%
+lowest_fill_rate_fields,normalized_text:0%; quota_or_limit:5%; score_criteria:5%; fees:5%; table_rows:7%; common_documents:11%; obligations:11%; table_summary:12%; target_persons:15%; procedure:15%; other_documents:17%; exceptions:23%; duration_or_validity:27%; restrictions:31%; eligibility:37%; subtype_or_program:40%; requirements:41%; applicant_context:52%; mandatory_documents:54%; item_type:100%; manual_type:100%; petition_type:100%; section_title:100%; source_pdf:100%; stay_status_code:100%; stay_status_name_ko:100%; subsection_type:100%

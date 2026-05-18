@@ -52,8 +52,8 @@ SOURCE_PDF = {
 }
 
 OUTPUT_FILENAME = {
-    "stay": "체류매뉴얼_검수용.csv",
-    "visa": "사증매뉴얼_검수용.csv",
+    "stay": "체류매뉴얼_검수용_최종.csv",
+    "visa": "사증매뉴얼_검수용_최종.csv",
 }
 
 OUTPUT_COLUMNS = [

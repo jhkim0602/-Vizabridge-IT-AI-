@@ -4,9 +4,9 @@
 
 ## 체류민원 (stay)
 
-- rows: 38
-- review candidates: 26 (68.42%)
-- high priority: 26
+- rows: 364
+- review candidates: 144 (39.56%)
+- high priority: 144
 - medium priority: 0
 - low priority: 0
 - review workbook: `output/review/stay_manual_review.xlsx`
@@ -15,9 +15,9 @@
 
 ## 사증민원 (visa)
 
-- rows: 6
-- review candidates: 3 (50.00%)
-- high priority: 3
+- rows: 218
+- review candidates: 61 (27.98%)
+- high priority: 61
 - medium priority: 0
 - low priority: 0
 - review workbook: `output/review/visa_manual_review.xlsx`

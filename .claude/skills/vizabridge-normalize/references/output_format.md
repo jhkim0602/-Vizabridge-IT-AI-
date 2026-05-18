@@ -66,6 +66,10 @@ No rows. This still counts as "processed" so the chunk is not re-attempted.
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- expected_questions: |
+    한국 외교사절단으로 와있는데 비자 어떻게 받아요?
+    협정에 의해 면제되는 외국인이 받는 사증은 뭐예요?
+    가족 동반은 가능한가요?
 
 <!-- end chunk: visa_003 -->
 ```

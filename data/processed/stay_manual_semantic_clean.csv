@@ -1,4 +1,4 @@
-stay_status_code,stay_status_name_ko,manual_type,source_pdf,item_type,section_title,subtype_or_program,petition_type,subsection_type,applicant_context,eligibility,target_persons,common_documents,mandatory_documents,other_documents,requirements,procedure,restrictions,exceptions,fees,duration_or_validity,quota_or_limit,score_criteria,table_summary,table_rows,normalized_text,obligations
+stay_status_code,stay_status_name_ko,manual_type,source_pdf,item_type,section_title,subtype_or_program,petition_type,subsection_type,applicant_context,eligibility,target_persons,common_documents,mandatory_documents,other_documents,requirements,procedure,restrictions,exceptions,fees,duration_or_validity,quota_or_limit,score_criteria,table_summary,table_rows,expected_questions,obligations
 공통,공통사항,체류민원,260504 체류민원 자격별 안내 매뉴얼.hwp,common_rule,공통사항: 각종 체류허가 등에 관한 심사수수료,,공통사항,수수료,,,,,,,,,,,"체류자격 외 활동허가: 12만원
 근무처의 변경·추가: 12만원
 체류자격 부여: 8만원

@@ -2,11 +2,21 @@
 
 # Vizabridge Visa RAG
 
-대한민국 비자/체류 매뉴얼 **HWP** 원본을 [kordoc](https://github.com/chrisryugj/kordoc)으로 Markdown으로 변환한 뒤, **Claude Code 스킬**로 의미 단위 정규화 → **결정적 Python**으로 RAG/챗봇용 CSV를 생성하는 데이터 전처리 파이프라인입니다.
+대한민국 비자/체류 매뉴얼 **HWP** 원본을 [kordoc](https://github.com/chrisryugj/kordoc)으로 Markdown으로 변환한 뒤, **Claude Code 스킬**로 의미 단위 정규화 → **결정적 Python**으로 **사람이 검수 가능한 1차 정리 CSV**를 생성하는 데이터 전처리 파이프라인입니다.
 
-이 저장소의 핵심 목표는 PDF를 단순히 표 형태로 옮기는 것이 아니라, 행정 매뉴얼의 의미 구조를 이해하기 쉬운 데이터로 바꾸는 것입니다. 최종 CSV는 체류자격/사증코드, 민원유형, 대상, 요건, 제출서류, 제한, 예외, 수수료, 점수표, 쿼터 같은 행정 단위로 정리합니다.
+이번 회차의 1차 산출물은 **챗봇/RAG용 최종 데이터 구조가 아니라, 사람이 원본 자료를 검수하기 위한 CSV**입니다. 검수가 끝난 후에 챗봇용 변환을 진행합니다.
 
-사용자는 보통 `E-7`, `F-6`, `D-2` 같은 코드를 모른 채 "한국인 배우자와 결혼했다", "유학생인데 아르바이트를 하고 싶다", "외국인 직원을 채용하고 싶다"처럼 자기 상황을 말합니다. 그래서 챗봇용 CSV에는 상황 태그, 자연어 검색 키워드, 되물어야 할 정보, 라우팅 힌트를 추가합니다.
+검수용 CSV의 컬럼은 클라이언트 요청에 맞춰 7개로 단순화되어 있습니다:
+
+| 컬럼 | 의미 |
+| --- | --- |
+| 비자코드 | E-7, F-6 등. 세부 프로그램이 있으면 괄호로 함께 (`E-7 (E-7-4)`) |
+| 사증·체류 | 매뉴얼 구분 (`사증` 또는 `체류`) |
+| 문서유형 | `사증발급 / 제출서류` 형식으로 어떤 행정 행위·구획인지 |
+| 핵심내용 | 자격요건, 대상자, 요건, 절차, 체류기간, 수수료, 제한, 예외, 의무사항 등을 라벨링해 통합 |
+| 제출서류 | 공통서류 / 필수서류 / 기타서류 |
+| 예상질문 | 비자코드를 모르는 일반인이 자기 상황으로 물을 법한 질문 (LLM 생성) |
+| 출처 | 섹션 제목 + 원본 HWP 파일명 |
 
 ## Pipeline
 
@@ -25,19 +35,15 @@ data/parsed/normalized/{stay,visa}_manual.md              ← canonical intermed
    │  Stage 5  /vizabridge-repair                         (Claude Code skill, optional)
    │  Stage 6  scripts/build_semantic_csv.py              (Python, deterministic)
    ▼
-data/processed/{stay,visa}_manual_semantic_clean.csv
-   │  Stage 7  /vizabridge-enrich-chatbot                 (Claude Code skill)
-   ▼
-data/parsed/normalized_chatbot/{stay,visa}_manual.md
-   │  Stage 8  scripts/build_chatbot_csv.py               (Python, deterministic)
-   ▼
-data/processed/{stay,visa}_manual_chatbot_ready.csv
+data/processed/{체류,사증}매뉴얼_검수용.csv                  ← 사람 검수용 1차 CSV
    │  Stage 9  scripts/quality_report_semantic_manual_csvs.py
    ▼
 output/quality/*, output/review/*
+
+(Stage 7–8 챗봇 변환 파이프라인은 검수 완료 후 별도 회차에서 진행 예정)
 ```
 
-LLM은 stages 3, 5, 7 에서만 사용합니다. 나머지 6단계는 결정적 Python으로, 다시 실행해도 같은 결과가 나옵니다. **정규화 MD**(stages 3 / 7 산출물)는 의도적으로 git에 커밋합니다 — 같은 입력에서 같은 CSV가 재생성되도록.
+LLM은 stages 3, 5 에서만 사용합니다. 나머지 단계는 결정적 Python으로, 다시 실행해도 같은 결과가 나옵니다. **정규화 MD**(stage 3 산출물)는 의도적으로 git에 커밋합니다 — 같은 입력에서 같은 CSV가 재생성되도록.
 
 ## Folder Structure
 
@@ -47,22 +53,21 @@ LLM은 stages 3, 5, 7 에서만 사용합니다. 나머지 6단계는 결정적 
 │   ├── raw/                  # 원본 HWP (원본 교체 외 수정하지 않음)
 │   │   └── legacy_pdf/       # 과거 PDF 백업
 │   ├── parsed/
-│   │   ├── raw/              # kordoc 출력 (.gitignored, 재생성 가능)
+│   │   ├── raw/              # kordoc 출력 (커밋)
 │   │   ├── chunks/           # 청크 인덱스 .jsonl (커밋)
 │   │   ├── normalized/       # 정규화 MD — LLM 결과 (커밋)
-│   │   ├── normalized_chatbot/  # 챗봇 정규화 MD (커밋)
 │   │   └── validation/       # validator 산출 .json (커밋)
-│   └── processed/            # 최종 CSV (.gitignored, 재생성 가능)
+│   └── processed/            # 검수용 CSV (커밋, 다운로드 가능)
 ├── scripts/                  # 결정적 단계 Python
-│   └── legacy/               # 과거 정규식 빌더 (quality_report에서 상수 재사용)
+│   └── legacy/               # 과거 정규식 빌더 / 챗봇 변환 보존본
 ├── .claude/skills/
 │   ├── vizabridge-normalize/
-│   ├── vizabridge-enrich-chatbot/
+│   ├── vizabridge-enrich-chatbot/  # (이번 회차 미사용)
 │   └── vizabridge-repair/
 ├── notebooks/                # 분석 노트북
 ├── docs/                     # 설계/운영 문서
 ├── tests/                    # 정제 규칙 보호 테스트
-├── output/                   # 검수 리포트/Excel (.gitignored)
+├── output/                   # 검수 리포트/Excel (커밋)
 └── requirements.txt
 ```
 
@@ -104,18 +109,15 @@ python scripts/validate_normalization.py
 #    /vizabridge-repair visa
 python scripts/validate_normalization.py   # 재검증
 
-# 6) semantic CSV 빌드
+# 6) 검수용 CSV 빌드 (한국어 7컬럼)
 python scripts/build_semantic_csv.py
+#    → data/processed/체류매뉴얼_검수용.csv
+#    → data/processed/사증매뉴얼_검수용.csv
 
-# 7) Claude Code 세션에서 챗봇 풍부화
-#    /vizabridge-enrich-chatbot stay
-#    /vizabridge-enrich-chatbot visa
-
-# 8) chatbot CSV 빌드
-python scripts/build_chatbot_csv.py
-
-# 9) 품질 리포트 + 검수용 Excel
+# 7) 품질 리포트 + 검수용 Excel
 python scripts/quality_report_semantic_manual_csvs.py
+
+# (챗봇용 변환 7–8단계는 이번 회차 미사용)
 ```
 
 ## Skills 적용법

@@ -27,6 +27,7 @@ The normalized rows you emit must populate the fields below. Field names are exa
 | `score_criteria` | Score table / 배점 reference |
 | `table_summary` | One-line summary of any table this row represents |
 | `table_rows` | Rendered key rows of that table (kept short) |
+| `expected_questions` | 한국어로 3개. 이 행에 대해 일반 사용자가 비자코드를 모른 채 자기 상황으로 물을 법한 질문을 줄바꿈으로 구분해 적는다. 예: "한국인이랑 결혼했는데 비자 어떻게 받아요?\n결혼이민 갱신 서류 뭐 필요해요?\n이혼해도 체류 가능해요?" 행이 다루는 토픽 범위 안에서만, 본문에 근거를 둘 것. 코드명(F-6 등)을 질문에 쓰지 말 것 |
 
 ## Stay manual only (`체류민원`)
 

@@ -37,6 +37,10 @@ Append blocks like this to `data/parsed/normalized/{manual_key}_manual.md`:
     - 여권
     - 표준규격사진
 - duration_or_validity: 재임 기간
+- expected_questions: |
+    외교관 여권으로 한국 들어오려면 어떤 서류 내요?
+    외교사절 비자는 얼마나 머물 수 있어요?
+    외교관 가족도 같이 받을 수 있나요?
 
 ### row {visa_code} / {petition_type} / {subsection_type}
 - visa_code: A-1

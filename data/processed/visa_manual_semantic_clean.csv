@@ -1,4 +1,4 @@
-visa_code,visa_name_ko,manual_type,source_pdf,item_type,section_title,subtype_or_program,petition_type,subsection_type,applicant_context,eligibility,target_persons,common_documents,mandatory_documents,other_documents,requirements,procedure,restrictions,exceptions,fees,duration_or_validity,quota_or_limit,score_criteria,table_summary,table_rows,normalized_text,inviter_context,recommendation_or_approval
+visa_code,visa_name_ko,manual_type,source_pdf,item_type,section_title,subtype_or_program,petition_type,subsection_type,applicant_context,eligibility,target_persons,common_documents,mandatory_documents,other_documents,requirements,procedure,restrictions,exceptions,fees,duration_or_validity,quota_or_limit,score_criteria,table_summary,table_rows,expected_questions,inviter_context,recommendation_or_approval
 A-1,외교,사증민원,260504 사증민원 자격별 안내 매뉴얼.hwp,visa_rule,A-1 외교 / 사증발급,,사증발급,대상,,"외국정부의 외교사절단이나 영사기관의 구성원 (대사, 공사, 참사관, 서기관, 총영사, 영사 등)
 조약 또는 국제관행에 따라 외교사절과 동등한 특권과 면제를 받는 자 (UN 사무총장, 사무차장, 전문기구 사무국장, 국가원수, 각료, 양원의장, 정부주최 회의 외국정부 대표단 등)
 상기자의 가족 (주재 외교관과 세대를 같이 하는 배우자, 자녀, 부모 등)",,,"사증발급신청서 (별지 제17호 서식)

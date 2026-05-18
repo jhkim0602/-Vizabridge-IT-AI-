@@ -70,30 +70,32 @@ validator가 flag한 청크가 있을 때만:
 
 수리한 후 다시 validate.
 
-## Stage 6 — semantic CSV 빌드
+## Stage 6 — 검수용 CSV 빌드 (한국어 7컬럼)
 
 ```bash
 python scripts/build_semantic_csv.py
 ```
 
-`data/parsed/normalized/*.md` → `data/processed/{stay,visa}_manual_semantic_clean.csv`.
+`data/parsed/normalized/*.md` → `data/processed/{체류,사증}매뉴얼_검수용.csv`.
 
-## Stage 7 — chatbot 풍부화 (Claude Code 스킬)
+이번 회차의 1차 산출물입니다. 7개 컬럼은 다음과 같습니다:
 
-```
-/vizabridge-enrich-chatbot stay
-/vizabridge-enrich-chatbot visa
-```
+| 컬럼 | 매핑 |
+| --- | --- |
+| `비자코드` | `stay_status_code` / `visa_code`. 세부 프로그램은 괄호 (`E-7 (E-7-4)`) |
+| `사증·체류` | `manual_type` → `체류` / `사증` |
+| `문서유형` | `petition_type / subsection_type` (예: `사증발급 / 제출서류`) |
+| `핵심내용` | `applicant_context`, `eligibility`, `target_persons`, `requirements`, `procedure`, `duration_or_validity`, `fees`, `restrictions`, `exceptions`, `quota_or_limit`, `score_criteria`, `obligations`, `inviter_context`, `recommendation_or_approval`, `table_summary`, `table_rows` 중 비어있지 않은 것을 라벨링해 통합 |
+| `제출서류` | `common_documents`, `mandatory_documents`, `other_documents` 통합 |
+| `예상질문` | `expected_questions` (정규화 스킬이 LLM으로 생성) |
+| `출처` | `section_title` \| 원본 HWP 파일명 |
 
-semantic CSV의 각 행에 상황 태그, 자연어 키워드, 라우팅 힌트, 검색 텍스트 추가. 산출물: `data/parsed/normalized_chatbot/{stay,visa}_manual.md` (커밋 대상).
+CSV는 `utf-8-sig`로 저장되어 Excel에서 한글이 깨지지 않습니다.
 
-## Stage 8 — chatbot CSV 빌드
+## Stage 7–8 — 챗봇 변환 (이번 회차 미사용)
 
-```bash
-python scripts/build_chatbot_csv.py
-```
-
-`data/parsed/normalized_chatbot/*.md` → `data/processed/{stay,visa}_manual_chatbot_ready.csv`.
+검수 완료 후 별도 회차에서 진행. 스크립트는 `scripts/build_chatbot_csv.py`,
+스킬은 `.claude/skills/vizabridge-enrich-chatbot/`에 보존되어 있습니다.
 
 ## Stage 9 — 품질 리포트
 
@@ -101,7 +103,7 @@ python scripts/build_chatbot_csv.py
 python scripts/quality_report_semantic_manual_csvs.py
 ```
 
-`output/quality/` 및 `output/review/`에 검수 리포트와 Excel 생성. semantic CSV에 review 컬럼은 추가하지 않습니다.
+`output/quality/` 및 `output/review/`에 검수 리포트와 Excel 생성.
 
 ## 한 번에 (CLI 결정적 단계만)
 
@@ -110,9 +112,7 @@ python scripts/parse_hwp_to_markdown.py && \
 python scripts/index_markdown_chunks.py
 # (여기서 Claude Code 스킬로 정규화)
 python scripts/validate_normalization.py && \
-python scripts/build_semantic_csv.py
-# (여기서 Claude Code 스킬로 챗봇 풍부화)
-python scripts/build_chatbot_csv.py && \
+python scripts/build_semantic_csv.py && \
 python scripts/quality_report_semantic_manual_csvs.py
 ```
 

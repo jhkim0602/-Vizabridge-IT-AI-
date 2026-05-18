@@ -29,35 +29,8 @@ function formatValue(q: Question, value: string | string[] | undefined): string 
   return value.trim() || "(no answer)";
 }
 
-function buildMarkdown(sub: Submission): string {
-  const lines: string[] = [];
-  lines.push("# Vizabridge Intern Interview Response");
-  lines.push("");
-  lines.push(`- **Name:** ${sub.intervieweeName || "(blank)"}`);
-  lines.push(`- **Submitted:** ${sub.submittedAt}`);
-  lines.push(
-    `- **Duration:** ${Math.round(sub.durationSeconds / 60)} minutes`,
-  );
-  lines.push("");
-
-  for (const section of SECTIONS) {
-    lines.push(`## ${section.title} (${section.titleKo})`);
-    lines.push("");
-    for (const q of section.questions) {
-      const val = sub.answers[q.id];
-      lines.push(`### ${q.number} — ${q.prompt}`);
-      if (q.promptKo) lines.push(`_${q.promptKo}_`);
-      lines.push("");
-      lines.push(formatValue(q, val));
-      lines.push("");
-    }
-  }
-  return lines.join("\n");
-}
-
 export function DonePanel() {
   const [submission, setSubmission] = useState<Submission | null>(null);
-  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     try {
@@ -87,74 +60,24 @@ export function DonePanel() {
     );
   }
 
-  const markdown = buildMarkdown(submission);
-  const json = JSON.stringify(submission, null, 2);
-  const slugName = submission.intervieweeName
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
-  const filenameBase = `vizabridge-interview-${slugName || "response"}-${submission.submittedAt.slice(0, 10)}`;
-
-  function download(content: string, ext: string, mime: string) {
-    const blob = new Blob([content], { type: mime });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `${filenameBase}.${ext}`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  }
-
-  async function copyMarkdown() {
-    try {
-      await navigator.clipboard.writeText(markdown);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      // ignore
-    }
-  }
-
   return (
     <div className="space-y-6">
       <section className="card">
         <span className="chip">Done · merci!</span>
         <h1 className="mt-3 text-2xl font-semibold tracking-tight text-ink-900">
-          Thanks, {submission.intervieweeName || "there"}.
+          Thank you so much, {submission.intervieweeName || "there"}.
         </h1>
-        <p className="mt-2 text-sm text-ink-600">
-          Your answers are saved in this browser tab. Download one of the
-          files below and send it to us via your usual channel (KakaoTalk,
-          Slack, etc.). Nothing is uploaded automatically.
+        <p className="mt-3 text-sm leading-6 text-ink-600">
+          We truly appreciate you taking the time to share your work and
+          thoughts with us. Your responses have been received — we will read
+          every answer carefully and follow up if anything needs
+          clarification. Wishing you the best with the rest of the build.
         </p>
-
-        <div className="mt-5 flex flex-wrap items-center gap-3">
-          <button
-            type="button"
-            className="btn-primary"
-            onClick={() => download(json, "json", "application/json")}
-          >
-            Download JSON
-          </button>
-          <button
-            type="button"
-            className="btn-secondary"
-            onClick={() =>
-              download(markdown, "md", "text/markdown;charset=utf-8")
-            }
-          >
-            Download Markdown
-          </button>
-          <button
-            type="button"
-            className="btn-secondary"
-            onClick={copyMarkdown}
-          >
-            {copied ? "Copied!" : "Copy Markdown"}
-          </button>
-        </div>
+        <p className="mt-3 text-xs text-ink-500">
+          소중한 시간 내어 답변해 주셔서 진심으로 감사드립니다. 응답은 모두
+          잘 도착했고, 한 분 한 분의 내용을 꼼꼼히 읽어보겠습니다. 앞으로의
+          작업에도 좋은 결과 있으시길 바랍니다.
+        </p>
       </section>
 
       <section className="card">

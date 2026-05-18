@@ -13,7 +13,9 @@ export function QuestionField({ question, value, onChange }: Props) {
     <div className="space-y-1">
       <div className="flex items-baseline gap-2">
         <span className="chip">{question.number}</span>
-        {question.optional && (
+        {(question.optional ||
+          question.type === "short" ||
+          question.type === "long") && (
           <span className="text-xs text-ink-400">optional</span>
         )}
       </div>

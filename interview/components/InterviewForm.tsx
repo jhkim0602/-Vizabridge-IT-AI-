@@ -23,6 +23,7 @@ function isQuestionAnswered(
   value: string | string[] | undefined,
 ): boolean {
   if (q.optional) return true;
+  if (q.type === "short" || q.type === "long") return true;
   if (value === undefined) return false;
   if (typeof value === "string") return value.trim().length > 0;
   return value.length > 0;

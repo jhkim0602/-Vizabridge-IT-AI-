@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""검수용 v3 CSV 빌더 — 정규화 MD → 27컬럼 CSV.
+"""검수용 v3 CSV 빌더 — 정규화 MD → 28컬럼 CSV.
 
 흐름:
 1. `data/parsed/normalized/{stay,visa}_manual.md` 의 row 블록을 파싱
 2. 같은 (비자코드, 신청종류) 묶음을 한 행으로 병합
 3. 정규화 row의 필드(applicant_context, eligibility, ...)를 v3 컬럼으로 분배
+   - `duration_or_validity` 는 사증유효기간 / 1회부여 체류기간 / 체류상한 3컬럼으로 분리
 4. 상위코드/사증·체류 derive
 5. 비자 흐름 매핑 (선행자격/다음단계/동반가족/키워드)
 6. 검수 컬럼 추가 (검수상태=미검수, 검수메모="")
@@ -40,9 +41,10 @@ PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 V3_COLUMNS = [
     # 식별·분류 (4)
     "비자코드", "상위코드", "사증·체류", "신청종류",
-    # 행정 내용 (13) — 표 데이터는 v3.1 에서 폐기. 표 내용은 라우팅 로직으로
-    # 점수표 / 쿼터 / 동반가족 / 수수료 / 자격요건 에 흡수.
-    "신청상황", "대상자", "자격요건", "절차", "수수료", "기간",
+    # 행정 내용 (15) — 표 데이터는 v3.1 에서 폐기 (점수표/쿼터/동반가족/수수료/자격요건 라우팅).
+    # 기간은 v3.2 에서 3컬럼으로 분리 (사증유효기간 / 1회부여 체류기간 / 체류상한).
+    "신청상황", "대상자", "자격요건", "절차", "수수료",
+    "사증유효기간", "1회부여 체류기간", "체류상한",
     "제한", "예외", "의무사항", "점수표", "쿼터",
     "초청자", "추천·승인기관",
     # 자료 (2)
@@ -125,7 +127,8 @@ def iter_row_blocks(text: str) -> Iterable[dict[str, str]]:
 # 행 → v3 컬럼 매핑
 # ---------------------------------------------------------------------------
 
-# normalized 필드 → v3 컬럼 직접 매핑
+# normalized 필드 → v3 컬럼 직접 매핑.
+# duration_or_validity 는 직접 매핑하지 않고 _split_duration 으로 3컬럼에 분배.
 DIRECT_MAP = {
     "applicant_context": "신청상황",
     "target_persons": "대상자",
@@ -133,7 +136,6 @@ DIRECT_MAP = {
     "requirements": "자격요건",  # eligibility 와 같은 컬럼으로
     "procedure": "절차",
     "fees": "수수료",
-    "duration_or_validity": "기간",
     "restrictions": "제한",
     "exceptions": "예외",
     "obligations": "의무사항",
@@ -159,6 +161,102 @@ def merge_list(values: list[str], sep: str = "\n\n") -> str:
             seen.add(v)
             out.append(v)
     return sep.join(out)
+
+
+# ---------------------------------------------------------------------------
+# 기간 3분할 (사증유효기간 / 1회부여 체류기간 / 체류상한)
+# ---------------------------------------------------------------------------
+#
+# 매뉴얼의 기간 정보는 통상 세 축이 한 셀에 줄바꿈으로 혼재한다:
+#   - 사증유효기간: 사증 자체의 효력 기간 (단수/복수, 유효기간 N월/년)
+#   - 1회부여 체류기간: 입국 시마다 부여되는 체류허가 기간 (체류기간 상한)
+#   - 체류상한: 누적 또는 자격존속 상한 (재임기간·최장체류기간·범위 내)
+#
+# 라인 단위로 매칭하되, 한 라인이 두 축을 동시에 언급하면 양쪽에 모두 들어간다.
+
+_VISA_VALIDITY_RE = re.compile(
+    r"단수사증|복수사증|단·복수\s*사증|단·복수재입국허가|복수재입국허가"
+    r"|사증유효기간"
+    r"|유효기간\s*\d+\s*(?:개월|년|월|月)"
+    r"|유효기간\s*\d+\s*년\s*이내"
+    r"|재입국허가\s*(?:면제|복수)"
+    r"|단·복수\s*비자|단수\s*비자|복수\s*비자"
+    r"|단수\b|복수\b"  # "체류기간 1년 이내, 단수" 같은 trailing
+)
+
+_SINGLE_STAY_RE = re.compile(
+    r"1회\s*부여|1회에\s*부여|체류기간\s*상한|체류기간의\s*상한"
+    r"|체류기간\s*\d+\s*(?:일|개월|년)"
+    r"|체류기간\s*[가-힣]*\s*\d+\s*(?:일|개월|년)\s*이내"
+    r"|허용기간|허가기간|연장(?:허가)?\s*[:는]"
+    r"|\d+차\s*연장"
+    r"|체류기간\s*\d+일\s*\("
+    r"|입국일로부터\s*\d+개월\s*미만"
+)
+
+_TOTAL_STAY_RE = re.compile(
+    r"최장체류기간|총\s*체류기간|최대\s*\d+\s*(?:일|개월|년)"
+    r"|최장\s*\d+\s*(?:일|개월|년)"
+    r"|재임기간|공무수행기간|신분존속기간"
+    r"|여권\s*유효기간\s*범위|범위\s*내"
+    r"|협정상의?\s*체류기간"
+    r"|법무부장관이\s*따로\s*정하는"
+    r"|근로계약기간|재직기간|연구기간|교육기간|공연추천기간"
+    r"|체류허가기간|체류허가\s*기간"
+    r"|재고용\s*특례"
+)
+
+# 라인이 사실상 숫자+기간단위로만 끝나면 (예: "2년", "90일", "2년 이내") → 1회부여
+_PLAIN_PERIOD_RE = re.compile(r"^\d+\s*(?:일|개월|년)(?:\s*이내|\s*이하)?$")
+
+
+def _split_duration(text: str) -> tuple[str, str, str]:
+    """기간 셀 본문을 (사증유효기간, 1회부여 체류기간, 체류상한) 3개로 분리."""
+    if not text:
+        return ("", "", "")
+
+    visa_validity: list[str] = []
+    single_stay: list[str] = []
+    total_stay: list[str] = []
+
+    for raw in text.split("\n"):
+        line = raw.strip()
+        if not line:
+            continue
+
+        is_visa = bool(_VISA_VALIDITY_RE.search(line))
+        is_single = bool(_SINGLE_STAY_RE.search(line))
+        is_total = bool(_TOTAL_STAY_RE.search(line))
+
+        # 어느 정규식에도 잡히지 않으면 휴리스틱 fallback
+        if not (is_visa or is_single or is_total):
+            if _PLAIN_PERIOD_RE.match(line):
+                is_single = True  # "2년" 같은 단독 표기는 통상 체류기간
+            else:
+                # 잘 모르겠는 라인 — 체류상한으로 폴백 (가장 일반적 의미)
+                is_total = True
+
+        if is_visa:
+            visa_validity.append(line)
+        if is_single:
+            single_stay.append(line)
+        if is_total:
+            total_stay.append(line)
+
+    def _dedup_join(items: list[str]) -> str:
+        seen: set[str] = set()
+        out: list[str] = []
+        for s in items:
+            if s not in seen:
+                seen.add(s)
+                out.append(s)
+        return "\n".join(out)
+
+    return (
+        _dedup_join(visa_validity),
+        _dedup_join(single_stay),
+        _dedup_join(total_stay),
+    )
 
 
 # 표 내용 라우팅용 키워드 → 컬럼 매핑. 우선순위 위에서 아래로.
@@ -212,6 +310,14 @@ def aggregate_rows(rows: list[dict[str, str]], manual_kind: str) -> list[dict[st
             keys = [k for k, v in DIRECT_MAP.items() if v == col]
             values = [r.get(k, "") for r in group for k in keys]
             new[col] = merge_list(values)
+
+        # 기간: duration_or_validity 를 3컬럼으로 분리.
+        # 그룹 안 여러 row 의 본문을 모은 뒤 라인 단위 분류.
+        duration_blob = merge_list([r.get("duration_or_validity", "") for r in group])
+        v_valid, s_stay, t_stay = _split_duration(duration_blob)
+        new["사증유효기간"] = v_valid
+        new["1회부여 체류기간"] = s_stay
+        new["체류상한"] = t_stay
 
         # 제출서류 = common + mandatory + other documents (라벨 prefix)
         docs_parts: list[str] = []

@@ -1,4 +1,4 @@
-// Vizabridge 검수용 CSV v3 — 27컬럼 스키마
+// Vizabridge 검수용 CSV v3 — 28컬럼 스키마
 //
 // dbdiagram.io 에 그대로 붙여넣으면 시각화됨:
 //   https://dbdiagram.io/d
@@ -10,7 +10,7 @@
 
 Project Vizabridge {
   database_type: 'CSV'
-  Note: 'Vizabridge 검수용 v3 — 한 행 = (비자코드 x 신청종류). 체류 233행, 사증 130행, 27컬럼.'
+  Note: 'Vizabridge 검수용 v3 — 한 행 = (비자코드 x 신청종류). 체류 233행, 사증 130행, 28컬럼.'
 }
 
 // ============================================================================
@@ -24,13 +24,15 @@ Table inspection_v3 [headercolor: #10b981, note: 'review CSV. 체류매뉴얼_�
   manual_kind manual_kind_enum [note: '사증·체류']
   petition_type petition_enum [note: '신청종류']
 
-  // === 행정 내용 (14) ===
+  // === 행정 내용 (15) ===
   situation text [note: '신청상황. 어떤 사용자에게 적용되는지']
   target text [note: '대상자']
   eligibility text [note: '자격요건 (eligibility + requirements 합본)']
   procedure text [note: '절차']
   fees text [note: '수수료. 예: 10만원 / 면제']
-  duration text [note: '기간 (체류기간/유효기간)']
+  visa_validity text [note: '사증유효기간. 단수/복수, 유효기간 N월']
+  single_stay text [note: '1회부여 체류기간. 입국 1회 부여되는 체류허가 기간']
+  total_stay text [note: '체류상한. 누적·자격존속 상한 (재임기간·최장체류기간)']
   restrictions text [note: '제한']
   exceptions text [note: '예외']
   obligations text [note: '의무사항']
@@ -40,6 +42,7 @@ Table inspection_v3 [headercolor: #10b981, note: 'review CSV. 체류매뉴얼_�
   recommendation text [note: '추천·승인기관. 외교부·노동부·산업부']
   // 표 데이터 컬럼은 v3.1 에서 폐기. 매뉴얼의 표 내용은 점수표 / 쿼터 / 동반가족 /
   // 수수료 / 자격요건 으로 라우팅됨.
+  // 기간 컬럼은 v3.2 에서 사증유효기간 / 1회부여 체류기간 / 체류상한 3컬럼으로 분리.
 
   // === 자료 (2) ===
   documents text [note: '제출서류. [공통서류] [필수서류] [기타서류] 라벨 구조']

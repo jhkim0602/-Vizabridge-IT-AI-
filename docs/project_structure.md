@@ -4,7 +4,7 @@
 
 ## One-Line Summary
 
-정부 비자·체류 HWP 매뉴얼을 kordoc Markdown으로 변환하고, Claude Code 스킬로 행정 의미를 정규화한 뒤, 결정적 Python으로 **검수 가능한 27컬럼 v3 CSV**와 원본 페이지 출처를 생성하는 6단계 데이터 파이프라인입니다. LLM은 Stage 3에서만 사용합니다.
+정부 비자·체류 HWP 매뉴얼을 kordoc Markdown으로 변환하고, Claude Code 스킬로 행정 의미를 정규화한 뒤, 결정적 Python으로 **검수 가능한 28컬럼 v3 CSV**와 원본 페이지 출처를 생성하는 6단계 데이터 파이프라인입니다. LLM은 Stage 3에서만 사용합니다.
 
 ## Folder Map
 
@@ -49,7 +49,7 @@ Vizabridge/
 | `parse_hwp_to_markdown.py` | 1 | HWP → kordoc → Markdown |
 | `index_markdown_chunks.py` | 2 | Markdown → table 경계 기반 청크 인덱스 |
 | `validate_normalization.py` | 4 | 정규화 Markdown ↔ 원본 Markdown 교차 검증 |
-| `build_v3.py` | 5 | 정규화 Markdown → 27컬럼 v3 CSV |
+| `build_v3.py` | 5 | 정규화 Markdown → 28컬럼 v3 CSV |
 | `fill_page_numbers.py` | 6 | PDF 페이지 텍스트 ↔ CSV 행 fuzzy 매칭, `출처` 페이지 보강 |
 
 Stage 3은 Python 스크립트가 아니라 Claude Code 스킬 `/vizabridge-normalize`가 담당합니다.

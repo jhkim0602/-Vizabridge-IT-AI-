@@ -14,8 +14,8 @@ flowchart TB
 
     subgraph GOOD["GOOD — (비자코드 × 신청종류) + 항목별 컬럼 — 행 단위 검수 가능&nbsp;"]
         direction TB
-        G1["F-6-1 / 체류자격 변경&nbsp;&nbsp;<br/><br/>자격요건: 2026년 소득요건&nbsp;&nbsp;<br/>제출서류: [공통] [필수] [기타]&nbsp;&nbsp;<br/>수수료: 10만원&nbsp;&nbsp;<br/>기간: 1년 이내&nbsp;&nbsp;<br/>제한: 단기사증, 형사범 등&nbsp;&nbsp;<br/>예외: 사증면제 독일인 가능&nbsp;&nbsp;<br/>출처: F-6-1 변경허가 (p. 442)&nbsp;&nbsp;"]:::good
-        G2["F-6-1 / 체류기간 연장&nbsp;&nbsp;<br/><br/>자격요건: 정상 혼인 유지&nbsp;&nbsp;<br/>제출서류: [공통] [필수]&nbsp;&nbsp;<br/>수수료: 3만원&nbsp;&nbsp;<br/>기간: 최대 3년&nbsp;&nbsp;<br/>제한: 자녀 없을 시 1년&nbsp;&nbsp;<br/>출처: F-6-1 연장허가 (p. 451)&nbsp;&nbsp;"]:::good
+        G1["F-6-1 / 체류자격 변경&nbsp;&nbsp;<br/><br/>자격요건: 2026년 소득요건&nbsp;&nbsp;<br/>제출서류: [공통] [필수] [기타]&nbsp;&nbsp;<br/>수수료: 10만원&nbsp;&nbsp;<br/>1회부여 체류기간: 1년 이내&nbsp;&nbsp;<br/>체류상한: 재임기간 범위&nbsp;&nbsp;<br/>제한: 단기사증, 형사범 등&nbsp;&nbsp;<br/>예외: 사증면제 독일인 가능&nbsp;&nbsp;<br/>출처: F-6-1 변경허가 (p. 442)&nbsp;&nbsp;"]:::good
+        G2["F-6-1 / 체류기간 연장&nbsp;&nbsp;<br/><br/>자격요건: 정상 혼인 유지&nbsp;&nbsp;<br/>제출서류: [공통] [필수]&nbsp;&nbsp;<br/>수수료: 3만원&nbsp;&nbsp;<br/>1회부여 체류기간: 3년&nbsp;&nbsp;<br/>제한: 자녀 없을 시 1년&nbsp;&nbsp;<br/>출처: F-6-1 연장허가 (p. 451)&nbsp;&nbsp;"]:::good
         G3["F-6-1 / 사증발급&nbsp;&nbsp;<br/>(해외에서 신청)&nbsp;&nbsp;<br/><br/>자격요건: 혼인 성립&nbsp;&nbsp;<br/>제출서류: ...&nbsp;&nbsp;<br/>출처: F-6-1 사증발급 (p. 426)&nbsp;&nbsp;"]:::good
         G1 -.다른 신청.-> G2
         G2 -.다른 신청.-> G3

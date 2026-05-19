@@ -9,7 +9,7 @@ Stage 1: parse_hwp_to_markdown.py   HWP → kordoc → raw MD
 Stage 2: index_markdown_chunks.py   raw MD → chunks_index.jsonl
 Stage 3: /vizabridge-normalize       청크 → normalized MD (Claude Code 스킬)
 Stage 4: validate_normalization.py  normalized MD ↔ raw MD 교차 검증
-Stage 5: build_v3.py                 normalized MD → v3 CSV (27컬럼)
+Stage 5: build_v3.py                 normalized MD → v3 CSV (28컬럼)
 Stage 6: fill_page_numbers.py        HWP→PDF 변환 후 페이지 매칭
 ```
 
@@ -59,7 +59,7 @@ python scripts/validate_normalization.py stay       # 하나만
 python scripts/build_v3.py
 ```
 
-정규화 MD → v3 CSV (27컬럼). 같은 (비자코드, 신청종류) 묶음을 한 행으로 병합하면서 normalized 필드(applicant_context, eligibility, ...)를 v3 컬럼(신청상황, 자격요건, ...)으로 매핑. 비자 흐름(선행자격/다음단계/동반가족/키워드)은 부모 비자 코드 단위로 매핑 + 주요 sub-code override.
+정규화 MD → v3 CSV (28컬럼). 같은 (비자코드, 신청종류) 묶음을 한 행으로 병합하면서 normalized 필드(applicant_context, eligibility, ...)를 v3 컬럼(신청상황, 자격요건, ...)으로 매핑. 비자 흐름(선행자격/다음단계/동반가족/키워드)은 부모 비자 코드 단위로 매핑 + 주요 sub-code override. 기간 정보(`duration_or_validity`)는 사증유효기간 / 1회부여 체류기간 / 체류상한 3컬럼으로 자동 분리.
 
 산출물:
 - `data/processed/체류매뉴얼_검수용_v3.csv` (233행)

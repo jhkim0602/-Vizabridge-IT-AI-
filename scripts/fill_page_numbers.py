@@ -7,10 +7,10 @@ Usage::
     .venv/bin/python scripts/fill_page_numbers.py visa
     .venv/bin/python scripts/fill_page_numbers.py both
 
-PDF paths default to ``/tmp/hwp2pdf/...``; override with ``--stay-pdf`` /
-``--visa-pdf`` or env vars ``STAY_PDF`` / ``VISA_PDF``.
+PDF paths default to ``data/raw/pdf/...`` (gitignored, derived from HWP);
+override with ``--stay-pdf`` / ``--visa-pdf`` or env vars ``STAY_PDF`` / ``VISA_PDF``.
 
-The page index is cached as JSON under ``/tmp/hwp2pdf/cache/`` so repeated runs
+The page index is cached as JSON under ``data/raw/pdf/.cache/`` so repeated runs
 do not re-extract text from the (large) PDFs.
 """
 
@@ -36,12 +36,13 @@ import pdfplumber
 
 ROOT = Path(__file__).resolve().parents[1]
 PROCESSED = ROOT / "data" / "processed"
-CACHE_DIR = Path("/tmp/hwp2pdf/cache")
+PDF_DIR = ROOT / "data" / "raw" / "pdf"
+CACHE_DIR = PDF_DIR / ".cache"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
 DEFAULT_PDFS = {
-    "stay": Path(os.environ.get("STAY_PDF", "/tmp/hwp2pdf/260504 체류민원 자격별 안내 매뉴얼.pdf")),
-    "visa": Path(os.environ.get("VISA_PDF", "/tmp/hwp2pdf/260504 사증민원 자격별 안내 매뉴얼.pdf")),
+    "stay": Path(os.environ.get("STAY_PDF", str(PDF_DIR / "260504 체류민원 자격별 안내 매뉴얼.pdf"))),
+    "visa": Path(os.environ.get("VISA_PDF", str(PDF_DIR / "260504 사증민원 자격별 안내 매뉴얼.pdf"))),
 }
 
 CSV_PATHS = {

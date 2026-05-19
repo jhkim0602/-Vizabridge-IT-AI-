@@ -19,7 +19,33 @@
 | 흐름·검색 | 4 | 선행자격, 다음단계, 동반가족, 키워드 |
 | 검수 | 2 | 검수상태, 검수메모 |
 
-## Pipeline
+## Pipeline 아키텍처
+
+```mermaid
+flowchart TB
+    HWP[("📄 data/raw/*.hwp<br/>HWP 원본 (source of truth)")]:::source
+
+    HWP -->|Stage 1<br/>parse_hwp_to_markdown.py<br/>kordoc| RAWMD["📝 data/parsed/raw/{stay,visa}_manual.md"]:::deterministic
+    RAWMD -->|Stage 2<br/>index_markdown_chunks.py| CHUNKS["📦 data/parsed/chunks/<br/>chunks_index.jsonl"]:::deterministic
+    CHUNKS -->|Stage 3<br/>/vizabridge-normalize<br/>Claude Code 스킬| NORM["📝 data/parsed/normalized/<br/>{stay,visa}_manual.md"]:::llm
+    NORM -->|Stage 4<br/>validate_normalization.py<br/>원본 대조| VAL["✅ validation/*.json"]:::deterministic
+    NORM -->|Stage 5<br/>build_v3.py<br/>그룹 병합 + 컬럼 매핑| CSV["📊 data/processed/<br/>{체류,사증}매뉴얼_검수용_v3.csv<br/>(27컬럼)"]:::output
+
+    HWP -.->|LibreOffice + H2Orestart<br/>--headless --convert-to pdf| PDF[("📄 data/raw/pdf/*.pdf<br/>(gitignored)")]:::derived
+    PDF -->|pdfplumber 페이지 추출| CACHE["💾 .cache/{stay,visa}_pages.json"]:::derived
+    CACHE -->|Stage 6<br/>fill_page_numbers.py<br/>fuzzy 매칭 + 가중치| CSV
+
+    CSV -->|검수자 다운로드| NOTION["📋 Notion DB Import<br/>검수자가 행 단위 OK/NG"]:::review
+
+    classDef source fill:#fef3c7,stroke:#f59e0b,color:#92400e
+    classDef deterministic fill:#dbeafe,stroke:#3b82f6,color:#1e3a8a
+    classDef llm fill:#ede9fe,stroke:#8b5cf6,color:#5b21b6
+    classDef derived fill:#f3f4f6,stroke:#9ca3af,color:#374151,stroke-dasharray:5 5
+    classDef output fill:#d1fae5,stroke:#10b981,color:#064e3b
+    classDef review fill:#fce7f3,stroke:#ec4899,color:#831843
+```
+
+🟡 source | 🔵 결정적 Python | 🟣 LLM | ⚪ derived (gitignored) | 🟢 산출물 | 🩷 검수
 
 ```text
 data/raw/*.hwp                                        # 원본 (source of truth)

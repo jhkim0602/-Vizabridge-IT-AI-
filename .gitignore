@@ -3,9 +3,6 @@
 __pycache__/
 .ipynb_checkpoints/
 
-# v1 정규화 MD 백업 (안전 보존용, 비커밋)
-data/parsed/normalized/*.backup_v1.md
-
 # Claude Code: worktree-local settings + worktrees dir
 .claude/settings.local.json
 .claude/worktrees/

@@ -1,33 +1,28 @@
-%%{init: {'theme': 'base', 'themeVariables': {'fontFamily': 'Apple SD Gothic Neo, Noto Sans KR, sans-serif', 'fontSize': '14px'}}}%%
-flowchart TB
-    classDef source fill:#fef3c7,stroke:#f59e0b,stroke-width:2px,color:#92400e
-    classDef det fill:#dbeafe,stroke:#3b82f6,stroke-width:2px,color:#1e3a8a
-    classDef llm fill:#ede9fe,stroke:#8b5cf6,stroke-width:2.5px,color:#5b21b6
-    classDef out fill:#d1fae5,stroke:#10b981,stroke-width:2px,color:#064e3b
-    classDef tool fill:#f3f4f6,stroke:#6b7280,stroke-dasharray:5 5,color:#374151
+%%{init: {'theme': 'base', 'themeVariables': {'fontFamily': 'Helvetica, sans-serif', 'fontSize': '15px', 'primaryColor': '#f3f4f6', 'primaryTextColor': '#1e1e1e', 'primaryBorderColor': '#374151', 'lineColor': '#374151'}, 'flowchart': {'curve': 'basis', 'padding': 24, 'nodeSpacing': 70, 'rankSpacing': 90}}}%%
+flowchart LR
+    classDef source fill:#ffd8a8,stroke:#e8590c,stroke-width:2px,color:#1e1e1e
+    classDef det fill:#a5d8ff,stroke:#1971c2,stroke-width:2px,color:#1e1e1e
+    classDef llm fill:#eebefa,stroke:#9c36b5,stroke-width:2px,color:#1e1e1e
+    classDef out fill:#b2f2bb,stroke:#2f9e44,stroke-width:2px,color:#1e1e1e
+    classDef derived fill:#e9ecef,stroke:#868e96,stroke-width:1.5px,color:#1e1e1e,stroke-dasharray:6 4
+    classDef rev fill:#fce7f3,stroke:#ec4899,stroke-width:2px,color:#1e1e1e
 
-    HWP[("🗂️ data/raw/*.hwp<br/>정부 매뉴얼")]:::source
+    HWP["HWP 매뉴얼&nbsp;&nbsp;<br/>체류 · 사증&nbsp;&nbsp;"]:::source
+    MD["raw Markdown&nbsp;&nbsp;<br/>kordoc 변환&nbsp;&nbsp;"]:::det
+    CHK["chunks_index&nbsp;&nbsp;<br/>.jsonl"]:::det
+    NORM["normalized MD&nbsp;&nbsp;<br/>LLM 정규화&nbsp;&nbsp;"]:::llm
+    CSV["v3 CSV&nbsp;&nbsp;<br/>27 컬럼&nbsp;&nbsp;"]:::out
+    REV["Notion 검수&nbsp;&nbsp;<br/>행 단위 검토&nbsp;&nbsp;"]:::rev
 
-    HWP --> S1["⚙️ Stage 1 · kordoc 변환<br/>scripts/parse_hwp_to_markdown.py"]:::det
-    S1 --> RAW["📝 data/parsed/raw/<br/>{stay,visa}_manual.md"]:::det
+    PDF["PDF&nbsp;&nbsp;<br/>LibreOffice"]:::derived
+    PAGES["페이지 인덱스&nbsp;&nbsp;<br/>pdfplumber"]:::derived
 
-    RAW --> S2["⚙️ Stage 2 · 청크 분할<br/>scripts/index_markdown_chunks.py"]:::det
-    S2 --> CHUNKS["📦 data/parsed/chunks/<br/>chunks_index.jsonl"]:::det
+    HWP -->|"Stage 1<br/>parse_hwp_to_markdown"| MD
+    MD -->|"Stage 2<br/>index_markdown_chunks"| CHK
+    CHK -->|"Stage 3<br/>vizabridge-normalize"| NORM
+    NORM -->|"Stage 4 · 5<br/>validate + build_v3"| CSV
+    CSV -->|"import"| REV
 
-    CHUNKS --> S3["🤖 Stage 3 · LLM 정규화<br/>/vizabridge-normalize<br/>(Claude Code 스킬)"]:::llm
-    S3 --> NORM["📋 data/parsed/normalized/<br/>{stay,visa}_manual.md<br/>(청크별 row 블록, 커밋됨)"]:::llm
-
-    NORM --> S4["⚙️ Stage 4 · 교차 검증<br/>scripts/validate_normalization.py"]:::det
-    S4 --> VAL["✅ data/parsed/validation/<br/>*.json"]:::det
-
-    NORM --> S5["⚙️ Stage 5 · v3 CSV 빌드<br/>scripts/build_v3.py<br/>(비자 × 신청종류) 병합 + 컬럼 매핑"]:::det
-    S5 --> CSV["📊 data/processed/<br/>{체류,사증}매뉴얼_검수용_v3.csv<br/>27컬럼"]:::out
-
-    HWP -.HWP→PDF.-> PDF["📄 data/raw/pdf/<br/>(gitignored)"]:::tool
-    PDF -.pdfplumber.-> CACHE["💾 .cache/<br/>pages.json"]:::tool
-
-    CACHE --> S6["⚙️ Stage 6 · 페이지 매칭<br/>scripts/fill_page_numbers.py<br/>NFC + 한글 중복 압축 + fuzzy"]:::det
-    CSV --> S6
-    S6 --> FINAL["📊 v3 CSV<br/>출처 컬럼에 (p. NNN) 통합<br/>100% 채움"]:::out
-
-    FINAL --> REV["👀 Notion 검수<br/>(행 단위 OK/NG)"]:::out
+    HWP -.->|"HWP &rarr; PDF&nbsp;&nbsp;"| PDF
+    PDF -->|"페이지 텍스트 추출&nbsp;&nbsp;"| PAGES
+    PAGES -->|"Stage 6<br/>fill_page_numbers"| CSV

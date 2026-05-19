@@ -1,22 +1,23 @@
-%%{init: {'theme': 'base', 'themeVariables': {'fontFamily': 'Apple SD Gothic Neo, Noto Sans KR, sans-serif', 'fontSize': '13px'}}}%%
+%%{init: {'theme': 'base', 'themeVariables': {'fontFamily': 'Helvetica, sans-serif', 'fontSize': '14px', 'primaryColor': '#f3f4f6', 'primaryTextColor': '#1e1e1e', 'primaryBorderColor': '#374151', 'lineColor': '#374151'}, 'flowchart': {'curve': 'basis', 'padding': 24, 'nodeSpacing': 60, 'rankSpacing': 70}}}%%
 flowchart TB
-    classDef manual fill:#fef3c7,stroke:#f59e0b,stroke-width:2px,color:#92400e
-    classDef code fill:#dbeafe,stroke:#3b82f6,stroke-width:2px,color:#1e3a8a
-    classDef sub fill:#ede9fe,stroke:#8b5cf6,stroke-width:2px,color:#5b21b6
-    classDef pet fill:#d1fae5,stroke:#10b981,stroke-width:2px,color:#064e3b
-    classDef sec fill:#fce7f3,stroke:#ec4899,stroke-width:1.5px,color:#831843
-    classDef tbl fill:#f3f4f6,stroke:#6b7280,color:#374151
+    classDef manual fill:#ffd8a8,stroke:#e8590c,stroke-width:2px,color:#1e1e1e
+    classDef code fill:#a5d8ff,stroke:#1971c2,stroke-width:2px,color:#1e1e1e
+    classDef sub fill:#eebefa,stroke:#9c36b5,stroke-width:2px,color:#1e1e1e
+    classDef pet fill:#b2f2bb,stroke:#2f9e44,stroke-width:2px,color:#1e1e1e
+    classDef sec fill:#fce7f3,stroke:#ec4899,stroke-width:1.5px,color:#1e1e1e
+    classDef tbl fill:#e9ecef,stroke:#868e96,stroke-width:1.5px,color:#1e1e1e
+    classDef note fill:#fff9db,stroke:#fab005,stroke-width:1.5px,color:#1e1e1e
 
-    M["📕 정부 매뉴얼 (체류 OR 사증)<br/>약 700페이지, 표·중첩표·각주 무수"]:::manual
+    M["정부 매뉴얼 — 체류 또는 사증&nbsp;&nbsp;<br/>약 700 페이지&nbsp;&nbsp;<br/>표 · 중첩표 · 각주 다수&nbsp;&nbsp;"]:::manual
 
-    M --> A["🔠 비자코드 (37개 부모)<br/>A-1, A-2, A-3, B-1, B-2, ...<br/>C-1, C-3, C-4, D-1~D-10<br/>E-1~E-10, F-1~F-6, G-1, H-1, H-2"]:::code
+    M --> A["비자코드 (37개 부모)&nbsp;&nbsp;<br/>A-1, A-2, A-3, B-1, B-2&nbsp;&nbsp;<br/>C-1, C-3, C-4, D-1 ~ D-10&nbsp;&nbsp;<br/>E-1 ~ E-10, F-1 ~ F-6, G-1, H-1, H-2&nbsp;&nbsp;"]:::code
 
-    A --> B["🔢 하위 sub-program (200+)<br/>E-7-1 전문, E-7-2 준전문<br/>E-7-3 일반기능, E-7-4 숙련기능<br/>F-6-1 배우자, F-6-2 자녀양육<br/>F-6-3 혼인단절...<br/>F-5-1~F-5-26 영주 트랙들"]:::sub
+    A --> B["하위 sub-program (200+)&nbsp;&nbsp;<br/>E-7-1 전문, E-7-2 준전문&nbsp;&nbsp;<br/>E-7-3 일반기능, E-7-4 숙련기능&nbsp;&nbsp;<br/>F-6-1 배우자, F-6-2 자녀양육&nbsp;&nbsp;<br/>F-6-3 혼인단절&nbsp;&nbsp;<br/>F-5-1 ~ F-5-26 영주 트랙들&nbsp;&nbsp;"]:::sub
 
-    B --> P["📋 신청종류 (13가지)<br/>같은 코드라도 행정 행위가 다름<br/><br/>사증발급 · 사증발급인정서 · 전자사증<br/>체류자격 변경 · 체류자격 부여<br/>체류기간 연장 · 외국인등록<br/>재입국허가 · 근무처 변경/추가<br/>자격외 활동허가 · 거소신고<br/>고용변동 신고 · 공통사항"]:::pet
+    B --> P["신청종류 (13가지)&nbsp;&nbsp;<br/>같은 코드라도 행정 행위가 다름&nbsp;&nbsp;<br/><br/>사증발급 · 사증발급인정서 · 전자사증&nbsp;&nbsp;<br/>체류자격 변경 · 체류자격 부여&nbsp;&nbsp;<br/>체류기간 연장 · 외국인등록&nbsp;&nbsp;<br/>재입국허가 · 근무처 변경/추가&nbsp;&nbsp;<br/>자격외 활동허가 · 거소신고&nbsp;&nbsp;<br/>고용변동 신고 · 공통사항&nbsp;&nbsp;"]:::pet
 
-    P --> S["🧾 항목 (행정 단위)<br/>각 신청 안에서 다시 쪼개짐<br/><br/>대상 · 자격요건 · 제출서류 · 절차<br/>수수료 · 기간 · 제한 · 예외<br/>의무사항 · 점수표 · 쿼터<br/>초청자 · 추천승인기관 · 표 데이터"]:::sec
+    P --> S["항목 (행정 단위)&nbsp;&nbsp;<br/>각 신청 안에서 다시 쪼개짐&nbsp;&nbsp;<br/><br/>대상 · 자격요건 · 제출서류 · 절차&nbsp;&nbsp;<br/>수수료 · 기간 · 제한 · 예외&nbsp;&nbsp;<br/>의무사항 · 점수표 · 쿼터&nbsp;&nbsp;<br/>초청자 · 추천승인기관 · 표 데이터&nbsp;&nbsp;"]:::sec
 
-    S --> T["📊 표·중첩표<br/>점수표 (E-7-4 300점 만점)<br/>쿼터 표 (E-9 16개 송출국 × 직종)<br/>소득 기준표 (F-6 가구원 수별)<br/>국가별 협정 표 (H-1 워킹홀리데이)"]:::tbl
+    S --> T["표 · 중첩표&nbsp;&nbsp;<br/>점수표 — E-7-4 300점 만점&nbsp;&nbsp;<br/>쿼터 표 — E-9 16개 송출국 × 직종&nbsp;&nbsp;<br/>소득 기준표 — F-6 가구원 수별&nbsp;&nbsp;<br/>국가별 협정 표 — H-1 워킹홀리데이&nbsp;&nbsp;"]:::tbl
 
-    M -.-> Note["💡 한 비자 (예: F-6) 하나만 봐도<br/>3개 sub-code × 5개 신청종류 × 8개 항목<br/>= 100+ 데이터 포인트가 산재"]:::manual
+    M -.-> N["한 비자만 봐도 (예: F-6)&nbsp;&nbsp;<br/>3개 sub-code × 5개 신청종류 × 8개 항목&nbsp;&nbsp;<br/>= 100개 이상 데이터 포인트가 산재&nbsp;&nbsp;"]:::note

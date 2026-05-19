@@ -1,35 +1,35 @@
-%%{init: {'theme': 'base', 'themeVariables': {'fontFamily': 'Apple SD Gothic Neo, Noto Sans KR, sans-serif', 'primaryColor': '#fef3c7', 'primaryBorderColor': '#f59e0b', 'lineColor': '#6b7280', 'fontSize': '15px'}}}%%
+%%{init: {'theme': 'base', 'themeVariables': {'fontFamily': 'Helvetica, sans-serif', 'fontSize': '15px', 'primaryColor': '#f3f4f6', 'primaryTextColor': '#1e1e1e', 'primaryBorderColor': '#374151', 'lineColor': '#374151'}, 'flowchart': {'curve': 'basis', 'padding': 24, 'nodeSpacing': 70, 'rankSpacing': 80}}}%%
 flowchart LR
-    classDef source fill:#fef3c7,stroke:#f59e0b,stroke-width:2px,color:#92400e
-    classDef llm fill:#ede9fe,stroke:#8b5cf6,stroke-width:2px,color:#5b21b6
-    classDef det fill:#dbeafe,stroke:#3b82f6,stroke-width:2px,color:#1e3a8a
-    classDef out fill:#d1fae5,stroke:#10b981,stroke-width:2px,color:#064e3b
-    classDef rev fill:#fce7f3,stroke:#ec4899,stroke-width:2px,color:#831843
+    classDef source fill:#ffd8a8,stroke:#e8590c,stroke-width:2px,color:#1e1e1e
+    classDef llm fill:#eebefa,stroke:#9c36b5,stroke-width:2px,color:#1e1e1e
+    classDef det fill:#a5d8ff,stroke:#1971c2,stroke-width:2px,color:#1e1e1e
+    classDef out fill:#b2f2bb,stroke:#2f9e44,stroke-width:2px,color:#1e1e1e
+    classDef rev fill:#fce7f3,stroke:#ec4899,stroke-width:2px,color:#1e1e1e
 
-    subgraph S1["📥 입력"]
-        HWP["🗂️ 정부 HWP 매뉴얼<br/>체류·사증<br/>(source of truth)"]:::source
+    subgraph S1["입력&nbsp;"]
+        HWP["정부 HWP 매뉴얼&nbsp;&nbsp;<br/>체류 · 사증&nbsp;&nbsp;<br/>source of truth&nbsp;&nbsp;"]:::source
     end
 
-    subgraph S2["⚙️ 컴파일 (LLM 1회 + 결정적 5단계)"]
+    subgraph S2["컴파일 — LLM 1회 + 결정적 5단계&nbsp;"]
         direction TB
-        MD["📝 raw Markdown<br/>(kordoc)"]:::det
-        NORM["📋 normalized MD<br/>(행정 의미 단위 row)"]:::llm
-        CSV["📊 v3 CSV 27컬럼<br/>(비자 × 신청종류 단위)"]:::det
+        MD["raw Markdown&nbsp;&nbsp;<br/>kordoc"]:::det
+        NORM["normalized MD&nbsp;&nbsp;<br/>행정 의미 단위 row&nbsp;&nbsp;"]:::llm
+        CSV["v3 CSV 27 컬럼&nbsp;&nbsp;<br/>비자 × 신청종류&nbsp;&nbsp;"]:::det
         MD --> NORM --> CSV
     end
 
-    subgraph S3["📐 페이지 매핑"]
+    subgraph S3["페이지 매핑&nbsp;"]
         direction TB
-        PDF["📄 PDF<br/>(LibreOffice 변환)"]:::det
-        PAGES["💾 페이지 인덱스<br/>(pdfplumber 캐시)"]:::det
+        PDF["PDF&nbsp;&nbsp;<br/>LibreOffice 변환&nbsp;&nbsp;"]:::det
+        PAGES["페이지 인덱스&nbsp;&nbsp;<br/>pdfplumber 캐시&nbsp;&nbsp;"]:::det
         PDF --> PAGES
     end
 
-    subgraph S4["👀 사람 검수"]
-        REV["📋 Notion 검수 DB<br/>행 단위 OK/NG"]:::rev
+    subgraph S4["사람 검수&nbsp;"]
+        REV["Notion 검수 DB&nbsp;&nbsp;<br/>행 단위 검토&nbsp;&nbsp;"]:::rev
     end
 
     HWP --> MD
-    HWP -.HWP→PDF.-> PDF
+    HWP -.->|"HWP &rarr; PDF&nbsp;"| PDF
     PAGES --> CSV
     CSV --> REV

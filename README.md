@@ -10,6 +10,10 @@
 
 한 행 = **(비자코드 × 신청종류)** 1조합. 같은 비자코드라도 사증발급/체류자격 변경/체류기간 연장 등 신청종류가 다르면 별도 행으로 분리.
 
+![v3 schema diagram](docs/diagrams/v3_schema.png)
+
+스키마 정의 원본: [`docs/diagrams/v3_schema.dbml`](docs/diagrams/v3_schema.dbml) (DBML 포맷, dbdiagram.io 호환)
+
 | 그룹 | 개수 | 컬럼 |
 |---|---|---|
 | 식별·분류 | 4 | 비자코드, 상위코드, 사증·체류, 신청종류 |

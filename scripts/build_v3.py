@@ -40,10 +40,11 @@ PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 V3_COLUMNS = [
     # 식별·분류 (4)
     "비자코드", "상위코드", "사증·체류", "신청종류",
-    # 행정 내용 (14)
+    # 행정 내용 (13) — 표 데이터는 v3.1 에서 폐기. 표 내용은 라우팅 로직으로
+    # 점수표 / 쿼터 / 동반가족 / 수수료 / 자격요건 에 흡수.
     "신청상황", "대상자", "자격요건", "절차", "수수료", "기간",
     "제한", "예외", "의무사항", "점수표", "쿼터",
-    "초청자", "추천·승인기관", "표 데이터",
+    "초청자", "추천·승인기관",
     # 자료 (2)
     "제출서류", "예상질문",
     # 출처 (1) — 페이지는 fill_page_numbers.py 가 추가
@@ -160,6 +161,27 @@ def merge_list(values: list[str], sep: str = "\n\n") -> str:
     return sep.join(out)
 
 
+# 표 내용 라우팅용 키워드 → 컬럼 매핑. 우선순위 위에서 아래로.
+_TABLE_ROUTING = [
+    ("점수표", re.compile(r"점수|배점|만점|점 ?이상|합격선")),
+    ("쿼터", re.compile(r"쿼터|허용인원|제재 ?기준|선발 ?인원|%|인원 ?\(|명 ?이내")),
+    ("동반가족", re.compile(r"동반가족|동반 ?범위")),
+    ("수수료", re.compile(r"수수료 ?일람|수수료 ?표")),
+]
+
+
+def _route_table_blob(text: str) -> str:
+    """표 본문을 분석해 점수표 / 쿼터 / 동반가족 / 수수료 / 자격요건 중 적절한 컬럼명을 리턴.
+
+    매뉴얼의 표는 종류가 다양해서 (점수표·쿼터표·국가 목록·약호 분류 등) v3 의 다른
+    컬럼이 이미 자기 목적을 가진 경우 그쪽으로 흘려보내고, 그 외는 자격요건이 catchall.
+    """
+    for target, pat in _TABLE_ROUTING:
+        if pat.search(text):
+            return target
+    return "자격요건"
+
+
 def aggregate_rows(rows: list[dict[str, str]], manual_kind: str) -> list[dict[str, str]]:
     """같은 (비자코드, 신청종류) 그룹을 한 v3 행으로 병합."""
     groups: "OrderedDict[tuple[str, str], list[dict[str, str]]]" = OrderedDict()
@@ -204,15 +226,15 @@ def aggregate_rows(rows: list[dict[str, str]], manual_kind: str) -> list[dict[st
             docs_parts.append(f"[기타서류]\n{other}")
         new["제출서류"] = "\n\n".join(docs_parts)
 
-        # 표 데이터 = table_summary + table_rows
-        tables = []
+        # 표 내용은 별도 컬럼이 아니라 라우팅 로직으로 적절한 v3 컬럼에 흡수.
+        # 표 요약(table_summary)과 표 항목(table_rows)을 합친 다음 키워드로
+        # 점수표 / 쿼터 / 동반가족 / 수수료 / 자격요건 중 한 곳에 append.
         ts = merge_list([r.get("table_summary", "") for r in group])
         tr = merge_list([r.get("table_rows", "") for r in group])
-        if ts:
-            tables.append(ts)
-        if tr:
-            tables.append(tr)
-        new["표 데이터"] = "\n\n".join(tables)
+        table_blob = "\n\n".join([x for x in (ts, tr) if x])
+        if table_blob:
+            target = _route_table_blob(table_blob)
+            new[target] = merge_list([new[target], f"[표]\n{table_blob}"])
 
         # 예상질문 (LLM 출력에 있으면)
         new["예상질문"] = merge_list([r.get("expected_questions", "") for r in group], sep="\n")

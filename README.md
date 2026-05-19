@@ -6,7 +6,7 @@
 
 [![Pipeline](https://img.shields.io/badge/pipeline-6_stage-1971c2)]()
 [![LLM](https://img.shields.io/badge/LLM-1_stage_only-9c36b5)]()
-[![Schema](https://img.shields.io/badge/v3_CSV-27_columns-2f9e44)]()
+[![Schema](https://img.shields.io/badge/v3_CSV-26_columns-2f9e44)]()
 [![Source](https://img.shields.io/badge/source-HWP-e8590c)]()
 [![Page Match](https://img.shields.io/badge/page_match-100%25-2f9e44)]()
 [![Rows](https://img.shields.io/badge/rows-체류_233_·_사증_130-1971c2)]()
@@ -19,7 +19,7 @@
 
 ## 한 줄 정의
 
-> 700 페이지짜리 정부 HWP 매뉴얼을, **검수자가 행 단위로 OK·NG 판단할 수 있는 27컬럼 CSV** 로 컴파일한다.
+> 700 페이지짜리 정부 HWP 매뉴얼을, **검수자가 행 단위로 OK·NG 판단할 수 있는 26컬럼 CSV** 로 컴파일한다.
 
 ![Vizabridge architecture overview](docs/diagrams/architecture_overview.png)
 
@@ -174,7 +174,7 @@
 | 중간 표현 | `data/parsed/normalized/{stay,visa}_manual.md` |
 | 최종 산출물 | `data/processed/{체류,사증}매뉴얼_검수용_v3.csv` |
 | 행 단위 | `(비자코드 × 신청종류)` |
-| 스키마 | 27컬럼 |
+| 스키마 | 26컬럼 |
 | LLM 호출 | Stage 3 정규화 1회 |
 | 결정적 처리 | HWP 변환, 청크 분할, 검증, CSV 빌드, 페이지 매핑 |
 | 현재 행 수 | 체류 233행, 사증 130행 |
@@ -223,7 +223,7 @@ sequenceDiagram
     LLM->>Norm: 청크별 행정 의미 row 블록 생성
     Norm->>Validator: Stage 4 — 원본 교차 검증
     Validator-->>Dev: 비자코드·금액·서류명 누락/발명 리포트
-    Norm->>Builder: Stage 5 — v3 27컬럼 CSV 빌드
+    Norm->>Builder: Stage 5 — v3 26컬럼 CSV 빌드
     HWP->>Pager: HWP → PDF 변환본
     Builder->>Pager: CSV 행의 핵심 텍스트
     Pager->>CSV: 출처 컬럼에 p. NNN 부착
@@ -232,7 +232,7 @@ sequenceDiagram
 
 ---
 
-## v3 스키마 (27컬럼)
+## v3 스키마 (26컬럼)
 
 ![v3 schema](docs/diagrams/v3_schema.png)
 
@@ -241,7 +241,7 @@ sequenceDiagram
 | 그룹 | 개수 | 컬럼 |
 | --- | ---: | --- |
 | 식별·분류 | 4 | `비자코드`, `상위코드`, `사증·체류`, `신청종류` |
-| 행정 내용 | 14 | `신청상황`, `대상자`, `자격요건`, `절차`, `수수료`, `기간`, `제한`, `예외`, `의무사항`, `점수표`, `쿼터`, `초청자`, `추천·승인기관`, `표 데이터` |
+| 행정 내용 | 13 | `신청상황`, `대상자`, `자격요건`, `절차`, `수수료`, `기간`, `제한`, `예외`, `의무사항`, `점수표`, `쿼터`, `초청자`, `추천·승인기관` |
 | 자료 | 2 | `제출서류`, `예상질문` |
 | 출처 | 1 | `출처` (섹션 + 페이지) |
 | 흐름·검색 | 4 | `선행자격`, `다음단계`, `동반가족`, `키워드` |

@@ -38,7 +38,8 @@ Table inspection_v3 [headercolor: #10b981, note: 'review CSV. 체류매뉴얼_�
   quota text [note: '쿼터. E-9·E-7-4 등 인원 제한']
   inviter text [note: '초청자 (사증 전용)']
   recommendation text [note: '추천·승인기관. 외교부·노동부·산업부']
-  table_data text [note: '표 데이터. 원본 매뉴얼 표 복원']
+  // 표 데이터 컬럼은 v3.1 에서 폐기. 매뉴얼의 표 내용은 점수표 / 쿼터 / 동반가족 /
+  // 수수료 / 자격요건 으로 라우팅됨.
 
   // === 자료 (2) ===
   documents text [note: '제출서류. [공통서류] [필수서류] [기타서류] 라벨 구조']

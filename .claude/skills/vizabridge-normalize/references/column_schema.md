@@ -27,7 +27,11 @@ The normalized rows you emit must populate the fields below. Field names are exa
 | `score_criteria` | Score table / 배점 reference |
 | `table_summary` | One-line summary of any table this row represents |
 | `table_rows` | Rendered key rows of that table (kept short) |
-| `expected_questions` | 한국어로 3개. 이 행에 대해 일반 사용자가 비자코드를 모른 채 자기 상황으로 물을 법한 질문을 줄바꿈으로 구분해 적는다. 예: "한국인이랑 결혼했는데 비자 어떻게 받아요?\n결혼이민 갱신 서류 뭐 필요해요?\n이혼해도 체류 가능해요?" 행이 다루는 토픽 범위 안에서만, 본문에 근거를 둘 것. 코드명(F-6 등)을 질문에 쓰지 말 것 |
+| `expected_questions` | 한국어로 **2~4개 가변** (중복 제거 후, 자연스러운 표현 우선). 이 행에 대해 일반 사용자가 비자코드를 모른 채 자기 상황으로 물을 법한 질문을 줄바꿈으로 구분해 적는다. 예: "한국인이랑 결혼했는데 비자 어떻게 받아요?\n결혼이민 갱신 서류 뭐 필요해요?\n이혼해도 체류 가능해요?" 행이 다루는 토픽 범위 안에서만, 본문에 근거를 둘 것. 코드명(F-6 등)을 질문에 쓰지 말 것 |
+| `keywords` | 검색·RAG 매칭용 키워드. **콤마 분리 4~8개.** 비자코드 + 자격명 + 핵심 명사. 예: `결혼이민, 한국인 배우자, 소득요건, 통합신청서, F-6`. 빈 값 허용 (가능하면 채울 것) |
+| `source_page` | 매뉴얼 페이지 추정. raw MD에 페이지 마커가 없을 수도 있으므로 추정 불가능 시 빈 문자열 허용. 예: `p. 142~144` 또는 `` |
+| `source_excerpt` | 해당 row가 정규화한 원문에서 **핵심 문장 1~3개 그대로 발췌 (변형 금지)**. 검수자가 LLM 환각 검증 시 즉시 대조할 수 있게 한다. 약 100~400자. 빈 값 허용 (가능하면 채울 것) |
+| `related_visa_codes` | 같이 보는 비자 코드. **콤마 분리.** 같은 청크 안에서 함께 언급된 다른 비자 또는 후속 행정행위 관련 코드. 예: `F-5, F-2-R, F-1-D`. 빈 값 허용 (가능하면 채울 것) |
 
 ## Stay manual only (`체류민원`)
 

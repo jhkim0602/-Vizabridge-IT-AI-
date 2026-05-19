@@ -55,6 +55,18 @@ REQUIRED_ROW_FIELDS = {
 REQUIRED_STAY_FIELDS = {"stay_status_code", "stay_status_name_ko"}
 REQUIRED_VISA_FIELDS = {"visa_code", "visa_name_ko"}
 
+# Optional v2 enrichment fields. Not required, but the validator must not
+# reject blocks that include them. The current FIELD_LINE_RE + subset check
+# (REQUIRED_ROW_FIELDS - fields) already permits unknown extras; this set is
+# kept here as a reference / documentation aid only.
+OPTIONAL_V2_FIELDS = {
+    "keywords",
+    "source_page",
+    "source_excerpt",
+    "related_visa_codes",
+    "expected_questions",
+}
+
 
 def fail(msg: str) -> "no return":
     print(f"FAIL: {msg}", file=sys.stderr)

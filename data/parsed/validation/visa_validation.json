@@ -1,58 +1,128 @@
 {
   "manual_key": "visa",
   "normalized_chunks": 23,
-  "total_rows": 218,
-  "rows_with_issues": 4,
-  "chunks_with_issues": 3,
+  "total_rows": 236,
+  "rows_with_issues": 13,
+  "chunks_with_issues": 6,
   "chunks": [
     {
       "chunk_id": "visa_001",
       "source_hash_index": "a8ea456a56bebea9",
       "source_hash_block": "a8ea456a56bebea9",
       "hash_drift": false,
-      "row_count": 6,
+      "row_count": 16,
       "rows_with_issues": 0,
       "rows": [
         {
           "row_index": 1,
-          "section_title": "A-1 외교 / 사증발급",
+          "section_title": "공통사항: 결핵진단서",
+          "petition_type": "공통사항",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "공통사항: 결핵 고위험국가",
+          "petition_type": "공통사항",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "A-1 외교",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 2,
+          "row_index": 4,
           "section_title": "A-1 외교 / 공관장 재량 사증발급",
           "petition_type": "사증발급",
-          "subsection_type": "절차",
+          "subsection_type": "제출서류",
           "issues": []
         },
         {
-          "row_index": 3,
+          "row_index": 5,
+          "section_title": "A-1 외교 / 사증 유효기간",
+          "petition_type": "사증발급",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 6,
           "section_title": "A-1 외교 / 사증발급인정서",
           "petition_type": "사증발급인정서",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 4,
-          "section_title": "A-2 공무 / 사증발급",
+          "row_index": 7,
+          "section_title": "A-2 공무",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 5,
-          "section_title": "A-3 협정 / 사증발급",
+          "row_index": 8,
+          "section_title": "A-2 공무 / 공관장 재량 사증발급",
+          "petition_type": "사증발급",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "A-2 공무 / 사증 유효기간",
+          "petition_type": "사증발급",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "A-2 공무 / 국제기구 직원 가족의 체류자격외 활동",
+          "petition_type": "체류자격외 활동허가",
+          "subsection_type": "예외",
+          "issues": []
+        },
+        {
+          "row_index": 11,
+          "section_title": "A-3 협정",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 6,
+          "row_index": 12,
+          "section_title": "A-3 협정 / 공관장 재량 사증발급",
+          "petition_type": "사증발급",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 13,
+          "section_title": "A-3 협정 / Fulbright 협정대상자 (A-3-99)",
+          "petition_type": "사증발급",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 14,
           "section_title": "B-1 사증면제",
           "petition_type": "사증발급",
           "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 15,
+          "section_title": "B-1 사증면제 / 활동범위 제한",
+          "petition_type": "사증발급",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 16,
+          "section_title": "B-1 사증면제 / 사증면제협정 체결국가 일람표",
+          "petition_type": "사증발급",
+          "subsection_type": "기간",
           "issues": []
         }
       ],
@@ -63,7 +133,7 @@
       "source_hash_index": "6675555ec980b0fa",
       "source_hash_block": "6675555ec980b0fa",
       "hash_drift": false,
-      "row_count": 26,
+      "row_count": 17,
       "rows_with_issues": 0,
       "rows": [
         {
@@ -75,175 +145,112 @@
         },
         {
           "row_index": 2,
-          "section_title": "B-2 관광통과",
-          "petition_type": "사증발급인정서",
+          "section_title": "B-2 관광통과 / 체류 연장·변경 제한",
+          "petition_type": "사증발급",
           "subsection_type": "제한",
           "issues": []
         },
         {
           "row_index": 3,
-          "section_title": "C-1 일시취재",
+          "section_title": "B-2 관광통과 / 무사증입국 허가대상 국가 일람표",
           "petition_type": "사증발급",
-          "subsection_type": "대상",
+          "subsection_type": "기간",
           "issues": []
         },
         {
           "row_index": 4,
           "section_title": "C-1 일시취재",
           "petition_type": "사증발급",
-          "subsection_type": "제출서류",
+          "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 5,
-          "section_title": "C-1 일시취재 / 사증발급인정서",
-          "petition_type": "사증발급인정서",
+          "section_title": "C-1 일시취재 / 공관장 재량 사증발급",
+          "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
           "row_index": 6,
+          "section_title": "C-1 일시취재 / 특정국가 국민 사증발급인정서",
+          "petition_type": "사증발급인정서",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 7,
           "section_title": "C-3 단기방문",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 7,
+          "row_index": 8,
+          "section_title": "C-3 단기방문 / 세부 약호 (C-3-1 ~ C-3-10)",
+          "petition_type": "사증발급",
+          "subsection_type": "점수표",
+          "issues": []
+        },
+        {
+          "row_index": 9,
           "section_title": "C-3 단기방문 / 전자사증",
           "petition_type": "전자사증",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 8,
-          "section_title": "C-3 단기방문 / 공관장 재량 발급",
-          "petition_type": "사증발급",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 9,
-          "section_title": "C-3-2 단체관광 등",
-          "petition_type": "사증발급",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
           "row_index": 10,
-          "section_title": "C-3-4 일반상용",
+          "section_title": "C-3 단기방문 / 공관장 재량 단수사증 (C-3-1, C-3-2, C-3-4)",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
           "row_index": 11,
-          "section_title": "C-3-5 협정상 일반상용",
+          "section_title": "C-3 단기방문 / 중국 국민 복수사증 발급지침",
           "petition_type": "사증발급",
-          "subsection_type": "제출서류",
+          "subsection_type": "기간",
           "issues": []
         },
         {
           "row_index": 12,
-          "section_title": "C-3-9 일반관광",
+          "section_title": "C-3 단기방문 / 동남아국가 국민 복수사증 발급",
           "petition_type": "사증발급",
-          "subsection_type": "제출서류",
+          "subsection_type": "기간",
           "issues": []
         },
         {
           "row_index": 13,
-          "section_title": "C-3-10 순수환승",
+          "section_title": "C-3 단기방문 / 결혼이민자 및 국적취득자 가족 특례 (C-3-1)",
           "petition_type": "사증발급",
-          "subsection_type": "제출서류",
+          "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 14,
-          "section_title": "C-3 단기방문 / 더블사증",
+          "section_title": "C-3 단기방문 / 중국동포 복수사증 (C-3-8)",
           "petition_type": "사증발급",
-          "subsection_type": "제출서류",
+          "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 15,
-          "section_title": "C-3 중국 국민 복수사증",
-          "petition_type": "사증발급",
+          "section_title": "C-3 단기방문 / 의료관광 유치기관 초청 (C-3-3)",
+          "petition_type": "사증발급인정서",
           "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 16,
-          "section_title": "C-3 한·몽골 사증발급 간소화 협정",
-          "petition_type": "사증발급",
+          "section_title": "C-3 단기방문 / 관광·휴양시설 투자이민자 (C-3-1)",
+          "petition_type": "사증발급인정서",
           "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 17,
-          "section_title": "C-3 동남아국가 복수사증",
-          "petition_type": "사증발급",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
-          "row_index": 18,
-          "section_title": "C-3 자원외교국가 복수사증",
-          "petition_type": "사증발급",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
-          "row_index": 19,
-          "section_title": "C-3-1 결혼이민자 및 국적취득자 가족 특례",
-          "petition_type": "사증발급",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
-          "row_index": 20,
-          "section_title": "C-3-8 중국동포 복수사증",
-          "petition_type": "사증발급",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
-          "row_index": 21,
-          "section_title": "C-3-4 한·인도 사증절차간소화협정",
-          "petition_type": "사증발급",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 22,
-          "section_title": "C-3-1 빈번출입국자 복수사증",
-          "petition_type": "사증발급",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 23,
-          "section_title": "C-3-1 관광·휴양시설 투자이민자",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
-          "row_index": 24,
-          "section_title": "C-3-1 공익사업 투자외국인",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
-          "row_index": 25,
-          "section_title": "C-3-3 의료관광 유치기관 초청",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
-          "row_index": 26,
-          "section_title": "C-3-6 우대기업 초청",
+          "section_title": "C-3 단기방문 / 우대기업초청 단기상용 (C-3-6)",
           "petition_type": "사증발급인정서",
           "subsection_type": "대상",
           "issues": []
@@ -256,7 +263,7 @@
       "source_hash_index": "cbf17572db7c4331",
       "source_hash_block": "cbf17572db7c4331",
       "hash_drift": false,
-      "row_count": 18,
+      "row_count": 14,
       "rows_with_issues": 0,
       "rows": [
         {
@@ -268,119 +275,91 @@
         },
         {
           "row_index": 2,
-          "section_title": "C-4-5 첨단기술분야 단기취업",
+          "section_title": "C-4 단기취업 / 첨단기술 분야 (C-4-5)",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
           "row_index": 3,
-          "section_title": "C-4-5 수입기계 설치·보수 파견",
+          "section_title": "C-4 단기취업 / 영어캠프 회화지도 (C-4-5)",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
           "row_index": 4,
-          "section_title": "C-4-5 영어캠프 회화지도",
+          "section_title": "C-4 단기취업 / 광고·패션모델 등 일시흥행 (C-4-5)",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
           "row_index": 5,
-          "section_title": "C-4-5 일시흥행·광고·운동경기 단기취업",
+          "section_title": "C-4 단기취업 / 단기 강의·강연·연구 (C-4-5)",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
           "row_index": 6,
-          "section_title": "C-4-5 단기 강의·강연 (교수·특정활동 대상자)",
-          "petition_type": "사증발급",
+          "section_title": "C-4 단기취업 / 계절근로 사증발급인정서 (C-4-1~4)",
+          "petition_type": "사증발급인정서",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
           "row_index": 7,
-          "section_title": "C-4-5 그 밖의 단기취업",
-          "petition_type": "사증발급",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 8,
-          "section_title": "C-4-1~4 계절근로 사증발급인정서",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
-          "row_index": 9,
-          "section_title": "C-4-5 특정국가 국민 사증발급인정서",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 10,
           "section_title": "D-1 문화예술",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 11,
-          "section_title": "D-1 문화예술 / 공관장 재량 발급",
+          "row_index": 8,
+          "section_title": "D-1 문화예술 / 공관장 재량 사증발급",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
-          "row_index": 12,
-          "section_title": "D-1 문화예술 / 사증발급인정서",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 13,
+          "row_index": 9,
           "section_title": "D-2 유학",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 14,
-          "section_title": "D-2 유학 / 공통서류",
+          "row_index": 10,
+          "section_title": "D-2 유학 / 공통 제출서류",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
-          "row_index": 15,
-          "section_title": "D-2 유학 / 사증발급 일반",
+          "row_index": 11,
+          "section_title": "D-2 유학 / 사증발급 절차 및 발급내용",
           "petition_type": "사증발급",
           "subsection_type": "절차",
           "issues": []
         },
         {
-          "row_index": 16,
-          "section_title": "D-2 유학 / 사증발급인정서",
+          "row_index": 12,
+          "section_title": "D-2 유학 / 사증발급인정서 발급대상",
           "petition_type": "사증발급인정서",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 17,
-          "section_title": "D-2 유학 / 전자비자",
+          "row_index": 13,
+          "section_title": "D-2 유학 / 전자비자 발급대상",
           "petition_type": "전자사증",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 18,
-          "section_title": "D-2 유학 / 동반사증 제한",
+          "row_index": 14,
+          "section_title": "D-2 유학 / 동반사증 및 직업전문학교 제한",
           "petition_type": "사증발급",
           "subsection_type": "제한",
           "issues": []
@@ -393,91 +372,84 @@
       "source_hash_index": "04509dfbd0e8f696",
       "source_hash_block": "04509dfbd0e8f696",
       "hash_drift": false,
-      "row_count": 12,
+      "row_count": 11,
       "rows_with_issues": 0,
       "rows": [
         {
           "row_index": 1,
           "section_title": "D-3 기술연수",
-          "petition_type": "사증발급",
+          "petition_type": "사증발급인정서",
           "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 2,
-          "section_title": "D-3 기술연수 / 사증발급인정서",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
-          "row_index": 3,
-          "section_title": "D-3 기술연수 / 사증발급인정서",
+          "section_title": "D-3 기술연수 / 사증발급인정서 첨부서류",
           "petition_type": "사증발급인정서",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
-          "row_index": 4,
+          "row_index": 3,
           "section_title": "D-4 일반연수",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
+          "row_index": 4,
+          "section_title": "D-4 일반연수 / 어학연수 운영요건",
+          "petition_type": "사증발급",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
           "row_index": 5,
-          "section_title": "D-4-1 어학연수 (한국어연수)",
+          "section_title": "D-4 일반연수 / 어학연수 사증발급 첨부서류",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
           "row_index": 6,
-          "section_title": "D-4-3 고등학교 이하 유학생 사증발급",
-          "petition_type": "사증발급",
-          "subsection_type": "제출서류",
+          "section_title": "D-4 일반연수 / 기업 맞춤형 인턴십(K-Trainee)",
+          "petition_type": "사증발급인정서",
+          "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 7,
-          "section_title": "D-4-1 어학연수 / 사증발급인정서",
+          "section_title": "D-4 일반연수 / 고등학교 이하 교육기관 유학생(D-4-3)",
           "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
+          "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 8,
-          "section_title": "D-4-2K 기업 맞춤형 인턴십",
+          "section_title": "D-4 일반연수 / 고등학교 이하 유학생(D-4-3) 첨부서류",
           "petition_type": "사증발급인정서",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
           "row_index": 9,
-          "section_title": "D-4-3 고등학교 이하 자비유학생 사증발급인정서",
+          "section_title": "D-4 일반연수 / 한식조리연수생(D-4-5)",
           "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
+          "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 10,
-          "section_title": "D-4-5 한식조리연수생",
+          "section_title": "D-4 일반연수 / 우수사설 교육기관 외국인 연수(D-4-6)",
           "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
+          "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 11,
-          "section_title": "D-4-6 우수사설 교육기관 외국인 연수",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 12,
-          "section_title": "D-4 그 밖의 연수",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
+          "section_title": "D-4 일반연수 / 참고사항 - 평생교육시설·사설학원 제외",
+          "petition_type": "사증발급",
+          "subsection_type": "제한",
           "issues": []
         }
       ],
@@ -488,7 +460,7 @@
       "source_hash_index": "094e0d6e9447e57e",
       "source_hash_block": "094e0d6e9447e57e",
       "hash_drift": false,
-      "row_count": 21,
+      "row_count": 11,
       "rows_with_issues": 0,
       "rows": [
         {
@@ -500,142 +472,72 @@
         },
         {
           "row_index": 2,
-          "section_title": "D-5 취재 / 공관장 재량 발급",
+          "section_title": "D-5 취재 / 공관장 재량 사증 첨부서류",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
           "row_index": 3,
-          "section_title": "D-5 취재 / 사증발급인정서",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 4,
           "section_title": "D-6 종교",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 5,
-          "section_title": "D-6 종교 / 공관장 재량 발급",
-          "petition_type": "사증발급",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 6,
-          "section_title": "D-6 종교 / 사증발급인정서",
+          "row_index": 4,
+          "section_title": "D-6 종교 / 사증발급인정서 첨부서류",
           "petition_type": "사증발급인정서",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
-          "row_index": 7,
+          "row_index": 5,
           "section_title": "D-7 주재",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 8,
-          "section_title": "D-7 주재 / 공관장 재량 발급 (중국인 등)",
+          "row_index": 6,
+          "section_title": "D-7 주재 / 외국기업 국내지사 사증 첨부서류",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
-          "row_index": 9,
-          "section_title": "D-7 주재 / 사증발급인정서",
+          "row_index": 7,
+          "section_title": "D-7 주재 / 외국법자문사 사증발급인정서",
           "petition_type": "사증발급인정서",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
-          "row_index": 10,
-          "section_title": "D-7 한·러 한시적 근로협정",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 11,
-          "section_title": "D-7 한·우즈벡 한시적 근로협정",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 12,
-          "section_title": "D-7 한·인도 사증절차간소화협정",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 13,
-          "section_title": "D-7 외국법자문사",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 14,
+          "row_index": 8,
           "section_title": "D-8 기업투자",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 15,
-          "section_title": "D-8-1 외국인 투자기업 주재활동",
+          "row_index": 9,
+          "section_title": "D-8 기업투자 / D-8-1 법인 투자 기본요건",
+          "petition_type": "사증발급",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "D-8 기업투자 / D-8-1 법인 투자 첨부서류",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
-          "row_index": 16,
-          "section_title": "D-8-2 벤처기업 설립자",
+          "row_index": 11,
+          "section_title": "D-8 기업투자 / D-8-4S 스타트업 코리아 특별비자",
           "petition_type": "사증발급",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 17,
-          "section_title": "D-8-3 국민이 경영하는 기업 투자",
-          "petition_type": "사증발급",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 18,
-          "section_title": "D-8-4 기술창업자",
-          "petition_type": "사증발급",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 19,
-          "section_title": "D-8-4S 스타트업 코리아 특별비자",
-          "petition_type": "사증발급",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 20,
-          "section_title": "D-8 한·러 한시적 근로협정",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 21,
-          "section_title": "D-8 한·우즈벡 한시적 근로협정",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
+          "subsection_type": "요건",
           "issues": []
         }
       ],
@@ -646,7 +548,7 @@
       "source_hash_index": "0b8fcbb7d8d3ea21",
       "source_hash_block": "0b8fcbb7d8d3ea21",
       "hash_drift": false,
-      "row_count": 12,
+      "row_count": 8,
       "rows_with_issues": 0,
       "rows": [
         {
@@ -658,79 +560,51 @@
         },
         {
           "row_index": 2,
-          "section_title": "D-9 산업설비 설치·운영·보수",
+          "section_title": "D-9 무역경영 / 외국인 개인사업자",
           "petition_type": "사증발급",
-          "subsection_type": "제출서류",
+          "subsection_type": "요건",
           "issues": []
         },
         {
           "row_index": 3,
-          "section_title": "D-9 선박건조 및 산업설비 제작·감독",
+          "section_title": "D-9 무역경영 / 외국인 개인사업자 첨부서류",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
           "row_index": 4,
-          "section_title": "D-9 외국인 개인사업자",
-          "petition_type": "사증발급",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 5,
-          "section_title": "D-9 무역비자 점수제",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
-          "row_index": 6,
-          "section_title": "D-9 한·인도 사증절차간소화협정",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 7,
           "section_title": "D-10 구직",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 8,
-          "section_title": "D-10-1 일반구직 점수제 및 면제 특례",
+          "row_index": 5,
+          "section_title": "D-10 구직 / D-10-1 일반구직 점수제 면제 특례",
           "petition_type": "사증발급",
           "subsection_type": "요건",
           "issues": []
         },
         {
-          "row_index": 9,
-          "section_title": "D-10-2 기술창업준비",
+          "row_index": 6,
+          "section_title": "D-10 구직 / D-10-1 점수제 배점표",
           "petition_type": "사증발급",
-          "subsection_type": "요건",
+          "subsection_type": "점수표",
           "issues": []
         },
         {
-          "row_index": 10,
-          "section_title": "D-10-3 첨단기술인턴",
+          "row_index": 7,
+          "section_title": "D-10 구직 / 첨단기술인턴(D-10-3)",
           "petition_type": "사증발급인정서",
-          "subsection_type": "요건",
+          "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 11,
-          "section_title": "D-10-T 최우수인재",
+          "row_index": 8,
+          "section_title": "D-10 구직 / 제한대상",
           "petition_type": "사증발급",
-          "subsection_type": "요건",
-          "issues": []
-        },
-        {
-          "row_index": 12,
-          "section_title": "D-10 공관장 재량 발급 절차",
-          "petition_type": "사증발급",
-          "subsection_type": "절차",
+          "subsection_type": "제한",
           "issues": []
         }
       ],
@@ -741,8 +615,8 @@
       "source_hash_index": "6d71a0779c758b9d",
       "source_hash_block": "6d71a0779c758b9d",
       "hash_drift": false,
-      "row_count": 12,
-      "rows_with_issues": 0,
+      "row_count": 6,
+      "rows_with_issues": 1,
       "rows": [
         {
           "row_index": 1,
@@ -753,77 +627,38 @@
         },
         {
           "row_index": 2,
-          "section_title": "E-1 교수",
-          "petition_type": "사증발급",
-          "subsection_type": "기간",
-          "issues": []
-        },
-        {
-          "row_index": 3,
-          "section_title": "E-1 교수 / 공관장 재량 단수사증 (한국과학기술원)",
-          "petition_type": "사증발급",
+          "section_title": "E-1 교수 / 사증발급인정서 첨부서류",
+          "petition_type": "사증발급인정서",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
+          "row_index": 3,
+          "section_title": "전자사증 제도 / 발급절차",
+          "petition_type": "전자사증",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
           "row_index": 4,
-          "section_title": "E-1 교수 / 사증발급인정서",
-          "petition_type": "사증발급인정서",
+          "section_title": "E-2 회화지도",
+          "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 5,
-          "section_title": "E-1 교수 / 사증발급인정서 (교원)",
-          "petition_type": "사증발급인정서",
+          "section_title": "E-2 회화지도 / EPIK·CPIK·TaLK 첨부서류",
+          "petition_type": "사증발급",
           "subsection_type": "제출서류",
-          "issues": []
+          "issues": [
+            "subtype_or_program code not in source: ['E-2-91']",
+            "other_documents: none of the cited documents found in source: ['합격통지서·초청장']"
+          ]
         },
         {
           "row_index": 6,
-          "section_title": "E-1 교수 / 고급과학기술인력 사증발급인정서",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "요건",
-          "issues": []
-        },
-        {
-          "row_index": 7,
-          "section_title": "E-1 교수 / 전자사증",
-          "petition_type": "전자사증",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
-          "row_index": 8,
-          "section_title": "E-2 회화지도",
-          "petition_type": "사증발급",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
-          "row_index": 9,
-          "section_title": "E-2 회화지도",
-          "petition_type": "사증발급",
-          "subsection_type": "기간",
-          "issues": []
-        },
-        {
-          "row_index": 10,
-          "section_title": "E-2 회화지도 / 공관장 재량 단수사증 (EPIK, CPIK, TaLK)",
-          "petition_type": "사증발급",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 11,
-          "section_title": "E-2 회화지도 / 사증발급인정서",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
-          "row_index": 12,
-          "section_title": "E-2 회화지도 / 사증발급인정서",
+          "section_title": "E-2 회화지도 / 사증발급인정서 첨부서류",
           "petition_type": "사증발급인정서",
           "subsection_type": "제출서류",
           "issues": []
@@ -836,8 +671,8 @@
       "source_hash_index": "1c0bc255d325ceff",
       "source_hash_block": "1c0bc255d325ceff",
       "hash_drift": false,
-      "row_count": 15,
-      "rows_with_issues": 2,
+      "row_count": 8,
+      "rows_with_issues": 0,
       "rows": [
         {
           "row_index": 1,
@@ -848,102 +683,49 @@
         },
         {
           "row_index": 2,
-          "section_title": "E-3 연구 / 자격요건",
-          "petition_type": "사증발급",
-          "subsection_type": "요건",
+          "section_title": "E-3 연구 / 사증발급인정서 첨부서류",
+          "petition_type": "사증발급인정서",
+          "subsection_type": "제출서류",
           "issues": []
         },
         {
           "row_index": 3,
-          "section_title": "E-3 연구 / 공관장 재량 단수사증 (정부출연 연구기관·방위사업법 연구기관)",
+          "section_title": "E-3 연구 / 방문연구원 특례",
           "petition_type": "사증발급",
-          "subsection_type": "제출서류",
+          "subsection_type": "예외",
           "issues": []
         },
         {
           "row_index": 4,
-          "section_title": "E-3 연구 / 사증발급인정서 (연구기관 공통)",
+          "section_title": "E-4 기술지도",
           "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
+          "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 5,
-          "section_title": "E-3 연구 / 고급과학 기술인력 사증발급인정서",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "요건",
-          "issues": [
-            "other_documents: none of the cited documents found in source: ['졸업예정증명서']"
-          ]
-        },
-        {
-          "row_index": 6,
-          "section_title": "E-3 연구 / 한·인도 사증절차간소화협정",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
-          "row_index": 7,
-          "section_title": "E-3 연구 / 방문연구원 특례",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "예외",
-          "issues": [
-            "other_documents: none of the cited documents found in source: ['졸업예정증명서']"
-          ]
-        },
-        {
-          "row_index": 8,
-          "section_title": "E-4 기술지도",
-          "petition_type": "사증발급",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
-          "row_index": 9,
-          "section_title": "E-4 기술지도 / 사증발급인정서 (산업상 고도기술 제공)",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 10,
           "section_title": "E-5 전문직업",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 11,
-          "section_title": "E-5 전문직업 / 공관장 재량 단수사증 (항공기 조종사·선박 필수전문요원)",
+          "row_index": 6,
+          "section_title": "E-5 전문직업 / 항공사·운수회사 첨부서류",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
-          "row_index": 12,
-          "section_title": "E-5 전문직업 / 사증발급인정서",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 13,
+          "row_index": 7,
           "section_title": "E-6 예술흥행",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 14,
-          "section_title": "E-6 예술흥행 / 공관장 재량 (E-6-2 특례)",
-          "petition_type": "사증발급",
-          "subsection_type": "제한",
-          "issues": []
-        },
-        {
-          "row_index": 15,
-          "section_title": "E-6 예술흥행 / 사증발급인정서",
+          "row_index": 8,
+          "section_title": "E-6 예술흥행 / 사증발급인정서 첨부서류",
           "petition_type": "사증발급인정서",
           "subsection_type": "제출서류",
           "issues": []
@@ -956,7 +738,7 @@
       "source_hash_index": "77273517b8afc3af",
       "source_hash_block": "77273517b8afc3af",
       "hash_drift": false,
-      "row_count": 11,
+      "row_count": 5,
       "rows_with_issues": 0,
       "rows": [
         {
@@ -968,72 +750,30 @@
         },
         {
           "row_index": 2,
-          "section_title": "E-7 특정활동 / 자격요건 일반",
+          "section_title": "E-7 특정활동 / 자격요건 (일반 + 우대 특례)",
           "petition_type": "사증발급",
           "subsection_type": "요건",
           "issues": []
         },
         {
           "row_index": 3,
-          "section_title": "E-7 특정활동 / 도입방법 및 신청절차",
-          "petition_type": "사증발급",
-          "subsection_type": "절차",
-          "issues": []
-        },
-        {
-          "row_index": 4,
-          "section_title": "E-7 특정활동 / 초청자 자격요건 및 심사기준",
-          "petition_type": "사증발급",
-          "subsection_type": "제한",
-          "issues": []
-        },
-        {
-          "row_index": 5,
-          "section_title": "E-7 특정활동 / 공관장 재량 단수사증 (외국공관 행정요원·국제여객선 승무원)",
-          "petition_type": "사증발급",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 6,
-          "section_title": "E-7 특정활동 / 90일 이하 단기취업",
-          "petition_type": "사증발급",
-          "subsection_type": "예외",
-          "issues": []
-        },
-        {
-          "row_index": 7,
           "section_title": "E-7 특정활동 / 사증발급인정서 공통 제출서류",
           "petition_type": "사증발급인정서",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
-          "row_index": 8,
-          "section_title": "E-7 특정활동 / 한·인도 사증절차간소화협정 독립전문가",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
-          "row_index": 9,
-          "section_title": "E-7 특정활동 / 한·러 및 한·우즈벡 한시적 근로협정",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
-          "row_index": 10,
-          "section_title": "E-7 특정활동 / 국민고용 보호를 위한 심사기준",
+          "row_index": 4,
+          "section_title": "E-7 특정활동 / 국민고용 보호 심사기준",
           "petition_type": "사증발급",
           "subsection_type": "제한",
           "issues": []
         },
         {
-          "row_index": 11,
-          "section_title": "E-7 특정활동 / 경과규정",
+          "row_index": 5,
+          "section_title": "E-7 특정활동 / 주한 외국공관 행정요원·운수회사 승무원",
           "petition_type": "사증발급",
-          "subsection_type": "예외",
+          "subsection_type": "제출서류",
           "issues": []
         }
       ],
@@ -1044,70 +784,105 @@
       "source_hash_index": "f7552ea24d91fd6d",
       "source_hash_block": "f7552ea24d91fd6d",
       "hash_drift": false,
-      "row_count": 9,
+      "row_count": 14,
       "rows_with_issues": 0,
       "rows": [
         {
           "row_index": 1,
-          "section_title": "E-7 특정활동 / 허용직종 현황 (94개)",
+          "section_title": "E-7 특정활동 / 허용직종 전체 현황",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 2,
-          "section_title": "E-7-1 전문인력 / 관리자 직종 (1212~1522) 공통 심사기준",
+          "section_title": "E-7-1 전문인력 / 관리자(직종코드 1212~1522) 공통 심사기준",
           "petition_type": "사증발급",
           "subsection_type": "요건",
           "issues": []
         },
         {
           "row_index": 3,
-          "section_title": "E-7-1 전문가 직종 (52개) 자격요건",
+          "section_title": "E-7-1 전문인력 / 국내복귀기업 특례",
           "petition_type": "사증발급",
-          "subsection_type": "요건",
+          "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 4,
-          "section_title": "E-7-2 준전문인력 / 직종별 세부심사 (10개 직종)",
+          "section_title": "E-7-1 전문가 / 시스템소프트웨어 개발자(2222) 베트남 SW인력 특례",
           "petition_type": "사증발급",
           "subsection_type": "요건",
           "issues": []
         },
         {
           "row_index": 5,
-          "section_title": "E-7-3 일반기능인력 / 직종별 세부심사 (14개 직종)",
+          "section_title": "E-7-1 전문가 / 기계공학 기술자(2351) 고용허용인원 산정기준",
           "petition_type": "사증발급",
           "subsection_type": "요건",
           "issues": []
         },
         {
           "row_index": 6,
-          "section_title": "E-7-S2 첨단산업분야 네거티브 비자 점수표",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "점수표",
-          "issues": []
-        },
-        {
-          "row_index": 7,
-          "section_title": "E-7-S 네거티브 방식 전문인력 비자",
+          "section_title": "E-7-2 준전문인력 / 요양보호사(42111)",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
+          "row_index": 7,
+          "section_title": "E-7-3 일반기능인력 / 조선용접공(7406, 舊7430)",
+          "petition_type": "사증발급",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
           "row_index": 8,
-          "section_title": "E-7-S / 거주(F-2) 및 영주(F-5) 자격변경 특례",
+          "section_title": "E-7-3 일반기능인력 / 항공기(부품) 제조원(S8417)",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "E-7-S2 첨단산업 분야 네거티브 비자 점수표",
+          "petition_type": "사증발급",
+          "subsection_type": "점수표",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "E-7-S 네거티브 방식 전문인력 / E-7-S1 고소득자",
+          "petition_type": "사증발급",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 11,
+          "section_title": "E-7-S 네거티브 방식 전문인력 / E-7-S2 첨단산업분야 종사자",
+          "petition_type": "사증발급",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 12,
+          "section_title": "E-7-S → 거주(F-2-7) 및 영주(F-5-16) 자격취득 특례",
           "petition_type": "체류자격 변경",
           "subsection_type": "예외",
           "issues": []
         },
         {
-          "row_index": 9,
-          "section_title": "E-7-4 숙련기능인력 / 유형별 선발계획표 (K-point E74)",
+          "row_index": 13,
+          "section_title": "숙련기능인력(E-7-4) 선발계획표",
           "petition_type": "사증발급",
           "subsection_type": "쿼터",
+          "issues": []
+        },
+        {
+          "row_index": 14,
+          "section_title": "E-7-Y 국내성장인력 / E-7-T 최우수인재 특정활동",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
           "issues": []
         }
       ],
@@ -1123,51 +898,51 @@
       "rows": [
         {
           "row_index": 1,
-          "section_title": "E-7-4 숙련기능인력 / K-point E74 쿼터 유형",
-          "petition_type": "체류자격 변경",
-          "subsection_type": "쿼터",
-          "issues": []
-        },
-        {
-          "row_index": 2,
-          "section_title": "E-7-4 숙련기능인력 / 신청 일정 및 방법",
-          "petition_type": "체류자격 변경",
-          "subsection_type": "절차",
-          "issues": []
-        },
-        {
-          "row_index": 3,
-          "section_title": "E-7-4 숙련기능인력 / 신청 대상 외국인 요건",
+          "section_title": "K-point E74 / 숙련기능인력(E-7-4) 신청 대상 외국인 기본 요건",
           "petition_type": "체류자격 변경",
           "subsection_type": "요건",
           "issues": []
         },
         {
-          "row_index": 4,
-          "section_title": "E-7-4 숙련기능인력 / 「K-point E74」 점수표",
+          "row_index": 2,
+          "section_title": "K-point E74 점수표 (E-7-4 점수표)",
           "petition_type": "체류자격 변경",
           "subsection_type": "점수표",
           "issues": []
         },
         {
-          "row_index": 5,
-          "section_title": "E-7-4 숙련기능인력 / 제외 대상",
+          "row_index": 3,
+          "section_title": "K-point E74 / 제외 대상 (E-7-4 자격변경 불허 사유)",
           "petition_type": "체류자격 변경",
           "subsection_type": "제한",
           "issues": []
         },
         {
-          "row_index": 6,
-          "section_title": "E-7-4 숙련기능인력 / 행정 사항",
+          "row_index": 4,
+          "section_title": "K-point E74 / 고용기업(사업장) 요건",
           "petition_type": "체류자격 변경",
-          "subsection_type": "기간",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "K-point E74 / 신청 일정 및 방법",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "K-point E74 / 제출 서류 목록",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
           "issues": []
         },
         {
           "row_index": 7,
-          "section_title": "E-7-4 숙련기능인력 / 제출 서류 목록",
+          "section_title": "K-point E74 / 행정사항 (허가 기간·수수료·시행일)",
           "petition_type": "체류자격 변경",
-          "subsection_type": "제출서류",
+          "subsection_type": "기간",
           "issues": []
         }
       ],
@@ -1178,21 +953,35 @@
       "source_hash_index": "f8a442bf878ce462",
       "source_hash_block": "f8a442bf878ce462",
       "hash_drift": false,
-      "row_count": 2,
+      "row_count": 4,
       "rows_with_issues": 0,
       "rows": [
         {
           "row_index": 1,
-          "section_title": "E-7-4 숙련기능인력 / 추천 절차 안내",
+          "section_title": "K-point E74 / 추천 절차 (중앙부처·광역지자체·고용기업)",
           "petition_type": "체류자격 변경",
           "subsection_type": "절차",
           "issues": []
         },
         {
           "row_index": 2,
-          "section_title": "E-7-4 숙련기능인력 / 한국어능력 입증",
+          "section_title": "K-point E74 / 한국어능력 입증 참고 (KIIP·TOPIK)",
           "petition_type": "체류자격 변경",
-          "subsection_type": "요건",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "K-point E74 / 고용계약서(E-7-4용) 요구사항",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "K-point E74 / 여권 유효기간 짧을 때 확인서 처리",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "예외",
           "issues": []
         }
       ],
@@ -1203,77 +992,70 @@
       "source_hash_index": "76c0e8c88603a959",
       "source_hash_block": "76c0e8c88603a959",
       "hash_drift": false,
-      "row_count": 10,
+      "row_count": 9,
       "rows_with_issues": 0,
       "rows": [
         {
           "row_index": 1,
-          "section_title": "E-8 계절근로",
-          "petition_type": "사증발급인정서",
+          "section_title": "E-8 계절근로 / 제도 개요",
+          "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 2,
-          "section_title": "E-8 계절근로 / 허용업종 및 허용인원",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "쿼터",
-          "issues": []
-        },
-        {
-          "row_index": 3,
-          "section_title": "E-8 계절근로 / 1회 부여 체류기간 상한",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "기간",
-          "issues": []
-        },
-        {
-          "row_index": 4,
-          "section_title": "E-8 계절근로 / 사증발급인정서 신청",
+          "section_title": "E-8 계절근로 / 사증발급인정서 신청 절차",
           "petition_type": "사증발급인정서",
           "subsection_type": "절차",
           "issues": []
         },
         {
+          "row_index": 3,
+          "section_title": "E-8 계절근로 / 농업 허용 작물·재배면적별 허용인원",
+          "petition_type": "사증발급",
+          "subsection_type": "쿼터",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "E-8 계절근로 / 어업 허용 수산물·생산규모별 허용인원",
+          "petition_type": "사증발급",
+          "subsection_type": "쿼터",
+          "issues": []
+        },
+        {
           "row_index": 5,
-          "section_title": "E-8 계절근로 / 사증발급인정서 제출서류",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
+          "section_title": "E-9 비전문취업 / 고용허가제 개요",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 6,
-          "section_title": "E-9 비전문취업 / 고용허가제",
-          "petition_type": "사증발급인정서",
+          "section_title": "E-9 비전문취업 / 허용업종 및 체류자격 약호",
+          "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 7,
-          "section_title": "E-9 비전문취업 / 허용업종 및 체류자격 약호",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "요건",
-          "issues": []
-        },
-        {
-          "row_index": 8,
-          "section_title": "E-9 비전문취업 / 사증발급인정서 발급 첨부서류",
+          "section_title": "E-9 비전문취업 / 사증발급인정서 제출서류 (업종별)",
           "petition_type": "사증발급인정서",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
-          "row_index": 9,
-          "section_title": "E-9 비전문취업 / 재입국 취업 제한의 특례 (성실외국인)",
-          "petition_type": "사증발급인정서",
+          "row_index": 8,
+          "section_title": "E-9 비전문취업 / 재입국 취업특례 (구 성실근로자)",
+          "petition_type": "사증발급",
           "subsection_type": "예외",
           "issues": []
         },
         {
-          "row_index": 10,
-          "section_title": "E-9 비전문취업 / 건설업 비숙련 외국인력 업무수행 범위",
-          "petition_type": "사증발급인정서",
-          "subsection_type": "요건",
+          "row_index": 9,
+          "section_title": "E-9 비전문취업 / 건설업 비숙련 외국인력 업무수행가능 범위 (40개 직종)",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
           "issues": []
         }
       ],
@@ -1284,63 +1066,84 @@
       "source_hash_index": "dabeead7db427e40",
       "source_hash_block": "dabeead7db427e40",
       "hash_drift": false,
-      "row_count": 8,
+      "row_count": 11,
       "rows_with_issues": 0,
       "rows": [
         {
           "row_index": 1,
-          "section_title": "E-10 선원취업",
-          "petition_type": "사증발급인정서",
+          "section_title": "E-10 선원취업 / 활동범위 및 해당자 (E-10-1·E-10-2·E-10-3)",
+          "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 2,
-          "section_title": "E-10 선원취업",
+          "section_title": "E-10 선원취업 / 사증발급인정서 첨부서류",
           "petition_type": "사증발급인정서",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
           "row_index": 3,
-          "section_title": "F-1 방문동거",
+          "section_title": "F-1 방문동거 / 활동범위 및 해당자",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 4,
-          "section_title": "F-1 방문동거 / 미성년 유학생 동반 부모(F-1-13) 등",
+          "section_title": "F-1-13 외국인 유학생 동반 부모 (미성년 유학생)",
           "petition_type": "사증발급",
-          "subsection_type": "제출서류",
+          "subsection_type": "요건",
           "issues": []
         },
         {
           "row_index": 5,
-          "section_title": "F-1 방문동거 / 디지털노마드(F-1-D)",
+          "section_title": "F-1-22/23/24 투자가 및 전문인력의 외국인 가사보조인",
           "petition_type": "사증발급",
-          "subsection_type": "제출서류",
+          "subsection_type": "요건",
           "issues": []
         },
         {
           "row_index": 6,
-          "section_title": "F-2 거주",
+          "section_title": "F-1-5 결혼이민자의 부모 등 가족 (자녀양육 지원·인도적 사유)",
+          "petition_type": "사증발급",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "F-1-D 디지털노마드(워케이션) 비자",
+          "petition_type": "사증발급",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "F-1-15 우수인재·투자자·유학생 부모 (사증발급인정서)",
+          "petition_type": "사증발급인정서",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "F-2 거주 / 활동범위 및 해당자",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 7,
-          "section_title": "F-2 거주 / 영주자격자 배우자(F-2-3)",
+          "row_index": 10,
+          "section_title": "F-2-3 영주자격자의 배우자 거주사증",
           "petition_type": "사증발급",
-          "subsection_type": "제출서류",
+          "subsection_type": "요건",
           "issues": []
         },
         {
-          "row_index": 8,
-          "section_title": "F-2 거주 / 점수제 우수인재(F-2-7)",
+          "row_index": 11,
+          "section_title": "F-2-7 점수제 우수인재 (상장법인·유망산업분야)",
           "petition_type": "사증발급인정서",
-          "subsection_type": "제출서류",
+          "subsection_type": "요건",
           "issues": []
         }
       ],
@@ -1351,8 +1154,8 @@
       "source_hash_index": "ba076d32f3964550",
       "source_hash_block": "ba076d32f3964550",
       "hash_drift": false,
-      "row_count": 7,
-      "rows_with_issues": 1,
+      "row_count": 13,
+      "rows_with_issues": 0,
       "rows": [
         {
           "row_index": 1,
@@ -1363,44 +1166,84 @@
         },
         {
           "row_index": 2,
-          "section_title": "F-3 동반",
-          "petition_type": "사증발급",
-          "subsection_type": "제출서류",
-          "issues": [
-            "other_documents: none of the cited documents found in source: ['재직증명서·납세사실증명서']"
-          ]
-        },
-        {
-          "row_index": 3,
           "section_title": "F-3 동반 / 전자사증",
           "petition_type": "전자사증",
           "subsection_type": "대상",
           "issues": []
         },
         {
+          "row_index": 3,
+          "section_title": "F-3 동반 / 공관장 재량 단수사증 (1년 이하)",
+          "petition_type": "사증발급",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
           "row_index": 4,
-          "section_title": "F-5 영주",
+          "section_title": "F-3 동반 / 재외동포(F-4) 가족 복수사증 (F-3-19)",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 5,
-          "section_title": "F-5 영주 / 고액투자외국인(F-5-5) 및 특정분야 능력소유자(F-5-11)",
+          "section_title": "F-3 동반 / 방문취업(H-2) 가족 복수사증 (F-3-20)",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "F-3 동반 / 점수제 우수인재(F-2-7) 가족 단수사증 (F-3-18)",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
-          "row_index": 6,
+          "row_index": 7,
+          "section_title": "F-3 동반 / 사증발급인정서",
+          "petition_type": "사증발급인정서",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "F-5 영주",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "F-5 영주 / 고액투자외국인 영주사증",
+          "petition_type": "사증발급",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "F-5 영주 / 특정분야 능력소유자 점수제",
+          "petition_type": "사증발급",
+          "subsection_type": "점수표",
+          "issues": []
+        },
+        {
+          "row_index": 11,
           "section_title": "F-6 결혼이민",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 7,
-          "section_title": "F-6 결혼이민 / 국민의 배우자(F-6-1)",
+          "row_index": 12,
+          "section_title": "F-6 결혼이민 / F-6-1 국민의 배우자 / 국제결혼 안내프로그램 대상 국가",
+          "petition_type": "사증발급",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 13,
+          "section_title": "F-6 결혼이민 / F-6-2 자녀양육",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
@@ -1413,8 +1256,8 @@
       "source_hash_index": "9b8ccb106e29e58c",
       "source_hash_block": "9b8ccb106e29e58c",
       "hash_drift": false,
-      "row_count": 7,
-      "rows_with_issues": 1,
+      "row_count": 14,
+      "rows_with_issues": 6,
       "rows": [
         {
           "row_index": 1,
@@ -1425,44 +1268,103 @@
         },
         {
           "row_index": 2,
-          "section_title": "G-1 기타 / 외국인 환자 의료관광(C-3-3)",
+          "section_title": "G-1 기타 / 외국인 환자 의료관광 (C-3-3)",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
           "row_index": 3,
-          "section_title": "G-1 기타 / 외국인환자(C-3-3, G-1-10)",
+          "section_title": "G-1 기타 / 외국인환자 (C-3-3, G-1-10) 사증발급인정서",
           "petition_type": "사증발급인정서",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
           "row_index": 4,
+          "section_title": "G-1 기타 / 의료관광 유치기관 행정제재",
+          "petition_type": "사증발급인정서",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 5,
           "section_title": "H-1 관광취업",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 5,
+          "row_index": 6,
+          "section_title": "H-1 관광취업 / 국가별 사증종류 및 유효기간",
+          "petition_type": "사증발급",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 7,
+          "section_title": "H-1 관광취업 / 제출서류",
+          "petition_type": "사증발급",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 8,
           "section_title": "H-1 관광취업 / 심사기준",
           "petition_type": "사증발급",
           "subsection_type": "요건",
           "issues": []
         },
         {
-          "row_index": 6,
-          "section_title": "H-1 관광취업",
-          "petition_type": "사증발급",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 7,
-          "section_title": "D-3 기술연수 / 해외투자기업 기술연수생 훈령",
+          "row_index": 9,
+          "section_title": "D-3 기술연수 / 해외투자기업 기술연수생 (D-3-11~13)",
           "petition_type": "사증발급인정서",
           "subsection_type": "대상",
+          "issues": [
+            "visa code not in source: ['D-3']"
+          ]
+        },
+        {
+          "row_index": 10,
+          "section_title": "D-3 기술연수 / 연수생 요건",
+          "petition_type": "사증발급인정서",
+          "subsection_type": "요건",
+          "issues": [
+            "visa code not in source: ['D-3']"
+          ]
+        },
+        {
+          "row_index": 11,
+          "section_title": "D-3 기술연수 / 연수허용인원 기준",
+          "petition_type": "사증발급인정서",
+          "subsection_type": "쿼터",
+          "issues": [
+            "visa code not in source: ['D-3']"
+          ]
+        },
+        {
+          "row_index": 12,
+          "section_title": "D-3 기술연수 / 연수기간",
+          "petition_type": "사증발급인정서",
+          "subsection_type": "기간",
+          "issues": [
+            "visa code not in source: ['D-3']"
+          ]
+        },
+        {
+          "row_index": 13,
+          "section_title": "D-3 기술연수 / 사증발급인정서 신청서류",
+          "petition_type": "사증발급인정서",
+          "subsection_type": "제출서류",
+          "issues": [
+            "visa code not in source: ['D-3']"
+          ]
+        },
+        {
+          "row_index": 14,
+          "section_title": "D-3 기술연수 / 연수업체 행정제재",
+          "petition_type": "사증발급인정서",
+          "subsection_type": "제한",
           "issues": [
             "visa code not in source: ['D-3']"
           ]
@@ -1475,63 +1377,98 @@
       "source_hash_index": "5f2c71b86edf0950",
       "source_hash_block": "5f2c71b86edf0950",
       "hash_drift": false,
-      "row_count": 8,
+      "row_count": 13,
       "rows_with_issues": 0,
       "rows": [
         {
           "row_index": 1,
-          "section_title": "C-3 단기방문 / 동포방문(C-3-8)",
+          "section_title": "C-3 단기방문 / 동포방문 (C-3-8)",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 2,
-          "section_title": "C-3 단기방문 / 동포방문(C-3-8)",
-          "petition_type": "사증발급",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 3,
           "section_title": "H-2 방문취업 / 신규 발급 중단",
           "petition_type": "사증발급",
           "subsection_type": "제한",
           "issues": []
         },
         {
+          "row_index": 3,
+          "section_title": "H-2 방문취업 / 외국인등록 및 체류관리",
+          "petition_type": "외국인등록",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
           "row_index": 4,
-          "section_title": "H-2 방문취업 / 체류관리",
+          "section_title": "H-2 방문취업 / 취업개시 및 근무처 변경 신고",
+          "petition_type": "고용변동 신고",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "H-2 방문취업 / 체류기간 연장",
           "petition_type": "체류기간 연장",
           "subsection_type": "요건",
           "issues": []
         },
         {
-          "row_index": 5,
-          "section_title": "F-4 재외동포 / 자격부여 제도",
+          "row_index": 6,
+          "section_title": "F-4 재외동포 / 자격 기본 대상",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 6,
-          "section_title": "F-4 재외동포 / 사증발급 및 체류자격 변경",
+          "row_index": 7,
+          "section_title": "F-4 재외동포 / 사증발급 세부대상 및 추가 신청서류",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
-          "row_index": 7,
-          "section_title": "F-4 재외동포 / 취업활동 및 자격외 활동허가",
+          "row_index": 8,
+          "section_title": "F-4 재외동포 / 자격 변경 절차",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "F-4 재외동포 / 국내 거소신고 및 체류기간 연장",
+          "petition_type": "거소신고",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "F-4 재외동포 / 자격 부여 제한대상 및 취업제한",
+          "petition_type": "사증발급",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 11,
+          "section_title": "F-4 재외동포 / 체류자격외 활동허가 (방문취업 사업장 계속 근무)",
           "petition_type": "체류자격외 활동허가",
+          "subsection_type": "절차",
+          "issues": []
+        },
+        {
+          "row_index": 12,
+          "section_title": "F-5 영주 / 외국국적동포 영주자격 기본요건",
+          "petition_type": "체류자격 변경",
           "subsection_type": "요건",
           "issues": []
         },
         {
-          "row_index": 8,
-          "section_title": "F-5 영주 / 외국국적동포 영주자격 부여",
-          "petition_type": "사증발급",
-          "subsection_type": "대상",
+          "row_index": 13,
+          "section_title": "F-5 영주 / 재외동포 2년 이상 영주자격 (F-5-6)",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
           "issues": []
         }
       ],
@@ -1542,42 +1479,44 @@
       "source_hash_index": "c98686a906882c01",
       "source_hash_block": "c98686a906882c01",
       "hash_drift": false,
-      "row_count": 7,
-      "rows_with_issues": 0,
+      "row_count": 9,
+      "rows_with_issues": 1,
       "rows": [
         {
           "row_index": 1,
-          "section_title": "F-5 영주 / 방문취업 동포 영주(F-5-14)",
-          "petition_type": "사증발급",
+          "section_title": "F-5 영주 / 외국국적동포 국적취득 요건 구비 (F-5-7)",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": [
+            "common_documents: none of the cited documents found in source: ['외국인등록증']"
+          ]
+        },
+        {
+          "row_index": 2,
+          "section_title": "F-5 영주 / 방문취업 4년 이상 영주자격 (F-5-14)",
+          "petition_type": "체류자격 변경",
           "subsection_type": "요건",
           "issues": []
         },
         {
-          "row_index": 2,
-          "section_title": "F-5 영주 / 자격 상실 및 취소",
+          "row_index": 3,
+          "section_title": "F-5 영주 / 영주자격 상실 및 취소 사유",
           "petition_type": "사증발급",
           "subsection_type": "제한",
           "issues": []
         },
         {
-          "row_index": 3,
-          "section_title": "F-3 동반 / 외국국적동포 가족",
-          "petition_type": "사증발급",
-          "subsection_type": "대상",
-          "issues": []
-        },
-        {
           "row_index": 4,
-          "section_title": "F-1 방문동거 / 외국국적동포 부모",
+          "section_title": "F-3 동반 / 외국국적동포 가족 동반",
           "petition_type": "사증발급",
           "subsection_type": "대상",
           "issues": []
         },
         {
           "row_index": 5,
-          "section_title": "F-3 동반 / 외국국적동포 가족",
+          "section_title": "F-1 방문동거 / 외국국적동포 가족 방문동거",
           "petition_type": "사증발급",
-          "subsection_type": "제출서류",
+          "subsection_type": "대상",
           "issues": []
         },
         {
@@ -1589,7 +1528,21 @@
         },
         {
           "row_index": 7,
-          "section_title": "F-4 재외동포 / 해외 범죄경력증명서 제출기준(별첨1)",
+          "section_title": "F-4 재외동포 / 해외 범죄경력증명서 제출기준",
+          "petition_type": "사증발급",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "F-4 재외동포 / 해외 범죄경력에 따른 처리기준",
+          "petition_type": "사증발급",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "F-4 재외동포 / 한국어능력 입증서류 제출기준",
           "petition_type": "사증발급",
           "subsection_type": "제출서류",
           "issues": []
@@ -1602,7 +1555,7 @@
       "source_hash_index": "0505d317a32bbf9d",
       "source_hash_block": "0505d317a32bbf9d",
       "hash_drift": false,
-      "row_count": 3,
+      "row_count": 6,
       "rows_with_issues": 0,
       "rows": [
         {
@@ -1614,16 +1567,37 @@
         },
         {
           "row_index": 2,
+          "section_title": "E-9/E-10/H-2 공통 / 건강상태 확인서",
+          "petition_type": "사증발급",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 3,
+          "section_title": "E-9/E-10/H-2 공통 / 건강진단서",
+          "petition_type": "사증발급",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 4,
           "section_title": "F-4 재외동포 / 취업활동 제한범위 고시 (법무부고시 제2026-65호)",
           "petition_type": "사증발급",
           "subsection_type": "제한",
           "issues": []
         },
         {
-          "row_index": 3,
-          "section_title": "F-4 재외동포 / 지역특화형 비자 예외",
+          "row_index": 5,
+          "section_title": "F-4 재외동포 / 취업활동 제한직업 비취업 서약서",
           "petition_type": "사증발급",
-          "subsection_type": "예외",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 6,
+          "section_title": "H-2 방문취업 / 기업대표 신원보증서",
+          "petition_type": "사증발급",
+          "subsection_type": "제출서류",
           "issues": []
         }
       ],
@@ -1634,56 +1608,49 @@
       "source_hash_index": "9560c7df67082362",
       "source_hash_block": "9560c7df67082362",
       "hash_drift": false,
-      "row_count": 7,
+      "row_count": 6,
       "rows_with_issues": 0,
       "rows": [
         {
           "row_index": 1,
-          "section_title": "첨단분야 해외 인재 탑티어(Top-Tier) 비자 / 자격 기준",
+          "section_title": "F-5-14 영주 / 부여 자격 종목 및 등급 (제조업·건설업·농업·어업)",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "점수표",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "F-2 거주 / 최우수인재 거주(F-2-T) Top-Tier",
           "petition_type": "사증발급",
           "subsection_type": "요건",
           "issues": []
         },
         {
-          "row_index": 2,
-          "section_title": "첨단분야 해외 인재 탑티어 / 전자사증 발급",
-          "petition_type": "전자사증",
-          "subsection_type": "절차",
-          "issues": []
-        },
-        {
           "row_index": 3,
-          "section_title": "최우수인재 구직(D-10-T)",
+          "section_title": "E-7 특정활동 / 최우수인재 특정활동(E-7-T) Top-Tier",
           "petition_type": "사증발급",
-          "subsection_type": "대상",
+          "subsection_type": "요건",
           "issues": []
         },
         {
           "row_index": 4,
-          "section_title": "최우수인재 구직(D-10-T) / 체류기간 연장 및 연수 신고",
-          "petition_type": "체류기간 연장",
-          "subsection_type": "제출서류",
+          "section_title": "D-10 구직 / 최우수인재 구직(D-10-T) Top-Tier",
+          "petition_type": "사증발급",
+          "subsection_type": "요건",
           "issues": []
         },
         {
           "row_index": 5,
-          "section_title": "최우수인재 특정활동(E-7-T)",
+          "section_title": "F-5 영주 / 최우수인재 영주(F-5) Top-Tier",
           "petition_type": "사증발급",
-          "subsection_type": "제출서류",
+          "subsection_type": "요건",
           "issues": []
         },
         {
           "row_index": 6,
-          "section_title": "최우수인재 특정활동(E-7-T) / 체류기간 연장 및 근무처 변경·추가",
-          "petition_type": "체류기간 연장",
-          "subsection_type": "제출서류",
-          "issues": []
-        },
-        {
-          "row_index": 7,
-          "section_title": "최우수인재 거주(F-2-T)",
-          "petition_type": "사증발급",
-          "subsection_type": "제출서류",
+          "section_title": "F-2 거주 / Top-Tier 전자비자 발급 절차",
+          "petition_type": "전자사증",
+          "subsection_type": "절차",
           "issues": []
         }
       ],
@@ -1694,56 +1661,156 @@
       "source_hash_index": "a8404370ff6ded5c",
       "source_hash_block": "a8404370ff6ded5c",
       "hash_drift": false,
-      "row_count": 7,
-      "rows_with_issues": 0,
+      "row_count": 21,
+      "rows_with_issues": 1,
       "rows": [
         {
           "row_index": 1,
-          "section_title": "최우수인재 영주(F-5-T)",
+          "section_title": "F-5-T 최우수인재 영주 / 체류기간 연장",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 2,
+          "section_title": "F-5-T 최우수인재 영주 / 자격변경",
           "petition_type": "체류자격 변경",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 2,
-          "section_title": "최우수인재 동반가족",
-          "petition_type": "사증발급",
+          "row_index": 3,
+          "section_title": "F-5-T 최우수인재 영주 / 자격변경",
+          "petition_type": "체류자격 변경",
           "subsection_type": "제출서류",
           "issues": []
         },
         {
-          "row_index": 3,
+          "row_index": 4,
+          "section_title": "F-5-T 최우수인재 영주 / 동반가족",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "최우수인재 부모/가사보조인 초청",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": [
+            "visa code not in source: ['F-1']"
+          ]
+        },
+        {
+          "row_index": 6,
           "section_title": "최우수인재 출입국 우대카드 발급",
           "petition_type": "사증발급",
           "subsection_type": "절차",
           "issues": []
         },
         {
-          "row_index": 4,
-          "section_title": "K-STAR 비자트랙 / K-STAR 거주(F-2-7S)",
+          "row_index": 7,
+          "section_title": "K-STAR 거주(F-2-7S) / 신청 대상",
           "petition_type": "체류자격 변경",
           "subsection_type": "대상",
           "issues": []
         },
         {
-          "row_index": 5,
-          "section_title": "K-STAR 영주(F-5-S1) / 점수제",
+          "row_index": 8,
+          "section_title": "K-STAR 거주(F-2-7S) / 자격요건",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "K-STAR 거주(F-2-7S) / 체류자격 및 기간",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "K-STAR 거주(F-2-7S) / 제출서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 11,
+          "section_title": "K-STAR 영주(F-5-S1) / 신청 대상",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 12,
+          "section_title": "K-STAR 영주(F-5-S1) / 점수제 평가",
           "petition_type": "체류자격 변경",
           "subsection_type": "점수표",
           "issues": []
         },
         {
-          "row_index": 6,
+          "row_index": 13,
           "section_title": "K-STAR 영주(F-5-S1) / 자격요건",
           "petition_type": "체류자격 변경",
           "subsection_type": "요건",
           "issues": []
         },
         {
-          "row_index": 7,
-          "section_title": "K-STAR 거주의 동반가족(F-2-71)",
+          "row_index": 14,
+          "section_title": "K-STAR 영주(F-5-S1) / 제출서류",
           "petition_type": "체류자격 변경",
           "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 15,
+          "section_title": "K-STAR 거주의 동반가족(F-2-71) / 범위·발급",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 16,
+          "section_title": "K-STAR 거주의 동반가족(F-2-71) / 체류관리",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
+          "issues": []
+        },
+        {
+          "row_index": 17,
+          "section_title": "K-STAR 거주의 동반가족(F-2-71) / 체류자격 부여",
+          "petition_type": "체류자격 부여",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 18,
+          "section_title": "K-STAR 거주의 동반가족(F-2-71) / 체류기간연장",
+          "petition_type": "체류기간 연장",
+          "subsection_type": "기간",
+          "issues": []
+        },
+        {
+          "row_index": 19,
+          "section_title": "K-STAR 영주의 동반가족(F-5-S2)",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 20,
+          "section_title": "우수인재 특별귀화 (국적법 제7조 제1항 3호) / 신청 대상",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 21,
+          "section_title": "우수인재 특별귀화 / 자격요건·절차",
+          "petition_type": "사증발급",
+          "subsection_type": "요건",
           "issues": []
         }
       ],
@@ -1754,28 +1821,88 @@
       "source_hash_index": "2a8dfe1a7cdb500b",
       "source_hash_block": "2a8dfe1a7cdb500b",
       "hash_drift": false,
-      "row_count": 3,
-      "rows_with_issues": 0,
+      "row_count": 11,
+      "rows_with_issues": 2,
       "rows": [
         {
           "row_index": 1,
-          "section_title": "준법시민교육 (거주(F-2) 자격변경 및 연장 / 영주(F-5) 자격변경)",
-          "petition_type": "공통사항",
+          "section_title": "준법시민교육 / F-2 자격변경·연장 적용",
+          "petition_type": "체류자격 변경",
           "subsection_type": "요건",
           "issues": []
         },
         {
           "row_index": 2,
-          "section_title": "해외범죄경력증명서 제출기준",
-          "petition_type": "공통사항",
-          "subsection_type": "제출서류",
+          "section_title": "준법시민교육 / F-5 자격변경 적용",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "요건",
           "issues": []
         },
         {
           "row_index": 3,
-          "section_title": "우수인재 특별귀화 평가기준 (국적법 시행령 제6조제2항)",
+          "section_title": "우수인재·K-STAR 거주 / 취업제한 분야",
           "petition_type": "체류자격 변경",
-          "subsection_type": "요건",
+          "subsection_type": "제한",
+          "issues": []
+        },
+        {
+          "row_index": 4,
+          "section_title": "해외범죄경력증명서 제출기준",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": []
+        },
+        {
+          "row_index": 5,
+          "section_title": "K-STAR 영주(F-5-S1) 점수제 세부 배점",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "점수표",
+          "issues": [
+            "subtype_or_program code not in source: ['F-5-S1']"
+          ]
+        },
+        {
+          "row_index": 6,
+          "section_title": "K-STAR 영주 점수제 / 평가항목별 입증서류",
+          "petition_type": "체류자격 변경",
+          "subsection_type": "제출서류",
+          "issues": [
+            "subtype_or_program code not in source: ['F-5-S1']"
+          ]
+        },
+        {
+          "row_index": 7,
+          "section_title": "우수인재 특별귀화 평가기준 / 저명인사",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 8,
+          "section_title": "우수인재 특별귀화 평가기준 / 학술분야 연구실적 우수자",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 9,
+          "section_title": "우수인재 특별귀화 평가기준 / 문화·예술·스포츠 우수능력자",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 10,
+          "section_title": "우수인재 특별귀화 평가기준 / 기업 근무자·외투기업 근무자",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
+          "issues": []
+        },
+        {
+          "row_index": 11,
+          "section_title": "우수인재 특별귀화 평가기준 / 신산업·첨단기술·지식재산권·전문분야·국제기구",
+          "petition_type": "사증발급",
+          "subsection_type": "대상",
           "issues": []
         }
       ],
@@ -1786,9 +1913,28 @@
       "source_hash_index": "5ccac54298e93b62",
       "source_hash_block": "5ccac54298e93b62",
       "hash_drift": false,
-      "row_count": 0,
-      "rows_with_issues": 0,
-      "rows": [],
+      "row_count": 2,
+      "rows_with_issues": 2,
+      "rows": [
+        {
+          "row_index": 1,
+          "section_title": "우수인재 가점 항목별 점수표 / 종합 배점",
+          "petition_type": "사증발급",
+          "subsection_type": "점수표",
+          "issues": [
+            "visa code not in source: ['F-5']"
+          ]
+        },
+        {
+          "row_index": 2,
+          "section_title": "우수인재 추천서 / 작성 기준",
+          "petition_type": "사증발급",
+          "subsection_type": "제출서류",
+          "issues": [
+            "visa code not in source: ['F-5']"
+          ]
+        }
+      ],
       "chunk_level_issues": []
     }
   ]

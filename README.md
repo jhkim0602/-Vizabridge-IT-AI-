@@ -6,17 +6,17 @@
 
 이번 회차의 1차 산출물은 **챗봇/RAG용 최종 데이터 구조가 아니라, 사람이 원본 자료를 검수하기 위한 CSV**입니다. 검수가 끝난 후에 챗봇용 변환을 진행합니다.
 
-검수용 CSV의 컬럼은 클라이언트 요청에 맞춰 7개로 단순화되어 있습니다:
+검수용 CSV는 **v2 스키마 (32컬럼)** 를 따릅니다. 클라이언트 피드백을 전면 반영해 행정 단위별로 컬럼을 분리하고, 빈 셀 보존·enum 잠금·누락 ZERO 원칙을 강제합니다. 한 행 = **(비자코드 × 신청종류)** 1조합으로 펼쳐지므로, 같은 비자가 사증발급/체류자격 변경/기간 연장 등 신청종류별로 5~10행에 분산됩니다.
 
-| 컬럼 | 의미 |
-| --- | --- |
-| 비자코드 | E-7, F-6 등. 세부 프로그램이 있으면 괄호로 함께 (`E-7 (E-7-4)`) |
-| 사증·체류 | 매뉴얼 구분 (`사증` 또는 `체류`) |
-| 문서유형 | `사증발급 / 제출서류` 형식으로 어떤 행정 행위·구획인지 |
-| 핵심내용 | 자격요건, 대상자, 요건, 절차, 체류기간, 수수료, 제한, 예외, 의무사항 등을 라벨링해 통합 |
-| 제출서류 | 공통서류 / 필수서류 / 기타서류 |
-| 예상질문 | 비자코드를 모르는 일반인이 자기 상황으로 물을 법한 질문 (LLM 생성) |
-| 출처 | 섹션 제목 + 원본 HWP 파일명 |
+상세 스키마: [docs/data_schema_v2.md](docs/data_schema_v2.md) — 32컬럼 정의, enum 사전, 빈 셀 정책의 단일 진실 원천 (Python: `scripts/schema.py`).
+
+| 그룹 | 컬럼 수 | 예시 컬럼 |
+| --- | --- | --- |
+| 식별·분류 | 5 | `비자코드`, `상위코드`, `사증·체류`, `신청종류`, `하위프로그램` |
+| 행정 내용 | 17 | `대상`, `자격요건`, `제출서류`, `절차`, `수수료`, `기간`, `점수표`, `쿼터`, `초청자`, `추천·승인기관`, … |
+| 출처·추적 | 4 | `원본파일`, `섹션`, `페이지`, `원본 라인범위` |
+| 관계·검색 | 3 | `연계비자`, `키워드`, `원문발췌` |
+| 검수 | 3 | `예상질문`, `검수상태`, `검수메모` |
 
 ## Pipeline
 
@@ -28,19 +28,22 @@ data/parsed/raw/{stay,visa}_manual.md
    │  Stage 2  scripts/index_markdown_chunks.py           (Python, deterministic)
    ▼
 data/parsed/chunks/{stay,visa}_chunks_index.jsonl
-   │  Stage 3  /vizabridge-normalize                      (Claude Code skill)
+   │  Stage 3  /vizabridge-normalize                      (Claude Code skill, v2)
    ▼
 data/parsed/normalized/{stay,visa}_manual.md              ← canonical intermediate
    │  Stage 4  scripts/validate_normalization.py          (Python, deterministic)
    │  Stage 5  /vizabridge-repair                         (Claude Code skill, optional)
-   │  Stage 6  scripts/build_semantic_csv.py              (Python, deterministic)
+   │  Stage 6  scripts/build_semantic_csv.py              (Python v2 빌더, 32컬럼)
    ▼
-data/processed/{체류,사증}매뉴얼_검수용.csv                  ← 사람 검수용 1차 CSV
-   │  Stage 9  scripts/quality_report_semantic_manual_csvs.py
+data/processed/{체류,사증}매뉴얼_검수용_v2.csv             ← 사람 검수용 (32컬럼)
+   │  Stage 7  scripts/notion_export_v2.py                (Notion import 친화 가공)
    ▼
-output/quality/*, output/review/*
+data/processed/{체류,사증}매뉴얼_노션검수용_v2.csv
+   │  Stage 8  scripts/qc_v2.py + scripts/cross_check_v2.py
+   ▼
+output/quality/v2/{v2_quality_report.md, v2_cross_check_report.md, *_fill_rates.csv}
 
-(Stage 7–8 챗봇 변환 파이프라인은 검수 완료 후 별도 회차에서 진행 예정)
+(RAG/챗봇 변환 단계는 검수 완료 후 별도 회차에서 진행 예정)
 ```
 
 LLM은 stages 3, 5 에서만 사용합니다. 나머지 단계는 결정적 Python으로, 다시 실행해도 같은 결과가 나옵니다. **정규화 MD**(stage 3 산출물)는 의도적으로 git에 커밋합니다 — 같은 입력에서 같은 CSV가 재생성되도록.
@@ -56,22 +59,29 @@ LLM은 stages 3, 5 에서만 사용합니다. 나머지 단계는 결정적 Pyth
 │   │   ├── raw/              # kordoc 출력 (커밋)
 │   │   ├── chunks/           # 청크 인덱스 .jsonl (커밋)
 │   │   ├── normalized/       # 정규화 MD — LLM 결과 (커밋)
+│   │   │   └── *.backup_v1.md  # v1 스냅샷 (안전 보존, 비커밋)
 │   │   └── validation/       # validator 산출 .json (커밋)
-│   └── processed/            # 검수용 CSV (커밋, 다운로드 가능)
+│   └── processed/            # 검수용 v2 CSV (커밋, 다운로드 가능)
 ├── scripts/                  # 결정적 단계 Python
-│   └── legacy/               # 과거 정규식 빌더 / 챗봇 변환 보존본
+│   ├── schema.py             # ★ v2 스키마 SSoT (32컬럼 + enum)
+│   ├── build_semantic_csv.py # v2 빌더
+│   ├── notion_export_v2.py   # Notion import 가공
+│   ├── qc_v2.py              # 품질 리포트 v2
+│   ├── cross_check_v2.py     # 정규화 MD ↔ CSV 교차 검증
+│   ├── build_helpers/        # 빌더 공통 유틸 (aggregate / pivot / sources)
+│   └── legacy/               # 과거 정규식 빌더 보존본
 ├── .claude/skills/
-│   ├── vizabridge-normalize/
-│   ├── vizabridge-enrich-chatbot/  # (이번 회차 미사용)
+│   ├── vizabridge-normalize/  # v2 정규화 (32컬럼 출력)
 │   └── vizabridge-repair/
+├── docs/
+│   └── data_schema_v2.md     # ★ 32컬럼 스키마 사양
 ├── notebooks/                # 분석 노트북
-├── docs/                     # 설계/운영 문서
 ├── tests/                    # 정제 규칙 보호 테스트
-├── output/                   # 검수 리포트/Excel (커밋)
+├── output/quality/v2/        # v2 품질 리포트 (커밋)
 └── requirements.txt
 ```
 
-자세한 폴더별 관리 기준은 [docs/project_structure.md](docs/project_structure.md), 단계별 명령은 [scripts/README.md](scripts/README.md)에 있습니다.
+자세한 폴더별 관리 기준은 [docs/project_structure.md](docs/project_structure.md)에 있습니다.
 
 ## Setup
 
@@ -96,7 +106,7 @@ python scripts/parse_hwp_to_markdown.py
 # 2) 청크 분할 (즉시)
 python scripts/index_markdown_chunks.py
 
-# 3) Claude Code 세션에서 정규화
+# 3) Claude Code 세션에서 정규화 (v2 32컬럼 출력)
 #    /vizabridge-normalize stay
 #    /vizabridge-normalize visa
 #    (세션 한도 닿으면 다음 세션에서 재개)
@@ -109,20 +119,29 @@ python scripts/validate_normalization.py
 #    /vizabridge-repair visa
 python scripts/validate_normalization.py   # 재검증
 
-# 6) 검수용 CSV 빌드 (한국어 7컬럼)
+# 6) 검수용 CSV v2 빌드 (32컬럼, 행 단위 비자×신청)
 python scripts/build_semantic_csv.py
-#    → data/processed/체류매뉴얼_검수용.csv
-#    → data/processed/사증매뉴얼_검수용.csv
+#    → data/processed/체류매뉴얼_검수용_v2.csv
+#    → data/processed/사증매뉴얼_검수용_v2.csv
 
-# 7) 품질 리포트 + 검수용 Excel
-python scripts/quality_report_semantic_manual_csvs.py
+# 7) Notion import 가공
+python scripts/notion_export_v2.py
+#    → data/processed/체류매뉴얼_노션검수용_v2.csv
+#    → data/processed/사증매뉴얼_노션검수용_v2.csv
 
-# (챗봇용 변환 7–8단계는 이번 회차 미사용)
+# 8) 품질 리포트 + 교차 검증
+python scripts/qc_v2.py
+python scripts/cross_check_v2.py
+#    → output/quality/v2/*
 ```
+
+## 검수 워크플로 (Notion import)
+
+`*_노션검수용_v2.csv` 는 Notion 데이터베이스 import 친화 가공판입니다. 워크스페이스에서 새 DB 생성 → CSV import 로 32컬럼을 그대로 가져온 뒤, `검수상태` 컬럼을 select 필터로 두고 `미검수 → 검수중 → 검수완료 / 이슈있음` 흐름으로 진행합니다. `섹션`·`페이지`·`원본 라인범위`·`원문발췌` 4개 컬럼이 출처 추적용이며, `원본 라인범위` 의 `{경로}:{시작}-{끝}` 포맷은 GitHub 에서 직접 점프 가능합니다.
 
 ## Skills 적용법
 
-LLM 단계(3·5·7)는 `.claude/skills/` 안의 세 skill로 동작합니다. 저장소를 Claude Code 워크스페이스로 열면 자동 인식되므로 별도 설치 절차가 없습니다.
+LLM 단계(3·5)는 `.claude/skills/` 안의 두 skill로 동작합니다. 저장소를 Claude Code 워크스페이스로 열면 자동 인식되므로 별도 설치 절차가 없습니다.
 
 세션 안에서 슬래시 명령으로 호출합니다.
 
@@ -131,8 +150,6 @@ LLM 단계(3·5·7)는 `.claude/skills/` 안의 세 skill로 동작합니다. �
 /vizabridge-normalize visa
 /vizabridge-repair stay
 /vizabridge-repair visa
-/vizabridge-enrich-chatbot stay
-/vizabridge-enrich-chatbot visa
 ```
 
 각 명령은 청크 또는 행 단위로 처리하며 진행률을 출력 MD의 마커로 기록합니다. 세션 한도에 닿거나 사용자가 중단해도 다음 세션에서 같은 명령만 다시 입력하면 자연스럽게 이어집니다. `/vizabridge-repair`는 `scripts/validate_normalization.py`가 이슈를 잡았을 때만 사용합니다.
@@ -141,7 +158,6 @@ LLM 단계(3·5·7)는 `.claude/skills/` 안의 세 skill로 동작합니다. �
 
 ```bash
 python .claude/skills/vizabridge-normalize/scripts/show_progress.py stay
-python .claude/skills/vizabridge-enrich-chatbot/scripts/show_progress.py stay
 python .claude/skills/vizabridge-repair/scripts/show_flagged.py stay
 ```
 
@@ -163,8 +179,8 @@ python .claude/skills/vizabridge-repair/scripts/show_flagged.py stay
 별도 상태 파일을 두지 않습니다. 정규화 산출물의 마커가 그대로 상태입니다.
 
 ```
-<!-- vizabridge-normalize v1 chunk: stay_004 hash: ... lines: 449-1185 -->
-### row D-3 / 공통사항 / 대상
+<!-- vizabridge-normalize v2 chunk: stay_004 hash: ... lines: 449-1185 -->
+### row D-3 / 체류자격 변경 / 자격요건
 - ...
 <!-- end chunk: stay_004 -->
 ```
@@ -177,28 +193,7 @@ python .claude/skills/vizabridge-repair/scripts/show_flagged.py stay
 
 ### 검증과 LLM의 역할 분리
 
-LLM은 의미 추출(어느 셀이 `mandatory_documents`인지, `petition_type`이 무엇인지)만 합니다. 그 결과의 정합성 검사 — 비자코드/금액/서류명이 원본에 실제 등장하는지 — 는 결정적 Python(`scripts/validate_normalization.py`)이 합니다. 같은 LLM이 자기 출력을 검증하면 같은 오류를 재생산할 수 있어서 분리합니다.
-
-### Slash 명령 동작 흐름
-
-```
-사용자 입력: /vizabridge-normalize stay
-   │
-   ▼
-Claude Code: SKILL.md의 description 매칭 → invoke
-   │
-   ▼
-모델: SKILL.md 본문 로드 → 절차 실행
-   │
-   ├─ scripts/show_progress.py 호출 (다음 청크 식별)
-   ├─ Read 도구로 raw MD의 해당 라인 범위 로드
-   ├─ references/*.md를 필요한 만큼만 Read
-   ├─ row 블록 작성 → /tmp/*.md
-   ├─ scripts/append_block.py 호출 (검증 + atomic append)
-   └─ 반복하거나 컨텍스트 부족 시 멈춤
-   ▼
-산출물: data/parsed/normalized/{manual}_manual.md (append-only)
-```
+LLM은 의미 추출(어느 셀이 `제출서류`인지, `신청종류`가 무엇인지)만 합니다. 그 결과의 정합성 검사 — 비자코드/금액/서류명이 원본에 실제 등장하는지 — 는 결정적 Python(`scripts/validate_normalization.py`, `scripts/cross_check_v2.py`)이 합니다. 같은 LLM이 자기 출력을 검증하면 같은 오류를 재생산할 수 있어서 분리합니다.
 
 </details>
 
@@ -210,25 +205,15 @@ Claude Code: SKILL.md의 description 매칭 → invoke
 ```
 .claude/skills/
 ├── vizabridge-normalize/
-│   ├── SKILL.md                    # 절차서
+│   ├── SKILL.md                    # 절차서 (v2)
 │   ├── references/
-│   │   ├── column_schema.md        # STAY_COLUMNS / VISA_COLUMNS
+│   │   ├── column_schema.md        # v2 32컬럼 정의
 │   │   ├── extraction_rules.md     # Korean admin term → CSV 컬럼 매핑
 │   │   ├── noise_rules.md          # 표지/목차/양식 노이즈 필터
 │   │   └── output_format.md        # 정규화 MD 형식 명세
 │   └── scripts/
 │       ├── show_progress.py        # 다음 미처리 청크 + drift 보고
 │       └── append_block.py         # 스키마 + hash 검증 + 원자적 append
-├── vizabridge-enrich-chatbot/
-│   ├── SKILL.md
-│   ├── references/
-│   │   ├── chatbot_schema.md
-│   │   ├── situation_taxonomy.md   # 21개 사용자 상황 태그
-│   │   ├── keyword_rules.md
-│   │   └── output_format.md
-│   └── scripts/
-│       ├── show_progress.py
-│       └── append_block.py
 └── vizabridge-repair/
     ├── SKILL.md
     └── scripts/
@@ -253,80 +238,57 @@ data/parsed/validation/{m}_validation.json
         │
         │   issue 있을 시 → /vizabridge-repair  ──→ normalized MD 갱신
         ▼
-   scripts/build_semantic_csv.py  (결정적 빌드)
+   scripts/build_semantic_csv.py  (결정적 v2 빌드)
         │
         ▼
-data/processed/{m}_manual_semantic_clean.csv  (다음 skill의 입력)
+data/processed/{체류,사증}매뉴얼_검수용_v2.csv  (32컬럼)
         │
         ▼
-   /vizabridge-enrich-chatbot
-        │
-        ▼
-data/parsed/normalized_chatbot/{m}_manual.md
-        │
-        ▼
-   scripts/build_chatbot_csv.py
-        │
-        ▼
-data/processed/{m}_manual_chatbot_ready.csv
+   scripts/notion_export_v2.py / qc_v2.py / cross_check_v2.py
 ```
 
 ### 헬퍼 스크립트 책임 분담
 
 | 스크립트 | 입력 | 출력 | 무엇을 보장하는가 |
 | --- | --- | --- | --- |
+| `schema.py` | (모듈) | `COLUMNS`, `PETITION_TYPES`, `validate_row()` | 32컬럼 + enum의 단일 진실 원천 |
 | `show_progress.py` | chunk index + normalized MD | stdout (다음 chunk_id, 누적 통계) | 진행률 명시화 |
-| `append_block.py` | manual_key + chunk_id + block 파일 | normalized MD (append) | 마커 형식·hash·필수 필드 검증, atomic write (temp + rename) |
-| `replace_block.py` | manual_key + chunk_id + 신규 block | normalized MD (in-place replace) | hash drift 거부(=repair는 동일 hash에서만 의미), atomic write |
+| `append_block.py` | manual_key + chunk_id + block 파일 | normalized MD (append) | 마커 형식·hash·필수 필드 검증, atomic write |
+| `replace_block.py` | manual_key + chunk_id + 신규 block | normalized MD (in-place replace) | hash drift 거부, atomic write |
 | `show_flagged.py` | validator JSON | stdout (수리 대상 청크 목록) | 우선순위 정렬 |
+| `build_semantic_csv.py` | normalized MD | v2 CSV (32컬럼) | 신청종류별 행 펼침, 빈 셀 정규화, enum 강제 |
+| `notion_export_v2.py` | v2 CSV | Notion import 친화 CSV | 컬럼은 동일, 셀 가공 |
+| `qc_v2.py` / `cross_check_v2.py` | v2 CSV + normalized MD | 품질 리포트 | fill rate, 원문발췌 ↔ 라인범위 일치 |
 
 ### 왜 skill + Python 하이브리드인가
 
 | 작업 | 누가 | 왜 |
 | --- | --- | --- |
 | 청크 분할 (`<table>` 경계) | Python | 결정적, regex로 충분 |
-| 의미 추출 (한국 행정 자연어 → CSV 컬럼) | skill (LLM) | 정규식으로 다 표현하기 어려운 매핑. LlamaParse 시절의 999줄 분류기를 대체 |
+| 의미 추출 (한국 행정 자연어 → 32컬럼) | skill (LLM) | 정규식으로 다 표현하기 어려운 매핑 |
 | 행 단위 정합성 검증 (visa code/금액/서류명) | Python | 결정적 ground truth 비교. LLM이 자기 출력을 검증하면 같은 오류 재생산 |
 | CSV 빌드 (정규화 MD → CSV) | Python | 결정적, 단순 파싱. 스키마 강제 |
-| 챗봇 상황 태그·자연어 키워드 생성 | skill (LLM) | 자연어 생성 작업, 정규식으로 흉내내기 어려움 |
 | 품질 리포트 | Python | 통계·임계값 비교 |
 
 ### 캐싱 (정규화 MD 커밋)
 
-`data/parsed/normalized/` 와 `data/parsed/normalized_chatbot/` 는 `.gitignore` 예외로 커밋 대상입니다. 이 디렉토리가 곧 LLM 단계의 출력 캐시 역할을 하기 때문에, fresh clone에서 `scripts/build_*.py`만 실행해도 결정적으로 동일한 CSV가 재생성됩니다. skill을 다시 돌릴 필요는 입력(HWP, kordoc 출력, chunk index) 자체가 바뀐 경우뿐입니다.
+`data/parsed/normalized/` 는 `.gitignore` 예외로 커밋 대상입니다. 이 디렉토리가 곧 LLM 단계의 출력 캐시 역할을 하기 때문에, fresh clone에서 `scripts/build_semantic_csv.py`만 실행해도 결정적으로 동일한 v2 CSV가 재생성됩니다. skill을 다시 돌릴 필요는 입력(HWP, kordoc 출력, chunk index) 자체가 바뀐 경우뿐입니다.
 
 </details>
-
-## 파이프라인 단계별 시각화
-
-전체 9 단계의 산출물(청크, 정규화 MD, semantic/chatbot CSV, 품질 리포트)을 pandas + plotly로 한눈에 검토할 수 있는 노트북이 있습니다.
-
-```bash
-.venv/bin/jupyter notebook notebooks/04_pipeline_stages_visualization.ipynb
-```
-
-각 단계마다:
-- 청크 크기 분포, 비자코드 종류 분포
-- 정규화 행 수, validator 이슈 빈도
-- semantic CSV의 비자코드별/민원유형별 분포, 컬럼 누락률 히트맵
-- chatbot CSV의 상황 태그·키워드·라우팅 힌트 빈도
-- 품질 리포트의 검수 후보 목록
-
-노트북은 실행본을 커밋해 두어 GitHub에서도 시각화를 그대로 볼 수 있습니다.
 
 ## What To Edit
 
 - 매뉴얼이 새로 나오면: `data/raw/`의 HWP를 교체하고 Stage 1부터 다시.
-- 컬럼 스키마를 바꾸려면: [docs/data_columns.md](docs/data_columns.md), [.claude/skills/vizabridge-normalize/references/column_schema.md](.claude/skills/vizabridge-normalize/references/column_schema.md), `scripts/build_semantic_csv.py`의 `STAY_COLUMNS`/`VISA_COLUMNS`를 함께 수정.
+- 컬럼 스키마를 바꾸려면: **반드시 [scripts/schema.py](scripts/schema.py)에서만 수정** 후 [docs/data_schema_v2.md](docs/data_schema_v2.md)와 [.claude/skills/vizabridge-normalize/references/column_schema.md](.claude/skills/vizabridge-normalize/references/column_schema.md)를 동기화.
 - 정규화 규칙을 손보려면: `.claude/skills/vizabridge-normalize/references/*.md` 수정.
-- 챗봇 상황 태그/키워드 규칙을 손보려면: `.claude/skills/vizabridge-enrich-chatbot/references/*.md` 수정.
-- 검수 임계값을 바꾸려면: `scripts/quality_report_semantic_manual_csvs.py`의 `row_issues()` 수정.
+- 검수 임계값을 바꾸려면: `scripts/qc_v2.py` 수정.
 
 ## Design Rationale
 
-설계 결정 배경은 [docs/pipeline_strategy.md](docs/pipeline_strategy.md), 전체 사양서는 [docs/superpowers/specs/2026-05-14-hwp-kordoc-llm-pipeline-design.md](docs/superpowers/specs/2026-05-14-hwp-kordoc-llm-pipeline-design.md)에 있습니다.
+설계 결정 배경은 [docs/pipeline_strategy.md](docs/pipeline_strategy.md), 전체 사양서는 [docs/superpowers/specs/2026-05-14-hwp-kordoc-llm-pipeline-design.md](docs/superpowers/specs/2026-05-14-hwp-kordoc-llm-pipeline-design.md), 스키마 v2 사양은 [docs/data_schema_v2.md](docs/data_schema_v2.md)에 있습니다.
 
 핵심 요약:
 - **HWP/kordoc**: PDF/LlamaParse OCR가 한글·표 구조를 망쳤음. HWP는 원본 디지털 포맷이라 손실이 없음.
 - **정규화 MD 중간 표현**: LLM은 의미 분류만 담당. 그 결과를 결정적 Python이 CSV로 변환. 할루시네이션을 별도 layer에서 잡고 (Stage 4 validator), 수정도 일관된 흐름으로 (Stage 5 repair).
+- **v2 32컬럼 + 행 단위 (비자×신청)**: 한 비자코드가 사증발급/체류자격 변경/기간 연장별로 5~10행에 분산되어, 셀당 평균 길이가 작아지고 검수·임포트·후속 RAG 청킹이 모두 깔끔해짐.
 - **Claude Code 스킬**: 별도 API 결제 없이 동일한 Claude 모델로 처리. 재현성은 정규화 MD 커밋으로 확보.

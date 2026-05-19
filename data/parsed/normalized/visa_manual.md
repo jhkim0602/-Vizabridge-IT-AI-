@@ -1,38 +1,223 @@
 <!-- vizabridge-normalize v1 chunk: visa_001 hash: a8ea456a56bebea9 lines: 1-287 -->
 
+### row 공통 / 공통사항 / 제출서류
+- manual_type: 사증민원
+- visa_code: 공통
+- visa_name_ko: 공통사항
+- item_type: common_rule
+- section_title: 공통사항: 결핵진단서
+- subtype_or_program:
+- petition_type: 공통사항
+- subsection_type: 제출서류
+- applicant_context: |
+    국내에 90일을 초과하여 체류할 목적으로 사증을 신청하는 경우
+    단기체류자격 중 계절근로자(C-4-1~4) 및 국내 체류 중인 외국인 결핵환자가 가족 등을 간병인으로 초청하는 경우
+    과거 결핵진단서를 제출하고 국내에 장기체류하다가 완전출국 후 새로운 장기체류사증을 발급받으려는 경우
+- eligibility:
+- target_persons: 장기체류사증 신청자 등 결핵진단서 제출 대상자
+- common_documents:
+- mandatory_documents: |
+    - 결핵진단서
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: |
+    외교(A-1), 공무(A-2), 협정(A-3) 자격 소지자
+    만 6세 미만 소아(만 6세 이후 최초 체류허가 신청 시 제출) 및 임신부
+    고령 또는 질병으로 거동이 불가능한 사람
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 결핵진단서, 결핵 고위험국가, 장기체류사증, 외국인등록, 공통사항
+- source_page:
+- source_excerpt: |
+    국내에 90일 초과하여 체류할 목적*으로 사증을 신청하는 경우(전자사증 대상자의 경우에는 국내 입국 후 외국인등록 시 제출)
+    단기체류자격 중 계절근로자(C-4-1~4) 및 국내 체류 중인 외국인 결핵환자가 가족 등을 간병인으로 초청하는 경우
+- related_visa_codes: A-1, A-2, A-3, C-4
+- expected_questions: |
+    한국에서 오래 살 비자를 받으려면 결핵진단서를 꼭 내야 하나요?
+    결핵 고위험국가 출신이면 어떤 경우에 결핵진단서가 필요해요?
+    결핵진단서 안 내도 되는 경우가 있나요?
+
+### row 공통 / 공통사항 / 대상
+- manual_type: 사증민원
+- visa_code: 공통
+- visa_name_ko: 공통사항
+- item_type: common_rule
+- section_title: 공통사항: 결핵 고위험국가
+- subtype_or_program:
+- petition_type: 공통사항
+- subsection_type: 대상
+- applicant_context:
+- eligibility:
+- target_persons: |
+    네팔, 동티모르, 러시아, 말레이시아, 몽골, 미얀마, 방글라데시, 베트남, 태국, 스리랑카, 우즈베키스탄, 인도, 인도네시아, 중국, 캄보디아, 키르기스스탄, 파키스탄, 필리핀, 라오스, 카자흐스탄, 타지키스탄, 우크라이나, 아제르바이잔, 벨라루스, 몰도바공화국, 나이지리아, 남아프리카공화국, 에티오피아, 케냐, 콩고민주공화국, 모잠비크, 짐바브웨, 앙골라, 페루, 파푸아뉴기니
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit: 35개국
+- score_criteria:
+- table_summary: 결핵 고위험국가 35개국 명단
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 결핵 고위험국가, 35개국, 결핵진단서, 공통사항
+- source_page:
+- source_excerpt: |
+    네팔, 동티모르, 러시아, 말레이시아, 몽골, 미얀마, 방글라데시, 베트남, 태국, 스리랑카, 우즈베키스탄, 인도, 인도네시아, 중국, 캄보디아, 키르기스스탄, 파키스탄, 필리핀, 라오스, 카자흐스탄, 타지키스탄, 우크라이나, 아제르바이잔, 벨라루스, 몰도바공화국, 나이지리아, 남아프리카공화국, 에티오피아, 케냐, 콩고민주공화국, 모잠비크, 짐바브웨, 앙골라, 페루, 파푸아뉴기니
+- related_visa_codes:
+- expected_questions: |
+    어떤 나라들이 결핵 고위험국가로 분류돼요?
+    우리나라가 결핵 고위험국가에 들어가나요?
+
 ### row A-1 / 사증발급 / 대상
 - manual_type: 사증민원
 - visa_code: A-1
 - visa_name_ko: 외교
 - item_type: visa_rule
-- section_title: A-1 외교 / 사증발급
+- section_title: A-1 외교
+- subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
+- applicant_context:
 - eligibility: |
-    외국정부의 외교사절단이나 영사기관의 구성원 (대사, 공사, 참사관, 서기관, 총영사, 영사 등)
-    조약 또는 국제관행에 따라 외교사절과 동등한 특권과 면제를 받는 자 (UN 사무총장, 사무차장, 전문기구 사무국장, 국가원수, 각료, 양원의장, 정부주최 회의 외국정부 대표단 등)
-    상기자의 가족 (주재 외교관과 세대를 같이 하는 배우자, 자녀, 부모 등)
+    외국정부의 외교사절단이나 영사기관의 구성원
+    조약 또는 국제관행에 따라 외교사절과 동등한 특권과 면제를 받은 자
+    상기자의 가족
+- target_persons: |
+    - 대한민국에 접수된 대사, 공사, 참사관, 서기관 등의 외교직원
+    - 대한민국 정부에 접수된 총영사, 영사 등의 영사관
+    - 국제연합의 사무총장 및 사무차장, 국제연합전문기구의 사무국장 등
+    - 국가원수, 각료, 양원의장, 정부주최 회의에 출석하는 외국정부의 대표단 구성원 등
+    - 우리나라에 주재하는 외교관과 세대를 같이 하는 배우자, 자녀, 부모 등
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
 - duration_or_validity: 재임 기간
-- mandatory_documents: |
-    사증발급신청서 (별지 제17호 서식)
-    여권, 표준규격사진 1매, 수수료
-    파견·재직 증명 서류 또는 해당국 외교부장관의 협조공한
-    동반가족의 경우 가족관계증명서, 출생증명서 등
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 외교, 외교사절단, 영사기관, 외교관 여권, 가족, A-1
+- source_page:
+- source_excerpt: |
+    외국정부의 외교사절단이나 영사기관의 구성원
+    조약 또는 국제관행에 따라 외교사절과 동등한 특권과 면제를 받은 자
+    상기자의 가족
+- related_visa_codes: A-2, A-3, F-1
+- expected_questions: |
+    외교사절로 한국에 오면 어떤 비자를 받나요?
+    외교관 가족도 같이 비자 받을 수 있어요?
+    국제기구 직원도 외교비자 대상인가요?
 
-### row A-1 / 사증발급 / 절차
+### row A-1 / 사증발급 / 제출서류
+- manual_type: 사증민원
+- visa_code: A-1
+- visa_name_ko: 외교
+- item_type: required_documents
+- section_title: A-1 외교 / 공관장 재량 사증발급
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 제출서류
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    - 사증발급신청서 (별지 제17호 서식)
+    - 여권
+    - 표준규격사진 1매
+    - 수수료
+    - 파견, 재직을 증명하는 서류 또는 해당국 외교부장관의 협조공한
+- other_documents: |
+    외국정부의 외교사절단이나 영사기관의 구성원의 동반가족의 경우 본국에서 발급한 가족관계증명서, 출생증명서 등 가족관계 입증서류
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: |
+    신분증명서의 제시 등에 대하여 해당 신분임이 확인되는 때에는 구술서로 갈음할 수 있음
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 외교, 사증발급신청서, 협조공한, 가족관계증명서, A-1
+- source_page:
+- source_excerpt: |
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 파견, 재직을 증명하는 서류 또는 해당국 외교부장관의 협조공한(신분증명서의 제시 등에 대하여 해당 신분임이 확인되는 때에는 구술서로 갈음할 수 있음)
+    ③ 외국정부의 외교사절단이나 영사기관의 구성원의 동반가족에 경우에는 본국에서 발급한 가족관계증명서, 출생증명서 등 가족관계 입증서류
+- related_visa_codes:
+- expected_questions: |
+    외교비자를 받으려면 어떤 서류를 내야 해요?
+    외교관 가족이면 가족관계 증빙은 어떻게 준비하나요?
+
+### row A-1 / 사증발급 / 기간
 - manual_type: 사증민원
 - visa_code: A-1
 - visa_name_ko: 외교
 - item_type: visa_rule
-- section_title: A-1 외교 / 공관장 재량 사증발급
+- section_title: A-1 외교 / 사증 유효기간
+- subtype_or_program:
 - petition_type: 사증발급
-- subsection_type: 절차
-- applicant_context: |
-    복수사증협정국가(미국, 일본, 중국, 러시아, 우즈베키스탄 등) 외교관에게는 협정에 따른 복수사증
-    일시 외교업무 수행자에게는 유효기간 3월 단수사증
-    UN 및 산하기관 주재 직원과 가족에게 체류기간 91일 이상 단수사증
-- procedure: 재외공관 신청, 공관장 재량으로 단수/복수사증 발급
-- duration_or_validity: 단수사증, 복수사증 (협정국 국민) 또는 유효기간 3월
+- subsection_type: 기간
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity: |
+    재임 기간 (1회 부여 체류기간 상한)
+    외교(A-1) 자격 해당자에 대한 단수 또는 복수사증
+    복수사증협정국가(미국, 일본, 중국, 러시아, 우즈베키스탄 등) 국민에 대해 그 협정에 따라 발급하는 복수사증
+    일시적인 외교업무 수행자에게 발급하는 유효기간 3월의 단수사증
+    국제기구 직원의 복수사증 신청 시 유효기간 3년의 복수사증
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 외교, 재임 기간, 복수사증, 단수사증, 유효기간 3년, A-1
+- source_page:
+- source_excerpt: |
+    재임 기간
+    외교(A-1) 자격 해당자에 대한 단수 또는 복수사증
+    복수사증협정국가(미국, 일본, 중국, 러시아, 우즈베키스탄 등) 국민에 대해 그 협정에 따라 발급하는 복수사증
+    일시적인 외교업무 수행자에게 발급하는 유효기간 3월의 단수사증(단, 우리 외교관에게 복수사증을 발급하는 국가의 외교관에 대해서는 복수사증 발급)
+- related_visa_codes: F-1, C-3
+- expected_questions: |
+    외교비자는 얼마나 머물 수 있어요?
+    단수랑 복수 중에 어떤 게 나오나요?
+    국제기구 직원은 몇 년짜리 비자가 나와요?
 
 ### row A-1 / 사증발급인정서 / 대상
 - manual_type: 사증민원
@@ -40,65 +225,491 @@
 - visa_name_ko: 외교
 - item_type: visa_rule
 - section_title: A-1 외교 / 사증발급인정서
+- subtype_or_program: 사증발급인정서
 - petition_type: 사증발급인정서
 - subsection_type: 대상
-- applicant_context: 국내 소재 국제기구의 직원, 회의참석자 등에 대한 사증발급인정서 발급
-- eligibility: 국내 소재 국제기구 사무국 직원, 일시방문 국제기구 직원, 가사보조인, 성년자녀 등 체류자격에 관계없이 국제기구에서 초청하려는 자
-- procedure: 관할 출입국·외국인청(사무소·출장소)에서 사증발급인정서 발급
+- applicant_context: |
+    국내에 소재한 국제기구 사무국 등의 직원과 관계인의 입국 편의를 위해 관할 출입국·외국인청(사무소·출장소)에서 발급
+- eligibility:
+- target_persons: |
+    국제기구에서 초청하려는 자, 일시방문 국제기구 직원, 가사보조인, 성년자녀 등 체류자격에 관계없이 국제기구에서 초청하려는 자
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: |
+    국내 소재 국제기구 사무국 등
+- recommendation_or_approval:
+- keywords: 외교, 사증발급인정서, 국제기구, 초청, A-1
+- source_page:
+- source_excerpt: |
+    (사증발급인정서 발급) 국내에 소재한 국제기구 사무국 등의 직원과 관계인의 입국 편의를 위해 관할 출입국ㆍ외국인청(사무소ㆍ출장소)에서 사증발급인정서 발급도 가능
+    (대상) 국제기구에서 초청하려는 자, 일시방문 국제기구 직원, 가사보조인, 성년자녀 등 체류자격에 관계없이 국제기구에서 초청하려는 자
+- related_visa_codes:
+- expected_questions: |
+    국제기구에서 외교비자로 사람을 초청하려면 사증발급인정서를 받을 수 있나요?
+    국내 국제기구 사무국에서 가사보조인이나 자녀도 초청 가능해요?
 
 ### row A-2 / 사증발급 / 대상
 - manual_type: 사증민원
 - visa_code: A-2
 - visa_name_ko: 공무
 - item_type: visa_rule
-- section_title: A-2 공무 / 사증발급
+- section_title: A-2 공무
+- subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
+- applicant_context: |
+    대한민국정부가 승인한 외국정부 또는 국제기구의 공무를 수행하는 자와 그 가족
 - eligibility: |
-    외국정부 또는 국제기구의 공무를 수행하는 자: 외교사절단의 사무·기술·노무직원, 영사기관 직원, 대한민국 본부 국제기구 직원, 외국정부/국제기구 한국지사 직원, 한국 정부와 공적 업무로 파견된 자, 한국 정부 또는 국제기구 주최 회의 참가자
-    상기자의 가족 (동일 세대 구성원)
+    외국정부 또는 국제기구의 공무를 수행하는 자
+    상기자의 가족
+- target_persons: |
+    - 대한민국 정부가 승인한 외국정부 외교사절단의 사무직원 및 기술직원과 노무직원
+    - 대한민국정부가 승인한 영사기관의 사무직원 및 기술직원과 노무직원
+    - 대한민국에 본부를 둔 국제기구의 직원
+    - 외국정부 또는 국제기구가 대한민국에 있는 지사에서 대한민국정부와의 공적 업무를 위해 주재하는 직원
+    - 대한민국 정부와의 공적인 업무를 위해 외국정부 또는 국제기구에서 파견한 자
+    - 대한민국 정부 또는 국제기구가 주최하는 회의 등에 참가하는 자
+    - 상기자와 동일한 세대에 속하는 가족 구성원
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
 - duration_or_validity: 공무수행기간
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 공무, 외국정부, 국제기구, 사무직원, 가족, A-2
+- source_page:
+- source_excerpt: |
+    대한민국정부가 승인한 외국정부 또는 국제기구의 공무를 수행하는 자와 그 가족
+    ① 대한민국 정부가 승인한 외국정부 외교사절단의 사무직원 및 기술직원과 노무직원
+    ② 대한민국정부가 승인한 영사기관의 사무직원 및 기술직원과 노무직원
+- related_visa_codes: A-1, F-1, C-3
+- expected_questions: |
+    공무로 한국에 파견되면 어떤 비자를 받나요?
+    국제기구 사무직원도 공무비자 대상인가요?
+    공무비자 가족도 같이 받을 수 있어요?
+
+### row A-2 / 사증발급 / 제출서류
+- manual_type: 사증민원
+- visa_code: A-2
+- visa_name_ko: 공무
+- item_type: required_documents
+- section_title: A-2 공무 / 공관장 재량 사증발급
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 제출서류
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
 - mandatory_documents: |
-    사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    파견·재직 증명 서류 또는 외교부장관·소속부처 장관의 공한
-- restrictions: 관용여권 또는 신분증명서 소지 (일반여권은 공무수행자/국제기구 근무자와 그 가족에 한함)
+    - 사증발급신청서 (별지 제17호 서식)
+    - 여권
+    - 표준규격사진 1매
+    - 수수료
+    - 파견, 재직을 증명하는 서류 또는 해당국 외교부장관이나 소속부처 장관의 공한(공무수행임을 입증하는 내용 명시)
+- other_documents:
+- requirements: |
+    관용여권 또는 신분증명서 소지여부 확인
+    단 일반여권을 소지한 자는 공무수행자 또는 국제기구 근무자 및 그 가족에 한함
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 공무, 사증발급신청서, 공한, 관용여권, A-2
+- source_page:
+- source_excerpt: |
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 파견, 재직을 증명하는 서류 또는 해당국 외교부장관이나 소속부처 장관의 공한(공무수행임을 입증하는 내용 명시)
+    ※ 관용여권 또는 신분증명서 소지여부 확인, 단 일반여권을 소지한 자는 공무수행자 또는 국제기구 근무자 및 그 가족에 한함
+- related_visa_codes:
+- expected_questions: |
+    공무비자를 받으려면 어떤 서류를 내야 해요?
+    관용여권이 없으면 공무비자를 못 받나요?
+
+### row A-2 / 사증발급 / 기간
+- manual_type: 사증민원
+- visa_code: A-2
+- visa_name_ko: 공무
+- item_type: visa_rule
+- section_title: A-2 공무 / 사증 유효기간
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 기간
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity: |
+    공무수행기간 (1회 부여 체류기간 상한)
+    공무(A-2)의 체류자격에 해당하는 자에 대한 단수사증
+    외국정부 또는 국제기구의 공무수행자(가족 및 수행원 포함)에 대한 30일 이하 외교(A-1) 또는 공무(A-2) 체류자격에 해당하는 단수사증
+    우리나라에서 주재 근무하고자 하는 국제연합 및 산하기관의 직원과 그 가족에 대하여는 체류기간 91일 이상의 장기사증
+    국제기구 직원이 파견·재직증명서를 첨부하여 복수사증을 신청하는 경우 유효기간 3년의 복수사증
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 공무, 공무수행기간, 단수사증, 복수사증, 유효기간 3년, A-2
+- source_page:
+- source_excerpt: |
+    공무수행기간
+    공무(A-2)의 체류자격에 해당하는 자에 대한 단수사증
+    외국정부 또는 국제기구의 공무수행자(가족 및 수행원 포함)에 대한 30일 이하 외교(A-1) 또는 공무(A-2) 체류자격에 해당하는 단수사증
+    우리나라에서 주재 근무하고자 하는 국제연합 및 산하기관의 직원과 그 가족에 대하여는 체류기간 91일 이상의 장기사증을 발급할 수 있음
+- related_visa_codes: A-1, F-1, C-3
+- expected_questions: |
+    공무비자는 얼마나 머물 수 있어요?
+    국제기구 직원이면 몇 년짜리 복수비자가 나와요?
+
+### row A-2 / 체류자격외 활동허가 / 예외
+- manual_type: 사증민원
+- visa_code: A-2
+- visa_name_ko: 공무
+- item_type: exception
+- section_title: A-2 공무 / 국제기구 직원 가족의 체류자격외 활동
+- subtype_or_program:
+- petition_type: 체류자격외 활동허가
+- subsection_type: 예외
+- applicant_context: |
+    외교(A-1), 공무(A-2) 자격으로 근무중인 국제기구 직원의 동반가족
+- eligibility: |
+    배우자 및 미성년자녀에 대해 체류자격외 활동 허가
+    「녹색기후기금(GFC)」사무국 직원의 경우 배우자, 미성년자녀 외에 직원이 경제적으로 부양하고 있는 가계 구성원인 자녀에게도 체류자격외 활동허가 가능
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents: |
+    활동하고자 하는 체류자격에 해당하는 자격 등 입증서류
+- requirements:
+- procedure:
+- restrictions: |
+    단순노무분야(D-3, E-9, E-10, H-2 등)를 제외한 모든 체류자격에 해당하는 활동
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 공무, 국제기구, 가족, 체류자격외 활동허가, 녹색기후기금, A-2
+- source_page:
+- source_excerpt: |
+    ◦ 외교(A-1), 공무(A-2) 자격으로 근무중인 국제기구 직원의 동반가족 중 배우자 및 미성년자녀에 대해 체류자격외 활동 허가
+    - 다만, 「녹색기후기금(GFC)」사무국 직원의 경우 배우자, 미성년자녀 외에 직원이 경제적으로 부양하고 있는 가계 구성원인 자녀에게도 체류자격외 활동허가를 할 수 있음
+    * 단순노무분야( D3, E-9, E10, H2 등)를 제외한 모든 체류자격에 해당하는 활동
+- related_visa_codes: A-1, D-3, E-9, E-10, H-2
+- expected_questions: |
+    국제기구 직원 가족도 한국에서 일할 수 있어요?
+    공무비자 가족이 단순노무 일을 해도 되나요?
 
 ### row A-3 / 사증발급 / 대상
 - manual_type: 사증민원
 - visa_code: A-3
 - visa_name_ko: 협정
 - item_type: visa_rule
-- section_title: A-3 협정 / 사증발급
+- section_title: A-3 협정
+- subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
+- applicant_context:
 - eligibility: |
-    협정에 의해 외국인등록이 면제 또는 면제할 필요가 있다고 인정되는 자 (SOFA, Fulbright 등)
+    협정에 의하여 외국인등록이 면제 또는 면제할 필요가 있다고 인정되는 자
     상기자의 가족
+- target_persons: 협정에 의하여 외국인등록이 면제 또는 면제할 필요가 있다고 인정되는 자와 그 가족
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
 - duration_or_validity: 신분존속기간 또는 협정상의 체류기간
-- mandatory_documents: |
-    사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    파견·재직 증명 서류 또는 외교부장관·소속부처 장관의 공한
-- subtype_or_program: A-3-99 (Fulbright 협정 대상자에 대한 복수사증, 체류기간 및 유효기간은 한미교류재단 협조공한 상의 장학금 수혜기간)
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 협정, 외국인등록 면제, 신분존속기간, A-3
+- source_page:
+- source_excerpt: |
+    협정에 의하여 외국인등록이 면제 또는 면제할 필요가 있다고 인정되는 자
+    상기자의 가족
+    신분존속기간 또는 협정상의 체류기간
+- related_visa_codes: A-1, A-2
+- expected_questions: |
+    협정 비자는 누가 받을 수 있어요?
+    협정비자 받으면 얼마나 머물 수 있어요?
 
-### row B-1 / 사증면제 / 대상
+### row A-3 / 사증발급 / 제출서류
+- manual_type: 사증민원
+- visa_code: A-3
+- visa_name_ko: 협정
+- item_type: required_documents
+- section_title: A-3 협정 / 공관장 재량 사증발급
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 제출서류
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    - 사증발급신청서 (별지 제17호 서식)
+    - 여권
+    - 표준규격사진 1매
+    - 수수료
+    - 파견, 재직을 증명하는 서류 또는 해당국 외교부장관이나 소속부처 장관의 공한(공무수행임을 입증하는 내용 명시)
+- other_documents:
+- requirements:
+- procedure: |
+    대한민국 정부가 체결한 협정이나 합의각서 등에 사증발급에 관한 규정이 있는 때 또는 법무부장관이 호혜원칙 등을 고려하여 따로 정하는 때에는 그에 따라 사증발급(시행규칙 제13조 제1항)
+    사증발급대상자가 복수사증발급협정 등이 체결된 국가의 국민이라 하더라도 특별한 사유가 있는 때에는 단수사증발급 가능(시행규칙 제13조 제2항)
+- restrictions: |
+    사증발급인정서 발급 제외 대상임
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 협정, 사증발급신청서, 공한, A-3
+- source_page:
+- source_excerpt: |
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 파견, 재직을 증명하는 서류 또는 해당국 외교부장관이나 소속부처 장관의 공한(공무수행임을 입증하는 내용 명시)
+    사증발급인정서 발급 제외 대상임
+- related_visa_codes:
+- expected_questions: |
+    협정비자 받으려면 무슨 서류 내요?
+    협정비자는 사증발급인정서로 받을 수 있나요?
+
+### row A-3 / 사증발급 / 기간
+- manual_type: 사증민원
+- visa_code: A-3
+- visa_name_ko: 협정
+- item_type: visa_rule
+- section_title: A-3 협정 / Fulbright 협정대상자 (A-3-99)
+- subtype_or_program: A-3-99
+- petition_type: 사증발급
+- subsection_type: 기간
+- applicant_context: |
+    Fulbright 협정대상자
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity: |
+    협정(A-3)의 체류자격에 해당하는 자에 대한 복수사증
+    체류기간 및 유효기간은 한미교류재단 협조공한 상의 '장학금 수혜기간'
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval: |
+    한미교류재단 협조공한
+- keywords: 협정, Fulbright, 한미교류재단, 복수사증, 장학금 수혜기간, A-3, A-3-99
+- source_page:
+- source_excerpt: |
+    2. Fulbright 협정대상자에 대한 협정(A-3-99) 체류자격 사증발급
+    ◦협정(A-3)의 체류자격에 해당하는 자에 대한 복수사증
+    - 체류기간 및 유효기간은 한미교류재단 협조공한 상의 `장학금 수혜기간`
+- related_visa_codes:
+- expected_questions: |
+    Fulbright 장학생으로 한국에 가면 어떤 비자를 받아요?
+    Fulbright 협정비자는 얼마나 머물 수 있어요?
+
+### row B-1 / 사증발급 / 대상
 - manual_type: 사증민원
 - visa_code: B-1
 - visa_name_ko: 사증면제
 - item_type: visa_rule
 - section_title: B-1 사증면제
+- subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
-- eligibility: 대한민국과 사증면제협정을 체결한 국가의 국민으로 협정에 의한 활동을 하려는 자
+- applicant_context:
+- eligibility: |
+    대한민국과 사증면제협정을 체결한 국가의 국민으로서 그 협정에 의한 활동을 하려는 자
+- target_persons: 사증면제협정 체결국가 국민
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    출입국관리법 제7조 제2항 제2호: 대한민국과 사증면제협정을 체결한 국가의 국민으로서 그 협정에 따라 면제대상이 되는 사람
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
 - duration_or_validity: 협정상의 체류기간
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 사증면제, 사증면제협정, 협정상 체류기간, B-1
+- source_page:
+- source_excerpt: |
+    대한민국과 사증면제협정을 체결한 국가의 국민으로서 그 협정에 의한 활동을 하려는 자
+    2. 대한민국과 사증면제협정을 체결한 국가의 국민으로서 그 협정에 따라 면제대상이 되는 사람
+    협정상의 체류기간
+- related_visa_codes: B-2, C-3
+- expected_questions: |
+    우리나라랑 사증면제협정 맺은 국가에서 오면 비자 없이 들어올 수 있어요?
+    사증면제로 들어오면 얼마나 머물 수 있어요?
+
+### row B-1 / 사증발급 / 제한
+- manual_type: 사증민원
+- visa_code: B-1
+- visa_name_ko: 사증면제
+- item_type: restriction
+- section_title: B-1 사증면제 / 활동범위 제한
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 제한
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
 - restrictions: |
-    C-3 단기방문 활동범위 기본, 협정상 제외되는 활동은 불가
-    국가별 활동 범위 제한:
-    - 학업·취업 활동 제외: 러시아, 리투아니아
-    - 학업·영리 활동 제외: 도미니카공화국
-    - 취업·스포츠·연예활동 제외: 말레이시아
-    - 영리·취업·의료 활동 제외: 뉴질랜드
-    - 사업목적 가능: 브라질
-    - 제한없음: 멕시코, 네덜란드, 룩셈부르크, 벨기에, 핀란드 등
+    C-3(단기방문) 활동범위를 기본으로 하되 협정에 따라 제외되는 활동은 할 수 없으며, 협정에서 제외되는 활동을 하고자 입국하고자 할 때는 사증을 받아야 함
+    학업·취업 활동 제외: 러시아, 리투아니아
+    학업·영리 활동 제외: 도미니카공화국
+    취업, 스포츠를 포함한 연예활동 제외: 말레이시아
+    취업 활동 제외: 라이베리아, 방글라데시, 싱가포르, 태국, 터키, 파키스탄, 바베이도스, 칠레, 콜롬비아, 페루, 노르웨이, 덴마크, 스웨덴, 아이슬란드, 영국, 포르투갈, 레소토
+    영리활동 제외: 그리스, 독일, 리히텐슈타인, 스위스, 스페인, 프랑스, 헝가리, 튀니지
+    영리·취업·의료 활동 제외: 뉴질랜드
+    영리·취업 활동 제외: 이스라엘 등
+    사증면제협정체결 국가 국민인 경우에도 체류기간이 협정기간(통상 3월)을 초과하거나 단기취업 등 영리 혹은 유급행위에 종사하고자 하는 자는 반드시 해당 사증을 발급받아 입국하여야 함
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary: 국가별 협정상의 활동 범위
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 사증면제, 활동범위, 취업 제외, 영리 제외, 국가별 제한, B-1
+- source_page:
+- source_excerpt: |
+    C-3(단기방문) 활동범위를 기본으로 하되 협정에 따라 제외되는 활동은 할 수 없으며, 협정에서 제외되는 활동을 하고자 입국하고자 할 때는 사증을 받아야 함
+    ※ 예컨대, 말레이시아 국민이 친선경기 등을 위하여 입국하고자 할 경우에는 비자를 발급받아야 함
+    사증면제협정체결 국가 국민인 경우에도 체류기간이 협정기간(통상 3월)을 초과 하거나 단기취업 등 영리 혹은 유급행위에 종사하고자 하는 자는 반드시 해당 사증을 발급받아 입국하여야 함
+- related_visa_codes: C-3
+- expected_questions: |
+    사증면제로 들어와서 일해도 되나요?
+    어떤 나라는 사증면제로 와도 활동에 제한이 있어요?
+    사증면제 협정기간 넘게 머물려면 어떻게 해요?
+
+### row B-1 / 사증발급 / 기간
+- manual_type: 사증민원
+- visa_code: B-1
+- visa_name_ko: 사증면제
+- item_type: visa_rule
+- section_title: B-1 사증면제 / 사증면제협정 체결국가 일람표
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 기간
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure: |
+    입국심사 시 체류자격 및 체류기간 결정
+    가. 외교·관용여권소지자: 외교(A-1), 공무(A-2)
+    나. 일반여권소지자: 사증면제(B-1)
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity: |
+    국가별 협정상의 체류기간 (예시):
+    - 일본/말레이시아/싱가포르/태국 외교·관용·일반: 90일 또는 3개월
+    - 카자흐스탄 일반: 30일 (180일 내 최장 60일 체류)
+    - 러시아 외교·관용: 90일 / 일반: 60일 (180일 내 90일 초과 불가)
+    - 멕시코 일반: 3개월
+    - 독일/그리스/태국 외교·관용: 제한없음
+- quota_or_limit: |
+    외교여권 111, 관용여권 109, 일반여권 67, 선원수첩 19 (2022.9.22. 기준, 발효대기·일시정지 국가 제외)
+- score_criteria:
+- table_summary: 사증면제협정 체결국가 일람표 (2022.9.22. 기준)
+- table_rows: |
+    아시아주: 라오스(외교·관용 90일), 말레이시아(외교·관용·일반 3개월), 몽골(외교·관용 90일), 미얀마(외교·관용 90일), 베트남(외교·관용 90일), 싱가포르(외교·관용·일반 90일), 일본(외교·관용 90일), 중국(외교 30일, 관용 30일), 카자흐스탄(외교·관용 90일, 일반 30일), 태국(외교·관용 제한없음, 일반 90일), 인도네시아(외교·관용·공무 30일)
+    미주: 멕시코(일반 3개월, 외교·관용 90일), 브라질(외교·관용·일반 90일), 칠레(외교·관용·일반 90일), 콜롬비아(외교·관용·일반 90일)
+    유럽주: 독일(외교·관용 제한없음, 일반 90일), 영국(외교·관용·일반 90일), 프랑스(외교·관용·일반 90일), 러시아(외교·관용 90일, 일반 60일), 이탈리아(외교·관용·일반 90일)
+    아프리카주: 모로코(외교·관용·일반 90일), 이집트(외교·관용 90일), 튀니지(외교·관용·일반 30일)
+    대양주: 뉴질랜드(외교·관용·일반 3개월)
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 사증면제협정, 체결국가, 협정상 체류기간, 외교여권, 관용여권, 일반여권, B-1
+- source_page:
+- source_excerpt: |
+    | 외교여권 | 관용여권 | 일반여권 | 선원수첩 |
+    | --- | --- | --- | --- |
+    | 111 | 109 | 67 | 19 |
+    ※ 사증면제협정 발효대기․일시정지 국가 제외
+- related_visa_codes: A-1, A-2
+- expected_questions: |
+    우리나라 사증면제협정 체결국이 몇 개나 돼요?
+    일본 사람은 사증면제로 한국에 며칠 머물 수 있어요?
+    중국이나 러시아도 사증면제 대상에 들어가요?
 
 <!-- end chunk: visa_001 -->
 
@@ -114,51 +725,48 @@
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    관광·통과 등의 목적으로 대한민국에 사증 없이 입국하려는 자
+- applicant_context:
 - eligibility: |
-    출입국관리법 제7조에 따라 사증 없이 입국할 수 있는 자
-    재입국허가를 받은 사람 또는 재입국허가가 면제된 사람으로서 그 허가 또는 면제받은 기간이 끝나기 전에 입국하는 사람
-    대한민국과 사증면제협정을 체결한 국가의 국민으로서 그 협정에 따라 면제대상이 되는 사람
+    관광·통과 등의 목적으로 대한민국에 사증 없이 입국하려는 자
+- target_persons: |
+    관광·통과 목적 입국자
     국제친선, 관광 또는 대한민국의 이익 등을 위하여 입국하는 사람으로서 대통령령으로 정하는 바에 따라 따로 입국허가를 받은 사람
-    난민여행증명서를 발급받고 출국한 후 그 유효기간이 끝나기 전에 입국하는 사람
-- target_persons: 관광·통과 목적 입국자
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
 - procedure:
-- restrictions: |
-    사증면제협정 또는 관광통과 목적으로 입국한 자에 대하여는 원칙적으로 체류기간 연장이나 체류자격 변경허가를 하지 아니함
-    체류기간이 협정기간 또는 법무부장관이 따로 정하는 기간을 초과하는 경우에는 반드시 사증을 발급받아 입국하여야 함
+- restrictions:
 - exceptions:
 - fees:
-- duration_or_validity: 법무부장관이 따로 정하는 기간
+- duration_or_validity: |
+    1회 부여 체류기간 상한: 법무부장관이 따로 정하는 기간
+    활동범위: 관광·통과 (C-3 단기방문 활동범위를 기본으로 하되 상호주의에 따라 활동범위를 별도로 정한 경우 그에 따름)
 - quota_or_limit:
 - score_criteria:
-- table_summary: 무사증입국 허가대상 국가 일람표 (아시아 10국, 북미 2국, 남미 5국, 유럽 11국, 대양주 13국, 아프리카 5국, 외교관용여권만 적용 아시아 2국)
-- table_rows: |
-    일본 90일, 미국 90일, 캐나다 6개월, 호주 90일
-    마카오 90일, 홍콩 90일, 타이완 90일, 쿠웨이트 90일
-    사우디아라비아 30일, 바레인 30일, 브루나이 30일, 오만 30일, 카타르 30일
-    크로아티아 90일, 슬로베니아 90일, 세르비아 90일, 에콰도르 90일
-    레바논·인도네시아 30일 (외교관용여권 한정)
-    예멘 지정취소 2014.7.1., 이집트 지정취소 2018.9.1.
+- table_summary:
+- table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 관광통과, 무사증, 관광, 통과, B-2
+- source_page:
+- source_excerpt: |
+    관광·통과 등의 목적으로 대한민국에 사증 없이 입국하려는 자
+    1회 부여 체류기간의 상한: 법무부장관이 따로 정하는 기간
+    국제친선·관광 또는 대한민국의 이익 등을 위하여 법무부장관이 따로 정하는 국가 국민에 대하여 무사증입국 허용
+- related_visa_codes: B-1, C-3
 - expected_questions: |
-    한국 관광 가는데 비자 안 받고 들어갈 수 있는 나라가 어디예요?
-    무사증으로 들어갈 때 며칠까지 머물 수 있어요?
-    무사증으로 들어왔는데 체류기간 더 연장할 수 있나요?
+    한국에 관광 목적으로 갈 때 비자 없이 들어갈 수 있어요?
+    관광통과 자격은 얼마나 머물 수 있어요?
 
 ### row B-2 / 사증발급 / 제한
 - manual_type: 사증민원
 - visa_code: B-2
 - visa_name_ko: 관광통과
 - item_type: restriction
-- section_title: B-2 관광통과
+- section_title: B-2 관광통과 / 체류 연장·변경 제한
 - subtype_or_program:
-- petition_type: 사증발급인정서
+- petition_type: 사증발급
 - subsection_type: 제한
 - applicant_context:
 - eligibility:
@@ -169,6 +777,7 @@
 - requirements:
 - procedure:
 - restrictions: |
+    사증면제협정 또는 관광통과 목적으로 입국한 자에 대하여는 원칙적으로 체류기간 연장이나 체류자격 변경허가를 하지 아니하므로 체류기간이 협정기간 또는 법무부장관이 따로 정하는 기간을 초과하는 경우에는 반드시 사증을 발급받아 입국하여야 함
     사증면제(B-1), 관광통과(B-2) 자격은 사증발급인정서 발급 제외대상임
 - exceptions:
 - fees:
@@ -179,9 +788,66 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 관광통과, 체류기간 연장, 자격변경 제한, 사증발급인정서 제외, B-2
+- source_page:
+- source_excerpt: |
+    사증면제협정 또는 관광통과 목적으로 입국한 자에 대하여는 원칙적으로 체류기간 연장이나 체류자격 변경허가를 하지 아니하므로 체류기간이 협정기간 또는 법무부장관이 따로 정하는 기간을 초과하는 경우에는 반드시 사증을 발급받아 입국하여야 함
+    사증면제(B-1), 관광통과(B-2) 자격은 사증발급인정서 발급 제외대상임
+- related_visa_codes: B-1
 - expected_questions: |
-    무사증으로 입국 가능한 나라 국민도 사증발급인정서 신청할 수 있어요?
-    관광 목적으로 사증발급인정서 받을 수 있나요?
+    관광으로 한국에 들어왔는데 더 머물 수 있나요?
+    무사증으로 들어왔는데 다른 비자로 바꿀 수 있어요?
+
+### row B-2 / 사증발급 / 기간
+- manual_type: 사증민원
+- visa_code: B-2
+- visa_name_ko: 관광통과
+- item_type: visa_rule
+- section_title: B-2 관광통과 / 무사증입국 허가대상 국가 일람표
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 기간
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity: |
+    국가별 무사증 체류기간 (2022.9.22. 기준):
+    - 일본/마카오/홍콩/타이완/쿠웨이트: 90일
+    - 사우디아라비아/바레인/브루나이/오만/카타르: 30일
+    - 미국: 90일
+    - 캐나다: 6개월
+    - 호주/세르비아/슬로베니아/크로아티아/에콰도르: 90일
+    - 모나코/안도라/바티칸 등 유럽소국: 30일
+- quota_or_limit:
+- score_criteria:
+- table_summary: 무사증입국 허가대상 국가 일람표 (2022.9.22. 기준)
+- table_rows: |
+    아시아주(10): 사우디아라비아 30일, 마카오 90일, 바레인 30일, 브루나이 30일, 오만 30일, 일본 90일, 카타르 30일, 쿠웨이트 90일, 타이완 90일, 홍콩 90일
+    북미주(2): 미국 90일, 캐나다 6개월
+    남미주(5): 가이아나 30일, 아르헨티나 30일, 에콰도르 90일, 온두라스 30일, 파라과이 30일
+    유럽주(11): 모나코 30일, 몬테네그로 30일, 바티칸 30일, 사이프러스 30일, 산마리노 30일, 세르비아 90일, 슬로베니아 90일, 안도라 30일, 알바니아 30일, 크로아티아 90일, 보스니아헤르체고비나 30일
+    대양주(13): 괌·나우루·뉴칼레도니아·마셜제도·미크로네시아·사모아·솔로몬군도·키리바시·통가·투발루·팔라우·피지 30일, 호주 90일
+    아프리카주(5): 남아프리카공화국·모리셔스·세이셸·에스와티니 30일, 보츠와나 90일
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 무사증, 관광통과, 일람표, 국가별 체류기간, 90일, 30일, B-2
+- source_page:
+- source_excerpt: |
+    국제친선 ․ 관광 또는 대한민국의 이익 등을 위하여 법무부장관이 따로 정하는 국가 국민에 대하여 무사증입국 허용
+    아시아주(10) 사우디아라비아 30일, 마카오 90일, 일본 90일, 카타르 30일, 쿠웨이트 90일, 타이완 90일, 홍콩 90일
+- related_visa_codes:
+- expected_questions: |
+    미국 시민이면 무비자로 한국에 며칠 머물 수 있어요?
+    캐나다 사람도 무비자 대상이에요? 얼마나 있을 수 있어요?
+    일본 사람은 무비자로 얼마나 한국에 있을 수 있나요?
 
 ### row C-1 / 사증발급 / 대상
 - manual_type: 사증민원
@@ -192,44 +858,56 @@
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    외국언론사에서 단기간 취재·보도활동을 위해 입국하려는 자
+- applicant_context:
 - eligibility: |
     외국의 신문, 방송, 잡지, 기타 보도기관으로부터 파견되어 단기간 취재·보도활동을 하려는 자
     외국의 보도기관과의 계약에 의하여 단기간 취재·보도활동을 하려는 자
     외국 언론사의 지사 설치 준비를 위해 단기간 활동을 하는 자
-- target_persons: 외국언론사 파견 또는 계약 취재·보도 활동자
+- target_persons: |
+    외국 보도기관 파견 단기 취재·보도자
+    외국 보도기관 계약 단기 취재·보도자
+    외국 언론사 지사 설치 준비자
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
-- procedure:
+- procedure: |
+    지사 설치 후 계속 체류하게 되는 자에 대하여 취재(D-5) 자격으로 변경허가 가능
 - restrictions:
-- exceptions: |
-    지사 설치 후 계속 체류하게 되는 자는 취재(D-5) 자격으로 변경허가 가능
+- exceptions:
 - fees:
-- duration_or_validity: 90일
+- duration_or_validity: |
+    1회 부여 체류기간 상한: 90일
+    활동범위: 일시취재·보도, 외국언론사 지사 설치 준비
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 외국 신문·방송·잡지·기타 보도기관
+- inviter_context:
 - recommendation_or_approval:
+- keywords: 일시취재, 보도, 외신, 지사 설치, 단기 90일, C-1
+- source_page:
+- source_excerpt: |
+    외국의 신문, 방송, 잡지, 기타 보도기관으로부터 파견되어 단기간 취재․보도활동을 하려는 자
+    외국의 보도기관과의 계약에 의하여 단기간 취재․보도활동을 하려는 자
+    외국 언론사의 지사 설치 준비를 위해 단기간 활동을 하는 자
+    ※지사 설치 후 계속 체류하게 되는 자에 대하여 취재(D-5) 자격으로 변경허가 가능
+- related_visa_codes: D-5
 - expected_questions: |
-    외국 방송국에서 한국 취재하러 보내는데 비자 어떻게 받아요?
-    외국 언론사 지사 만들러 가는 출장은 어떤 비자예요?
-    단기 취재 끝나고 계속 활동하려면 비자 변경 가능해요?
+    외국 방송국에서 한국에 취재하러 가려면 어떤 비자를 받아요?
+    일시취재 비자는 얼마나 머물 수 있어요?
+    지사 설치 끝나면 비자를 어떻게 바꿔요?
 
 ### row C-1 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: C-1
 - visa_name_ko: 일시취재
 - item_type: required_documents
-- section_title: C-1 일시취재
+- section_title: C-1 일시취재 / 공관장 재량 사증발급
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 제출서류
-- applicant_context: 일시취재(C-1) 자격 해당자에 대한 체류기간 90일 이하의 단수사증
+- applicant_context:
 - eligibility:
 - target_persons:
 - common_documents:
@@ -245,32 +923,34 @@
 - restrictions:
 - exceptions:
 - fees:
-- duration_or_validity: 체류기간 90일 이하 단수사증
+- duration_or_validity: 체류자격 일시취재(C-1) 자격 해당자에 대한 체류기간 90일 이하의 단수사증 발급
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
-- recommendation_or_approval: |
-    재외공관의 장은 입국목적, 초청의 진정성, 초청자 및 피초청자의 자격 확인 등을 심사하기 위해 필요한 경우 첨부서류를 일부 가감할 수 있음
+- recommendation_or_approval:
+- keywords: 일시취재, 사증발급신청서, 파견증명서, 외신보도증, C-1
+- source_page:
+- source_excerpt: |
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 소속회사의 파견증명서, 재직증명서 또는 외신보도증
+- related_visa_codes:
 - expected_questions: |
-    단기 취재 비자 신청할 때 어떤 서류 내야 해요?
-    소속 회사 증명을 어떻게 해야 하나요?
-    공관에서 서류를 추가로 요구할 수도 있나요?
+    외신기자가 단기 취재로 한국에 가려면 무슨 서류 내야 해요?
+    소속회사 증빙은 어떤 걸 제출하나요?
 
 ### row C-1 / 사증발급인정서 / 제출서류
 - manual_type: 사증민원
 - visa_code: C-1
 - visa_name_ko: 일시취재
 - item_type: required_documents
-- section_title: C-1 일시취재 / 사증발급인정서
+- section_title: C-1 일시취재 / 특정국가 국민 사증발급인정서
 - subtype_or_program: 사증발급인정서
 - petition_type: 사증발급인정서
 - subsection_type: 제출서류
 - applicant_context: |
-    특정국가 국민에 대한 일시취재(C-1) 사증발급인정서 발급
-    특정국가 국민은 원칙적으로 법무부장관, 출입국·외국인청(사무소·출장소)장이 발급한 사증발급인정서에 따라 사증 발급
-    특정국가 거주 무국적자는 특정국가 국민의 사증발급기준에 준하여 처리
+    특정국가 국민은 원칙적으로 법무부장관, 출입국·외국인청장이 발급한 사증발급인정서에 따라 사증 발급
 - eligibility:
 - target_persons:
 - common_documents:
@@ -284,6 +964,7 @@
 - requirements:
 - procedure: |
     사증발급인정서를 제출하지 아니한 자에 대하여는 공관장이 사증발급승인을 요청하여 법무부장관의 승인을 받아 사증을 발급할 수 있음
+    특정국가 거주 무국적자는 특정국가 국민의 사증발급기준에 준하여 처리
 - restrictions:
 - exceptions:
 - fees:
@@ -293,12 +974,18 @@
 - table_summary:
 - table_rows:
 - inviter_context:
-- recommendation_or_approval: |
-    출입국·외국인청(사무소·출장소)장은 초청의 진정성, 초청자 및 피초청자의 자격 확인 등을 심사하기 위해 첨부서류의 일부를 가감할 수 있음
+- recommendation_or_approval:
+- keywords: 일시취재, 사증발급인정서, 특정국가, 외신보도증, 위임장, C-1
+- source_page:
+- source_excerpt: |
+    1. 특정국가 국민에 대한 일시취재(C-1) 사증발급인정서 발급
+    ① 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
+    ② 소속회사의 파견증명서, 재직증명서 또는 외신보도증
+    ➠ 대리인 신청시 : 위임장, 대리인 재직증명서, 대리인 신분증 사본 추가 제출
+- related_visa_codes:
 - expected_questions: |
-    외국 기자가 한국 단기 취재하러 올 때 사증발급인정서는 어떻게 받아요?
-    대리인이 신청하려면 어떤 서류가 추가로 필요해요?
-    인정서 없이 신청하는 경우도 가능한가요?
+    특정국가 출신 외신기자는 사증발급인정서가 꼭 필요해요?
+    대리인이 사증발급인정서를 신청할 때 어떤 서류 더 내요?
 
 ### row C-3 / 사증발급 / 대상
 - manual_type: 사증민원
@@ -309,8 +996,7 @@
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    시장조사, 업무연락, 상담, 계약 등의 상용활동 또는 관광, 통과, 요양, 친지 방문, 친선경기, 각종 행사·회의, 문화예술, 일반연수, 강습, 종교의식 참석, 학술자료 수집 등 90일 이내 체류 목적자
+- applicant_context:
 - eligibility: |
     시장조사, 업무연락, 상담, 계약 등의 상용활동
     관광, 통과, 요양, 친지 방문, 친선경기, 각종 행사나 회의 참가 또는 참관, 문화예술, 일반연수, 강습, 종교의식 참석, 학술자료 수집, 그 밖에 이와 유사한 목적으로 90일을 넘지 않는 기간 동안 체류하려는 사람
@@ -322,22 +1008,76 @@
 - procedure:
 - restrictions: |
     단기방문(C-3) 자격은 영리를 목적으로 하는 사람에게 발급할 수 없음 (일정한 노무, 기술 등을 제공하고 이에 상당한 보수를 받는 취업활동은 발급대상이 아님)
-    (실질적인 영리활동) 보수성 경비를 국내가 아닌 해외에서 지급받더라도 각종 계약에 의하여 국내 공·사 기관에 파견되어 실질적인 서비스를 제공하거나 사업 수주 등으로 국내 공·사 기관에 파견되어 실질적인 업무를 하는 경우는 단기 체류자격(B1, B2, C3)의 활동범위를 벗어난 것으로 영리행위에 해당
+    (실질적인 영리활동) 보수성경비를 국내가 아닌 해외에서 지급받더라도 각종 계약에 의하여 국내 공·사 기관에 파견되어 실질적인 서비스를 제공하거나 사업 수주 등으로 국내 공·사 기관에 파견되어 실질적인 업무를 하는 경우는 단기 체류자격(B1, B2, C3)의 활동범위를 벗어난 것으로 영리행위에 해당
 - exceptions:
 - fees:
-- duration_or_validity: 90일
+- duration_or_validity: 1회 부여 체류기간 상한 90일
 - quota_or_limit:
 - score_criteria:
-- table_summary: 체류자격 약호 세부 분류
-- table_rows: |
-    C-3-1 단기일반, C-3-2 단체관광 등, C-3-3 의료관광, C-3-4 일반상용, C-3-5 협정상 단기상용
-    C-3-6 우대기업초청 단기상용, C-3-7 도착관광, C-3-8 동포방문, C-3-9 일반관광, C-3-10 순수환승
+- table_summary:
+- table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 단기방문, 상용활동, 관광, 친지방문, 90일, 영리 제외, C-3
+- source_page:
+- source_excerpt: |
+    시장조사, 업무연락, 상담, 계약 등의 상용활동
+    관광, 통과, 요양, 친지 방문, 친선경기, 각종 행사나 회의 참가 또는 참관, 문화예술, 일반연수, 강습, 종교의식 참석, 학술자료 수집, 그 밖에 이와 유사한 목적으로 90일을 넘지 않는 기간 동안 체류하려는 사람
+    ※ 단기방문(C-3) 자격은 영리를 목적으로 하는 사람에게 발급할 수 없음
+- related_visa_codes: B-1, B-2, C-4, D-9
 - expected_questions: |
-    한국에 90일 정도 단기로 가서 일 보려는데 어떤 비자예요?
-    관광 말고 출장이나 회의 참가도 같은 비자로 받아요?
-    단기 비자로 일하면서 돈 받아도 되나요?
+    출장이나 관광으로 90일 동안 한국에 가려면 어떤 비자를 받아요?
+    단기방문 비자로 한국에서 일해도 되나요?
+    친지 방문으로 한국에 가려면 어떤 자격인가요?
+
+### row C-3 / 사증발급 / 점수표
+- manual_type: 사증민원
+- visa_code: C-3
+- visa_name_ko: 단기방문
+- item_type: visa_rule
+- section_title: C-3 단기방문 / 세부 약호 (C-3-1 ~ C-3-10)
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 점수표
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary: 단기방문(C-3) 세부 약호
+- table_rows: |
+    C-3-1 단기일반: 단기방문(C-3) 활동범위 내에 있는 모든 자 중 C-3-2~C-3-9 제외
+    C-3-2 단체관광 등: 보증개별, 단체관광 등 관광, 공항만 소무역활동 등 목적
+    C-3-3 의료관광: 의료관광 사증 및 사증발급인정서 발급지침 대상자 중 단기방문자
+    C-3-4 일반상용: 시장조사, 업무연락, 상담, 계약, 소규모 무역활동 등 상용활동자 및 APEC카드 소지자
+    C-3-5 협정상 단기상용: 협정에 따라 단기상용 목적 입국자 (CEPA, FTA - 인도·칠레)
+    C-3-6 우대기업초청 단기상용: 우대기업으로 선정된 기업·단체 초청자
+    C-3-7 도착관광: 공항에 입국하여 도착비자를 받아 입국하는 자
+    C-3-8 동포방문: 동포방문 사증 발급 대상자
+    C-3-9 일반관광: C-3-2(단체관광 등)에 포함되지 않는 일반 관광객
+    C-3-10 순수환승: 대한민국을 경유하여 제3국으로 여행하려는 자 (입국심사 목적 사용 불가)
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 단기방문, 세부약호, C-3-1, C-3-2, C-3-3, C-3-4, C-3-8, C-3-9, C-3-10, C-3
+- source_page:
+- source_excerpt: |
+    C-3-1 단기일반 단기방문(C-3) 활동범위 내에 있는 모든 자 중, 아래 순수관광(C-3-2) ~ 동포방문(C-3-9)을 제외
+    C-3-2 단체관광 등 체류기간 경과시 대행사(여행사)가 책임을 지는 보증개별, 단체관광 등 관광, 공항만 소무역활동 등을 목적으로 입국하려는 자
+    C-3-3 의료관광 의료관광 사증 및 사증발급인정서 발급지침 대상자 중 단기방문자
+- related_visa_codes:
+- expected_questions: |
+    단기방문 비자에 세부 종류가 있는데 뭐가 달라요?
+    의료 목적이면 단기방문 비자 중 어떤 걸 받아요?
+    동포가 한국에 잠깐 방문할 때 받는 단기방문 비자가 따로 있어요?
 
 ### row C-3 / 전자사증 / 대상
 - manual_type: 사증민원
@@ -349,16 +1089,21 @@
 - petition_type: 전자사증
 - subsection_type: 대상
 - applicant_context: |
-    해외 우수인력 및 관광객 유치지원 등을 위한 사증발급 절차 간소화의 일환으로 재외공관 방문 없이 온라인으로 사증을 발급 받을 수 있는 제도
+    해외 우수인력 및 관광객 유치지원 등을 위한 사증발급 절차 간소화의 일환으로 교수 등, 연구원 등에 대해 재외공관 방문 없이 온라인으로 사증을 발급 받을 수 있는 제도
 - eligibility: |
-    전문인력 및 전문인력의 동반가족 (교수 E-1, 연구 E-3, 기술지도 E-4, 전문직업 E-5, 첨단과학기술분야 고용추천서(GOLD CARD)를 발급받은 특정활동 E-7 자격 외국인) 및 그 배우자·미성년 자녀
-    외국인 환자와 동반가족 및 간병인 (의료관광 우수유치기관 초청)
-    상용목적 빈번 출입국자 (외국인 지문확인시스템 도입 후 3회 이상 단기방문 자격 입국, 국내 체류 중 불법체류·범법 없음, 국내 기업의 초청)
-    단체관광객 (재외공관장이 지정한 국외 전담여행사가 사증신청 대행)
-- target_persons:
+    전문인력 및 전문인력의 동반가족
+    외국인 환자와 동반가족 및 간병인
+    상용목적 빈번 출입국자
+    단체관광객
+- target_persons: |
+    - 교수(E-1), 연구(E-3), 기술지도(E-4), 전문직업(E-5), 첨단과학기술분야 고용추천서(GOLD CARD)를 발급받은 특정활동(E-7) 자격 외국인
+    - 상기 전문인력의 배우자 및 미성년 자녀
+    - 보건복지부에 등록한 외국인환자 유치기관 중 법무부장관이 "의료관광 우수 유치기관"으로 지정한 우수 유치기관에서 초청한 외국인 환자 및 그 동반자
+    - 외국인 지문확인시스템 도입 '12.1.1. 이후 3회 이상 단기방문(C-3) 자격으로 입국한 사실이 있고 국내 체류기간 중 불법체류나 기타 범법사실이 없었던 자로 상용목적으로 국내 기업(초청자)의 초청을 받은 자
+    - 재외공관장이 지정(법무부장관 승인)한 국외 전담여행사가 사증신청을 대행하는 단체관광객
 - common_documents:
 - mandatory_documents: |
-    상용목적 빈번 출입국자
+    상용목적 빈번 출입국자 제출서류:
     - 사증발급신청서, 여권, 사진, 수수료
     - 초청장(초청사유와 귀국보장 각서내용 포함)
     - 초청자 신분증 사본
@@ -368,164 +1113,54 @@
 - restrictions:
 - exceptions:
 - fees:
-- duration_or_validity: |
-    상용목적 빈번 출입국자: 일반상용(C-3-4) 체류기간 90일 이내, 유효기간 3월 단수사증
+- duration_or_validity: 일반상용(C-3-4), 체류기간 90일 이내, 유효기간 3월 단수사증
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context: |
-    의료관광: 보건복지부 등록 외국인환자 유치기관 중 의료관광 우수 유치기관으로 지정된 곳에서 초청
-    빈번출입국: 국내 기업(초청자)의 초청
+    국내 기업(초청자), 의료관광 우수 유치기관, 국외 전담여행사
 - recommendation_or_approval: |
-    의료관광 우수유치기관은 매년 9-10월 심사위원회를 통해 법무부 장관이 지정
-    단체관광객: 재외공관장이 지정(법무부장관 승인)한 국외 전담여행사가 사증신청 대행
+    산업통상자원부장관의 위임을 받은 대한무역투자진흥공사(KOTRA) 또는 중소기업청장의 위임을 받은 중소기업진흥공단이 해외 우수기술인재에게 발급하는 고용추천서
+- keywords: 전자사증, 전문인력, GOLD CARD, 의료관광 유치기관, 빈번 출입국자, KOTRA, C-3
+- source_page:
+- source_excerpt: |
+    【전자사증 제도는】해외 우수인력 및 관광객 유치지원 등을 위한 사증발급 절차 간소화의 일환으로 교수 등, 연구원 등에 대해 재외공관 방문 없이 온라인으로 사증을 발급 받을 수 있는 제도
+    - 교수(E-1), 연구(E-3), 기술지도(E-4), 전문직업(E-5), 첨단과학기술분야 고용추천서(GOLD CARD)를 발급받은 특정활동(E-7) 자격 외국인
+    3. 상용목적 빈번 출입국자
+    ◦ (발급대상) 외국인 지문확인시스템을 도입한 '12. 1. 1. 이후 3회이상 단기방문(C-3) 자격으로 입국한 사실이 있고 국내 체류기간 중 불법체류나 기타 범법사실이 없었던 자로 상용목적으로 국내 기업(초청자)의 초청을 받은 자
+- related_visa_codes: E-1, E-3, E-4, E-5, E-7
 - expected_questions: |
-    한국 전자비자는 어떤 사람이 받을 수 있어요?
-    의료 치료 받으러 갈 때 온라인으로 비자 신청 가능한가요?
-    상용 목적으로 자주 가는 사람도 전자비자 신청할 수 있어요?
+    한국에 자주 출장 가는 사람도 온라인으로 비자를 받을 수 있어요?
+    교수나 연구원도 전자사증을 받을 수 있나요?
+    외국인 환자가 의료관광 비자를 온라인으로 받을 수 있어요?
 
 ### row C-3 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: C-3
 - visa_name_ko: 단기방문
 - item_type: required_documents
-- section_title: C-3 단기방문 / 공관장 재량 발급
+- section_title: C-3 단기방문 / 공관장 재량 단수사증 (C-3-1, C-3-2, C-3-4)
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 제출서류
-- applicant_context: |
-    단기일반(C-3-1) 친선경기·행사·회의 참가자, 정부·기업 기술기능 단기 연마자, 가사보조인 동반 입국 국민, 난민 가족결합 신청자 등
-- eligibility:
-- target_persons: |
-    국내에서 개최되는 친선경기, 행사, 회의 참가자 (입상 시 상금 수령 가능한 골프·축구·콩쿠르 등 포함, 단 체재비를 상회하는 보수를 받는 자는 제외)
-    정부, 기업 등에서 기술·기능을 연마하기 위해 단기간 체류자
-    국외 생활근거지가 있는 국민이 인도적 사유로 현지 채용 가사보조인과 동반입국 (출산, 수술 간병, 장례 등)
-    난민법 제37조 인정 난민의 법적 배우자·미성년자녀 가족결합 신청자
-    순수관광(C-3-2)~일반관광(C-3-9) 제외한 단기방문(C-3) 활동범위 내 목적자
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서, 여권, 사진, 수수료
-    - 초청장 등 입국목적(행사, 일반연수 등) 소명 서류 (공관별 지정·운영)
-- other_documents:
-- requirements:
-- procedure:
-- restrictions: |
-    체재비를 초과하지 않는 보수를 받는 경우는 포함하나, 사실상 근로대가로서 보수를 받고 기술·기능을 습득하는 활동은 기술연수(D-3-1) 대상
-- exceptions:
-- fees:
-- duration_or_validity: 체류기간 90일 이내, 유효기간 3월 단수사증
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    한국에서 열리는 대회 출전하러 가려면 어떤 서류 내요?
-    국민이 해외 가사도우미를 데리고 한국 들어올 때 단기 비자 받을 수 있어요?
-    인정난민의 가족 결합 비자는 어떻게 신청해요?
-
-### row C-3 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: C-3
-- visa_name_ko: 단기방문
-- item_type: required_documents
-- section_title: C-3-2 단체관광 등
-- subtype_or_program: C-3-2
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    관광, 항만 소규모 무역활동 등을 목적으로 입국하려는 자로 체류기간 경과 시 대행사(여행사)가 책임을 지는 단체사증, 보증개별 사증 대상자
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서, 여권, 사진, 수수료
-    - 보증관련 서류
-- other_documents:
-- requirements:
-- procedure:
-- restrictions: |
-    단체관광객(C-3-2)과 보증개별사증(C-3-2) 소지자에 대해서는 출국할 선박 등이 없거나 귀화신청 등 부득이한 사유(인도적 사유, 항공편 결항, 입국당시 예측 못한 사고·질병 등)가 있는 경우에 한해 기존 지침에 따라 체류기간 연장 또는 자격변경 허용
-- exceptions:
-- fees:
-- duration_or_validity: 체류기간 90일(단체사증은 15일) 이내, 유효기간 3월
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 대행사(여행사)
-- recommendation_or_approval: |
-    공관 사정을 고려하여 공관장의 판단하에 추가서류 징구 가능
-- expected_questions: |
-    단체 관광으로 한국 가려면 서류 어떻게 내요?
-    단체관광 비자로 가서 체류 연장은 가능한가요?
-    단체비자는 며칠까지 머물 수 있어요?
-
-### row C-3 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: C-3
-- visa_name_ko: 단기방문
-- item_type: required_documents
-- section_title: C-3-4 일반상용
-- subtype_or_program: C-3-4
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    시장조사, 업무연락, 상담, 계약, 소규모 무역 기타 이와 유사한 목적으로 단기간 체류하려는 자
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서, 여권, 사진, 수수료
-    - 초청장(초청회사의 사업자등록증 또는 등기부등본 사본 포함) 등 상용목적 입증서류
-- other_documents:
-- requirements:
-- procedure:
-- restrictions: |
-    체재비를 초과하지 않는 보수를 받는 경우는 포함하나, 영리를 목적으로 하는 자는 제외
-    수입기계 등의 설치·유지보수, 조선 및 산업설비의 제작·감독 등을 위한 국내 공·사 기관 파견 활동은 영리행위로 단기 체류자격(B1, B2, C3)의 체류범위를 벗어난 행위이므로 단기취업(C-4) 또는 무역경영(D-9) 사증을 발급
-- exceptions: |
-    상용 등의 목적으로 활동하는 경제인 카드(APEC Business Travel Card, ABTC) 소지자는 복수사증 소지자와 동일하게 출입국 가능
-    한국 ABTC 효력: C-3, 90일, 복수사증과 동일
-- fees:
-- duration_or_validity: 체류기간 90일 이내, 유효기간 3월
-- quota_or_limit:
-- score_criteria:
-- table_summary: ABTC 가입국 현황 (18개국)
-- table_rows: |
-    한국, 일본, 호주, 뉴질랜드, 홍콩, 필리핀, 대만, 태국, 말레이시아, 브루나이, 페루, 칠레, 중국, 인도네시아, 파푸아뉴기니, 싱가포르, 베트남, 멕시코, 러시아
-- inviter_context: 국내 초청회사
-- recommendation_or_approval:
-- expected_questions: |
-    출장 가서 거래처 상담하려면 어떤 비자 받아요?
-    상용 비자 신청할 때 초청장은 어떻게 받나요?
-    APEC 비즈니스 카드 있으면 비자 따로 받아야 해요?
-
-### row C-3 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: C-3
-- visa_name_ko: 단기방문
-- item_type: required_documents
-- section_title: C-3-5 협정상 일반상용
-- subtype_or_program: C-3-5
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    한·인도 CEPA 대상자: 인도법인 소속으로서 상품·서비스 판매 협상 또는 투자회사 설립 준비 목적 방문자
-    한·칠레 자유무역협정 대상자: 연구·설계, 제조·생산, 마케팅, 영업, 유통, 사후서비스, 일반서비스 종사자
+- applicant_context:
 - eligibility:
 - target_persons:
 - common_documents: |
-    - 사증발급신청서, 여권, 사진, 수수료
+    - 사증발급신청서
+    - 여권
+    - 사진
+    - 수수료
 - mandatory_documents: |
-    한-인도 CEPA 대상자
-    - 인도 현지 소속 법인의 설립 관련 서류
-    - 재직기간이 명시된 재직증명서 또는 출장명령서
-    - 초청장 등 상품·서비스 판매 협상 목적 또는 투자회사 설립 준비 목적 입증서류
-    한-칠레 FTA 대상자
+    C-3-1 단기일반:
+    - 초청장 등 입국목적(행사, 일반연수 등)을 소명하는 서류
+    C-3-2 단체관광:
+    - 보증관련 서류
+    C-3-4 일반상용:
     - 초청장(초청회사의 사업자등록증 또는 등기부등본 사본 포함) 등 상용목적 입증서류
+    C-3-9 일반관광:
+    - 국내 체류 경비 지불을 위한 재정능력 또는 신분입증서류 (공관장이 지정, 최대 2종)
 - other_documents:
 - requirements:
 - procedure:
@@ -533,289 +1168,124 @@
 - exceptions:
 - fees:
 - duration_or_validity: |
-    한-인도 CEPA: 체류기간 90일 이내, 유효기간 3개월
-    한-칠레 FTA: 체류기간 6개월, 유효기간 3개월
+    C-3-1, C-3-2, C-3-4, C-3-9: 체류기간 90일 이내, 유효기간 3월
+    C-3-2 단체사증: 15일 이내
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 단기방문, 사증발급신청서, 초청장, 사업자등록증, 재정능력, C-3-1, C-3-2, C-3-4
+- source_page:
+- source_excerpt: |
+    1. 단기일반(C-3-1)
+    다. 제출 서류
+    ① 사증발급신청서, 여권, 사진, 수수료
+    ② 초청장 등 입국목적(행사, 일반연수 등)을 소명하는 서류
+    3. 일반상용(C-3-4)
+    라. 제출 서류
+    ① 사증발급신청서, 여권, 사진, 수수료
+    ② 초청장(초청회사의 사업자등록증 또는 등기부등본 사본 포함) 등 상용목적 입증서류
+- related_visa_codes:
 - expected_questions: |
-    인도에서 사업 협상하러 한국 가려면 어떤 비자예요?
-    칠레와 자유무역협정으로 한국에 일하러 갈 수 있나요?
-    협정 비자 받으면 얼마나 머무를 수 있어요?
+    단기방문 비자 받으려면 어떤 서류 내요?
+    출장 목적이면 초청장에 뭐가 들어가야 해요?
+    일반 관광 목적으로 가면 재정능력 증명을 어떻게 해요?
 
-### row C-3 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: C-3
-- visa_name_ko: 단기방문
-- item_type: required_documents
-- section_title: C-3-9 일반관광
-- subtype_or_program: C-3-9
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    단체관광 등(C-3-2)에 포함되지 않는 일반 관광객
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서, 여권, 사진, 수수료
-    - 국내 체류 경비 지불을 위한 재정능력 또는 신분입증서류 (최대 2종, 공관장 지정)
-- other_documents: |
-    동남아 출신 학생: 재학사실을 증명할 수 있는 서류(재학증명서 또는 학생증)와 부모의 재정능력 입증서류
-    인센티브 관광: 주관회사 보증서 제출 시 재정능력 입증서류 생략 가능 (공관장 판단)
-    복수사증발급대상자: 증명할 수 있는 서류 1종만 징구
-- requirements:
-- procedure:
-- restrictions:
-- exceptions: |
-    관광객 유치를 위하여 불법체류 가능성이 낮은 경우 동남아 출신 국민에게도 적극적으로 사증발급
-- fees:
-- duration_or_validity: 체류기간 90일 이내, 유효기간 3월
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    개인 관광으로 한국 가려면 어떤 서류 내야 해요?
-    재정능력 증명 서류는 뭘로 내요?
-    학생이라면 부모 서류로 대체 가능한가요?
-
-### row C-3 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: C-3
-- visa_name_ko: 단기방문
-- item_type: required_documents
-- section_title: C-3-10 순수환승
-- subtype_or_program: C-3-10
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    시리아, 수단, 예멘, 이집트 일반여권 소지자로서 대한민국을 경유하여 제3국으로 여행하려는 자
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서, 여권, 사진, 수수료
-    - 여행계획서 (대한민국 공항·만을 환승공항으로 정한 이유 등) 【서식3】
-- other_documents:
-- requirements:
-- procedure:
-- restrictions: |
-    입국심사 목적 사용 불가
-    환승구역 내 72시간 동안 임시 체재만 가능
-- exceptions: |
-    외교·관용여권 소지자는 순수환승(C-3-10) 사증 없이 환승 가능
-- fees:
-- duration_or_validity: C-3-10 단수사증 (유효기간 3개월, 체류기간 0일)
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    시리아 일반여권 소지자가 한국 환승으로 들어갈 때 어떤 비자가 필요해요?
-    환승 비자로 한국에 며칠 머무를 수 있어요?
-    환승 비자로 입국 심사대 통과해서 시내 나갈 수 있어요?
-
-### row C-3 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: C-3
-- visa_name_ko: 단기방문
-- item_type: required_documents
-- section_title: C-3 단기방문 / 더블사증
-- subtype_or_program: 더블사증
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    단수사증 발급 대상자로 6개월 이내 우리나라를 2회 출입국 하고자 하는 자
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 입국목적 입증자료 (단수사증과 동일)
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees: |
-    미화 70불 상당 금액
-    단, 가나 90불, 러시아 90불, 세네갈 120불, 아제르바이잔 120불, 영국 220불, 오스트리아 70불, 이란 90불, 타지키스탄 70불, 키르키즈스탄 80불, 호주 130불, 우즈베키스탄 80불 상당 금액 징수
-- duration_or_validity: 체류자격 단기일반(C-3-1~C-3-6), 체류기간 30일, 유효기간 6개월
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    6개월 안에 한국을 두 번 다녀와야 하는데 어떤 비자 받아요?
-    2회 입국 비자 수수료는 얼마예요?
-    더블 비자로 한 번에 얼마나 머무를 수 있어요?
-
-### row C-3 / 사증발급 / 대상
+### row C-3 / 사증발급 / 기간
 - manual_type: 사증민원
 - visa_code: C-3
 - visa_name_ko: 단기방문
 - item_type: visa_rule
-- section_title: C-3 중국 국민 복수사증
-- subtype_or_program: 복수사증
+- section_title: C-3 단기방문 / 중국 국민 복수사증 발급지침
+- subtype_or_program: C-3-1~C-3-9
 - petition_type: 사증발급
-- subsection_type: 대상
+- subsection_type: 기간
 - applicant_context: |
-    중국 국민(C-3-1~C-3-9. 단 C-3-2 제외) 복수사증 발급 대상자
+    중국 국민(C-3-1 ~ C-3-9. 단, C-3-2 제외)에 대한 5년/10년 복수사증
 - eligibility: |
-    유효기간 5년(체류기간 90일) 대상
-    대학(전문대 포함) 강사 등 교원 및 초·중·고교 교사 (조교수 이상은 10년 복수사증)
-    공관장이 인정한 유명 예술가, 연예인 및 운동선수
-    중국인 단체 관광객 인솔 여행사의 가이드로 3회 이상 입국 사실 있는 자
-    우리나라 방문경력 있는 자 (무사증·상륙허가 제외, 의료관광 진료비 200만원 초과 시 인정)
-    연간 교역액 미화 3만 불 이상 사기업의 관리자 이상 또는 2년 이상 정규 직원
-    부동산·금융재산·사업체 등 개인재산 200만 위안 이상 보유자
-    국내 취항 항공사·선사 임직원
-    국제신용카드 우수고객, 즈마신용점수 780점 이상, 유니온페이 프리미엄카드 소지자
-    월 5,000위안 이상 소득자
-    17세 미만 55세 이상자
-    우리나라 이외 4년제 대학 재학생·졸업생 (전자인증 학력인증서 제출)
-    국내 콘도미니엄 회원권(3,000만원 이상) 구매자
-    5년 복수사증 소지자의 배우자·미성년 자녀·부모 및 배우자의 부모
-    유효기간 10년(체류기간 90일) 대상
-    의사·변호사·교수·공사기업 대표 등 전문직업인 (사기업 자본금 50억 이상)
-    국내 4년제 대학 학사 이상 또는 해외 석사학위 이상 소지자
-    중국 공무원 또는 공무보통여권 소지자
-    100만불 이상 우리나라 투자기업 임직원
-    중국기업연합회 선정 500대 기업 과장급 이상 또는 6개월 이상 재직자
-    베이징·상하이·광저우·선전·쑤저우·샤먼·톈진·난징·항저우·닝보·우한·창사·칭다오·충칭 호구자 (C-3-91)
-    OECD 22개국 방문사증 소지 및 방문 경력자
+    유효기간 5년 사증발급 대상:
+    - 대학(전문대학 포함) 강사 등 교원 및 초·중·고교 교사 (조교수 이상은 10년 복수사증 가능)
+    - 공관장이 인정한 유명 예술가, 연예인 및 운동선수
+    - 중국인 단체 관광객 인솔 여행사의 가이드로 3회 이상 입국한 적이 있는 자
+    - 우리나라 방문경력이 있는 자
+    - 연간 교역액 미화 3만 불 이상 사기업의 관리자 이상 또는 2년 이상 정규 직원
+    - 부동산, 금융재산, 사업체 등 개인재산 200만 위안 이상 보유 입증자
+    - 월 5,000위안(연 60,000위안) 이상 소득이 있는 사람
+    - 17세 미만 55세 이상인 자
+    유효기간 10년 사증발급 대상:
+    - 의사, 변호사, 교수, 공·사기업(자본금 50억 이상) 대표 등 전문직업인
+    - 국내 4년제 대학 학사 이상 또는 해외 석사학위 이상 소지자
+    - 중국 공무원 또는 공무보통여권 소지자
+    - 100만불(10억원) 이상 우리나라에 투자한 기업의 임직원
+    - 중국기업연합회 선정 500대 기업의 과장급 이상 또는 6개월 이상 재직자
 - target_persons:
-- common_documents: |
-    - 사증발급신청서, 여권, 사진, 수수료
+- common_documents:
 - mandatory_documents: |
-    추가서류 (재정능력 또는 신분 입증서류 예시, 최대 2종)
-    - 재직증명서, 최근 6개월 신용카드 사용내역서, 사회보험 가입증명서, 납세증명서, 대학졸업증명서, 영주권 등 영주·장기체류자 입증서류, 특정단체 초청장, 연금수령 입증서류, 관리자 또는 정규직원 재직증명서, 아국과의 교역 내역 자료 등
+    - 사증발급신청서, 여권, 사진, 수수료
+    - 재직증명서, 신용카드 사용내역서, 사회보험 가입증명서, 납세증명서, 대학졸업증명서 등 (재정능력·신분 입증서류 중 2종 이내)
 - other_documents:
 - requirements:
-- procedure: |
-    연령, 출입국기록 등 여권 또는 자체 전산조회로 심사 가능한 경우 추가 서류 징구 자제
-    신분·학력·도시지역 호구 등 사증 신청 시 관련 확인서류 외 재정능력 입증서류 징구 자제
+- procedure:
 - restrictions:
 - exceptions:
 - fees:
 - duration_or_validity: |
     단기방문(C-3-2, C-3-10 제외), 체류기간 90일, 유효기간 5년 또는 10년
-    일반관광(C-3-9)은 신분 확실하거나 불법취업 가능성이 없으면 90일, 그 밖은 30일 이내
-- quota_or_limit:
-- score_criteria:
-- table_summary: OECD 방문사증 인정 22개국
-- table_rows: |
-    오스트리아, 벨기에, 덴마크, 프랑스, 독일, 그리스, 아이슬란드, 아일랜드, 이탈리아, 룩셈부르크, 네덜란드, 뉴질랜드, 노르웨이, 포르투갈, 스페인, 스웨덴, 스위스, 영국, 미국, 캐나다, 호주, 핀란드
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    중국 국민이 5년 복수비자 받으려면 어떤 조건이어야 해요?
-    중국 교수나 의사면 어떤 비자 받을 수 있어요?
-    중국에서 OECD 국가 방문 경력이 있으면 비자 받기 쉬워져요?
-
-### row C-3 / 사증발급 / 대상
-- manual_type: 사증민원
-- visa_code: C-3
-- visa_name_ko: 단기방문
-- item_type: visa_rule
-- section_title: C-3 한·몽골 사증발급 간소화 협정
-- subtype_or_program: 복수사증
-- petition_type: 사증발급
-- subsection_type: 대상
-- applicant_context: |
-    한·몽골 사증발급 간소화 협정대상자 (C-3-1~C-3-9) 복수사증 대상자
-- eligibility: |
-    우리나라 방문경력 있는 자 (무사증·상륙허가 제외)
-    공무원 또는 국영기업체 임직원(과장급 이상)
-    대한민국 취항 정기 항공사·선사 임직원(과장급 이상)
-    국제신용카드 우수고객
-    자원·에너지 개발·판매 등을 위한 기업 설치, 국내 공사기관 초청 상담·계약 활동자
-    국적취득자의 부모·자녀, 국민의 배우자 또는 정상적 혼인 1년 이상 국민의 배우자의 부모·미성년 자녀
-    단기방문(C-3) 복수비자 소지자의 배우자 및 미성년 자녀
-    의사·변호사·교수 등 전문직 종사자
-    공관장 인정 언론기관 1년 이상 재직자(기자·PD·편집인 등)
-    연간 납세실적 5억 투그릭 이상 기업 또는 납세실적 100대 우수기업 과장급 이상 1년 이상 재직자
-    대한민국 전문학사 이상 또는 해외 석사학위 이상 소지자
-    최근 6개월 사회보험 월평균 급여가 도시근로자 월평균임금 2배 이상 (공관장 인정)
-    유명 예술가·연예인·운동선수 (공관장 인정)
-    개인 자산 5억 투그릭 이상 보유자
-    배우자나 직계혈족이 1년 이상 장기체류 중인 자
-    OECD 22개국 방문사증 소지 및 방문 경력자
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서, 여권, 사진, 수수료
-    - 별첨 제출서류 참고 (공관 실정에 맞게 지정 운영)
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: |
-    단기방문(C-3-1~C-3-9), 체류기간 90일, 유효기간 3년 복수비자
-    유효기간 3년 복수사증 발급 후 과거 체류실태가 건전한 자는 체류기간 90일, 유효기간 5년 부여
+    단, 일반관광(C-3-9)의 체류기간은 신분이 확실하거나 불법취업 가능성이 없는 신청인에 대해서는 90일, 그 밖에는 30일 이내 부여
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 중국, 단기방문, 복수사증, 5년, 10년, 전문직업인, C-3
+- source_page:
+- source_excerpt: |
+    1. 중국 국민(C-3-1 ~ C-3-9. 단, C-3-2 제외)
+     유효기간 5년(체류기간 90일) 사증발급 대상
+    ① 대학(전문대학 포함) 강사* 등 교원 및 초․중․고교 교사
+    * 조교수 이상의 경우에는 유효기간 10년 복수사증 발급 가능
+     유효기간 10년(체류기간 90일) 사증발급 대상
+    ➀ 의사﹐변호사, 교수*, 공·사기업**대표 등 전문 직업인
+- related_visa_codes:
 - expected_questions: |
-    몽골 국민이 한국에 방문 경력이 있으면 복수비자 받을 수 있어요?
-    몽골 공무원이나 교수면 어떤 비자 발급되나요?
-    몽골 가족 비자는 어떻게 받아요?
+    중국 국적인데 한국 단기방문 복수비자 받으려면 어떤 조건이에요?
+    중국 대학 교수도 한국 복수비자 받을 수 있나요?
+    재산이나 소득이 얼마나 있으면 중국인이 5년 복수비자 받을 수 있어요?
 
-### row C-3 / 사증발급 / 대상
+### row C-3 / 사증발급 / 기간
 - manual_type: 사증민원
 - visa_code: C-3
 - visa_name_ko: 단기방문
 - item_type: visa_rule
-- section_title: C-3 동남아국가 복수사증
-- subtype_or_program: 복수사증
+- section_title: C-3 단기방문 / 동남아국가 국민 복수사증 발급
+- subtype_or_program: C-3-1~C-3-9
 - petition_type: 사증발급
-- subsection_type: 대상
+- subsection_type: 기간
 - applicant_context: |
-    동남아국가 국민 복수사증 발급(C-3-1~C-3-9, 단 C-3-2 제외)
-    대상국가: 미얀마, 캄보디아, 스리랑카, 인도네시아, 라오스, 네팔, 파키스탄, 필리핀, 베트남, 인도, 방글라데시
+    미얀마, 캄보디아, 스리랑카, 인도네시아, 라오스, 네팔, 파키스탄, 필리핀, 베트남, 인도, 방글라데시 국민
 - eligibility: |
-    유효기간 5년(체류기간 30일) 대상
-    우리나라 방문경력 있는 자
-    공무원, 국영기업체, 대한민국 취항 정기 항공사·선사 임직원
-    연간 미화 8천 달러 이상 소득자 또는 국제신용카드 우수고객
-    자원·에너지 개발·판매 회사 설치, 국내 공사기관 초청 상담·계약 활동자
-    정부·공공기관 초청 국제행사·국제회의 참가자 및 주요인사
-    기업체 대표, 상장회사 관리직 직원(1년 이상)
-    기자·PD·편집인 등 언론기관 종사자(1년 이상)
-    대학 강사 등 교원, 초·중·고교 교사(조교수 이상은 10년 복수사증), 공관장 인정 유력인사·예술가·운동가·작가·연예인
-    퇴직 후 연금수령 55세 이상자
-    국내 전문대학 졸업자
-    5년 복수사증 소지자의 배우자 및 미성년 자녀·부모·배우자의 부모
-    개인재산 20만불 이상 보유자
-    65세 이상자
-    유효기간 10년(체류기간 90일) 대상
-    의사·변호사·회계사·교수·공사기업 대표 등 전문직업인 (사기업 자본금 50억 이상)
-    대한민국 4년제 대학 학사 이상 또는 해외 석사학위 이상 소지자
-    중앙부처 과장급 이상 공무원 및 그 가족
-    현직 국회의원
-    OECD 22개국 방문사증 소지 및 방문 경력자
-    베트남 하노이, 호치민, 다낭 호구자
-    100만불 이상 투자기업 3년 이상 근무 정규직원
-    베트남·필리핀·인도네시아 100대 기업 및 캄보디아·미얀마·라오스 30대 기업 과장급 이상 직원
-    10년 복수사증 소지자의 배우자·미성년 자녀·부모·배우자의 부모
+    유효기간 5년 사증발급 대상:
+    - 우리나라를 방문한 경력이 있는 자
+    - 공무원, 국영기업체, 정기 항공사·선사 임직원
+    - 연간 미화 8천 달러 이상 소득자 또는 우수 신용카드 소지자
+    - 자원·에너지 개발·판매 관련 기업인
+    - 기업체 대표, 상장회사 관리직 직원(1년 이상 근무)
+    - 대학 강사 등 교원 및 초·중·고교 교사
+    - 퇴직 후 연금 수령 55세 이상
+    - 국내 전문대학 졸업자
+    - 부동산·금융재산·사업체 등 개인재산 20만불 이상 보유자
+    - 65세 이상인 자
+    유효기간 10년 사증발급:
+    - 의사, 변호사, 회계사, 교수, 공·사기업(자본금 50억 이상) 대표 등 전문직업인
+    - 대한민국 4년제 대학 학사 이상 또는 해외 석사학위 이상 소지자
+    - 중앙부처 과장급 이상 공무원 및 그 가족
+    - 현직 국회의원
 - target_persons:
 - common_documents:
-- mandatory_documents: |
-    - 첨부서류 참고 (공관별 실정에 맞게 제출서류 지정 운영)
+- mandatory_documents:
 - other_documents:
 - requirements:
 - procedure:
@@ -825,90 +1295,48 @@
 - duration_or_validity: |
     5년 복수사증: 단기방문(C-3-2, C-3-10 제외), 체류기간 30일
     10년 복수사증: 단기방문(C-3-2, C-3-10 제외), 체류기간 90일 이내
-    일반상용·관광 목적 신청 시에는 30일 이내로 발급하는 등 탄력적 부여
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 동남아, 단기방문, 복수사증, 베트남, 인도네시아, 필리핀, 인도, 5년, 10년, C-3
+- source_page:
+- source_excerpt: |
+    3. 동남아국가 국민에 대한 복수사증 발급(C-3-1 ~ C-3-9. 단, C-3-2 제외)
+    가. 발급 대상국가
+    미얀마, 캄보디아, 스리랑카, 인도네시아, 라오스, 네팔, 파키스탄, 필리핀, 베트남, 인도, 방글라데시
+- related_visa_codes:
 - expected_questions: |
-    베트남 사람이 한국 복수비자 받으려면 어떤 조건이어야 해요?
-    동남아 전문직 종사자가 받을 수 있는 10년 비자는 어떤 거예요?
-    동남아 100대 기업 임원이면 비자 더 쉽게 받나요?
+    베트남 사람도 한국 단기방문 복수비자 받을 수 있어요?
+    동남아 국가에서 의사나 교수면 10년짜리 복수비자 가능한가요?
+    한국 4년제 대학을 졸업하면 동남아 국민도 10년 복수비자 받을 수 있어요?
 
 ### row C-3 / 사증발급 / 대상
 - manual_type: 사증민원
 - visa_code: C-3
 - visa_name_ko: 단기방문
 - item_type: visa_rule
-- section_title: C-3 자원외교국가 복수사증
-- subtype_or_program: 복수사증
-- petition_type: 사증발급
-- subsection_type: 대상
-- applicant_context: |
-    자원외교국가 국민 복수사증 발급(C-3-1 또는 C-3-4)
-    대상국가: 러시아, 요르단, 투르크메니스탄, 우즈베키스탄, 카자흐스탄, 알제리, 아제르바이잔, 볼리비아, 에콰도르, 베네수엘라, 앙골라, 나이지리아, 콩고, 리비아, 우크라이나, 벨라루스, 조지아
-- eligibility: |
-    공무원 또는 국영기업체 임직원
-    대한민국 취항 정기 항공사·선사 임직원
-    국제신용카드 우수고객
-    최근 2년 이내 한국을 4회 이상 또는 통산 5회 이상 방문자
-    러시아는 한-러 단기 방문사증 발급 간소화 협정에 따라 최근 1년 이내 1회 이상 입국자도 대상
-    자원·에너지 개발·판매 등을 위한 기업 설치, 국내 공사기관 초청 상담·계약 활동자
-    단기방문(C-3-1, C-3-4, C-3-9) 복수사증 소지자의 배우자 및 미성년 자녀 (종전 C-2+C-3 복수 소지자 포함)
-    의사·변호사·교수 등 전문직 종사자
-    공관장 인정 언론기관 1년 이상 재직자
-    납세실적 100대 우수기업 과장급 이상 1년 이상 재직자
-    대한민국 4년제 대학 학사 이상 또는 해외 석사학위 이상 소지자
-- target_persons:
-- common_documents: |
-    - 사증발급신청서, 여권, 사진, 수수료
-- mandatory_documents: |
-    - 별첨2 제출서류 참고 (공관별 실정에 맞게 지정 운영)
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: 단기방문(C-3-1~C-3-9. 단 C-3-2 제외), 유효기간 1년, 체류기간 30일
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    러시아나 우즈베키스탄 국민이 한국 복수비자 받으려면 어떻게 해야 해요?
-    자원외교 대상국 국민이 받는 비자는 얼마짜리예요?
-    여러 번 방문한 적이 있어야 받을 수 있어요?
-
-### row C-3 / 사증발급 / 대상
-- manual_type: 사증민원
-- visa_code: C-3
-- visa_name_ko: 단기방문
-- item_type: visa_rule
-- section_title: C-3-1 결혼이민자 및 국적취득자 가족 특례
+- section_title: C-3 단기방문 / 결혼이민자 및 국적취득자 가족 특례 (C-3-1)
 - subtype_or_program: C-3-1
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    결혼이민자 및 대한민국 국적취득자의 가족에 대한 특례(C-3-1)
+- applicant_context:
 - eligibility: |
-    외국국적을 소지한 국민의 배우자 (단, 결혼동거 목적 신청은 발급대상 제외)
+    외국국적을 소지한 국민의 배우자 (단, 결혼동거 목적 신청 시 제외)
     대한민국 국민과 결혼하여 양국에 혼인신고를 마치고 1년 이상 정상적인 혼인관계를 유지하고 있는 자의 부모 및 미성년 자녀
     대한민국 국적을 취득한 자의 부모 및 자녀 (결혼이민자 불문)
 - target_persons:
 - common_documents:
 - mandatory_documents: |
-    - 사증발급신청서, 여권 사본
+    - 사증발급신청서
+    - 여권 사본
     - 가족관계를 입증할 수 있는 서류
 - other_documents:
 - requirements:
 - procedure:
-- restrictions: |
-    국민의 배우자가 결혼동거 목적으로 신청할 경우 발급대상 제외
+- restrictions:
 - exceptions:
 - fees:
 - duration_or_validity: 체류자격 단기일반(C-3-1), 체류기간 90일, 유효기간 5년 복수사증
@@ -918,40 +1346,54 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 단기방문, 결혼이민자 가족, 국적취득자 가족, 단기일반, C-3-1
+- source_page:
+- source_excerpt: |
+    5. 결혼이민자 및 대한민국 국적취득자의 가족에 대한 특례 (C-3-1)
+    가. 발급 대상
+    외국국적을 소지한 국민의 배우자
+    대한민국 국민과 결혼하여 양국에 혼인신고를 마치고 1년 이상 정상적인 혼인관계를 유지하고 있는 자의 부모 및 미성년 자녀
+    대한민국 국적을 취득한 자의 부모 및 자녀 (결혼이민자 불문)
+    나. 사증발급 발급 내용
+    체류자격 단기일반(C-3-1), 체류기간 90일 유효기간 5년 복수사증
+- related_visa_codes: F-6
 - expected_questions: |
-    한국 국민의 배우자 부모가 단기로 한국 가려면 어떤 비자 받아요?
-    한국 국적 취득한 사람의 부모도 비자 면제 혜택 있나요?
-    결혼이민자 가족 단기 비자는 얼마짜리예요?
+    한국인이랑 결혼한 사람의 부모도 한국 방문 비자 받을 수 있어요?
+    국적취득자 가족이면 어떤 단기방문 비자가 나와요?
+    국민 배우자가 결혼동거 목적이 아닐 때 어떤 비자를 받나요?
 
 ### row C-3 / 사증발급 / 대상
 - manual_type: 사증민원
 - visa_code: C-3
 - visa_name_ko: 단기방문
 - item_type: visa_rule
-- section_title: C-3-8 중국동포 복수사증
+- section_title: C-3 단기방문 / 중국동포 복수사증 (C-3-8)
 - subtype_or_program: C-3-8
 - petition_type: 사증발급
 - subsection_type: 대상
 - applicant_context: |
-    중국동포에 대한 복수사증발급(C-3-8)
-    재외동포의 출입국과 법적지위에 관한 법률 제2조제2호 외국국적동포로서 60세 이하인 자
+    「재외동포의 출입국과 법적지위에 관한 법률」제2조제2호에 해당되는 외국국적동포로서 60세 이하인 자
 - eligibility:
-- target_persons:
+- target_persons: 60세 이하 외국국적동포 (중국)
 - common_documents:
 - mandatory_documents: |
-    - 사증발급신청서, 여권 사본
-    - 외국국적동포임을 입증하는 국적국의 공적서류(거민증, 호구부 등)
-    - 해외범죄경력증명 (14세 이상 외국국적동포로서 동포방문(C-3-8) 사증 신청자)
-- other_documents: |
-    제출면제대상
+    - 사증발급신청서
+    - 여권 사본
+    - 외국국적 동포임을 입증하는 국적국의 공적서류(거민증, 호구부 등)
+    - 해외범죄경력증명 (14세 이상 외국국적동포로서 동포방문(C-3-8) 사증을 신청하는 사람)
+- other_documents:
+- requirements: |
+    범죄경력증명 서류: 해당 국가의 권한 있는 기관이 발급한 3개월 이내 공적문서로 자국 내의 모든 범죄 경력 포함
+    국적국 내 범죄경력 확인시스템 미흡 시 거주지 관할 내무기관 등의 증명서로 대체 가능
+    6개월 이상 해외에서 거주한 경우에는 거주기간 거주국 범죄경력 포함
+- procedure:
+- restrictions:
+- exceptions: |
+    범죄경력증명 제출면제대상:
     - 60세 이상인 사람
     - 13세 이하인 사람(형사 미성년자)
     - 국가유공자(독립유공자)와 그 유족
     - 특별공로(국익증진) 동포
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
 - fees:
 - duration_or_validity: 5년 유효한 동포방문(C-3-8, 090) 복수사증
 - quota_or_limit:
@@ -959,145 +1401,116 @@
 - table_summary:
 - table_rows:
 - inviter_context:
-- recommendation_or_approval: |
-    범죄경력증명: 해당 국가의 권한 있는 기관이 발급한 3개월 이내 공적문서로 자국 내의 모든 범죄 경력 포함 (시스템 미흡 시 거주지 내무기관 증명서 대체 가능, 6개월 이상 해외 거주 시 거주국 범죄경력 포함)
-    호구지 관할에 관계없이 사증발급 가능
-- expected_questions: |
-    중국 동포가 한국 방문 비자 받으려면 어떤 서류 내요?
-    중국 동포 비자는 얼마짜리예요?
-    14세 미만 동포는 범죄경력증명서 안 내도 되나요?
-
-### row C-3 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: C-3
-- visa_name_ko: 단기방문
-- item_type: required_documents
-- section_title: C-3-4 한·인도 사증절차간소화협정
-- subtype_or_program: C-3-4
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    한·인도 사증절차간소화협정 관련 사증발급(C-3-4)
-    상용방문자(Business visitor): 무역종사, 벤처산업 회사설립 준비 및 사업타당성 조사 방문, 공산품 구입·판매, 그 밖의 사업·투자 관련 활동 수행을 위한 기업인
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    5년 복수사증
-    - 인도정부 지정회사·단체(상공회의소, 사업·무역증진협회, 경제단체)의 요청서(a letter of request)
-    3년 복수사증
-    - 초청장(사증발급 신청 이유, 입국목적 등 적시)
-    - 사업자등록증 사본, 재직증명서, 사증신청인 또는 재직회사의 납세증명서
-    1년 복수사증
-    - 초청장, 사업자등록증 사본, 재직증명서, 사증신청인 또는 재직회사의 납세증명서
-- other_documents: |
-    기타 단기사증 (체류자격 단기방문 C-3-2 또는 C-3-1, 체류기간 90일, 5년 유효복수비자)
-    관광객 및 가족: 여행 비용 충당 재정능력 입증서류 (2년 소득세신고서 또는 6개월 은행예금 잔고증명서 등); 30세미만 학생은 부모 재정서류 대체 가능
-    회의·협의·교섭·교환 프로그램 또는 국제기구 행사 참석자: 관련 당국 발행 공식 초청장
-    국제체육경기 참가자: 경기 주관 기관의 공식 단체 초청장
-    국내 장기체류자격소지자의 가족구성원·친척: 가족·친척 입증 인도 당국 발행 서류, 장기체류자 외국인등록증 또는 사증 사본
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: |
-    상용 5년 복수사증: 지정회사·단체 요청서 제출 상용방문자
-    상용 3년 복수사증: 자원·에너지 개발·판매 회사 설립준비·협의·계약 위한 입국 상용방문자
-    상용 1년 복수사증: 자원·에너지 외 회사 국내 지사 설립 준비 또는 수출입 활동 상용방문자
-    체류기간 90일
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
 - recommendation_or_approval:
+- keywords: 동포방문, 중국동포, 외국국적동포, 거민증, 호구부, 해외범죄경력증명, C-3-8
+- source_page:
+- source_excerpt: |
+    6. 중국동포에 대한 복수사증발급(C-3-8)
+    가. 발급 대상
+    「재외동포의 출입국과 법적지위에 관한 법률」제2조제2호에 해당되는 외국국적동포로서 60세 이하인 자
+    다. 사증발급 내용
+    5년 유효한 동포방문(C-3-8, 090) 복수사증
+- related_visa_codes: F-4
 - expected_questions: |
-    인도 기업인이 한국 사업 협상 가려면 어떤 비자 받아요?
-    인도 관광객 비자는 어떻게 신청하나요?
-    인도 협정 비자는 몇 년짜리 복수비자로 나와요?
-
-### row C-3 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: C-3
-- visa_name_ko: 단기방문
-- item_type: required_documents
-- section_title: C-3-1 빈번출입국자 복수사증
-- subtype_or_program: C-3-1
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    빈번출입국자에 대한 복수사증 발급
-    최근 2년 이내 4회 이상 또는 통산 10회 이상 대한민국 출입국 사실이 있는 자 (최근 2년 이내 출입국기록 1회 이상 반드시 포함)
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서, 여권, 사진
-    - 수수료 면제
-- other_documents:
-- requirements: |
-    출입국기록 횟수 산입: 입국 및 출국 각 1회를 출입국기록 1회로 함
-    무사증 출입국기록(제주무사증, 무사증환승 포함) 및 등록외국인 재입국기록 포함
-- procedure: |
-    관할 대한민국 재외공관에 신청
-    매번 체류기간 소진 및 연장 등 체류행태가 의심되면 추가 소명자료 징구 정밀심사, 미소명 시 발급 불허
-- restrictions: |
-    신청 제외
-    - 무사증 입국불허국가 중 중국, 특정국가, 마케도니아, 코소보, 시리아 국가 국민
-    - 사증신청일 기준 3년 이내 불법체류 등 국내법 위반으로 500만 원 이상 통고처분이나 출국명령강제퇴거 명령 처분 받은 자
-    산입에서 제외되는 출입국 기록
-    - 비전문취업(E-9), 선원취업(E-10), 계절근로자(C-4) 등 단순노무 자격, 선원자격, 상륙허가 등으로 출입국한 기록
-- exceptions:
-- fees: 수수료 면제
-- duration_or_validity: 단기일반(C-3-1) 유효기간 5년 이내, 체류기간 30일
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    한국을 자주 다녔는데 비자 자주 안 받게 하는 제도 있어요?
-    빈번출입국자 복수비자는 수수료가 얼마예요?
-    어떤 사람은 자주 갔어도 신청할 수 없나요?
+    중국동포가 한국 방문 비자 받으려면 어떤 서류가 필요해요?
+    동포방문 비자 받을 때 범죄경력증명 꼭 내야 해요?
+    60세 넘은 동포는 범죄경력증명 안 내도 되나요?
 
 ### row C-3 / 사증발급인정서 / 대상
 - manual_type: 사증민원
 - visa_code: C-3
 - visa_name_ko: 단기방문
 - item_type: visa_rule
-- section_title: C-3-1 관광·휴양시설 투자이민자
+- section_title: C-3 단기방문 / 의료관광 유치기관 초청 (C-3-3)
+- subtype_or_program: C-3-3
+- petition_type: 사증발급인정서
+- subsection_type: 대상
+- applicant_context: |
+    의료관광 유치기관의 초청으로 국내 의료기관에서 진료 또는 요양할 목적으로 입국하고자 하는 외국인 환자
+- eligibility:
+- target_persons: |
+    외국인 환자
+    외국인 환자의 간병 등을 위해 동반입국이 필요한 배우자 등 동반가족 (외국인 환자의 배우자, 직계가족, 형제, 자매)
+    환자송출계약국가의 국비지원 대상자이거나 의료관광 우수 유치기관의 전자비자 초청자인 경우 4촌 이내 방계가족까지 허용
+- common_documents:
+- mandatory_documents: |
+    - 사증발급인정신청서(별지 제21호 서식)
+    - 여권사본
+    - 표준규격사진 1매
+    - 의료기관에서 발급한 의료목적 입증서류
+    - 치료 및 체류비용 조달 능력을 입증할 수 있는 서류
+    - 사업자등록증 사본 및 유치기관 등록증 사본
+    - 가족관계 입증서류(동반입국 필요 배우자 및 동반가족 한함)
+- other_documents:
+- requirements:
+- procedure: |
+    「의료법」상 외국인 환자 유치 의료기관 또는 유치업자로 등록한 자
+    유치기관으로 등록한 초청자가 온라인(visa.go.kr)으로 사증발급인정서를 신청하는 경우에만 허용
+- restrictions: |
+    아래 21개 국가 국민에게 C-3-3을 발급할 경우에는 체류기간 90일의 단수사증 또는 더블사증으로 발급:
+    중국, 필리핀, 인도네시아, 방글라데시, 베트남, 몽골, 태국, 파키스탄, 스리랑카, 인도, 미얀마, 네팔, 이란, 우즈베키스탄, 카자흐스탄, 키르키즈스탄, 우크라이나, 나이지리아, 가나, 이집트, 페루
+    베트남의 경우 '16.4.1.부터 사증발급인정서 및 전자사증 발급 제한
+- exceptions: |
+    우수 유치기관이 초청하는 경우에는 피초청인에 대한 재정능력 입증서류 생략 가능
+- fees:
+- duration_or_validity: |
+    치료 및 여행기간 90일 이하 단기: 체류자격 C-3-3, 체류기간 90일 이내, 단수사증 3월, 더블사증 6월, 복수사증 5년 이내
+    치료 및 여행기간 91일 이상 장기: 체류자격 G-1-10, 체류기간 1년 이내의 복수사증
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: |
+    의료법상 외국인 환자 유치 의료기관 또는 유치업자
+- recommendation_or_approval:
+- keywords: 의료관광, 외국인환자, 유치기관, 의료목적 입증서류, 사증발급인정서, C-3-3
+- source_page:
+- source_excerpt: |
+    3. 의료관광 유치기관의 초청을 받은 자(C-3-3)
+    가. 발급 대상
+    의료관광 유치기관*의 초청으로 국내 의료기관에서 진료 또는 요양할 목적으로 입국하고자 하는 외국인 환자
+    다. 사증발급인정서 발급 내용
+    치료 및 여행기간이 90일 이하 단기인 경우 : 체류자격 C-3-3, 체류기간 90일 이내로 하되, 사증유효기간은 단수사증 3월, 더블사증 6월 및 복수사증은 5년 이내
+- related_visa_codes: G-1
+- expected_questions: |
+    의료관광으로 한국 가려면 어떤 비자를 받아요?
+    외국인 환자 동반가족도 같이 한국에 갈 수 있어요?
+    91일 넘게 치료가 필요하면 어떤 비자로 바꿔야 해요?
+
+### row C-3 / 사증발급인정서 / 대상
+- manual_type: 사증민원
+- visa_code: C-3
+- visa_name_ko: 단기방문
+- item_type: visa_rule
+- section_title: C-3 단기방문 / 관광·휴양시설 투자이민자 (C-3-1)
 - subtype_or_program: C-3-1
 - petition_type: 사증발급인정서
 - subsection_type: 대상
 - applicant_context: |
-    관광·휴양시설 투자이민자에 대한 복수사증 발급(C-3-1)
     투자시설에 기준금액 이상을 투자한 외국인 및 법인의 임원, 주주와 그 동반가족(부모, 배우자, 자녀, 배우자의 부모)으로서 외국인 등록을 하지 않고 수시 방문하고자 하는 사람
-- eligibility: |
-    기준금액 이상이 본인의 해외자본으로 투자되었음을 입증
-    투자 완료 경우에 한하며, 투자 예정·진행 중은 제외
+- eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents: |
     - 사증발급인정신청서, 여권 사본
     - 부동산 매매계약서, 부동산 등기부등본
-    - 국내 외국환은행에서 발행한 국제송금 전신문, 외국환매입증명서 등 (신용카드 결제 시 결제정보 확인서, 신용카드 매출전표 사본, 분양회사 입금영수증, 카드 사본 등)
-    - 가족관계 증명서 (배우자, 미혼 자녀 송금 또는 동반 신청 시)
+    - 국내 외국환은행에서 발행한 국제송금 전신문, 외국환매입증명서 등
+    - 가족관계 증명서 (배우자, 미혼 자녀의 송금 또는 동반 신청 시에 한함)
 - other_documents:
 - requirements: |
-    결격사유 (아래 어느 하나에 해당되지 아니하여야 함)
-    - 금고 이상 실형 선고 후 집행 종료·면제일로부터 5년 미경과
-    - 금고 이상 형 집행유예 선고 판결확정일로부터 5년 미경과
-    - 300만 원 이상 벌금형 납부일로부터 3년 미경과
-    - 강제퇴거명령 출국일로부터 7년 또는 출국명령 출국일로부터 5년 미경과
-    - 신청일 기준 3년 이내 출입국관리법 위반 범칙금자로 체류허가 제한사유 있는 경우
-    - 입국금지 사유 또는 안전보장·질서유지·공공복리·이익 침해 우려
-    - 허위 서류 제출
-    - 투자시설에 매도·임대·담보·압류 등이 이루어지거나 수익 목적 활용
+    기준금액 이상이 본인의 해외자본으로 투자되었음을 입증
+    투자를 완료한 경우에 한하며, 투자 예정 또는 투자 진행 중인 자는 대상 아님
 - procedure: |
-    투자시설 소재지(투자시설이 2곳 이상인 경우 투자금액이 많은 지역) 관할 출입국·외국인청(사무소·출장소)에 신청
-- restrictions:
+    신청기관: 투자시설 소재지(투자시설이 2곳 이상인 경우 투자금액이 많은 지역) 관할 출입국·외국인청(사무소·출장소)
+- restrictions: |
+    결격사유:
+    - 국내법을 위반하여 금고 이상의 실형을 선고받고 형 집행 종료 또는 면제일로부터 5년이 지나지 않은 경우
+    - 금고 이상 형의 집행유예 판결확정일로부터 5년 미경과
+    - 300만 원 이상 벌금형 납부일로부터 3년 미경과
+    - 강제퇴거명령 출국일 7년/출국명령 출국일 5년 미경과
+    - 입국금지 사유 해당
+    - 허위 서류 제출
+    - 투자시설에 매도·임대·담보·압류 등이 이루어지거나 수익 목적으로 활용한 경우
 - exceptions:
 - fees:
 - duration_or_validity: 체류자격 단기일반(C-3-1), 체류기간 90일, 유효기간 3년 복수사증
@@ -1106,140 +1519,47 @@
 - table_summary:
 - table_rows:
 - inviter_context:
-- recommendation_or_approval: |
-    영주(F-5) 자격 취득을 위해서는 우선 거주(F-2)자격 변경과 외국인 등록 필요
+- recommendation_or_approval:
+- keywords: 단기방문, 관광휴양시설 투자이민, 부동산, 동반가족, 사증발급인정서, C-3-1
+- source_page:
+- source_excerpt: |
+    1. 관광·휴양시설 투자이민자에 대한 복수사증 발급(C-3-1)
+    가. 신청 대상자
+    투자시설에 기준금액 이상을 투자한 외국인 및 법인의 임원, 주주와 그 동반가족(부모, 배우자, 자녀, 배우자의 부모)으로서 외국인 등록을 하지 않고 수시 방문하고자 하는 사람
+    라. 사증발급인정서 발급 내용
+    체류자격 단기일반(C-3-1), 체류기간 90일, 유효기간 3년 복수사증
+- related_visa_codes: F-2, F-5
 - expected_questions: |
-    한국 휴양시설에 투자한 외국인이 받는 복수비자는 어떤 거예요?
-    투자이민 비자 신청 시 어떤 서류 내요?
-    투자 비자 받았는데 영주권 받으려면 어떻게 해요?
+    관광·휴양시설에 투자하면 한국 단기방문 복수비자 받을 수 있어요?
+    투자이민자 가족도 같이 한국 단기방문 비자 받을 수 있어요?
+    영주 비자를 받으려면 어떤 단계를 거쳐야 하나요?
 
 ### row C-3 / 사증발급인정서 / 대상
 - manual_type: 사증민원
 - visa_code: C-3
 - visa_name_ko: 단기방문
 - item_type: visa_rule
-- section_title: C-3-1 공익사업 투자외국인
-- subtype_or_program: C-3-1
-- petition_type: 사증발급인정서
-- subsection_type: 대상
-- applicant_context: |
-    공익사업 투자외국인 및 동반가족(C-3-1)
-    공익사업 투자이민 펀드에 투자한 외국인(은퇴투자이민자) 및 법인의 임원, 주주와 그 동반가족(부모, 배우자, 자녀, 배우자의 부모)으로서 외국인등록을 하지 않고 수시 방문하고자 하는 사람
-- eligibility: |
-    기준금액 이상이 본인의 해외자본으로 투자되었음을 입증
-    투자 완료 경우에 한함
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 신청서, 여권사본, 수수료
-    - 투자금 납입 증명 서류 (투자 유치기관 장의 직인 날인 투자 확인서, 계좌이체 내역서 등)
-    - 공익투자 전담은행에서 발행한 국제송금 전신문, 외국환매입증명서 등
-    - 가족관계 증명서 (투자자 배우자·미성년 자녀 송금 또는 부모 등 가족 신청 시)
-    - 투자 법인의 현직 임원 또는 과점주주(F-2 자격변경허가 기준) 입증서류 및 당사자 명단 명시된 해당 법인의 공문
-    - 국외에서 투자자 명의로 법인에 투자금을 송금·지불 입증서류 (법인의 임원·주주 해당자)
-- other_documents:
-- requirements: |
-    결격사유 (아래 어느 하나에 해당되지 아니하여야 함)
-    - 금고 이상 실형 선고 후 집행 종료·면제일로부터 5년 미경과
-    - 금고 이상 형 집행유예 선고 판결확정일로부터 5년 미경과
-    - 300만 원 이상 벌금형 납부일로부터 3년 미경과
-    - 강제퇴거명령 출국일로부터 7년 또는 출국명령 출국일로부터 5년 미경과
-    - 신청일 기준 3년 이내 출입국관리법 위반 범칙금자로 체류허가 제한사유 있는 경우
-    - 입국금지 사유 또는 안전보장·질서유지·공공복리·이익 침해 우려
-    - 허위 서류 제출
-- procedure: |
-    원금보장·무이자형 투자 외국인: 서울출입국·외국인청 세종로 출장소 또는 제주출입국·외국인청(제주도 체류자에 한함)
-    손익발생형 투자 외국인: 해당 개발사업자가 등록된 청(사무소·출장소)
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: 체류자격 단기일반(C-3-1), 체류기간 90일, 유효기간 3년 복수사증의 사증발급인정서
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval: |
-    영주(F-5) 체류자격 변경을 위해서는 거주(F-2) 체류자격 변경과 외국인 등록 필요
-- expected_questions: |
-    공익사업에 투자한 은퇴 외국인은 어떤 비자 받아요?
-    공익투자 비자 신청은 어디서 해요?
-    공익투자 비자 받아도 가족도 같이 올 수 있어요?
-
-### row C-3 / 사증발급인정서 / 대상
-- manual_type: 사증민원
-- visa_code: C-3
-- visa_name_ko: 단기방문
-- item_type: visa_rule
-- section_title: C-3-3 의료관광 유치기관 초청
-- subtype_or_program: C-3-3
-- petition_type: 사증발급인정서
-- subsection_type: 대상
-- applicant_context: |
-    의료관광 유치기관의 초청으로 국내 의료기관에서 진료 또는 요양할 목적으로 입국하고자 하는 외국인 환자
-    의료관광 유치기관: 의료법에 따라 보건복지부 장관에게 외국인환자 유치 의료기관 또는 외국인환자 유치업자로 등록을 마친 자
-    외국인 환자의 간병 등을 위해 동반입국이 필요한 배우자 등 동반가족(외국인 환자의 배우자, 직계가족, 형제, 자매)
-- eligibility:
-- target_persons: |
-    외국인 환자
-    환자송출계약국가 국비지원 대상자 또는 의료관광 우수 유치기관 전자비자 초청자는 4촌 이내 방계가족까지 허용
-- common_documents:
-- mandatory_documents: |
-    - 사증발급인정신청서(별지 제21호 서식), 여권사본, 표준규격사진 1매
-    - 의료기관에서 발급한 의료목적 입증서류
-    - 치료 및 체류비용 조달 능력을 입증할 수 있는 서류 (우수 유치기관 초청 시 생략 가능)
-    - 사업자등록증 사본 및 유치기관 등록증 사본 (회원가입자는 기존 서류 제출로 대체)
-    - 가족관계 입증서류 (결혼증명서·가족관계기록사항에 관한 증명서 또는 출생증명서 등; 동반입국 배우자·동반가족에 한함)
-- other_documents:
-- requirements: |
-    의료법상 외국인 환자 유치 의료기관 또는 유치업자로 등록한 자가 온라인(visa.go.kr)으로 사증발급인정서를 신청하는 경우에만 허용 ('12. 1. 1. 시행)
-- procedure:
-- restrictions: |
-    21개 국가(중국, 필리핀, 인도네시아, 방글라데시, 베트남, 몽골, 태국, 파키스탄, 스리랑카, 인도, 미얀마, 네팔, 이란, 우즈베키스탄, 카자흐스탄, 키르키즈스탄, 우크라이나, 나이지리아, 가나, 이집트, 페루) 국민에게 C-3-3 발급 시 체류기간 90일 단수사증 또는 더블사증으로 발급
-    베트남의 경우 '16.4.1.부터 사증발급인정서 및 전자사증 발급 제한
-- exceptions:
-- fees:
-- duration_or_validity: |
-    치료 및 여행기간 90일 이하 단기: 체류자격 C-3-3, 체류기간 90일 이내, 사증유효기간 단수 3월, 더블 6월, 복수 5년 이내
-    치료 및 여행기간 91일 이상 장기: 체류자격 G-1-10, 체류기간 1년 이내의 복수사증
-- quota_or_limit:
-- score_criteria:
-- table_summary: 21개국 단수사증 또는 더블사증 제한
-- table_rows: |
-    중국, 필리핀, 인도네시아, 방글라데시, 베트남, 몽골, 태국, 파키스탄, 스리랑카, 인도, 미얀마, 네팔, 이란, 우즈베키스탄, 카자흐스탄, 키르키즈스탄, 우크라이나, 나이지리아, 가나, 이집트, 페루
-- inviter_context: 의료관광 유치기관 (보건복지부 등록 의료기관 또는 유치업자)
-- recommendation_or_approval: |
-    배우자 또는 동반가족 등에 대해서는 외국인 환자와 동일한 내용의 사증 또는 사증발급인정서 발급
-- expected_questions: |
-    한국 병원에서 치료받으러 가는데 어떤 비자가 필요해요?
-    의료관광 비자 신청할 때 동반 가족도 같이 받을 수 있나요?
-    의료비자 신청서류는 뭐가 있어요?
-
-### row C-3 / 사증발급인정서 / 대상
-- manual_type: 사증민원
-- visa_code: C-3
-- visa_name_ko: 단기방문
-- item_type: visa_rule
-- section_title: C-3-6 우대기업 초청
+- section_title: C-3 단기방문 / 우대기업초청 단기상용 (C-3-6)
 - subtype_or_program: C-3-6
 - petition_type: 사증발급인정서
 - subsection_type: 대상
 - applicant_context: |
-    외국인 초청절차 우대기업의 초청을 받은 자(C-3-6)
     대한민국 비자포털(www.visa.go.kr)을 통해 우대기업으로 선정된 기업·단체로부터 초청을 받은 자
 - eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents: |
-    - 사증발급인정신청서(별지 제21호서식), 여권, 표준규격사진
+    - 사증발급인정신청서(별지 제21호 서식)
+    - 여권
+    - 표준규격사진
     - 재직증명서
     - 우대기업 발행 초청장
 - other_documents:
 - requirements: |
     우대기업으로 선정되려면 중소벤처기업부장관, 중소기업중앙회장, 한국무역협회장의 추천을 받은 기업·단체이어야 함
-    기 선정된 우대기업만 대상으로 함(우대기업 선정 종료)
 - procedure:
-- restrictions:
+- restrictions: |
+    기 선정된 우대기업만 대상으로 함(우대기업 선정 종료)
 - exceptions:
 - fees:
 - duration_or_validity: 체류자격 우대기업초청 단기상용(C-3-6), 체류기간 90일, 유효기간 1년 복수사증
@@ -1247,13 +1567,22 @@
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 우대기업으로 선정된 기업·단체
+- inviter_context: |
+    우대기업으로 선정된 기업·단체
 - recommendation_or_approval: |
     중소벤처기업부장관, 중소기업중앙회장, 한국무역협회장 추천
+- keywords: 단기방문, 우대기업, 단기상용, 초청장, 재직증명서, C-3-6
+- source_page:
+- source_excerpt: |
+    4. 외국인 초청절차 우대기업의 초청을 받은 자(C-3-6)
+    가. 발급 대상
+    대한민국 비자포털(www.visa.go.kr)을 통해 우대기업으로 선정된 기업․단체로부터 초청을 받은 자
+    나. 사증발급인정서 발급 내용
+    체류자격 우대기업초청 단기상용(C-3-6), 체류기간 90일, 유효기간 1년 복수사증
+- related_visa_codes:
 - expected_questions: |
-    우대기업 초청으로 한국 출장 가려면 어떤 비자 받아요?
-    우대기업 초청 비자 신청은 어떻게 해요?
-    우대기업 초청 비자는 얼마나 자주 사용할 수 있어요?
+    우대기업의 초청을 받으면 어떤 단기방문 비자가 나와요?
+    우대기업초청 단기상용 비자 받으려면 어떤 서류 내요?
 
 <!-- end chunk: visa_002 -->
 
@@ -1274,12 +1603,13 @@
 - eligibility: |
     계절근로 단기취업(C-4-1~4): 해당자는 계절근로(E-8) 자격 참조
     계절근로외 단기취업(C-4-5):
-    - 일시흥행 활동, 광고·패션활동 (해당자는 예술흥행 E-6 자격 참조)
-    - 강의·강연 (수익이 따르는 계약에 의하여 국내 공·사기관 등으로부터 초청되어 단기간 강연·강의 활동)
-    - 연구·기술지도 (연구 E-3, 기술지도 E-4 자격 참조)
+    - 일시흥행 활동 (예술흥행 E-6 자격 참조)
+    - 광고·패션활동 (예술흥행 E-6 자격 참조)
+    - 강의·강연: 수익이 따르는 계약에 의하여 국내 공·사기관 등으로부터 초청되어 단기간 강연·강의활동을 하는 자
+    - 연구·기술지도 (연구 E-3, 기술지도 E-4 자격참조)
     - 공·사기관과의 계약에 의한 직업 활동 (특정활동 E-7 자격 참조)
-    - 수입기계 설치·보수, 조선·산업설비 제작·감독 등 용역제공/구매계약/사업수주 계약 등에 의해 파견되어 국내 공·사기관으로부터 체재비 등 보수성 경비를 지급받고 근무하는 자 (해외에서 지급받더라도 국내에서 실질적인 서비스·업무 수행 시 포함)
-    - 정보기술 등 첨단기술 분야 (IT, e-business, BT, NT, 신소재(금속·세라믹·화학), 수송기계, 디지털전자, 환경·에너지, 기술경영 분야)
+    - 수입기계 등의 설치·보수 등 용역제공계약, 구매계약, 사업수주 계약 등에 의해 파견되어 보수성 경비를 지급받고 근무하는 자
+    - 정보기술 등 첨단기술 분야 (IT, 전자상거래, BT, NT, 신소재, 수송기계, 디지털전자, 환경·에너지, 기술경영)
 - target_persons:
 - common_documents:
 - mandatory_documents:
@@ -1287,102 +1617,91 @@
 - requirements:
 - procedure:
 - restrictions: |
-    수익이 따르지 않는 강의·강연은 단기방문(C-3)에 해당
+    수익이 따르지 않는 경우는 단기방문(C-3)에 해당됨
     단순노무 직종은 단기취업(C-4-5) 자격에 해당되지 않음
 - exceptions:
 - fees:
-- duration_or_validity: 90일
+- duration_or_validity: 1회 부여 체류기간 상한 90일
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 국내 공·사기관
+- inviter_context:
 - recommendation_or_approval:
+- keywords: 단기취업, 계절근로, 첨단기술, 강의 강연, 일시흥행, 90일, C-4
+- source_page:
+- source_excerpt: |
+    □ 계절근로 단기취업(C-4-1~4)
+    - 해당자는 계절근로(E-8) 자격 참조
+    □ 계절근로외 단기취업(C-4-5)
+    일시흥행 활동
+    - 해당자는 예술흥행(E-6) 자격 참조
+    정보기술 등 첨단기술 분야
+    - 국내기업의 정보기술(IT), 전자상거래 등 기업정보화(e-business), 생물산업(BT), 나노기술(NT), 신소재분야(금속, 세라믹, 화학), 수송기계, 디지털전자 및 환경․에너지, 기술경영 분야에 종사하고자 하는 자
+    ➠ 단순노무 직종은 단기취업(C-4-5) 자격에 해당되지 않음
+- related_visa_codes: C-3, E-3, E-4, E-6, E-7, E-8
 - expected_questions: |
-    한국에 90일 정도 짧게 일하러 가려면 어떤 비자예요?
-    수익 있는 강의를 단기로 하려면 어떤 비자가 맞아요?
-    단순노무자도 이 비자로 일할 수 있어요?
+    90일 짧게 한국에서 일하려면 어떤 비자를 받아요?
+    농업이나 어업으로 잠깐 한국에서 일할 수 있어요?
+    수익이 없는 강연이면 단기취업 비자가 맞나요?
 
 ### row C-4 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: C-4
 - visa_name_ko: 단기취업
 - item_type: required_documents
-- section_title: C-4-5 첨단기술분야 단기취업
+- section_title: C-4 단기취업 / 첨단기술 분야 (C-4-5)
 - subtype_or_program: C-4-5
 - petition_type: 사증발급
 - subsection_type: 제출서류
 - applicant_context: |
-    국내기업의 정보기술(IT), 전자상거래(e-business), 생물산업(BT), 나노기술(NT), 신소재(금속·세라믹·화학), 수송기계, 디지털전자 및 환경·에너지, 기술경영 분야에 종사하고자 하는 자
+    국내기업의 IT, 전자상거래, BT, NT, 신소재, 수송기계, 디지털전자, 환경·에너지, 기술경영 분야 종사자로서 소관부처 장관의 고용추천이 있는 자
 - eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    - 사증발급신청서 (별지 제17호 서식)
+    - 여권
+    - 표준규격사진 1매
+    - 수수료
     - 고용계약서
     - 소관부처(산하단체)의 고용추천서
     - 공사기관 설립관련 서류 (사업자등록증, 법인등기부등본)
-- other_documents:
-- requirements: |
-    소관부처 장관의 고용추천이 있어야 함
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: 체류기간 90일 이하 복수사증
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 국내기업
-- recommendation_or_approval: 소관부처(산하단체) 고용추천서 필요
-- expected_questions: |
-    IT나 BT 분야로 한국에 단기로 일하러 가려면 어떤 서류 내요?
-    첨단기술 단기 취업 비자는 복수사증으로 받을 수 있어요?
-    부처 고용추천서가 꼭 필요해요?
-
-### row C-4 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: C-4
-- visa_name_ko: 단기취업
-- item_type: required_documents
-- section_title: C-4-5 수입기계 설치·보수 파견
-- subtype_or_program: C-4-5
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    수입기계 등의 설치·보수, 조선 및 산업설비 제작·감독 등 각종 용역제공계약, 구매계약, 사업수주 계약 등에 의해 국내에 파견되어 국내 공·사기관으로부터 체재비 등 보수성 경비를 지급받고 근무하고자 하는 자 (해외에서 지급받더라도 실질적인 서비스·업무 수행자 포함)
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    - 용역계약서(또는 구매계약서, 사업수주계약서 등) 사본
-    - 파견명령서 또는 출장명령서
 - other_documents:
 - requirements:
 - procedure:
 - restrictions:
 - exceptions:
 - fees:
-- duration_or_validity: 체류기간 90일 이하 복수사증
+- duration_or_validity: 체류기간 90일 이하의 복수사증
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 국내 공·사기관 (파견 받는 기관)
-- recommendation_or_approval:
+- inviter_context:
+- recommendation_or_approval: |
+    소관부처(산하단체)의 고용추천서
+- keywords: 단기취업, 첨단기술, IT, BT, NT, 고용추천서, C-4-5
+- source_page:
+- source_excerpt: |
+    1. 아래 대상자에 대한 체류기간 90일 이하의 복수사증
+    대상자
+    국내기업의 정보기술(IT), 전자상거래 등 기업정보화(e-business), 생물산업(BT), 나노기술(NT), 신소재분야(금속, 세라믹, 화학), 수송기계, 디지털전자 및 환경․에너지, 기술경영 분야에 종사하고자 하는 자로서 소관부처 장관의 고용추천이 있는 자
+    첨부서류
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 고용계약서 ③ 소관부처(산하단체)의 고용추천서
+    ④ 공사기관 설립관련 서류 (사업자등록증, 법인등기부등본)
+- related_visa_codes:
 - expected_questions: |
-    외국에서 수입한 기계 설치하러 한국에 잠깐 파견 갈 때 비자 어떻게 받아요?
-    조선설비 감독하러 가는 단기 파견은 어떤 비자가 맞아요?
-    이 비자 신청 시 계약서가 꼭 필요해요?
+    IT 같은 첨단기술 분야로 90일 짧게 한국 가려면 어떤 서류 내요?
+    고용추천서는 어디서 발급받아요?
 
 ### row C-4 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: C-4
 - visa_name_ko: 단기취업
 - item_type: required_documents
-- section_title: C-4-5 영어캠프 회화지도
+- section_title: C-4 단기취업 / 영어캠프 회화지도 (C-4-5)
 - subtype_or_program: C-4-5
 - petition_type: 사증발급
 - subsection_type: 제출서류
@@ -1392,280 +1711,250 @@
 - target_persons:
 - common_documents:
 - mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    - 학위관련 검증서류 중 택1:
-      학위증 사본(아포스티유 또는 영사확인), 또는
-      해당 대학 발행 학위취득 증명서(아포스티유 또는 영사확인), 또는
-      학위취득 사실이 기재된 졸업증명서(아포스티유 또는 영사확인)
+    - 사증발급신청서 (별지 제17호 서식)
+    - 여권
+    - 표준규격사진 1매
+    - 수수료
+    - 학위관련 검증서류(택1):
+      - 학위증 사본(아포스티유 확인 또는 영사확인)
+      - 해당 대학에서 발행한 학위취득 증명서(아포스티유 확인 또는 영사확인)
+      - 학위취득 사실이 기재된 졸업증명서(아포스티유 확인 또는 영사확인)
     - 범죄경력증명서(아포스티유 또는 영사확인)
     - 고용계약서
     - 사업자등록증, 법인등기부등본 또는 교육기관 설립관계 서류
     - 평생교육시설등록증 등 평생교육시설 신고수리·지정관련 서류
     - 영어캠프 운영일정표 및 강의시간표(해당 외국인 참여시간 표기)
-- other_documents: |
-    아포스티유 협약 미가입 국가는 자국 소재 대한민국공관의 영사 확인
+- other_documents:
 - requirements:
 - procedure:
 - restrictions: |
-    평생교육시설이 등록(신고)된 위치를 벗어난 시설에서 캠프 운영하기 위해 외국인강사를 초청(채용)하는 경우 사증발급 불허
-    (학원법 제14조 위반, 제2조의 2에 따라 초중등학생 대상 교습 시 학교교과교습학원 등록 없이 교습은 학원법 제6조 위반)
+    평생교육시설이 등록(신고)된 위치를 벗어난 시설에서 캠프를 운영하기 위해 외국인강사를 초청(채용)하는 경우 사증발급 불허 (학원법 제14조 위반)
 - exceptions:
 - fees:
 - duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 평생교육시설 등
-- recommendation_or_approval:
-- expected_questions: |
-    영어캠프 강사로 한국 단기로 가려면 어떤 서류 내요?
-    학위증명서를 어떻게 인증받아야 해요?
-    등록된 시설 외에서 캠프 강사 비자도 받을 수 있어요?
-
-### row C-4 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: C-4
-- visa_name_ko: 단기취업
-- item_type: required_documents
-- section_title: C-4-5 일시흥행·광고·운동경기 단기취업
-- subtype_or_program: C-4-5
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    체류기간 90일 이하의 단기간 동안 국내에서 수익을 목적으로 하는 일시흥행, 광고·패션모델 등의 취업활동을 하는 자
-    상금과는 별개로 체재비를 상회하는 보수 또는 수당 등을 받거나 받기로 하고 운동경기, 바둑시합, 가요 경연 등에 참가하는 사람 (작품 판매 수익 발생하는 전시회 참가 미술가 포함)
-- eligibility:
-- target_persons:
-- common_documents: |
-    - 사증발급신청서(별지 제17호 서식), 여권, 표준규격 사진 1매, 수수료
-- mandatory_documents: |
-    공연법 규정에 의한 공연
-    - 영상물등급위원회(제주특별자치도지사)의 공연추천서 (추천제외대상공연은 면제)
-    - 공연계획서, 공연계약서 (공연계획서 포함 생략)
-    - 피초청인이 미성년자인 경우, 법정대리인의 동의서
-    호텔업시설·유흥업소 공연·연예활동
-    - 영상물등급위원회의 공연추천서 (관광업소에서의 연주·가요·곡예·마술 공연추천은 주한 미8군 영내클럽, 관광진흥법상 3급 이상 관광호텔, 관광유람선, 휴양콘도미니엄, 관광극장유흥업, 외국인전용음식점, 국제회의시설 부대시설 외에는 추천하지 않음)
-    - 연예활동계획서
-    - 자격증명서 또는 경력증명서
-    - 신원보증서
-    - 피초청인이 미성년자인 경우, 법정대리인의 동의
-    운동경기·바둑시합·가요 경연 참가자
-    - 주최 측이 발급한 초청장 또는 참가확인서
-    - 행사 참가 시 지급되는 보수 또는 수당 등이 기재된 계약서 등
-- other_documents: |
-    광고 모델 (일반심사 기준)
-    - 사업자등록증
-    - 대중문화예술기획업 등록증 (대중문화예술산업발전법 시행규칙 별지 제2호 서식)
-    - 부가가치세 과세표준증명(매출과세표준)
-    - 납세증명서
-    - 기타 기업의 건전성 증빙 서류
-    - 고용계약서, 신원보증서, 이력서, 보호자 동의서(미성년)
-    - 광고촬영·패션쇼 관련 계약서, 모델 사용 개요, 국내 활동 계획서
-    - 기타 모델의 전문성 입증 서류
-    - 직전 초청 외국인의 국내 활동 내역, 귀국 여부 등 증빙서류(해당 시)
-    - 영사 인터뷰 필수
-    광고 모델 (우대심사 우수업체)
-    초청업체 요건:
-    - 법인사업자, 대중문화예술기획업 등록
-    - 최근 3년 이내 최소 5억원 이상 매출실적
-    - 최근 3개월 간 국민 상시근로자 5인 이상 고용
-    - 업력 5년 이상(또는 대표이사 동종업계 5년 이상)
-    - 사업자등록증 상 관련 업종만 등재, 체납 없음
-    외국인 요건: 불법체류 다발 21개 고시국가가 아닐 것
-    그 밖의 경우
-    - 소관 중앙행정기관장의 고용추천서 또는 고용 필요성 입증 서류 (방송통신위원회, 협회/연맹, 주무처 협조공문, 초청단체 초청사유 및 활동계획서 등)
-    - 피초청인 미성년자 시 법정대리인의 동의서
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 공연주최자, 호텔·유흥업소, 광고대행사, 대중문화예술기획업체 등
-- recommendation_or_approval: |
-    영상물등급위원회 공연추천서
-    소관 중앙행정기관장의 고용추천서 또는 고용 필요성 입증
-- expected_questions: |
-    외국 가수가 한국 공연하러 90일 정도 갈 때 비자 어떻게 받아요?
-    광고 모델로 한국 단기 촬영 가려면 서류가 어떻게 돼요?
-    운동경기 참가하면서 상금 받는 선수는 어떤 비자가 맞아요?
-
-### row C-4 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: C-4
-- visa_name_ko: 단기취업
-- item_type: required_documents
-- section_title: C-4-5 단기 강의·강연 (교수·특정활동 대상자)
-- subtype_or_program: C-4-5
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    교수(E-1) 또는 특정활동(E-7) 자격 대상자로서 수익이 따르는 계약 등에 따라 90일 이하 강의·강연·연구활동을 하는 자 (대학교원 또는 관련분야 전문가 등)
-    전문대학 이상의 교육기관 등에서 통상의 체재비를 초과하는 수익이 발생하는 계약에 따라 90일 이하 단기간 강의, 연구 등의 활동을 하는 초빙교수 등
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    - 고용(강의·강연)계약서 또는 강의료 액수 등 수익금액이 기재된 초청장 (사증발급 협조요청 문서)
-    - 신청인의 학위증 사본 및 재직증명서
-    - 초청 교육기관 등의 설립관련 서류 (사업자등록증 사본 또는 법인등기사항전부증명서 등)
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions: |
-    공익목적 초청에 의한 1회성 강의·강연·자문활동은 단기취업(C-4-5) 비자 면제 가능 (단기 체류자격 C-3, B-1, B-2 소지자도 활동 가능)
-    면제 조건:
-    - 초청자가 정부(지자체 포함), 대학, 정부출연기관 등 비영리기관이 학술 또는 공익 목적으로 초청
-    - 사기업 등 영리목적 초청은 C-4-5 발급 대상
-    - 강연·강의·자문 활동 가능한 국내 기관은 체류기간 중 5개 이하
-    - 활동기간은 7일 이하
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 전문대학 이상의 교육기관, 정부·지자체·정부출연기관 등 비영리기관
-- recommendation_or_approval:
-- expected_questions: |
-    한국 대학에서 90일 단기로 강의하려면 어떤 비자 받아요?
-    정부 초청으로 학술 강연만 잠깐 하는 건 단기 취업비자 안 받아도 되나요?
-    공익 목적 강연으로 비자 면제받을 수 있는 조건이 어떻게 되나요?
-
-### row C-4 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: C-4
-- visa_name_ko: 단기취업
-- item_type: required_documents
-- section_title: C-4-5 그 밖의 단기취업
-- subtype_or_program: C-4-5
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    상기 이외의 단기취업(C-4-5) 자격 해당자
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    - 고용계약서
-    - 소관행정기관의 장의 고용추천서, 협조공한 또는 고용의 필요성을 입증할 수 있는 서류
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: 체류기간 90일 이하 단수사증
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
-- recommendation_or_approval: 소관행정기관의 장의 고용추천서, 협조공한 또는 고용의 필요성 입증서류
+- recommendation_or_approval:
+- keywords: 단기취업, 영어캠프, 회화지도, 학위증, 아포스티유, 범죄경력증명서, C-4-5
+- source_page:
+- source_excerpt: |
+    3. 영어캠프 등에서 90일 이하 회화지도 활동을 하는 자
+    첨부서류
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 학위관련 검증서류(아래 사항 중 택1)
+    - 학위증 사본(아포스티유 확인 또는 해외주재 대한민국 공관의 영사확인)
+    ③ 범죄경력증명서(아포스티유 또는 해외주재 대한민국 공관의 영사확인)
+- related_visa_codes: E-2
 - expected_questions: |
-    상기 외에 단기로 일하러 한국 가려면 기본 서류가 어떤 거예요?
-    단기취업 비자는 며칠 동안 머물 수 있어요?
-    부처 추천서 없으면 신청 못 해요?
+    영어캠프에서 90일 동안 영어 가르치려면 어떤 서류가 필요해요?
+    학위증명을 어떻게 검증받아야 하나요?
+    영어캠프 강사로 한국 가려면 범죄경력 증명을 꼭 내야 해요?
 
-### row C-4 / 사증발급인정서 / 대상
+### row C-4 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: C-4
 - visa_name_ko: 단기취업
-- item_type: visa_rule
-- section_title: C-4-1~4 계절근로 사증발급인정서
-- subtype_or_program: C-4-1~4
-- petition_type: 사증발급인정서
-- subsection_type: 대상
+- item_type: required_documents
+- section_title: C-4 단기취업 / 광고·패션모델 등 일시흥행 (C-4-5)
+- subtype_or_program: C-4-5
+- petition_type: 사증발급
+- subsection_type: 제출서류
 - applicant_context: |
-    계절근로 단기취업(C-4-1~4)자에 대한 사증발급인정서 발급
-- eligibility: |
-    신청자: (시·군·구)기초자치단체장
-    사증발급인정서 대상자: 지자체가 고용주에게 배정한 해외 체류 외국인
-    결혼이민자 또는 외국국적동포의 국내 체류 가족은 사증발급인정서 신청 대상이 아니고 체류자격외활동허가 신청 대상
+    체류기간 90일 이하의 단기간 동안 국내에서 수익을 목적으로 하는 일시흥행, 광고·패션모델 등의 취업활동을 하는 자 또는 상금과는 별개로 체재비를 상회하는 보수 또는 수당 등을 받거나 받기로 하고 운동경기, 바둑시합, 가요 경연 등에 참가하는 사람
+- eligibility:
+- target_persons:
+- common_documents: |
+    - 사증발급신청서(별지 제17호 서식)
+    - 여권
+    - 표준규격 사진 1매
+    - 수수료
+- mandatory_documents: |
+    공연법 규정에 의한 공연자:
+    - 영상물등급위원회(제주는 도지사)의 공연추천서(추천제외대상공연은 면제)
+    - 공연계획서, 공연계약서
+    - 피초청인이 미성년자인 경우, 법정대리인의 동의서
+    관광진흥법 호텔·유흥업소 공연 또는 연예활동자:
+    - 영상물등급위원회의 공연추천서
+    - 연예활동계획서
+    - 자격증명서 또는 경력증명서
+    - 신원보증서
+    - 미성년자의 경우 법정대리인 동의
+    체재비 상회 보수·수당을 받는 운동경기 등 참가자:
+    - 주최 측이 발급한 초청장 또는 참가확인서
+    - 보수·수당 기재 계약서
+    광고 모델 일반심사:
+    - 사업자등록증
+    - 대중문화예술기획업 등록증
+    - 부가가치세 과세표준증명
+    - 납세증명서
+    - 고용계약서, 신원보증서, 이력서, 보호자 동의서 (미성년)
+    - 광고촬영·패션쇼 관련 계약서, 모델 사용 개요, 국내 활동 계획서
+    - 모델의 전문성을 입증할 수 있는 서류
+    그 밖의 경우:
+    - 소관 중앙행정기관의 장의 고용추천서 또는 고용의 필요성을 입증하는 서류
+    - 미성년자의 경우 법정대리인 동의서
+- other_documents:
+- requirements: |
+    우대심사 적용대상(우수업체) 초청업체 요건:
+    - 법인사업자
+    - 대중문화예술기획업 등록
+    - 최근 3년 이내 최소 5억원 이상 매출실적
+    - 최근 3개월 간 국민 상시근로자 5인 이상 고용
+    - 업력 5년 이상(또는 대표이사 동종업계 종사경력 5년 이상)
+    - 사업자등록증 상 매니지먼트, 엔터테인먼트, 모델에이전시 등 관련 업종만
+    - 체납 사실 없을 것
+    외국인 요건:
+    - 불법체류 다발 고시국가, 기타 법위반 고위험 국가가 아닐 것 (중국, 필리핀, 인도네시아, 방글라데시, 베트남, 몽골, 태국, 파키스탄, 스리랑카, 인도, 미얀마, 네팔, 이란, 우즈베키스탄, 카자흐스탄, 키르키즈스탄, 우크라이나, 나이지리아, 가나, 이집트, 페루)
+- procedure: |
+    영사 인터뷰 필수
+- restrictions: |
+    관광업소에서의 연주, 가요, 곡예, 마술에 대한 공연추천은 '주한 미8군 영내클럽, 관광진흥법상 3급 이상 관광호텔, 관광유람선, 휴양콘도미니엄, 관광극장유흥업, 외국인전용음식점, 국제회의시설의 부대시설'을 제외하고 추천하지 않음
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval: |
+    영상물등급위원회 공연추천서
+    소관 중앙행정기관의 장의 고용추천서
+- keywords: 단기취업, 일시흥행, 광고모델, 패션모델, 공연추천서, 대중문화예술기획업, C-4-5
+- source_page:
+- source_excerpt: |
+    4. 체류기간 90일 이하의 단기간 동안 국내에서 수익을 목적으로 하는 일시흥행, 광고․패션모델 등의 취업활동을 하는 자 또는 상금과는 별개로 체재비를 상회하는 보수 또는 수당 등을 받거나 받기로 하고 운동경기, 바둑시합, 가요 경연 등에 참가하는 사람
+    ② 영상물등급위원회(제주특별자치도의 경우 제주특별자치도지사)의 공연추천서(추천제외대상공연은 면제)
+    ③ 대중문화예술기획업 등록증
+- related_visa_codes: E-6
+- expected_questions: |
+    광고 모델로 한국에 잠깐 가려면 어떤 비자를 받아요?
+    공연하러 90일 한국 가려면 어떤 서류 내야 해요?
+    상금 외에 출연료 받는 운동경기 참가자는 비자가 필요해요?
+
+### row C-4 / 사증발급 / 제출서류
+- manual_type: 사증민원
+- visa_code: C-4
+- visa_name_ko: 단기취업
+- item_type: required_documents
+- section_title: C-4 단기취업 / 단기 강의·강연·연구 (C-4-5)
+- subtype_or_program: C-4-5
+- petition_type: 사증발급
+- subsection_type: 제출서류
+- applicant_context: |
+    전문대학 이상의 교육기관 등에서 통상의 체재비를 초과하는 수익이 발생하는 계약에 따라 90일 이하 단기간 강의, 연구 등의 활동을 하는 초빙교수 등
+- eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents: |
-    비자포털에 첨부 제출
-    - 표준근로계약서
-    - 내국인 구인노력 증빙자료(구인 광고내용 사본 및 최종 구인실적 등)
-    - 외국인 계절근로자 여권 사본
-    - MOU 외국인: 본국에서의 농·어업 종사 이력
-    - 결혼이민자 4촌 이내 친척(배우자 포함): 결혼이민자 신분증, 국내용 혼인·가족관계 증명서, 기본증명서, 친척 관계도, 거주국 가족관계증명서 등
-    - 숙소 관련 서류 (외국인 계절근로자 숙소시설표, '24년 한시적 시행)
-    - 업무협약(MOU) 체결 결과서 등
+    - 사증발급신청서 (별지 제17호 서식)
+    - 여권
+    - 표준규격사진 1매
+    - 수수료
+    - 고용(강의·강연)계약서 또는 강의료 액수 등 수익금액이 기재되어 있는 초청장
+    - 신청인의 학위증 사본 및 재직증명서
+    - 초청 교육기관 등의 설립관련 서류 (사업자등록증 또는 법인등기사항전부증명서)
 - other_documents:
-- requirements: |
-    표준근로계약서 상의 근로일수와 사증(VISA)별 체류기간이 부합되어야 함
-- procedure: |
-    신청 방법: 비자포털(www.visa.go.kr)을 통하여 신청
-    신청시기: 농·어업 작업시기, 사증발급인정서 발급 소요 기간(약 10일), 외국인 계절근로자 사증 준비 및 자국 출국 행정 절차 소요 기간 등을 고려하여 결정
-    숙소점검 확인서는 계절근로자 입국 직후 지자체에서 일괄 공문 제출
+- requirements:
+- procedure:
 - restrictions:
-- exceptions:
+- exceptions: |
+    공익목적 초청에 의한 강의·강연 (C-4-5 비자 면제 조건, 모두 충족 필요):
+    - (초청자) 정부(지자체 포함), 대학, 정부출연기관 등 비영리기관이 학술 또는 공익 목적으로 초청
+    - (대상기관 제한) 피초청인이 강연·강의·자문 활동을 할 수 있는 국내 기관은 체류기간 중 5개를 초과할 수 없음
+    - (활동기간 제한) 체류기간 중 강의·강연·자문 등의 활동기간은 7일을 초과할 수 없음
 - fees:
-- duration_or_validity: |
-    C-4-1(단수, MOU 외국지자체 추천, 농업, 최대 90일)
-    C-4-2(단수, 결혼이민자 추천, 농업, 최대 90일)
-    C-4-3(단수, MOU 외국지자체 추천, 어업, 최대 90일)
-    C-4-4(단수, 결혼이민자 추천, 어업, 최대 90일)
+- duration_or_validity:
 - quota_or_limit:
 - score_criteria:
-- table_summary: 계절근로 사증 종류
-- table_rows: |
-    C-4-1: MOU 체결 외국지자체 추천, 농업, 90일
-    C-4-2: 결혼이민자 추천, 농업, 90일
-    C-4-3: MOU 체결 외국지자체 추천, 어업, 90일
-    C-4-4: 결혼이민자 추천, 어업, 90일
-- inviter_context: (시·군·구)기초자치단체장
-- recommendation_or_approval: |
-    MOU 체결 외국지자체 또는 결혼이민자 추천
+- table_summary:
+- table_rows:
+- inviter_context: |
+    전문대학 이상의 교육기관, 정부, 대학, 정부출연기관 등 비영리기관
+- recommendation_or_approval:
+- keywords: 단기취업, 단기강의, 초빙교수, 강연, 자문, 공익목적 면제, C-4-5
+- source_page:
+- source_excerpt: |
+    5. 교수(E-1) 또는 특정활동(E-7) 자격 대상자로서 수익이 따르는 계약 등에 따라 90일 이하 강의․강연․연구활동을 하는 자 (대학교원 또는 관련분야 전문가 등)
+    가. 적용대상 및 자격기준
+    전문대학 이상의 교육기관 등에서 통상의 체재비를 초과하는 수익이 발생하는 계약*에 따라 90일 이하 단기간 강의, 연구 등의 활동을 하는 초빙교수 등
+    【공익목적 초청에 의한 강의·강연】
+    고용계약에 따른 취업활동이 아닌 초청에 의한 1회성 강의·강연·자문활동 등의 경우 아래와 같은 조건 하에서 단기취업(C-4-5) 비자가 아닌 단기 체류자격(C-3, B-1, B-2) 소지자도 활동 가능
+- related_visa_codes: E-1, E-7, B-1, B-2, C-3
 - expected_questions: |
-    한국 농어촌에 계절근로로 외국인 노동자 데려오려면 어떤 비자 받아요?
-    결혼이민자 친척이 계절근로로 한국 오려면 어떻게 신청해요?
-    계절근로 비자는 최대 며칠까지 가능해요?
+    대학에 짧게 초빙교수로 가려면 어떤 비자를 받아요?
+    공익 목적으로 강연만 7일 정도 하면 단기취업 비자 안 받아도 돼요?
+    수익이 있는 강의·강연이면 어떤 서류를 내요?
 
 ### row C-4 / 사증발급인정서 / 제출서류
 - manual_type: 사증민원
 - visa_code: C-4
 - visa_name_ko: 단기취업
 - item_type: visa_rule
-- section_title: C-4-5 특정국가 국민 사증발급인정서
-- subtype_or_program: C-4-5
+- section_title: C-4 단기취업 / 계절근로 사증발급인정서 (C-4-1~4)
+- subtype_or_program: C-4-1~4
 - petition_type: 사증발급인정서
 - subsection_type: 제출서류
 - applicant_context: |
-    특정국가 국민에 대한 단기취업(C-4-5) 사증발급인정서 발급
-    특정국가 국민은 원칙적으로 법무부장관, 출입국·외국인청(사무소·출장소)장이 발급한 사증발급인정서에 따라 사증 발급
+    계절근로 단기취업(C-4-1~4)자에 대한 사증발급인정서 발급
 - eligibility:
-- target_persons:
+- target_persons: |
+    지자체가 고용주에게 배정한 해외 체류 외국인
+    결혼이민자 또는 외국국적동포의 국내 체류 가족은 사증발급인정서 신청 대상이 아니고 체류자격외활동허가 신청 대상임
 - common_documents:
-- mandatory_documents:
+- mandatory_documents: |
+    - 표준근로계약서
+    - 내국인 구인노력 증빙자료(구인 광고내용 사본 및 최종 구인실적 등)
+    - 외국인 계절근로자 여권 사본
+    - MOU 외국인: 본국에서의 농·어업 종사 이력
+    - 결혼이민자의 4촌 이내 친척: 결혼이민자 신분증, 국내용 혼인·가족관계 증명서, 기본증명서, 결혼이민자의 친척 관계도, 거주국 가족관계증명서
+    - 숙소시설표
+    - 업무협약(MOU) 체결 결과서 등
 - other_documents:
 - requirements:
 - procedure: |
-    사증발급인정서를 제출하지 아니한 자에 대하여는 공관장이 사증발급승인을 요청하여 법무부장관의 승인을 받아 사증을 발급할 수 있음
-    특정국가 거주 무국적자는 특정국가 국민의 사증발급기준에 준하여 처리
-- restrictions:
+    신청자: (시·군·구)기초자치단체장
+    신청시기: 농·어업 작업시기, 사증발급인정서 발급 소요 기간(신청일로부터 약 10일 소요) 고려
+    신청 방법: 비자포털(www.visa.go.kr)을 통하여 신청
+- restrictions: |
+    국내 결혼이민자와의 가족(친척)관계가 입증되어야 하며 영어 이외의 외국어로 되어있을 때는 번역자 확인서 및 번역문을 첨부(공증불요)
 - exceptions:
 - fees:
-- duration_or_validity:
+- duration_or_validity: |
+    C-4-1(단수) MOU 체결 외국지자체 농업 90일
+    C-4-2(단수) 결혼이민자 농업 90일
+    C-4-3(단수) MOU 체결 외국지자체 어업 90일
+    C-4-4(단수) 결혼이민자 어업 90일
 - quota_or_limit:
 - score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
+- table_summary: 계절근로 사증발급인정서 종류
+- table_rows: |
+    C-4-1(단수) | MOU 체결 외국지자체 | 농업 | 90일
+    C-4-2(단수) | 결혼이민자 | 농업 | 90일
+    C-4-3(단수) | MOU 체결 외국지자체 | 어업 | 90일
+    C-4-4(단수) | 결혼이민자 | 어업 | 90일
+- inviter_context: |
+    (시·군·구)기초자치단체장, 농·어가 고용주
 - recommendation_or_approval:
+- keywords: 단기취업, 계절근로, 농업, 어업, 표준근로계약서, 결혼이민자 친척, MOU, C-4-1, C-4-2, C-4-3, C-4-4
+- source_page:
+- source_excerpt: |
+    □ 계절근로 단기취업(C-4-1~4)자에 대한 사증발급인정서 발급
+    ◦ 신청자
+    - (시·군·구)기초자치단체장
+    ◦ 사증발급인정서로 신청하는 계절근로 사증 종류
+    C-4-1(단수) MOU 체결 외국지자체 농업 90일
+    C-4-2(단수) 결혼이민자 농업 90일
+    C-4-3(단수) MOU 체결 외국지자체 어업 90일
+    C-4-4(단수) 결혼이민자 어업 90일
+- related_visa_codes: E-8, F-6
 - expected_questions: |
-    특정국가 국민이 한국 단기취업 비자 받으려면 어떻게 해야 해요?
-    사증발급인정서 없이도 단기취업 비자 받을 수 있어요?
+    농촌에서 계절근로로 한국 가려면 어떤 비자를 받아요?
+    결혼이민자 친척이 계절근로로 들어올 수도 있어요?
+    계절근로 사증발급인정서는 누가 신청해요?
 
 ### row D-1 / 사증발급 / 대상
 - manual_type: 사증민원
@@ -1676,114 +1965,96 @@
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    수익을 목적으로 하지 아니하는 학술 또는 예술상의 활동자
+- applicant_context:
 - eligibility: |
-    논문작성, 창작 활동을 하는 자
-    비영리 학술활동·예술단체의 초청으로 학술 또는 순수 예술 활동에 종사하는 자
-    대한민국의 고유문화 또는 예술에 대하여 전문적으로 연구하거나 전문가의 지도를 받으려는 자 (예: 태권도 등 전통무예, 한국무용, 서예, 궁중음악, 참선, 농악 등)
-- target_persons:
+    수익을 목적으로 하지 아니하는 학술 또는 예술상의 활동
+- target_persons: |
+    - 논문작성, 창작 활동을 하는 자
+    - 비영리 학술활동·예술단체의 초청으로 학술 또는 순수 예술 활동에 종사하는 자
+    - 대한민국의 고유문화 또는 예술에 대하여 전문적으로 연구하거나 전문가의 지도를 받으려는 자 (태권도 등 전통무예, 한국무용, 서예, 궁중음악, 참선, 농악 등)
 - common_documents:
 - mandatory_documents:
 - other_documents:
-- requirements:
+- requirements: |
+    「전문가」라 함은 무형문화재 또는 국가공인 기능보유자 등을 말하며, 순수예술 분야의 연구단체나 해당 분야의 저명한 인사로부터 지도를 받는 자를 포함하나 영리목적의 사설학원에서의 연수자는 해당되지 않음
 - procedure:
-- restrictions:
-- exceptions: |
+- restrictions: |
     체류기간이 90일 이하인 경우에는 단기방문(C-3-1) 자격에 해당
-    영리목적의 사설학원에서의 연수자는 해당되지 않음
+- exceptions:
 - fees:
-- duration_or_validity: 2년
+- duration_or_validity: 체류기간 상한 2년
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 비영리 학술활동·예술단체
-- recommendation_or_approval: |
-    전문가: 무형문화재 또는 국가공인 기능보유자 등을 말하며, 순수예술 분야의 연구단체나 해당 분야의 저명한 인사로부터 지도를 받는 자를 포함
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 문화예술, 학술, 비영리, 한국무용, 태권도, 무형문화재, D-1
+- source_page:
+- source_excerpt: |
+    수익을 목적으로 하지 아니하는 학술 또는 예술상의 활동
+    - 논문작성, 창작 활동을 하는 자
+    - 비영리 학술활동․예술단체의 초청으로 학술 또는 순수 예술 활동에 종사하는 자
+    - 대한민국의 고유문화 또는 예술에 대하여 전문적으로 연구하거나 전문가의 지도를 받으려는 자
+    체류기간이 90일이하의 단기인 경우에는 단기방문(C-3) 자격임
+- related_visa_codes: C-3
 - expected_questions: |
-    한국 전통무예를 배우러 가려면 어떤 비자 받아요?
-    수익 없는 예술 창작 활동으로 한국에 머무는 비자는 뭐예요?
-    문화예술 비자는 얼마나 머물 수 있어요?
+    한국에서 한국무용이나 태권도 같은 걸 배우러 오려면 어떤 비자를 받아요?
+    수익 없이 학술이나 예술 활동만 하면 문화예술 비자가 맞나요?
+    영리 학원에서 배우는 것도 문화예술 비자 대상인가요?
 
 ### row D-1 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: D-1
 - visa_name_ko: 문화예술
 - item_type: required_documents
-- section_title: D-1 문화예술 / 공관장 재량 발급
+- section_title: D-1 문화예술 / 공관장 재량 사증발급
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 제출서류
 - applicant_context: |
-    한국국제교류재단 및 한국문화예술위원회의 초청을 받아 문화예술 활동을 하고자 하는 자에 대한 체류기간 1년 이하의 단수사증
+    한국국제교류재단 및 한국문화예술위원회의 초청을 받아 문화예술 활동을 하고자 하는 자
 - eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    - 사증발급신청서 (별지 제17호 서식)
+    - 여권
+    - 표준규격사진 1매
+    - 수수료
     - 초청장
-    - 문화예술단체임을 입증하는 서류 (전문가 지도인 경우 그 자의 경력증명서)
+    - 문화예술단체임을 입증하는 서류 (전문가의 지도인 경우에는 그 자의 경력증명서)
     - 이력서 또는 경력증명서
     - 체류 중 일체의 경비지불능력을 증명하는 서류
 - other_documents:
 - requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: 체류기간 1년 이하 단수사증
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 한국국제교류재단, 한국문화예술위원회
-- recommendation_or_approval: |
-    재외공관의 장은 입국목적, 초청의 진정성, 자격 확인 등을 위해 첨부서류를 일부 가감할 수 있음
+- procedure: |
     상기 이외의 경우에는 모두 사증발급인정서에 의해 사증발급
-- expected_questions: |
-    한국국제교류재단 초청 받은 외국 예술가는 어떤 서류 내요?
-    문화예술 비자 받을 때 어떤 단체 초청이어야 해요?
-    공관 직접 발급 비자는 얼마짜리인가요?
-
-### row D-1 / 사증발급인정서 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-1
-- visa_name_ko: 문화예술
-- item_type: required_documents
-- section_title: D-1 문화예술 / 사증발급인정서
-- subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 제출서류
-- applicant_context: |
-    상기 공관장 재량으로 발급할 수 있는 사증 이외의 경우 사증발급인정서로 사증발급
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
-    - 초청장
-    - 문화예술단체임을 입증하는 서류 (전문가 지도인 경우 그 자의 경력증명서)
-    - 이력서 또는 경력증명서
-    - 체류 중 일체의 경비지불능력을 증명하는 서류
-- other_documents:
-- requirements:
-- procedure:
 - restrictions:
 - exceptions:
 - fees:
-- duration_or_validity:
+- duration_or_validity: 체류기간 1년 이하의 단수사증
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context:
-- recommendation_or_approval: |
-    출입국·외국인청(사무소·출장소)장은 초청의 진정성, 자격 확인 등을 심사하기 위해 첨부서류의 일부를 가감할 수 있음
+- inviter_context: |
+    한국국제교류재단, 한국문화예술위원회
+- recommendation_or_approval:
+- keywords: 문화예술, 한국국제교류재단, 한국문화예술위원회, 초청장, 경비지불능력, D-1
+- source_page:
+- source_excerpt: |
+    1. 한국국제교류재단 및 한국문화예술위원회의 초청을 받아 문화예술 활동을 하고자 하는 자에 대한 체류기간 1년 이하의 단수사증
+    첨부서류
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 초청장
+    ③ 문화예술단체임을 입증하는 서류
+    ④ 이력서 또는 경력증명서
+    ⑤ 체류 중 일체의 경비지불능력을 증명하는 서류
+- related_visa_codes:
 - expected_questions: |
-    한국에서 예술 연구하러 갈 때 사증발급인정서는 어떻게 받아요?
-    문화예술 인정서 받으려면 어떤 서류 내요?
-    공식 단체 초청장이 꼭 필요해요?
+    한국국제교류재단 초청으로 한국 오려면 어떤 서류 내요?
+    문화예술 활동 비자 받으려면 경비지불능력은 어떻게 증명해요?
 
 ### row D-2 / 사증발급 / 대상
 - manual_type: 사증민원
@@ -1794,12 +2065,10 @@
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    고등교육법 및 특별법에 따라 설립된 전문대학 이상의 교육기관이나 학술 연구기관으로서 법무부장관이 정하는 요건을 갖춘 대학 또는 부설 어학원에서 정규과정의 교육을 받거나 특정 연구를 하고자 하는 외국인
+- applicant_context:
 - eligibility: |
-    적용대상별 세부약호
-    학위과정(D-2): D-2-1 전문학사, D-2-2 학사, D-2-3 석사, D-2-4 박사, D-2-5 연구, D-2-6 교환학생, D-2-7 일-학습연계 유학, D-2-8 방문학생
-    어학연수(D-4): D-4-1 한국어 연수, D-4-7 외국어 연수
+    (교육기관) 「고등교육법」 및 특별법에 따라 설립된 전문대학 이상의 교육기관이나 학술 연구기관으로서 법무부장관이 정하는 요건을 갖춘 대학 또는 부설 어학원
+    (외국인 유학생) 위 교육기관에서 정규과정의 교육을 받거나 특정 연구를 하고자 하는 외국인으로서 유학(D-2) 및 어학연수(D-4-1, D-4-7)
 - target_persons:
 - common_documents:
 - mandatory_documents:
@@ -1807,169 +2076,81 @@
 - requirements:
 - procedure:
 - restrictions: |
-    유학 체류자격 대상 교육기관에서 제외되는 대상
+    (제외) 다음 대상은 유학 체류자격 대상 교육기관에서 제외:
     - 방송대학·통신대학·방송통신대학 및 사이버대학(원격대학)
-    - 평생교육법 제2조제2호에 따른 평생교육기관
-    - 국민 평생 직업능력 개발법 제2조제5호에 따른 기능대학 중 직업훈련과정
-    - 야간대학 및 대학원 (단, 주간 교육과정이 없는 야간대학원, 전문대학 전공심화 야간과정으로 관할 출입국관서의 사전심사를 거친 교육과정은 허용)
-    직업전문학교 등 직업능력개발 훈련시설은 유학(D-2) 사증발급 신청 부적합
-- exceptions:
+    - 「평생교육법」 제2조제2호에 따른 평생교육기관
+    - 「국민 평생 직업능력 개발법」 제2조제5호에 따른 기능대학 중 '직업훈련과정'
+    - 유학 체류자격을 허용하는 일부 야간 학위과정을 제외한 야간대학 및 대학원
+- exceptions: |
+    유학 체류자격을 허용하는 야간 학위과정: 주간 교육과정이 없는 야간대학원, 전문대학 전공심화 야간과정으로서 관할 출입국관서의 야간 학위과정 사전심사를 거친 교육과정
 - fees:
-- duration_or_validity: 2년
+- duration_or_validity: 1회 부여 체류기간 상한 2년
 - quota_or_limit:
 - score_criteria:
-- table_summary: 유학 세부약호 분류
+- table_summary: 적용대상별 세부약호
 - table_rows: |
-    D-2-1 전문학사, D-2-2 학사, D-2-3 석사, D-2-4 박사, D-2-5 연구과정, D-2-6 교환학생, D-2-7 일-학습연계 유학, D-2-8 방문학생
-    D-4-1 한국어 연수, D-4-7 외국어 연수
-- inviter_context: 대학·부설 어학원·학술 연구기관
+    D-2-1 전문학사과정
+    D-2-2 학사과정
+    D-2-3 석사과정
+    D-2-4 박사과정
+    D-2-5 연구과정
+    D-2-6 교환학생
+    D-2-7 일-학습연계 유학
+    D-2-8 방문학생
+    D-4-1 한국어 연수
+    D-4-7 외국어 연수
+- inviter_context:
 - recommendation_or_approval:
+- keywords: 유학, 전문대학 이상, 정규과정, 학사, 석사, 박사, 교환학생, D-2
+- source_page:
+- source_excerpt: |
+    ❍ (교육기관) ｢고등교육법｣ 및 특별법에 따라 설립된 전문대학 이상의 교육기관이나 학술 연구기관으로서 법무부장관이 정하는 요건을 갖춘 대학 또는 부설 어학원
+    ❍ (외국인 유학생) 위 교육기관에서 정규과정의 교육을 받거나 특정 연구를 하고자 하는 외국인으로서 유학(D-2) 및 어학연수(D-4-1, D-4-7)
+- related_visa_codes: D-4, F-3
 - expected_questions: |
-    한국 대학에서 정규 공부하러 가려면 어떤 비자예요?
-    사이버대학으로 공부하려고 해도 유학비자 받을 수 있나요?
-    직업전문학교 다니려는 외국인은 유학비자로 갈 수 있어요?
+    한국 대학교에 정규 학생으로 들어가려면 어떤 비자를 받아요?
+    유학비자에 학사·석사·박사가 따로 있나요?
+    사이버대학이나 평생교육원도 유학비자 대상이에요?
 
 ### row D-2 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: D-2
 - visa_name_ko: 유학
 - item_type: required_documents
-- section_title: D-2 유학 / 공통서류
+- section_title: D-2 유학 / 공통 제출서류
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 제출서류
-- applicant_context: |
-    유학(D-2) 사증발급 일반: 우리부 유학생정보시스템(FIMS)에 등록된 교육기관 및 학술연구기관의 정규 유학생 또는 어학연수생
+- applicant_context:
 - eligibility:
 - target_persons:
 - common_documents: |
     - 사증발급(인정)신청서, 여권사본, 사진 1매(6개월 이내 촬영 반명함)
     - 교육기관 사업자등록증 (또는 고유번호증) 사본
     - 표준입학허가서 (대학 총·학장 발행)
-      국립국제교육원 및 국방부초청 정부 장학생은 교육원장 및 국방부장관 발급 초청장으로 대체
     - 결핵진단서 (해당자에 한함)
-    - 가족관계 입증서류 (부모의 잔고증명 등 제출 시)
-    - 최종학력 입증서류 (원본심사 원칙; 학위 등 인증보고서는 대학담당자 원본 대조필인 시 사본 인정; 개인 직접 신청 발급 서류는 유효기간 내만 인정)
-    - 재정능력 입증서류 (1년간 등록금 및 체재비 상당 금액; 베트남은 은행 발행 지급유보방식의 별도 유학경비 잔고증명서)
-- mandatory_documents: |
-    학력증명서 (일반국가): 아포스티유 확인 또는 영사확인을 받아 제출
-    학력증명서 (중국 내 학력·학위 취득자): 학력·학위 인증센터(CHSI/CDGDC) 발행 학위 등 인증보고서
-    중등직업학교 졸업자(중국):
-    - 보통중등전문학교/직업고등학교/성인중등전문학교: 지방 교육 당국 발행 졸업증명서(주중한국영사확인) 또는 학교 자체 발행 졸업증명서(성/시교육청 확인+주중한국영사확인)
-    - 기술공업학교: 인적자원사회보장부 공식 홈페이지 온라인 조회본 + 주중한국영사확인
-    - 기타 고졸학력 인정 학교: 학교 자체 발행 졸업증명서 + 주중한국영사확인
-    - 설립허가증(사업단위법인증서 또는 민판학교판학허가증) 사본 제출 필수
+    - 가족관계 입증서류 (부모의 잔고증명 등을 제출한 경우에 한함)
+    - 최종학력 입증서류 (아포스티유 또는 영사확인)
+    - 재정능력 입증서류 (1년간 등록금 및 체재비 상당하는 금액)
+- mandatory_documents:
 - other_documents: |
-    과정별 추가 제출서류
     특정 연구과정(D-2-5):
-    - 최종학력 입증서류(석사학위 이상 원칙)
-      특정연구기관 육성법 시행령 제3조 지정 특정연구기관이 D-2-5 초청 시 또는 THE 200대/QS 500위 이내 국내 대학에서 이공계 분야 연구과정 유학생 초청 시 본국 학사과정 재학 중인 사람도 허용
-    - 신원보증서 또는 재정능력 입증서류 (잔고증명, 연구수당 지급 확인서 등)
-    - 특정연구과정임을 입증하는 서류 (총장의 연구생확인서 등)
+    - 최종학력 입증서류(석사학위이상 소지자 원칙)
+    - 신원보증서 또는 재정능력 입증서류(잔고증명, 연구수당 지급 확인서)
+    - 특정연구과정임을 입증하는 서류
     교환학생(D-2-6):
-    - 소속 (본국) 대학장 발급 추천서
-    - 교환학생임을 입증하는 서류 (초청 대학 공문, 학생교류 협정서 등)
-    - 1학기 이상을 외국 정규대학에서 수학하였음을 입증하는 서류 (본국 대학 재학증명서 등)
-- requirements:
+    - 소속(본국) 대학의 장이 발급한 추천서
+    - 교환학생임을 입증하는 서류 (초청 대학의 공문, 학생교류 협정서)
+    - 1학기 이상을 외국 정규대학에서 수학하였음을 입증하는 서류
+- requirements: |
+    국립국제교육원 및 국방부초청 정부 장학생은 교육원장 및 국방부장관이 발급한 초청장으로 대체
+    중국(중국 내 학력·학위 취득자에 한함): 중국 교육부 운영 학력·학위인증센터 발행 학위 등 인증 보고서 제출
+    베트남: 은행에서 발행한 지급유보방식의 별도 유학경비 잔고증명서
 - procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary: 학력증명서 제출 방식 (중국 학력 취득자)
-- table_rows: |
-    어학연수(D-4-1): 고교 졸업 이상 학력 증명서
-    신입학 전문학사·학사: 고교 졸업증명서
-    신입학 석사: 학사 졸업증명서
-    신입학 박사: 석사 졸업증명서
-    편입학·교환학생·방문학생·연구유학별 추가 학력증명 요건
-- inviter_context: 교육기관
-- recommendation_or_approval:
-- expected_questions: |
-    한국 유학비자 신청할 때 기본 서류는 어떻게 돼요?
-    중국에서 학위 취득한 사람은 어떤 학력 증명서를 내야 해요?
-    유학 비자 신청 시 재정 증명은 얼마 정도 있어야 해요?
-
-### row D-2 / 사증발급 / 절차
-- manual_type: 사증민원
-- visa_code: D-2
-- visa_name_ko: 유학
-- item_type: visa_rule
-- section_title: D-2 유학 / 사증발급 일반
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 절차
-- applicant_context: |
-    사증발급인정서 발급 대상 이외 유학생 (단, 우수인증대 유학생은 사증발급도 가능)
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure: |
-    신청 장소: 신청인의 거주국 또는 최종학교 소재지 관할 공관에서 신청 원칙
-    발급 절차: 입학허가 신청(해당대학, 본인) → 표준입학허가서 발급·등록(유학생정보시스템 FIMS, 유학생담당자) → 사증발급신청·발급(재외공관, 본인 또는 대리인) → 입국(공항만)
-    표준입학허가서는 대학에서 발급해 FIMS 등록 후 총·학장 직인을 날인하여 유학생에게 송부
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: |
-    D-2-1~D-2-4 (전문학사~박사): 체류기간 2년 이내, 단수
-    D-2-5 (연구과정): 체류기간 1년 이내, 단수
-    D-2-6 (교환학생): 체류기간 1년 이내, 단수
-    국방부 초청 수탁교육생(D-2-2~D-2-4): 체류기간 2년 이내, 단수
-    D-2-8 (방문학생): 체류기간 1년 이내, 단수
-    인도국민 D-2-1, D-2-5: 체류기간 2년, 유효기간 5년 복수 (교육기간이 5년 미만은 교육기간 동안 유효 복수)
-    어학연수 D-4-1, D-4-7: 체류기간 6개월 이내, 단수
-- quota_or_limit:
-- score_criteria:
-- table_summary: 유학 사증 발급 내용
-- table_rows: |
-    D-2-1~4 체류기간 2년 이내 단수
-    D-2-5 체류기간 1년 이내 단수
-    D-2-6 체류기간 1년 이내 단수
-    D-2-8 체류기간 1년 이내 단수
-    인도국민 D-2-1·D-2-5: 체류기간 2년, 유효기간 5년 복수
-    어학연수 D-4-1·D-4-7 체류기간 6개월 이내 단수
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    한국 유학비자는 어디서 신청해요?
-    표준입학허가서 어떻게 받아요?
-    박사과정 비자는 한 번에 얼마나 머물 수 있어요?
-
-### row D-2 / 사증발급인정서 / 대상
-- manual_type: 사증민원
-- visa_code: D-2
-- visa_name_ko: 유학
-- item_type: visa_rule
-- section_title: D-2 유학 / 사증발급인정서
-- subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 대상
-- applicant_context: |
-    유학(D-2) 사증발급인정서 발급 대상
-- eligibility: |
-    (우대) 우수인증대학(유학 및 어학연수)
-    (관리) 쿠바, 시리아, 마케도니아, 코소보 국민 유학 및 어학연수
-    (관리) 중국, 베트남, 몽골, 우즈베키스탄 국민 중:
-    - 하위대학 어학연수, 교환학생, 방문학생
-    - 일반대학 어학연수
-    단, 정부초청장학생의 경우는 사증발급 가능
-- target_persons:
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure: |
-    신청 장소: 입학예정대학 소재지 관할 출입국·외국인청(사무소·출장소) (분교는 분교 실질 소재지 관할)
-    온라인신청: 사증포털시스템(www.visa.go.kr)을 통한 온라인 신청 (유학생 담당자에 한함)
-    발급 절차: 입학허가 신청 → 표준입학허가서 발급·등록(FIMS) → 사증발급인정서 신청·발급(관할 출입국·외국인청, 본인 또는 초청자) → 사증발급신청·발급(재외공관) → 입국
 - restrictions: |
-    쿠바, 시리아, 마케도니아, 코소보 국민은 사증발급인정서만 발급
+    야간대학, 원격대학(방송대학, 통신대학, 사이버대학) 및 한국폴리텍대학 직업훈련과정은 FIMS 등록여부와 관계없이 유학(D-2), 어학연수(D-4-1) 사증발급 제외 대상
+    학위과정인 다기능기술자과정은 인정
+    야간대학원은 주간과정이 없는 경우에만 예외적으로 인정
 - exceptions:
 - fees:
 - duration_or_validity:
@@ -1977,24 +2158,147 @@
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 입학예정대학
+- inviter_context:
 - recommendation_or_approval:
+- keywords: 유학, 표준입학허가서, 최종학력, 아포스티유, 잔고증명, FIMS, D-2
+- source_page:
+- source_excerpt: |
+    공통서류
+    ① 사증발급(인정)신청서, 여권사본, 사진 1매(6개월 이내 촬영 반명함)
+    ② 교육기관 사업자등록증 (또는 고유번호증) 사본
+    ③ 표준입학허가서 (대학 총․학장 발행)
+    ④ 결핵진단서 (해당자에 한함)
+    ⑥ 최종학력 입증서류
+    ⑦ 재정능력 입증서류
+    - 1년간 등록금 및 체재비 상당하는 금액
+- related_visa_codes: D-4
 - expected_questions: |
-    유학 사증발급인정서는 어떤 외국인이 받아야 해요?
-    쿠바나 시리아 학생은 사증발급인정서로만 신청해야 해요?
-    인정서 신청은 어디서 해요?
+    한국 유학 비자 받으려면 어떤 서류가 기본으로 필요해요?
+    학력증명서를 아포스티유로 어떻게 검증해요?
+    재정능력은 얼마나 입증해야 해요?
+
+### row D-2 / 사증발급 / 절차
+- manual_type: 사증민원
+- visa_code: D-2
+- visa_name_ko: 유학
+- item_type: visa_rule
+- section_title: D-2 유학 / 사증발급 절차 및 발급내용
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 절차
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure: |
+    1) 입학허가 신청 (해당대학, 본인)
+    2) 표준입학허가서 발급·등록 (유학생정보시스템 FIMS, 유학생담당자)
+    3) 사증발급신청·발급 (재외공관, 본인 또는 대리인) - 인정번호 제출
+    4) 입국 (공항만)
+    신청 장소: 신청인의 거주국 또는 최종학교 소재지 관할 공관에서 신청 원칙
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity: |
+    전문학사~박사과정(D-2-1~D-2-4): 체류기간 2년 이내, 단수
+    연구과정(D-2-5): 체류기간 1년 이내, 단수
+    교환학생(D-2-6): 체류기간 1년 이내, 단수
+    국방부 초청 수탁교육생(D-2-2~D-2-4): 체류기간 2년 이내, 단수
+    방문학생(D-2-8): 체류기간 1년 이내, 단수
+    인도국민(D-2-1, D-2-5): 체류기간 2년, 유효기간 5년 복수 (교육기간 5년 미만은 교육기간 동안 유효한 복수 사증)
+    어학연수생(D-4-1, D-4-7): 체류기간 6개월 이내, 단수
+- quota_or_limit:
+- score_criteria:
+- table_summary: D-2 유학 약호별 사증발급 내용
+- table_rows: |
+    D-2-1 ~ D-2-4 전문학사~박사과정: 체류기간 2년 이내, 단수
+    D-2-5 연구과정: 체류기간 1년 이내, 단수
+    D-2-6 교환학생: 체류기간 1년 이내, 단수
+    D-2-8 방문학생: 체류기간 1년 이내, 단수
+    인도국민(D-2-1, D-2-5): 체류기간 2년, 유효기간 5년 복수
+    D-4-1, D-4-7 어학연수생: 체류기간 6개월 이내, 단수
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 유학, 표준입학허가서, FIMS, 발급절차, 단수사증, 인도국민 복수사증, D-2
+- source_page:
+- source_excerpt: |
+    3. 발급 절차
+    입학허가 신청 ⇨ 표준입학허가서 발급·등록 ⇨ 사증발급신청·발급 (인정번호 제출) ⇨ 입국
+    4. 발급 내용
+    전문학사~박사과정 D-2-1 ~ D-2-4 체류기간 2년 이내, 단수
+    연구과정 D-2-5 체류기간 1년 이내, 단수
+    인도국민 D-2-1, D-2-5 체류기간 2년, 유효기간 5년 복수
+    어학연수생 D-4-1, D-4-7 체류기간 6개월 이내, 단수
+- related_visa_codes: D-4
+- expected_questions: |
+    한국 유학 비자 발급 절차가 어떻게 돼요?
+    유학 비자는 보통 얼마짜리로 나와요?
+    인도 학생은 어떤 유학 비자 받아요?
+
+### row D-2 / 사증발급인정서 / 대상
+- manual_type: 사증민원
+- visa_code: D-2
+- visa_name_ko: 유학
+- item_type: visa_rule
+- section_title: D-2 유학 / 사증발급인정서 발급대상
+- subtype_or_program: 사증발급인정서
+- petition_type: 사증발급인정서
+- subsection_type: 대상
+- applicant_context:
+- eligibility: |
+    (우대) 우수인증대학(유학 및 어학연수)
+    (관리) 쿠바, 시리아, 마케도니아, 코소보 국민 유학 및 어학연수
+    (관리) 중국, 베트남, 몽골, 우즈베키스탄 국민 중 아래 대상자 (정부초청장학생은 사증발급 가능):
+    - 하위대학 어학연수, 교환학생, 방문학생
+    - 일반대학 어학연수
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure: |
+    신청 장소: 입학예정대학 소재지 관할 출입국·외국인청(사무소·출장소)
+    온라인신청: 사증포털시스템(www.visa.go.kr) (유학생 담당자에 한함)
+    분교 입학생은 분교소재지(사업자등록증 기준이 아닌 실질적인 소재지) 관할 출입국·외국인청에서 처리
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: |
+    입학예정대학
+- recommendation_or_approval:
+- keywords: 유학, 사증발급인정서, 우수인증대학, 쿠바, 시리아, 중국, 베트남, 몽골, 우즈베키스탄, D-2
+- source_page:
+- source_excerpt: |
+    1. 발급 대상
+    ❍ (우대) 우수인증대학(유학 및 어학연수)
+    ❍ (관리) 쿠바, 시리아, 마케도니아, 코소보 국민 유학 및 어학연수
+    ❍ (관리) 중국, 베트남, 몽골, 우즈베키스탄 국민 중 아래 대상자
+    - 하위대학 어학연수, 교환학생, 방문학생
+    - 일반대학 어학연수
+- related_visa_codes: D-4
+- expected_questions: |
+    중국이나 베트남 학생은 한국 유학 비자를 어떻게 받아요?
+    우수인증대학에 들어가면 사증발급인정서로 받을 수 있어요?
+    쿠바·시리아 같은 국적이면 어떤 절차를 거쳐요?
 
 ### row D-2 / 전자사증 / 대상
 - manual_type: 사증민원
 - visa_code: D-2
 - visa_name_ko: 유학
 - item_type: visa_rule
-- section_title: D-2 유학 / 전자비자
+- section_title: D-2 유학 / 전자비자 발급대상
 - subtype_or_program: 전자사증
 - petition_type: 전자사증
 - subsection_type: 대상
-- applicant_context: |
-    유학(D-2) 전자비자 발급 대상
+- applicant_context:
 - eligibility: |
     우수 인증대학: 모든 유학과정(D-2-1~D-2-8)
     인증대: 석사(D-2-3) 또는 박사(D-2-4) 과정 입학생
@@ -2015,24 +2319,32 @@
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 우수 인증대학·인증대
+- inviter_context:
 - recommendation_or_approval:
+- keywords: 유학, 전자비자, 우수인증대학, 석사, 박사, D-2-3, D-2-4
+- source_page:
+- source_excerpt: |
+    1. 발급 대상
+    ❍ 우수 인증대학 : 모든 유학과정(D-2-1~D-2-8)
+    ❍ 인증대 : 석사(D-2-3) 또는 박사(D-2-4) 과정 입학생
+    ❍ 다만, 쿠바, 시리아, 마케도니아, 코소보 국적 유학생 제외
+    2. 신청 장소
+    ❍ 사증포털시스템(www.visa.go.kr)
+- related_visa_codes:
 - expected_questions: |
-    한국 유학 전자비자는 누가 신청할 수 있어요?
-    석사·박사 입학생도 전자비자로 받을 수 있어요?
-    유학 전자비자는 어디서 신청해요?
+    한국 석사·박사로 갈 때 온라인으로 전자비자 받을 수 있어요?
+    우수인증대 학생은 어떤 유학과정이라도 전자비자 신청할 수 있어요?
 
 ### row D-2 / 사증발급 / 제한
 - manual_type: 사증민원
 - visa_code: D-2
 - visa_name_ko: 유학
 - item_type: restriction
-- section_title: D-2 유학 / 동반사증 제한
+- section_title: D-2 유학 / 동반사증 및 직업전문학교 제한
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 제한
-- applicant_context: |
-    전문학사, 어학연수, 단기유학생에 대한 동반(F-3) 사증 제한
+- applicant_context:
 - eligibility:
 - target_persons:
 - common_documents:
@@ -2042,8 +2354,9 @@
 - procedure:
 - restrictions: |
     전문학사, 어학연수, 단기유학생의 경우 배우자 및 자녀에 대한 동반사증(F-3) 발급 제한
+    직업전문학교 학생(직업능력개발 훈련시설)은 유학(D-2) 사증발급 신청 대상이 아님 (직업능력개발 훈련시설의 운영취지에 부합하지 아니함)
 - exceptions: |
-    인도적 사유에 해당하는 경우 허용
+    인도적 사유에 해당하는 경우 동반사증 허용
 - fees:
 - duration_or_validity:
 - quota_or_limit:
@@ -2052,100 +2365,77 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 유학, 동반사증 제한, F-3, 직업전문학교 제외, 인도적 사유, D-2
+- source_page:
+- source_excerpt: |
+    ☞ 전문학사, 어학연수, 단기유학생의 경우 배우자 및 자녀에 대한 동반사증(F-3) 발급 제한
+    - 단, 인도적 사유에 해당하는 경우 허용
+    Q. 직업전문학교 학생은 유학사증을 발급받을 수 있나?
+    A. ｢근로자직업능력 개발법｣에 의하면 직업전문학교 등의 명칭을 사용하는 '직업능력개발 훈련 시설'은 고령자ㆍ장애인, ｢국민기초생활 보장법｣에 따른 수급권자 등 취약계층에 대한 직무수행 능력 습득ㆍ향상 등의 공익적 기능을 수행하기 위해 고용노동부장관으로부터 시설지정을 받은 기술전문학원임.
+- related_visa_codes: F-3
 - expected_questions: |
-    전문학사 과정 유학생도 가족 동반 비자 받을 수 있어요?
-    어학연수생 배우자가 한국 같이 올 수 있어요?
-    인도적 사유면 가족 같이 데려갈 수 있나요?
+    어학연수 학생도 가족 동반비자 받을 수 있어요?
+    직업전문학교 다니면 유학비자 받을 수 있어요?
+    유학생 가족 동반비자가 어떤 경우에 예외로 허용돼요?
 
 <!-- end chunk: visa_003 -->
 
 
 <!-- vizabridge-normalize v1 chunk: visa_004 hash: 04509dfbd0e8f696 lines: 414-433 -->
 
-### row D-3 / 사증발급 / 대상
-- manual_type: 사증민원
-- visa_code: D-3
-- visa_name_ko: 기술연수
-- item_type: visa_rule
-- section_title: D-3 기술연수
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 대상
-- applicant_context: |
-    법무부장관이 정하는 연수조건을 갖춘 자로서 국내 산업체에서의 연수활동
-- eligibility: |
-    외국환거래법에 의거 외국에 직접 투자한 산업체에서 연수를 받고자 하는 자
-    외국에 기술을 수출하는 산업체로서 법무부장관이 기술연수가 필요하다고 인정하는 산업체에서 연수를 받고자 하는 자
-    대외무역법에 의거 외국에 산업설비를 수출하는 산업체에서 연수를 받고자 하는 자
-- target_persons:
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure:
-- restrictions: |
-    기술연수에 대한 사증발급은 반드시 출입국·외국인청(사무소·출장소)장이 발급한 사증발급인정서를 제출 받아 그 인정서의 내용에 따라 기술연수 사증을 발급
-- exceptions:
-- fees:
-- duration_or_validity: 2년
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 해외직접투자 산업체, 기술수출 산업체, 플랜트수출 산업체
-- recommendation_or_approval: |
-    훈령연계: 해외투자기업 기술연수(D-3-1)생에 대한 사증발급인정서 및 관리에 관한 훈령
-- expected_questions: |
-    해외법인 직원이 한국 본사에서 기술연수 받으려면 어떤 비자예요?
-    기술연수 비자는 한국 공관에서 바로 받을 수 있어요?
-    기술연수로 한국에 얼마나 머물 수 있어요?
-
 ### row D-3 / 사증발급인정서 / 대상
 - manual_type: 사증민원
 - visa_code: D-3
 - visa_name_ko: 기술연수
 - item_type: visa_rule
-- section_title: D-3 기술연수 / 사증발급인정서
+- section_title: D-3 기술연수
 - subtype_or_program: D-3-1
 - petition_type: 사증발급인정서
 - subsection_type: 대상
-- applicant_context: |
-    기술연수업체에서 연수받는 외국인 (시행령 제24조의4 제3항 각 호에 해당하지 아니하는 자)
+- applicant_context:
 - eligibility: |
-    해당국 정부의 법령에 의해 합법적으로 설립되고 가동되어 3개월이 경과된 해외합작투자법인 또는 우리기업의 해외현지법인의 생산직 직원으로 그 나라에서 기술습득이 불가능하거나 어려워 연수가 필요하다고 인정되는 외국인
-    우리나라 기업과 미화 10만불 이상의 기술 도입 또는 기술제휴 계약을 체결하여 기술을 수입하였거나 우리나라 기업으로부터 본선 인도가격 미화 50만불 상당액 이상의 플랜트를 수입한 외국기업의 생산직 직원으로 그 기술 또는 플랜트의 운영을 위하여 연수가 필요하다고 인정되는 외국인
-- target_persons:
+    법무부장관이 정하는 연수조건을 갖춘 자로서 국내 산업체에서의 연수활동
+    외국환거래법에 의거 외국에 직접 투자한 산업체에서 연수를 받고자 하는 자
+    외국에 기술을 수출하는 산업체로서 법무부장관이 기술연수가 필요하다고 인정하는 산업체에서 연수를 받고자 하는 자
+    대외무역법에 의거 외국에 산업설비를 수출하는 산업체에서 연수를 받고자 하는 자
+- target_persons: 해외합작투자법인·해외현지법인의 생산직 직원, 기술수출·플랜트수출 외국기업 생산직 직원
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements: |
-    해외합작투자법인 또는 해외현지법인은 외국환거래법 제3조제1항제18호 및 동법시행령 제8조 규정에 따라 해외직접투자를 한 국내 산업체를 의미
-    해외에서 기술습득이 불가능하거나 어려운 경우란 해외기업에 해당기술을 교육시킬 숙련공·전문가가 없거나 부족하거나, 해당기술을 연수시킬 기계·플랜트가 없거나 부족한 경우
-    기술수출은 1개의 기술 기준으로 계약이행 기간 동안 10만불 이상이어야 하며, 여러 기술 수출 시에도 총 연수허용인원은 연수업체별 허용인원 초과 불가
-    플랜트는 1개 설비 기준 50만불 이상 (대외무역법 제32조제1항)
-- procedure:
-- restrictions: |
-    한 기술연수업체가 여러 해외기업에 직접 투자 시 각 해외기업별로 연수허용인원 결정하되 총 허용인원은 연수업체별 허용인원 초과 불가
+    해당국 정부의 법령에 의해 합법적으로 설립되고 가동되어 3개월이 경과된 해외합작투자법인 또는 우리기업의 해외현지법인의 생산직 직원
+    우리나라 기업과 미화 10만불 이상의 기술 도입 또는 기술제휴 계약 체결 외국기업의 생산직 직원
+    본선 인도가격 미화 50만불 상당액 이상의 플랜트를 수입한 외국기업의 생산직 직원
+- procedure: 기술연수 사증발급은 반드시 출입국·외국인청(사무소·출장소)장이 발급한 사증발급인정서를 제출받아 그 인정서의 내용에 따라 발급
+- restrictions:
 - exceptions:
 - fees:
-- duration_or_validity:
-- quota_or_limit:
+- duration_or_validity: 1회 부여 체류기간의 상한 2년
+- quota_or_limit: 직접투자한 해외기업의 수와 관계없이 연수업체별 연수허용인원 한도 내
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 국내 산업체 (해외직접투자 또는 기술/플랜트 수출 기업)
+- inviter_context: 해외직접투자 산업체, 기술수출 산업체, 플랜트수출 산업체
 - recommendation_or_approval:
+- keywords: 기술연수, 해외직접투자, 기술수출, 플랜트수출, 사증발급인정서, D-3, D-3-1
+- source_page:
+- source_excerpt: |
+    법무부장관이 정하는 연수조건을 갖춘 자로서 국내 산업체에서의 연수활동
+    외국환거래법에 의거 외국에 직접 투자한 산업체에서 연수를 받고자 하는 자
+    외국에 기술을 수출하는 산업체로서 법무부장관이 기술연수가 필요하다고 인정하는 산업체에서 연수를 받고자 하는 자
+    대외무역법에 의거 외국에 산업설비를 수출하는 산업체에서 연수를 받고자 하는 자
+- related_visa_codes:
 - expected_questions: |
-    해외 합작법인 직원에게 한국 본사에서 기술연수시키려면 어떻게 신청해요?
-    기술 수출한 외국기업 직원 연수 비자는 어떤 조건이 있어요?
-    플랜트 수출한 기업의 직원 연수도 비자 신청 가능해요?
+    한국 기업이 해외에 투자한 회사 직원인데 한국 가서 기술 배울 수 있어요?
+    기술연수로 한국에 얼마나 머물 수 있어요?
+    어떤 회사가 기술연수생을 초청할 수 있나요?
 
 ### row D-3 / 사증발급인정서 / 제출서류
 - manual_type: 사증민원
 - visa_code: D-3
 - visa_name_ko: 기술연수
 - item_type: required_documents
-- section_title: D-3 기술연수 / 사증발급인정서
+- section_title: D-3 기술연수 / 사증발급인정서 첨부서류
 - subtype_or_program: D-3-1
 - petition_type: 사증발급인정서
 - subsection_type: 제출서류
@@ -2155,21 +2445,15 @@
 - common_documents:
 - mandatory_documents: |
     - 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
-    - 피초청자가 기술연수생 요건을 구비하였음을 입증하는 서류
-      현지법인등록증(또는 설립인가서) 사본
-      현지법인의 장이 발급한 피초청자 재직증명서 및 여권사본 (주재국 우리공관이 있는 경우 영사확인 필요)
-      한국어능력입증자료
+    - 피초청자가 기술연수생 요건을 구비하였음을 입증하는 서류 (현지법인등록증 사본, 재직증명서 및 여권사본, 한국어능력입증자료)
     - 연수내용을 확인할 수 있는 연수계획서(별첨 3)
-    - 초청자의 신원보증서 (피보증인이 2인 이상인 경우 사증발급인정신청서의 "피초청자명단" 첨부하여 한 장만 작성)
-    - 초청업체가 연수허용대상 업체임을 입증할 수 있는 서류
-      (해외직접투자산업체) 해외직접투자신고(수리)서, 송금영수증·송금사실확인서(현금투자), 세관 발행 수출면장(현물투자)
-      (기술수출산업체) 기술수출계약서(국문) 사본, 지식경제부 장관 승인서(해당시)
-      (플랜트수출 산업체) 플랜트수출승인서(변경승인서 포함)
-    - 연수허용인원 산정에 필요한 초청업체의 내국인 상시 근로자 수 입증서류 (노동부 고용보험사이트 사업장별 피보험자격내역서)
-    - 자체 연수시설(공정)과 적정한 숙박시설 등 연수환경 확인 자료(기숙사 시설 내부 사진 등)
+    - 초청자의 신원보증서
+    - 초청업체가 연수허용대상 업체임을 입증할 수 있는 서류 (해외직접투자신고서, 송금영수증, 기술수출계약서, 플랜트수출승인서 등)
+    - 연수허용인원 산정에 필요한 초청업체의 내국인 상시 근로자 수 입증서류 (사업장별 피보험자격내역서)
+    - 기타 자체 연수시설(공정)과 적정한 숙박시설 구비 등 연수환경을 확인할 수 있는 자료
 - other_documents:
 - requirements:
-- procedure:
+- procedure: 주재국 우리공관이 있는 경우 현지법인등록증·재직증명서에 대한 영사확인 필요
 - restrictions:
 - exceptions:
 - fees:
@@ -2180,10 +2464,18 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 기술연수, 사증발급인정신청서, 신원보증서, 연수계획서, 해외직접투자신고서, D-3
+- source_page:
+- source_excerpt: |
+    1. 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
+    2. 피초청자가 기술연수생 요건을 구비하였음을 입증하는 서류
+    3. 연수내용을 확인할 수 있는 연수계획서(별첨 3)
+    4. 초청자의 신원보증서
+- related_visa_codes:
 - expected_questions: |
-    기술연수 사증발급인정서 신청할 때 어떤 서류 내야 해요?
-    초청 기업이 해외직접투자 산업체임을 어떻게 증명해요?
-    연수계획서 같은 거 꼭 첨부해야 해요?
+    기술연수 비자 받으려면 무슨 서류 내요?
+    초청 회사가 준비해야 하는 서류는 뭐예요?
+    한국어 능력 증명도 필요한가요?
 
 ### row D-4 / 사증발급 / 대상
 - manual_type: 사증민원
@@ -2191,337 +2483,70 @@
 - visa_name_ko: 일반연수
 - item_type: visa_rule
 - section_title: D-4 일반연수
-- subtype_or_program:
+- subtype_or_program: D-4-1
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    유학(D-2) 자격에 해당하는 교육기관 또는 학술연구기관외에 교육기관이나 기업체·단체 등에서 교육 또는 연수를 받거나 연구하는 활동
+- applicant_context:
 - eligibility: |
+    유학(D-2) 자격에 해당하는 교육기관 또는 학술연구기관외에 교육기관이나 기업체·단체 등에서 교육 또는 연수를 받거나 연구하는 활동
     대학부설 어학원에서 한국어를 연수하는 자
-    유학(D-2) 자격에 해당하는 기관 또는 학술연구기관 이외의 교육기관에서 교육을 받는 자
     국·공립 연구기관이나 연수원 등에서 기술, 기능 등을 연수하는 자
-    외국인투자기업 또는 외국에 투자한 기업체 등에서 인턴(실습사원)으로 교육·연수·연구 활동에 종사하는 자
-    해외진출 우리 기업이 현지에서 양성한 맞춤형 우수대학생과 해외법인 전문인력의 국내 인턴십 참여
-- target_persons:
+    외국인투자기업 또는 외국에 투자한 기업체 등에서 인턴(실습사원)으로 교육 또는 연수를 받거나 연구 활동에 종사하는 자
+- target_persons: 어학연수생(D-4-1 한국어, D-4-7 외국어), 대학부설 어학원 연수생
 - common_documents:
 - mandatory_documents:
 - other_documents:
-- requirements:
-- procedure:
+- requirements: |
+    고등학교 졸업 이상의 학력 소지자로 상기 교육기관에서 어학연수를 하고자 하는 사람
+    외국어 연수(D-4-7)는 고등학교 이하의 학교 재학생도 포함
+    유학(D-2) 사증발급 대상에 해당하는 교육기관(대학) 부설 어학원
+    평생교육시설·사설학원 등은 일반연수(D-4) 사증발급대상에 포함되지 않음
+- procedure: 신청인의 거주국 또는 최종학교 소재지 관할 대한민국 공관에서 신청 원칙
 - restrictions: |
-    평생교육시설(대학부설 평생교육시설 포함)·사설학원 등은 일반연수(D-4) 사증발급 대상에 포함되지 않음
-    평생교육시설·사설학원 등의 외국인학생 한국어연수는 불가
-- exceptions:
+    쿠바, 시리아, 마케도니아, 코소보 국민은 사증발급인정서에 의해서만 사증발급
+    일반대학·하위대학에 입학하는 몽골, 베트남, 우즈벡, 중국의 어학연수생은 사증발급인정서에 의해서만 사증발급
+- exceptions: 90일 이하 체류 어학연수생은 단기일반(C-3-1) 사증 발급 대상
 - fees:
-- duration_or_validity: 2년
+- duration_or_validity: 1회 부여 체류기간의 상한 2년 / 체류기간 6개월 이하 단수 일반연수(D-4) 사증
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 대학부설 어학원, 국·공립 연구기관, 외국인투자기업 등
+- inviter_context:
 - recommendation_or_approval:
+- keywords: 일반연수, 어학연수, 한국어연수, 대학부설어학원, D-4, D-4-1, D-4-7
+- source_page:
+- source_excerpt: |
+    유학(D-2) 자격에 해당하는 교육기관 또는 학술연구기관외에 교육기관이나 기업체․단체 등에서 교육 또는 연수를 받거나 연구하는 활동
+    대학부설 어학원에서 한국어를 연수하는 자
+    고등학교 졸업 이상의 학력 소지자로 상기 교육기관에서 어학연수를 하고자 하는 사람
+- related_visa_codes: D-2, C-3-1
 - expected_questions: |
-    한국에서 한국어나 외국어 연수 받으려면 어떤 비자예요?
-    인턴십으로 한국 기업에 가는 경우도 일반연수 비자에 해당해요?
-    사설학원에서 한국어 배우는 외국인도 일반연수 비자 받을 수 있어요?
+    대학 어학원에서 한국어 배우려면 어떤 비자 받아요?
+    고등학생인데 한국어 연수받으러 갈 수 있어요?
+    어학연수 비자로 한국에 얼마나 머물 수 있어요?
 
-### row D-4 / 사증발급 / 제출서류
+### row D-4 / 사증발급 / 요건
 - manual_type: 사증민원
 - visa_code: D-4
 - visa_name_ko: 일반연수
-- item_type: required_documents
-- section_title: D-4-1 어학연수 (한국어연수)
+- item_type: visa_rule
+- section_title: D-4 일반연수 / 어학연수 운영요건
 - subtype_or_program: D-4-1
 - petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    어학연수(한국어연수: D-4-1, 외국어연수: D-4-7) 자격
-    대상기관: 유학(D-2) 사증발급 대상에 해당하는 교육기관(대학) 부설 어학원
-- eligibility: |
-    고등학교 졸업 이상의 학력 소지자로 상기 교육기관에서 어학연수를 하고자 하는 사람 (학력입증 절차는 유학(D-2) 사증 신청 시와 동일)
-    단, 외국어 연수(D-4-7)는 고등학교 이하의 학교 재학생도 포함
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    - 교육기관 사업자등록증 사본 또는 고유번호증 사본
-    - 표준입학허가서 (대학 총·학장 발행)
-    - 재학증명서 또는 최종학력 입증서류 (원본 심사 원칙)
-    - 재정 입증서류 (잔고증명서, 통장, 장학금증명서, 입출금내역서 등; 잔고증명서는 30일 이내 발급한 것만 유효; 1년간 어학연수 6개월의 재정능력 (등록금+체재비) 입증을 원칙; 부·모 잔고증명서 제출 시 가족관계증명서 추가)
-    - 연수계획서 (강의시간표, 강사구성표, 연수시설 등의 내용 포함)
-- other_documents:
-- requirements: |
-    어학연수 사증 신청 시 다음 요건을 모두 충족할 것
-    - 한국어 강사: 국립국어원이 발급한 한국어 교원(3급 이상) 자격증 소지자 일정 인원 고용 (외국인도 요건 갖춘 경우 가능)
-    - 강사 비율: 학생인원수 대비 강사 비율이 학생 30명당 강사 1명 이상
-    - 수업운영: 주중(월-금) 최소 4일 이상, 주당 주간 최소 15시간 이상 (반기 당 최소 300시간 이상 교육)
-    - 주간·정규과정: 주간(9시~18시)에 월~금 출석수업 방식 운영
-- procedure: |
-    신청 장소: 신청인의 거주국 또는 최종학교 소재지 관할 대한민국 공관에서 신청 원칙
-- restrictions: |
-    아래의 경우 사증발급인정서에 의해서만 사증발급
-    - 쿠바, 시리아, 마케도니아, 코소보 국민
-    - 일반대학에 입학하는 몽골, 베트남, 우즈벡, 중국의 어학연수생
-    - 하위대학에 입학하는 몽골, 베트남, 우즈벡, 중국의 어학연수생
-- exceptions: |
-    90일 이하 체류 어학연수생은 단기일반(C-3-1) 사증 발급 대상
-- fees:
-- duration_or_validity: 체류기간 6개월 이하 단수 일반연수(D-4) 사증
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 대학 부설 어학원
-- recommendation_or_approval:
-- expected_questions: |
-    한국 대학 어학원에서 한국어 배우려면 어떤 비자 받아요?
-    어학연수 비자는 며칠까지 가능해요?
-    어학연수 신청 시 재정 증명은 어느 정도 있어야 해요?
-
-### row D-4 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-4
-- visa_name_ko: 일반연수
-- item_type: required_documents
-- section_title: D-4-3 고등학교 이하 유학생 사증발급
-- subtype_or_program: D-4-3
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    21개 국가 외의 기타국가 자비부담 외국인유학생
-    21개 국가: 중국, 필리핀, 인도네시아, 방글라데시, 베트남, 몽골, 태국, 파키스탄, 스리랑카, 인도, 미얀마, 네팔, 이란, 우즈베키스탄, 카자흐스탄, 키르기즈스탄, 우크라이나, 나이지리아, 가나, 이집트, 페루
+- subsection_type: 요건
+- applicant_context:
 - eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents:
 - other_documents:
-- requirements:
-- procedure: |
-    사증신청: 신청인의 거주국 또는 최종학교 소재지 관할 공관에서 신청 원칙
-- restrictions: |
-    21개 국가 국민 중 자비 부담 외국인유학생은 사증발급인정서에 의한 사증발급 대상임
-- exceptions:
-- fees:
-- duration_or_validity: 체류기간 1년 이내, 단수
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 초·중·고등학교, 외국인학교, 대안학교
-- recommendation_or_approval:
-- expected_questions: |
-    기타국가 학생이 한국 초·중·고로 자비 유학 가려면 어떤 비자 받아요?
-    공관에서 직접 받는 D-4-3 비자는 얼마짜리예요?
-    21개 국가 외 자비 유학생도 인정서 없이 비자 신청 가능해요?
-
-### row D-4 / 사증발급인정서 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-4
-- visa_name_ko: 일반연수
-- item_type: required_documents
-- section_title: D-4-1 어학연수 / 사증발급인정서
-- subtype_or_program: D-4-1
-- petition_type: 사증발급인정서
-- subsection_type: 제출서류
-- applicant_context: |
-    어학연수(D-4-1) 사증발급인정서 발급 대상
-- eligibility: |
-    시리아, 마케도니아, 코소보 국민
-    일반대학에 입학하는 몽골, 베트남, 우즈벡, 중국의 어학연수생
-    하위대학에 입학하는 몽골, 베트남, 우즈벡, 중국의 어학연수생
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매, 수수료
-    - 교육기관 사업자등록증 사본 또는 고유번호증 사본
-    - 표준입학허가서 (대학 총·학장 발행, FIMS 정보확인으로 갈음 가능; 국립국제교육원 초청 장학생은 교육원장 발급 초청장으로 대체)
-    - 재학증명서 또는 최종학력 입증서류 (원본심사 원칙)
-    - 재정 입증서류 (잔고증명서 등; 30일 이내 발급분만 유효; 베트남은 지급유보방식의 별도 유학경비 잔고증명서)
-    - 연수계획서 (강의시간표, 강사구성표, 연수시설 등 포함)
-- other_documents:
 - requirements: |
-    대상기관, 연수과정, 해당자(학력요건 포함) 등은 상단의 사증발급 기준 준용
-- procedure: |
-    신청장소: 입학예정대학 소재지 관할 출입국·외국인청(사무소·출장소)
-    온라인신청: 사증포털시스템(www.visa.go.kr)을 통한 온라인 신청 (유학생 담당자에 한함)
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: 체류기간 6개월 이하 단수 일반연수(D-4) 사증발급인정서
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 입학예정대학(부설 어학원)
-- recommendation_or_approval:
-- expected_questions: |
-    어학연수 사증발급인정서는 어디서 신청해요?
-    인정서로만 비자 받아야 하는 나라가 어디예요?
-    어학연수 인정서로 받는 비자는 몇 달짜리예요?
-
-### row D-4 / 사증발급인정서 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-4
-- visa_name_ko: 일반연수
-- item_type: required_documents
-- section_title: D-4-2K 기업 맞춤형 인턴십
-- subtype_or_program: D-4-2K
-- petition_type: 사증발급인정서
-- subsection_type: 제출서류
-- applicant_context: |
-    기업 맞춤형 인턴십(K-Trainee, D-4-2K) 자격 사증발급인정서
-    대상 국가: 베트남, 중국, 태국, 일본, 인도, 인도네시아, 말레이시아, 싱가포르, 필리핀 (2년간 시범운영)
-- eligibility: |
-    초청자(국내 기업) 요건: 상기 대상국가에 진출하여 현지법인이나 지점·지사(연락사무소제외)를 설립하고 운영 중인 기업의 국내 기업(본사 및 지점, 연구소 등)
-    피초청자 유형:
-    - 맞춤형 우수대학생: 기업이 현지 대학과 산학협력 체결하고 후원·양성하는 학사과정 3학년 이상 재학생으로 토픽 2급 이상 소지하고 ①산학협력 체결 ②후원(교육 커리큘럼, 장학금, 연구비 등) ③학력·한국어·나이(현지 산학협력 체결대학 계약학과 등 재학생; 학사과정 3년 이상, 석·박사 포함; 토픽 2급 이상; 29세 이하)
-    - 현지법인 전문인력: 현지 법인에 채용된 전문인력으로 특정활동(E-7-1, 2) 자격의 77개 직종 분야 국내 본사 인턴십 참여 예정자 (생산직 종사자는 제외)
-- target_persons:
-- common_documents: |
-    - 사증발급인정신청서
-    - 여권사본 및 표준규격 사진 1매
-    - 해외법인·국내 초청기업 관계 입증서류 (초청기업 사업자등록증, 해외 법인 설립 신고서 등)
-    - 납세증명서(국세, 지방세), 상시 근로자 수 입증 서류
-    - 결핵진단서(해당자)
-    - 인턴·연수 활동 계획서
-- mandatory_documents: |
-    추가서류
-    맞춤형 우수대학생
-    - 현지 대학과의 산학협력 체결 입증서류(MOU 등)
-    - 기업이 맞춤형 인재로 양성·후원하는 입증서류 (산학협력 체결서에 포함 시 생략 가능)
-    - 재학증명서 및 한국어 능력 입증 서류
-    현지법인 전문인력
-    - (필수) 재직증명서 (담당 업무, 재직 기간 포함)
-- other_documents:
-- requirements:
-- procedure: |
-    신청 장소: 초청기업 소재지 관할 출입국·외국인관서
-    발급 절차 (맞춤형 우수대학생): 현지 대학 연계 맞춤형 인재 양성 → 사증발급인정서 신청·발급(초청자, 출입국·외국인관서) → 사증발급신청·발급(피초청자 또는 대리인, 재외공관) → 입국
-    발급 절차 (현지법인 전문인력): 현지 법인 채용·근무 → 사증발급인정서 신청·발급 → 사증발급신청·발급 → 입국
-- restrictions: |
-    초청인원: 사업장별 상시 근로자 수의 10% 내에서 초청 가능, 동시 인턴십 가능 인원은 100명을 초과할 수 없음
-    초청제한: 사증발급인정서 발급 신청일 기준 과거 1년 이내 D-4-2K 참여자 중 10% 이상 불법체류자 발생 시 최종 발생일로부터 1년간 신규 초청 제한
-    국내에서 기업 맞춤형 인턴십(D-4-2K) 자격으로 체류자격 변경 불가
-- exceptions:
-- fees:
-- duration_or_validity: 체류기간 6개월 이내, 단수
-- quota_or_limit: |
-    사업장별 상시 근로자 수의 10% 이내, 동시 인턴십 100명 이내
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 해외 진출 국내 기업 본사·지점·연구소
-- recommendation_or_approval:
-- expected_questions: |
-    한국 기업 맞춤형 인턴십으로 가려면 어떤 조건이 필요해요?
-    현지 대학생이 한국 본사 인턴십 갈 수 있어요?
-    인턴십 비자는 얼마나 머무를 수 있어요?
-
-### row D-4 / 사증발급인정서 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-4
-- visa_name_ko: 일반연수
-- item_type: required_documents
-- section_title: D-4-3 고등학교 이하 자비유학생 사증발급인정서
-- subtype_or_program: D-4-3
-- petition_type: 사증발급인정서
-- subsection_type: 제출서류
-- applicant_context: |
-    고등학교 이하 교육기관 유학생에 대한 일반연수(D-4-3) 자격 사증발급인정서 발급
-    21개 국가국민 중 자비 부담 외국인유학생 또는 정부기관·지방자치단체 초청 의무(무상)교육기관 외국인 유학생
-- eligibility: |
-    교육기관:
-    - 초·중등교육법 제2조 제1호~제3호에 따른 초·중·고등학교 (공민학교, 고등공민학교, 방송통신중·고등학교, 고등기술학교는 제외)
-    - 초·중등교육법 제2조 제5호 외국인학교 및 대안학교 (학비가 연간 500만 원 이상이며, 교육감 설립 인가를 받은 학력 인정 기관)
-    - 경제자유구역 및 제주국제자유도시 외국교육기관
-    - 한국과학기술원법 제14조의3 제1항에 따른 과학영재학교
-    의무(무상) 교육기관은 제외 (단, 정부기관·지자체 초청 전액 장학생은 청소년 교류 또는 교육 나눔 목적 허용)
-- target_persons:
-- common_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
-    - 교육기관 사업자등록증(또는 고유번호증) 사본
-    - 입학허가서(학교장 발행, 붙임 1 서식)
-    - 최종 학력 입증서류(졸업증명서 또는 재학증명서 등)
-- mandatory_documents: |
-    자비부담 외국인유학생 추가서류
-    - 학비 납부 내역서(수업료·기숙사비·입학금 등 유학관련 비용 일체)
-    - 국내 체류비용 부담 능력 입증서류 (3개월 이상 계속 예치된 기준 이상 금액의 잔고증명서 또는 입출금내역서 등)
-    - 후견 보증서 (붙임 2 서식; 부모(2촌 이내 친인척)가 후견인이 되는 경우에도 작성; 후견인 면제 대상자는 학교장 명의 기숙사 입소확인서 제출)
-    - 후견인 재정능력 입증서류 (불법체류 다발국가 국민에 한함; 원천징수영수증, 부동산소유증명, 부동산거래계약서, 예금잔고증명 등)
-    - 후견인과의 관계 증명서류 (친족관계가 아닌 경우 관계 소명 자료 등)
-    - 가족관계 입증서류 (불법체류 다발국가 국민에 한함; 원본 제출, 번역본 첨부 시 번역자 확인서 추가)
-    정부기관 또는 지방자치단체 초청 외국인유학생 추가서류
-    - 전액 장학생 입증서류(정부기관 및 지방자치단체의 공문)
-    - 초청 목적 입증서류(교육 계획(안), 진로 지도(안) 등)
-- other_documents: |
-    후견인 요건
-    - 국내 체류 중인 국민 또는 등록외국인으로 해당 유학생과 친족관계에 있거나 유학생 부모와 친분 관계를 입증할 수 있는 자 (유학원 및 홈스테이 관계자 등 불가)
-    - 불법체류 다발국가(21개국) 외국인유학생의 후견인은 연간 소득이 전년도 한국은행 고시 GNI 이상이거나 자산이 국민기초생활보장법에 따른 중위 수준 이상
-    - 외국인인 경우 외국인등록을 한 국내 장기 체류가 가능한 자격 소지자
-    - 후견인 1인 당 후견 가능한 외국인유학생은 2명 이내로 제한
-    - 단, 고등학교 전·입학자로 해당학교 기숙사 입소자는 후견인 면제(학교장 명의 입소확인서 필요)
-- requirements: |
-    자비부담 외국인 유학생 요건
-    - 학비(수업료, 기숙사비, 입학금 등 유학관련 비용 일체)를 전액 자비로 납부
-    - 국내 체류 비용을 부담할 능력
-    - 단기 자격자는 국내 입국 후 해당자격으로 변경 금지
-- procedure: |
-    권한 위임 및 관할: 입학예정 학교 소재지 관할 출입국·외국인청(사무소·출장소)
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: 체류기간 1년 이내, 단수
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 입학예정 학교
-- recommendation_or_approval:
-- expected_questions: |
-    자녀를 한국 초·중·고 자비유학 보내려면 어떤 서류 내요?
-    유학생 후견인이 꼭 있어야 하나요?
-    21개국 국민 유학생은 인정서로 신청해야 해요?
-
-### row D-4 / 사증발급인정서 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-4
-- visa_name_ko: 일반연수
-- item_type: required_documents
-- section_title: D-4-5 한식조리연수생
-- subtype_or_program: D-4-5
-- petition_type: 사증발급인정서
-- subsection_type: 제출서류
-- applicant_context: |
-    한식조리연수생(D-4-5)에 대한 사증발급인정서 발급
-- eligibility: |
-    아래 3가지 요건 모두 충족
-    자격요건 중 1가지 이상:
-    - 고졸 이상 학력 소지자로서 조리사 근무경력 3년 이상인 자
-    - 외국조리사 자격증 소지자로서 조리사 근무경력 1년 이상인 자
-    - 조리 관련학과 학위증 (전문학사 포함) 소지자
-    - 조리 관련학과 전공자로 1년 이상 수학자
-    한국어기초능력 (다음 중 1):
-    - TOPIK 1급 또는 B-KLAT 120점 이상
-    - 국내 대학에서 전문학사 학위 이상 취득자
-    - 사회통합프로그램 사전평가 21점 이상 또는 1단계 이상(100시간) 수료자
-    - 대학교부설 어학원에서 1분기(150시간) 이상 한국어 연수
-    - 한국어기초능력 증명 면제신청서 제출자(동일언어권 연수생 대상 해당 외국어로 실시하는 연수프로그램 참가자에 한함)
-    심신이 건강한 자 (폐결핵, 전염성 질환 등의 감염이 없을 것)
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
-    - 연수기관 설립관련 서류 (사업자등록증 또는 고유번호증 사본, 법인등기부등본 등)
-    - 재정입증 관련 서류 (연수비 전액 납입증명서; 연수기관 경비 부담 시 경비부담 확인서)
-    - 신원보증서 (법무부장관이 특히 필요하다고 인정하는 경우)
-    - 연수계획서 (주중에 실시 원칙; 최소 1일 4시간 또는 주 20시간, 최대 1일 8시간 또는 주 40시간)
-    - 한국농수산식품유통공사(aT)의 추천서
-- other_documents:
-- requirements:
-- procedure: |
-    업무처리절차: 연수추천서 발급(한국농수산식품유통공사 aT) → 사증발급인정서 신청(교육기관) → 사증발급인정서(번호) 발급(관할 출입국·외국인청) → 사증발급신청(연수대상 외국인) → 사증발급(재외공관)
-    추천기관: 한국농수산식품유통공사(aT)
-    추천 시 징구서류: 졸업증명서/조리사자격증/조리관련학과 학위증/재학증명서, 경력증명서, 한국어 능력 입증서류
+    (한국어 강사) 국립국어원이 발급한 한국어 교원(3급 이상, 외국인도 요건을 갖춘 경우 가능) 자격증을 소지한 사람으로 일정 인원 고용하고 있을 것
+    (강사 비율) 학생인원수 대비 강사 비율이 학생 30명당 강사 1명 이상일 것
+    (수업운영) 주중(월-금) 최소 4일 이상, 주당 주간 최소 15시간 이상의 어학연수 과정을 주간에 운영(반기 당 최소 300시간 이상 교육)
+    (주간 및 정규과정) 주간(일과시간으로 9시~18시)에 월요일~금요일 사이에 출석수업 방식으로 과정이 운영될 것
+- procedure:
 - restrictions:
 - exceptions:
 - fees:
@@ -2530,110 +2555,43 @@
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 연수예정 교육기관의 대표
-- recommendation_or_approval: 한국농수산식품유통공사(aT) 추천
-- expected_questions: |
-    한식 조리 배우러 한국 가려면 어떤 비자 받아요?
-    한식조리연수 비자 신청할 때 한국어 능력 증명은 어떻게 해요?
-    한식조리연수 추천서는 어디서 받아요?
-
-### row D-4 / 사증발급인정서 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-4
-- visa_name_ko: 일반연수
-- item_type: required_documents
-- section_title: D-4-6 우수사설 교육기관 외국인 연수
-- subtype_or_program: D-4-6
-- petition_type: 사증발급인정서
-- subsection_type: 제출서류
-- applicant_context: |
-    우수사설 교육기관 외국인 연수(D-4-6)
-    허가권한: 연수기관 소재지 관할 출입국외국인관서장
-    사증발급인정서로만 사증발급 가능, 공관장 재량으로 사증 발급 불가
-- eligibility: |
-    연수 허용기관 기준 (모두 충족)
-    다음 중 어느 하나에 해당하는 기관: 국내 상장기업 설립(또는 연계) 전문기술 교육기관, 대학부설 전문기술 교육기관, 해외 본사 유명 전문기술 교육기관의 국내 지사 또는 독점 운영 계약 체결 법인형태의 교육기관, 직업능력개발훈련법인, 교육부 평가인정 법인형태의 직업기술 분야 평생직업교육학원, 평생교육법상 전공대학교 (국제예술대, 백석예술대, 정화예술대)
-    (운영실적) 설립 후 1년 이상 경과
-    (연수비용) 반기 400만원(연 800만원) 이상
-    (연수과정) 국가기술자격법 시행규칙 또는 학원의 설립운영 및 과외교습에 관한 법률 시행령의 직업기술 교육 (경영·사무관리·문화관광·도배·미장·세탁·장의·호스피스·청소 직종 제외)
-    (연수시간) 주중(월-금) 최소 4일 이상, 주당 최소 15시간 이상 주간 운영
-    (연수시설) 연수생을 위한 기숙사 및 자체 교육장 보유
-    외국인 연수생 기준
-    (연령 및 학력) 만 18세 이상 30세 이하, 고등학교 이상 학력 소지자
-    (체류경비) 어학연수생(D-4-1) 기준 준용 (잔고증명 등; 해외 발급 서류는 아포스티유 또는 한국대사관 영사확인)
-    (한국어능력) TOPIK 1급 이상 또는 세종학당 초급1 이상 과정 수료자 ('26.1.1.부터 TOPIK 2급, 사회통합프로그램 2단계 이상 이수 또는 사전평가 41점 이상, 세종학당 한국어 초급 2 이상 이수로 상향)
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    연수생 준비서류
-    - 최종학력 입증서류(공증) 및 입학허가서(교육기관장 발행)
-    - 재정능력 입증서류(잔고증명, 부모 재정능력 등)
-    - 등록금 또는 교육비 납입증명서
-    - 한국어 능력 입증서류(토픽 1급 이상, 세종학당 초급1 과정 이상 수료증; 2026.1.1.부터 토픽 2급 이상, 세종학당 초급2 이상으로 상향)
-    연수기관 준비서류
-    - 교육기관설립관련 서류
-    - 교육기관 법인등기부등본
-    - 사업자등록증 또는 고유번호증 사본
-    - 연수계획서(강의시간표, 강사구성표, 연수시설, 학비 등 포함)
-    - 기숙사 보유 입증서류
-    - 학원설립·운영 등록증(교육청 발행, 직업기술과정)
-    - 직업능력개발훈련법인 설립허가서(해당시)
-    - 상장기업 입증서류 및 교육기관 연계·설립 입증서류(국내상장기업 연계 또는 설립기관에 한함)
-    - 대학부설 시설 전문교육기관 입증서류(대학부설 교육기관에 한함)
-    - 해외 교육기관 국내지사 또는 독점 운영계약자 입증서류(해외교육기관 국내지사에 한함)
-    - 학습과정 평가 인정서(교육부장관 발행)
-    - 교육기관의 국민 교육생 유치 실적 증빙 서류
-    - 기타 교육기관 정상운영 및 교육과정 정상 운영 능력 입증 서류
-- other_documents:
-- requirements: |
-    이론 및 실기 등 교육과정 외부 기관 위탁 불가
-- procedure:
-- restrictions: |
-    연수허용 인원은 과정에 상관없이 연수기관 당 총 300명 이내, 불법체류자 발생 수만큼 연수허용 쿼터 감축
-    초청인원 대비 불법체류율 (15명 이하 30%, 16~50명 20%, 51명 이상 15%) 발생 시 1년간 신규초청 제한, 추가 2% 초과 시 연수중단
-    연수기관은 미입국·미등록·중도이탈·미출국 등 발생 시 15일 이내 신고 의무, 연간 2회 이상 위반 시 6개월간 신규초청 불허
-    강제노동·인신매매·임금체불·성폭력·성희롱 등 적발 시 연수중단
-    연수 부실방지를 위해 최근 1년간 국민 교육생 유치실적 100명 이하인 교육기관은 연수생 초청 제한
-- exceptions:
-- fees:
-- duration_or_validity: 체류기간 6개월 이하 단수 사증
-- quota_or_limit: |
-    연수기관 당 총 300명 이내
-- score_criteria:
-- table_summary: 초청인원 대비 불법체류율 제재 기준
-- table_rows: |
-    15명 이하: 30%
-    16명 ~ 50명: 20%
-    51명 이상: 15%
-- inviter_context: 우수사설 교육기관
+- inviter_context:
 - recommendation_or_approval:
+- keywords: 어학연수, 한국어교원, 강사비율, 수업운영, D-4-1
+- source_page:
+- source_excerpt: |
+    - (한국어 강사) 국립국어원이 발급한 한국어 교원(3급 이상, 외국인도 요건을 갖춘 경우 가능) 자격증을 소지한 사람으로 일정 인원 고용하고 있을 것
+    - (강사 비율) 학생인원수 대비 강사 비율이 학생 30명당 강사 1명 이상일 것
+    - (수업운영) 주중(월-금) 최소 4일 이상, 주당 주간 최소 15시간 이상의 어학연수 과정을 주간에 운영(반기 당 최소 300시간 이상 교육)
+- related_visa_codes:
 - expected_questions: |
-    한국 우수 사설 교육기관에서 연수받으려면 어떤 비자 받아요?
-    D-4-6 연수 비자 받으려면 한국어 능력 어느 정도여야 해요?
-    교육기관이 갖춰야 할 시설 기준은 어떻게 돼요?
+    어학원이 외국인 학생 받으려면 어떤 조건 갖춰야 해요?
+    수업 시간은 얼마나 운영해야 하나요?
+    한국어 강사 자격 기준이 있나요?
 
-### row D-4 / 사증발급인정서 / 제출서류
+### row D-4 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: D-4
 - visa_name_ko: 일반연수
 - item_type: required_documents
-- section_title: D-4 그 밖의 연수
-- subtype_or_program:
-- petition_type: 사증발급인정서
+- section_title: D-4 일반연수 / 어학연수 사증발급 첨부서류
+- subtype_or_program: D-4-1
+- petition_type: 사증발급
 - subsection_type: 제출서류
-- applicant_context: |
-    그 밖의 연수를 받고자 하는 자에 대한 일반연수(D-4) 사증발급인정서
+- applicant_context:
 - eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
-    - 연수(연구 활동)를 증명하는 서류 (연수일정 포함된 연수계획서 등)
-    - 연수기관의 설립관련서류
-    - 재정입증 관련서류 (연수기관 경비 부담 시 경비부담 확인서; 그 밖은 국내송금이나 환전증명서 미화 3천불 이상)
-    - 신원보증서 (학비 등 체류중 필요한 경비지불능력 미입증 또는 법무부장관이 특히 필요하다고 인정하는 경우)
-    - 전 가족 기재된 호구부 및 거민증 사본 (중국인의 경우)
-- other_documents:
+    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    - 교육기관 사업자등록증 사본 또는 고유번호증 사본
+    - 표준입학허가서 (대학 총·학장 발행)
+    - 재학증명서 또는 최종학력 입증서류
+    - 재정 입증서류 (1년간(어학연수 6개월)의 재정능력 입증을 원칙: 등록금 + 체재비)
+    - 연수계획서(강의시간표, 강사구성표, 연수시설 등의 내용을 포함)
+- other_documents: |
+    부·모 잔고증명서 제출 시 가족관계증명서 추가 제출 필요
+    잔고증명서는 30일 이내 발급한 것만 유효
 - requirements:
 - procedure:
 - restrictions:
@@ -2646,10 +2604,320 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 어학연수, 사증발급신청서, 표준입학허가서, 재정입증서류, 잔고증명서, D-4-1
+- source_page:
+- source_excerpt: |
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 교육기관 사업자등록증 사본 또는 고유번호증 사본
+    ③ 표준입학허가서* (대학 총․학장 발행)
+    ⑤ 재학증명서 또는 최종학력 입증서류
+    ⑥ 재정 입증서류
+- related_visa_codes:
 - expected_questions: |
-    그 밖의 일반 연수 비자를 받으려면 어떤 서류 내요?
-    연수 비자 신청 시 재정 증명은 어느 정도 있어야 해요?
-    중국 국적이면 어떤 서류를 추가로 내야 해요?
+    어학연수 비자 신청할 때 무슨 서류 내요?
+    재정 증명은 얼마나 있어야 인정되나요?
+    부모님 통장으로 재정 증명 가능해요?
+
+### row D-4 / 사증발급인정서 / 대상
+- manual_type: 사증민원
+- visa_code: D-4
+- visa_name_ko: 일반연수
+- item_type: visa_rule
+- section_title: D-4 일반연수 / 기업 맞춤형 인턴십(K-Trainee)
+- subtype_or_program: D-4-2K
+- petition_type: 사증발급인정서
+- subsection_type: 대상
+- applicant_context: 대상 9개국(베트남, 중국, 태국, 일본, 인도, 인도네시아, 말레이시아, 싱가포르, 필리핀)에 대해서만 허용, 2년간 시범운영
+- eligibility: |
+    맞춤형 우수대학생: 기업이 현지 대학과 산학협력을 체결하고 후원·양성하는 학사과정 3학년 이상 재학생으로 토픽 2급 이상 소지자
+    현지법인 전문인력: 현지 법인에 채용된 전문인력으로 특정활동(E-7-1, 2) 자격 77개 직종 분야 국내 본사 인턴십 참여 예정자
+- target_persons: 맞춤형 우수대학생(학사과정 3년 이상, 토픽 2급 이상, 29세 이하), 현지법인 전문인력
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    초청자(국내 기업) 요건: 상기 대상국가에 진출하여 현지법인이나 지점·지사를 설립하고 운영 중인 기업의 국내 기업
+    초청인원: 사업장별 상시 근로자 수의 10% 내, 동시 인턴십 가능 인원 100명 초과 불가
+    맞춤형 우수대학생: 산학협력 체결 + 후원 + 학력·한국어·나이 요건 충족
+    현지법인 전문인력: 특정활동(E-7) 전문·준전문인력 자격 + 77개 직종
+- procedure:
+- restrictions: |
+    초청제한: 사증발급인정서 발급 신청일 기준 과거 1년 이내 D-4-2K 참여자 중 10% 이상 불법체류자 발생 시 최종 발생일로부터 1년간 신규 초청 제한
+    국내에서 기업 맞춤형 인턴십(D-4-2K) 자격으로 체류자격 변경 불가
+    생산직 종사자는 제외
+- exceptions:
+- fees:
+- duration_or_validity: 체류기간 6개월 이내, 단수
+- quota_or_limit: 사업장별 상시 근로자 수의 10% 내, 동시 인턴십 가능 인원 100명 초과 불가
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: 대상국가에 진출한 현지법인·지점·지사를 운영하는 국내 기업(본사 및 지점, 연구소 등)
+- recommendation_or_approval:
+- keywords: 기업맞춤형인턴십, K-Trainee, 산학협력, 토픽2급, 현지법인전문인력, D-4-2K
+- source_page:
+- source_excerpt: |
+    ❖ 기업이 현지 대학과 산학협력을 체결하고 후원 · 양성하는 학사과정 3학년 이상 재학생으로 토픽 2급 이상 소지하고 아래 ①~③ 요건을 모두 충족하는 사람
+    ❖ 현지 법인에 채용된 전문인력으로 특정활동(E-7-1, 2) 자격의 77개 직종 분야 국내 본사 인턴십에 참여 예정인 사람
+- related_visa_codes: E-7, E-7-1
+- expected_questions: |
+    한국 기업이랑 산학협력한 대학 다니는데 인턴십 갈 수 있어요?
+    해외 현지법인 직원인데 한국 본사 인턴 받을 수 있어요?
+    K-Trainee 비자로 한국에 얼마나 있을 수 있어요?
+    한국 입국 후 다른 자격으로 바꿀 수 있나요?
+
+### row D-4 / 사증발급인정서 / 대상
+- manual_type: 사증민원
+- visa_code: D-4
+- visa_name_ko: 일반연수
+- item_type: visa_rule
+- section_title: D-4 일반연수 / 고등학교 이하 교육기관 유학생(D-4-3)
+- subtype_or_program: D-4-3
+- petition_type: 사증발급인정서
+- subsection_type: 대상
+- applicant_context: 21개 불법체류 다발국가 자비부담 외국인유학생은 사증발급인정서 대상, 기타국가는 사증(재외공관장) 발급 대상
+- eligibility: |
+    초·중등교육법 제2조 제1호 내지 제3호에 따른 초·중·고등학교
+    초·중등교육법 제2조 제5호 각종학교 중 외국인학교 및 대안학교
+    경제자유구역 및 제주국제자유도시 외국교육기관
+    한국과학기술원법 제14조의3 제1항에 따른 과학영재학교
+- target_persons: |
+    정부기관 또는 지방자치단체 초청 외국인 유학생
+    자비부담 외국인 유학생 (입학허가 받고 입학 예정이거나 재학 중)
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    자비부담 유학생: 학비를 전액 자비로 납부, 국내 체류 비용 부담 능력, 지정된 후견인 보유
+    후견인: 국내 체류 중인 국민 또는 등록외국인으로 친족관계 또는 친분관계 입증 가능자
+    불법체류 다발국가(21개국) 후견인은 연간 소득이 전년도 한국은행 고시 GNI 이상이거나 자산이 중위 수준 이상
+    후견인 1인당 후견 가능한 외국인유학생은 2명 이내
+- procedure: 입학예정 학교 소재지 관할 출입국·외국인청(사무소·출장소)
+- restrictions: |
+    의무(무상) 교육기관 제외 (단, 정부·지자체 초청 전액 장학생은 청소년 교류 또는 교육 나눔 목적에 한해 허용)
+    유학원 및 홈스테이 관계자는 후견인 불가
+- exceptions: 고등학교 전·입학자로 해당학교 기숙사 입소자는 후견인 면제 (학교장 명의 입소확인서 필요)
+- fees:
+- duration_or_validity: 체류기간 1년 이내, 단수
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 외국인유학생, 초중고, 후견인, 불법체류다발국가, 자비부담, D-4-3
+- source_page:
+- source_excerpt: |
+    ▪상기 교육기관에서 입학허가를 받고 입학 예정이거나 재학 중인 외국인 유학생으로서, 아래 요건을 갖추고 지정된 후견인이 있는 자
+    - 학비(수업료, 기숙사비, 입학금 등 유학관련 비용 일체)를 전액 자비로 납부했을 것
+    - 국내 체류 비용을 부담할 능력을 갖추고 있을 것
+- related_visa_codes:
+- expected_questions: |
+    중학생인데 한국 학교 다니러 갈 수 있어요?
+    외국인 유학생 후견인은 누가 될 수 있나요?
+    자비부담 유학생 비자는 얼마나 머물 수 있어요?
+    학교 기숙사에 들어가면 후견인 없어도 되나요?
+
+### row D-4 / 사증발급인정서 / 제출서류
+- manual_type: 사증민원
+- visa_code: D-4
+- visa_name_ko: 일반연수
+- item_type: required_documents
+- section_title: D-4 일반연수 / 고등학교 이하 유학생(D-4-3) 첨부서류
+- subtype_or_program: D-4-3
+- petition_type: 사증발급인정서
+- subsection_type: 제출서류
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents: |
+    - 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
+    - 교육기관 사업자등록증(또는 고유번호증) 사본
+    - 입학허가서(학교장 발행, 붙임 1 서식)
+    - 최종 학력 입증서류(졸업증명서 또는 재학증명서 등)
+- mandatory_documents:
+- other_documents: |
+    자비부담 외국인유학생 추가서류:
+    - 학비 납부 내역서(수업료·기숙사비·입학금 등 유학관련 비용 일체)
+    - 국내 체류비용 부담 능력 입증서류 (3개월 이상 계속 예치된 기준 이상 금액의 잔고증명서)
+    - 후견 보증서 (붙임 2 서식)
+    - 후견인 재정능력 입증서류 (불법체류 다발국가 국민에 한함)
+    - 후견인과의 관계 증명서류
+    - 가족관계 입증서류 (불법체류 다발국가 국민에 한함)
+    정부기관 또는 지방자치단체 초청 외국인유학생 추가서류:
+    - 전액 장학생 입증서류
+    - 초청 목적 입증서류
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 외국인유학생, 후견보증서, 학비납부내역서, 가족관계입증서류, D-4-3
+- source_page:
+- source_excerpt: |
+    ① 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
+    ② 교육기관 사업자등록증(또는 고유번호증) 사본
+    ③ 입학허가서(학교장 발행, 붙임 1 서식)
+    ⑤ 학비 납부 내역서(수업료･기숙사비･입학금 등 유학관련 비용 일체)
+    ⑦ 후견 보증서* (붙임 2 서식)
+- related_visa_codes:
+- expected_questions: |
+    중고등학생 유학 비자 받으려면 어떤 서류 내요?
+    후견 보증서는 어떻게 작성하나요?
+    부모님 재정능력은 어떻게 증명하나요?
+
+### row D-4 / 사증발급인정서 / 대상
+- manual_type: 사증민원
+- visa_code: D-4
+- visa_name_ko: 일반연수
+- item_type: visa_rule
+- section_title: D-4 일반연수 / 한식조리연수생(D-4-5)
+- subtype_or_program: D-4-5
+- petition_type: 사증발급인정서
+- subsection_type: 대상
+- applicant_context: 한국농수산식품유통공사(aT)의 추천을 받아 사증발급인정서 신청
+- eligibility: |
+    고졸 이상의 학력 소지자로서 조리사 근무경력 3년 이상인 자
+    외국조리사 자격증 소지자로서 조리사 근무경력 1년 이상인 자
+    조리 관련학과 학위증 (전문학사 포함) 소지자
+    조리 관련학과 (전문대학 이상 교육기관) 전공자로 1년 이상 수학자
+- target_persons: 자격요건·한국어능력·심신건강 3가지 요건을 모두 충족하는 자
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    한국어기초능력: TOPIK 1급 또는 B-KLAT 120점 이상, 국내 대학 전문학사 이상 학위 취득자, 사회통합프로그램 사전평가 21점 이상 또는 1단계(100시간) 이수자, 대학교부설 어학원 1분기(150시간) 이상 연수자, 한국어기초능력 증명 면제신청서 제출자 중 1개 충족
+    심신이 건강한 자 (폐결핵, 전염성 질환 등의 감염이 없을 것)
+- procedure: 연수추천서 발급(aT) → 사증발급인정서 신청(교육기관, 출입국·외국인청) → 사증발급인정번호 발급 → 사증발급신청(재외공관) → 사증발급
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: 초청자는 연수예정 교육기관의 대표
+- recommendation_or_approval: 한국농수산식품유통공사(aT)의 추천서
+- keywords: 한식조리연수생, 조리사경력, TOPIK, aT추천서, 한국농수산식품유통공사, D-4-5
+- source_page:
+- source_excerpt: |
+    ① 아래 자격요건 중 1가지 이상 해당자
+    - 고졸 이상의 학력 소지자로서 조리사 근무경력 3년 이상인 자
+    - 외국조리사 자격증 소지자로서 조리사 근무경력 1년 이상인 자
+    ② 한국어기초능력 소유자 (아래 요건 중 1개를 충족할 것)
+    ③ 심신이 건강한 자
+- related_visa_codes:
+- expected_questions: |
+    한식 조리 배우러 한국에 가려면 무슨 자격 필요해요?
+    조리사 경력 없으면 한식조리연수 신청 못 하나요?
+    한국어 시험을 꼭 봐야 하나요?
+    어디서 추천을 받아야 하나요?
+
+### row D-4 / 사증발급인정서 / 대상
+- manual_type: 사증민원
+- visa_code: D-4
+- visa_name_ko: 일반연수
+- item_type: visa_rule
+- section_title: D-4 일반연수 / 우수사설 교육기관 외국인 연수(D-4-6)
+- subtype_or_program: D-4-6
+- petition_type: 사증발급인정서
+- subsection_type: 대상
+- applicant_context: 사증발급인정서로만 사증발급 가능, 공관장 재량으로 사증 발급 불가
+- eligibility:
+- target_persons: 만 18세 이상 30세 이하 고등학교 이상 학력 소지자
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    연수 허용기관 기준 6가지 모두 충족:
+    ① 국내 상장기업 설립(또는 연계) 전문기술 교육기관, 대학부설 전문기술 교육기관, 해외 유명 전문기술 교육기관 국내 지사·독점 운영, 직업능력개발훈련법인, 직업기술 분야 평생직업교육학원, 평생교육법상 전공대학교 중 하나
+    ② 설립된 후 1년 이상 경과
+    ③ 교육과정 학비가 반기 기준 400만원(연 기준 800만원) 이상
+    ④ 국가기술자격법 시행규칙 별표2 직업기술 교육 한정 (경영·사무관리 및 문화관광 계열, 도배·미장·세탁 등 제외)
+    ⑤ 주중(월-금) 최소 4일 이상, 주당 최소 15시간 이상 주간 운영
+    ⑥ 기숙사 및 자체 교육장 보유
+    외국인 연수생 기준:
+    ① 만 18세 이상 30세 이하, 고등학교 이상 학력 소지자
+    ② 체류경비 입증
+    ③ 한국어능력: TOPIK 1급 이상 또는 세종학당 초급1 이상 (2026.1.1부터 TOPIK 2급, 세종학당 초급2 등으로 상향)
+- procedure:
+- restrictions: |
+    교육과정 외부 기관 위탁 불가
+    국민 교육생 유치실적이 신청일로부터 최근 1년간 100명 이하인 교육기관은 연수생 초청 제한
+    초청인원 대비 불법체류율 초과 시 사유 발생일로부터 1년간 신규초청 제한 (15명 이하 30%, 16~50명 20%, 51명 이상 15%)
+    연수생에 대한 강제노동·인신매매·임금체불·성폭력·성희롱 등 관련 법령 위반 처벌 시 연수중단
+- exceptions:
+- fees:
+- duration_or_validity: 체류기간 6개월 이하, 단수 사증
+- quota_or_limit: 연수허용 인원은 과정에 상관없이 연수기관 당 총 300명 이내, 불법체류자 발생 수만큼 쿼터 감축
+- score_criteria:
+- table_summary: 초청인원별 불법체류율 제재 기준
+- table_rows: |
+    15명 이하 → 30%
+    16명 ~ 50명 → 20%
+    51명 이상 → 15%
+- inviter_context: 연수기관 소재지 관할 출입국외국인관서장이 허가
+- recommendation_or_approval:
+- keywords: 우수사설교육기관, 전문기술교육, 직업능력개발, 연수쿼터, 불법체류율, D-4-6
+- source_page:
+- source_excerpt: |
+    ① (연령 및 학력) 만 18세 이상 30세 이하로, 고등학교 이상의 학력소지자
+    ② (체류경비) 연수기간동안의 국내 체재비를 입증하는 자
+    ③ (한국어능력) 연수에 필요한 한국어능력을 보유한 자
+    - 한국어 능력 기준 : TOPIK 1급 이상 또는 세종학당 초급1 이상 과정 수료자
+- related_visa_codes:
+- expected_questions: |
+    한국 사설 학원에서 기술 배우려면 어떤 자격 필요해요?
+    교육기관이 외국인 연수생을 몇 명까지 받을 수 있나요?
+    한국어 시험 점수는 얼마나 필요해요?
+    학비가 얼마 이상이어야 하나요?
+
+### row D-4 / 사증발급 / 제한
+- manual_type: 사증민원
+- visa_code: D-4
+- visa_name_ko: 일반연수
+- item_type: restriction
+- section_title: D-4 일반연수 / 참고사항 - 평생교육시설·사설학원 제외
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 제한
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions: |
+    평생교육시설·사설학원 등의 외국인학생 한국어연수는 불가
+    평생교육시설의 설립목적 및 운영취지에 부합하지 아니하고, 한국어 연수는 어학연수뿐만 아니라 우리 고유의 문화·제도 등에 관한 종합적인 습득과정이므로 정규 교육기관에서 전문적이고 체계적으로 실시 필요
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 평생교육시설, 사설학원, 한국어연수제한, 정규교육기관, D-4
+- source_page:
+- source_excerpt: |
+    ❍ 평생교육시설 ･ 사설학원 등의 외국인학생 한국어연수는 불가
+    - 평생교육시설의 설립목적 및 운영취지에 부합하지 아니하고, 한국어 연수는 어학연수뿐만 아니라 우리 고유의 문화 · 제도 등에 관한 종합적인 습득과정이므로 정규 교육기관에서 전문적이고 체계적으로 실시 필요
+- related_visa_codes:
+- expected_questions: |
+    평생교육시설에서 외국인 한국어 가르칠 수 있어요?
+    사설학원에서 한국어연수 비자 받을 수 있나요?
 
 <!-- end chunk: visa_004 -->
 
@@ -2665,50 +2933,51 @@
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    외국 보도기관에서 파견되거나 계약 체결하여 국내에서 주재하면서 취재·보도활동을 하는 자
+- applicant_context:
 - eligibility: |
     외국의 신문, 방송, 잡지, 기타 보도기관으로부터 파견되어 국내에 주재하면서 취재·보도 활동을 하는 자
     외국의 보도기관과의 계약에 의하여 국내에서 주재하면서 취재·보도 활동을 하는 자
     국내에 지사나 지국이 이미 개설된 외국의 신문, 방송, 잡지, 기타 보도기관으로부터 파견되어 국내에서 취재·보도활동을 하는 자
-- target_persons:
+- target_persons: 외국 보도기관 파견·계약 취재·보도 종사자
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
 - procedure:
 - restrictions: |
-    체류기간이 90일 이하인 경우에는 일시취재(C-1)자격에 해당
-    외국의 보도기관 국내 지사 등에서 취재·보도활동과 관련 없는 업무(통역, 행정업무, 운전기사 등의 행정요원과 코디네이터)는 제외
-    외국인이 대한민국의 보도기관과 계약을 맺고 행하는 활동은 취재(D-5) 자격에 해당되지 않음
-- exceptions:
+    외국의 보도기관 국내 지사 등에서 취재·보도활동과 관련 없는 업무를 수행하는 자(통역, 행정업무, 운전기사 등의 행정요원과 코디네이터)는 제외
+    국내 보도기관과 계약을 맺고 행하는 활동은 D-5에 해당되지 않음
+- exceptions: 체류기간이 90일 이하인 경우에는 일시취재(C-1)자격에 해당
 - fees:
-- duration_or_validity: 2년
+- duration_or_validity: 1회 부여 체류기간의 상한 2년
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 외국의 보도기관(외국에 본사를 둔 신문사·통신사·방송국 등)
-- recommendation_or_approval: |
-    외국신문 지사·지국 설치 시 문화체육관광부장관에게 등록 (신문 등의 진흥에 관한 법률 제28조)
-    외국 정기간행물 지사·지국 설치 시 문화체육부장관에게 등록 (잡지 등 정기간행물의 진흥에 관한 법률 제29조)
-    뉴스통신사업: 전파법 무선국 허가 또는 정보통신체제 갖춰 외국 뉴스통신사와 계약 체결 후 문화체육관광부장관 등록
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 취재, 보도활동, 외국보도기관, 특파원, D-5
+- source_page:
+- source_excerpt: |
+    외국의 신문, 방송, 잡지, 기타 보도기관으로부터 파견되어 국내에 주재하면서 취재ㆍ보도 활동을 하는 자
+    외국의 보도기관과의 계약에 의하여 국내에서 주재하면서 취재·보도 활동을 하는 자
+    ※체류기간이 90일 이하인 경우에는 일시취재(C-1)자격에 해당
+- related_visa_codes: C-1, F-3
 - expected_questions: |
-    외국 신문사 특파원으로 한국에서 1년 이상 취재하려면 어떤 비자예요?
-    외국 보도기관 계약직 기자도 같은 비자 받아요?
-    취재 비자는 한 번에 얼마나 머물 수 있어요?
+    외국 신문사 특파원으로 한국 가려면 어떤 비자 받아요?
+    한국에 90일만 머물면서 취재할 때는 어떤 비자예요?
+    한국 언론사랑 계약하고 취재하면 이 비자 받을 수 있나요?
 
 ### row D-5 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: D-5
 - visa_name_ko: 취재
 - item_type: required_documents
-- section_title: D-5 취재 / 공관장 재량 발급
+- section_title: D-5 취재 / 공관장 재량 사증 첨부서류
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 제출서류
-- applicant_context: |
-    국내에 지사나 지국이 이미 개설된 보도기관에 파견되어 활동 하고자 하는 자와 그 동반가족(체류자격 F-3)
+- applicant_context: 국내에 지사나 지국이 이미 개설된 보도기관에 파견된 자와 동반가족(F-3)에 대한 체류기간 1년 이하의 단수사증
 - eligibility:
 - target_persons:
 - common_documents:
@@ -2720,57 +2989,25 @@
 - requirements:
 - procedure:
 - restrictions:
-- exceptions:
+- exceptions: 국내에 지국·지사가 없거나 증명을 발급받을 수 없는 외신은 주무부처(문화체육관광부 해외문화홍보원)의 협조공문으로 갈음 가능
 - fees:
 - duration_or_validity: 체류기간 1년 이하 단수사증
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 국내 개설된 외국 보도기관 지사·지국
+- inviter_context:
 - recommendation_or_approval:
+- keywords: 취재, 사증발급신청서, 파견명령서, 지국설치허가증, D-5
+- source_page:
+- source_excerpt: |
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 파견명령서 또는 재직증명서
+    ③ 국내 지국․지사 설치허가증이나 국내 지국․지사 운영자금 도입실적 증빙서류
+- related_visa_codes: F-3
 - expected_questions: |
-    국내 지국 있는 외국 신문사 특파원이 가족 데리고 가려면 서류 어떻게 내요?
-    취재 비자 공관 발급 신청 시 어떤 증빙이 필요해요?
-    파견명령서가 꼭 필요한가요?
-
-### row D-5 / 사증발급인정서 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-5
-- visa_name_ko: 취재
-- item_type: required_documents
-- section_title: D-5 취재 / 사증발급인정서
-- subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 제출서류
-- applicant_context: |
-    외국의 신문·방송·잡지·기타 보도기관으로부터 파견되어 국내에 주재하면서 취재·보도 활동을 하는 자
-    외국의 보도기관과의 계약에 의하여 국내에서 주재하면서 취재·보도 활동을 하는 자
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
-    - 파견명령서 또는 재직증명서
-    - 국내지국·지사 설치허가증이나 국내 지국·지사 운영자금 도입실적 증빙서류 (국내에 지국·지사가 없거나 증명을 발급받을 수 없는 외신은 주무부처(문화체육관광부 해외문화홍보원)의 협조공문으로 갈음)
-- other_documents: |
-    대리인 신청시: 위임장, 대리인 재직증명서, 대리인 신분증 사본 추가 제출
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 외국 보도기관
-- recommendation_or_approval:
-- expected_questions: |
-    외신 기자가 한국에 주재하려면 사증발급인정서를 어떻게 받아요?
-    국내 지국이 없는 외신은 어떤 서류로 갈음할 수 있어요?
-    대리인이 신청할 때 추가 서류는 뭐예요?
+    외신 특파원 비자 받으려면 무슨 서류 내요?
+    소속 보도기관이 한국에 지사 없으면 어떻게 해요?
 
 ### row D-6 / 사증발급 / 대상
 - manual_type: 사증민원
@@ -2781,88 +3018,57 @@
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    종교 활동 및 사회복지 활동
+- applicant_context:
 - eligibility: |
     외국의 종교단체 또는 사회복지단체로부터 국내에 등록된 그 지부에 파견되어 근무하는 자
     외국의 종교단체 또는 사회복지단체로부터 파견되어 국내 유관 종교단체에서 종교 활동을 하는 자
-    소속 종교단체가 운영하는 의료, 교육, 구호단체 등으로부터 초청되어 선교 또는 사회복지 활동에 종사하는 자 (종사하는 기관으로부터 보수를 받는 자는 제외)
+    소속 종교단체가 운영하는 의료, 교육, 구호단체 등으로부터 초청되어 선교 또는 사회복지 활동에 종사하는 자
     국내 종교단체의 추천을 받아 그 종교단체에서 수도, 수련, 연구 활동을 하는 자
     국내 종교단체 또는 사회복지단체로부터 초청되어 사회복지활동에만 종사하는 자
-- target_persons:
+- target_persons: 사제, 선교사, 전도사, 목사, 승려 등 외국 종교단체 파견 종교인
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
 - procedure:
 - restrictions: |
-    체류기간이 90일 이하인 경우에는 단기방문(C-3) 자격에 해당
-    종교인이 대한민국의 종교단체에 취직하여 행하는 활동은 종교(D-6) 자격에 해당되지 않음
-    종교인을 보조하는데 그치거나 스스로 포교 기타 종교상의 활동을 하지 않는 활동 내지 단지 신자로서의 활동은 D-6 자격 미해당
-    국내 단위교회에 목사 등으로 취임하는 경우 및 국가 기본이념에 상충되거나 공서양속 등 국민정서에 반하는 활동을 하는 교단관련 종교인은 사증발급 불가
-- exceptions:
+    종사하는 기관으로부터 보수를 받는 자는 제외
+    종교인이 대한민국의 종교단체에 취직하여 행하는 활동은 D-6에 해당되지 않음
+    종교인을 보조하는데 그치거나 스스로 포교 기타 종교상의 활동을 하지 않는 활동은 D-6에 해당되지 않음
+    국내 단위교회에 목사 등으로 취임하는 경우 사증발급 불가
+    국가 기본이념에 상충되거나 공서양속 등 국민정서에 반하는 활동을 하는 교단관련 종교인은 사증발급 불가
+- exceptions: 체류기간이 90일 이하인 경우에는 단기방문(C-3)자격에 해당
 - fees:
-- duration_or_validity: 2년
+- duration_or_validity: 1회 부여 체류기간의 상한 2년
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 외국 종교단체·사회복지단체의 국내 지부 또는 국내 유관 종교단체 (초청자는 종단·교단의 대표자이며 단위 교회 목사 등은 초청자가 될 수 없음)
-- recommendation_or_approval: |
-    종교인의 활동: 사제, 선교사, 전도사, 목사, 승려 등의 활동
-- expected_questions: |
-    외국 종교단체에서 한국에 파견된 선교사는 어떤 비자 받아요?
-    종교 비자로 한국 들어와서 국내 교회에 정식 취직할 수 있어요?
-    종교 비자는 얼마 동안 머물 수 있어요?
-
-### row D-6 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-6
-- visa_name_ko: 종교
-- item_type: required_documents
-- section_title: D-6 종교 / 공관장 재량 발급
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    국내 종교·사회복지단체로부터 초청되어 사회복지활동에만 종사 하고자 하는 자
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    - 파견명령서
-    - 종교단체 설립허가서 또는 사회복지단체 설립허가서 사본
-    - 소속단체의 체류경비 지원 관련서류
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: 체류기간 1년 이하 단수사증
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 국내 종교·사회복지단체
+- inviter_context: 초청자는 종단이나 교단의 대표자이며, 단위 교회 목사 등은 초청자가 될 수 없음
 - recommendation_or_approval:
+- keywords: 종교, 선교사, 사회복지활동, 종교단체파견, D-6
+- source_page:
+- source_excerpt: |
+    외국의 종교단체 또는 사회복지단체로부터 국내에 등록된 그 지부에 파견되어 근무하는 자
+    외국의 종교단체 또는 사회복지단체로부터 파견되어 국내 유관 종교단체에서 종교 활동을 하는 자
+    소속 종교단체가 운영하는 의료, 교육, 구호단체 등으로부터 초청되어 선교 또는 사회복지 활동에 종사하는 자
+    종사하는 기관으로부터 보수를 받는 자는 제외
+- related_visa_codes: C-3
 - expected_questions: |
-    국내 사회복지단체 초청으로 봉사하러 가려면 어떤 서류 내요?
-    종교 비자 공관 직접 발급은 어떤 경우에 받을 수 있어요?
-    체류경비 지원 서류는 어떤 거 내야 해요?
+    외국 교회에서 파견된 선교사인데 한국 가려면 어떤 비자 받아요?
+    종교 비자로 한국에 얼마나 머물 수 있어요?
+    한국 교회에 취직해서 일하면 이 비자 받을 수 있어요?
 
 ### row D-6 / 사증발급인정서 / 제출서류
 - manual_type: 사증민원
 - visa_code: D-6
 - visa_name_ko: 종교
 - item_type: required_documents
-- section_title: D-6 종교 / 사증발급인정서
+- section_title: D-6 종교 / 사증발급인정서 첨부서류
 - subtype_or_program:
 - petition_type: 사증발급인정서
 - subsection_type: 제출서류
-- applicant_context: |
-    외국의 종교·사회복지단체로부터 국내 지부에 파견·초청되어 종교·선교·사회복지 활동을 하는 자
+- applicant_context:
 - eligibility:
 - target_persons:
 - common_documents:
@@ -2873,8 +3079,7 @@
     - 종교단체 설립허가서 또는 사회복지단체 설립허가서 사본
     - 고유번호증 사본 (종교단체 초청인 경우 종단(교단)과 단위교회(사찰) 모두 제출)
     - 소속단체의 체류경비 지원 관련서류
-- other_documents: |
-    대리인 신청시: 위임장, 대리인 재직증명서, 대리인 신분증 사본 추가 제출
+- other_documents: 대리인 신청시: 위임장, 대리인 재직증명서, 대리인 신분증 사본 추가 제출
 - requirements:
 - procedure:
 - restrictions:
@@ -2887,10 +3092,18 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 종교, 사증발급인정신청서, 종교단체설립허가서, 고유번호증, D-6
+- source_page:
+- source_excerpt: |
+    ① 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
+    ② 초청사유서
+    ③ 파견명령서
+    ④ 종교단체 설립허가서 또는 사회복지단체 설립허가서 사본
+    ⑤ 고유번호증 사본
+- related_visa_codes:
 - expected_questions: |
-    외국 종교단체 파견 선교사가 사증발급인정서 받으려면 어떤 서류 내요?
-    종교단체 사회복지 비자 신청 시 종단·교회 서류 둘 다 내야 해요?
-    초청자가 누구여야 인정서 받을 수 있어요?
+    종교 비자 신청할 때 종교단체에서 받아야 하는 서류는 뭐예요?
+    한국 교회의 어느 직위 분이 초청해야 하나요?
 
 ### row D-7 / 사증발급 / 대상
 - manual_type: 사증민원
@@ -2901,134 +3114,72 @@
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    외국기업 국내지사 등에서 주재활동 또는 해외진출 기업 근무 외국인력 국내 본사 주재활동
+- applicant_context:
 - eligibility: |
-    외국기업 국내지사 등에서 주재활동
-    - 외국의 공공기관, 단체 또는 회사의 본사, 지사, 기타 사업소 등에서 1년 이상 근무한 자로서 대한민국에 있는 그 계열회사, 자회사, 지점 또는 사무소 등에 필수전문인력으로 파견되어 근무하는 자
-    - 단, 기업투자(D-8)자격 해당자는 제외
-    - 국가기간산업 또는 국책사업 종사 시 또는 영업자금도입실적이 미화 50만 불 이상인 외국기업 국내지사에 파견되는 필수전문인력은 1년 이상 근무요건 미적용
-    해외진출 기업 근무 외국인력 국내 본사 주재활동
-    - 상장법인 또는 공공기관이 설립한 해외 현지법인이나 해외지점에서 1년 이상 근무한 자로서 대한민국 본사·본점에 파견되어 전문 지식·기술·기능을 제공하거나 전수받으려는 자
-    - 단, 상장법인의 해외 현지법인이나 해외지점 중 본사 투자금액 또는 영업기금이 미화 50만 달러 미만인 경우는 제외
-- target_persons:
+    외국기업 국내지사 등에서 주재활동: 외국의 공공기관, 단체 또는 회사의 본사, 지사, 기타 사업소 등에서 1년 이상 근무한 자로서 대한민국에 있는 그 계열회사, 자회사, 지점 또는 사무소 등에 필수전문인력으로 파견되어 근무하는 자 (기업투자(D-8) 해당자 제외)
+    해외진출 기업 근무 외국인력 국내 본사 주재활동: 상장법인(코스닥상장법인 포함) 또는 공공기관이 설립한 해외 현지법인이나 해외지점에서 1년 이상 근무한 자로서 본사나 본점에 파견되어 전문 지식·기술 또는 기능을 제공하거나 전수받으려는 자
+- target_persons: 필수전문인력 (임원, 상급관리자, 전문가)
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements: |
-    필수전문인력 범위
-    - 임원(EXECUTIVE): 조직 관리 1차적 지휘, 의사결정 광범위 권한, 최고위 임원
-    - 상급관리자(SENIOR MANAGER): 기업·부서 목표·정책 수립·시행 책임자, 직원 고용·해고권
-    - 전문가(SPECIALIST): 연구·설계·기술·관리 등 필수적 고도 전문·독점 경험·지식 보유
-    해외지사 규모 기준
-    - 현지법인: 본사가 미화 50만불 이상 투자
-    - 해외지점: 본사가 미화 50만불 이상 영업기금 지급
-    - 공공기관은 투자금액 요건 미적용
-    사증발급 신청인: 해외지사 1년 이상 근무, 전문지식·기술·기능 보유, 원칙적으로 과장이나 선임연구원급 이상, 본사에서 전문인력으로 근무할 예정 및 해외지사 1년 이상 전문인력 근무 경력
+    필수전문인력 범위:
+    임원(EXECUTIVE): 조직 관리를 제1차적으로 지휘하며 의사결정에 광범위한 권한을 행사하는 최고위 임원
+    상급관리자(SENIOR MANAGER): 기업/부서 목표·정책 수립·시행 책임, 계획·지휘·감독 권한, 직원 고용·해고권 또는 추천권 보유
+    전문가(SPECIALIST): 해당기업 서비스의 연구·설계·기술·관리 등에 필수적인 고도의 전문적·독점적 경험과 지식 보유
+    상장법인 해외지사 본사 주재: 현지법인 미화 50만불 이상 투자, 해외지점 미화 50만불 이상 영업기금 (공공기관은 투자금액 요건 면제)
+    원칙적으로 과장이나 선임연구원급 이상 직원 대상, 해외지사에서 1년 이상 전문인력으로 근무한 경력
 - procedure:
-- restrictions:
-- exceptions:
+- restrictions: |
+    상장법인의 해외 현지법인이나 해외지점 중 본사의 투자금액 또는 영업기금이 미화 50만 달러 미만인 경우는 제외
+- exceptions: |
+    국가기간산업 또는 국책사업에 종사하려는 경우 1년 이상 근무요건 면제
+    영업자금도입실적이 미화 50만 불 이상인 외국기업의 국내지사 등에 파견되는 필수전문인력은 1년 이상 근무요건 면제
 - fees:
-- duration_or_validity: 3년
+- duration_or_validity: 1회 부여 체류기간의 상한 3년
 - quota_or_limit:
 - score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 외국 공공기관·단체·회사의 국내 계열회사·자회사·지점·사무소 또는 상장법인·공공기관의 본사·본점
-- recommendation_or_approval: |
-    법무부장관이 정하는 계열회사: 모회사 통해 연결된 자회사 간 또는 외국 회사 주식 50% 초과 보유 시 상호 계열회사
+- table_summary: 필수전문인력 3유형 (임원/상급관리자/전문가)
+- table_rows: |
+    임원(EXECUTIVE): 조직 관리 제1차 지휘, 광범위 의사결정권
+    상급관리자(SENIOR MANAGER): 기업·부서 목표·정책 수립·시행, 고용·해고권
+    전문가(SPECIALIST): 연구·설계·기술·관리에 필수적인 고도의 전문지식
+- inviter_context: 외국 본사, 외국 공공기관, 회사 또는 단체의 국내 지사·자회사·계열회사
+- recommendation_or_approval:
+- keywords: 주재, 필수전문인력, 임원, 상급관리자, 전문가, 외국기업국내지사, D-7
+- source_page:
+- source_excerpt: |
+    외국의 공공기관, 단체 또는 회사의 본사, 지사, 기타 사업소 등에서 1년 이상 근무한 자로서
+    대한민국에 있는 그 계열회사, 자회사, 지점 또는 사무소 등에 필수전문인력으로 파견되어 근무하는 자
+    상장법인(코스닥상장법인 포함, 이하같음) 또는 공공기관이 설립한 해외 현지법인이나 해외지점에서 1년 이상 근무한 자
+- related_visa_codes: D-8, D-9, E-3, E-4, E-7, F-3
 - expected_questions: |
-    외국 본사 주재원으로 한국 지사에 파견되려면 어떤 비자예요?
-    필수전문인력에 해당하려면 어떤 직급이나 요건이 필요해요?
-    해외지사에 1년 미만 근무해도 주재비자 받을 수 있어요?
+    외국 본사에서 한국 지사로 파견 가는데 어떤 비자 받아요?
+    1년 미만 근무해도 주재 비자 받을 수 있는 경우 있어요?
+    필수전문인력 기준이 어떻게 되나요?
+    주재 비자로 한국에 얼마나 머물 수 있어요?
 
 ### row D-7 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: D-7
 - visa_name_ko: 주재
 - item_type: required_documents
-- section_title: D-7 주재 / 공관장 재량 발급 (중국인 등)
+- section_title: D-7 주재 / 외국기업 국내지사 사증 첨부서류
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 제출서류
-- applicant_context: |
-    중국인 국내주재지사 등의 주재원(공기업 또는 사기업에 1년 이상 고용된 직원) 및 그 동반가족(F-3)
-    해외진출 기업 근무 외국인력 국내 본사 주재활동 해당자
-    칠레인 한·칠레 자유무역협정 대상자
+- applicant_context:
 - eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents: |
-    외국기업 국내지사 주재 (중국인 등)
     - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
     - 외국 소재 회사 등 재직증명서
     - 파견명령서
     - 국내지점 등 설치 입증서류 (지사 또는 연락사무소 설치허가서 사본)
-    - 지사 또는 연락사무소 정상 운영 입증서류 (영업자금 도입실적, 신규일 경우 운영계획서, 납세실적 등)
-    - 필수전문인력 입증서류 (이력서, 경력증명서 등)
-    해외진출 기업 근무 외국인력 국내 본사 주재활동
-    - 사증발급신청서, 여권사본, 표준규격사진 1매, 수수료
-    - 필수전문인력 입증서류 (이력서, 경력증명서 등)
-    - 본사 등기사항전부증명서 (본사가 공공기업인 경우 생략 가능)
-    - 해외직접투자신고수리서 또는 해외지점설치신고수리서
-    - 해외 송금확인 입증서류
-    - 해외지사 법인등기사항전부증명서 또는 사업자등록증
-    - 해외지사 재직증명서 및 납세사실증명
-    - 인사명령서(파견명령서, 파견기간 명시)
-- other_documents:
-- requirements: |
-    칠레인 (한·칠레 FTA): 관리자나 임원의 자격으로 또는 전문지식과 관련된 자격으로서 일방 당사국 기업에 고용되어 그 기업·자회사·계열사에 서비스를 제공하고자 하는 기업인
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: |
-    중국인 주재원 및 동반가족(F-3): 유효기간 2년 이내 복수사증
-    해외진출 기업 근무 외국인력 국내 본사 주재활동: 1년 이하 단·복수 사증
-    칠레인 한·칠레 FTA 대상자: 체류기간 1년의 단수사증
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 국내 외국기업 지사·연락사무소
-- recommendation_or_approval:
-- expected_questions: |
-    중국 회사 직원이 한국 지사에 주재원으로 가려면 어떤 서류 내요?
-    한국 상장사 해외지사에서 본사로 파견될 때 어떤 비자예요?
-    칠레 자유무역협정 대상자는 어떤 비자 받아요?
-
-### row D-7 / 사증발급인정서 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-7
-- visa_name_ko: 주재
-- item_type: required_documents
-- section_title: D-7 주재 / 사증발급인정서
-- subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 제출서류
-- applicant_context: |
-    외국기업 국내지사 등에서 주재활동 또는 해외진출 기업 근무 외국인력 국내 본사 주재활동
-- eligibility:
-- target_persons:
-- common_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
-    - 초청사유서
-    - 필수전문인력 입증서류 (이력서, 경력증명서 등)
-- mandatory_documents: |
-    외국기업 국내지사 등에서 주재활동 추가
-    - 외국 소재 회사 등 재직증명서
-    - 파견명령서
-    - 국내지점 등 설치 입증서류 (지사·연락사무소 설치허가서 사본 또는 신고수리서 사본)
-    - 지사·연락사무소 정상 운영 입증서류 (영업자금·연락사무소 운영자금 도입실적; 신규일 경우 운영계획서, 납세실적 등)
-    해외진출 기업 근무 외국인력 국내 본사 주재활동 추가
-    - 본사 등기사항전부증명서
-    - 해외직접투자신고수리서 또는 해외지점설치신고수리서
-    - 해외 송금확인 입증서류
-    - 해외지사 법인등기사항전부증명서 또는 사업자등록증
-    - 본사 납세사실증명
-    - 인사명령서(파견명령서, 파견기간 명시)
-- other_documents: |
-    대리인 신청시: 위임장, 대리인 재직증명서, 대리인 신분증 추가 제출
+    - 지사 또는 연락사무소가 정상적으로 운영되고 있음을 입증하는 서류 (영업자금 도입실적, 신규일 경우 운영계획서, 납세실적 등)
+    - 필수전문인력임을 입증하는 서류(이력서, 경력증명서 등)
+- other_documents: 국내 납세의무가 없는 비영리 연락사무소의 경우 연락사무소 운영자금 도입실적 등으로 납세실적 대체
 - requirements:
 - procedure:
 - restrictions:
@@ -3041,179 +3192,44 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 주재, 재직증명서, 파견명령서, 설치허가서, 영업자금도입실적, D-7
+- source_page:
+- source_excerpt: |
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 외국 소재 회사 등 재직증명서
+    ③ 파견명령서
+    ④ 국내지점 등 설치 입증서류
+    ⑥ 필수전문인력임을 입증하는 서류(이력서, 경력증명서 등)
+- related_visa_codes:
 - expected_questions: |
-    외국 회사의 한국 지사 주재 사증발급인정서 신청에 어떤 서류 필요해요?
-    한국 본사 파견 받는 외국인 직원은 어떤 서류 내요?
-    필수전문인력임을 어떻게 증명해요?
+    주재 비자 받으려면 외국 본사에서 무슨 서류 받아야 해요?
+    한국 지사가 정상 운영 중이라는 거 어떻게 증명해요?
 
 ### row D-7 / 사증발급인정서 / 제출서류
 - manual_type: 사증민원
 - visa_code: D-7
 - visa_name_ko: 주재
 - item_type: required_documents
-- section_title: D-7 한·러 한시적 근로협정
+- section_title: D-7 주재 / 외국법자문사 사증발급인정서
 - subtype_or_program:
 - petition_type: 사증발급인정서
 - subsection_type: 제출서류
-- applicant_context: |
-    한·러 한시적 근로활동에 관한 협정 대상자
-    대표사무소 직원: 대한민국의 영역에 위치한 법인 또는 개인기업의 대표사무소에서 한시적으로 근무하는 러시아 국민
-    회사집단 직원: 모회사와 모회사가 직접 또는 간접적으로 통제하는 회사로 이루어진 집단(지사·지점, 연락사무소, 자회사, 계열회사)의 직원으로 해외에서 채용된 자
-- eligibility:
+- applicant_context: 외국법자문법률사무소에 파견되는 구성원(임원급) 또는 소속 외국법자문사
+- eligibility: 외국변호사 자격 취득 후 외국법자문사법 제6조에 따라 법무부장관으로부터 자격승인을 받고 제10조제1항에 따라 대한변호사협회에 등록한 사람
 - target_persons:
 - common_documents:
 - mandatory_documents: |
     - 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
-    - 본사발생 파견명령서
-    - 외국환매입증명서 등 영업자금 도입실적 입증서류
-    - 납세사실증명
-    - 국내지점 등 설치 입증서류 (지사·연락사무소 설치허가서 사본 또는 신고수리서 사본)
-    - 부가가치세법에 따른 사업자등록증
-- other_documents:
-- requirements:
-- procedure:
-- restrictions: |
-    국내채용 직원은 특정활동(E-7) 자격에 해당
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 러시아 모회사 또는 회사집단
-- recommendation_or_approval:
-- expected_questions: |
-    러시아 본사 직원이 한국 대표사무소에서 근무하려면 어떤 비자예요?
-    한·러 협정 대상자 비자 신청에 어떤 서류 내요?
-    국내에서 채용된 러시아 직원도 같은 비자로 신청 가능해요?
-
-### row D-7 / 사증발급인정서 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-7
-- visa_name_ko: 주재
-- item_type: required_documents
-- section_title: D-7 한·우즈벡 한시적 근로협정
-- subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 제출서류
-- applicant_context: |
-    한·우즈벡 한시적 근로활동에 관한 협정 대상자
-    우즈베키스탄에 소재한 회사 집단과 근로계약을 체결한 자로서, 국내에 위치한 동일 회사 집단의 회사에서 근무하는 자
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
-    - 본사발생 파견명령서
-    - 외국환매입증명서 등 영업자금 도입실적 입증서류
-    - 납세사실증명
-    - 국내지점 등 설치 입증서류 (지사·연락사무소 설치허가서 사본 또는 신고수리서 사본)
-    - 부가가치세법에 따른 사업자등록증
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 우즈벡 회사 집단
-- recommendation_or_approval:
-- expected_questions: |
-    우즈베키스탄 회사 집단 소속으로 한국 지점에 근무하려면 어떤 비자예요?
-    한·우즈벡 협정 대상자 신청 서류는 어떻게 돼요?
-    한국 동일 회사 그룹사 채용도 신청 가능해요?
-
-### row D-7 / 사증발급인정서 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-7
-- visa_name_ko: 주재
-- item_type: required_documents
-- section_title: D-7 한·인도 사증절차간소화협정
-- subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 제출서류
-- applicant_context: |
-    한·인도 사증절차간소화협정 관련 사증발급 대상자
-    고용방문자(Employment visitor): 정당하게 등록된 회사 또는 기관에 고용되거나 계약에 의하여 기술전문가, 임원, 관리자 등과 같이 숙련된 기술을 요하는 지위에 종사하거나 임용된 자
-    (예시) 기업내 전근자, 계약서비스 공급자 또는 이를 지원하는 자, 독립전문가 등
-- eligibility:
-- target_persons:
-- common_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
-- mandatory_documents: |
-    기업내 전근자
-    - 파견명령서 및 1년 이상의 재직증명서
-    - 지사 또는 연락사무소 설치허가서 사본
-    계약서비스 공급자 또는 이를 지원하는 자
-    - 고용주가 발행한 재직증명서, 인도정부발행 사업자등록증 등 회사·기관 설립 관련 서류
-    - 우리나라 회사·기관과의 서비스 공급계약 체결 입증 서류
-    독립전문가
-    - 고용 계약서 또는 용역계약서 등 계약을 입증하는 서류
-    - 학위증, 관련 분야 자격증, 1년 이상 해당 분야 취업경력 입증서류
-- other_documents: |
-    대리인 신청시: 위임장, 대리인 재직증명서, 대리인 신분증 추가 제출
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: |
-    체류자격: 계약내용 및 파견(고용)형태에 따라 주재(D-7), 기업투자(D-8), 무역경영(D-9), 연구(E-3), 기술지도(E-4), 특정활동(E-7) 등의 자격 부여
-    사증발급: 출입국·외국인청 사증발급인정서에 의해 발급
-    고용관련 사증은 복수사증이므로 전부 사증발급인정서로 발급
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 인도법인의 한국 지사·계약법인
-- recommendation_or_approval:
-- expected_questions: |
-    인도 기술전문가가 한국 회사에 파견될 때 어떤 비자예요?
-    인도 독립 컨설턴트가 한국 기업에 서비스 제공하려면 어떤 서류 내요?
-    한·인도 협정 비자도 복수사증으로 받을 수 있어요?
-
-### row D-7 / 사증발급인정서 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-7
-- visa_name_ko: 주재
-- item_type: required_documents
-- section_title: D-7 외국법자문사
-- subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 제출서류
-- applicant_context: |
-    외국법자문사법에 따른 외국법자문사 등에 대한 사증발급
-    외국법자문법률사무소에 파견되는 구성원(대표자 등 임원급) 또는 소속 외국법자문사
-    외국법자문법률사무소에 파견되는 사무직원
-- eligibility:
-- target_persons:
-- common_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
-- mandatory_documents: |
-    외국법자문사·임원급 구성원
     - 외국법자문법률사무소 등록증 (대한변호사협회 발행, 법 제18조)
     - 국내지점 등 설치 신고서 (외국환은행 발행) 및 사업자등록증
     - 외국환매입증명서 등 영업자금 도입실적 입증서류
     - 파견명령서 (본사발행, 파견기간 명시)
-    - 외국법자문사 등록증 (대한변호사협회 발행, 법 제10조)
-    파견 사무직원
-    - 외국법자문법률사무소 등록증 (대한변호사협회 발행)
-    - 국내지점 등 설치 신고서 및 사업자등록증
-    - 외국환매입증명서 등 영업자금 도입실적 입증서류
-    - 파견명령서 (본사발행, 파견기간 명시)
-    - 경력증명서 (본사 1년 이상 근무요건 충족 여부 확인)
-- other_documents: |
-    대리인 신청시: 위임장, 대리인 재직증명서, 대리인 신분증 추가 제출
-- requirements: |
-    외국법자문사·임원급 구성원은 1년 이상 본사 근무요건 면제 → 경력증명서 등 제출 불요
+    - 외국법자문사 등록증 (대한변호사협회 발행, 법 10조)
+- other_documents:
+- requirements:
 - procedure:
 - restrictions:
-- exceptions:
+- exceptions: 1년 이상 본사 근무요건이 면제되므로 경력증명서 등 제출 불요
 - fees:
 - duration_or_validity:
 - quota_or_limit:
@@ -3221,13 +3237,18 @@
 - table_summary:
 - table_rows:
 - inviter_context: 외국법자문법률사무소
-- recommendation_or_approval: |
-    외국법자문사 자격승인 (외국법자문사법 제6조, 법무부장관)
-    대한변호사협회 등록 (외국법자문사법 제10조제1항)
+- recommendation_or_approval:
+- keywords: 외국법자문사, 외국법자문법률사무소, 대한변호사협회, 본사근무요건면제, D-7
+- source_page:
+- source_excerpt: |
+    가. 외국법자문법률사무소에 파견되는 구성원*또는 소속 외국법자문사**
+    * 외국법자문법률사무소의 대표자 등 임원급을 의미
+    ** 외국변호사의 자격을 취득한 후 제6조에 따라 법무부장관으로부터 자격승인을 받고 제10제1항에 따라 대한변호사협회에 등록한 사람을 말한다.
+    ※ 1년 이상 본사 근무요건이 면제되므로 경력증명서 등 제출 불요
+- related_visa_codes:
 - expected_questions: |
-    외국 변호사가 한국 외국법자문사 사무소에 파견될 때 어떤 비자예요?
-    외국법자문법률사무소 사무직원도 신청 가능해요?
-    외국법자문사는 1년 이상 본사 근무 요건이 면제되나요?
+    외국 변호사 자격 가지고 한국 법률사무소에서 일하려면 어떤 비자 받아요?
+    외국법자문사는 본사 근무 1년 요건 면제되나요?
 
 ### row D-8 / 사증발급 / 대상
 - manual_type: 사증민원
@@ -3235,56 +3256,104 @@
 - visa_name_ko: 기업투자
 - item_type: visa_rule
 - section_title: D-8 기업투자
-- subtype_or_program:
+- subtype_or_program: D-8-1, D-8-2, D-8-3, D-8-4
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    외국인투자기업 종사 필수전문인력 또는 벤처기업·기술창업자
+- applicant_context:
 - eligibility: |
-    1. 외국인투자촉진법에 따른 외국인투자기업 대한민국 법인의 경영·관리 또는 생산·기술 분야 종사 필수전문인력 [D-8-1, 설립완료 법인만 해당, 국내에서 채용하는 사람은 제외]
-    2. 지식재산권을 보유하는 등 우수한 기술력으로 벤처기업육성에 관한 특별조치법 제2조의2제1항제2호다목에 따른 벤처기업을 설립한 사람 중 벤처기업 확인을 받은 기업의 대표자 또는 기술성이 우수한 것으로 평가받은 기업의 대표자 [D-8-2]
-    3. 외국인투자촉진법에 따른 외국인투자기업인 대한민국 국민(개인) 경영 기업의 경영·관리 또는 생산·기술 분야 종사 필수전문인력 [D-8-3, 국내에서 채용하는 사람은 제외]
-    4. 국내에서 전문학사 이상의 학위 취득 사람, 또는 국외에서 학사 이상의 학위 취득 사람, 또는 관계 중앙행정기관의 장이 추천한 사람으로서 지식재산권을 보유하거나 이에 준하는 기술력 등을 가진 법인 창업자 [D-8-4]
-- target_persons:
+    D-8-1 (법인에 투자): 외국인투자촉진법에 따른 외국인투자기업 대한민국 법인의 경영·관리 또는 생산·기술 분야에 종사하려는 필수 전문인력 (국내 채용자 제외)
+    D-8-2 (벤처 투자): 지식재산권을 보유하는 등 우수한 기술력으로 벤처기업육성에 관한 특별조치법에 따른 벤처기업을 설립한 사람 중 같은 법 제25조에 따라 벤처기업 확인을 받은 기업의 대표자
+    D-8-3 (개인기업에 투자): 외국인투자촉진법에 따른 외국인투자기업인 대한민국 국민(개인)이 경영하는 기업의 필수전문인력 (국내 채용자 제외)
+    D-8-4 (기술 창업): 국내에서 전문학사 이상 학위, 국외 학사 이상 학위, 또는 관계 중앙행정기관의 장이 추천한 사람으로서 지식재산권을 보유하거나 이에 준하는 기술력을 가진 법인 창업자
+- target_persons: 외국인투자기업 필수전문인력, 벤처기업 대표자, 기술창업자
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
-- procedure:
-- restrictions: |
-    제한 업종 (D-8 자격 부여 등 억제)
-    - 사행행위 등 규제 및 처벌 특례법 제2조제1항제2호 및 동법 시행령 제1조의2 사행행위 영업 (복권발행업, 현상업, 회전판돌리기업, 추첨업, 경품업)
-    - 식품위생법 시행령 제21조제8호 단란주점(다목), 유흥주점(라목)
-    개인사업자는 대한민국 법인 또는 국민이 경영하는 기업이어야 함 (외국인 개인사업자는 외국인투자기업 미해당)
+- procedure: 원칙적으로 신청자의 본국에 소재한 대한민국 공관에서 신청
+- restrictions:
 - exceptions:
 - fees:
 - duration_or_validity: |
     외국인 투자기업에서의 주재활동: 5년
-    벤처기업 육성에 관한 특별조치법 벤처기업 설립자: 2년 (예비 벤처기업은 6개월)
-    기술창업자 D-8-4: 2년 (스타트업 코리아 특별비자 대상자 중 법인 미설립자는 6개월)
+    벤처기업 육성에 관한 특별조치법에 따라 벤처기업을 설립한 자: 2년 (단, 예비 벤처기업은 6개월)
+    기술창업자(D-8-4): 2년 (단, 스타트업 코리아 특별비자 대상자 중 법인 미설립자는 6개월)
 - quota_or_limit:
-- score_criteria:
+- score_criteria: 점수제 (D-8-4 기술창업) 항목 - 지식재산권 보유, 글로벌창업이민센터(OASIS) 이수, 입상 등
 - table_summary:
 - table_rows:
-- inviter_context: 외국인투자기업·벤처기업·국민 경영 기업
-- recommendation_or_approval: |
-    3억원 미만 소액 개인투자가는 정밀 심사
+- inviter_context:
+- recommendation_or_approval: D-8-4S: 중소벤처기업부장관의 추천
+- keywords: 기업투자, 외국인투자기업, 벤처기업, 기술창업, 스타트업코리아, D-8, D-8-1, D-8-2, D-8-3, D-8-4
+- source_page:
+- source_excerpt: |
+    1.「외국인투자촉진법」에 따른 외국인투자기업 대한민국 법인의 경영․관리 또는 생산․기술 분야에 종사하려는 필수 전문인력
+    2. 지식재산권을 보유하는 등 우수한 기술력으로「벤처 기업육성에 관한 특별조치법」제2조의2제1항제2호다목에 따른 벤처기업을 설립한 사람
+    4. 국내에서 전문학사 이상의 학위를 취득한 사람, 또는 국외에서 학사 이상의 학위를 취득한 사람, 또는 관계 중앙행정기관의 장이 추천한 사람으로서 지식재산권을 보유하거나 이에 준하는 기술력 등을 가진 법인 창업자
+- related_visa_codes: D-7, D-9, E-3, E-4, E-7
 - expected_questions: |
-    외국인이 한국에 투자해서 회사 차리려면 어떤 비자예요?
-    한국에서 스타트업이나 벤처로 창업하려면 어떤 비자 받아요?
-    기업투자 비자는 얼마 동안 머물 수 있어요?
+    한국에 회사 차리고 일하려면 어떤 비자 받아요?
+    얼마 이상 투자해야 기업투자 비자 받을 수 있어요?
+    벤처기업 창업하고 비자 받을 수 있어요?
+    한국에서 공부 끝나고 창업하려면 어떤 비자 신청해요?
+
+### row D-8 / 사증발급 / 요건
+- manual_type: 사증민원
+- visa_code: D-8
+- visa_name_ko: 기업투자
+- item_type: visa_rule
+- section_title: D-8 기업투자 / D-8-1 법인 투자 기본요건
+- subtype_or_program: D-8-1
+- petition_type: 사증발급
+- subsection_type: 요건
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    투자대상이 대한민국 법인(설립완료 법인만 해당)일 것
+    투자금액이 1억원 이상으로, 투자한 법인의 의결권 있는 주식총수의 100분의 10이상을 소유하거나 법인의 주식 등을 소유하면서 임원 파견, 선임 계약 등을 체결
+    투자자금은 투자자 본인 명의 금액을 원칙
+    배우자 및 미성년 자녀 명의 반입 및 대리송금은 예외적으로 인정 (단, 투자금 3억원 이상 투자자의 경우 부모 및 배우자 부모 명의 반입 및 대리 송금 추가 인정 가능)
+- procedure:
+- restrictions: |
+    외국인투자가 제한되는 업종 및 법무부장관이 사증·체류관리 정책상 제한하는 업종에 종사하고자 하는 자는 D-8 자격 부여 등 억제
+    제한 업종: 사행행위 영업(복권발행업, 현상업, 회전판돌리기업, 추첨업, 경품업), 식품위생법 시행령 단란주점 및 유흥주점 영업
+    3억원 미만 소액 개인투자가에 대해서는 정밀 심사
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary: D-8 제한 업종
+- table_rows: |
+    사행행위 영업 (복권발행업, 현상업, 회전판돌리기업, 추첨업, 경품업)
+    단란주점·유흥주점 영업
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 기업투자, 1억원, 외국인투자촉진법, 주식10%, 제한업종, D-8-1
+- source_page:
+- source_excerpt: |
+    투자대상이 대한민국 법인(설립완료 법인만 해당) 일 것
+    투자금액이 1억원 이상으로, 투자한 법인의 의결권 있는 주식총수의 100분의 10이상을 소유(외국인투자촉진법시행령 제2조제2항1호)하거나 법인의 주식 등을 소유하면서 임원 파견, 선임 계약 등을 체결
+- related_visa_codes:
+- expected_questions: |
+    한국 법인에 얼마 투자해야 기업투자 비자 받을 수 있어요?
+    배우자 통장에서 송금해도 인정되나요?
+    어떤 업종은 기업투자 비자 안 되나요?
 
 ### row D-8 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: D-8
 - visa_name_ko: 기업투자
 - item_type: required_documents
-- section_title: D-8-1 외국인 투자기업 주재활동
+- section_title: D-8 기업투자 / D-8-1 법인 투자 첨부서류
 - subtype_or_program: D-8-1
 - petition_type: 사증발급
 - subsection_type: 제출서류
-- applicant_context: |
-    외국인투자촉진법의 규정에 의한 외국인 투자기업에서의 주재활동 해당자 (특정국가 제외)
+- applicant_context:
 - eligibility:
 - target_persons:
 - common_documents:
@@ -3293,197 +3362,52 @@
     - 주재활동의 경우 파견명령서(파견기간 명시) 및 재직증명서
     - 외국인투자기업등록증 사본
     - 사업자등록증 사본, 법인등기사항전부증명서, 주주변동상황명세서 원본
-    - 투자자금 도입관련 입증서류
-      현금출자: 해당국 세관이나 본국 은행(금융기관)의 외화반출허가(신고)서, 투자자금 도입 내역서 (송금확인증, 외국환 매입증명서, 세관신고서 등)
-      현물출자: 현물출자완료 확인서 사본(관세청장 발행), 세관 수입신고필증 사본
+    - 투자자금 도입관련 입증서류 (현금출자: 외화반출허가신고서, 송금확인증, 외국환 매입증명서, 세관신고서 / 현물출자: 현물출자완료 확인서, 세관 수입신고필증)
 - other_documents: |
-    투자금액 3억원 미만 개인투자자에 대한 추가서류
+    투자금액 3억원 미만 개인투자자 추가서류:
     - 자본금 사용내역 입증서류 (물품구매 영수증, 사무실 인테리어 비용, 국내은행 계좌 입출금 내역서 등)
-    - 사업장 존재 입증 서류 (사무실 임대차 계약서, 사업장 전경·사무공간·간판 사진 등 자료)
+    - 사업장 존재 입증 서류 (사무실 임대차 계약서, 사업장 전경·사무공간·간판 사진 등)
     - 해당 업종 또는 분야의 사업 경험 관련 국적국 서류 (필요시 징구)
-- requirements: |
-    기본요건
-    - 투자대상이 대한민국 법인(설립완료 법인만 해당)일 것
-    - 투자금액이 1억원 이상으로 의결권 있는 주식총수의 100분의 10이상 소유 또는 주식 소유 + 임원 파견·선임 계약 체결
-    투자자금은 투자자 본인 명의 금액 원칙. 배우자·미성년 자녀 명의 반입·대리송금 예외적 인정. 투자금 3억원 이상은 부모·배우자 부모 명의 반입·대리송금 추가 인정
-- procedure: |
-    신청기관: 원칙적으로 신청자의 본국에 소재한 대한민국 공관
-    신청인이 해외에 주재하며 사업체 운영 중(영주권 소지 등 장기거주자 포함)이면 주재 국가 재외공관에서 신청 가능
+- requirements:
+- procedure:
 - restrictions:
 - exceptions:
 - fees:
 - duration_or_validity:
 - quota_or_limit:
 - score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 외국인투자기업 (대한민국 법인)
-- recommendation_or_approval:
-- expected_questions: |
-    한국 법인에 1억원 이상 투자해서 일하러 가려면 어떤 서류 내요?
-    투자금이 3억원 미만이면 추가로 어떤 서류가 필요해요?
-    배우자 명의로 송금된 투자금도 인정돼요?
-
-### row D-8 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-8
-- visa_name_ko: 기업투자
-- item_type: required_documents
-- section_title: D-8-2 벤처기업 설립자
-- subtype_or_program: D-8-2
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    벤처기업 육성에 관한 특별조치법에 따라 벤처기업을 설립한 자 등 (중국, 특정국가 제외)
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식), 여권사본, 표준규격사진 1매, 수수료
-    - 사업자등록증 사본, 법인등기사항전부증명서
-    - 벤처기업확인서 또는 예비벤처기업확인서
-    - 지식재산권을 보유하는 등 우수한 기술력을 가지고 있음을 입증하는 서류
-      특허증·실용신안등록증·디자인등록증·상표등록증(특허청), 저작권등록증(한국저작권위원회) 등 사본
-      기술신용보증기금 또는 중소기업진흥공단의 기술성 우수평가서
-- other_documents:
-- requirements: |
-    기본요건: 지식재산권을 보유하는 등 우수한 기술력으로 벤처기업육성에 관한 특별조치법 제2조의2제1항제2호다목에 따른 벤처기업 설립(또는 설립예비) 사람 중 벤처기업 확인(또는 예비 벤처기업 확인)을 받은 기업의 대표자 또는 기술성이 우수한 것으로 평가받은 기업의 대표자
-    기술평가보증기업 및 예비벤처기업(법인설립 또는 사업자등록 준비 중 또는 창업 후 6개월 이내 기업)도 해당
-    벤처기업 확인은 기술신용보증기금, 중소기업진흥공단 또는 한국벤처캐피탈협회
-    기술성 평가는 기술신용보증기금 또는 중소기업진흥공단
-- procedure: |
-    신청기관: 원칙적으로 신청자의 본국에 소재한 대한민국 공관 (해외 사업체 운영 시 주재국 공관도 가능)
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 벤처기업
-- recommendation_or_approval: |
-    벤처기업 확인서 (기술신용보증기금, 중소기업진흥공단, 한국벤처캐피탈협회 발급)
-    기술성 우수평가서 (기술신용보증기금 또는 중소기업진흥공단)
-- expected_questions: |
-    벤처기업 대표로 한국에 창업하려면 어떤 비자 받아요?
-    벤처기업 확인은 어디서 받아요?
-    예비 벤처기업도 신청할 수 있어요?
-
-### row D-8 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-8
-- visa_name_ko: 기업투자
-- item_type: required_documents
-- section_title: D-8-3 국민이 경영하는 기업 투자
-- subtype_or_program: D-8-3
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    국민이 경영하는 기업에 투자하는 외국인 (대한민국 국민(개인) 경영 기업)
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    - 외국인투자기업등록증 사본
-    - 공동사업자인 국민의 사업자금(사용 내역) 입증서류
-    - 공동사업자가 표시된 사업자등록증 사본, 공동사업자약정서 원본
-    - 투자자금 도입관련 입증서류
-      현금출자: 외화반출허가(신고)서, 송금확인증, 외국환 매입증명서, 세관신고서 등
-      현물출자: 현물출자완료 확인서 사본(관세청장 발행), 세관 수입신고필증 사본
-- other_documents: |
-    투자금액 3억원 미만 신청자에 대한 추가서류
-    - 자본금 사용내역 입증서류
-    - 사업장 존재 입증 서류
-    - 해당 업종 또는 분야의 사업 경험 관련 국적국 서류 (필요시)
-- requirements: |
-    기본요건
-    - 투자대상이 대한민국 국민(개인) 경영 기업일 것
-    - 투자금액 1억원 이상, 기업 출자총액의 100분의 10 이상 소유 및 사업자등록증상 한국인과 공동대표로 등재
-    - 공동사업자인 국민의 사업자금이 1억원 이상일 것
-    투자자금은 투자자 본인 명의 원칙, 배우자·미성년 자녀 명의 반입·대리송금 예외적 인정, 투자금 3억원 이상은 부모·배우자 부모 명의 추가 인정
-- procedure: |
-    신청기관: 원칙적으로 신청자의 본국 소재 대한민국 공관 (해외 사업체 운영 시 주재국 공관도 가능)
-- restrictions: |
-    3억 미만 소액투자자로서 사업 경험이 없는 자는 정밀심사
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 대한민국 국민(개인) 경영 기업
-- recommendation_or_approval:
-- expected_questions: |
-    한국 사람이 운영하는 회사에 외국인이 공동대표로 투자하려면 어떤 비자예요?
-    공동대표로 등재되려면 투자금이 어느 정도 있어야 해요?
-    공동사업자인 국민의 사업자금도 입증해야 하나요?
-
-### row D-8 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-8
-- visa_name_ko: 기업투자
-- item_type: required_documents
-- section_title: D-8-4 기술창업자
-- subtype_or_program: D-8-4
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    국내에서 전문학사 이상 또는 국외 학사 이상 학위 취득자, 또는 관계 중앙행정기관의 장이 추천한 사람으로 지식재산권 보유 또는 이에 준하는 기술력을 가진 기술창업자
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    - 법인등기사항전부증명서 및 사업자등록증 사본
-    - 학위증명서 사본 또는 관계 중앙행정기관의 장의 추천서
-    - 점수제 해당 항목(및 점수) 입증 서류
-      지식재산권 보유(등록)자: 특허증·실용신안등록증·디자인등록증 사본
-      특허 등 출원자: 특허청장 발행 출원사실증명서
-      글로벌창업이민센터의 장 발급 창업이민 종합지원시스템(OASIS) 해당 항목 이수(수료, 졸업) 증서, 입상확인서, 선정공문 등
-      기타 점수제 해당 항목 등 입증서류
-- other_documents:
-- requirements: |
-    기본요건
-    - 국내 전문학사 이상 학위 또는 국외 학사 이상 학위 취득자, 또는 관계 중앙행정기관의 장 추천 사람 (학위는 이미 취득한 경우만 인정, 취득 예정자 제외)
-    - 지식재산권 보유 또는 이에 준하는 기술력 보유
-    - 대한민국 법인 설립하고 법인등기 및 사업자등록 완료
-    지식재산권: 특허권·실용신안권·디자인권·상표권·저작권 등 국내법 인정
-    이에 준하는 기술력: 중소기업창업지원법 등 법률 근거 정부지원 사업에 선정된 외국인의 창업아이템 (선정 당사자에 한함)
-- procedure: |
-    신청기관: 원칙적으로 신청자의 본국 소재 대한민국 공관 (해외 사업체 운영 시 주재국 공관도 가능)
-    지식재산권 검색: 특허청 키프리스 (www.kipris.or.kr)
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria: |
-    점수제 적용 (글로벌창업이민센터 OASIS 항목 이수, 입상, 선정공문 등 점수)
 - table_summary:
 - table_rows:
 - inviter_context:
-- recommendation_or_approval: |
-    관계 중앙행정기관의 장 추천 가능
+- recommendation_or_approval:
+- keywords: 기업투자, 외국인투자기업등록증, 사업자등록증, 주주변동상황명세서, 투자자금도입, D-8-1
+- source_page:
+- source_excerpt: |
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 주재활동의 경우 파견명령서(파견기간 명시) 및 재직증명서
+    ③ 외국인투자기업등록증 사본
+    ④ 사업자등록증 사본, 법인등기사항전부증명서, 주주변동상황명세서 원본
+    ⑤ 투자자금 도입관련 입증서류
+- related_visa_codes:
 - expected_questions: |
-    한국에서 기술 창업하려는 외국인이 받을 수 있는 비자는 뭐예요?
-    학위와 지식재산권이 모두 필요해요?
-    창업이민 종합지원시스템 점수는 어디서 받아요?
+    기업투자 비자 신청할 때 무슨 서류 내요?
+    투자금이 어떻게 들어왔는지 어떻게 증명해요?
+    3억 미만 투자자는 추가로 어떤 서류 필요해요?
 
-### row D-8 / 사증발급 / 제출서류
+### row D-8 / 사증발급 / 요건
 - manual_type: 사증민원
 - visa_code: D-8
 - visa_name_ko: 기업투자
-- item_type: required_documents
-- section_title: D-8-4S 스타트업 코리아 특별비자
+- item_type: visa_rule
+- section_title: D-8 기업투자 / D-8-4S 스타트업 코리아 특별비자
 - subtype_or_program: D-8-4S
 - petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    스타트업 코리아 특별비자 민간평가위원회의 평가를 받고, 중소벤처기업부 장관의 추천을 받은 기술창업자
-- eligibility:
+- subsection_type: 요건
+- applicant_context: 스타트업 코리아 특별비자 추천 민간평가위원회의 평가를 받은 기술창업자
+- eligibility: |
+    스타트업 코리아 특별비자 추천 민간평가위원회의 심사 승인을 받은 자
+    중소벤처기업부장관으로부터 기술창업 체류자격 변경허가 또는 사증발급을 위한 추천을 받았을 것
+    대한민국 법인을 설립하고 법인등기 및 사업자등록을 완료하였을 것
 - target_persons:
 - common_documents:
 - mandatory_documents: |
@@ -3491,105 +3415,29 @@
     - 법인등기사항전부증명서 및 사업자등록증 사본 (제출 가능 시)
     - 스타트업 코리아 특별비자 추천서 (중소벤처기업부 발급)
 - other_documents:
-- requirements: |
+- requirements:
+- procedure: 원칙적으로 신청자의 본국에 소재한 대한민국 공관
+- restrictions:
+- exceptions: 법인설립이 완료되지 않은 경우에는 법인등기사항전부증명서 및 사업자등록증 사본 제출 생략 가능, 입국 후 체류기간(6개월) 이내에 제출하여 체류기간 연장 필요
+- fees:
+- duration_or_validity: 법인 미설립자는 6개월
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval: 중소벤처기업부장관 추천
+- keywords: 스타트업코리아특별비자, 기술창업, 중소벤처기업부, 민간평가위원회, D-8-4S
+- source_page:
+- source_excerpt: |
     스타트업 코리아 특별비자 추천 민간평가위원회의 심사 승인을 받은 자
     중소벤처기업부장관으로부터 기술창업 체류자격 변경허가 또는 사증발급을 위한 추천을 받았을 것
     대한민국 법인을 설립하고 법인등기 및 사업자등록을 완료하였을 것
-- procedure: |
-    신청기관: 원칙적으로 신청자의 본국 소재 대한민국 공관
-    법인설립 미완료 시: 법인등기사항전부증명서 및 사업자등록증 사본 제출 생략 가능, 입국 후 체류기간(6개월) 이내 제출하여 체류기간 연장 필요
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: 6개월 (법인 미설립자)
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval: 중소벤처기업부 장관 추천 및 스타트업 코리아 특별비자 추천 민간평가위원회 심사
+- related_visa_codes:
 - expected_questions: |
-    스타트업 코리아 특별비자는 어떻게 신청해요?
-    중소벤처기업부 추천 받으려면 어떤 절차가 있어요?
-    법인 설립 전에도 비자 받을 수 있어요?
-
-### row D-8 / 사증발급인정서 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-8
-- visa_name_ko: 기업투자
-- item_type: required_documents
-- section_title: D-8 한·러 한시적 근로협정
-- subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 제출서류
-- applicant_context: |
-    한·러 한시적 근로활동에 관한 협정 대상자
-    기업대표: 러시아 국가의 법령 또는 법인·개인기업의 설립 문서(정관)에 따라 대한민국의 영역에서 실체에 대한 통제나 관리를 수행하는 자
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
-    - 파견명령서(파견기간 명시) 또는 재직증명서
-    - 외국인 투자신고서 또는 투자기업등록증 사본
-    - 등기부등본 및 사업자등록증 사본
-- other_documents: |
-    대리인 신청시: 위임장, 대리인 재직증명서, 대리인 신분증 추가 제출
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    러시아 기업대표가 한국 법인 운영 위해 가려면 어떤 비자예요?
-    한·러 한시적 근로협정 비자 신청은 어떻게 해요?
-    러시아 기업대표 비자 발급은 어디서 받아요?
-
-### row D-8 / 사증발급인정서 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-8
-- visa_name_ko: 기업투자
-- item_type: required_documents
-- section_title: D-8 한·우즈벡 한시적 근로협정
-- subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 제출서류
-- applicant_context: |
-    한·우즈벡 한시적 근로활동에 관한 협정 대상자
-    외국 자본 참여 사업체의 대표 또는 전문직원: 대한민국 영역에서 상업활동을 수행하는 외국 자본 참여 사업체의 대표 또는 전문직원인 우즈베키스탄 국민기업대표
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
-    - 파견명령서(파견기간 명시) 또는 재직증명서
-    - 외국인 투자신고서 또는 투자기업등록증 사본
-    - 등기부등본 및 사업자등록증 사본
-- other_documents: |
-    대리인 신청시: 위임장, 대리인 재직증명서, 대리인 신분증 추가 제출
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    우즈베키스탄 기업대표가 한국에서 외국 투자 사업체 운영하려면 어떤 비자예요?
-    한·우즈벡 협정 대상자 사증발급인정서 신청 서류는 어떻게 돼요?
-    파견기간 명시된 명령서가 꼭 필요해요?
+    스타트업 코리아 특별비자는 누가 신청할 수 있나요?
+    법인 설립 안 했어도 신청 가능한가요?
+    중소벤처기업부 추천을 어떻게 받나요?
 
 <!-- end chunk: visa_005 -->
 
@@ -3605,184 +3453,102 @@
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    회사 경영, 무역, 영리사업 또는 수출설비 설치·운영·보수, 선박건조 및 산업설비 제작·감독, 회사경영 영리사업
+- applicant_context:
 - eligibility: |
-    회사 경영, 무역, 영리사업 (대외무역법령 및 대외무역관리규정에 의하여 한국무역협회장으로부터 무역거래자별 무역업 고유번호를 부여받은 무역거래자)
-    수출설비(기계)의 설치·운영·보수 (산업설비 도입회사에 파견 또는 초청되어 그 장비의 설치·운영·보수에 필요한 기술 제공자)
-    선박건조 및 산업설비 제작·감독 (발주사 또는 발주사가 지정하는 전문용역 회사 파견 필수전문인력 - 임원, 상급관리자, 전문기술자 등)
-    회사경영, 영리사업 (대한민국에 회사를 설립하여 사업을 경영하거나 영리활동을 하는 자)
+    회사 경영, 무역, 영리사업: 대외무역법령 및 대외무역관리규정에 의하여 한국무역협회장으로부터 무역거래자별 무역업 고유번호를 부여받은 무역거래자
+    수출설비(기계)의 설치·운영·보수: 산업설비(기계) 도입회사에 파견 또는 초청되어 그 장비의 설치·운영·보수(정비)에 필요한 기술을 제공하는 자
+    선박건조 및 산업설비 제작·감독: 선박건조 및 산업설비 제작 과정에 참여하기 위하여 파견되는 필수전문인력(발주사 또는 발주사가 지정하는 전문용역 회사 파견 임원·상급관리자·전문기술자)
+    회사경영, 영리사업: 대한민국에 회사를 설립하여 사업을 경영하거나 영리활동을 하는 자
+- target_persons: 무역거래자, 산업설비 기술자, 선박건조 감독자, 외국인 개인사업자
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: 최근 1년간 對韓 수출입실적이 50만 불 이상인 무역거래자에 한함 (외국환은행장·한국무역협회장·지식경제부장관 지정 기관 발행 수출입실적증명서 및 무역업 고유번호 부여서로 확인)
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity: 1회 부여 체류기간의 상한 2년
+- quota_or_limit:
+- score_criteria: 무역비자 점수제 총160점 중 60점 이상, 필수항목 점수 10점 이상
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 무역경영, 무역거래자, 무역업고유번호, 산업설비, 선박건조, 무역비자점수제, D-9
+- source_page:
+- source_excerpt: |
+    1. 회사 경영, 무역, 영리사업
+    - 대외무역법령 및 대외무역관리규정에 의하여 한국무역협회장으로부터 무역거래자별 무역업 고유번호를 부여받은 무역거래자
+    2. 수출설비(기계)의 설치․운영․보수
+    - 산업설비(기계) 도입회사에 파견 또는 초청되어 그 장비의 설치․운영․보수(정비)에 필요한 기술을 제공하는 자
+- related_visa_codes: C-3-4, D-7, D-8, E-3, E-4, E-7
+- expected_questions: |
+    한국에서 무역회사 운영하려면 어떤 비자 받아요?
+    한국에 산업설비 설치하러 파견 가는데 어떤 비자 받아요?
+    개인사업자로 한국에서 사업하려면 얼마 투자해야 해요?
+
+### row D-9 / 사증발급 / 요건
+- manual_type: 사증민원
+- visa_code: D-9
+- visa_name_ko: 무역경영
+- item_type: visa_rule
+- section_title: D-9 무역경영 / 외국인 개인사업자
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 요건
+- applicant_context: 2012.10.29.부터 시행
+- eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements: |
-    최근 1년간 對韓 수출입실적이 50만 불 이상인 무역거래자에 한함
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: 2년
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 산업설비 도입회사, 선박건조·산업설비 발주사 등
-- recommendation_or_approval: |
-    한국무역협회장 발행 무역업 고유번호 부여서
-    외국환은행장·한국무역협회장·지식경제부장관 지정기관장 발행 수출입실적증명서
-- expected_questions: |
-    한국에서 무역업이나 영리사업 하려면 어떤 비자 받아요?
-    수입 기계 설치·보수 기술자가 한국 파견 가는 비자도 D-9예요?
-    무역경영 비자는 한국에 얼마나 머물 수 있어요?
-
-### row D-9 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-9
-- visa_name_ko: 무역경영
-- item_type: required_documents
-- section_title: D-9 산업설비 설치·운영·보수
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    산업설비(기계) 도입회사에 파견 또는 초청되어 그 장비의 설치·운영·보수(정비)에 필요한 기술을 제공하는 자
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    - 설비도입계약서 또는 산업설비도입 입증서류
-    - 파견명령서
-    - 초청회사의 사업자등록증 사본 또는 법인등기사항전부증명서
-    - 연간 납세사실증명서
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: 체류기간 1년 이하 단수사증
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 산업설비 도입회사
-- recommendation_or_approval:
-- expected_questions: |
-    수입한 산업설비 설치·보수하러 한국 가려면 어떤 서류 내요?
-    파견명령서가 꼭 필요한가요?
-    설비도입계약서로 입증할 수 있는 활동은 어떤 거예요?
-
-### row D-9 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-9
-- visa_name_ko: 무역경영
-- item_type: required_documents
-- section_title: D-9 선박건조 및 산업설비 제작·감독
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    선박건조 및 산업설비 제작·감독을 위하여 파견되는 자 (발주자 또는 발주자가 지정하는 전문용역 제공회사에서 파견되는 자)
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식), 여권사본, 표준규격사진 1매, 수수료
-    - 수주계약서 사본
-    - 파견명령서
-    - 초청회사의 사업자등록증 사본 또는 법인등기사항전부증명서
-    - 연간 납세사실증명서
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: 체류기간 1년 이하 단수사증
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 선박·산업설비 발주사 또는 전문용역 제공회사
-- recommendation_or_approval:
-- expected_questions: |
-    선박 건조 감독하러 한국 가려면 어떤 비자 받아요?
-    발주사에서 파견되는 전문기술자의 서류는 어떻게 돼요?
-    선박건조 D-9 비자는 얼마짜리예요?
-
-### row D-9 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-9
-- visa_name_ko: 무역경영
-- item_type: required_documents
-- section_title: D-9 외국인 개인사업자
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    외국인 개인사업자에 대한 무역경영(D-9) 자격 (2012.10.29.부터 시행)
     외국환거래법 및 외국환거래규정에 따라 3억원 이상의 외자를 도입한 후 부가가치세법에 의한 사업자등록을 필한 자로 국내에서 회사를 경영하거나 영리사업을 하고자 하는 자
     외국인투자촉진법에 따라 외국인투자신고 후 투자기업등록증을 발급받은 자본금 3억원 이상의 개인사업자
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식), 여권사본, 표준규격사진 1매, 수수료
-    - 사업자등록증 사본, 영업허가증 사본 (해당자), 투자기업등록증 (소지자)
-    - 공동사업약정서 원본 및 사본 (해당자; 총 자본금, 지분 및 수익금 분배방법 등 포함)
-    - 사업자금 도입관련 입증서류 (송금확인증, 외국환 매입증명서, 세관신고서, 해당국세관 반출신고서 등)
-    - 자본금 사용내역 입증서류 (물품구매 영수증, 사무실 인테리어 비용, 국내은행 계좌 입출금 내역서 등)
-    - 영업실적 입증서류 (수출입면장, 부가세예정 또는 확정 신고서 등; 사증신청 전 단기사증 C-3-4 등으로 영업행위 시)
-    - 사업장 존재 입증서류 (임대차계약서, 사업장·사무공간·간판 사진 등 자료)
-    - 국민고용예정서약서 (해당자)
-- other_documents:
-- requirements:
-- procedure: |
-    신청기관: 원칙적으로 신청자의 본국에 소재한 대한민국 공관 (해외 사업체 운영 시 주재국 공관도 가능)
+- procedure: 원칙적으로 신청자의 본국에 소재한 대한민국 공관에서 신청 (신청인이 해외에 주재하며 사업체 운영 중인 경우 주재 국가 소재 공관에서 신청 가능)
 - restrictions:
 - exceptions:
 - fees:
-- duration_or_validity: 투자금액, 업종 등을 고려하여 1년 이하의 단수사증 공관장 재량발급
+- duration_or_validity: 1년 이하의 단수사증, 투자금액·업종 등을 고려하여 공관장 재량 발급
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 외국인개인사업자, 3억원외자, 외국인투자촉진법, 투자기업등록증, D-9
+- source_page:
+- source_excerpt: |
+    「외국환거래법」및「외국환거래규정」에 따라 3억원 이상의 외자를 도입한 후「부가가치세법」에 의한 사업자등록을 필한 자로 국내에서 회사를 경영하거나 영리사업을 하고자 하는 자
+    「외국인투자촉진법」에 따라 외국인투자신고 후 투자기업등록증을 발급받은 자본금 3억원 이상의 개인사업자
+- related_visa_codes:
 - expected_questions: |
-    외국인 개인사업자로 한국에서 회사 차리려면 어떤 비자예요?
-    개인사업자 D-9 비자 신청에 어떤 서류 내요?
-    3억원 미만 투자해도 신청 가능해요?
+    외국인 개인사업자로 무역경영 비자 받으려면 얼마 투자해야 해요?
+    개인사업자 비자는 얼마나 머물 수 있어요?
 
-### row D-9 / 사증발급인정서 / 대상
+### row D-9 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: D-9
 - visa_name_ko: 무역경영
-- item_type: visa_rule
-- section_title: D-9 무역비자 점수제
+- item_type: required_documents
+- section_title: D-9 무역경영 / 외국인 개인사업자 첨부서류
 - subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 대상
-- applicant_context: |
-    무역비자 점수제 해당자
-    총 160점 중 60점 이상 득점자로서, 필수항목 점수가 10점 이상인 자
-- eligibility: |
-    신청자 본인 명의로 사업자등록을 완료하였을 것
-    신청일 기준 3년 이내에 출입국관리법을 위반한 사실이 없을 것
+- petition_type: 사증발급
+- subsection_type: 제출서류
+- applicant_context:
+- eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents: |
-    - 사증발급인정신청서, 여권사본 등 공통제출 서류
-    - 사업자등록증 사본
-    - 무역업 고유번호부여증(한국무역협회 발행) 사본
-    - 공동사업약정서 원본 및 사본 (공동 사업자인 경우; 총 자본금, 지분 및 수익금 분배방법 등 포함)
-    - 사업장 존재 입증서류(임대차계약서 등)
-    - 점수제 해당 점수 입증서류
-      무역실적: 한국무역협회장 발행 수출입실적증명서
-      무역분야 전문성: 경력증명서, 학위증, 교육이수증 등 (붙임3 기관·과정 이수자에 한함)
-      기타: 자본금 입증서류, TOPIK 점수표, 사회통합프로그램 이수증 등
+    - 사증발급신청서 (별지 제17호 서식), 여권사본, 표준규격사진 1매, 수수료
+    - 사업자등록증 사본, 영업허가증 사본 (해당자), 투자기업등록증 (소지자)
+    - 공동사업약정서 원본 및 사본 (해당자) - 총 자본금, 지분 및 수익금 분배방법 등 포함
+    - 사업자금 도입관련 입증서류 (송금확인증, 외국환 매입증명서, 세관신고서, 해당국세관 반출신고서 등)
+    - 자본금 사용내역 입증서류 (물품구매 영수증, 사무실 인테리어 비용, 국내은행 계좌 입출금 내역서 등)
+    - 영업실적 입증서류 (수출입면장, 부가세예정 또는 확정 신고서 등) - 사증신청 전 단기사증(C-3-4) 등으로 영업행위를 한 경우에만 해당
+    - 사업장 존재 입증서류 (임대차계약서, 사업장·사무공간·간판 사진 등)
+    - 국민고용예정서약서(해당자만 제출)
 - other_documents:
 - requirements:
 - procedure:
@@ -3791,62 +3557,23 @@
 - fees:
 - duration_or_validity:
 - quota_or_limit:
-- score_criteria: 무역비자 점수제 총 160점, 필수항목 10점 이상, 총점 60점 이상
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    무역비자 점수제는 어떤 기준으로 점수 매겨요?
-    무역비자 인정서 신청에 무역실적 증명이 필요해요?
-    무역 점수제 60점 안 나오면 안 되나요?
-
-### row D-9 / 사증발급인정서 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-9
-- visa_name_ko: 무역경영
-- item_type: required_documents
-- section_title: D-9 한·인도 사증절차간소화협정
-- subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 제출서류
-- applicant_context: |
-    한·인도 사증절차간소화협정 관련 사증발급 대상자
-    고용방문자(Employment visitor): 정당하게 등록된 회사 또는 기관에 고용되거나 계약에 의하여 기술전문가, 임원, 관리자 등과 같이 숙련된 기술을 요하는 지위에 종사하거나 임용된 자
-- eligibility:
-- target_persons:
-- common_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
-- mandatory_documents: |
-    기업내 전근자
-    - 파견명령서 및 1년 이상의 재직증명서
-    - 지사 또는 연락사무소 설치허가서 사본
-    계약서비스 공급자 또는 이를 지원하는 자
-    - 고용주가 발행한 재직증명서, 인도정부발행 사업자등록증 등 회사·기관 설립 관련 서류
-    - 우리나라 회사·기관과의 서비스 공급계약 체결 입증 서류
-    독립전문가
-    - 고용 계약서 또는 용역계약서 등 계약을 입증하는 서류
-    - 학위증, 관련 분야 자격증, 1년 이상 해당 분야 취업경력 입증서류
-- other_documents: |
-    대리인 신청시: 위임장, 대리인 재직증명서, 대리인 신분증 추가 제출
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: |
-    체류자격: 계약내용 및 파견(고용)형태에 따라 D-7, D-8, D-9, E-3, E-4, E-7 등
-    사증발급: 출입국·외국인청 사증발급인정서 (고용관련 사증은 복수사증)
-- quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 무역경영, 사업자등록증, 사업자금도입, 영업실적, 국민고용예정서약서, D-9
+- source_page:
+- source_excerpt: |
+    ① 사증발급신청서 (별지 제17호 서식), 여권사본, 표준규격사진 1매, 수수료
+    ② 사업자등록증 사본, 영업허가증 사본 (해당자), 투자기업등록증 (소지자)
+    ③ 공동사업약정서 원본 및 사본 (해당자)
+    ④ 사업자금 도입관련 입증서류
+    ⑦ 사업장 존재 입증서류
+- related_visa_codes: C-3-4
 - expected_questions: |
-    인도 기술전문가가 한국 기업 무역경영 계약직으로 가려면 어떤 서류 내요?
-    인도 독립전문가도 한·인도 협정으로 비자 받을 수 있어요?
-    한·인도 협정 비자는 단수예요 복수예요?
+    개인사업자 비자 신청할 때 무슨 서류 내요?
+    자본금 사용내역은 어떻게 증명해요?
 
 ### row D-10 / 사증발급 / 대상
 - manual_type: 사증민원
@@ -3854,116 +3581,223 @@
 - visa_name_ko: 구직
 - item_type: visa_rule
 - section_title: D-10 구직
-- subtype_or_program:
+- subtype_or_program: D-10-1, D-10-2, D-10-3, D-10-T
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    구직 자격 (일반구직 D-10-1, 기술창업준비 D-10-2, 첨단기술인턴 D-10-3, 최우수인재 D-10-T)
+- applicant_context:
 - eligibility: |
-    교수(E-1)·회화지도(E-2)·연구(E-3)·기술지도(E-4)·전문직업(E-5)·예술흥행(E-6)·특정활동(E-7) 자격 해당 분야 취업 위해 연수나 구직활동 등을 하려는 자 (예술흥행 E-6 중 유흥업소 E-6-2 제외, 순수예술·스포츠분야만 허용; E-7 자격 중 준전문인력·숙련기능인력은 해외신청 불가)
-    기업투자(D-8) 자격 다목 해당 기술창업 준비 등을 하려는 자
-    해외 우수 대학(THE 200위, QS 500위 이내 본교) 첨단기술 분야 학사과정 이상 재학생 또는 학위취득 후 3년 이내 졸업생으로 만 30세 미만(석사 이상 만 35세)
-    세계 대학 순위 100위 이내 대학의 석사 이상 학위 취득자 (최우수인재 D-10-T)
-- target_persons:
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: |
-    1년 (기본)
-    1회 최대 6개월: D-10-1 ①요양보호사 전문연수 과정 수료자 ②구직비자 점수제 60점이상~80점미만 ③전문직종(E-1~E-7) 근무 경력자 ④주한 외국공관 인턴 직원
-    1회 최대 6개월: D-10-2 ①특허권·실용신안권·디자인권 출원 중인 사람 ②창업이민종합지원시스템(OASIS) 중 1개 이상 과정 이수자 ③창업이민 점수제 필수항목 중 1개 이상 해당자
-- quota_or_limit:
-- score_criteria:
-- table_summary: 세부약호
-- table_rows: |
-    D-10-1 일반구직 ('18.10월 점수제 전환)
-    D-10-2 기술창업준비 ('14.4. 신설)
-    D-10-3 첨단기술인턴 ('22.8. 신설)
-    D-10-T 최우수인재 ('25.4. 신설)
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    한국에서 일자리 구하러 가려면 어떤 비자 받아요?
-    기술창업 준비하러 가는 비자도 따로 있어요?
-    첨단기술 인턴 비자는 어떤 사람이 받을 수 있어요?
-
-### row D-10 / 사증발급 / 요건
-- manual_type: 사증민원
-- visa_code: D-10
-- visa_name_ko: 구직
-- item_type: visa_rule
-- section_title: D-10-1 일반구직 점수제 및 면제 특례
-- subtype_or_program: D-10-1
-- petition_type: 사증발급
-- subsection_type: 요건
-- applicant_context: |
-    일반구직(D-10-1) 발급 요건
-- eligibility: |
-    점수제 적용 대상자: 학사(국내 전문학사 포함) 이상의 학위 소지 국내 합법 체류자로 구직 점수표 총 190점 중 기본항목 20점 이상으로 총 득점 60점 이상
-    점수제 면제 특례
-    - 국내 대학 졸업 후 최초 구직 자격 변경: 국내 대학 전문학사 이상 학위 취득 후 최초 구직(D-10-1) 자격으로 변경 (체류기간 1년, 연장 시 점수제 적용)
-    - 국내 대학 졸업 한국어능력 우수자: 국내 정규 대학에서 전문학사 이상 학위 취득 후 3년 이내, 사회통합프로그램 4단계 중간평가 합격 또는 TOPIK 4급 이상 유효 성적표 소지자
-    - 유망인재: 29세 이하 해외 대학 졸업자로서 최근 3년 이내 THE 또는 QS 세계 대학평가 200위 이내 대학 학사 이상 학위 소지자 또는 한국학 관련 전공 한국어능력 최우수자(토픽 6급)
-    - 전문직종 근무 경력자: 체류자격변경허가만 가능 (사증발급 대상 아님)
-    - 주한 외국공관 근무 인턴: 주한 외국공관 근무 인턴 직원
-- target_persons:
+    D-10-1 (일반구직) / D-10-T (최우수인재): 국내 기업·단체 등에서 행하는 구직활동 뿐만 아니라 정식 취업 전에 연수비를 받고 행하는 단기 인턴과정 포함
+    D-10-2 (기술창업준비): 창업이민교육프로그램 참가, 지식재산권 등 특허출원 준비 및 출원, 창업법인 설립 준비 등 창업과 관련된 제반 준비활동(인턴활동 제한)
+    D-10-3 (첨단기술인턴): 법무부장관이 정한 요건을 갖춘 기업(기관)과의 인턴 근로계약에 따른 첨단기술 분야 인턴 활동
+- target_persons: |
+    교수(E-1)·회화지도(E-2)·연구(E-3)·기술지도(E-4)·전문직업(E-5)·예술흥행(E-6)·특정활동(E-7) 자격 분야 취업 위한 연수·구직활동자
+    기업투자(D-8) 자격에 해당하는 기술창업 준비자
+    해외 우수 대학(THE 200위, QS 500위) 첨단기술 분야 학사과정 이상 재학생 또는 학위취득 3년 이내 졸업생 (만 30세 미만, 석사 이상 만 35세)
+    세계 대학 순위 100위 이내 대학의 석사 이상 학위 취득자
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
 - procedure:
 - restrictions: |
-    공통 결격사유
-    - 신청일로부터 5년 이내 국내법 위반 금고 이상 형 선고
-    - 신청일로부터 5년 이내 출입국관리법 위반 강제퇴거나 출국명령
-    - 신청일로부터 3년 이내 국내법 위반 300만 원 이상 벌금형
-    - 출입국관리법 위반 범칙금 받은 사람으로서 체류허가 제한 통합기준에 따라 제한 (초범 500만원 이상, 재범 최근 3년 이내 합산 700만원 이상)
+    예술흥행(E-6) 자격 중 유흥업소 등의 흥행활동(E-6-2)은 제외, 순수예술 및 스포츠분야만 허용
+    E-7 자격 중 준전문인력과 숙련기능인력은 해외신청 불가
+- exceptions:
+- fees:
+- duration_or_validity: |
+    1년 부여
+    아래 대상자의 경우 1회 최대 6개월 부여:
+    D-10-1: 요양보호사 전문연수 과정 수료자, 구직비자 점수제 60점 이상~80점 미만, 전문직종(E-1~E-7) 근무 경력자, 주한 외국공관 인턴 직원
+    D-10-2: 특허권·실용신안권·디자인권 출원 중인 사람, OASIS 1개 이상 과정 이수자, 창업이민 점수제 필수항목 1개 이상 해당자
+- quota_or_limit:
+- score_criteria: D-10-1 점수제 총 190점 중 기본항목 20점 이상, 총 득점 60점 이상
+- table_summary: 구직 비자 세부약호
+- table_rows: |
+    D-10-1: 일반구직 (’18.10월 점수제 전환)
+    D-10-2: 기술창업준비 (’14.4. 신설)
+    D-10-3: 첨단기술인턴 (’22.8. 신설)
+    D-10-T: 최우수인재 (’25.4. 신설)
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 구직, 일반구직, 기술창업준비, 첨단기술인턴, 최우수인재, 점수제, D-10, D-10-1, D-10-2, D-10-3, D-10-T
+- source_page:
+- source_excerpt: |
+    ❍ (일반구직, D-10-1 / 최우수인재, D-10-T) 국내 기업․단체 등에서 행하는 구직활동 뿐만 아니라 정식 취업 전에 연수비를 받고 행하는 단기 인턴과정을 포함
+    ❍ (기술창업준비, D-10-2) 창업이민교육프로그램 참가, 지식재산권 등 특허출원 준비 및 출원, 창업법인 설립 준비 등 창업과 관련된 제반 준비활동(인턴활동 제한)
+    ❍ (첨단기술인턴, D-10-3) 법무부장관이 정한 요건을 갖춘 기업(기관)과의 인턴 근로계약에 따른 첨단기술 분야 인턴 활동
+- related_visa_codes: E-1, E-2, E-3, E-4, E-5, E-6, E-7, D-2, D-4, D-8
+- expected_questions: |
+    한국에서 취업하기 위한 구직 비자는 어떤 게 있어요?
+    창업 준비하려고 한국 가려면 어떤 비자 받아요?
+    해외 대학 졸업하고 한국에서 첨단기술 인턴 받을 수 있어요?
+    세계 100위 대학 석사 출신은 어떤 비자 받을 수 있나요?
+
+### row D-10 / 사증발급 / 요건
+- manual_type: 사증민원
+- visa_code: D-10
+- visa_name_ko: 구직
+- item_type: visa_rule
+- section_title: D-10 구직 / D-10-1 일반구직 점수제 면제 특례
+- subtype_or_program: D-10-1
+- petition_type: 사증발급
+- subsection_type: 요건
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    국내 대학 졸업 후 최초 구직 자격 변경: 국내 대학에서 전문학사 이상 학위과정 유학생(D-2)으로 졸업하여 학위 취득 후 최초 구직(D-10-1) 자격 변경 시 점수제 미적용 (체류기간 1년 부여, 연장 시 점수제 적용)
+    국내 대학 졸업 한국어능력 우수자: 국내 정규 대학에서 전문학사 이상 학위 취득 후 3년 미경과자로서 사회통합프로그램 4단계 중간평가 합격자 또는 한국어능력시험(TOPIK) 4급 이상 유효 성적표 소지자
+    유망인재: 29세 이하 해외 대학 졸업자로서 최근 3년 이내 세계 대학평가(THE 또는 QS) 200위 이내 대학 학사 이상 학위 소지자 또는 한국학 관련 전공 한국어능력 최우수자(토픽 6급)
+    전문직종 근무 경력자: 체류자격변경허가만 가능 (사증발급 대상 아님)
+    주한 외국공관 근무 인턴: 주한 외국공관 근무 인턴 직원
+- procedure:
+- restrictions:
+- exceptions: |
+    유학(D-2)에서 구직(D-10)으로 자격변경 뿐만 아니라, 출국 후 졸업일로부터 1년 이내 구직(D-10) 사증을 받는 경우도 점수제 면제 대상에 포함
+    과거 구직(D-10) 자격을 받았던 사람은 최초 구직변경이 아니므로 점수제 적용
+    한국어 우수자는 학위 수여일로부터 3년이 도과된 자는 일반 점수제 적용
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 일반구직, 점수제면제, 국내대학졸업, 한국어능력우수자, 유망인재, D-10-1
+- source_page:
+- source_excerpt: |
+    ❍ (국내 대학 졸업 후 최초 구직 자격 변경) ①국내 대학에서 ②전문학사 이상 학위과정 유학생(D-2)으로 졸업하여 학위 취득한 후, ③최초 구직(D-10-1) 자격으로 변경하는 경우에는 점수제 미적용
+    ❍ (국내 대학 졸업 한국어능력 우수자) 국내 정규 대학에서 전문학사 이상 학위 취득 후 3년이 경과되지 아니한 자로서, 사회통합프로그램 4단계 중간평가 합격자(사전평가 5단계 배정자 포함) 또는 한국어능력시험(TOPIK) 4급 이상 유효 성적표 소지자
+- related_visa_codes: D-2
+- expected_questions: |
+    한국 대학 졸업하면 구직 비자 점수제 면제되나요?
+    한국어 잘하면 구직 비자 받기 쉬워지나요?
+    세계 200위 대학 졸업하면 어떤 혜택 있어요?
+
+### row D-10 / 사증발급 / 점수표
+- manual_type: 사증민원
+- visa_code: D-10
+- visa_name_ko: 구직
+- item_type: score_table
+- section_title: D-10 구직 / D-10-1 점수제 배점표
+- subtype_or_program: D-10-1
+- petition_type: 사증발급
+- subsection_type: 점수표
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: 총 190점 중 기본항목이 20점 이상으로 총 득점이 60점 이상
+- procedure:
+- restrictions:
 - exceptions:
 - fees:
 - duration_or_validity:
 - quota_or_limit:
 - score_criteria: |
-    구직 점수표 총 190점 (기본 50점, 선택 70점, 가점 70점)
-    기본항목: 연령(20점), 최종학력(30점)
-    선택항목: 취업경력(15점), 국내유학(30점), 국내연수(5점), 한국어능력(20점)
-    가점: 관계 중앙행정기관장·재외공관장 추천(20점), 세계우수대학(THE 200대, QS 500대) 또는 아시아권 QS 1,000위 이공계(20점), 글로벌기업 근무경력(포천 500대, 20점), 이공계 학사(5점), 고소득(5만달러) 전문직 경력자(5점)
-    감점: 출입국관리법 위반 또는 형사처벌 전력(최대 -30점)
-- table_summary: 점수제 구직비자(D-10-1) 배점표
-- table_rows: |
+    기본항목 최대 50점 (연령 + 최종학력)
     연령: 20~24세 10점, 25~29세 15점, 30~34세 20점, 35~39세 15점, 40~49세 5점
-    학력: 국내 전문학사 15점, 학사 15점, 석사 20점, 박사 30점
-    한국어능력: TOPIK 5급/KIIP 5단계 20점, 4급/4단계 15점, 3급/3단계 10점, 2급/2단계 5점
-    국내유학 졸업 후 3년 이내: 전문학사/학사/석사/박사 30점
-    국내유학 졸업 후 3년 이후: 전문학사 5점, 학사 10점, 석사 15점, 박사 20점
+    최종학력: 국내 전문학사 15점, 학사 15점, 석사 20점, 박사 30점 (국외 전문학사 제외)
+    선택항목 최대 70점 (취업경력 + 국내유학 + 국내연수 + 한국어능력)
+    가점 최대 70점 (관계 중앙행정기관장 추천 20점, 세계 우수대학 졸업 20점, 글로벌기업 근무 20점, 이공계 학사 5점, 고소득 전문직 5점)
+    감점 최대 60점 (출입국관리법 위반, 형사처벌 전력)
+- table_summary: 구직비자(D-10-1) 점수제 배점표
+- table_rows: |
+    기본 50점: 연령(20점) + 최종학력(30점, 박사 최대)
+    선택 70점: 취업경력(15점), 국내유학(30점), 국내연수(5점), 한국어능력(20점)
+    가점 70점: 중앙행정기관장 추천(20점), 세계 우수대학 졸업(20점), 글로벌기업 근무(20점), 이공계학사(5점), 고소득 전문직(5점)
+    감점 최대 60점: 출입국관리법 위반/형사처벌
+    한국어능력: TOPIK 5급 이상 20점, 4급 15점, 3급 10점, 2급 5점
+    국내유학(졸업 후 3년 이내): 전문학사·학사·석사·박사 모두 30점
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 구직비자점수제, 배점표, 연령배점, 최종학력, 한국어능력, 가점, 감점, D-10-1
+- source_page:
+- source_excerpt: |
+    □ 총 190점 중 기본항목이 20점 이상으로 총 득점이 60점 이상인자
+    1. 기본 ① 연령 20~ 24세 10 50점 25~ 29세 15 30~ 34세 20 35~ 39세 15 40세~49세 5
+    ② 최종학력 국내 전문학사 15 국내/국외 학사 15 석사 20 박사 30
+    4) 한국어능력 : 최대 20점
+    ① 사회통합프로그램 5단계 이수 또는 종합평가 합격 / 한국어능력시험(TOPIK) 5급 이상 20
+- related_visa_codes:
 - expected_questions: |
-    한국에서 일반 구직 비자 받으려면 점수제 어떻게 적용해요?
-    한국 대학 졸업하면 점수제 면제받을 수 있어요?
-    구직 점수제에서 한국어 점수는 어떻게 들어가요?
+    구직 비자 점수는 어떻게 계산해요?
+    한국어 시험 점수가 점수에 얼마나 영향을 미쳐요?
+    몇 점 이상 받아야 비자 받을 수 있어요?
+    범칙금 받은 적 있으면 감점되나요?
 
-### row D-10 / 사증발급 / 요건
+### row D-10 / 사증발급인정서 / 대상
 - manual_type: 사증민원
 - visa_code: D-10
 - visa_name_ko: 구직
 - item_type: visa_rule
-- section_title: D-10-2 기술창업준비
-- subtype_or_program: D-10-2
-- petition_type: 사증발급
-- subsection_type: 요건
-- applicant_context: |
-    기술창업준비(D-10-2): 창업이민교육프로그램 참가, 지식재산권 등 특허출원 준비 및 출원, 창업법인 설립 준비 등 창업 관련 제반 준비활동 (인턴활동 제한)
+- section_title: D-10 구직 / 첨단기술인턴(D-10-3)
+- subtype_or_program: D-10-3
+- petition_type: 사증발급인정서
+- subsection_type: 대상
+- applicant_context: 첨단기술인턴(D-10-3)에 대해서는 사증발급인정서를 통한 사증발급만 허용
 - eligibility: |
-    학사(국내 전문학사) 이상의 학위를 가진 사람으로 아래 어느 하나
-    - 대한민국 특허권·실용신안권·디자인권을 보유하고 있거나 출원 중인 사람 (출원사실증명원의 심사청구유무란 'Y'로 기재된 경우 대상)
-    - 법무부·중기부가 공동 지정한 글로벌창업이민센터의 창업이민종합지원시스템(OASIS) 교육과정에 참여 중이거나 최근 3년 이내에 일부 또는 전부 이수한 사람
-    - 중기부 주관 K-Startup 그랜드챌린지 참여자로 창업진흥원장 체류자격변경허가 추천을 받은 자
-    - 해외(OECD) 지식재산권 보유자
+    세계 우수 대학(본교만 해당) 첨단기술 분야 학사과정 이상 재학생 또는 학위취득일로부터 3년이 경과되지 않은 졸업생으로 만 30세(석사 이상의 경우 만 35세) 미만
+    초청 가능 기관:
+    - 첨단 기술분야 연구시설(연구전담부서)을 갖춘 국내 상장기업
+    - 기초연구법 제14조의2에 따른 기업부설연구소 또는 연구개발 전담부서를 갖춘 국내 기업
+    - 연구개발특구의 육성에 관한 특별법 제9조에 따라 첨단기술기업으로 지정받은 기업
+    - 벤처기업육성에 관한 특별조치법 제25조에 따라 중소벤처기업부의 확인을 받은 벤처기업
+    - 국공립 연구기관, 특정연구기관, 과학기술분야 정부출연 연구기관
+- target_persons: 해외 우수 대학(THE 200위, QS 500위 이내) 첨단기술 분야 재학생·졸업생
+- common_documents:
+- mandatory_documents: |
+    - 공통서류(신청서, 사진, 여권사본, 수수료, 신분증사본)
+    - 인턴활동 계획서
+    - 최근 3년 이내 세계 대학순위 THE 200위, QS 500위 이내 소명자료 및 학위과정(첨단기술분야만 해당) 재학증명서 또는 졸업증명서(학위증)
+    - 인턴근로계약서 (인턴 기업, 인턴활동 분야(첨단기술분야로 제한), 인턴 기간 필수 명시)
+    - 초청 기업(기관) 사업자등록증(또는 고유번호증), 법인등기부등본, 고용보험가입자 명부, 연구시설 현황자료
+    - 첨단기술인턴 초청이 가능한 기업(기관)임을 입증할 수 있는 서류(택1): 상장기업 연구시설/기업부설연구소인정서/첨단기술기업지정서/벤처기업확인서
+    - 체재비 입증서류
+- other_documents: 단, 인턴계약서에 인턴기간 동안 상기 금액 수준의 국내 체재비 지급 내용이 확인되는 경우 체재비 입증서류 제출 면제
+- requirements:
+- procedure:
+- restrictions: |
+    초청기업(기관)이 일반구직(D-10-1) 인턴 채용 또는 전문직종(E계열) 외국인 고용이 제한되는 경우 제한
+    첨단기술인턴 초청인원이 인턴 예정 기업(기관)의 국민고용인원의 20% 초과 시 제한 (벤처기업은 설립일로부터 3년간 국민고용 제한 요건 적용 유예)
+- exceptions:
+- fees:
+- duration_or_validity: 최대 1년의 체류기간 부여 가능 (계약서에 명시된 인턴기간을 초과할 수 없음)
+- quota_or_limit: 인턴 예정 기업(기관)의 국민고용인원의 20% 이내
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: 첨단 기술분야 연구시설을 갖춘 국내 상장기업, 기업부설연구소·연구개발전담부서 보유 기업, 첨단기술기업, 벤처기업, 국공립 연구기관 등
+- recommendation_or_approval:
+- keywords: 첨단기술인턴, 사증발급인정서, 세계우수대학, 첨단기술기업, 벤처기업, D-10-3
+- source_page:
+- source_excerpt: |
+    1. 첨단기술인턴(D-10-3)에 대해서는 사증발급인정서를 통한 사증발급만 허용하며 우수인재 유치 차원에서 최대 1년의 체류기간 부여 가능 (다만, 계약서에 명시된 인턴기간을 초과할 수 없음)
+    ❍ 인턴근로계약서
+    ❍ 초청 기업(기관) 사업자등록증(또는 고유번호증), 법인등기부등본, 고용보험가입자 명부, 연구시설 현황자료
+- related_visa_codes: D-10-1
+- expected_questions: |
+    첨단기술 인턴 비자는 어떻게 신청해요?
+    어떤 회사가 첨단기술 인턴을 초청할 수 있나요?
+    한 회사에서 외국인 인턴을 몇 명까지 받을 수 있어요?
+
+### row D-10 / 사증발급 / 제한
+- manual_type: 사증민원
+- visa_code: D-10
+- visa_name_ko: 구직
+- item_type: restriction
+- section_title: D-10 구직 / 제한대상
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 제한
+- applicant_context:
+- eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents:
@@ -3971,107 +3805,14 @@
 - requirements:
 - procedure:
 - restrictions: |
-    OASIS 교육 이수일로부터 3년 경과 후 기술창업준비(D-10-2) 체류자격변경허가 신청자 (단, 교육 재이수 중인 자 제외)
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 글로벌창업이민센터(OASIS), 창업진흥원
-- recommendation_or_approval: 창업진흥원장 체류자격변경허가 추천 (K-Startup 그랜드챌린지 참여자)
-- expected_questions: |
-    한국에서 기술창업 준비하러 가려면 어떤 비자 받아요?
-    OASIS 창업이민 교육은 누가 받아요?
-    K-Startup 그랜드챌린지 참여자도 비자 신청 가능해요?
-
-### row D-10 / 사증발급인정서 / 요건
-- manual_type: 사증민원
-- visa_code: D-10
-- visa_name_ko: 구직
-- item_type: visa_rule
-- section_title: D-10-3 첨단기술인턴
-- subtype_or_program: D-10-3
-- petition_type: 사증발급인정서
-- subsection_type: 요건
-- applicant_context: |
-    첨단기술인턴(D-10-3): 법무부장관이 정한 요건을 갖춘 기업(기관)과의 인턴 근로계약에 따른 첨단기술 분야 인턴 활동
-    첨단기술인턴은 사증발급인정서를 통한 사증발급만 허용
-- eligibility: |
-    세계 우수 대학(본교만 해당, THE 세계대학순위 200위, QS 세계대학순위 500위 이내) 첨단기술 분야 학사과정 이상 재학생 또는 학위취득일로부터 3년이 경과되지 않은 졸업생으로 만 30세(석사 이상은 만 35세) 미만
-    초청 가능 기업(기관):
-    - 첨단 기술분야 연구시설(연구전담부서)을 갖춘 국내 상장기업
-    - 기초연구법 제14조의2 기업부설연구소 또는 연구개발 전담부서
-    - 연구개발특구의 육성에 관한 특별법 제9조 첨단기술기업
-    - 벤처기업육성에 관한 특별조치법 제25조 벤처기업
-    - 국공립 연구기관, 특정연구기관, 과학기술분야 정부출연 연구기관
-- target_persons:
-- common_documents: |
-    - 신청서, 사진, 여권사본, 수수료, 신분증사본
-    - 인턴활동 계획서
-    - 최근 3년 이내 세계 대학순위 THE 200위, QS 500위 이내 소명자료 및 학위과정(첨단기술분야만) 재학증명서 또는 졸업증명서(학위증) (휴학증명서도 인정하되 휴학일로부터 1년 경과 시 불인정; 학력증명서는 유학(D-2) 사증발급 기준 국가별 공증절차대로 공적 확인)
-    - 인턴근로계약서 (인턴 기업, 인턴활동 분야(첨단기술분야 제한), 인턴 기간 필수 명시)
-    - 초청 기업(기관) 사업자등록증(또는 고유번호증), 법인등기부등본, 고용보험가입자 명부, 연구시설 현황자료
-    - 첨단기술인턴 초청 가능 기업(기관) 입증서류 (택1: 상장기업 첨단기술분야 연구시설 입증서류, 기업부설연구소인정서, 첨단기술기업지정서, 벤처기업확인서 등)
-    - 체재비 입증서류 (연도별 1인 가구 주거급여 기준액 × 체류개월 수 이상 금액 예치 잔고증명서; 인턴계약서에 인턴기간 국내 체재비 지급 확인 시 면제)
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure:
-- restrictions: |
-    초청기업(기관)이 일반구직(D-10-1) 인턴 채용 또는 전문직종(E계열) 외국인 고용이 제한되는 경우
-    첨단기술인턴 초청 요건을 갖추지 못한 기업(기관)과 인턴 근로계약을 체결한 경우
-    첨단기술인턴 초청인원이 인턴 예정 기업(기관)의 국민고용인원의 20%를 초과하는 경우 (최저 임금 이상 충족하고 고용보험가입자명부 3개월 이상 등재; 벤처기업은 설립일로부터 3년간 유예)
-- exceptions:
-- fees:
-- duration_or_validity: 최대 1년의 체류기간 (단, 계약서에 명시된 인턴기간을 초과할 수 없음)
-- quota_or_limit: 초청기업 국민고용인원의 20% 이내
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 첨단기술 분야 연구시설을 갖춘 국내 기업·기관
-- recommendation_or_approval:
-- expected_questions: |
-    해외 명문대 출신이 한국 첨단기술 분야 인턴 가려면 어떤 비자예요?
-    첨단기술 인턴 비자 받을 수 있는 회사는 어떤 회사예요?
-    인턴 비자는 얼마나 머물 수 있어요?
-
-### row D-10 / 사증발급 / 요건
-- manual_type: 사증민원
-- visa_code: D-10
-- visa_name_ko: 구직
-- item_type: visa_rule
-- section_title: D-10-T 최우수인재
-- subtype_or_program: D-10-T
-- petition_type: 사증발급
-- subsection_type: 요건
-- applicant_context: |
-    최우수인재(D-10-T): 최근 5년 이내 세계 대학 순위 100위 이내 대학의 석사 이상 학위 취득자로 국내 취업 위해 연수나 구직활동을 하려는 사람 (부처추천 불요)
-- eligibility: |
-    최우수인재(Top-Tier) 자격 기준 중 학력 요건을 갖추었으나 취업 미확정 시 최우수인재 구직(D-10-T) 자격 부여
-    세계대학 평가 순위 참고: QS World University Ranking, QS by Subject Engineering and Technology, Times Higher Education World University Rankings, THE by subject engineering, US News & World Report Global University Rankings, US News by subject engineering
-- target_persons:
-- common_documents: |
-    - 신청서, 표준규격 사진, 여권 사본, 수수료
-    - 구직활동 계획서
-    - 해외 우수대학(본교) 졸업(예정)증명서
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure:
-- restrictions: |
-    결격사유
-    - 입국금지 사유 해당
-    - 특정강력범죄의 처벌에 관한 특례법상 특정강력범죄로 형 선고
-    - 출입국관리법 또는 다른 법률 위반 금고 이상 형 집행종료·면제 5년 미경과
-    - 금고 이상 형 집행유예 판결확정 5년 미경과
-    - 300만원 이상 벌금형 납부일 3년 미경과
-    - 최근 5년간 출입국관리법 3회 이상 위반 (과태료 제외)
-    - 강제퇴거명령 출국 7년 또는 출국명령 출국 5년 미경과
-    - 최근 3년간 출입국관리법 위반 1회 500만원 이상 또는 합산 700만원 이상
-    - 인도적 사유로 체류허가 받은 사람의 허가 결정일 5년 미경과
-    - 안전보장·질서유지·공공복리·이익 침해 우려
+    공통 결격사유:
+    ① 신청일로부터 5년 이내에 국내법을 위반하여 금고 이상의 형을 선고받은 사람
+    ② 신청일로부터 5년 이내에 출입국관리법을 위반하여 강제퇴거나 출국명령을 받은 사람
+    ③ 신청일로부터 3년 이내에 국내법을 위반하여 300만 원 이상의 벌금형을 선고받은 사람
+    ④ 출입국관리법을 위반하여 범칙금을 받은 사람으로서 「체류허가 제한 통합기준」에 따라 체류허가 제한되는 사람 (초범 500만원 이상, 재범 3년 이내 합산 700만원 이상)
+    기술창업준비(D-10-2): OASIS 교육 이수일로부터 3년이 경과된 이후 신청자 (교육 재이수 중인 자 제외)
+    첨단기술인턴(D-10-3): 초청기업의 인턴 채용 또는 E계열 외국인 고용 제한 시, 첨단기술인턴 초청 요건 미충족 기업과 계약 시, 국민고용인원의 20% 초과 시
+    최우수인재(D-10-T) 결격사유: 입국금지 사유, 특정강력범죄 형 선고자, 출입국관리법 또는 다른 법률 위반 금고 이상 형 집행 후 5년 미경과자, 300만원 이상 벌금형 납부 후 3년 미경과자, 5년간 출입국관리법 3회 이상 위반자, 강제퇴거 후 7년 미경과자, 출국명령 후 5년 미경과자 등
 - exceptions:
 - fees:
 - duration_or_validity:
@@ -4081,70 +3822,17 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 구직, 결격사유, 출입국관리법위반, 강제퇴거, 벌금형, 범칙금, D-10
+- source_page:
+- source_excerpt: |
+    ❶ 신청일로부터 5년 이내에 국내법을 위반하여 금고 이상의 형을 선고받은 사람
+    ➋ 신청일로부터 5년 이내에 출입국관리법을 위반하여 강제퇴거나 출국명령을 받은 사람
+    ➌ 신청일로부터 3년 이내에 국내법을 위반하여 300만 원 이상의 벌금형을 선고받은 사람
+- related_visa_codes:
 - expected_questions: |
-    세계 100위 이내 대학 석사 출신 외국인은 한국 어떤 비자 받아요?
-    최우수인재 구직 비자 신청에 부처 추천이 꼭 필요해요?
-    최우수인재 비자에서 결격사유는 어떻게 돼요?
-
-### row D-10 / 사증발급 / 절차
-- manual_type: 사증민원
-- visa_code: D-10
-- visa_name_ko: 구직
-- item_type: visa_rule
-- section_title: D-10 공관장 재량 발급 절차
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 절차
-- applicant_context: |
-    재외공관장이 재량으로 체류기간 6개월의 단수 구직(D-10)사증 발급
-- eligibility:
-- target_persons:
-- common_documents: |
-    공통서류
-    - 신청서, 사진, 여권 사본, 수수료, 신분증 사본
-    - 구직활동 계획서
-    - 학위증 (졸업증명서, 학위취득증명서도 인정; 유학생정보시스템 확인 시 면제)
-    - 대학 순위 소명자료 (세계 대학순위 적용 대상자)
-    - 근무경력 증빙서류 (해당자; 근무기간, 장소, 직종 등 포함된 경력증명서 또는 재직증명서)
-    - 국내 연수 활동 증빙서류 (해당자)
-    - 한국어능력 입증서류 (해당자)
-    - 추천서 (해당자; 부처 발행 고용추천서 또는 공관 내부추천 문서)
-    - 고소득 전문가 입증서류 (해당자; 자국 공공기관 발행 전년도 근로소득 입증서류)
-    - 체재비 입증서류 (연도별 1인 가구 주거급여 기준액 × 체류개월 수 이상 금액 예치 잔고증명서)
-    - 기타 점수제 평가에 필요한 서류
-- mandatory_documents:
-- other_documents: |
-    점수제 면제 대상자 서류
-    - 국내 대학 졸업 후 최초 구직자격 변경: 국내 정규 대학 전문학사 이상 학위증 (체재비 입증서류 면제; 사증발급은 졸업일로부터 1년 이내만 인정)
-    - 한국어능력 우수자: 국내 정규 대학 학위증 + 사회통합프로그램 중간평가 합격증 또는 사전평가 점수표(81점 이상), TOPIK 4급 이상 유효 성적표 (체재비 면제)
-    - 유망인재: 학위증 + THE/QS 세계 대학순위 200위 이내 대학 소명자료 + TOPIK 6급 유효 성적표 (체재비 면제)
-    - 주한 공관 근무 인턴 직원: 인턴계약서 + 양국 공관 대사 추천서 (체재비 면제)
-    기술창업준비(D-10-2)
-    - 공통서류 + 학사(국내 전문학사) 학위 이상 학력증명서
-    - 기술창업계획서
-    - 특허증·실용신안등록증·디자인등록증 사본 또는 특허 출원사실증명서 (해당자)
-    - 창업이민종합지원시스템 교육과정 이수증 또는 교육참여 확인서 (해당자)
-    - OECD 국가 지식재산권 보유 사실 확인 공적 서류 (해당자)
-    - 체재비 입증서류
-- requirements:
-- procedure: |
-    신청관할: 자국 또는 거주 중인 국가(제3국) 소재 한국공관 (관광 등 단기간 일시적 체류 중인 국가는 원칙적 제외)
-    해외 발급 서류는 반드시 한글 또는 영어 번역 후 아포스티유 인증 또는 자국정부 공증
-- restrictions:
-- exceptions: |
-    구직사증에 대한 복수사증발급협정이 체결된 국가 국민에게는 유효기간 2년, 체류기간 6월의 복수사증 발급
-- fees:
-- duration_or_validity: 체류기간 6개월 단수 (협정 체결국 국민은 유효기간 2년 체류기간 6월 복수)
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    구직 비자는 어디서 신청해요?
-    구직 비자 신청 시 체재비는 얼마 정도 있어야 해요?
-    한국에서 점수제 면제 대상자가 받는 구직 비자는 단수예요 복수예요?
+    구직 비자 신청 못 하는 경우가 있어요?
+    출입국법 위반한 적 있으면 얼마나 지나야 신청할 수 있어요?
+    벌금 받은 적이 있어도 비자 받을 수 있나요?
 
 <!-- end chunk: visa_006 -->
 
@@ -4163,48 +3851,21 @@
 - applicant_context:
 - eligibility: |
     고등교육법에 의한 자격요건을 갖춘 외국인으로서 전문대 이상의 교육기관이나 이에 준하는 기관에서 교육 또는 연구지도
-    - 한국과학기술원 등 학술기관의 교수
-    - 전문대학 이상의 교육기관에서 임용하는 전임강사 이상의 교수
-    - 대학 또는 대학부설연구소의 특수분야 연구교수
-    고급과학 기술인력
-    - 전문대학 이상의 교육과학기술분야의 교육․연구지도 활동에 종사하고자 하는 자로서 교육부장관의 고용추천이 있는 자
-- target_persons: 전문대 이상 교육기관 교수, 학술기관 교수, 연구교수, 고급과학기술인력
+    한국과학기술원 등 학술기관의 교수
+    전문대학 이상의 교육기관에서 임용하는 전임강사 이상의 교수
+    대학 또는 대학부설연구소의 특수분야 연구교수
+    고급과학 기술인력: 전문대학 이상의 교육과학기술분야의 교육·연구지도 활동에 종사하고자 하는 자로서 교육부장관의 고용추천이 있는 자
+- target_persons: 총장·학장, 교수·부교수·조교수, 겸임교원·명예교수·초빙교원, 교환교수
 - common_documents:
 - mandatory_documents:
 - other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: 5년
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval: 교육부장관의 고용추천 (고급과학기술인력)
-- expected_questions: |
-    한국 대학 교수로 임용됐는데 어떤 비자 받아요?
-    전문대 교수도 이 비자 대상인가요?
-    한국과학기술원에서 교수로 일하려면 무슨 자격이 필요해요?
-
-### row E-1 / 사증발급 / 기간
-- manual_type: 사증민원
-- visa_code: E-1
-- visa_name_ko: 교수
-- item_type: visa_rule
-- section_title: E-1 교수
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 기간
-- applicant_context:
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements:
+- requirements: |
+    교원 자격기준 (대학교원 자격기준 등에 관한 규정 제2조):
+    교수: 연구실적 4년 + 교육경력 6년 = 계 10년
+    부교수: 연구실적 3년 + 교육경력 4년 = 계 7년
+    조교수: 연구실적 2년 + 교육경력 2년 = 계 4년
+    강사: 연구실적 1년 + 교육경력 1년 = 계 2년
+    연구실적연수와 교육경력연수 중 어느 하나가 기준에 미달하더라도 합계가 해당 기준을 충족하면 자격기준 충족으로 봄
 - procedure:
 - restrictions:
 - exceptions:
@@ -4212,217 +3873,131 @@
 - duration_or_validity: 1회 부여 체류기간의 상한 5년
 - quota_or_limit:
 - score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    교수 비자는 한 번에 얼마나 머물 수 있어요?
-    대학 교수로 일하면 체류기간은 어떻게 돼요?
-    한 번 받으면 몇 년 머무를 수 있어요?
-
-### row E-1 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: E-1
-- visa_name_ko: 교수
-- item_type: required_documents
-- section_title: E-1 교수 / 공관장 재량 단수사증 (한국과학기술원)
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: 한국과학기술원에 고용되어 교수활동을 하고자 하는 자
-- eligibility: 한국과학기술원법령에 따라 교수․부교수․조교수․초빙교수 등으로 채용되어 교수활동을 하는 자
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식)
-    - 여권
-    - 표준규격사진 1매
-    - 수수료
-    - 경력증명서 및 학위증
-    - 고용계약서 또는 임용예정확인서
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions: 재외공관의 장은 입국목적, 초청의 진정성, 초청자 및 피초청자의 자격 확인 등을 심사하기 위해 필요한 경우 첨부서류를 일부 가감할 수 있음
-- fees:
-- duration_or_validity: 체류기간 1년 이하의 단수사증
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 한국과학기술원
-- recommendation_or_approval:
-- expected_questions: |
-    한국과학기술원 교수로 가는데 무슨 서류 챙기면 돼요?
-    카이스트 교수로 채용됐는데 비자 신청 서류 알려주세요
-    한국과학기술원 임용 단수사증 받을 때 학위증도 필요해요?
-
-### row E-1 / 사증발급인정서 / 대상
-- manual_type: 사증민원
-- visa_code: E-1
-- visa_name_ko: 교수
-- item_type: visa_rule
-- section_title: E-1 교수 / 사증발급인정서
-- subtype_or_program: 사증발급인정서
-- petition_type: 사증발급인정서
-- subsection_type: 대상
-- applicant_context:
-- eligibility: |
-    전문대학 이상 교육기관에서 91일 이상 교육 또는 연구․지도활동을 하는 대학의 장(총장․학장), 교수․부교수․조교수, 겸임교원․명예교수․초빙교원, 교환교수 등
-    총․학장 : 교수자격을 갖춘 자 중에서 소정의 절차에 따라 임용
-    교수․부교수․조교수 : 별표 자격기준 충족 또는 대학(교원)인사위원회 인정
-    겸임교원 : 별표 자격기준 + 관련분야 전문지식
-    명예교수 : 교육 또는 학술상의 업적이 현저한 자
-    초빙교원 : 별표 자격기준에 해당하는 자 (특수교과의 경우 예외 가능)
-    대학 간 교환교수 교류협정에 따라 국내 대학에 파견되는 교환교수
-- target_persons: 91일 이상 교육·연구지도 활동을 하는 총학장, 교수, 부교수, 조교수, 겸임교원, 명예교수, 초빙교원, 교환교수
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements: |
-    교원 자격기준 (대학졸업자 기준): 교수 연구실적 4년+교육경력 6년 계 10년, 부교수 3+4=7년, 조교수 2+2=4년, 강사 1+1=2년
-    전문대학졸업자 기준: 교수 5+8=13년, 부교수 4+6=10년, 조교수 3+4=7년, 강사 1+2=3년
-- procedure:
-- restrictions:
-- exceptions: 연구실적연수와 교육경력연수의 합계가 기준 충족 시 자격 인정
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary: 교원 및 조교의 자격기준 (직명별 연구실적·교육경력 연수)
+- table_summary: 교원 자격기준 (대학졸업자 기준)
 - table_rows: |
-    교수: 연구4+교육6=10년 (대졸기준), 5+8=13년 (전문대졸기준)
-    부교수: 3+4=7년 / 4+6=10년
-    조교수: 2+2=4년 / 3+4=7년
-    강사: 1+1=2년 / 1+2=3년
-- inviter_context: 전문대학 이상 교육기관
-- recommendation_or_approval:
+    교수: 연구실적 4년 + 교육경력 6년 (총 10년)
+    부교수: 연구실적 3년 + 교육경력 4년 (총 7년)
+    조교수: 연구실적 2년 + 교육경력 2년 (총 4년)
+    강사: 연구실적 1년 + 교육경력 1년 (총 2년)
+- inviter_context: 한국과학기술원, 전문대학 이상 교육기관, 대학 부설연구소
+- recommendation_or_approval: 고급과학 기술인력은 교육부장관의 고용추천 필요
+- keywords: 교수, 전임강사, 부교수, 조교수, 고급과학기술인력, 교육부장관추천, E-1
+- source_page:
+- source_excerpt: |
+    고등교육법에 의한 자격요건을 갖춘 외국인으로서 전문대 이상의 교육기관이나 이에 준하는 기관에서 교육 또는 연구지도
+    - 한국과학기술원 등 학술기관의 교수
+    - 전문대학 이상의 교육기관에서 임용하는 전임강사 이상의 교수
+    - 대학 또는 대학부설연구소의 특수분야 연구교수
+- related_visa_codes: E-3
 - expected_questions: |
-    겸임교수로 한국 대학에 오는데 어떤 자격이 필요해요?
-    교환교수 협정으로 한국 가는데 비자 어떻게 받아요?
-    명예교수도 이 비자 받을 수 있어요?
+    한국 대학교수로 가려면 어떤 비자 받아요?
+    조교수 임용 받으면 무슨 자격 갖춰야 해요?
+    교수 비자는 얼마나 머물 수 있어요?
+    한국에서 연구교수로 일하려면 어떤 추천 받아야 하나요?
 
 ### row E-1 / 사증발급인정서 / 제출서류
 - manual_type: 사증민원
 - visa_code: E-1
 - visa_name_ko: 교수
 - item_type: required_documents
-- section_title: E-1 교수 / 사증발급인정서 (교원)
-- subtype_or_program: 사증발급인정서
+- section_title: E-1 교수 / 사증발급인정서 첨부서류
+- subtype_or_program:
 - petition_type: 사증발급인정서
 - subsection_type: 제출서류
-- applicant_context: 전문대학 이상 교육기관에서 교육·연구지도 활동을 하는 교원
+- applicant_context: 전문대학 이상 교육기관에서 91일 이상 교육 또는 연구·지도활동
 - eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식)
-    - 여권
-    - 표준규격사진 1매
-    - 경력증명서 및 학위증 (조교수 이상 자격 전임교수 등은 제출 생략)
-    - 고용계약서 또는 임용예정확인서 (교환·방문교수는 대학명의 위촉·초청 공문으로 대체 가능)
+    - 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
+    - 경력증명서 및 학위증 (조교수 이상의 자격기준에 해당하는 전임교수 등의 경우 제출 생략)
+    - 고용계약서 또는 임용예정확인서 (파견 또는 협약에 따른 교환교수, 방문교수 등은 대학 명의의 위촉·초청 공문으로 대체 가능)
     - 초청학교 설립관련 서류 (사업자등록증 사본 또는 법인등기사항전부증명서)
-- other_documents: |
-    - 대리인 신청시: 위임장, 대리인 재직증명서, 대리인 신분증
+- other_documents:
+    교육부장관 추천 고급과학기술인력 추가서류:
+    - 교육부장관의 '고급과학기술인력' 고용추천서 (경제자유구역 내 취업활동자는 관할 특별시장·광역시장·도지사의 고용추천서)
+    - BK21 관련 공문 사본 (해당자에 한함)
 - requirements:
 - procedure:
 - restrictions:
-- exceptions: |
-    조교수 이상 자격기준에 해당하는 전임교수 등은 경력증명서 및 학위증 제출 생략
-    교환·방문교수 등은 대학 명의의 위촉·초청 공문(임금요건 불필요)으로 대체 가능
-    출입국·외국인청장은 첨부서류 일부 가감 가능
+- exceptions:
 - fees:
 - duration_or_validity:
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 전문대학 이상 교육기관 (초청학교)
-- recommendation_or_approval:
+- inviter_context:
+- recommendation_or_approval: 교육부장관 고용추천서
+- keywords: 교수, 사증발급인정신청서, 고용계약서, 고급과학기술인력, 교육부장관, E-1
+- source_page:
+- source_excerpt: |
+    ① 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
+    ② 경력증명서 및 학위증
+    - 조교수 이상의 자격기준에 해당하는 전임교수 등의 경우 제출 생략
+    ③ 고용계약서 또는 임용예정확인서
+    ③ 교육부장관의 '고급과학기술인력' 고용추천서
+- related_visa_codes:
 - expected_questions: |
-    대학 교수로 사증발급인정서 받는데 무슨 서류 내요?
-    교환교수로 오는데 고용계약서 대신 다른 걸로 대체 가능해요?
-    대리인이 신청할 때 추가로 필요한 서류 있나요?
+    교수 비자 발급인정서 받으려면 무슨 서류 내요?
+    전임교수로 임용되면 학위증·경력증명서 생략되나요?
+    교환교수는 어떻게 신청해요?
 
-### row E-1 / 사증발급인정서 / 요건
+### row E-1 / 전자사증 / 절차
 - manual_type: 사증민원
 - visa_code: E-1
 - visa_name_ko: 교수
-- item_type: visa_rule
-- section_title: E-1 교수 / 고급과학기술인력 사증발급인정서
-- subtype_or_program: 사증발급인정서
-- petition_type: 사증발급인정서
-- subsection_type: 요건
-- applicant_context: 교육부장관의 추천을 받고 전문대학 이상의 교육기관에서 과학기술 분야의 교육·연구지도 활동에 종사하는 고급과학 기술인력
-- eligibility: |
-    이공계 박사학위소지자
-    또는 이공계 석사학위 소지 + 해당분야 연구개발업무 3년 이상 종사자
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식)
-    - 여권
-    - 표준규격사진 1매
-    - 고용계약서 또는 임용예정확인서
-    - 교육부장관의 '고급과학기술인력' 고용추천서 (경제자유구역 내 취업활동은 시·도지사 고용추천서 또는 고용 필요성 입증서류)
-    - 초청기관 설립관련 서류 (사업자등록증 또는 법인등기사항전부증명서)
-- other_documents: |
-    - BK21 관련 공문 사본 (해당자에 한함)
-    - 대리인 신청시: 위임장, 대리인 재직증명서, 대리인 신분증
-- requirements: 산업기술촉진법 등 관련법령에 따라 자연과학분야나 산업상의 고도산업기술을 개발하기 위해 전문대학 이상의 교육기관에서 연구하는 과학기술자는 연구(E-3)자격 해당
-- procedure: 출입국·외국인청장이 발급한 사증발급인정서 또는 법무부장관 승인 발급 (중국 및 특정국가 국민은 사증발급인정서 의무)
-- restrictions:
-- exceptions: 학위증 및 경력증명서는 제출 면제 (고용추천과정에서 교과부 등이 사전검증 완료)
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 전문대학 이상 교육기관
-- recommendation_or_approval: 교육부장관의 고급과학기술인력 고용추천서 (경제자유구역은 시·도지사 고용추천서로 대체 가능)
-- expected_questions: |
-    이공계 박사인데 한국 대학 교수로 가려면 어떤 추천서 필요해요?
-    고급과학기술인력으로 인정받으려면 무슨 조건 충족해야 해요?
-    경제자유구역에서 일하는데 고용추천서는 누가 발급해주나요?
-
-### row E-1 / 전자사증 / 대상
-- manual_type: 사증민원
-- visa_code: E-1
-- visa_name_ko: 교수
-- item_type: visa_rule
-- section_title: E-1 교수 / 전자사증
-- subtype_or_program: 전자사증
+- item_type: common_rule
+- section_title: 전자사증 제도 / 발급절차
+- subtype_or_program:
 - petition_type: 전자사증
-- subsection_type: 대상
-- applicant_context:
-- eligibility: 전문인력(E-1, E-3, E-4, E-5, 첨단과학기술분야 고용추천서(GOLD CARD)를 발급받은 E-7)과 그 동반가족(F-3), 의료관광객 및 동반가족·간병인(C-3-3, G-1-10), 상용빈번출입국자(C-3-4), 단체관광객(C-3-2), 공익사업 투자예정자(C-3-1)
-- target_persons: 영사 인터뷰가 필요 없는 교수, 연구원 등 전문인력 및 지정 대상자
+- subsection_type: 절차
+- applicant_context: 해외 우수인력 유치 지원을 위한 사증발급 절차 간소화 일환, 영사 인터뷰가 필요 없는 교수·연구원 등에 대해 재외공관 방문 없이 온라인으로 사증을 발급받는 제도
+- eligibility:
+- target_persons: |
+    전문인력(E-1, E-3, E-4, E-5, 첨단과학기술분야 고용추천서(GOLD CARD)를 발급받은 E-7)과 그 동반가족(F-3)
+    의료관광객 및 동반가족·간병인(C-3-3, G-1-10)
+    상용빈번출입국자(C-3-4)
+    단체관광객(C-3-2) - 재외공관장 지정 국외 전담여행사가 사증신청을 대행
+    공익사업 투자예정자(C-3-1) - 법무부장관 지정 공익사업투자이민 유치기관이 사증신청 대행
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
 - procedure: |
-    1. 회원가입: 대한민국비자포털(www.visa.go.kr)에 회원가입
-    2. 신청사항 입력 및 첨부서류 등재
-    3. 수수료 납부 (해외사용 가능 신용카드, 미화 전자결제)
-    4. 초청기업 사증신청 확인 후 최종 전송 (또는 초청기업 대리신청)
-- restrictions:
-- exceptions:
-- fees: 출입국관리법 시행규칙 제71조에 따른 수수료 + 전자결제 이용수수료(3.3%) 별도
+    외국인 본인신청 또는 초청기업 대리신청
+    1) 대한민국비자포털(www.visa.go.kr) 회원가입
+    2) 온라인 전자사증 신청화면에 신청사항 입력 및 첨부서류 등재
+    3) 수수료 납부 (해외사용 가능한 신용카드로 미화 전자결제, 전자결제 이용수수료 3.3% 별도)
+    4) 초청기업의 사증신청 확인 (본인신청 시) 또는 대리 신청 (초청기업 대리 신청 시)
+    5) 본부 심사
+    6) 발급여부 통보 (문자(SMS) 및 이메일)
+    7) 대한민국비자포털에서 전자사증 발급확인서 출력
+- restrictions: |
+    전자사증발급 확인서 출력횟수는 1회로 제한
+    전자사증으로 입국한 이후에는 출력 불가
+    환불: 본부 접수 전에는 신청을 취소하고 수수료 환불 가능, 접수 이후에는 환불 불가
+- exceptions: 분실 등으로 재출력이 필요한 경우, 초청자 또는 해당 외국인이 휴넷을 통하여 출력제한 해제 요청 가능
+- fees: 출입국관리법 시행규칙 제71조에 따라 부과, 전자결제 이용수수료(3.3%) 별도
 - duration_or_validity:
 - quota_or_limit:
 - score_criteria:
-- table_summary: 전자사증 발급대상 및 절차
+- table_summary:
 - table_rows:
-- inviter_context: 초청기업
-- recommendation_or_approval:
+- inviter_context:
+- recommendation_or_approval: 발급권자는 법무부장관
+- keywords: 전자사증, 비자포털, 온라인사증, 전자사증발급확인서, GOLD CARD, E-1, E-3, E-7
+- source_page:
+- source_excerpt: |
+    전자사증 제도는 해외 우수인력 유치 지원을 위한 사증발급 절차 간소화의 일환으로 영사 인터뷰가 필요 없는 교수, 연구원 등에 대해 재외공관 방문 없이 온라인으로 사증을 발급 받을 수 있는 제도
+    1. 발급대상
+    전문인력(E-1, E-3, E-4, E-5, 첨단과학기술분야 고용추천서(GOLD CARD)를 발급받은 E-7)과 그 동반가족(F-3)
+- related_visa_codes: E-3, E-4, E-5, E-7, F-3, C-3-1, C-3-2, C-3-3, C-3-4, G-1-10
 - expected_questions: |
-    교수로 가는데 영사 인터뷰 없이 비자 받을 수 있어요?
-    전자비자 신청은 어떻게 하는 거예요?
-    전자사증 수수료는 얼마예요?
+    전자사증은 누가 신청할 수 있어요?
+    온라인으로 비자 어떻게 신청해요?
+    초청기업이 대신 신청할 수 있나요?
+    전자사증 발급확인서는 어떻게 출력해요?
 
 ### row E-2 / 사증발급 / 대상
 - manual_type: 사증민원
@@ -4435,200 +4010,146 @@
 - subsection_type: 대상
 - applicant_context:
 - eligibility: |
-    외국어전문학원, 초등학교 이상의 교육기관 및 부설어학연구소, 방송사 및 기업체부설 어학연수원 기타 이에 준하는 기관 또는 단체에서 외국어 회화지도
-    회화지도의 개념: 수강생에게 외국어로 상호 의사소통하는 방법을 지도하는 활동
+    법무부장관이 정하는 자격요건을 갖춘 외국인으로서 외국어전문학원, 초등학교 이상의 교육기관 및 부설어학연구소, 방송사 및 기업체부설 어학연수원 기타 이에 준하는 기관 또는 단체에서 외국어 회화지도
+    회화지도: 외국어전문학원·교육기관·기업·단체 등에서 수강생에게 외국어로 상호 의사소통하는 방법을 지도하는 활동
     외국어로 특정 어학이나 문학 또는 통·번역 기법 등을 지도하는 것은 회화지도 활동에 해당하지 않음
 - target_persons: |
-    외국어 학원 등의 강사: 해당 외국어를 모국어로 하는 국가의 국민으로서 해당 국가에서 대학 이상 졸업, 학사 이상 학위 소지자
-    국내 대학 졸업자 특례: 해당 외국어 모국어 국가에서 고등학교·전문대 졸업 + 국내대학 학사 이상
-    공용어 사용 국가 특례 (영·중·일 제외): 공인 교원자격 또는 관련학과 학사 이상 + 임금 전년도 GNI 80% 이상
-    원어민 영어보조교사(EPIK): 영어 모국어 7개국(미국, 영국, 캐나다, 남아공, 뉴질랜드, 호주, 아일랜드) 대학 졸업 학사
-    한-인도 CEPA 영어보조교사: 인도 국적, 학사+교사자격증(영어전공)
-    정부초청 해외 영어봉사장학생(TaLK): 영어 모국어 국가 국민
-    원어민 중국어보조교사(CPIK): 중국 국적, 학사+'외국어로서 중국어 교사 자격증서'
-    전문인력(E-1~E-7, E-6-2 제외) 및 유학생(이공계 석·박사 이상) 배우자: TESOL 자격+학사 이상
+    외국어 학원 등의 강사 - 해당 외국어를 모국어로 하는 국가의 국민으로서 해당 국가에서 대학 이상 졸업 + 학사 이상 학위 소지자
+    원어민 영어보조교사(EPIK): 영어 모국어 7개국(미국, 영국, 캐나다, 남아공, 뉴질랜드, 호주, 아일랜드) 국민, 출신국 대학 졸업 + 학사 이상
+    한-인도 CEPA협정에 따른 영어보조교사: 인도 국적자로 대학 이상 졸업, 학사 + 영어전공 교사자격증
+    정부초청 해외 영어봉사장학생(TaLK)
+    원어민 중국어보조교사(CPIK): 중국 국적자로 중국 내 대학 이상 졸업 + 외국어로서 중국어 교사 자격증서 (중국 국가한어판공실 발급)
 - common_documents:
 - mandatory_documents:
 - other_documents:
-- requirements:
+- requirements: |
+    국내 대학 졸업자에 대한 특례: 해당 외국어 모국어 국가에서 고등학교 또는 전문대학 졸업 + 국내 대학에서 학사 이상 학위 취득 시 자격 인정
+    공용어 사용 국가 국민 특례 (영·중·일어 제외): 해당 외국어 공용어 국가 국민 중 공인된 교원자격 또는 관련 학과 학사 학위 이상 + 임금요건 전년도 국민 1인당 GNI의 80% 이상
+    전문인력(E-1~E-7) 및 유학생(이공계 석·박사 이상) 비영어권 배우자: TESOL 자격 소지 + 학사 이상 학위 (호텔·유흥 E-6-2 자격은 제외)
 - procedure:
 - restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    영어 학원 강사로 한국 가려면 어떤 자격 있어야 해요?
-    원어민 영어보조교사로 학교에서 일하는 비자는 뭐예요?
-    한국인 배우자가 있는데 영어 강사로 일할 수 있어요?
-
-### row E-2 / 사증발급 / 기간
-- manual_type: 사증민원
-- visa_code: E-2
-- visa_name_ko: 회화지도
-- item_type: visa_rule
-- section_title: E-2 회화지도
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 기간
-- applicant_context:
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
+- exceptions: 주한공관문화원 등 비영리기관에 대해서는 당해연도 최저임금 이상 요건 적용
 - fees:
 - duration_or_validity: 1회 부여 체류기간의 상한 2년
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context:
+- inviter_context: 외국어전문학원, 초등학교 이상 교육기관 및 부설어학연구소, 방송사 및 기업체부설 어학연수원, 평생교육시설, 직업능력개발훈련시설, 법인기업 및 공공기관
 - recommendation_or_approval:
+- keywords: 회화지도, 영어강사, EPIK, CPIK, TaLK, 원어민, TESOL, E-2
+- source_page:
+- source_excerpt: |
+    법무부장관이 정하는 자격요건을 갖춘 외국인으로서 외국어전문학원*, 초등학교 이상의 교육기관 및 부설어학연구소, 방송사 및 기업체부설 어학연수원 기타 이에 준하는 기관 또는 단체에서 외국어 회화지도
+    ‣ 해당 외국어를 모국어로 하는 국가의 국민으로서 해당 외국어를 모국어로 하는 국가에서 대학 이상의 학교를 졸업하고, 학사이상의 학위를 소지한 자 또는 이와 동등 이상의 학력이 있는 자
+    * 영어 모국어 국가(7개국) : 미국, 영국, 캐나다, 남아공, 뉴질랜드, 호주, 아일랜드
+- related_visa_codes: E-1, E-3, E-4, E-5, E-6, E-7
 - expected_questions: |
-    회화지도 비자는 한 번에 얼마나 머물 수 있어요?
-    영어 강사로 일하면 체류기간 얼마나 받아요?
-    이 비자 한 번 받으면 몇 년 일할 수 있어요?
+    한국에서 영어 강사로 일하려면 어떤 비자 받아요?
+    영어 모국어 국가는 어디 어디가 있어요?
+    원어민 영어보조교사는 어떻게 채용돼요?
+    영어권 출신이 아니라도 영어 강사 비자 받을 수 있어요?
 
 ### row E-2 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: E-2
 - visa_name_ko: 회화지도
 - item_type: required_documents
-- section_title: E-2 회화지도 / 공관장 재량 단수사증 (EPIK, CPIK, TaLK)
-- subtype_or_program:
+- section_title: E-2 회화지도 / EPIK·CPIK·TaLK 첨부서류
+- subtype_or_program: E-2-2, E-2-91
 - petition_type: 사증발급
 - subsection_type: 제출서류
-- applicant_context: 교육부장관(시·도 교육감) 등과 고용계약 체결, 초·중·고등학교 외국어보조교사
+- applicant_context: 교육부장관(시·도 교육감) 등과 고용계약을 체결하고 초·중·고등학교에서 외국어보조교사로 근무하고자 하는 자
 - eligibility:
-- target_persons: |
-    원어민영어보조교사(EPIK), 원어민 중국어보조교사(CPIK), 정부초청 해외 영어봉사장학생(TaLK)
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식)
-    - 여권
-    - 표준규격사진 1매
-    - 수수료
-    - 원어민 영어 보조교사 또는 원어민 중국어보조교사 합격증 또는 TaLK 장학생 초청장 (국립국제교육원장 또는 시·도 교육감 발급)
-    - 시·도 교육감 등과 체결한 고용계약서
-- other_documents:
-- requirements:
-- procedure: |
-    해외 소재 대한민국 공관이면 어디라도 신청 가능 (중국어보조교사는 주중 대한민국공관에만 신청)
-    최대 2년 범위 내 계약기간 + 1개월을 체류기간으로 하는 단수사증 (E-2-2) 발급
-    FTA 영어보조교사는 E-2-91 부여, 미국인은 복수사증 발급
-- restrictions:
-- exceptions: 국립국제교육원·시·도교육감이 학력·범죄경력 검증 후 합격통지서 발급하므로 원칙적으로 해당서류 제출 면제
-- fees:
-- duration_or_validity: 계약기간 + 1개월 (최대 2년 범위)
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 시·도 교육감 등
-- recommendation_or_approval: 국립국제교육원장 또는 시·도 교육감의 합격증·초청장
-- expected_questions: |
-    EPIK 합격했는데 비자 신청할 때 어떤 서류 내요?
-    TaLK 장학생으로 한국 가는데 비자 어떻게 받아요?
-    공관에 사증 신청은 어느 나라에서나 가능한가요?
-
-### row E-2 / 사증발급인정서 / 대상
-- manual_type: 사증민원
-- visa_code: E-2
-- visa_name_ko: 회화지도
-- item_type: visa_rule
-- section_title: E-2 회화지도 / 사증발급인정서
-- subtype_or_program: 사증발급인정서
-- petition_type: 사증발급인정서
-- subsection_type: 대상
-- applicant_context:
-- eligibility: |
-    외국어학원 강사 (학원법 시행령 제3조의3 외국어계열·국제계열 교습과정)
-    초등학교 이상 교육기관 또는 부설 어학연구소가 선발·채용한 강사
-    시·도 교육감이 채용한 초·중·고 외국어 보조교사 (EPIK·TaLK·CPIK 제외)
-    직원교육을 위한 부설 연수원이 설립된 기관·단체의 회화지도 강사
-    평생교육법에 의해 설치된 평생교육시설의 회화지도 강사
-    다른 법령(조례 포함)에 의한 국가·지자체 평생교육시설의 회화지도 강사
-    근로자직업능력개발법에 따른 직업능력개발훈련시설·법인의 회화지도 강사
-    어학기자재 등 강의실 보유한 법인기업 및 공공기관의 회화지도 강사
 - target_persons:
 - common_documents:
-- mandatory_documents:
-- other_documents:
+- mandatory_documents: |
+    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    - 원어민 영어 보조교사 또는 원어민 중국어보조교사 합격증 또는 Talk장학생 초청장 (국립국제교육원장 또는 시·도 교육감 발급)
+    - 시·도 교육감 등과 체결한 고용계약서
+- other_documents: 국립국제교육원 또는 시·도교육감이 학력사항 및 범죄경력 등을 검증한 후에 합격통지서·초청장을 발급하기 때문에 원칙적으로 해당서류 제출 면제
 - requirements:
 - procedure: |
-    최대 2년 범위 내 계약기간 + 1개월을 체류기간으로 하는 회화지도(E-2-1) 사증발급인정서 발급
-    사증신청·심사·발급은 모든 해외 소재 대한민국 공관에서 가능
+    해외 소재 대한민국 공관이면 어디라도 신청 가능 (단, 중국어보조교사는 주중 대한민국공관에만 신청)
+    최대 2년 범위 내 계약기간 + 1개월을 체류기간으로 하고, 회화지도 체류자격 세부분류약호(E-2-2)를 부여한 단수사증 발급
+    FTA 영어보조교사는 E-2-91을 부여하고, 미국인에 대해서는 복수사증 발급
 - restrictions:
 - exceptions:
 - fees:
-- duration_or_validity: 계약기간 + 1개월 (최대 2년 범위)
+- duration_or_validity: 최대 2년 범위 내 계약기간 + 1개월
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 외국어학원, 교육기관, 평생교육시설, 직업능력개발훈련시설, 법인기업·공공기관
+- inviter_context: 시·도 교육감, 초·중·고등학교
 - recommendation_or_approval:
+- keywords: EPIK, CPIK, TaLK, 시도교육감, 외국어보조교사, 합격증, E-2-2, E-2-91
+- source_page:
+- source_excerpt: |
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 원어민 영어 보조교사 또는 원어민 중국어보조교사 합격증 또는 Talk장학생 초청장*(국립국제교육원장 또는 시 ․ 도 교육감 발급)
+    ③ 시 · 도 교육감 등과 체결한 고용계약서
+- related_visa_codes:
 - expected_questions: |
-    학원 외국어 강사로 한국 가려면 어떤 비자 받아요?
-    공공기관에서 회화 강사로 일할 수 있나요?
-    평생교육시설에서 외국어 강사로 일하면 비자 어떻게 받아요?
+    EPIK 보조교사 비자 받으려면 무슨 서류 내요?
+    EPIK·CPIK 합격증 있으면 어떤 서류 면제되나요?
 
 ### row E-2 / 사증발급인정서 / 제출서류
 - manual_type: 사증민원
 - visa_code: E-2
 - visa_name_ko: 회화지도
 - item_type: required_documents
-- section_title: E-2 회화지도 / 사증발급인정서
-- subtype_or_program: 사증발급인정서
+- section_title: E-2 회화지도 / 사증발급인정서 첨부서류
+- subtype_or_program: E-2-1
 - petition_type: 사증발급인정서
 - subsection_type: 제출서류
-- applicant_context:
+- applicant_context: 외국어학원 강사, 평생교육시설 강사, 직업능력개발훈련시설 강사, 법인기업·공공기관 회화지도 강사
 - eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식)
-    - 여권
-    - 표준규격사진 1매
-    - 공적확인을 받은 학력증명서 (학위증 사본, 학위취득 증명서, 학위취득 사실이 기재된 졸업증명서 중 1종) - 아포스티유 확인(협약국) 또는 한국공관 영사확인(미체결국) 또는 자국 정부기관 별도 확인(일본)
-    - 공적확인을 받은 자국정부 발급 범죄경력증명서 (자국 전역 포함, 접수일 기준 6개월 이내 발급)
-    - 자기건강확인서 (2018.5.15. 개정 서식)
-    - 고용계약서 (최소 임금요건: 당해연도 최저임금 이상)
-    - 학원 또는 단체 설립관련 서류
+    - 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
+    - 공적확인을 받은 학력증명서 (학위증 사본, 학위취득 증명서, 학위취득 사실이 기재된 졸업증명서 중 1종) - 아포스티유 확인(협약국가) 또는 해외주재 한국공관 영사확인
+    - 공적확인을 받은 자국정부 발급 범죄경력증명서 (자국 전역, 접수일 기준 6개월 이내 발급)
+    - 공적확인을 받은 제3국 범죄경력증명서 (자국 이외의 국가에서 학위를 취득한 경우)
+    - 자기건강확인서 ('18.5.15. 개정된 서식)
+    - 고용계약서 (최소 임금요건: 당해연도 최저임금 이상), 학원 또는 단체 설립관련 서류
+    - 기타 심사에 필요한 참고자료 (강사활용계획서, 수강생 및 직원현황 등)
 - other_documents: |
-    - 공적확인을 받은 제3국 범죄경력증명서 (자국 이외 국가에서 학위취득 시, 2020.1.1. 시행)
-    - 기타 심사 참고자료: 강사활용계획서, 수강생 및 직원현황 등
-    - 대리인 신청시: 위임장, 대리인 재직증명서, 대리인 신분증
-- requirements: 임금 당해연도 최저임금 이상
-- procedure:
+    국내 대학에서 학위를 취득한 경우 공적확인을 받지 않은 학위증 사본 제출 허용
+    과거에 공적확인을 받은 학력 입증서류를 제출한 경우 제출 면제
+    과거 공적확인 받은 범죄경력증명서 제출 후 출국 3개월 이내 재신청 시 제출 면제 (재입국일 기준 해외 체류 3개월 초과 시 외국인등록 때 새로 제출)
+- requirements: 최소 임금요건은 당해연도 최저임금 이상
+- procedure: 사증신청 및 심사·발급은 모든 해외 소재 대한민국 공관에서 가능
 - restrictions:
-- exceptions: |
-    국내 대학 학위 취득자는 공적확인 없는 학위증 사본 제출 허용
-    과거 공적확인된 학력 입증서류 제출자는 제출 면제
-    범죄경력증명서 제출 후 출국한 자가 3개월 이내 재신청 시 제출 면제 (3개월 초과 시 외국인등록 시 신규 제출)
-    출입국·외국인청장은 첨부서류 일부 가감 가능
+- exceptions:
 - fees:
-- duration_or_validity:
+- duration_or_validity: 최대 2년 범위 내에서 계약기간 + 1개월의 회화지도(E-2-1) 사증발급인정서
 - quota_or_limit:
 - score_criteria:
-- table_summary: 주요국 범죄경력증명서 발급기관 (미국 FBI, 캐나다 RCMP, 영국 Home Office/Police, 호주 AFP, 남아공 SAPS, 아일랜드, 뉴질랜드 Ministry of Justice)
-- table_rows:
-- inviter_context: 학원·교육기관·단체
+- table_summary: 주요 국가 범죄경력증명서 발급기관 (예시)
+- table_rows: |
+    미국: FBI 범죄경력서, 주정부(State) 범죄경력증명서 (미국 전역 포함)
+    캐나다: Royal Canadian Mounted Police 발급 RCMP National Repository of Criminal Records
+    영국: Home Office, Police 발급 Basic Disclosure 등
+    호주: AFP 발급 Standard Disclosure, National Police Certificate
+    뉴질랜드: Ministry of Justice 발급 범죄경력서
+- inviter_context: 외국어학원, 초등학교 이상 교육기관, 평생교육시설, 직업능력개발훈련시설, 법인기업·공공기관
 - recommendation_or_approval:
+- keywords: 회화지도, 사증발급인정신청서, 아포스티유, 범죄경력증명서, 자기건강확인서, 최저임금, E-2-1
+- source_page:
+- source_excerpt: |
+    ① 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
+    ② 공적확인*을 받은 학력증명서 (학위증 사본, 학위취득 증명서, 학위취득 사실이 기재된 졸업증명서 중 1종만 제출)
+    ③ 공적확인*을 받은 자국정부 발급 범죄경력증명서 (자국 전역의 범죄경력이 포함되어 있어야 함)
+    ⑤ 자기건강확인서 ('18.5.15. 개정된 서식)
+    ⑥ 고용계약서(최소 임금요건 : 당해연도 최저임금 이상), 학원 또는 단체 설립관련 서류
+- related_visa_codes:
 - expected_questions: |
-    회화지도 사증발급인정서 받을 때 범죄경력증명서가 꼭 필요해요?
-    학위 증명서에 아포스티유 받아야 해요?
-    국내 대학 졸업했는데 학위증명도 공적확인 받아야 하나요?
+    외국어 학원 강사로 가려면 어떤 서류 내야 해요?
+    범죄경력증명서는 어디서 발급받나요?
+    아포스티유 확인은 어떻게 받아요?
+    학위증·범죄경력 서류를 다시 제출 안 해도 되는 경우 있나요?
 
 <!-- end chunk: visa_007 -->
 
@@ -4646,269 +4167,128 @@
 - subsection_type: 대상
 - applicant_context:
 - eligibility: |
-    1. 자연과학분야의 연구 또는 산업상 고도기술의 연구개발 종사
-    2. 고급과학 기술인력
-    3. 사회과학·인문학·예체능 분야의 연구 인력
+    자연과학분야의 연구 또는 산업상 고도기술의 연구개발 종사
+    고급과학 기술인력
+    사회과학·인문학·예체능 분야의 연구 인력
 - target_persons: |
-    특정연구기관 육성법·정부출연연구기관법 등 연구기관에서 자연과학·사회과학·인문학·예체능 분야 연구 또는 산업상 고도기술 연구개발 종사자
-    방위사업법 규정 연구기관 종사 과학기술자
-    산업기술혁신촉진법 등 관련법령에 따라 기업부설연구소·산업기술연구조합·대학·산학협력단·국공립연구기관 등과 계약을 맺어 연구하는 과학기술자
-    정부출연·국공립·기업부설 등 이공계 연구기관에서 과학기술정보통신부장관 고용추천을 받은 자
+    특정 연구기관 육성법, 정부출연 연구기관 등의 설립·운영 및 육성에 관한 법률 등에 의한 연구기관 연구자
+    방위사업법의 규정에 의한 연구기관에서 연구 활동에 종사하는 과학기술자
+    산업기술혁신촉진법 등 관련법령에 따라 기업부설연구소, 산업기술연구조합, 대학·전문대학, 산학협력단, 국·공립 연구기관 등에서 연구하는 과학기술자
+    과학기술정보통신부장관의 고용추천을 받은 고급과학 기술인력
     전문대학 이상 교육기관·학술연구기관에서 사회과학·인문학·예체능 분야 연구자
 - common_documents:
 - mandatory_documents:
 - other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: 5년
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 연구기관, 기업부설연구소, 대학, 산학협력단, 국공립연구기관
-- recommendation_or_approval: 과학기술정보통신부장관 고용추천 (고급과학기술인력)
-- expected_questions: |
-    한국 연구기관에서 일하려면 어떤 비자 받아요?
-    사회과학·인문학 연구자도 이 비자 받을 수 있어요?
-    기업부설연구소에 채용됐는데 무슨 비자 신청해야 해요?
-
-### row E-3 / 사증발급 / 요건
-- manual_type: 사증민원
-- visa_code: E-3
-- visa_name_ko: 연구
-- item_type: visa_rule
-- section_title: E-3 연구 / 자격요건
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 요건
-- applicant_context:
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents:
-- other_documents:
 - requirements: |
-    ① 박사 학위 소지자(취득 예정자)
-    ② 석사 학위 소지자로서 3년 이상 경력자
-    경력요건 면제 대상: 국내 석사학위 소지자, 해외 우수대학(TIMES 200대 또는 QS 500위 이내) 석사학위 소지자, 우수 학술논문 저자(SCIE/A&HCI/SCI/SSCI 등재 - 주저자·공저자·교신저자)
-    관리기준: 전공분야와 종사분야 상이자 또는 과다하게 저임금으로 활용 시 사증발급·자격변경·기간연장 등 제한
-    박사 취득 예정자: 학위취득 확정 입증 시 체류기간 6개월 이내 조건부 사증 발급 가능
+    박사 학위 소지자(취득 예정자)
+    석사 학위 소지자로서 3년 이상 경력자
+    경력요건 면제 대상자:
+    - 국내 석사 학위 소지자 (국내 대학 졸업)
+    - 해외 우수대학 석사 학위 소지자 (TIMES誌 세계 200대 또는 QS 500위 이내)
+    - 우수 학술논문 저자 (SCIE, A&HCI, SCI, SSCI 등재 논문 저자, 주저자·공저자·교신저자)
 - procedure:
-- restrictions: 전공분야와 종사분야가 상이한 자 또는 과다하게 저임금으로 활용하는 경우 사증발급, 자격변경, 기간연장 등 제한
-- exceptions: 경력요건 면제 - 국내 석사학위, 해외 우수대학(TIMES 200/QS 500) 석사학위, 우수 학술논문(SCIE 등) 저자
+- restrictions: |
+    전공분야와 종사분야가 상이한 자
+    형식적 요건을 갖추었다 하더라도 과다하게 저임금으로 활용하고 있다고 판단되는 경우 사증발급·자격변경·기간연장 제한
+- exceptions: 박사 취득 예정자가 학위 취득이 확정되었음을 관련 서류로 입증 시 체류기간 6개월 이내에서 조건부로 사증 발급 등 허가 가능
 - fees:
-- duration_or_validity:
+- duration_or_validity: 1회 부여 체류기간의 상한 5년
 - quota_or_limit:
 - score_criteria:
-- table_summary: 경력요건 면제 대상 표
+- table_summary: 경력요건 면제 대상자
 - table_rows: |
-    국내 석사학위: 국내 대학 석사 졸업자
-    해외 우수대학 석사: TIMES 200대 또는 QS 500위 이내 졸업자
-    우수 학술논문 저자: SCIE, A&HCI, SCI, SSCI 등재
-- inviter_context:
-- recommendation_or_approval:
+    국내 석사 학위 소지자 (국내 대학 졸업)
+    해외 우수대학(TIMES 200대/QS 500위) 석사 학위 소지자
+    우수 학술논문 저자 (SCIE, A&HCI, SCI, SSCI)
+- inviter_context: 특정연구기관, 정부출연연구기관, 방위사업법 연구기관, 기업부설연구소, 대학, 산학협력단, 국·공립 연구기관 등
+- recommendation_or_approval: 과학기술정보통신부장관 고용추천(고급과학기술인력)
+- keywords: 연구, 자연과학, 박사학위, 석사3년경력, 고급과학기술인력, SCI저자, E-3
+- source_page:
+- source_excerpt: |
+    1. 자연과학분야의 연구 또는 산업상 고도기술의 연구개발 종사
+    2. 고급과학 기술인력
+    3. 사회과학·인문학·예체능 분야의 연구 인력
+    ◦ ①박사 학위 소지자(취득 예정자)
+    ◦ ②석사 학위 소지자로서 3년 이상 경력자
+- related_visa_codes: E-1, E-4
 - expected_questions: |
-    연구 비자 받으려면 박사학위가 꼭 필요해요?
-    국내 석사 졸업자도 경력 없이 받을 수 있어요?
-    SCI 논문 저자라면 경력 면제되나요?
-
-### row E-3 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: E-3
-- visa_name_ko: 연구
-- item_type: required_documents
-- section_title: E-3 연구 / 공관장 재량 단수사증 (정부출연 연구기관·방위사업법 연구기관)
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: 정부 연구출연금을 받는 연구기관 또는 방위사업법 규정 연구기관 종사 과학기술자 (중국, 특정국가 제외)
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식)
-    - 여권
-    - 표준규격사진 1매
-    - 수수료
-    - 고용기관 설립 관련 서류 (사업자등록증 또는 법인등기사항전부증명서 또는 연구기관 입증서류 등)
-    - 석사 학위 이상 학위증, 경력증명서 (해당자)
-    - 고용계약서 또는 임용예정확인서
-- other_documents: |
-    - 대학 대표자 명의 졸업예정증명서·확인서, 학위수여 날짜 확인 증명서 (해당자)
-    - 우수 학술논문 저자임을 확인할 수 있는 입증자료 (해당자)
-- requirements:
-- procedure:
-- restrictions:
-- exceptions: 공관장은 초청 진정성, 자격 확인 위해 추가 서류 요구 가능
-- fees:
-- duration_or_validity: 체류기간 1년 이하의 단수사증
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 정부 연구출연금을 받는 연구기관 또는 방위사업법 규정 연구기관
-- recommendation_or_approval:
-- expected_questions: |
-    정부출연 연구기관에 채용됐는데 비자 받으려면 무슨 서류 챙겨요?
-    학위증명서 외에 어떤 서류가 더 필요해요?
-    방위사업 연구기관 근무자도 같은 서류 내요?
+    한국에서 연구원으로 일하려면 어떤 비자 받아요?
+    석사 학위만 있어도 연구 비자 받을 수 있나요?
+    SCI 논문 쓴 사람은 경력 없어도 신청 가능한가요?
+    박사 학위 받기 전에 취업 확정되면 어떻게 해요?
 
 ### row E-3 / 사증발급인정서 / 제출서류
 - manual_type: 사증민원
 - visa_code: E-3
 - visa_name_ko: 연구
 - item_type: required_documents
-- section_title: E-3 연구 / 사증발급인정서 (연구기관 공통)
-- subtype_or_program: 사증발급인정서
+- section_title: E-3 연구 / 사증발급인정서 첨부서류
+- subtype_or_program:
 - petition_type: 사증발급인정서
 - subsection_type: 제출서류
-- applicant_context: 정부출연·방위사업·자연과학 고도기술개발 연구기관 종사 과학기술자
+- applicant_context:
 - eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식)
-    - 여권
-    - 표준규격사진 1매
-    - 고용기관 설립 관련 서류 (사업자등록증 또는 법인등기사항전부증명서 또는 연구기관 입증서류 등)
-    - 석사 학위 이상 학위증, 경력증명서 (해당자)
+    - 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
+    - 고용기관 설립 관련 서류 (사업자등록증, 법인등기사항전부증명서 또는 연구기관 입증서류 등)
+    - 석사 학위 이상 학위증, 경력증명서(해당자)
     - 고용계약서 또는 임용예정확인서
 - other_documents: |
-    - 대학 대표자 명의 졸업예정증명서·확인서, 학위수여 날짜 확인 증명서 (해당자)
-    - 우수 학술논문 저자임을 확인할 수 있는 입증자료 (해당자)
-    - 대리인 신청시: 위임장, 대리인 재직증명서, 대리인 신분증
+    대학 대표자 명의로 발급된 졸업예정증명서·확인서 등과 학위수여 날짜를 확인할 수 있는 증명서 등(해당자)
+    우수 학술논문의 저자임을 확인할 수 있는 입증자료(해당자)
+    고급과학 기술인력은 고용추천서 추가 제출
 - requirements:
 - procedure:
 - restrictions:
-- exceptions: 청장은 초청의 진정성, 자격 확인 위해 첨부서류 일부 가감 가능
+- exceptions:
 - fees:
-- duration_or_validity:
+- duration_or_validity: 고용계약기간 범위 내에서 최장 5년까지 허용
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 연구, 사증발급인정신청서, 학위증, 고용계약서, 학술논문, E-3
+- source_page:
+- source_excerpt: |
+    ① 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
+    ② 고용기관 설립 관련 서류(사업자등록증 또는 법인등기사항전부증명서 또는 연구기관 입증서류 등)
+    ③ 석사 학위 이상 학위증, 경력증명서(해당자)
+    ④ 고용계약서 또는 임용예정확인서
+- related_visa_codes:
 - expected_questions: |
-    연구 사증발급인정서 신청할 때 어떤 서류 내야 해요?
-    학위증명서랑 경력증명서 둘 다 필요한가요?
-    대리인이 대신 신청할 때 추가 서류가 있나요?
+    연구 비자 발급인정서 받으려면 무슨 서류 내야 해요?
+    학술논문 저자 자격 인정받으려면 어떤 자료 내요?
 
-### row E-3 / 사증발급인정서 / 요건
-- manual_type: 사증민원
-- visa_code: E-3
-- visa_name_ko: 연구
-- item_type: visa_rule
-- section_title: E-3 연구 / 고급과학 기술인력 사증발급인정서
-- subtype_or_program: 사증발급인정서
-- petition_type: 사증발급인정서
-- subsection_type: 요건
-- applicant_context: 정부출연·국공립·기업부설 등 이공계 연구기관에서 자연과학분야 연구 또는 산업상 고도기술의 연구개발에 종사하고자 하는 자
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식)
-    - 여권
-    - 표준규격사진 1매
-    - 고용기관 설립 관련 서류
-    - 고용계약서 또는 임용예정확인서
-    - 석사 학위 이상 학위증, 경력증명서 (해당자)
-    - 과학기술정보통신부장관의 고용추천서
-- other_documents: |
-    - 졸업예정증명서·학위수여 날짜 확인 증명서 (해당자)
-    - 우수 학술논문 저자 입증자료 (해당자)
-    - 대리인 신청시 추가 서류
-- requirements: 과학기술정보통신부장관의 고용추천이 있는 이공계 연구기관 종사자
-- procedure: 청장이 발급한 사증발급인정서 제출 또는 재외공관장이 법무부장관 승인 받아 발급 (중국·특정국가 국민은 사증발급인정서 필수)
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: 체류기간은 고용계약기간 범위 내 최장 5년, 복수사증 유효기간은 발급일로부터 체류기간과 동일
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 정부출연·국공립·기업부설 이공계 연구기관
-- recommendation_or_approval: 과학기술정보통신부장관 고용추천서
-- expected_questions: |
-    고급과학기술인력으로 인정받으려면 어떤 추천서가 필요해요?
-    중국 국적인데 사증발급인정서가 꼭 필요한가요?
-    복수사증 유효기간은 얼마나 돼요?
-
-### row E-3 / 사증발급인정서 / 대상
-- manual_type: 사증민원
-- visa_code: E-3
-- visa_name_ko: 연구
-- item_type: visa_rule
-- section_title: E-3 연구 / 한·인도 사증절차간소화협정
-- subtype_or_program: 사증발급인정서
-- petition_type: 사증발급인정서
-- subsection_type: 대상
-- applicant_context: 한·인도 사증절차간소화협정 관련 고용방문자(Employment visitor)
-- eligibility: |
-    정당하게 등록된 회사·기관에 고용되거나 계약에 의해 기술전문가·임원·관리자 등 숙련된 기술 지위 종사·임용자
-    예시: 기업내 전근자, 계약서비스 공급자 또는 이를 지원하는 자, 독립전문가
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    공통: 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
-    기업내 전근자: 파견명령서 및 1년 이상 재직증명서, 지사 또는 연락사무소 설치허가서 사본
-    계약서비스 공급자: 고용주 발행 재직증명서, 인도정부 발행 사업자등록증 등 회사 설립 관련 서류, 우리나라 회사와의 서비스 공급계약 체결 입증 서류
-    독립전문가: 고용계약서 또는 용역계약서 등 계약 입증 서류, 학위증·관련 자격증·1년 이상 해당 분야 취업경력 입증서류
-- other_documents: 대리인 신청시 위임장, 대리인 재직증명서, 대리인 신분증
-- requirements:
-- procedure: 청(사무소·출장소)의 사증발급인정서에 의해 발급 (고용관련 사증은 복수사증이므로 전부 사증발급인정서 발급)
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: |
-    최초 체류기간 1년 (1년 단위 연장)
-    한·인도 문화·학술협정 등 정부 지정 기관/단체간 협약 입국: 5년 복수사증 (계약 5년 이내면 그 기간)
-    기타 취업·주재 목적: 3년 복수사증 (계약 3년 이내면 그 기간)
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 인도 회사(법인) 또는 정당하게 등록된 회사·기관
-- recommendation_or_approval:
-- expected_questions: |
-    인도에서 한국 회사로 파견되는데 어떤 비자 받아요?
-    한·인도 협정으로 들어오면 사증 유효기간은 얼마예요?
-    독립전문가로 한국 가는데 무슨 서류 필요해요?
-
-### row E-3 / 사증발급인정서 / 예외
+### row E-3 / 사증발급 / 예외
 - manual_type: 사증민원
 - visa_code: E-3
 - visa_name_ko: 연구
 - item_type: exception
 - section_title: E-3 연구 / 방문연구원 특례
 - subtype_or_program:
-- petition_type: 사증발급인정서
+- petition_type: 사증발급
 - subsection_type: 예외
-- applicant_context: 국외 소재 기관에 소속되어 국내 연구기관 등의 초청에 따라 국내에 체류하면서 연구활동 종사자
-- eligibility: 국내에서 연구 활동에 대한 대가(보수)를 지급 받지 않는 자 (왕복 항공권, 숙소 제공 등 실비 보전 수준은 가능)
-- target_persons:
+- applicant_context: 국외 소재 기관에 소속되어 국내 연구기관 등의 초청에 따라 국내에 체류하면서 연구 활동에 종사하려는 자
+- eligibility:
+- target_persons: 국내에서 연구 활동에 대한 대가(보수)를 지급받지 않는 자
 - common_documents:
 - mandatory_documents: |
-    - 사증발급(인정서)신청서 (별지 제17호 서식)
-    - 여권
-    - 표준규격사진 1매
-    - 수수료
-    - 고용기관 설립 관련 서류
-    - 석사 학위 이상 학위증, 경력증명서 (해당자)
-    - 초청 연구기관 명의의 초청 공문 (임금요건 불필요, 연구기간·연구분야 명시)
-    - 원 소속 고용계약 입증 서류 (재직증명서, 고용계약서 등)
-- other_documents: |
-    - 졸업예정증명서·학위수여 날짜 확인 증명서 (해당자)
-    - 국내·외 은행 잔고 증명서 (해당자)
+    - 사증발급(인정서)신청서(별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    - 고용기관 설립 관련 서류(사업자등록증 또는 법인등기사항전부증명서 또는 연구기관 입증서류 등)
+    - 석사 학위 이상 학위증, 경력증명서(해당자)
+    - 초청 연구기관 명의의 초청 공문(임금요건 불필요, 연구기간, 연구분야 명시)
+    - 원 소속 고용계약 입증 서류(재직증명서, 고용계약서 등)
+    - 대학 대표자 명의로 발급된 졸업예정증명서·확인서 등(해당자)
+    - 국내·외 은행 잔고 증명서(해당자)
+- other_documents:
 - requirements:
 - procedure:
 - restrictions:
-- exceptions: 국내 보수 미지급 방문연구원은 초청공문에 임금요건 불필요
+- exceptions: 왕복 항공권, 숙소 제공 등 입국·국내체류에 따른 실비 보전 수준의 지원을 받는 것은 가능
 - fees:
 - duration_or_validity:
 - quota_or_limit:
@@ -4917,30 +4297,41 @@
 - table_rows:
 - inviter_context: 국내 연구기관
 - recommendation_or_approval:
+- keywords: 방문연구원, 무보수연구, 초청공문, 실비보전, E-3
+- source_page:
+- source_excerpt: |
+    1. 방문연구원에 대한 특례
+    ○ 해당자
+    - 국외 소재 기관에 소속되어 국내 연구기관 등의 초청에 따라 국내에 체류하면서 연구 활동에 종사하려는 자로 국내에서 연구 활동에 대한 대가(보수)를 지급 받지 않는 자
+    ※ 왕복 항공권, 숙소 제공 등 입국·국내체류에 따른 실비 보전 수준의 지원을 받는 것은 가능
+- related_visa_codes:
 - expected_questions: |
-    한국 연구기관에 초청받았는데 한국에서 월급 안 받아도 비자 받을 수 있어요?
-    방문연구원으로 가는데 어떤 서류가 필요해요?
-    실비 정도만 받는 경우에도 연구 비자 신청할 수 있나요?
+    무보수로 한국에서 연구만 하려면 어떤 비자 받아요?
+    방문연구원 비자는 왕복 항공권만 받아도 가능한가요?
 
-### row E-4 / 사증발급 / 대상
+### row E-4 / 사증발급인정서 / 대상
 - manual_type: 사증민원
 - visa_code: E-4
 - visa_name_ko: 기술지도
 - item_type: visa_rule
 - section_title: E-4 기술지도
 - subtype_or_program:
-- petition_type: 사증발급
+- petition_type: 사증발급인정서
 - subsection_type: 대상
 - applicant_context:
 - eligibility: |
     공·사기관에서 자연과학분야의 전문지식 또는 산업상의 특수 분야에 속하는 기술 제공
-- target_persons: |
     국내에서 구할 수 없는 산업상의 고도기술 등을 국내 공·사 기관에 제공하는 자
-    - 외국의 용역발주업체에서 파견되어 산업상의 특수분야 기술 제공자
-    - 국내 산업체에서 도입한 특수기술 등을 제공하는 자
+    외국의 용역발주업체에서 파견되어 산업상의 특수분야에 속하는 기술을 제공하는 자
+    국내 산업체에서 도입한 특수기술 등을 제공하는 자
+- target_persons: 외국 용역발주업체 파견 기술자, 특수기술 제공자
 - common_documents:
-- mandatory_documents:
-- other_documents:
+- mandatory_documents: |
+    - 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
+    - 공사기관 설립관련 서류 (사업자등록증, 외국인투자기업등록증, 지사설치허가서 등)
+    - 기술도입계약신고수리서, 기술도입계약서(또는 용역거래 계약서) 또는 방산업체지정서 사본
+    - 파견명령서(또는 재직증명서)
+- other_documents: 용역거래: 거주자와 국외 특수관계자 간의 경영관리, 금융자문, 지급보증, 전산지원 및 기술지원 그밖에 사업상 필요하다고 인정되는 거래 (국제조세조정에 관한 법률 시행령 제6조의 2)
 - requirements:
 - procedure:
 - restrictions:
@@ -4951,51 +4342,20 @@
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 국내 공·사기관 또는 외국 용역발주업체
+- inviter_context: 국내 공·사 기관
 - recommendation_or_approval:
+- keywords: 기술지도, 고도기술, 기술도입계약, 용역발주업체, 방산업체, E-4
+- source_page:
+- source_excerpt: |
+    1. 공․사기관에서 자연과학분야의 전문지식 또는 산업상의 특수 분야에 속하는 기술 제공
+    국내에서 구할 수 없는 산업상의 고도기술 등을 국내 공․사 기관에 제공하는 자
+    - 외국의 용역발주업체에서 파견되어 산업상의 특수분야에 속하는 기술을 제공하는 자
+    - 국내 산업체에서 도입한 특수기술 등을 제공하는 자
+- related_visa_codes: E-1, E-3, E-5, E-7, D-7, D-8, D-9
 - expected_questions: |
-    외국에서 기술 가르치러 한국 가는데 어떤 비자 받아요?
-    국내 산업체에 특수기술을 제공하는 사람 비자는 뭐예요?
-    기술지도 비자 한 번 받으면 몇 년 머물 수 있어요?
-
-### row E-4 / 사증발급인정서 / 제출서류
-- manual_type: 사증민원
-- visa_code: E-4
-- visa_name_ko: 기술지도
-- item_type: required_documents
-- section_title: E-4 기술지도 / 사증발급인정서 (산업상 고도기술 제공)
-- subtype_or_program: 사증발급인정서
-- petition_type: 사증발급인정서
-- subsection_type: 제출서류
-- applicant_context: 국내에서 구할 수 없는 산업상의 고도기술 등을 국내 공·사기관에 제공하는 자
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식)
-    - 여권
-    - 표준규격사진 1매
-    - 공·사기관 설립관련 서류 (사업자등록증, 외국인투자기업등록증, 지사설치허가서 등)
-    - 기술도입계약신고수리서, 기술도입계약서(또는 용역거래 계약서) 또는 방산업체지정서 사본
-    - 파견명령서(또는 재직증명서)
-- other_documents: 대리인 신청시 위임장, 대리인 재직증명서, 대리인 신분증
-- requirements:
-- procedure:
-- restrictions:
-- exceptions: 청장은 첨부서류 일부 가감 가능
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows: |
-    용역거래 정의 (국제조세조정에관한법률 시행령 제6조의2): 거주자와 국외 특수관계자 간의 경영관리, 금융자문, 지급보증, 전산지원 및 기술지원 그밖에 사업상 필요하다고 인정되는 거래
-- inviter_context: 국내 공·사기관
-- recommendation_or_approval:
-- expected_questions: |
-    기술지도 사증발급인정서 받을 때 무슨 서류 챙기면 돼요?
-    기술도입계약서가 꼭 필요한가요?
-    외국 용역발주업체에서 파견될 때도 같은 서류 내요?
+    외국에서 특수 기술 가르치러 한국 가려면 어떤 비자 받아요?
+    기술지도 비자 받으려면 무슨 계약 필요해요?
+    기술지도 비자로 한국에 얼마나 머물 수 있어요?
 
 ### row E-5 / 사증발급 / 대상
 - manual_type: 사증민원
@@ -5007,19 +4367,23 @@
 - petition_type: 사증발급
 - subsection_type: 대상
 - applicant_context:
-- eligibility: 대한민국의 법률에 의하여 행할 수 있도록 되어 있는 전문업무 종사
+- eligibility: |
+    대한민국의 법률에 의하여 행할 수 있도록 되어 있는 전문업무 종사
+    대한민국 법률에 따라 자격이 인정된 외국의 국가공인자격증 소지자
 - target_persons: |
-    대한민국 법률에 따라 자격이 인정된 외국 국가공인자격증 소지자
-    - 국토해양부장관 추천 항공기 조종사
-    - 최신의학 및 첨단의술 보유자로서 보건복지부장관 고용추천 의사 (국공립·의료법인·비영리법인·정부투자기관 의료기관 근무)
-    - 국내 의(치한의)과 대학·전문대학원 졸업 후 인턴(일반수련의) 또는 레지던트(전문수련의) 과정 연수자
-    - 남북협력사업 승인을 받은 자가 금강산 관광개발 등의 목적으로 초청하는 관광선 운항 필수전문인력
-    - 국내 운수회사 등에 고용되어 선장 등 선박 운항 필수전문요원
-    - 1급·2급 항해사·기관사 등 해기사 면허 또는 승무자격증 소지자 중 해양수산부장관 추천자 (현재 30개국과 해기사 면허 상호인정 MOU 체결)
+    국토해양부장관의 추천을 받은 항공기조종사
+    보건복지부장관의 고용추천을 받은 최신의학·첨단의술 보유 의사 (국가/지방자치단체 의료기관, 의료법인, 비영리법인·정부투자기관 개설 의료기관)
+    국내 의(치, 한의)과 대학·의(치, 한의)학전문대학원 졸업 후 대학부속병원 또는 보건복지부장관 지정 병원에서 인턴(일반수련의) 또는 레지던트(전문수련의) 과정 연수자
+    남북교류 협력에 관한 법률에 따라 금강산 관광개발사업 등 관광선 운항에 필요한 선박 필수전문인력
+    국내 운수회사 등에 고용된 선장 등 선박 운항 필수전문요원
+    해양수산부장관의 추천을 받은 해기사 면허 또는 승무자격증 소지자
 - common_documents:
 - mandatory_documents:
 - other_documents:
-- requirements:
+- requirements: |
+    해기사 면허: 1급 항해사, 2급 항해사, 1급 기관사, 2급 기관사 (선박직원법 제5조)
+    승무자격증: "등급(LEVEL)"이 선장, 기관장, 관리급으로 기재된 자 (선박직원법 제10조의2제2항)
+    해기사 면허 상호인정 MOU 체결 30개 국가 해기사 면허 소지자에게 승무자격증 발급 중
 - procedure:
 - restrictions:
 - exceptions:
@@ -5029,90 +4393,64 @@
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 국내 의료기관, 항공사, 운수회사 등
-- recommendation_or_approval: 국토해양부·보건복지부·해양수산부 등 소관 부처장의 고용추천
+- inviter_context: 국내 항공사, 의료기관, 운수회사
+- recommendation_or_approval: 소관 중앙행정기관장의 고용추천서 (국토해양부장관, 보건복지부장관, 해양수산부장관 등)
+- keywords: 전문직업, 항공기조종사, 외국인의사, 인턴레지던트, 해기사면허, 선박운항, E-5
+- source_page:
+- source_excerpt: |
+    대한민국의 법률에 의하여 행할 수 있도록 되어 있는 전문업무 종사
+    대한민국의 법률에 따라 자격이 인정된 외국의 국가공인자격증을 소지한 자
+    - 국토해양부장관의 추천을 받은 항공기조종사
+    - 최신의학 및 첨단의술 보유자로서 보건복지부장관의 고용추천을 받아 다음 의료기관에 근무하고자 하는 의사
+- related_visa_codes:
 - expected_questions: |
-    외국 항공기 조종사로 한국 항공사 취업하려면 무슨 비자 받아요?
-    의사로 한국 의료기관에서 일하려면 어떤 추천이 필요해요?
-    선장으로 한국 배에 타려면 비자 어떻게 받아요?
+    외국 의사가 한국 병원에서 일하려면 어떤 비자 받아요?
+    외국인 조종사로 한국 항공사 일하려면 어떤 비자예요?
+    외국인 선장으로 한국 선박 운항하려면 어떤 자격 필요해요?
+    해외 의대 졸업 후 한국에서 인턴·레지던트 받을 수 있어요?
 
 ### row E-5 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: E-5
 - visa_name_ko: 전문직업
 - item_type: required_documents
-- section_title: E-5 전문직업 / 공관장 재량 단수사증 (항공기 조종사·선박 필수전문요원)
+- section_title: E-5 전문직업 / 항공사·운수회사 첨부서류
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 제출서류
-- applicant_context: 국내 항공사 또는 운수회사 등에 고용되어 항공기 조종사 또는 선장 등 선박운항 필수전문요원으로 근무하고자 하는 자
+- applicant_context: 국내 항공사 항공기 조종사, 국내 운수회사 선박운항 필수전문요원(선장·기관사·항법사 등)
 - eligibility:
-- target_persons: 금강산 관광선, 한국선적 정기여객선 등의 선장·기관사·항법사
+- target_persons:
 - common_documents:
 - mandatory_documents: |
-    - 사증발급신청서 (별지 제17호 서식)
-    - 여권
-    - 표준규격사진 1매
-    - 수수료
+    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
     - 학위증 및 자격증(면허증) 사본
-    - 소관 중앙행정기관장 고용추천서 (경제자유구역은 시·도지사 고용추천서 또는 고용필요성 입증서류) 또는 고용필요성 입증서류
+    - 소관 중앙행정기관장의 고용추천서 (경제자유구역 내 취업활동자는 관할 특별시장·광역시장·도지사의 고용추천서) 또는 고용의 필요성을 입증할 수 있는 서류
     - 고용계약서
 - other_documents:
 - requirements:
 - procedure:
 - restrictions:
-- exceptions: 재외공관장은 첨부서류 일부 가감 가능
+- exceptions:
 - fees:
 - duration_or_validity: 체류기간 1년 이하의 단수사증
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 국내 항공사 또는 운수회사
-- recommendation_or_approval: 소관 중앙행정기관장 고용추천서
-- expected_questions: |
-    항공사에 조종사로 취업했는데 무슨 서류 내야 해요?
-    선장으로 일하려는데 자격증 사본 외에 또 뭐가 필요해요?
-    경제자유구역에서 일할 경우 추천서는 누가 발급해요?
-
-### row E-5 / 사증발급인정서 / 제출서류
-- manual_type: 사증민원
-- visa_code: E-5
-- visa_name_ko: 전문직업
-- item_type: required_documents
-- section_title: E-5 전문직업 / 사증발급인정서
-- subtype_or_program: 사증발급인정서
-- petition_type: 사증발급인정서
-- subsection_type: 제출서류
-- applicant_context: 공관장 재량 대상을 제외한 모든 전문직업(E-5) 자격자
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식)
-    - 여권
-    - 표준규격사진 1매
-    - 초청사유서
-    - 학위증 및 자격증 사본
-    - 소관 중앙행정기관장 고용추천서 또는 고용필요성 입증서류 (경제자유구역은 시·도지사 고용추천서)
-    - 고용계약서
-- other_documents:
-- requirements:
-- procedure: 공관장 재량 외 모든 E-5 자격은 사증발급인정서를 통해 사증발급
-- restrictions:
-- exceptions: 청장은 첨부서류 일부 가감 가능
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
 - inviter_context:
 - recommendation_or_approval: 소관 중앙행정기관장의 고용추천서
+- keywords: 전문직업, 항공사, 운수회사, 면허증, 고용추천서, E-5
+- source_page:
+- source_excerpt: |
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 학위증 및 자격증(면허증) 사본
+    ③ 소관 중앙행정기관장의 고용추천서(다만, 경제자유구역 내에서 취업활동을 하려는 자는 관할 특별시장․광역시장․도지사의 고용추천서 또는 고용의 필요성을 입증할 수 있는 서류) 또는 고용의 필요성을 입증할 수 있는 서류
+    ④ 고용계약서
+- related_visa_codes:
 - expected_questions: |
-    전문직업 사증발급인정서 신청할 때 어떤 서류가 필요해요?
-    공관장 재량 대상이 아니면 모두 사증발급인정서로 받아야 하나요?
-    경제자유구역에서 일하는 전문가도 고용추천서가 필요해요?
+    조종사 비자 신청할 때 무슨 서류 내요?
+    선장 비자 받으려면 어떤 추천서 필요해요?
 
 ### row E-6 / 사증발급 / 대상
 - manual_type: 사증민원
@@ -5120,147 +4458,105 @@
 - visa_name_ko: 예술흥행
 - item_type: visa_rule
 - section_title: E-6 예술흥행
-- subtype_or_program:
+- subtype_or_program: E-6-1, E-6-2, E-6-3
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context:
+- applicant_context: 예술흥행(E-6) 자격은 모두 사증발급인정서에 의해 사증발급
 - eligibility: |
     수익이 따르는 음악, 미술, 문학 등의 예술 활동
-    - 창작활동을 하는 작곡가, 화가, 조각가, 공예가, 저술가, 사진작가 등
-    - 음악·미술·문학·사진·연주·무용·영화·체육 등 예술 활동에 관한 지도자 (예: 프로 및 아마추어 스포츠 감독, 오케스트라 지휘자 등)
+    창작활동을 하는 작곡가, 화가, 조각가, 공예가, 저술가 및 사진작가 등의 예술가
+    음악, 미술, 문학, 사진, 연주, 무용, 영화, 체육, 기타 예술상의 활동에 관한 지도를 하는 자
     수익을 목적으로 하는 연예, 연주, 연극, 운동경기, 광고, 패션모델 등 흥행활동
-    - 출연형태·명목 불문 수익을 위한 개인 또는 단체 연예·연주·연극·운동자 (예: 프로 및 아마추어 스포츠 선수)
-    - 스스로 출연하는 자뿐만 아니라 분장사, 매니저 등 동행자 포함
-    체류기간 90일 이하인 경우는 단기취업(C-4-5) 자격에 해당
+    출연형태나 명목을 불문하고 수익을 위하여 개인 또는 단체로 연예, 연주, 연극, 운동 등을 하는 자
+    스스로 출연하려는 자 + 분장사, 매니저 등 동행하는 자 포함
 - target_persons: |
-    E-6-1 (예술·연예): 음악·미술·문학 예술활동, 전문방송연기, 공연법상 전문 연예활동 (작곡가·화가·사진작가, 오케스트라 연주·지휘자, 광고·패션모델, 바둑기사, 방송인, 연예인, 연극인, 분장사 등)
-    E-6-2 (호텔·유흥): 관광진흥법상 호텔업시설·유흥업소 등에서 공연·연예활동 (가요·연주자, 곡예·마술사 등). 국제회의시설 부대시설·공연법 등록 공연장 종사자 포함
-    E-6-3 (운동): 축구·야구·농구 등 프로 운동선수 및 동행 매니저 (프로선수, 프로팀 감독, 매니저 등)
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions: 체류기간 90일 이하인 경우 단기취업(C-4-5) 적용
-- fees:
-- duration_or_validity: 1회 부여 체류기간의 상한 2년
-- quota_or_limit:
-- score_criteria:
-- table_summary: E-6 분류기호 (E-6-1 예술·연예 / E-6-2 호텔·유흥 / E-6-3 운동)
-- table_rows: |
-    E-6-1 예술·연예: 작곡가·화가·사진작가, 오케스트라 연주·지휘자, 광고·패션모델, 바둑기사, 방송인, 연예인, 연극인, 분장사
-    E-6-2 호텔·유흥: 관광진흥법 호텔·유흥업소 공연·연예종사자, 가요·연주자, 곡예·마술사
-    E-6-3 운동: 프로 운동선수, 프로팀 감독, 매니저
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    한국에서 가수로 공연하려면 어떤 비자 받아요?
-    프로 운동선수로 한국 팀에 가는데 비자는 뭐예요?
-    광고 모델로 한국에 와서 일할 수 있는 비자는 뭐예요?
-
-### row E-6 / 사증발급 / 제한
-- manual_type: 사증민원
-- visa_code: E-6
-- visa_name_ko: 예술흥행
-- item_type: restriction
-- section_title: E-6 예술흥행 / 공관장 재량 (E-6-2 특례)
-- subtype_or_program: E-6-2
-- petition_type: 사증발급
-- subsection_type: 제한
-- applicant_context:
-- eligibility:
-- target_persons:
+    E-6-1 (예술·연예): 작곡가·화가·사진작가 등 예술가, 오케스트라 연주·지휘자, 광고·패션모델, 바둑기사, 방송인, 연예인, 연극인, 분장사
+    E-6-2 (호텔·유흥): 관광진흥법에 의한 호텔업시설, 유흥업소에서 공연 또는 연예활동 종사자 (가요·연주자, 곡예·마술사 등)
+    E-6-3 (운동): 축구·야구·농구 등 프로 운동선수 및 그 동행 매니저
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
 - procedure:
 - restrictions: |
-    예술흥행(E-6) 자격은 모두 사증발급인정서에 의해 사증발급
-    예외 (E-6-2): 신청인이 불법체류다발 고시국가(21개국), 테러지원국가(3개국), 제주무사증입국불허국가(10개국) 국민인 경우 원칙적으로 자국 공관에 사증신청·발급
-    단, E-6-2 신청인이 제3국 영주권자 또는 2년 이상 계속 체류한 장기체류자는 제3국 소재 자국공관에 사증 신청·발급 가능
-- exceptions: E-6-2 신청인이 제3국 영주권자 또는 2년 이상 장기체류자인 경우 제3국 자국공관 신청 가능
+    E-6-2 사증의 경우 신청인이 불법체류다발 고시국가(21개국), 테러지원국가(3개국), 제주무사증입국불허국가(10개국) 국민인 경우 원칙적으로 자국 공관에 사증신청 및 발급
+    E-6-2 신청인이 제3국의 영주권자 또는 2년 이상 계속 체류한 장기체류자인 경우 제3국 소재 자국공관에 사증 신청 및 발급 가능
+- exceptions: 체류기간 90일 이하인 경우는 단기취업(C-4-5)의 체류자격에 해당
 - fees:
-- duration_or_validity:
+- duration_or_validity: 1회 부여 체류기간의 상한 2년
 - quota_or_limit:
 - score_criteria:
-- table_summary:
-- table_rows:
+- table_summary: E-6 분류기호 및 활동분야
+- table_rows: |
+    E-6-1 예술·연예: 음악·미술·문학 등 예술활동, 전문 방송연기, 공연법상 전문 연예활동
+    E-6-2 호텔·유흥: 관광진흥법 호텔업시설·유흥업소 공연·연예활동
+    E-6-3 운동: 축구·야구·농구 등 프로 운동선수 및 동행 매니저
 - inviter_context:
-- recommendation_or_approval:
+- recommendation_or_approval: 영상물등급위원회의 공연추천서 (제주특별자치도의 경우 제주특별자치도지사)
+- keywords: 예술흥행, 예술연예, 호텔유흥, 프로운동선수, 공연추천서, 영상물등급위원회, E-6, E-6-1, E-6-2, E-6-3
+- source_page:
+- source_excerpt: |
+    수익이 따르는 음악, 미술, 문학 등의 예술 활동
+    - 창작활동을 하는 작곡가, 화가, 조각가, 공예가, 저술가 및 사진작가 등의 예술가
+    수익을 목적으로 하는 연예, 연주, 연극, 운동경기, 광고, 패션모델 등으로 출연하는 흥행활동
+    ※ 체류기간 90일 이하인 경우는 단기취업(C-4-5)의 체류자격에 해당됨
+- related_visa_codes: C-4-5
 - expected_questions: |
-    호텔·유흥업소에서 일하려는데 자국이 아닌 곳에서 비자 신청해도 돼요?
-    불법체류 다발국가 국민이면 어디서 신청해야 하나요?
-    제3국 영주권자도 같은 제한이 적용되나요?
+    한국에서 공연하는 외국 가수는 어떤 비자 받아요?
+    프로 축구선수로 한국 가려면 어떤 비자 받나요?
+    광고모델로 한국에서 일할 수 있나요?
+    호텔 공연자랑 일반 연예인은 비자 분류가 달라요?
 
 ### row E-6 / 사증발급인정서 / 제출서류
 - manual_type: 사증민원
 - visa_code: E-6
 - visa_name_ko: 예술흥행
 - item_type: required_documents
-- section_title: E-6 예술흥행 / 사증발급인정서
-- subtype_or_program: 사증발급인정서
+- section_title: E-6 예술흥행 / 사증발급인정서 첨부서류
+- subtype_or_program:
 - petition_type: 사증발급인정서
 - subsection_type: 제출서류
-- applicant_context: 체류기간 2년 이하의 예술흥행(E-6) 사증발급인정서
+- applicant_context: 공연추천기간, 고용추천기간, 근로계약기간 등을 종합적으로 참고하여 적정 체류기간 부여
 - eligibility:
 - target_persons:
-- common_documents:
-- mandatory_documents: |
-    공통:
+- common_documents: |
     - 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
     - 사업자등록증 사본
     - 고용계약서 사본
-    공연법 규정 공연:
-    - 영상물등급위원회(제주는 도지사) 공연추천서 (추천제외대상공연은 면제)
-    - 공연계획서
-    - 피초청인이 미성년자인 경우 법정대리인 동의서
-    호텔·유흥업소 공연·연예:
-    - 영상물등급위원회 공연추천서 (관광업소 추천은 미8군 영내클럽, 3급 이상 관광호텔, 관광유람선, 휴양콘도미니엄, 관광극장유흥업, 외국인전용음식점, 국제회의시설 부대시설만 추천. 공연법 등록 공연장의 가무공연도 추천)
-    - 연예활동계획서
-    - 자격증명서 또는 경력증명서 (3년 이상, 아포스티유 또는 한국공관 확인 필)
-    - 공연시설 현황 확인서 (2016.9.1부 반영)
-    - 신원보증서
-    - 미성년자는 법정대리인 동의서
-    - 근로자파견사업허가증 (해당자)
+- mandatory_documents:
 - other_documents: |
-    광고 모델 일반심사:
-    - 대중문화예술기획업 등록증
-    - 부가가치세 과세표준증명, 납세증명서
-    - 기업 건전성 증빙서류
-    - 신원보증서, 이력서, 보호자 동의서 (미성년 시)
-    - 국내활동 계획서
-    - 모델 전문성 입증서류: 광고주와의 계약서, 모델 사용 개요, 포트폴리오 등
-    - 계약서 필수 포함사항: 대금 지불방법, 권리의무 관계(저작권), 계약당사자 서명·날인
-    광고 모델 우대심사 (우수업체):
-    - 법인등기부등본
-    - 대중문화예술기획업 등록증
-    - 부가가치세 과세표준증명 (최근 3년 평균 매출 5억 이상)
-    - 최근 1개월 고용보험 가입자 명부 (3개월 이상 5인 이상 고용)
-    - 납세증명서, 신원보증서, 이력서, 국내활동계획서, 포트폴리오 등
-    그 밖의 경우:
-    - 소관 중앙행정기관장 고용추천서 또는 고용필요성 입증서류
-    - 미성년자는 법정대리인 동의서
-    대리인 신청 시: 위임장, 대리인 재직증명서, 대리인 신분증
-- requirements: |
-    광고모델 우대심사 기준 초청업체 요건: 모델 전문 매니지먼트 법인사업자, 대중문화예술기획업 등록, 최근 3년 5억원 이상 매출, 최근 3개월 국민 상시근로자 5인 이상 고용, 업력 5년 이상(또는 대표이사 동종업계 5년), 매니지먼트·엔터테인먼트·모델에이전시 등 관련 업종만 등재, 체납 없음
-    광고모델 우대심사 기준 외국인 요건: 불법체류 다발 고시국가 등이 아닐 것
-- procedure: 공연추천기간·고용추천기간·근로계약기간 등을 종합 참고하여 적정 체류기간 부여
-- restrictions: 광고모델 우대심사 적용 외국인은 불법체류 다발 고시국가(중국, 필리핀, 인도네시아, 방글라데시, 베트남, 몽골, 태국, 파키스탄, 스리랑카, 인도, 미얀마, 네팔, 이란, 우즈베키스탄, 카자흐스탄, 키르키즈스탄, 우크라이나, 나이지리아, 가나, 이집트, 페루) 국민이 아닐 것
+    공연법 규정에 의한 공연: 영상물등급위원회의 공연추천서, 공연계획서, 피초청인이 미성년자인 경우 법정대리인의 동의서
+    호텔업시설·유흥업소 공연·연예활동: 영상물등급위원회의 공연추천서, 연예활동계획서, 자격증명서 또는 경력증명서(3년이상, 아포스티유 또는 자국 한국공관 확인), 공연시설 현황 확인서, 신원보증서, 법정대리인의 동의서(미성년자), 근로자파견사업허가증(해당자)
+    광고 모델 (일반심사): 대중문화예술기획업 등록증, 부가가치세 과세표준증명, 납세증명서, 기업 건전성 증빙서류, 신원보증서, 이력서, 보호자 동의서(미성년), 국내활동 계획서, 모델 전문성 입증서류(광고주 계약서, 광고촬영 모델 사용 개요, 포트폴리오)
+    그 밖의 경우: 소관 중앙행정기관의 장의 고용추천서 또는 고용의 필요성을 입증하는 서류, 법정대리인 동의서(미성년)
+- requirements:
+- procedure:
+- restrictions:
 - exceptions:
 - fees:
-- duration_or_validity: 체류기간 2년 이하
+- duration_or_validity: 체류기간 2년 이하의 예술흥행(E-6) 사증발급인정서
 - quota_or_limit:
 - score_criteria:
-- table_summary: 광고 모델 우대심사 적용대상 (초청업체·외국인 요건)
-- table_rows:
-- inviter_context: 사업자등록 사업체, 대중문화예술기획업체, 모델 전문 매니지먼트 업체
-- recommendation_or_approval: 영상물등급위원회 공연추천서, 소관 중앙행정기관장 고용추천서
+- table_summary: 광고 모델 우대심사 기준 적용대상
+- table_rows: |
+    초청업체: 법인사업자 + 대중문화예술기획업 등록 + 최근 3년 최소 5억원 매출 + 최근 3개월 국민 상시근로자 5인 이상 + 업력 5년 이상 + 관련 업종만 등재 + 체납 사실 없음
+    외국인: 불법체류 다발 고시국가(21개국), 기타 법위반 고위험 국가가 아닐 것
+- inviter_context: 모델 전문 매니지먼트 업체, 공연기획사
+- recommendation_or_approval: 영상물등급위원회 공연추천서
+- keywords: 예술흥행, 공연추천서, 영상물등급위원회, 대중문화예술기획업, 광고모델, 우대심사, E-6
+- source_page:
+- source_excerpt: |
+    ① 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
+    ② 사업자등록증 사본
+    ③ 고용계약서 사본
+    공연법 규정에 의한 공연을 하려는 경우
+    ④ 영상물등급위원회(제주특별자치도의 경우 제주특별자치도지사)의 공연추천서(추천제외대상공연은 면제)
+- related_visa_codes:
 - expected_questions: |
-    가수로 한국에서 공연하려면 어떤 추천서가 필요해요?
-    광고 모델로 한국 가는데 어떤 서류가 있어야 해요?
-    미성년 모델인데 추가로 필요한 서류 있어요?
+    예술흥행 비자 받으려면 무슨 서류 필요해요?
+    공연 추천서는 어디서 받나요?
+    광고 모델은 우대 심사 기준이 따로 있나요?
+    미성년 외국인 연예인은 어떤 서류 더 내요?
 
 <!-- end chunk: visa_008 -->
 
@@ -5273,21 +4569,22 @@
 - visa_name_ko: 특정활동
 - item_type: visa_rule
 - section_title: E-7 특정활동
-- subtype_or_program:
+- subtype_or_program: E-7-1, E-7-2, E-7-3, E-7-4, E-7-91, E-7-S, E-7-Y, E-7-T
 - petition_type: 사증발급
 - subsection_type: 대상
 - applicant_context:
-- eligibility: 대한민국 내의 공·사기관 등과의 계약에 따라 법무부장관이 특별히 지정하는 활동에 종사하려는 사람
+- eligibility: |
+    대한민국 내의 공·사기관 등과의 계약에 따라 법무부장관이 특별히 지정하는 활동에 종사하려는 사람
+    '특정활동'이란 법무부장관이 국가경쟁력 강화 등을 위해 전문적인 지식·기술 또는 기능을 가진 외국인력 도입이 특히 필요하다고 지정한 분야(이하 '도입직종')에서의 활동
 - target_persons: |
-    전문성 수준 및 국민대체성에 따라 4개 직군으로 구분
     E-7-1 전문인력: 관리자 및 전문가 (67개 직종)
     E-7-2 준전문인력: 사무 및 서비스종사자 (10개 직종)
     E-7-3 일반기능인력: 기능원 및 관련기능종사자 (14개 직종)
-    E-7-4 숙련기능인력(점수제): 17.8.1 신설, 3개 직종 (농림축산어업·제조·건설)
+    E-7-4 숙련기능인력(점수제): 농림축산어업, 제조, 건설 등 분야 숙련기능인력 (3개 직종)
     E-7-91 FTA 독립전문가
-    E-7-S 네거티브 방식 전문인력 (고소득자, 첨단산업분야 종사자)
-    E-7-Y 국내성장인력 (직종코드 9999)
-    E-7-T 최우수인재 특정활동 (최우수인재 첨단산업분야)
+    E-7-S 네거티브 방식 전문인력: 고소득자, 첨단산업분야 종사(예정)자
+    E-7-Y 국내성장인력: 국내성장취업
+    E-7-T 최우수인재 특정활동: 최우수인재 첨단산업분야 종사자
 - common_documents:
 - mandatory_documents:
 - other_documents:
@@ -5296,32 +4593,39 @@
 - restrictions:
 - exceptions:
 - fees:
-- duration_or_validity: 3년 (주무부처 추천 우수인재, 지역특화발전특구·첨단의료복합단지 내 E-7 종사자, 경제자유구역 의료연구개발기관 연구원은 5년)
+- duration_or_validity: 3년 (주무부처 추천 우수인재, 지역특화발전특구 및 첨단의료복합단지 내 E-7 직종 종사자, 경제자유구역 내 의료연구개발기관의 연구원은 5년)
 - quota_or_limit:
-- score_criteria:
-- table_summary: E-7 신 약호 구분표 (E-7-1~4, E-7-91, E-7-S, E-7-Y, E-7-T)
+- score_criteria: E-7-4 숙련기능인력은 점수제 적용
+- table_summary: E-7 세부약호 및 분류
 - table_rows: |
-    E-7-1: 전문인력, 관리자 및 전문가 67개 직종
-    E-7-2: 준전문인력, 사무·서비스종사자 10개 직종
-    E-7-3: 일반기능인력, 기능원 및 관련기능종사자 14개 직종
-    E-7-4: 숙련기능인력 점수제, 17.8.1 신설 3개 직종
-    E-7-91: FTA 독립전문가
-    E-7-S: 네거티브 방식 전문인력
-    E-7-Y: 국내성장인력
-    E-7-T: 최우수인재 특정활동
-- inviter_context: 국내 공·사기관
+    E-7-1 전문인력 - 관리자 및 전문가 (67개 직종)
+    E-7-2 준전문인력 - 사무 및 서비스종사자 (10개 직종)
+    E-7-3 일반기능인력 - 기능원 및 관련기능종사자 (14개 직종)
+    E-7-4 숙련기능인력(점수제) - 3개 직종 (’17.8.1신설)
+    E-7-91 FTA 독립전문가
+    E-7-S 네거티브 방식 전문인력 - 고소득자, 첨단산업분야
+    E-7-Y 국내성장인력 (직종 코드 9999)
+    E-7-T 최우수인재 - 최우수인재 첨단산업분야
+- inviter_context:
 - recommendation_or_approval:
+- keywords: 특정활동, 전문인력, 준전문인력, 일반기능인력, 숙련기능인력, 외국인력, E-7, E-7-1, E-7-2, E-7-3, E-7-4
+- source_page:
+- source_excerpt: |
+    대한민국 내의 공․사기관 등과의 계약에 따라 법무부장관이 특별히 지정하는 활동에 종사하려는 사람
+    전문성 수준 및 국민대체성 등에 따라 전문인력, 준전문인력, 일반기능인력, 숙련기능인력으로 구분, 도입 및 관리기준을 달리하여 탄력적으로 운영
+- related_visa_codes: D-2-7, E-8, E-9, E-10, H-2, F-2, F-4, F-5, F-6, C-4-5
 - expected_questions: |
-    특정활동 비자는 어떤 사람이 받을 수 있어요?
-    전문인력이랑 숙련기능인력은 어떻게 구분돼요?
-    내 직종이 특정활동 비자 대상에 포함되는지 어떻게 알아요?
+    한국에서 특정 직종으로 일하려면 어떤 비자 받아요?
+    E-7 비자에는 어떤 종류가 있어요?
+    숙련기능 인력으로 어떻게 한국에서 일할 수 있나요?
+    최우수인재 비자는 어떤 사람이 받을 수 있어요?
 
 ### row E-7 / 사증발급 / 요건
 - manual_type: 사증민원
 - visa_code: E-7
 - visa_name_ko: 특정활동
 - item_type: visa_rule
-- section_title: E-7 특정활동 / 자격요건 일반
+- section_title: E-7 특정활동 / 자격요건 (일반 + 우대 특례)
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 요건
@@ -5332,24 +4636,22 @@
 - mandatory_documents:
 - other_documents:
 - requirements: |
-    일반요건 (하나 이상 충족):
-    - 도입직종과 연관성 있는 분야의 석사 이상 학위 소지
-    - 도입직종과 연관성 있는 학사학위 + 1년 이상 해당분야 경력 (학위·자격증 취득 이후 경력만 인정. 첨단기술 분야는 졸업 이전 인턴 경력 인정)
-    - 도입직종과 연관성 있는 분야 5년 이상 근무경력
+    일반요건 (다음 중 하나 충족):
+    1) 도입직종과 연관성이 있는 분야의 석사 이상 학위 소지
+    2) 도입직종과 연관성이 있는 학사학위 소지 + 1년 이상의 해당분야 경력 (경력은 학위·자격증 취득 이후, 첨단기술 분야 종사자는 졸업 이전 인턴 경력도 인정)
+    3) 도입직종과 연관성이 있는 분야에 5년 이상의 근무경력
     우대 특별요건:
-    - 세계 500대 기업 1년 이상 전문직종 근무경력자: 학력·경력 미충족도 허용
-    - 세계 우수대학(타임 200/QS 500) 졸업(예정) 학사: 1년 경력요건 면제
-    - 국내 전문대학 졸업(예정)자: 전공 관련 직종 취업 시 경력 면제
-    - 국내 대학 졸업(예정) 학사 이상: 전공 무관, 학사 이상은 1년 경력 면제. 일/학습연계유학(D-2-7) 졸업자는 국민고용비율 적용 면제
-    - 주무부처 고용추천 첨단과학기술분야 우수인재: 강화된 기준 적용
-    - 첨단기술인턴(D-10-3) 1년 이상 활동 후 정식 취업, 임금 GNI 1배 이상: 학력·경력 면제
-    - 일본 CAIT/JITEC 소프트웨어개발기술자·기본정보기술자 자격증 소지 일본인: 자격기준 무관 사증발급인정서 발급
-    - 부처추천 전문능력 구비 우수인재: 연간 보수 GNI 1.5배 + 소관 중앙행정기관장 추천 → 전문인력 67개 직종 학력·경력 모두 면제 (최초 1년만, 연장 시 소득금액증명원 제출)
-    - 고소득 전문직 우수인재: 연간 보수 GNI 3배 이상 → 직종 무관 학력·경력 면제, 주무부처 추천 불요
-    - 우수사설기관 연수 수료자(D-4-6, 20개월 이상) + 국내 공인 자격증 + 사회통합프로그램 4단계 이상: 자격변경 허용 (E-7-4 제외)
-    - 해외 유망인재: 29세 이하 + 세계 우수대학(타임 200/QS 200) 졸업 또는 한국학 전공 + TOPIK 6급: 학위·경력 면제
-    - 아시아권 QS 1,000위 이내 현지대학 이공계 졸업생 (베트남·중국·태국·일본·인도·인도네시아·말레이시아·싱가포르·필리핀): 29세 이하 + 학사 이상 + TOPIK 2급 → 경력 면제
-    - 외국인 유학생 일학습병행제 이수자 (국내 전문학사 이상 + 관련 직종 취업): 경력 면제
+    - 세계 500대 기업 1년 이상 전문직종 근무경력자: 학력·경력요건 미충족이라도 고용 필요성 인정시 허용
+    - 세계 우수 대학(타임지 200대 또는 QS 500위 이내) 졸업(예정) 학사 소지자: 1년 경력 없어도 허용
+    - 국내 전문대학 졸업(예정)자: 전공 관련 도입허용 직종 취업 시 1년 경력 면제
+    - 국내 대학 졸업(예정) 학사 이상 학위 소지자: 전공 무관하게 고용 필요성 인정시 허용 (학사 이상 1년 경력 요건 면제, D-2-7은 국민고용비율 면제)
+    - 주무부처 고용추천 첨단 과학기술분야 우수인재: 일반요건보다 강화된 기준으로 고용추천
+    - 첨단기술인턴(D-10-3) 체류자 1년 이상 인턴 + 정식 취업 + 임금 GNI 1배 이상: 학력·경력 요건 면제
+    - 부처추천 전문능력 구비 우수인재: 연봉 GNI 1.5배 이상 + 소관 중앙행정기관장 추천 → 학력·경력 모두 면제
+    - 고소득 전문직 우수인재: 연봉 GNI 3배 이상 → 학력·경력 모두 면제 (부처 추천 불요)
+    - 우수사설기관 연수 수료자: 해외 전문학사 이상 + D-4-6 20개월 이상 수료 + 국내 공인 자격증 + 사회통합프로그램 4단계 이상 → 자격변경 허용
+    - 해외 유망인재: 29세 이하 + 타임즈 200대 또는 QS 200위 이내 대학 또는 TOPIK 6급 → 학력·경력 요건 면제
+    - 아시아권 QS 1,000위 이내 현지 대학 이공계 졸업생: 29세 이하 + 학사 + TOPIK 2급 → 경력 면제
 - procedure:
 - restrictions:
 - exceptions:
@@ -5359,170 +4661,25 @@
 - score_criteria:
 - table_summary: 첨단과학기술인력 우대 고용추천 (골드카드)
 - table_rows: |
-    골드카드 추천기관: 산업통상자원부(KOTRA), 시행연도 2000년
-    추천대상자 요건: 동종 5년 이상 경력, 또는 학사+1년 이상 경력, 또는 석사 이상 (국내 학위는 경력 불요)
-    추천대상 직종: IT, 기술경영, 나노, 디지털전자, 바이오, 수송 및 기계, 신소재, 환경 및 에너지 8개 분야
-- inviter_context:
-- recommendation_or_approval: 소관 중앙행정기관장 고용추천서, 산업통상자원부(KOTRA) 골드카드 추천 등
-- expected_questions: |
-    특정활동 비자 받으려면 학력은 어디까지 있어야 해요?
-    경력 없이 받을 수 있는 경우도 있나요?
-    연봉이 얼마 이상이면 학력·경력 모두 면제되나요?
-
-### row E-7 / 사증발급 / 절차
-- manual_type: 사증민원
-- visa_code: E-7
-- visa_name_ko: 특정활동
-- item_type: visa_rule
-- section_title: E-7 특정활동 / 도입방법 및 신청절차
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 절차
-- applicant_context:
-- eligibility:
-- target_persons:
-- common_documents: |
-    피초청(외국인) 준비서류: 여권사본, 반명함판 칼라사진 1매, 고용계약서, 자격요건 입증서류(학위증, 경력증명서, 자격증 등). 국외 발급 서류는 국문/영문 번역본 첨부, 주요서류는 영사공증 또는 아포스티유 확인
-    초청인 준비서류: 고용단체 등 설립관련서류, 외국인 고용 필요성 입증서류(초청사유서, 고용추천서 등), 신원보증서(근무처변경·추가 신고 제한 직종 종사자만), 납세증명서(국세완납증명서), 지방세 납세증명
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure: |
-    원칙: 기업이 외국인력을 발굴·검증·채용한 후 사증발급 또는 체류자격 변경허가 신청 → 법무부에서 결격여부 등 심사하여 허용여부 결정
-    뿌리산업체 숙련기능공 등: 비전문 취업자격자 등 자격변경 허용 + 뿌리산업 민관합동 전문가 기량검증 통과자 인재 POOL 구성 → 쿼터 내 선발(조선용접공 도입절차 준용)
-    고용추천서 면제 대상: 대학 및 공공기관 고용, 사기업 대기업 관리자 고용
-    전자고용추천시스템: 대한민국 비자포털(visa.go.kr) 운영
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval: 직종별 심사기준에 따라 고용추천서 필수/면제
-- expected_questions: |
-    특정활동 비자 신청은 어떻게 진행되나요?
-    고용추천서가 안 필요한 경우는 언제예요?
-    대학에서 외국인 채용할 때도 추천서 필요해요?
-
-### row E-7 / 사증발급 / 제한
-- manual_type: 사증민원
-- visa_code: E-7
-- visa_name_ko: 특정활동
-- item_type: restriction
-- section_title: E-7 특정활동 / 초청자 자격요건 및 심사기준
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 제한
-- applicant_context:
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements: |
-    초청자 자격요건:
-    - 출입국관리법 시행규칙 제17조의3 제2항 사증발급인정서 발급제한 대상자에 해당하지 않을 것
-    - 허용직종별 고용업체 요건, 업체당 외국인 고용허용 인원, 최소임금 요건 등 충족
-    - 고용업체에 세금(국세, 지방세) 체납 사실이 없을 것
-    창업 초기 소규모 외국인투자기업 또는 벤처기업: 제조·무역·컨설팅·R&D 등 소규모 업체가 전문인력 고용 시 창업일로부터 최대 5년간 매출실적 없어도 허용 (67개 전문인력 직종만)
-- procedure:
-- restrictions: |
-    사증발급인정서 발급 제한대상자, 고용업체 요건 미충족, 저임금 활용, 세금 체납자는 제한
-    숙련기능인력 고용업체: 판매사무원·주방장·조리사 등 초청 시 고용업체 요건 충족·정상 운영·저임금 활용 여부 종합 심사
-- exceptions: 창업 초기 5년간 매출실적 면제 (67개 전문인력 직종)
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
+    골드카드 고용추천기관: 산업통상자원부(KOTRA)
+    추천대상자 요건: 동종 5년 이상 경력 / 학사 + 1년 이상 경력 / 석사 이상 (국내 학위취득자는 경력 불요)
+    추천대상 직종: IT, 기술경영, 나노, 디지털 전자, 바이오, 수송 및 기계, 신소재, 환경 및 에너지 등 8개 분야
 - inviter_context:
 - recommendation_or_approval:
+- keywords: E-7요건, 석사학위, 학사경력, 골드카드, 세계우수대학, 부처추천, 고소득전문직, GNI배수
+- source_page:
+- source_excerpt: |
+    (일반요건) 다음 요건 중 하나를 충족하여야 함
+    - 도입직종과 연관성이 있는 분야의 석사 이상 학위 소지
+    - 도입직종과 연관성이 있는 학사학위 소지 + 1년 이상의 해당분야 경력
+    - 도입직종과 연관성이 있는 분야에 5년 이상의 근무경력
+    - (고소득 전문직 우수인재) 연간 총 수령보수가 전년도 1인당 국민총소득(GNI)의 3배 이상 되는 경우 직종에 관계없이 학력, 경력 모두 면제가능
+- related_visa_codes: D-2-7, D-10-3, D-4-6
 - expected_questions: |
-    외국인 고용하려는 회사가 갖춰야 할 조건은 뭐예요?
-    세금 체납이 있으면 외국인 고용 못 하나요?
-    창업한 지 얼마 안 된 회사도 외국인 채용할 수 있어요?
-
-### row E-7 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: E-7
-- visa_name_ko: 특정활동
-- item_type: required_documents
-- section_title: E-7 특정활동 / 공관장 재량 단수사증 (외국공관 행정요원·국제여객선 승무원)
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: 주한 외국공관 등에서 고용하는 자국 행정요원, 국내 운수회사 등 국제여객선 승무원
-- eligibility:
-- target_persons: |
-    특수기관 행정요원(S2620): 주한외국공관·외국문화원·외국상공회의소 등의 자국국적 행정·기능요원
-    운송서비스 종사자(431): 금강산관광선 등 국내 운영 국제여객선 승무원
-- common_documents:
-- mandatory_documents: |
-    공통:
-    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    외국공관 행정요원:
-    - 주한 외국공관 협조요청 공문
-    - 고용계약서
-    - 학력 및 경력 등 입증서류
-    국제여객선 승무원:
-    - 고용업체 설립관련서류
-    - 고용계약서
-    - 학력 및 경력 등 입증서류 (학위증, 경력증명서, 이력서, 자격증 등)
-- other_documents: |
-    자국공관원의 자국국적 가사보조인: 재외공관 재량으로 체류기간 1년의 방문동거(F-1) 사증 발급
-    제3국인 행정·기능요원: 법무부장관 승인 또는 사증발급인정서로 발급
-- requirements:
-- procedure:
-- restrictions: 국제여객선의 항공기 기장·선장 등 국가공인자격증 소지자는 전문직업(E-5), 단순노무 부원은 선원취업(E-10), 관광유람선 공연 연예인은 예술흥행(E-6)
-- exceptions: 재외공관장은 첨부서류 일부 가감 가능
-- fees:
-- duration_or_validity: 체류기간 1년 이하, 유효기간 3월의 단수사증 (고용계약기간 2년이라도 1년 발급)
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 주한 외국공관, 국내 운수회사
-- recommendation_or_approval:
-- expected_questions: |
-    주한 외국공관에서 행정요원으로 일하려면 어떤 비자 받아요?
-    국제여객선 승무원으로 일할 때 비자 신청 서류 알려주세요
-    공관 가사보조인은 어떤 자격으로 일하나요?
-
-### row E-7 / 사증발급 / 예외
-- manual_type: 사증민원
-- visa_code: E-7
-- visa_name_ko: 특정활동
-- item_type: exception
-- section_title: E-7 특정활동 / 90일 이하 단기취업
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 예외
-- applicant_context:
-- eligibility: 특정활동(E-7) 허용직종에 90일 이하 단기간 취업하는 자
-- target_persons:
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure: 체류기간 90일의 단기취업(C-4-5) 사증 발급 (직종별 첨부서류 및 심사기준은 단기취업(C-4) 자격 사증발급기준 적용)
-- restrictions:
-- exceptions: 90일 이하는 E-7 대신 단기취업(C-4-5)으로 발급
-- fees:
-- duration_or_validity: 90일
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    특정활동 직종에 90일만 일하려면 어떤 비자 받아요?
-    단기간 취업하는 경우는 사증 종류가 다른가요?
-    3개월 이하 일하는 사람도 같은 절차로 신청해요?
+    석사 학위 없으면 E-7 비자 신청 못 하나요?
+    한국 대학 졸업하면 어떤 혜택 있어요?
+    골드카드는 어떻게 받나요?
+    연봉이 GNI 3배 이상이면 어떤 혜택 있어요?
 
 ### row E-7 / 사증발급인정서 / 제출서류
 - manual_type: 사증민원
@@ -5530,201 +4687,169 @@
 - visa_name_ko: 특정활동
 - item_type: required_documents
 - section_title: E-7 특정활동 / 사증발급인정서 공통 제출서류
-- subtype_or_program: 사증발급인정서
+- subtype_or_program:
 - petition_type: 사증발급인정서
 - subsection_type: 제출서류
-- applicant_context: 사증발급인정서 발급 신청자
+- applicant_context: 초청업체 소재지 관할 출입국·외국인청(사무소·출장소)에 신청, 우수인재 고용추천 받은 경우 온라인(대한민국 비자포털) 신청 허용
 - eligibility:
 - target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식)
-    - 여권사본
-    - 표준규격사진 1매
+- common_documents: |
+    - 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
     - 공·사기관 설립관련 서류 (사업자등록증, 고유번호증, 외국인투자기업등록증 등)
     - 고용계약서 사본
     - 납세증명서(국세완납증명서), 지방세 납세증명서
-    - 외국인 고용 필요성 입증서류 (초청사유서, 외국인활용계획서 등)
-    - 소관 중앙행정기관장 고용추천서 또는 관련 단체 추천서 (필수 직종에 한함)
-    - 신원보증서 (해당 직종에 한함)
+    - 외국인의 고용의 필요성을 입증할 수 있는 서류 (초청사유서, 외국인활용계획서 등, 소관 중앙행정기관의 장의 고용추천서 또는 관련 단체 등의 추천서)
+    - 신원보증서 (법무부 장관이 고시한 직종 종사자만 해당)
     - 자격요건 입증서류 (학위증, 경력증명서, 이력서, 유효한 자격증 등)
-- other_documents: 대리인 신청 시 위임장, 대리인 재직증명서, 대리인 신분증 사본
-- requirements:
-- procedure: |
-    신청절차: 초청업체 소재지 관할 출입국·외국인청(사무소·출장소)에 신청
-    온라인 신청: 주무부처 등 우수인재 고용추천 받은 경우 대한민국 비자포털에서 신청 허용
-    온라인 신청 우수인재 우대: KOTRA·중진공 골드카드 고용추천 받은 경우 온라인 신청 시 고용추천서 외 첨부서류 면제, 나머지는 외국인등록 시 제출
-    준법·사회공헌기업 우대: 국세청 지정 성실납세기업, 고용노동부 일자리 으뜸기업, 공정거래위원회 동반성장지수 우수기업, 출소자·제대군인 고용 우수기업은 고용업체 설립 관련 서류 및 고용 필요성 입증서류 면제
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary: |
-    주무부처 고용추천 필수 직종 (28개 직종): 국내복귀기업 생산관리자(1413), 생명과학전문가(2112), 컴퓨터 하드웨어 기술자(2211), 전기공학 기술자(2341), 전자공학 기술자(2342), 플랜트공학 기술자(23512), 로봇공학 전문가(2352), 자동차·조선·비행기·철도차량공학전문가(S2353), 가스·에너지 기술자(2372), 선박관리전문가(1512), 여행업체 관리자(1521), 관광레저사업체 관리자(1521), 금융 및 보험전문가(272), 여행상품 개발자(2732), 공연기획자(2735), 기술경영 전문가(S2743), 아나운서(28331), 호텔접수사무원(3922), 의료코디네이터(S3922), 관광통역안내원(43213), 양식기술자(6301), 할랄도축원(7103), 조선용접공(7430), 선박전기원(76212), 선박도장공(78369), 항공기 정비원(7521), 항공기(부품) 제조원(S8417), 자동차 부품 제조원(S85411), 자동차 판금·도장원(S75104)
-    신원보증서 제출 필요 직종: 기계공학기술자(2351), 제도사(2395), 해외영업원(2742) 중 해외 온라인상품판매원, 디자이너(285), 판매사무원(31215), 주방장 및 조리사(441), 고객상담사무원(3991), 호텔접수사무원(3922), 의료코디네이터(S3922), 양식기술자(6301), 조선용접공(7430), 뿌리산업체 숙련기능공(S740)
-- table_rows:
-- inviter_context: 초청업체 (공·사기관)
-- recommendation_or_approval: 주무부처 고용추천 (필수 28개 직종), 신원보증서 (제출 필요 직종)
-- expected_questions: |
-    특정활동 사증발급인정서 신청할 때 어떤 서류 챙겨요?
-    고용추천서가 꼭 필요한 직종은 어떤 거예요?
-    KOTRA 골드카드 추천 받으면 절차가 간소화돼요?
-
-### row E-7 / 사증발급인정서 / 대상
-- manual_type: 사증민원
-- visa_code: E-7
-- visa_name_ko: 특정활동
-- item_type: visa_rule
-- section_title: E-7 특정활동 / 한·인도 사증절차간소화협정 독립전문가
-- subtype_or_program: E-7-91
-- petition_type: 사증발급인정서
-- subsection_type: 대상
-- applicant_context: 한·인도 CEPA 양허직종 인도 국적 독립전문가
-- eligibility: 인도 법인에 소속되지 않은 자영업자로서 우리나라의 법인 또는 개인과 서비스 공급계약을 체결하여 이행하기 위해 입국하는 독립전문가
-- target_persons:
-- common_documents:
-- mandatory_documents: |
-    - 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
-    - 본인과 국내법인/개인사업자 간의 서비스공급 계약서
-    - 국내법인/개인사업자의 법인등기부등본 또는 사업자등록증 사본
-    - 납세사실증명서
-    - 학력입증서류, 경력입증서류
-    - 서비스공급의 필요성 입증서류 (활용계획서, 고용추천서 등)
-    - 기타 직종별 첨부서류
-- other_documents: 대리인 신청 시 위임장, 대리인 재직증명서, 대리인 신분증 사본
-- requirements: 한-인도 CEPA 전문가 양허직종(162개) 관련 학사 이상 학위 + 해당 분야 1년 이상 경력 (생물학자·생화학자는 박사학위 또는 동등 자격)
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 국내 법인 또는 개인사업자
-- recommendation_or_approval:
-- expected_questions: |
-    인도 국적 독립전문가로 한국에 서비스 공급하러 가는데 비자 어떻게 받아요?
-    한-인도 CEPA 양허직종이면 학사 학위만 있으면 돼요?
-    생물학자도 같은 자격으로 신청할 수 있어요?
-
-### row E-7 / 사증발급인정서 / 대상
-- manual_type: 사증민원
-- visa_code: E-7
-- visa_name_ko: 특정활동
-- item_type: visa_rule
-- section_title: E-7 특정활동 / 한·러 및 한·우즈벡 한시적 근로협정
-- subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 대상
-- applicant_context:
-- eligibility: |
-    한·러 협정: 모회사와 회사 설립 문서(정관)에 따라 모회사가 직접/간접 통제하는 회사 집단(지사·지점·연락사무소·자회사·계열회사)의 직원으로 국내에서 채용된 사람
-    한·우즈벡 협정: 대한민국에서 상업활동을 수행하는 회사 대표사무소에서 한시적으로 근무하기 위해 국내에서 채용되는 전문인력인 우즈베키스탄 국민
-- target_persons:
-- common_documents:
 - mandatory_documents:
-- other_documents:
-- requirements: 협정상 별도 자격기준 없음, 본 지침의 직종별 학력·경력요건 및 첨부서류 준용
+- other_documents: |
+    피초청(외국인)인 준비서류: 여권사본, 반명함판 칼라사진 1매, 고용계약서, 자격요건 입증서류
+    국외 발급서류는 국문 또는 영문 번역본 첨부, 주요핵심 서류는 영사 공증 또는 아포스티유 확인서 제출
+    KOTRA·중진공 골드카드 고용추천을 받은 경우 온라인 신청 시 고용추천서 외 첨부서류 면제 (나머지는 외국인등록 시 제출)
+- requirements:
 - procedure:
 - restrictions:
-- exceptions:
+- exceptions: |
+    준법·사회공헌기업(국세청 성실납세, 고용노동부 일자리 으뜸기업, 공정거래위 동반성장 우수, 출소자 고용 우수, 제대군인 고용 우수)은 고용업체 설립 관련 서류 및 고용의 필요성 입증서류 면제
 - fees:
 - duration_or_validity:
 - quota_or_limit:
 - score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 모회사 지사·자회사·계열회사 또는 회사 대표사무소
-- recommendation_or_approval:
+- table_summary: 주무부처 고용추천 필수 직종 (일부)
+- table_rows: |
+    국내복귀기업 생산관리자(1413), 생명과학전문가(2112), 컴퓨터 하드웨어 기술자(2211)
+    전기공학·전자공학·플랜트공학·로봇공학·자동차/조선/비행기/철도차량공학 전문가
+    선박관리전문가(1512), 여행업체·관광레저사업체 관리자, 금융 및 보험전문가(272)
+    여행상품 개발자(2732), 공연기획자(2735), 기술경영 전문가(S2743), 아나운서(28331)
+    호텔접수사무원(3922), 의료코디네이터(S3922), 관광통역안내원(43213)
+    양식기술자(6301), 할랄도축원(7103), 조선용접공(7430), 선박전기원(76212), 선박도장공(78369)
+    항공기 정비원(7521), 항공기(부품)·자동차 부품 제조원, 자동차 판금·도장원
+- inviter_context:
+- recommendation_or_approval: 소관 중앙행정기관의 장(경제자유구역·지역특화발전특구 등은 관할 시·도지사) 고용추천서
+- keywords: E-7제출서류, 사증발급인정신청서, 골드카드, 신원보증서, 준법기업특례, 주무부처추천
+- source_page:
+- source_excerpt: |
+    ① 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
+    ② 공․사기관 설립관련 서류
+    ③ 고용계약서 사본
+    ④ 납세증명서(국세완납증명서), 지방세 납세증명서
+    ⑤ 외국인의 고용의 필요성을 입증할 수 있는 서류
+- related_visa_codes:
 - expected_questions: |
-    러시아 회사 한국 자회사에 직원으로 채용됐는데 어떤 비자 받아요?
-    우즈베키스탄 국적인데 한국 대표사무소 근무로 한시적 비자 받을 수 있어요?
-    한·러 협정 적용받으면 자격기준이 별도로 있나요?
+    E-7 비자 사증발급인정서는 어디서 신청하나요?
+    온라인으로 신청할 수 있는 경우가 있어요?
+    준법 기업은 어떤 혜택이 있나요?
 
 ### row E-7 / 사증발급 / 제한
 - manual_type: 사증민원
 - visa_code: E-7
 - visa_name_ko: 특정활동
 - item_type: restriction
-- section_title: E-7 특정활동 / 국민고용 보호를 위한 심사기준
+- section_title: E-7 특정활동 / 국민고용 보호 심사기준
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 제한
-- applicant_context:
+- applicant_context: 전문인력은 국민대체가 어려워 임금요건 외에는 원칙적으로 적용하지 않으나, 일부 직종은 예외적 적용
 - eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements: |
-    국민고용 보호 일반 심사기준:
-    - 고용업체 규모: 국민 고용자 5명 미만 + 내수 위주 업체는 원칙적 초청 제한. 고용인원은 고용보험가입자명부에 최저임금 충족 3개월 이상 등재 인원 (원칙적으로 개업 후 3개월 이후 신청 가능)
-    - 고용업체 업종: 업종 특성별 별도 요건 충족
-    - 외국인 고용비율: 국민고용 보호 직종은 원칙적으로 국민고용자의 20% 범위 내 외국인 고용 허용 (E-7-4, E-8, E-9, E-10, H-2, F-2, F-4, F-5, F-6은 외국인 고용인원에서 제외. E-1~E-7-1~3은 포함)
-    - 임금요건: 동종 직무 동일 경력 내국인 평균임금과 연계
-      ① 전문인력: 법무부 장관 확정·공고 임금요건 기준
-      ② 준전문·일반기능·숙련기능인력: 최저임금 이상
-      ③ 일부 직종(온라인쇼핑판매원, 양식기술자 등): 전년도 GNI 0.8배 이상
-    - 중소·벤처·비수도권 중견기업 특례: 전년도 GNI 80% 이상 임금 적용 직종 종사자, E-7 근무경력 없거나 3년 이하인 자 → 임금 요건 GNI 70% 이상으로 완화
+    예외적 적용 대상 (전문인력 중):
+    - 초청장 남발 우려가 있는 기계공학 기술자, 제도사, 여행상품개발자, 해외영업원, 통·번역가 등
+    - 전문인력중 국민고용보호 직종과 준전문인력, 일반기능인력, 숙련기능인력
 - procedure:
 - restrictions: |
-    전문인력 중 초청장 남발 우려 직종(기계공학 기술자, 제도사, 여행상품개발자, 해외영업원, 통·번역가 등)은 예외적으로 국민고용 보호 심사 기준 적용
-    준전문·일반기능·숙련기능인력은 고용업체 자격요건·업체당 외국인 고용허용 인원 상한·최저 임금요건 등 적용
-    총 국민고용자 20% 초과 E-7 외국인 고용 중인 업체는 신규/대체 인력 초청·자격변경·근무처변경·추가 원칙적으로 불허
+    (고용업체의 규모) 국민 고용자가 5명 미만이고 내수 위주인 업체는 원칙적으로 초청을 제한
+    고용인원은 고용보험가입자명부에 최저임금을 충족하는 3개월 이상 등재된 인원
+    원칙적으로 개업 후 최소 3개월 이후 신청 가능
+    (외국인 고용비율) 국민고용 보호 직종은 원칙적으로 국민고용자의 20% 범위 내에서 외국인 고용 허용
+    숙련기능인력(E-7-4), E-8, E-9, E-10, H-2, F-2, F-4, F-5, F-6은 외국인 고용인원에서 제외
+    교수(E-1)~특정활동(E-7-1~3) 등 취업 가능 체류자격은 외국인 고용인원에 포함하여 비율 산정
+    총 국민고용자의 20%를 초과하여 E-7 외국인을 고용 중인 업체는 신규 및 대체인력 초청과 체류자격변경, 근무처변경·추가 등 원칙적으로 불허
+    (임금요건) 전문인력은 법무부 장관이 확정·공고한 임금요건 기준 적용
+    준전문인력, 일반기능인력, 숙련기능인력은 최저임금 이상 적용
+    연봉이 심사기준 이하인 경우 원칙적으로 발급 제한
 - exceptions: |
-    체류자격외활동허가 또는 근무처추가로 파트타임 근무 시 적용 안 함
-    정부초청 장학생 일/학습연계유학(D-2-7) 졸업자: 전문/준전문/일반기능에 대해 국민고용비율·업체규모 적용 면제, 유사직종 폭넓게 허용
-    주한공관, 공공기관, 학교(대학 제외) 등 비영리기관 고용 전문인력 67개 직종: 임금요건 합리적 사유 입증 시 부분적 완화
+    체류자격외활동허가 또는 근무처추가를 받아 파트타임으로 근무하는 경우 적용 제외
+    정부초청 장학생으로 일/학습연계유학(D-2-7) 자격 졸업자는 전문/준전문/일반기능에 대해 국민고용비율, 업체규모 적용 면제
+    중소·벤처·비수도권 중견기업 특례: 전년도 GNI의 80% 임금 요건 직종에서 국내 E-7 근무경력 없거나 3년 이하인 자에게 GNI의 70% 이상으로 완화 적용
+    주한공관, 공공기관, 학교(대학제외) 등 비영리기관 67개 직종은 임금요건 미충족 합리적 사유 입증 시 부분 완화 가능
 - fees:
 - duration_or_validity:
-- quota_or_limit: 국민고용 보호 직종은 국민고용자의 20% 범위 내
+- quota_or_limit: 국민고용자의 20% 범위 내 외국인 고용
 - score_criteria:
-- table_summary: 임금요건 심사 기준 (계약서, 세무서 발행 전년도 소득금액 증명, GNI 한국은행 공시 기준, 최저임금 고용노동부 공고 기준, 고용계약서에 월 급여총액 대비 근로시간 명시)
+- table_summary:
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 국민고용보호, 고용업체규모, 외국인고용비율, 임금요건, GNI, 중소벤처특례, E-7
+- source_page:
+- source_excerpt: |
+    - (고용업체의 규모) 국민 고용자가 5명 미만이고 내수 위주인 업체는 원칙적으로 초청을 제한, 고용인원은 고용부의 고용보험가입자명부에 최저임금(시급 및 월급)을 충족하는 3개월 이상 등재된 인원을 말함
+    - (외국인 고용비율) 국민고용 보호 직종은 원칙적으로 국민고용자의 20% 범위 내에서 외국인 고용을 허용
+    - (임금요건) 저임금 편법인력 활용 방지를 위해 동종 직무를 수행하는 동일 경력 내국인의 평균임금과 연계하여 전문인력 수준에 따라 직종별로 차등 적용
+- related_visa_codes: D-2-7, E-8, E-9, E-10, H-2, F-2, F-4, F-5, F-6
 - expected_questions: |
-    회사 직원 5명 미만이면 외국인 고용 못 하나요?
-    임금이 얼마 이상이어야 특정활동 비자 받을 수 있어요?
-    중소기업 특례로 임금 요건이 완화되는 경우는 어떤 거예요?
+    한국 회사가 외국인을 몇 명까지 고용할 수 있어요?
+    개업한 지 얼마 안 됐는데 외국인 채용할 수 있나요?
+    중소기업은 임금 요건이 완화되나요?
+    파트타임으로 일하면 국민고용 비율 규제 받나요?
 
-### row E-7 / 사증발급 / 예외
+### row E-7 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: E-7
 - visa_name_ko: 특정활동
-- item_type: exception
-- section_title: E-7 특정활동 / 경과규정
-- subtype_or_program:
+- item_type: required_documents
+- section_title: E-7 특정활동 / 주한 외국공관 행정요원·운수회사 승무원
+- subtype_or_program: S2620, 431
 - petition_type: 사증발급
-- subsection_type: 예외
-- applicant_context:
-- eligibility:
-- target_persons:
+- subsection_type: 제출서류
+- applicant_context: 주한 외국공관·외국문화원·외국상공회의소 행정요원(자국 국적), 국제여객선 승무원
+- eligibility: |
+    주한외국공관, 주한외국문화원, 주한외국상공회의소 등에서 일반 행정 또는 기능업무를 수행하는 자국국적의 행정·기능요원
+    제3국인을 행정·기능요원으로 고용한 경우 법무부장관의 승인 또는 사증발급인정서 필요
+    국내 운수회사 등에 고용되어 선장 등 선박 운항의 필수전문요원으로 근무하는 자
+- target_persons: 자국 공관·문화원·상공회의소의 자국 국적 행정·기능요원, 국제여객선 승무원
 - common_documents:
-- mandatory_documents:
-- other_documents:
+- mandatory_documents: |
+    주한 외국공관 행정요원:
+    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    - 주한 외국공관 협조요청 공문
+    - 고용계약서
+    - 학력 및 경력 등 입증서류
+    국내 운수회사 승무원:
+    - 사증발급신청서, 여권, 표준규격사진 1매, 수수료
+    - 고용업체 설립관련서류
+    - 고용계약서
+    - 학력 및 경력 등 입증서류 (학위증, 경력증명서, 이력서, 자격증 등)
+- other_documents: 자국공관원의 자국국적 가사보조인에 대해서는 재외공관이 재량으로 체류기간 1년의 방문동거(F-1) 사증 발급
 - requirements:
 - procedure:
-- restrictions:
-- exceptions: |
-    기존 E-7 외국인요리사: 2018.1.1. 이후 현 규정 적용, 요건 미충족 시 허가 제한
-    2023.9.25. 이전 숙련기능인력으로 전환하여 체류 중인 자: 2024.11.27. 개정 규정 적용, 요건 미충족 시 허가 제한
+- restrictions: |
+    물건운송·하역 등 단순노무 종사 부원은 선원취업(E-10) 자격 대상
+    관광진흥법에 의한 관광유람선에서 공연하는 연예인은 예술흥행(E-6)자격 대상
+    대한민국 법률에 의하여 인정된 외국 국가공인자격증을 소지한 항공기 기장 또는 선장 등은 전문직업(E-5)자격 대상
+- exceptions: 특정활동(E-7) 허용직종에 90일 이하 단기간 취업하는 자는 단기취업(C-4-5) 사증 발급
 - fees:
-- duration_or_validity:
+- duration_or_validity: 체류기간 1년 이하, 유효기간 3월의 단수사증 (고용계약 2년이라도 체류기간 1년 사증 발급)
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 주한외국공관, 행정요원, 운수회사승무원, 국제여객선, S2620, 431
+- source_page:
+- source_excerpt: |
+    1. 주한 외국공관에서 고용하는 행정요원 등(자국 국민에 한함)에 대한 체류기간 1년 이하, 유효기간 3월의 단수사증 : 특수기관 행정요원 (S2620)
+    2. 국내 운수회사 등에 고용되어 선박 등의 승무원 등으로 근무하는 자에 대한 체류기간 1년 이하의 단수사증 : 운송서비스 종사자(431)
+- related_visa_codes: F-1, E-5, E-6, E-10, C-4-5
 - expected_questions: |
-    예전에 외국인 요리사로 일하던 사람도 새 규정 적용받나요?
-    숙련기능인력으로 전환한 시기에 따라 규정이 달라지나요?
-    경과규정에 따라 허가 제한될 수도 있어요?
+    주한 외국 대사관에서 일하려면 어떤 비자 받아요?
+    국제 여객선 승무원으로 한국에서 일하면 어떤 비자예요?
+    공관원 가족 가사 도우미는 어떤 비자 받나요?
 
 <!-- end chunk: visa_009 -->
 
@@ -5736,24 +4861,21 @@
 - visa_code: E-7
 - visa_name_ko: 특정활동
 - item_type: visa_rule
-- section_title: E-7 특정활동 / 허용직종 현황 (94개)
+- section_title: E-7 특정활동 / 허용직종 전체 현황
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context:
-- eligibility:
-- target_persons: |
-    전문인력 (E-7-1, 67개 직종):
-    가. 관리자 15개 직종: 경제이익단체 고위임원(S110), 기업 고위임원(1120), 경영지원 관리자(1212), 교육 관리자(1312), 보험·금융관리자(1320), 문화·예술·디자인·영상관련 관리자(1340), 정보통신 관련 관리자(1350), 기타 전문서비스 관리자(1390), 건설·광업 관리자(1411), 제품생산 관리자(1413), 농림·축산·어업 관리자(14901), 영업 및 판매 관리자(1511), 운송 관리자(1512), 숙박·여행·오락·스포츠 관리자(1521), 음식서비스 관리자(1522)
-    나. 전문가 및 관련종사자 52개 직종: 생명과학 전문가(2111), 자연과학 전문가(2112), 사회과학 연구원(2122), 컴퓨터 하드웨어 기술자(2211), 통신공학 기술자(2212), 컴퓨터시스템 설계·분석가(2221), 시스템 소프트웨어 개발자(2222), 응용 소프트웨어 개발자(2223), 웹 개발자(2224), 데이터 전문가(2231), 네트워크시스템 개발자(2232), 정보 보안 전문가(2233), 건축가(2311), 건축공학 기술자(2312), 토목공학 전문가(2313), 조경 기술자(2314), 도시·교통관련 전문가(2315), 화학공학 기술자(2321), 금속·재료공학 기술자(2331), 전기공학 기술자(2341), 전자공학 기술자(2342), 기계공학 기술자(2351), 플랜트공학 기술자(23512), 로봇공학 전문가(2352), 자동차·조선·비행기·철도차량공학 전문가(S2353), 산업안전·위험 전문가(2364), 환경공학 기술자(2371), 가스·에너지 기술자(2372), 섬유공학 기술자(2392), 제도사(2395), 간호사(2430), 대학 강사(2512), 해외기술전문학교 기술강사(2543), 교육관련 전문가(2591), 외국인학교·외국교육기관·국제학교·영재학교 교사(2599), 법률 전문가(261), 정부·공공행정 전문가(2620), 특수기관 행정요원(S2620), 경영·진단 전문가(2715), 금융·보험 전문가(272), 상품기획 전문가(2731), 여행상품 개발자(2732), 광고·홍보 전문가(2733), 조사 전문가(2734), 행사 기획자(2735), 해외 영업원(2742), 기술 영업원(2743), 기술경영 전문가(S2743), 번역가·통역가(2814), 아나운서(28331), 디자이너(285), 영상관련 디자이너(S2855)
-    준전문인력 (E-7-2, 10개 직종):
-    가. 사무종사자 5개: 면세점·제주영어교육도시 판매 사무원(31215), 항공운송 사무원(31264), 호텔 접수 사무원(3922), 의료 코디네이터(S3922), 고객상담 사무원(3991)
-    나. 서비스 종사자 5개: 운송 서비스 종사자(431), 관광 통역 안내원(43213), 카지노 딜러(43291), 주방장 및 조리사(441), 요양보호사(42111)
-    일반기능인력 (E-7-3, 14개 직종): 동물사육사(61395), 양식기술자(6301), 할랄 도축원(7103), 악기제조·조율사(7303), 조선 용접공(7406), 선박 전기원(76212), 선박 도장공(78369), 항공기 정비원(7521), 항공기(부품) 제조원(S8417), 송전 전기원(76231), 자동차 부품제조원(S85411), 자동차 판금·도장원(S75104), 도축원(S71032), 건설기계(부품)제조원(S85513)
-    숙련기능인력 (E-7-4, 3개 직종, 점수제): 뿌리산업체 숙련기능공(S740), 농림축산어업 숙련기능인(S610), 일반 제조업체·건설업체 숙련기능공(S700)
-    네거티브 방식 전문인력 (E-7-S): E-7-S1 고소득자, E-7-S2 첨단산업분야 종사(예정)자
-    국내성장인력 (E-7-Y): 직종코드 9999
-    최우수인재 특정활동 (E-7-T): 최우수인재 첨단산업분야 종사자
+- applicant_context: |
+    E-7(특정활동) 자격으로 한국에서 일하려는 외국인. 직종별로 5개 트랙(E-7-1 전문인력, E-7-2 준전문인력, E-7-3 일반기능인력, E-7-4 숙련기능인력, E-7-S 네거티브 전문인력)과 E-7-Y(국내성장인력), E-7-T(최우수인재 첨단산업) 등으로 구분된다.
+- eligibility: |
+    한국표준직업분류에 따라 법무부 장관이 선정·고시한 94개 허용 직종에 종사 (예정)하는 자.
+    - 전문인력(E-7-1): 67개 직종 (관리자 15개, 전문가 및 관련종사자 52개)
+    - 준전문인력(E-7-2): 10개 직종 (사무 5개, 서비스 5개)
+    - 일반기능인력(E-7-3): 14개 직종 (조선용접공, 선박전기원 등)
+    - 숙련기능인력(E-7-4): 점수제 3개 직종 (뿌리산업체 숙련기능공, 농림축산어업 숙련기능인, 일반 제조업체 및 건설업체 숙련기능공)
+    - 네거티브 전문인력(E-7-S): 고소득자(E-7-S1) / 첨단산업분야 종사자(E-7-S2)
+    - 국내성장인력(E-7-Y) / 최우수인재 첨단산업분야 종사자(E-7-T)
+- target_persons: 94개 허용 직종 종사 (예정) 외국인
 - common_documents:
 - mandatory_documents:
 - other_documents:
@@ -5765,315 +4887,469 @@
 - duration_or_validity:
 - quota_or_limit:
 - score_criteria:
-- table_summary: 특정활동(E-7) 허용직종 94개 직종 분류표
-- table_rows:
+- table_summary: E-7 허용직종 94개 전체 분류(트랙별 직종 수와 코드)
+- table_rows: |
+    - 전문인력(E-7-1) 67개: 관리자 15개 / 전문가 및 관련종사자 52개
+    - 준전문인력(E-7-2) 10개: 사무종사자 5개 / 서비스종사자 5개
+    - 일반기능인력(E-7-3) 14개
+    - 숙련기능인력(E-7-4) 3개 (점수제)
+    - 네거티브 방식 전문인력(E-7-S): 고소득자→E-7-S1, 첨단산업 분야 종사(예정)자→E-7-S2
+    - 국내성장인력(E-7-Y) : 직종코드 9999
+    - 최우수인재 특정활동(E-7-T) : 첨단산업분야 종사자
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 특정활동, 94개 허용직종, 전문인력, 준전문인력, 일반기능인력, 숙련기능인력, E-7
+- source_page:
+- source_excerpt: |
+    <특정활동(E-7) 허용직종 현황> 94개
+    전문인력(E-7-1) ※ 67개 직종
+    준전문인력(E-7-2) ※ 10개 직종
+    일반기능인력(E-7-3) ※ 14개 직종
+    숙련기능인력(E-7-4) ※ 3개 직종
+    네거티브 방식 전문인력(E-7-S)
+    국내성장인력(E-7-Y)
+    최우수인재 특정활동(E-7-T)
+- related_visa_codes: E-7-1, E-7-2, E-7-3, E-7-4, E-7-S, E-7-S1, E-7-S2, E-7-Y, E-7-T, E-9, E-10, H-2, F-2-7, F-5-16
 - expected_questions: |
-    특정활동 비자에서 어떤 직종이 허용되나요?
-    제가 하려는 일이 E-7 직종에 포함되는지 어떻게 확인해요?
-    숙련기능인력은 어떤 직종이 해당돼요?
+    한국에서 전문직으로 일하려면 어떤 비자 받아요?
+    내 직업이 외국인 취업이 허용되는 직종인지 어떻게 확인해요?
+    숙련기능인력이랑 일반기능인력은 뭐가 달라요?
 
 ### row E-7 / 사증발급 / 요건
 - manual_type: 사증민원
 - visa_code: E-7
 - visa_name_ko: 특정활동
 - item_type: visa_rule
-- section_title: E-7-1 전문인력 / 관리자 직종 (1212~1522) 공통 심사기준
+- section_title: E-7-1 전문인력 / 관리자(직종코드 1212~1522) 공통 심사기준
 - subtype_or_program: E-7-1
 - petition_type: 사증발급
 - subsection_type: 요건
-- applicant_context: 직종코드 1212~1522 관리자 (경영지원, 교육, 보험금융, 문화·예술·디자인·영상, 정보통신, 기타 전문서비스, 건설·광업, 제품생산, 농림·축산·어업, 영업·판매, 운송, 숙박·여행·오락·스포츠, 음식서비스 관리자)
-- eligibility:
-- target_persons:
+- applicant_context: |
+    E-7-1 전문인력 중 '관리자' 직종(직종코드 1212 ~ 1522)으로 사증을 신청하는 외국인.
+- eligibility: |
+    원칙적으로 해당 기업의 본사 운영부서 관리자에 한함.
+- target_persons: 관리자 직종(직종코드 1212~1522) 종사자
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements: |
-    공통 심사기준:
-    - 기업의 운영부서 현황, 독립성, 운영부서 일반직원 수, 관리자(외국인) 임금수준 등을 고려하여 심사
-    - 원칙적으로 본사 운영부서 관리자에 한함
-    - 대기업 종사 관리자는 고용추천서 징구 면제 (2007.12.5. 규제개혁 장관회의 결정)
-    - 대기업/중소기업 구별은 중소기업기본법 시행령 제3조 및 별표 1
-    개별 직종 특례:
-    - 경제이익단체 고위임원(S110), 기업 고위임원(1120): 기업 자율성 존중, 학력·경력요건 없음
-    - 교육 관리자(1312): 학사 이상 + 관련 법령 교사 자격 및 경력 + 소정 절차에 따라 채용
-    - 보험·금융관리자(1320): 학사+경력 미흡해도 금융위원회 추천 시 실질심사 후 허가 (도입 불가: 대부 관련업체)
-    - 제품생산 관리자(1413) 국내복귀기업 특례: 산업통상부 선정 지원대상 국내복귀기업의 해외법인 근무 (학사 이상 6개월, 전문학사·기술자격증·수상경력·KOTRA KBC 경력확인 2년 이상), 업체당 고용허용인원은 내국인 피보험자(3개월 평균) 30% 이내
-    - 농림·축산·어업 관리자(14901) 농림기업 관리자: 별도요건(석사 이상 또는 학사+3년 경력)
-    - 음식서비스 관리자(1522): 전국 10개 이상 지점 또는 프렌차이즈 운영 요건
-    - 운송 관리자(1512) 선박관리전문가 특례: 선장·기관장·1등 항해사·기관사 승선경력자 1년 이상, 2·3등 5년 이상. 업체 요건: 해양수산부 등록 + 최근 3년 연평균 관리선박 10척 이상 + 선원임금 제외 외화수입 100만불 또는 매출 10억원 이상. 업체당 기본요건 당 1명씩 최대 5명
-    - 숙박·여행·오락·스포츠 관리자(1521): 여행업체·관광레저사업체 관리자는 관광사업등록증 사본 추가 (도입 불가: 여관 관리자)
-- procedure:
-- restrictions: 영업소장 등 영업·판매 관리자 도입 불가
-- exceptions: 대기업 관리자는 고용추천서 면제
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 본사 운영부서
-- recommendation_or_approval: 직종별 소관 부처장 고용추천 (중소기업 관리자에 한함)
-- expected_questions: |
-    기업 관리자로 한국 가려면 어떤 요건 충족해야 해요?
-    대기업 관리자도 고용추천서 받아야 하나요?
-    국내복귀기업의 관리자 채용은 별도 조건이 있나요?
-
-### row E-7 / 사증발급 / 요건
-- manual_type: 사증민원
-- visa_code: E-7
-- visa_name_ko: 특정활동
-- item_type: visa_rule
-- section_title: E-7-1 전문가 직종 (52개) 자격요건
-- subtype_or_program: E-7-1
-- petition_type: 사증발급
-- subsection_type: 요건
-- applicant_context: 전문가 및 관련 종사자 52개 직종 (생명과학·자연과학·사회과학·IT·공학·건축·간호·교육·법률·금융·기획·디자인·번역·통역·아나운서 등)
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements: |
-    일반 자격요건:
-    - 도입직종 연관 석사 이상 학위 또는
-    - 도입직종 연관 학사 + 1년 이상 경력 또는
-    - 도입직종 연관 5년 이상 경력
-    개별 직종별 특례:
-    - 생명과학 전문가(2111), 농림·임·축산학 분야: 별도요건
-    - 컴퓨터 하드웨어 기술자(2211) 국내복귀기업: 학사 6개월/전문학사·기술자격증·KOTRA KBC 경력확인 2년 이상 (업체당 30% 이내)
-    - 시스템 소프트웨어 개발자(2222) 베트남 SW인력 특례: 베트남 우수대학 졸업(예정)자가 중소벤처기업부 매년 선발 SW 교육과정 이수 후 중소·벤처기업 취업 시 1년 경력 면제 (2025~2026 시범운영)
-    - 외국인학교·외국교육기관·국제학교·영재학교 교사(2599): 관련 법령 자격 + 경력
-    - 간호사(2430): 한국 의료기사·간호조무사 등 면허 요건
-    - 금융·보험 전문가(272): 학위 없는 경력 5년 이상자도 가능 (학력 면제)
-    국내복귀기업 특례 적용 직종: 생명과학·컴퓨터 하드웨어·전기·전자·플랜트·로봇·자동차·조선·비행기·철도차량·가스·에너지·기계 기술자 등 (국내복귀기업 선정확인서 + 해외법인 경력)
+    - 해당 기업의 운영부서 현황, 독립성 및 해당 운영부서의 일반직원 수, 해당 관리자(외국인)의 임금수준 등을 고려하여 심사
+    - 원칙적으로 해당 기업의 본사 운영부서 관리자에 한함
 - procedure:
 - restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval: 직종별 소관 부처(산업통상자원부 KOTRA, 보건복지부, 농림축산식품부, 해양수산부, 중소벤처기업부, 국토교통부, 금융위원회, 문화체육관광부, 과학기술정보통신부 등)
-- expected_questions: |
-    IT 개발자로 한국 취업하려면 학력이 어느 정도 있어야 해요?
-    경력만 5년 있으면 학위 없어도 신청 가능해요?
-    국내복귀기업 채용은 어떤 특례가 있어요?
-
-### row E-7 / 사증발급 / 요건
-- manual_type: 사증민원
-- visa_code: E-7
-- visa_name_ko: 특정활동
-- item_type: visa_rule
-- section_title: E-7-2 준전문인력 / 직종별 세부심사 (10개 직종)
-- subtype_or_program: E-7-2
-- petition_type: 사증발급
-- subsection_type: 요건
-- applicant_context: 사무종사자 및 서비스 종사자
-- eligibility:
-- target_persons: |
-    사무종사자: 면세점·제주영어교육도시 판매 사무원(31215), 항공운송 사무원(31264), 호텔 접수 사무원(3922), 의료 코디네이터(S3922), 고객상담 사무원(3991)
-    서비스 종사자: 운송 서비스 종사자(431), 관광 통역 안내원(43213), 카지노 딜러(43291), 주방장 및 조리사(441), 요양보호사(42111)
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements: |
-    공통: 일반 요건 적용 + 임금요건 최저임금 이상 (일부는 GNI 0.8배 이상)
-    주방장 및 조리사(441): 외국인 요리사 별도 기준 (요리경연대회 입상 또는 자격증+경력 3~5년 또는 향토음식 경력 10년)
-    요양보호사(42111): 국내 전문학사 이상 + 요양보호사 자격증 + 한국어 (KIIP 3급 또는 사전평가 61점 또는 TOPIK 3급). 임금은 당해연도 최저임금 이상. 노인의료복지시설(장기요양기관지정서 기관기호 1)에서 근무. 시범운영기간 2024~2025년 연간 400명 한도
-    카지노 딜러: 별도 기준
-    관광 통역 안내원(43213): 관광통역안내사 자격증 필수
-    의료 코디네이터(S3922): 의료 관련 학위 + 한국어 능력
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: 체류기간 상한 2년 단수사증
-- quota_or_limit: 요양보호사 연간 400명 (2024~2025 시범운영). 일부 직종 업체당 국민고용 20% 이내
-- score_criteria:
-- table_summary: 주방장·조리사 외국인 요리사 추가 첨부서류 및 고용업체 기준 (안산 다문화마을·인천 차이나타운 특구 별도)
-- table_rows:
-- inviter_context:
-- recommendation_or_approval: 직종별 소관부처 고용추천 (관광통역안내원-문화체육관광부, 요양보호사-보건복지부 등)
-- expected_questions: |
-    요양보호사로 한국에서 일하려면 무슨 자격 필요해요?
-    호텔 프론트 직원 자격으로 한국 가려면 어떻게 해요?
-    외국인 요리사 비자 받으려면 경력이 얼마나 있어야 해요?
-
-### row E-7 / 사증발급 / 요건
-- manual_type: 사증민원
-- visa_code: E-7
-- visa_name_ko: 특정활동
-- item_type: visa_rule
-- section_title: E-7-3 일반기능인력 / 직종별 세부심사 (14개 직종)
-- subtype_or_program: E-7-3
-- petition_type: 사증발급
-- subsection_type: 요건
-- applicant_context: 일반기능 분야 14개 직종 종사자
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements: |
-    공통: 국내 체류 중 음주운전·폭행·절도 등 형사범죄경력 있을 시 사증발급인정서 발급 억제
-    동물사육사(61395): 일반 요건 적용, 국민고용 20% 한도
-    양식기술자(6301): 수산분야 학사 이상 또는 수산분야 전문학사+해당 양식기술 2년 이상 또는 5년 이상 경력. 해양수산부 등록업체. 임금 GNI 0.8배 이상. 도입 가능 품목: 해삼 외에 시범운영(어류·패류·갑각류·해조류·무척추동물). 1개 업체당 3명(시범운영 2명). 시범운영 2026.1.~2027.12. 연 200명
-    할랄 도축원(7103): 고등학교 이상 + 5년 이상 할랄 도축 경력 (자격증 소지자는 3년). KMF·해외 인증기관에서 할랄 도축장 인증 받은 업체. 매출 80억 이하 3명, 80억 초과 7명 이내
-    악기 제조·조율사(7303): 10년 이상 경력
-    조선 용접공(7406): 중급 이상 조선용접공 자격증 + 2년 이상 경력 + 현지 기량검증 통과. AWS·ASME·ISO·EN·국제선급협회 자격증. 조선업 전업률 50% 이상 + 매출 10억 + 상시근로자 10인 (소기업 면제) + 이탈자 없음. 국민고용 30% 이내. 임금 GNI 0.8배 (도입 3년차까지 2,515만원 완화). 사회통합프로그램 사전평가 21점 이상 또는 1단계 이수 또는 TOPIK 2급
-    선박 전기원(76212): 학사+1년 또는 전문학사+5년 경력. 기량검증 통과 시 경력 완화 (학사 면제, 전문학사 2년). 조선업체 GNI 0.8배 이상
-    선박 도장공(78369): 화학·화학공학·재료공학·조선공학·건축공학·자동차공학·기계공학 전문학사+5년 또는 학사+1년. 기량검증 통과 시 경력 완화
-    항공기 정비원(7521): 일반요건 적용, 국토교통부장관 고용추천 필수
-    항공기(부품) 제조원(S8417): 이공계 석사 이상 또는 이공계 학사+1년 또는 5년 경력. 매출 10억 + 상시근로자 10인 + 법 위반·이탈 없는 업체. 임금 GNI 0.8배. 시범운영 2024~2025 연 300명
-    송전 전기원(76231): 자격증+1년 또는 5년 경력. 기량검증 통과. 임금 월 350만원(연 4,200만원). 한국전력공사 송전공사 수주 건설업체. 시범운영 2024~2027 연 300명. 업체당 최대 30명
-    자동차 부품제조원(S85411): 이공계 학사 또는 전문학사+1년 또는 5년 경력 + 기량검증. 비수도권 300인 미만 사업장. 국민고용 30% 이내. 임금 GNI 0.7배. 시범운영 2025.10.~2027.9. 연 100명 (금형 40, 성형 30, 용접 30)
-    자동차 판금·도장원(S75104): 자동차 정비 관련 전문학사+3년 또는 5년 경력 + 기량검증. 종합정비업 등록 업체. 국민고용 20%. 임금 GNI 0.7배
-    건설기계(부품)제조원(S85513): 학위+경력+기량검증. 시범운영 2026.2.~2028.1. 연 100명. 한국건설기계산업협회 등 기량검증
-- procedure: |
-    조선업 등 사회통합프로그램: 입국 후 1년 이내 KIIP 사전평가 21점+2단계 배정 또는 1단계 이수 또는 TOPIK 2급 (유학생 특례 적용 대상자 면제). 미충족 시 6개월씩 최대 1년 연장
-    근무처 변경: 휴·폐업·경영악화·고용계약 만료 등 외국인 귀책사유 없을 때만 허용
-- restrictions: |
-    국내 체류 중 형사범죄경력 있을 시 발급 억제
-    동물사육사·항공기 정비원·일부 직종: 국민고용 20% 한도
-    자동차 부품제조원: 수도권(서울·경기·인천) 제외 비수도권 300인 미만 사업장만 허용
-    여러 직종에서 무단이탈자 발생 시 이탈일로부터 1~2년간 이탈 인원수 고용허용에서 공제
 - exceptions: |
-    유학생 특례 (조선·항공기·자동차·건설기계 등): 국내 대학 이공계 전문학사 이상 + 산업통상부 장관 고용추천 시 경력요건 면제 또는 자격변경 허용
-    소기업 특례: 조선업 소기업은 상시근로자 10인 요건 면제 + 최소 5명 + 연매출 20억당 1명 추가
-- fees:
-- duration_or_validity: 체류기간 상한 2년 단수사증
-- quota_or_limit: 직종별 시범운영 연간 쿼터 (양식 200, 항공기 부품 300, 송전 300, 자동차 부품 100, 건설기계 100 등)
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 직종별 인증·등록 업체
-- recommendation_or_approval: 필수 - 산업통상자원부, 해양수산부, 농림축산식품부, 국토교통부 등 직종별 소관 부처
-- expected_questions: |
-    조선업 용접공으로 한국 가려면 어떤 기량검증을 받아야 해요?
-    선박 도장공 자격증 없이 경력만으로 비자 받을 수 있어요?
-    한국에서 항공기 부품 제조에 취업하려면 어떤 학위가 필요해요?
-
-### row E-7 / 사증발급인정서 / 점수표
-- manual_type: 사증민원
-- visa_code: E-7
-- visa_name_ko: 특정활동
-- item_type: score_table
-- section_title: E-7-S2 첨단산업분야 네거티브 비자 점수표
-- subtype_or_program: E-7-S2
-- petition_type: 사증발급인정서
-- subsection_type: 점수표
-- applicant_context: 첨단산업분야 종사(예정)자 (반도체·바이오·디스플레이·신재생에너지 등 산업발전법 제5조 첨단기술)
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements: 점수 60점 이상 + 소득 GNI 1배 이상 + 첨단산업 분야 종사 + 제한 직종에 취업하지 않을 것
-- procedure:
-- restrictions: 사무종사 및 단순노무, 선량한 풍속에 반하는 업종, 국가안보 사유 제한 분야(뉴스통신사업자 대표이사 등) 취업 불가
-- exceptions: 국민고용 보호 심사 기준 비적용
+    대기업 종사 "관리자"에 대해서는 고용추천서 징구 면제(‘07.12.5. 규제개혁 장관회의 결정).
+    해당 직종별 고용추천기관을 적시한 경우는 대기업이 아닌 중소기업 종사 "관리자"에 한해 징구 가능.
 - fees:
 - duration_or_validity:
 - quota_or_limit:
-- score_criteria: |
-    [필수항목] 소득 (연령 연동, 최대 45점):
-    - 9,000만원 이상: 20-29세 45점, 35세 40점, 39세 35점, 40세+ 30점
-    - 8,000~9,000만원: 40/35/30/25점
-    - 7,000~8,000만원: 35/30/25/20점
-    - 6,000~7,000만원: 30/25/20/15점
-    - 5,000~6,000만원: 25/20/15/10점
-    - GNI 1배 이상~5,000만원: 20/15/10/0점
-    [미래기여 가능성]
-    연령 최대 20점: 20-29세 20, ~35세 15, ~39세 10, 40세+ 5
-    학력 최대 30점: 박사 첨단분야 30/일반 25, 석사 25/20, 학사 20/15, 전문학사 15/10
-    근무경력 최대 25점: 9년+ 25점, 7-9년 20점, 5-7년 15점, 3-5년 10점, 1-3년 5점 (첨단산업분야 정규직 경력만)
-    한국어 능력 최대 20점: TOPIK 5/4/3/2급 = 20/15/10/5점 또는 KIIP 5/4/3/2단계 = 20/15/10/5점 (높은 항목만)
-    국내 유학 경력 최대 20점: 박사 20, 석사 15, 학사 10, 전문학사 5점
-    [가점] 최대 40점:
-    - 우수대학 (Times 200/QS 500, 국내대학 포함) 10점
-    - KOTRA 고용추천 10점
-    - 중소·벤처기업 채용 10점
-    - 연구실적 (SCI/SCIE/SSCI/A&HCI 1편 이상, 제1저자/교신저자만) 10점
-- table_summary: E-7-S2 첨단산업 분야 네거티브 비자 점수표 (필수 소득 + 미래기여 + 가점)
+- score_criteria:
+- table_summary:
 - table_rows:
-- inviter_context:
-- recommendation_or_approval: KOTRA 고용추천 (가점)
+- inviter_context: 본사 운영부서가 있는 한국 내 기업(대기업/중소기업 구별)
+- recommendation_or_approval: |
+    대기업 종사 관리자는 고용추천서 면제. 중소기업 종사 관리자만 직종별 고용추천기관(예: 산업통상자원부 KOTRA, 중소벤처기업부 중소벤처기업진흥공단 등)의 추천서 징구 가능.
+- keywords: 특정활동, 관리자, 본사 운영부서, 고용추천서, 대기업 면제, E-7-1
+- source_page:
+- source_excerpt: |
+    ‣ 해당 기업의 운영부서 현황, 독립성 및 해당 운영부서의 일반직원 수, 해당 관리자 (외국인)의 임금수준 등을 고려하여 심사
+    ‣ 원칙적으로 해당 기업의 본사 운영부서 관리자에 한함
+    ‣ 대기업 종사 "관리자"에 대해서는 고용추천서 징구 면제(‘07.12.5. 규제개혁 장관회의 결정)
+    ‣ 해당 직종별 고용추천기관을 적시한 경우는 대기업이 아닌 중소기업 종사 "관리자"에 한해 징구 가능함을 유의
+- related_visa_codes:
 - expected_questions: |
-    첨단산업 분야 네거티브 비자 점수는 어떻게 계산되나요?
-    소득이 얼마 이상이면 점수가 높아요?
-    한국어 시험 잘 보면 점수 더 받을 수 있어요?
+    대기업 임원이면 고용추천서 안 받아도 되나요?
+    어떤 부서 관리자만 비자 받을 수 있어요?
+    중소기업 관리자도 비자 받을 수 있나요?
 
 ### row E-7 / 사증발급 / 대상
 - manual_type: 사증민원
 - visa_code: E-7
 - visa_name_ko: 특정활동
 - item_type: visa_rule
-- section_title: E-7-S 네거티브 방식 전문인력 비자
-- subtype_or_program: E-7-S
+- section_title: E-7-1 전문인력 / 국내복귀기업 특례
+- subtype_or_program: E-7-1
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context:
+- applicant_context: |
+    제품생산 관리자(1413), 생명과학 전문가(2111), 컴퓨터 하드웨어 기술자(2211), 전기공학 기술자(2341), 전자공학 기술자(2342) 등 일부 E-7-1 직종에 적용되는 국내복귀기업 특례.
 - eligibility: |
-    E-7-S1 고소득자: 소득이 전년도 1인당 국민총소득(GNI)의 3배 이상인 전문인력. 학력·경력·분야에 관계없이 E-7 발급
-    E-7-S2 첨단산업분야 종사자: 산업발전법 제5조 첨단 기술분야 종사(예정) 전문인력. 점수 60점 이상 + GNI 1배 이상 + 첨단산업 분야 + 제한 직종 미취업
+    '해외진출기업의 국내복귀 지원에 관한 법률' 제7조에 따라 산업통상자원부장관이 지원대상 국내복귀기업으로 선정한 기업의 해외법인에서 일정 기간 근무한 자.
+- target_persons: 국내복귀기업의 해외법인에 고용된 외국인 (관리자/전문가)
+- common_documents:
+- mandatory_documents: |
+    - 지원대상 국내복귀기업 선정확인서 (해외진출기업의 국내복귀 지원에 관한 법률 시행규칙 별지 제7호 서식)
+    - 경력증명서 (코트라 현지 KBC직원의 경력확인 또는 영사확인)
+- other_documents:
+- requirements: |
+    국내복귀기업의 해외법인에 고용된 자 중
+    - 관련 분야 학사 이상 학위 소지자: 6개월 이상 해외법인 근무 경력
+    - ①전문학사 소지자, ②해당 직종 기술 자격증, ③관련 수상 경력·언론보도 또는 ④코트라 현지 KBC직원의 경력확인을 받은 경력증명서가 있는 자: 2년 이상 해외법인 근무 경력
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit: 업체당 고용허용인원 = 고용보험 가입 내국인 피보험자(3개월 평균) 수의 30% 범위
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: 산업통상자원부장관 지정 국내복귀기업
+- recommendation_or_approval: 산업통상자원부장관(KOTRA) 고용추천서 필수
+- keywords: 국내복귀기업, 해외법인 근무경력, 코트라, 고용추천서, 30% 허용인원, E-7-1
+- source_page:
+- source_excerpt: |
+    - (자격요건) '해외진출기업의 국내복귀 지원에 관한 법률' 제7조에 따라 산업통상자원부장관이 지원대상 국내복귀기업으로 선정한 기업
+    - (생산관리자 자격요건) 국내복귀기업의 해외법인에 고용된 자 중 △관련 분야 학사 이상 학위 소지자는 6개월 △전문학사 소지자, 해당 직종 기술 자격증 또는 관련 수상 경력, 관련 언론보도 또는 코트라 현지 KBC직원의 경력확인을 받은 경력증명서가 있는 자는 2년 이상 국내 복귀기업 해외법인에서의 근무경력이 있어야 함
+    - (업체당 고용허용인원 기준) 고용보험 가입 내국인 피보험자(3개월 평균) 수의 30%를 범위 내에서 허용인원으로 산정
+- related_visa_codes:
+- expected_questions: |
+    해외에서 한국 회사 다녔는데 본사로 옮기면 비자 받을 수 있어요?
+    국내복귀기업 특례는 어떤 사람이 받아요?
+    경력 몇 년 있어야 인정되나요?
+
+### row E-7 / 사증발급 / 요건
+- manual_type: 사증민원
+- visa_code: E-7
+- visa_name_ko: 특정활동
+- item_type: visa_rule
+- section_title: E-7-1 전문가 / 시스템소프트웨어 개발자(2222) 베트남 SW인력 특례
+- subtype_or_program: E-7-1
+- petition_type: 사증발급
+- subsection_type: 요건
+- applicant_context: |
+    베트남 우수 대학교 졸업(예정)자가 중소·벤처기업의 시스템 소프트웨어 개발자 직무에 취업하려는 경우 특례.
+- eligibility:
+- target_persons: 베트남 우수 대학교 졸업(예정)자
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    베트남 우수 대학교 졸업(예정)자가 SW 교육과정을 이수한 후 중소·벤처기업 취업 시 '경력 1년 요건' 면제.
+    중소기업벤처기업부에서 매년 해외인력 취업 매칭 지원사업 운영사를 선발 후 확정 공고.
+- procedure:
+- restrictions:
+- exceptions: 경력 1년 요건 면제
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: 한국 내 중소·벤처기업
+- recommendation_or_approval: 중소기업벤처기업부 장관(청년정책과) 고용추천서 필수
+- keywords: 시스템 소프트웨어 개발자, 베트남 SW인력, 경력요건 면제, 중소벤처기업, E-7-1
+- source_page:
+- source_excerpt: |
+    - (베트남 SW인력 특례) 베트남 우수 대학교 졸업(예정)자가 SW 교육과정을 이수한 후 중소·벤처기업 취업 시 '경력 1년 요건' 면제
+    ‣(고용추천서 발급) 중소기업벤처기업부 장관(청년정책과) ※ 필수
+    ‣2년간 시범운영('25~ '26년)을 하되, 성과 등 분석 후 정식 시행여부 결정
+- related_visa_codes:
+- expected_questions: |
+    베트남에서 대학 나왔는데 한국에서 개발자로 일하면 경력 없어도 되나요?
+    SW 교육과정 이수하면 비자 받기 쉬워지나요?
+    이 특례는 누구한테 적용돼요?
+
+### row E-7 / 사증발급 / 요건
+- manual_type: 사증민원
+- visa_code: E-7
+- visa_name_ko: 특정활동
+- item_type: visa_rule
+- section_title: E-7-1 전문가 / 기계공학 기술자(2351) 고용허용인원 산정기준
+- subtype_or_program: E-7-1
+- petition_type: 사증발급
+- subsection_type: 요건
+- applicant_context: |
+    기계공학 기술자(2351) 직종으로 E-7 사증을 신청하는 외국인.
+- eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements: |
-    E-7-S1: 소득 GNI 3배 이상 + 제한 직종(사무종사·단순노무·풍속 위반·국가안보 사유 제한) 미취업
-    E-7-S2: 점수 60점 이상 + 소득 GNI 1배 이상 + 첨단산업 분야(반도체·바이오·디스플레이·신재생에너지 등) + 제한 직종 미취업
-    첨단산업분야 인정 기준: 산업발전법 제5조 및 「첨단기술 및 제품의 범위」(산업통상자원부 고시 제2022-36호) 3,043개 첨단기술·제품과 정확히 일치하는 분야 (필요 시 산업통상자원부 '첨단기술·제품 확인서' 확인)
+    국민고용 보호 심사기준 적용 대상.
+    - 단, 국내 E-9 자격으로 체류하였던 자가 5년 이상 경력요건으로 신청 시에는 학사학위 이상일 것.
+    - 고용추천서 발급 제도 폐지 (제도 남용에 따라).
 - procedure:
-- restrictions: 사무종사·단순노무 업종, 선량한 풍속 위반 업종, 국가안보 사유 제한 분야(뉴스통신사업자 대표이사 등)
-- exceptions: 국민고용 보호 심사 기준 비적용
+- restrictions: |
+    - 기간연장 심사 시 전년도 급여기록을 확인하여 임금요건, 업체요건 미충족 시 체류허가 제한.
+- exceptions:
 - fees:
 - duration_or_validity:
-- quota_or_limit:
-- score_criteria: E-7-S2는 60점 이상 충족 필요
-- table_summary:
-- table_rows:
+- quota_or_limit: |
+    상시근로자 5인 미만: 제한
+    상시근로자 5~10인: 1명
+    상시근로자 11~30인: 2명
+    상시근로자 30인 초과: 3명 (최대)
+- score_criteria:
+- table_summary: 기계공학 기술자 업체 상시근로자 수별 고용허용인원
+- table_rows: |
+    - 5인 미만 → 제한
+    - 5~10인 → 1명
+    - 11~30인 → 2명
+    - 30인 초과 → 3명 (최대)
 - inviter_context:
-- recommendation_or_approval:
+- recommendation_or_approval: 고용추천서 발급 제도 폐지
+- keywords: 기계공학 기술자, 고용허용인원, 상시근로자, 임금요건, E-7-1, 2351
+- source_page:
+- source_excerpt: |
+    ❍ (자격요건) 일반 기준 적용
+    - 단, 국내 E-9 자격으로 체류하였던 자가 5년 이상 경력요건으로 신청시에는 학사학위 이상일 것
+    ❍ (국민고용 보호 심사기준) 적용 대상
+    - (고용허용인원) 업체당 상시근로자 수에 따라 아래의 고용허용인원 산정기준 적용
+- related_visa_codes: E-9
 - expected_questions: |
-    네거티브 방식 전문인력 비자는 어떤 사람이 대상이에요?
-    연봉이 GNI 3배 이상이면 학력 없이도 비자 받을 수 있어요?
-    반도체·바이오 분야 종사자도 이 비자 받을 수 있나요?
+    기계공학 엔지니어로 한국에서 일하려면 회사 직원이 몇 명이어야 해요?
+    비전문취업으로 5년 일했으면 기계공학 비자 받을 수 있나요?
+    체류기간 연장할 때 뭘 확인해요?
 
-### row E-7 / 체류자격 변경 / 예외
+### row E-7 / 사증발급 / 대상
 - manual_type: 사증민원
 - visa_code: E-7
 - visa_name_ko: 특정활동
-- item_type: exception
-- section_title: E-7-S / 거주(F-2) 및 영주(F-5) 자격변경 특례
-- subtype_or_program: E-7-S
-- petition_type: 체류자격 변경
-- subsection_type: 예외
-- applicant_context:
+- item_type: visa_rule
+- section_title: E-7-2 준전문인력 / 요양보호사(42111)
+- subtype_or_program: E-7-2
+- petition_type: 사증발급
+- subsection_type: 대상
+- applicant_context: |
+    요양보호사 자격으로 한국 노인의료복지시설에 취업하려는 외국인.
 - eligibility: |
-    점수제 거주(F-2-7) 자격변경 특례:
-    - 대상: E-7-S 자격으로 국내 1년 이상 체류 + 현재 정상적으로 취업 활동 중
-    - 요건: E-7-S2 점수제 요건(60점 이상) 충족 (E-7-S1은 소득만 확인) + 사회통합프로그램 3단계 이상 이수 또는 배정
-    - 내용: 점수제 거주(F-2-7) 점수제 요건 적용 면제 (단, 품행·취업제한분야 미종사 등 점수제 외 요건 적용)
-    점수제 영주(F-5-16) 자격변경 특례:
-    - 대상: E-7-S에서 점수제 거주(F-2-7)로 자격 변경하여 국내 3년 이상 체류 + 현재 취업 중
-    - 요건: E-7-S1→F-2-7은 소득 요건(GNI 3배 이상) 충족, E-7-S2→F-2-7은 E-7-S2 점수제 요건(60점 이상) 충족
-    - 내용: E-7-S2→F-2-7 자격변경자 완화 생계유지 요건 적용 (GNI 2배→1배)
-- target_persons:
+    아래 요건 모두 충족 필요
+    - (학력) 국내 대학 전문학사 이상 학위 소지
+    - (자격증) 요양보호사 자격증 소지
+    - (한국어 능력) 사회통합프로그램(KIIP) 3급 이상 이수 또는 사전평가 61점 이상 또는 한국어능력시험(TOPIK) 3급 이상
+- target_persons: 요양보호사 (한국 노인의료복지시설 취업 예정자)
+- common_documents:
+- mandatory_documents: |
+    - 학위증
+    - 요양보호사 자격증
+    - 한국어능력 증빙서류
+- other_documents:
+- requirements: |
+    소득요건: 당해연도 최저임금 이상.
+    국민고용 보호 심사 일반 기준 적용 (업체당 고용인원 = 국민고용인원 대비 20% 한도).
+- procedure: |
+    사증발급인정서 발급 및 체류자격 변경 접수‧심사 → 본부(체류관리과)에 쿼터 배정 요청 → 쿼터 번호 발부 → 허가
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit: 시범운영기간('24~'25년) 중 연간 총 400명 범위 내 도입‧초청 허용
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: |
+    「노인복지법」에 따른 노인의료복지시설. 관할 시·군·구에서 발급한 장기요양기관지정서 (기관기호가 1로 시작하는 시설).
+- recommendation_or_approval:
+- keywords: 요양보호사, 노인의료복지시설, KIIP 3급, TOPIK 3급, 쿼터, E-7-2
+- source_page:
+- source_excerpt: |
+    ❍ (자격요건) 아래 요건 모두 충족 필요
+    - (학력) 국내 대학 전문학사 이상 학위 소지
+    - (자격증) 요양보호사 자격증 소지
+    - (한국어 능력) 사회통합프로그램(KIIP) 3급 이상 이수 또는 사전평가 61점 이상 또는 한국어능력시험(TOPIK) 3급 이상
+    ❍ (허용인원 상한) 시범운영기간('24~'25년) 중 연간 총 400명 범위 내 도입‧초청 허용
+- related_visa_codes:
+- expected_questions: |
+    한국 요양원에서 일하려면 어떤 자격이 필요해요?
+    한국어 시험은 어느 정도 점수가 필요해요?
+    요양보호사 자격증은 한국에서 따야 하나요?
+
+### row E-7 / 사증발급 / 요건
+- manual_type: 사증민원
+- visa_code: E-7
+- visa_name_ko: 특정활동
+- item_type: visa_rule
+- section_title: E-7-3 일반기능인력 / 조선용접공(7406, 舊7430)
+- subtype_or_program: E-7-3
+- petition_type: 사증발급
+- subsection_type: 요건
+- applicant_context: |
+    조선소·선박관련 블록제조업·조선 기자재 업체에서 조선분야 숙련용접공으로 취업하려는 외국인.
+- eligibility:
+- target_persons: 조선분야 숙련용접공 (Tig 용접, CO2 용접, 알곤용접, 취부용접, 용접사상)
+- common_documents:
+- mandatory_documents: |
+    - 국제선급회사 등 발급 자격증 (AWS·ASME·ISO·EN·KR·ABS·LR·DNVGL 등 발급 중급 이상 FCAW/GMAW/GTAW 자격증)
+    - 기량검증단 발급 기량검증확인서
+    - 학위증 (해당자)
+- other_documents:
+- requirements: |
+    중급 이상 조선용접공 자격증 취득 후 2년 이상 경력 + 산업부 지정기관(예: 조선해양플랜트협회)의 현지 기량검증 통과.
+    임금요건: 전년도 1인당 국민총소득(GNI)의 80% 이상 (도입 3년차까지 '2,515만원 이상('25년 기준)'으로 완화).
+- procedure: |
+    산업통상부 지정 기관(예: 조선해양플랜트협회)에서 기량검증단을 구성하여 조선 용접분야 현지 기량검증 실시 후 통과자들에게 기량검증 확인서 발급.
+- restrictions: |
+    고용업체 요건:
+    - 조선업 전업률 50% 이상 (산업부 지정기관 발행 확인서)
+    - 최근 1년간 연평균 매출액 10억원 이상
+    - 상시 근로자 10인 이상 (「중소기업기본법」 상 소기업은 면제)
+    - 최근 2년 이내 이탈자가 발생하지 않은 업체
+- exceptions: |
+    유학생 특례: 국내 대학에서 이공계 전문학사 이상 학위를 취득한 외국인 유학생이 조선업체 취업이 확정되고 산업통상자원부 장관의 고용추천을 받은 경우 체류자격 변경 허용.
+    산업부 지정기관의 강화된 기량 검증통과 시 경력증명서 제출 면제('25. 7. 1.부터 2년간 시범운영).
+- fees:
+- duration_or_validity: 체류기간 상한 2년의 단수사증
+- quota_or_limit: |
+    외국인 고용비율: 국민고용인원의 30% 범위 내.
+    소규모 조선업체 특례: 내국인 상시 근로자 수에 관계없이 최소 5명 + 연매출 20억 당 1명 추가.
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: 조선소, 선박관련 블록제조업, 조선 기자재 업체
+- recommendation_or_approval: 산업통상자원부장관(조선해양플랜트과) 고용추천서 필수
+- keywords: 조선용접공, 기량검증, AWS, GNI 80%, 조선해양플랜트협회, E-7-3
+- source_page:
+- source_excerpt: |
+    ❍ (자격요건) 중급이상 조선용접공 자격증 취득 후 2년 이상 경력 + 현지 기량검증 통과
+    - (용접자격증) 국내 조선소에서 일반적으로 통용되는 AWS 등의 기준을 적용하여 발급된중급이상의 FCAW, GMAW, GTAW 용접기술 분야의 자격증
+    - (임금요건) 전년도 1인당 국민총소득(GNI)의 80% 이상
+    ‣도입 3년차까지 '2,515만원 이상('25년 기준)'으로 완화된 임금요건 적용
+- related_visa_codes: E-9, E-10, H-2
+- expected_questions: |
+    조선소에서 용접공으로 일하려면 어떤 자격증이 필요해요?
+    한국 기량검증은 어디서 받아요?
+    유학생도 조선용접공으로 비자 바꿀 수 있나요?
+    월급은 얼마부터 받아야 비자 나와요?
+
+### row E-7 / 사증발급 / 대상
+- manual_type: 사증민원
+- visa_code: E-7
+- visa_name_ko: 특정활동
+- item_type: visa_rule
+- section_title: E-7-3 일반기능인력 / 항공기(부품) 제조원(S8417)
+- subtype_or_program: E-7-3
+- petition_type: 사증발급
+- subsection_type: 대상
+- applicant_context: |
+    항공기 및 부분품 제조·조립·도장·판금 등의 직무에 종사하려는 외국인.
+- eligibility: |
+    아래 요건 중 하나
+    - 이공계 석사 이상 학위 소지
+    - 이공계 학사 이상 학위 소지 + 해당분야 1년 이상 경력
+    - 해당분야 5년 이상 경력
+    학위 취득 후의 경력만 인정.
+- target_persons: 항공기구조물조립원, 항공기기계가공원, 항공기판금가공원, 항공기(부품)도장원, 항공용복합재료가공원 등
+- common_documents:
+- mandatory_documents: |
+    - 학위증
+    - 경력 증명서 (해외 발급 서류는 아포스티유 확인 또는 대한민국 공관의 영사확인 필수)
+- other_documents:
+- requirements: |
+    소득요건: 전년도 1인당 국민총소득(GNI)의 80% 이상.
+    국민고용 보호 심사기준: 일반 기준 적용. 업체당 고용인원 = 국민고용인원 대비 20% 한도.
+- procedure: |
+    사증발급인정서 발급 및 체류자격 변경 접수‧심사 → 본부(체류관리과)에 쿼터 배정 요청 → 쿼터 번호 발부 → 허가
+- restrictions:
+- exceptions: |
+    유학생 특례: 국내대학에서 이공계 전문학사 이상 학위를 취득한 외국인 유학생이 항공기(부품) 제조업체 취업이 확정되고 산업통상자원부 장관의 고용추천을 받은 경우 경력요건 면제.
+- fees:
+- duration_or_validity: 체류기간 상한 2년의 단수사증
+- quota_or_limit: 시범운영기간('24~'25년) 중 연간 총 300명 범위 내 도입‧초청 허용
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: |
+    항공기(부품) 제조업체로서 최근 1년간 연평균 매출액 10억 원 이상 + 상시 근로자 10인 이상 + 최근 2년 이내 법 위반 및 이탈자가 발생하지 않은 업체.
+- recommendation_or_approval: 산업통상자원부 장관(기계로봇항공과) 고용추천서 필수
+- keywords: 항공기 제조원, 이공계 학위, GNI 80%, 쿼터 300명, 유학생 특례, E-7-3
+- source_page:
+- source_excerpt: |
+    ❍ (자격요건) 아래 요건 중 하나를 충족하는 자
+    - 이공계 석사 이상 학위 소지
+    - 이공계 학사 이상 학위 소지 + 해당분야 1년 이상 경력
+    - 해당분야 5년 이상 경력
+    ❍ (소득요건) 전년도 1인당 국민총소득(GNI)의 80% 이상
+    ❍ (허용인원 상한) 시범운영기간('24~'25년) 중 연간 총 300명 범위 내 도입‧초청 허용
+- related_visa_codes:
+- expected_questions: |
+    항공기 부품 제조 회사에서 일하려면 어떤 학력이 필요해요?
+    유학생으로 한국 대학 졸업했는데 경력 없어도 되나요?
+    이 비자는 1년에 몇 명까지 뽑아요?
+
+### row E-7 / 사증발급 / 점수표
+- manual_type: 사증민원
+- visa_code: E-7
+- visa_name_ko: 특정활동
+- item_type: score_table
+- section_title: E-7-S2 첨단산업 분야 네거티브 비자 점수표
+- subtype_or_program: E-7-S2
+- petition_type: 사증발급
+- subsection_type: 점수표
+- applicant_context: |
+    첨단산업분야 종사(예정)자가 E-7-S2 자격으로 사증을 신청 시 적용되는 점수표 (60점 이상 충족 필요).
+- eligibility:
+- target_persons: E-7-S2 신청자
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
 - procedure:
 - restrictions:
-- exceptions: |
-    F-2-7 점수제 요건 적용 면제 (E-7-S 자격자)
-    F-5-16 영주 자격변경 시 생계유지 요건 완화 (E-7-S2→F-2-7)
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria: |
+    1. 필수항목 - 소득: 연령과 연동하여 최대 45점
+    2. 미래 기여 가능성 항목
+       - 2-1. 연령: 최대 20점 (20~29세 20점, ~35세 15점, ~39세 10점, 40세 이상 5점)
+       - 2-2. 학력: 최대 30점 (박사 첨단/2개 이상 30점, 박사 일반 25점, 석사 첨단 25점 등)
+       - 2-3. 근무 경력: 최대 25점 (9년 이상 25점 ~ 1~3년 미만 5점)
+       - 2-4. 한국어 능력: 최대 20점 (TOPIK 5급/KIIP 5단계 20점 ~ 5점)
+       - 2-5. 국내 유학 경력: 최대 20점 (박사 20점 ~ 전문학사 5점)
+    3. 가점 항목: 최대 40점 (우수대학 졸업자 10점, 코트라 고용추천 10점, 중소·벤처기업 채용 10점, 연구실적 가점 10점)
+    합격선: 60점 이상.
+- table_summary: E-7-S2 점수표 (필수+미래기여+가점 합산하여 60점 이상)
+- table_rows: |
+    - 소득 (45점) × 연령(20점) × 학력(30점) × 경력(25점) × 한국어(20점) × 국내유학(20점) × 가점(40점)
+    - 우수대학: Times Higher Education 200대 / QS 상위 500위 (국내대학도 인정)
+    - 연구실적: 최근 5년 이내 SCI·SCIE·SSCI·A&HCI 논문 1편 이상 게재(제1저자 또는 교신저자)
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 첨단산업 점수표, E-7-S2, 60점 이상, 우수대학, 연구실적, KOTRA 추천
+- source_page:
+- source_excerpt: |
+    첨단산업 분야 네거티브 비자 점수표
+    1. 필수항목
+    ❍ 소득 : 연령과 연동하여 최대 45점
+    2. 미래 기여 가능성 항목
+    2-1. 연령 : 최대 20점
+    2-2. 학력 : 최대 30점
+    2-3. 근무 경력 : 최대 25점
+    2-4. 한국어 능력 : 최대 20점
+    2-5. 국내 유학 경력 : 최대 20점
+    3. 가점 항목 : 최대 40점
+- related_visa_codes: E-7-S1, E-7-S, F-2-7, F-5-16
+- expected_questions: |
+    첨단산업 비자 점수가 몇 점이면 받을 수 있어요?
+    한국어 점수랑 학력이 어느 정도면 점수가 높아요?
+    우수대학 졸업하면 가점 받나요?
+
+### row E-7 / 사증발급 / 요건
+- manual_type: 사증민원
+- visa_code: E-7
+- visa_name_ko: 특정활동
+- item_type: visa_rule
+- section_title: E-7-S 네거티브 방식 전문인력 / E-7-S1 고소득자
+- subtype_or_program: E-7-S1
+- petition_type: 사증발급
+- subsection_type: 요건
+- applicant_context: |
+    학력·경력·분야에 관계없이 소득만 충족하면 E-7 사증을 받을 수 있는 고소득 전문인력 트랙.
+- eligibility: |
+    ① 소득이 전년도 1인당 국민 총소득(GNI)의 3배 이상일 것
+    ② 제한되는 직종(한국표준직업분류 상의 사무종사 및 단순노무 업종, 선량한 풍속에 반하는 업종 및 그 밖에 기타 관계 법령에서 국가 안보 등의 이유로 외국인의 취업을 제한하는 분야)에 취업하지 않을 것
+- target_persons: 고소득 전문인력
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions: |
+    한국표준직업분류 상 사무종사 및 단순노무 업종, 선량한 풍속에 반하는 업종, 국가 안보 등의 이유로 외국인 취업 제한 분야 (예: 뉴스통신사업자의 대표이사 등)는 제외.
+- exceptions:
 - fees:
 - duration_or_validity:
 - quota_or_limit:
@@ -6082,124 +5358,193 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: E-7-S1, 고소득자, GNI 3배, 네거티브 방식, 사무종사 제외, 특정활동
+- source_page:
+- source_excerpt: |
+    ❍ 고소득자(E-7-S1) : 학력, 경력, 분야에 관계없이 사증(E-7) 발급
+    - (자격요건, 사증발급 및 체류관리 기준) ①소득이 전년도 1인당 국민 총소득(GNI)의 3배 이상일 것 ②제한되는 직종에 취업하지 않을 것
+    - (국민고용 보호 심사 기준) 비적용
+- related_visa_codes: E-7-S2, F-2-7, F-5-16
 - expected_questions: |
-    네거티브 비자에서 거주 비자로 바꿀 때 점수제 안 따져도 돼요?
-    영주권으로 바꾸려면 어떤 조건 충족해야 해요?
-    E-7-S1에서 거주로 바꾸려면 소득이 얼마 이상이어야 하나요?
+    연봉이 높으면 학력 없어도 한국 비자 받을 수 있어요?
+    소득이 얼마나 돼야 고소득자 비자가 나와요?
+    어떤 직종은 이 비자로 일 못해요?
+
+### row E-7 / 사증발급 / 요건
+- manual_type: 사증민원
+- visa_code: E-7
+- visa_name_ko: 특정활동
+- item_type: visa_rule
+- section_title: E-7-S 네거티브 방식 전문인력 / E-7-S2 첨단산업분야 종사자
+- subtype_or_program: E-7-S2
+- petition_type: 사증발급
+- subsection_type: 요건
+- applicant_context: |
+    E-7 도입직종에 해당되지 않더라도 첨단산업 분야 종사 (예정)자에게 E-7-S 자격을 허용하는 트랙.
+- eligibility: |
+    ① 점수 요건을 60점 이상 충족
+    ② 소득이 전년도 1인당 국민총소득(GNI)의 1배 이상
+    ③ 첨단산업 분야(산업발전법 제5조에 따라 고시되는 첨단기술로 반도체, 바이오, 디스플레이, 신재생에너지 등)에 종사
+    ④ 제한되는 직종에 취업하지 않을 것
+- target_persons: 첨단산업 분야 종사 (예정) 전문인력
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    첨단산업분야 인정 기준: 산업발전법 제5조 및 「첨단기술 및 제품의 범위」(산업통상자원부 고시 제2022-36호)에 따른 3,043개 첨단기술‧제품과 정확히 일치하는 분야의 기술‧제품 등을 보유하였거나 그 분야에 직접 종사 중인 경우로 한정.
+    필요 시 산업통상자원부의 '첨단기술‧제품 확인서' 보유 여부 확인.
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria: 첨단산업 분야 네거티브 비자 점수표 60점 이상 (별도 행 참조)
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: E-7-S2, 첨단산업, 점수제 60점, GNI 1배, 반도체, 바이오, 디스플레이
+- source_page:
+- source_excerpt: |
+    ❍ 첨단산업분야 종사 예정자(E-7-S2) : E-7 도입직종에 해당되지 않는 경우에도 E-7-S 체류자격 허용 가능
+    - (자격요건, 사증발급 및 체류관리 기준) ①점수 요건을 60점 이상 충족하면서 ②소득이 전년도 1인당 국민총소득(GNI)의 1배 이상이고 ③첨단산업 분야에 종사할 것 ④제한되는 직종에 취업하지 않을 것
+- related_visa_codes: E-7-S1, F-2-7, F-5-16
+- expected_questions: |
+    반도체 같은 첨단산업 분야 종사자면 어떤 비자를 받을 수 있어요?
+    점수가 몇 점이어야 비자가 나와요?
+    내 분야가 첨단산업인지 어떻게 확인해요?
+
+### row E-7 / 체류자격 변경 / 예외
+- manual_type: 사증민원
+- visa_code: E-7
+- visa_name_ko: 특정활동
+- item_type: visa_rule
+- section_title: E-7-S → 거주(F-2-7) 및 영주(F-5-16) 자격취득 특례
+- subtype_or_program: E-7-S
+- petition_type: 체류자격 변경
+- subsection_type: 예외
+- applicant_context: |
+    E-7-S 자격에서 점수제 거주(F-2-7) 또는 점수제 영주(F-5-16)로 자격변경을 신청하는 외국인.
+- eligibility: |
+    점수제 거주(F-2-7) 특례
+    - (대상) E-7-S 자격으로 국내에서 1년 이상 체류했으며, 현재 정상적으로 취업 활동 중인 자
+    - (요건) ①E-7-S2 점수제 요건(60점 이상) 충족 (E-7-S1은 소득만 확인) ②사회통합프로그램 3단계 이상 이수 또는 배정
+    - (내용) 점수제 거주(F-2-7) 점수제 요건 적용 면제
+    점수제 영주(F-5-16) 특례
+    - (대상) E-7-S 자격에서 F-2-7로 자격 변경하여 국내에 3년 이상 체류했으며, 현재 취업 중인 자
+    - (요건) E-7-S1은 소득 요건(GNI 3배 이상) 충족, E-7-S2는 E-7-S2 점수제 요건(60점 이상) 충족
+    - (내용) E-7-S2에서 거주(F-2-7) 자격 변경한 자에 대해 완화된 생계유지 요건(GNI 2배 이상 → 1배 이상) 적용
+- target_persons: E-7-S → F-2-7 → F-5-16 자격변경 희망자
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions: |
+    단, 점수제 요건 외의 요건(품행, 취업제한분야에 종사한 사실이 없을 것 등)은 적용.
+- exceptions: 점수제 거주(F-2-7) 점수제 요건 적용 면제 / F-5-16 생계유지 요건 완화
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: E-7-S 특례, F-2-7, F-5-16, 점수제 면제, 사회통합프로그램, 자격변경
+- source_page:
+- source_excerpt: |
+    ❍ 점수제 거주(F-2-7) 자격변경에 대한 특례
+    - (대상) 네거티브 방식의 전문인력(E-7-S) 자젹으로 국내에서 1년 이상 체류했으며, 현재 정상적으로 취업 활동 중인 자
+    - (요건) ①E-7-S2 점수제 요건(60점 이상)을 충족하고(E-7-S1은 소득만 확인) ②사회통합프로그램 3단계 이상 이수 또는 배정
+    - (내용) 점수제 거주(F-2-7) 점수제 요건 적용 면제
+    ❍ 점수제 영주(F-5-16) 자격변경에 대한 특례
+- related_visa_codes: F-2-7, F-5-16, E-7-S1, E-7-S2
+- expected_questions: |
+    E-7-S로 1년 이상 살면 거주비자로 바꿀 수 있어요?
+    영주권으로 바꾸려면 어떤 조건이 필요해요?
+    사회통합프로그램은 몇 단계 이수해야 해요?
 
 ### row E-7 / 사증발급 / 쿼터
 - manual_type: 사증민원
 - visa_code: E-7
 - visa_name_ko: 특정활동
 - item_type: quota
-- section_title: E-7-4 숙련기능인력 / 유형별 선발계획표 (K-point E74)
+- section_title: 숙련기능인력(E-7-4) 선발계획표
 - subtype_or_program: E-7-4
 - petition_type: 사증발급
 - subsection_type: 쿼터
-- applicant_context:
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure: 사증발급인정서 발급 및 체류자격 변경 접수·심사 → 본부(체류관리과) 쿼터 배정 요청 → 쿼터 번호 발부 → 허가
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit: |
-    K-point E74 총 선발인원: 35,000명
-    - 기업추천 개인트랙: 12,000명 (34%)
-    중앙부처 추천 (32%):
-    - 고용부 제조업: 3,650명 (10%)
-    - 산업부 뿌리산업: 1,900명 (5%)
-    - 농림부 농축산업: 1,600명 (5%)
-    - 산업부 조선업: 1,600명 (5%)
-    - 해수부 어업·내항상선: 600명 (2%)
-    - 국토부 건설업: 300명 (1%)
-    - 중기부 제조업: 1,650명 (4%)
-    - 광역지자체 추천(17개 시도): 5,500명 (16%)
-    - 탄력배정 쿼터: 6,200명 (18%)
-- score_criteria:
-- table_summary: E-7-4 K-point 35,000명 선발 유형별 표
-- table_rows:
-- inviter_context:
-- recommendation_or_approval: 기업추천, 중앙부처(고용부·산업부·농림부·해수부·국토부·중기부), 광역지자체(17개 시도)
-- expected_questions: |
-    숙련기능인력 비자 한 해에 몇 명 뽑나요?
-    조선업 분야 쿼터는 얼마나 돼요?
-    지자체 추천으로 받는 인원도 있어요?
-
-<!-- end chunk: visa_010 -->
-
-
-<!-- vizabridge-normalize v1 chunk: visa_011 hash: 2c98f1f4e24e4c46 lines: 3862-4341 -->
-
-### row E-7 / 체류자격 변경 / 쿼터
-- manual_type: 사증민원
-- visa_code: E-7
-- visa_name_ko: 특정활동
-- item_type: quota
-- section_title: E-7-4 숙련기능인력 / K-point E74 쿼터 유형
-- subtype_or_program: E-7-4
-- petition_type: 체류자격 변경
-- subsection_type: 쿼터
 - applicant_context: |
-    현재 1년 이상 근무 중인 기업에서 추천을 받은 자
+    E-7-4 숙련기능인력 점수제로 자격변경을 신청하는 외국인.
 - eligibility:
-- target_persons: |
-    기업 추천 개인트랙, 중앙부처 추천(고용부·산업부·농식품부·해수부·국토부), 광역지자체 추천, 탄력 배정 쿼터 대상자
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements: |
-    기업 추천 개인트랙: 현재 1년 이상 근무 중인 기업의 추천을 받고 중앙부처·지자체 추천 없이 전환요건 점수 이상이면 신청 가능
-    추천 쿼터: 현재 1년 이상 근무 중인 기업 추천 + 중앙부처 또는 광역지자체 추천
-    광역지자체 추천: 1년 이상 해당 광역지자체 소재 기업 근무자, E-7-4 전환 후 2년 이상 해당 광역지자체에 체류지 유지
-    비수도권 특례 전환자는 4년 체류 요건과 상관없이 해당 업체 근무 및 의무 거주기간 3년
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit: |
-    탄력 배정 쿼터를 별도로 마련해 추가 배정이 필요한 분야에 탄력적으로 운영
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval: |
-    중앙부처(고용부·산업부·농식품부·해수부·국토부), 광역지자체, 고용기업 추천
-- expected_questions: |
-    숙련기능 비자로 전환할 때 쿼터가 어떻게 나뉘어 있어요?
-    회사 추천만 받아도 신청할 수 있나요 아니면 부처 추천이 꼭 필요해요?
-    지방에서 일하면 추천 받기 더 쉬워요?
-
-### row E-7 / 체류자격 변경 / 절차
-- manual_type: 사증민원
-- visa_code: E-7
-- visa_name_ko: 특정활동
-- item_type: visa_rule
-- section_title: E-7-4 숙련기능인력 / 신청 일정 및 방법
-- subtype_or_program: E-7-4
-- petition_type: 체류자격 변경
-- subsection_type: 절차
-- applicant_context:
-- eligibility:
-- target_persons:
+- target_persons: E-7-4 신청자 (E-9, E-10, H-2 자격에서 자격변경 대상)
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
 - procedure: |
-    일정: 연중 상시 접수
-    방법: 하이코리아 전자민원 온라인 접수 원칙(www.hikorea.go.kr 공지사항 참고)
-    신청 5부제: 출생 연도 끝자리에 따른 신청 요일 지정
-    - 끝자리 1·6: 월, 2·7: 화, 3·8: 수, 4·9: 목, 5·0: 금
-    고령자, 격오지, 첨부서류 과다자 등 관할기관장이 판단해 대면 접수가 불가피한 경우에만 예외적으로 대면 접수 허용
-    하이코리아 전자민원 신청 가능 시간: 평일 오전 7시~오후 10시 (문의 1345)
-    업로드 파일: 2MB 이하 jpg·bmp·png·tif·pdf, 증명사진은 95KB 이하 jpg
+    - (기업 추천 개인트랙) 현재 1년 이상 근무 중인 기업의 추천을 받은 자로서 중앙부처·지자체 추천 없이 전환요건 점수 이상이면 신청 가능
+    - (추천 쿼터) 현재 1년 이상 근무 중인 기업의 추천을 받은 자로서 중앙부처, 광역지자체 추천을 받으면 신청 가능
+    - (중앙부처 추천) 고용부, 산업부, 농식품부, 해수부, 국토부에서 추천
+    - (광역지자체 추천) 1년 이상 해당 광역지자체 소재 기업에서 근무 중인 자 중 추천을 희망하는 각 광역지자체에서 추천 (E-7-4 전환 후 2년 이상 해당 광역지자체에 체류지를 계속 두고 있어야 함). 단, 4년 체류 요건과 상관없이 비수도권 특례로 전환된 경우 의무 거주기간 3년.
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit: |
+    전체 선발인원 35,000명 (K-point E74)
+    - 기업 추천 개인트랙: 12,000명 (34%)
+    - 중앙부처 추천: 9,650명 (32%)
+      · 고용부 제조업: 3,650명 (10%)
+      · 산업부 뿌리산업: 1,900명 (5%)
+      · 농림부 농축산업: 1,600명 (5%)
+      · 산업부 조선업: 1,600명 (5%)
+      · 해수부 어업·내항상선: 600명 (2%)
+      · 국토부 건설업: 300명 (1%)
+      · 중기부 제조업: 1,650명 (4%)
+    - 광역지자체 추천(17개 시도): 5,500명 (16%)
+    - 탄력 배정 쿼터: 6,200명 (18%)
+- score_criteria:
+- table_summary: E-7-4 숙련기능인력 35,000명 선발계획 (트랙별 쿼터)
+- table_rows: |
+    - 기업 추천 개인트랙 12,000 / 중앙부처 추천 9,650 / 광역지자체 추천 5,500 / 탄력 배정 6,200 (합계 35,000)
+- inviter_context: 1년 이상 근무 중인 기업
+- recommendation_or_approval: 기업 추천 + 중앙부처/광역지자체 추천 또는 개인트랙
+- keywords: E-7-4, 숙련기능인력, K-point E74, 35000명, 광역지자체 추천, 쿼터
+- source_page:
+- source_excerpt: |
+    1 선발인원 : 35,000명
+    < 숙련기능인력(E-7-4) 유형별 선발계획표 >
+    K-point E74 35,000 12,000 3,650 1,900 1,600 1,600 600 300 1,650 5,500 6,200
+    ○ 기업 추천 개인트랙 : 현재 1년 이상 근무 중인 기업의 추천을 받은 자로써 중앙부처·지자체 추천 없이 전환요건 점수 이상이면 신청 가능
+    ○ 추천 쿼터 : 현재 1년 이상 근무 중인 기업의 추천을 받은 자로써 중앙부처, 광역지자체 추천을 받으면 신청 가능
+- related_visa_codes: E-9, E-10, H-2
+- expected_questions: |
+    E-7-4 숙련기능인력 1년에 몇 명까지 뽑아요?
+    회사 추천만 받아도 신청할 수 있어요?
+    지자체 추천 받으려면 어디서 일해야 해요?
+
+### row E-7 / 사증발급 / 대상
+- manual_type: 사증민원
+- visa_code: E-7
+- visa_name_ko: 특정활동
+- item_type: visa_rule
+- section_title: E-7-Y 국내성장인력 / E-7-T 최우수인재 특정활동
+- subtype_or_program: E-7-Y, E-7-T
+- petition_type: 사증발급
+- subsection_type: 대상
+- applicant_context: |
+    E-7 트랙 중 E-7-Y(국내성장인력)와 E-7-T(최우수인재 특정활동) 약호.
+- eligibility:
+- target_persons: |
+    - E-7-Y (국내성장인력): 세부 약호 E-7-Y, 직종 코드 9999(국내성장취업).
+    - E-7-T (최우수인재 특정활동): 최우수인재 첨단산업분야 종사자.
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
 - restrictions:
 - exceptions:
 - fees:
@@ -6210,67 +5555,85 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: E-7-Y, E-7-T, 국내성장인력, 국내성장취업, 최우수인재, 첨단산업
+- source_page:
+- source_excerpt: |
+    국내성장인력(E-7-Y)
+    - 세부 약호 : E-7-Y(국내성장인력)
+    - 직종 코드 : 9999(국내성장취업)
+    최우수인재 특정활동(E-7-T)
+    최우수인재 첨단산업분야 종사자 => E-7-T
+- related_visa_codes: E-7-S, E-7-S2
 - expected_questions: |
-    숙련기능 자격 변경은 어디서 신청해요?
-    온라인 신청할 때 무슨 요일에 해야 해요?
-    파일 첨부할 때 용량 제한이 어떻게 돼요?
+    국내성장인력 비자(E-7-Y)는 어떤 사람을 위한 건가요?
+    최우수인재 비자(E-7-T)는 누구한테 주는 거예요?
+
+<!-- end chunk: visa_010 -->
+
+
+<!-- vizabridge-normalize v1 chunk: visa_011 hash: 2c98f1f4e24e4c46 lines: 3862-4341 -->
 
 ### row E-7 / 체류자격 변경 / 요건
 - manual_type: 사증민원
 - visa_code: E-7
 - visa_name_ko: 특정활동
-- item_type: visa_rule
-- section_title: E-7-4 숙련기능인력 / 신청 대상 외국인 요건
+- item_type: stay_status_rule
+- section_title: K-point E74 / 숙련기능인력(E-7-4) 신청 대상 외국인 기본 요건
 - subtype_or_program: E-7-4
 - petition_type: 체류자격 변경
 - subsection_type: 요건
 - applicant_context: |
-    현재 E-9, E-10, H-2 자격으로 한국에 등록되어 정상 근로 중인 외국인 근로자
+    E-9, E-10, H-2 자격으로 한국에서 4년 이상 일한 외국인이 숙련기능인력(E-7-4)로 자격변경을 신청하는 경우의 기본 요건. K-point E74 시스템.
 - eligibility: |
-    최근 10년간 E-9·E-10·H-2 자격으로 4년 이상 체류한 등록외국인으로 현재 근무처에서 정상 근로 중
-    비수도권(서울·경기·인천 제외)에서 3년 이상 체류 중인 자가 광역지자체 추천을 받은 경우 포함
-- target_persons:
+    아래 요건 모두 충족 필요
+    ① 최근 10년간 E-9, E-10, H-2 자격으로 4년 이상 체류한 現 등록외국인으로 현재 근무처에서 정상 근로 중인 자 (신청 당시 현재 근무처에서 외국인등록을 하고 합법적으로 근무 중일 것)
+    - 비수도권(서울‧경기‧인천 제외 전 지역)에서 3년 이상 체류 중인 자가 광역지자체 추천을 받은 경우도 해당
+    ② 현재 근무처에서 연봉 2,600만원 이상으로 향후 2년 이상 E-7-4 고용계약 (농‧축산업, 어업‧내항상선 종사자는 연봉 2,500만원 이상으로 완화)
+    ③ 현재 1년 이상 근무 중인 기업의 추천을 받은 자
+    ④ 점수제 총점 300점에서 가점 포함 최소 200점 이상자 (기본항목의 평균소득과 한국어능력이 각각 최소 50점 이상)
+    - 최근 2년 연간 평균소득이 2,500만원 이상이고, 한국어능력이 TOPIK 2급 또는 사회통합프로그램 2단계 이수완료 또는 사회통합프로그램 사전평가 3단계 배정(41점) 이상일 것
+    - 한국어 외의 다른 요건을 충족할 경우 최초 연장(2년)시까지 한국어 능력 보완할 것을 조건으로 한시적 유예 시행(~26. 12. 31.)
+- target_persons: 숙련기능인력(E-7-4) 자격변경 신청자
 - common_documents:
 - mandatory_documents:
 - other_documents:
-- requirements: |
-    ① 최근 10년간 E-9·E-10·H-2 자격으로 4년 이상 체류 + 현재 근무처에서 정상 근로 중
-    ② 현재 근무처에서 연봉 2,600만원 이상으로 향후 2년 이상 E-7-4 고용계약(농·축산업, 어업·내항상선 종사자는 2,500만원 이상)
-    ③ 현재 1년 이상 근무 중인 기업의 추천(상시근로자 수의 20% 범위 내 추천, 현재 E-9·E-10 고용 기업은 최소 1명 추천 가능)
-    ④ 점수제 총점 300점 중 가점 포함 최소 200점 이상(기본항목 평균소득·한국어능력 각각 50점 이상)
-    최근 2년 연간 평균소득 2,500만원 이상(농·축산·어업·내항상선 2,400만원 이상)
-    한국어능력: TOPIK 2급 또는 사회통합프로그램 2단계 이수 또는 사전평가 3단계 배정(41점) 이상
-    한국어 요건 한시적 유예(~2026.12.31.): 다른 요건 충족 시 최초 연장(2년)까지 보완 조건으로 유예
-    2년 내 한국어 미충족 시 가족초청 불가 및 이후 체류기간 6개월만 부여
+- requirements:
 - procedure:
 - restrictions:
 - exceptions:
 - fees:
 - duration_or_validity:
 - quota_or_limit:
-- score_criteria: |
-    점수제 총점 300점 만점(가점 제외), 가점 포함 200점 이상 득점 필요
+- score_criteria: 점수제 총점 300점 중 200점 이상 (평균소득·한국어 각 최소 50점)
 - table_summary:
 - table_rows:
-- inviter_context: |
-    상시근로자(4대 사회보험 명부 3개월 이상 등재된 국민·취업가능 외국인) 수의 20% 이내에서 추천
-- recommendation_or_approval: |
-    고용기업 추천(필수 + 가점), 중앙부처 추천 또는 광역지자체 추천은 선택(중복 시 하나만 인정)
+- inviter_context: 현재 1년 이상 근무 중인 기업
+- recommendation_or_approval: 고용기업 추천(필수) / 중앙부처 또는 광역지자체 추천(선택)
+- keywords: K-point E74, 숙련기능인력, 자격변경, 4년 체류, 200점, 연봉 2600만원
+- source_page:
+- source_excerpt: |
+    ① 최근 10년간 E-9, E-10, H-2 자격으로 4년 이상 체류한 現 등록외국인으로 현재 근무처에서 정상 근로 중인 자
+    ② 현재 근무처에서 연봉 2,600만원 이상으로 향후 2년 이상 E-7-4 고용계약
+    ③ 현재 1년 이상 근무 중인 기업의 추천을 받은 자
+    ④ 점수제 총점 300점에서 가점 포함 최소 200점 이상자[기본항목의 평균소득과 한국어능력이 각각 최소 점수(50점) 이상인 자에 한함]
+- related_visa_codes: E-9, E-10, H-2
 - expected_questions: |
-    비숙련에서 숙련으로 바꿀 때 몇 년 일해야 돼요?
-    연봉이 얼마 이상이어야 신청할 수 있어요?
-    한국어 능력 시험은 어느 정도 점수면 돼요?
+    비전문취업으로 4년 이상 일했는데 숙련기능인력으로 바꿀 수 있어요?
+    연봉이 얼마부터 받아야 자격변경이 되나요?
+    점수가 몇 점 이상이어야 신청할 수 있어요?
+    한국어 시험 점수 기준이 얼마예요?
 
 ### row E-7 / 체류자격 변경 / 점수표
 - manual_type: 사증민원
 - visa_code: E-7
 - visa_name_ko: 특정활동
 - item_type: score_table
-- section_title: E-7-4 숙련기능인력 / 「K-point E74」 점수표
+- section_title: K-point E74 점수표 (E-7-4 점수표)
 - subtype_or_program: E-7-4
 - petition_type: 체류자격 변경
 - subsection_type: 점수표
-- applicant_context:
+- applicant_context: |
+    K-point E74 점수표. 기본항목(평균소득·한국어·나이) + 가점(추천·근속·인구감소지역·자격증·운전면허) + 감점.
 - eligibility:
 - target_persons:
 - common_documents:
@@ -6284,34 +5647,55 @@
 - duration_or_validity:
 - quota_or_limit:
 - score_criteria: |
-    전환요건 점수: 300점 만점(가점 제외) 중 200점 이상(가점 포함) 득점
-    기본항목 - Ⓐ 평균소득(최근 2년 연간 평균) 최대 120점: 2,500~3,000만 50점 / 3,000~3,500만 65점 / 3,500~4,000만 80점 / 4,000~4,500만 95점 / 4,500~5,000만 110점 / 5,000만~ 120점 (농·축산·어업·내항상선은 2,400만원 이상 적용)
-    기본항목 - Ⓑ 한국어능력 최대 120점: 2급/2단계/41~60점 → 50점, 3급/3단계/61~80점 → 80점, 4급/4단계/81점 이상 → 120점
-    기본항목 - Ⓒ 나이 최대 60점: 19~26세 40점, 27~33세 60점, 34~40세 30점, 41세~ 10점
-    가점: 추천 중 고용기업 30점, 중앙부처 30점, 광역지자체 50점 / 현근무처 3년 이상 근속 20점 / 인구감소지역·읍면지역 3년 이상 근무 20점 / 자격증 또는 국내 학위 20점 / 국내 운전면허증 10점 (①~⑥ 중복 가능, ①의 중앙부처와 광역지자체 추천은 하나만 인정)
-    감점(신청일 기준 10년 이내, 최대 50점): 벌금 100만원 미만 형 1회 5점·2회 10점·3회 이상 20점(최대 20점) / 체납 체류허가 제한 1회 5점·2회 10점·3회 이상 15점(최대 15점) / 출입국관리법 3회 이하 위반 행정처분 1회 5점·2회 10점·3회 이상 15점(최대 15점)
-    한국어 한시적 유예 대상자는 한국어 외 점수 요건 충족(총점 150점 이상) 시 신청 가능
-- table_summary: |
-    K-point E74 점수표: 기본항목(평균소득·한국어·나이) + 가점(추천·근속·지역·자격증·면허) - 감점(벌금·체납·법위반)
-- table_rows:
+    [기본항목]
+    Ⓐ 평균소득(최근 2년 연간 평균): 최대 120점 (2,500~3,000만 50점 / 3,000~3,500만 65점 / 3,500~4,000만 80점 / 4,000~4,500만 95점 / 4,500~5,000만 110점 / 5,000만~ 120점). 농‧축산업·어업‧내항상선은 2,400만원부터 적용.
+    Ⓑ 한국어능력: 최대 120점 (TOPIK 2급/사통 2단계/41~60점 → 50점, TOPIK 3급/사통 3단계/61~80점 → 80점, TOPIK 4급/사통 4단계/81점 이상 → 120점)
+    Ⓒ 나이: 최대 60점 (19~26세 40점, 27~33세 60점, 34~40세 30점, 41세~ 10점)
+    [가점] (①~⑥ 간 중복 가능, ①의 중앙부처 vs 광역지자체 추천은 하나만 인정)
+    ① 추천: 고용기업 30 / 중앙부처 30 / 광역지자체 50
+    ③ 현근무처 3년 이상 근속: 20
+    ④ 인구감소지역 및 읍·면지역 3년 이상 근무: 20
+    ⑤ 자격증 또는 국내 학위: 20
+    ⑥ 국내 운전면허증: 10
+    [감점] 최대 50점 이내
+    ① 벌금 100만원 미만의 형 (1회 5점, 2회 10점, 3회 이상 20점, 최대 20점)
+    ② 체납으로 체류허가 제한 (1회 5점, 2회 10점, 3회 이상 15점, 최대 15점)
+    ③ 출입국관리법 3회 이하 위반 행정처분 (1회 5점, 2회 10점, 3회 이상 15점, 최대 15점)
+    전환요건: 300점 만점(가점 제외) 중 200점 이상(가점 포함) 득점.
+- table_summary: K-point E74 점수표 (기본 300점 + 가점 150점 - 감점 50점, 합격선 200점)
+- table_rows: |
+    - 평균소득 50~120점 / 한국어 50~120점 / 나이 10~60점
+    - 추천 가점: 고용기업 30 + 중앙부처 30 또는 광역지자체 50 + 근속 20 + 인구감소·읍면 20 + 자격증/학위 20 + 운전면허 10
+    - 감점: 벌금/체납/출입국관리법 위반 각 최대 15~20점
 - inviter_context:
-- recommendation_or_approval: |
-    추천 가점: 고용기업 30, 중앙부처 30, 광역지자체 50 (중앙·광역 중복 시 하나만 인정)
+- recommendation_or_approval:
+- keywords: K-point E74, 점수표, 평균소득, 한국어능력, 인구감소지역, 가점 감점
+- source_page:
+- source_excerpt: |
+    Ⓐ 평균소득 (최근 2년 연간 평균소득) : 최대 120점
+    Ⓑ 한국어능력 : 최대 120점
+    Ⓒ 나이 : 최대 60점
+    < 가점 >
+    추천(고용기업체/중앙부처/광역지자체) / 현근무처 3년 이상 근속 / 인구감소지역 및 읍·면지역 3년 이상 근무 / 자격증 또는 국내 학위 / 국내 운전면허증
+    < 감점 >
+    ① 벌금 100만원 미만의 형을 받은 자(최대20점)
+- related_visa_codes: E-9, E-10, H-2
 - expected_questions: |
-    숙련기능 점수제는 어떻게 점수가 매겨져요?
-    몇 살일 때 점수가 제일 높아요?
-    벌금 받은 적 있으면 점수 얼마나 깎여요?
+    점수표에서 한국어로 몇 점까지 받을 수 있어요?
+    인구감소지역에서 일하면 몇 점이 더해져요?
+    벌금 받은 게 있으면 감점이 얼마나 되나요?
 
 ### row E-7 / 체류자격 변경 / 제한
 - manual_type: 사증민원
 - visa_code: E-7
 - visa_name_ko: 특정활동
 - item_type: restriction
-- section_title: E-7-4 숙련기능인력 / 제외 대상
+- section_title: K-point E74 / 제외 대상 (E-7-4 자격변경 불허 사유)
 - subtype_or_program: E-7-4
 - petition_type: 체류자격 변경
 - subsection_type: 제한
-- applicant_context:
+- applicant_context: |
+    K-point E74 신청 시 아래 항목 중 하나라도 해당하면 자격변경 불가 (①, ③, ④는 최근 10년 이내 사항만 해당).
 - eligibility:
 - target_persons:
 - common_documents:
@@ -6320,15 +5704,12 @@
 - requirements:
 - procedure:
 - restrictions: |
-    아래 항목 중 하나라도 해당하면 불가(①·③·④는 최근 10년 이내 사항만 해당)
     ① 벌금 100만원 이상의 형을 받은 자
-    ② 조세 체납자(완납 시 신청 가능)
+    ② 조세 체납자 (완납 시 신청 가능)
     ③ 출입국관리법 4회 이상 위반자
     ④ 불법체류 경력 3개월 이상인 자
     ⑤ 대한민국의 이익이나 공공의 안전 등을 해치는 행동을 할 염려가 있다고 인정할 만한 자
-    ⑥ 경제질서·사회질서·선량한 풍속을 해치는 행동을 할 염려가 있다고 인정할 만한 자
-    고용기업이 시행 이후 임금체불, 폭행 등 인권침해 또는 외국인 불법고용 발생 시 즉시 추천권 박탈 및 향후 5년간 추천 불허
-    세금(국세·지방세) 체납 사실 있는 업체는 고용기업에서 제외
+    ⑥ 경제질서 또는 사회질서를 해치거나 선량한 풍속 등을 해치는 행동을 할 염려가 있다고 인정할 만한 자
 - exceptions:
 - fees:
 - duration_or_validity:
@@ -6338,82 +5719,157 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: K-point E74 제외, 벌금 100만원, 불법체류, 출입국관리법 위반, 자격변경 제한
+- source_page:
+- source_excerpt: |
+    다. 제외 대상 : 아래 항목 중 하나라도 해당하면 불가(①,③,④는 최근 10년 이내 사항만 해당)
+    ① 벌금 100만원 이상의 형을 받은 자
+    ② 조세 체납자(완납 시 신청 가능)
+    ③ 출입국관리법 4회 이상 위반자
+    ④ 불법체류 경력 3개월 이상인 자
+- related_visa_codes:
 - expected_questions: |
-    벌금 받은 적이 있는데 숙련기능으로 바꿀 수 있어요?
-    세금 밀린 적 있으면 신청 안 돼요?
-    불법체류한 적이 있는데 신청 가능해요?
+    불법체류한 적 있으면 숙련기능인력 비자 못 받아요?
+    벌금형 받았으면 신청이 안 되나요?
+    세금 안 냈으면 어떻게 해야 해요?
 
-### row E-7 / 체류자격 변경 / 기간
+### row E-7 / 체류자격 변경 / 요건
 - manual_type: 사증민원
 - visa_code: E-7
 - visa_name_ko: 특정활동
 - item_type: visa_rule
-- section_title: E-7-4 숙련기능인력 / 행정 사항
+- section_title: K-point E74 / 고용기업(사업장) 요건
 - subtype_or_program: E-7-4
 - petition_type: 체류자격 변경
-- subsection_type: 기간
-- applicant_context:
+- subsection_type: 요건
+- applicant_context: |
+    K-point E74를 통해 E-7-4 외국인을 고용하려는 사업장의 요건.
+- eligibility: |
+    현재 E-9·E-10·H-2를 1명 이상 정상적으로 고용하고 있는 기존 숙련기능 점수제 적용 사업장 → 3개 체류자격(E-9·E-10·H-2) 중 어느 하나에 해당되는 외국인을 현재 고용하고 있는 사업장일 것.
+- target_persons: E-7-4 외국인 고용 사업장
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions: |
+    세금(국세, 지방세) 체납 사실 있는 업체는 제외.
+- exceptions: |
+    (특례) 인구감소지역, 뿌리산업은 국민고용 인원의 50% 이내까지 허용.
+    건설업의 경우 "시공능력평가액이나 연평균 공사금액 중 택 1" × 0.4 (1억당 0.4명 고용) 내에서 고용 가능.
+- fees:
+- duration_or_validity:
+- quota_or_limit: |
+    허용 인원: 현재 해당 사업장 국민고용인원의 30% 이내.
+    국민고용인원 = 고용보험가입자명부에 최저임금을 충족하는 3개월 이상 등재된 인원.
+    E-7-4 이외의 E-7·E-9·E-10·H-2 및 F-2, F-4, F-5, F-6는 외국인 고용인원에서 제외.
+    허용 계산값의 소수점 이하는 올림, 현재 E-9 및 E-10 외국인 근로자를 고용 중인 기업은 최소 1명(인구감소지역, 뿌리산업은 2명) 고용 가능.
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: 한국 내 사업장 (제조업/건설업/농어업 등)
+- recommendation_or_approval: 고용기업 추천서 발급 (붙임 9)
+- keywords: K-point E74 고용업체, 국민고용 30%, 인구감소지역, 뿌리산업 50%, 건설업 1억당 0.4명
+- source_page:
+- source_excerpt: |
+    가. 기본 요건 : 현재 E-9·E-10·H-2를 1명 이상 정상적으로 고용하고 있는 기존 숙련기능 점수제 적용 사업장
+    나. 허용 인원 : 현재 해당 사업장 국민고용인원의 30% 이내
+    - (특례) 인구감소지역, 뿌리산업은 국민고용 인원의 50% 이내
+    - (다른 자격 외국인 고용인원 포함 여부) E-7-4 이외의 E-7· E-9·E-10·H-2 및 F-2, F-4, F-5, F-6는 외국인 고용인원에서 제외
+- related_visa_codes: E-9, E-10, H-2, F-2, F-4, F-5, F-6
+- expected_questions: |
+    회사에 외국인 몇 명까지 뽑을 수 있어요?
+    인구감소지역에 있는 회사는 더 많이 뽑을 수 있어요?
+    세금 안 낸 회사는 신청 못 해요?
+
+### row E-7 / 체류자격 변경 / 절차
+- manual_type: 사증민원
+- visa_code: E-7
+- visa_name_ko: 특정활동
+- item_type: visa_rule
+- section_title: K-point E74 / 신청 일정 및 방법
+- subtype_or_program: E-7-4
+- petition_type: 체류자격 변경
+- subsection_type: 절차
+- applicant_context: |
+    K-point E74 신청 방법과 일정.
 - eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents:
 - other_documents:
-- requirements: |
-    허가 내용: 체류자격 변경만 허용(신규 비자발급 대상 아님)
-- procedure:
-- restrictions:
+- requirements:
+- procedure: |
+    (일정) 연중 상시 접수
+    (방법) 하이코리아 전자민원을 통한 온라인 접수 원칙. 하이코리아 홈페이지(www.hikorea.go.kr) 공지사항(신청방법) 참고.
+    (신청 5부제) 신청인의 출생 연도 끝자리에 따른 신청 요일 지정
+    - 월: 1, 6
+    - 화: 2, 7
+    - 수: 3, 8
+    - 목: 4, 9
+    - 금: 5, 0
+    하이코리아 전자민원 신청 가능 시간은 평일 오전 7시 ~ 오후 10시.
+    업로드 파일: 2MB 이하 jpg, bmp, png, tif, pdf. 증명사진은 95KB 이하 jpg만.
+- restrictions: |
+    고령자, 격오지, 첨부서류 과다자 등 관할기관장이 판단해 대면 접수가 불가피한 경우에만 예외적으로 대면 접수 허용.
 - exceptions:
-- fees: |
-    일반적인 자격변경 수수료 적용(전자민원 감면 포함)
-- duration_or_validity: |
-    1회 부여 체류기간 2년 이내(고용계약 범위 내)
-    잔여 여권 유효기간이 6개월 미만인 경우 1회에 한해 확인서 징구 후 여권 유효기간을 6개월로 간주하여 체류기간 부여(단, 고용계약기간은 2년 이상)
-    신원보증기간이 2년보다 짧으면 체류기간 2년 부여 불가
-    시행일: 2024.11.27.(수)
+- fees:
+- duration_or_validity:
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: K-point E74 신청, 하이코리아 전자민원, 신청 5부제, 출생연도 끝자리, 연중 상시
+- source_page:
+- source_excerpt: |
+    ○ (일정) 연중 상시 접수
+    ○ (방법) 하이코리아 전자민원을 통한 온라인 접수 원칙
+    - (신청 5부제) 신청인의 출생 연도 끝자리에 따른 신청 요일 지정
+    신청 가능 요일 월 화 수 목 금
+    출생 연도 끝자리 1, 6 2, 7 3, 8 4, 9 5, 0
+- related_visa_codes:
 - expected_questions: |
-    숙련기능으로 바꾸면 한 번에 얼마나 머물 수 있어요?
-    여권 유효기간이 얼마 안 남았는데 어떻게 해요?
-    수수료는 얼마예요?
+    숙련기능인력 자격변경은 언제 신청할 수 있어요?
+    온라인으로 어떻게 신청해요?
+    내 생일에 따라 신청 요일이 정해져 있어요?
 
 ### row E-7 / 체류자격 변경 / 제출서류
 - manual_type: 사증민원
 - visa_code: E-7
 - visa_name_ko: 특정활동
 - item_type: required_documents
-- section_title: E-7-4 숙련기능인력 / 제출 서류 목록
+- section_title: K-point E74 / 제출 서류 목록
 - subtype_or_program: E-7-4
 - petition_type: 체류자격 변경
 - subsection_type: 제출서류
-- applicant_context:
+- applicant_context: |
+    K-point E74 자격변경 신청 시 제출하는 서류 목록.
 - eligibility:
 - target_persons:
-- common_documents: |
-    - 통합신청서(별지34호) (외국인 본인)
-    - 여권사본 인적사항면 (외국인 본인)
+- common_documents:
 - mandatory_documents: |
-    - 점수제 자체 심사표(붙임7 양식) (외국인 본인)
-    - 신상 기술서(붙임8 양식) (외국인 본인)
-    - 표준근로계약서 E-7-4 계약서 (외국인 본인)
-    - 세무서 발행 소득금액증명원 최근 2년간 평균소득 확인용 (외국인 본인)
-    - 한국어능력 입증서류 (TOPIK은 점수표 제출, 사회통합프로그램 이수·사전평가 점수는 이수증·성적표 제출 생략)
-    - 신원보증서(별지129호) 고용주가 신원보증인 (외국인 본인)
-    - 사업자등록증 사본 또는 농업경영체등록(국립농산물품질관리원) (현재 근무처)
-    - 납세증명서, 지방세납세증명서 기업 세금체납 여부 확인용 (현재 근무처)
-    - 4대 보험 가입자 명부(고용보험 가입자 명부) 또는 농업경영체등록, 공사금액입증 서류(건설업) (현재 근무처)
-    - 고용기업 추천서(붙임9) 및 추천자 신분증 사본 (현재 근무처)
+    [필수 서류 - 모든 신청자]
+    1. (외국인 본인) 통합신청서(별지34호), 여권사본(인적사항면)
+    2. (외국인 본인) 점수제 자체 심사표(붙임7 양식)
+    3. (외국인 본인) 신상 기술서(붙임8 양식)
+    4. (외국인 본인) 표준근로계약서 : E-7-4 계약서 제출
+    5. (외국인 본인) 세무서 발행 소득금액증명원 (최근 2년간 평균소득 확인용)
+    6. (외국인 본인) 한국어능력 입증서류
+    7. (외국인 본인) 신원보증서(별지129호) → 고용주가 신원보증인
+    8. (현재 근무처) 사업자등록증 사본 또는 농업경영체등록
+    9. (현재 근무처) 납세증명서, 지방세납세증명서 (기업의 세금체납 여부 확인용)
+    10. (현재 근무처) 4대 보험 가입자 명부(고용보험 가입자 명부) 또는 농업경영체등록, 공사금액입증 서류(건설업에 한함)
+    11. (현재 근무처) 고용기업 추천서(붙임9) 및 추천자 신분증 사본
 - other_documents: |
-    - 국내 자격증 사본 (가점 해당자만)
-    - 국내 학위증 사본 (가점 해당자만)
-    - 국내 운전면허증 사본 (가점 해당자만)
-    - 뿌리기업 확인서 (뿌리기업만)
-    - 원청확인서 또는 기자재업체확인서 (조선업만)
-    - 내항여객운송사업면허증 또는 내항화물운송사업등록증 (내항정기운송사업만)
+    [추가 서류 - 해당자에 한해 제출]
+    1. (외국인 본인) 국내 자격증 사본 (가점 해당자만)
+    2. (외국인 본인) 국내 학위증 사본 (가점 해당자만)
+    3. (외국인 본인) 국내 운전면허증 사본 (가점 해당자만)
+    4. (현재 근무처) 뿌리기업 확인서 (뿌리기업만 해당)
+    5. (현재 근무처) 원청확인서 또는 기자재업체확인서 (조선업만 해당)
+    6. (현재 근무처) 내항여객운송사업면허증 또는 내항화물운송사업등록증 (내항정기운송사업만 해당)
 - requirements:
 - procedure:
 - restrictions:
@@ -6426,10 +5882,63 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: K-point E74 제출서류, 통합신청서, 소득금액증명원, 표준근로계약서, 고용기업 추천서
+- source_page:
+- source_excerpt: |
+    □ 필수 서류 : 모든 신청자 반드시 제출
+    1. (외국인 본인) 통합신청서(별지34호), 여권사본(인적사항면)
+    2. (외국인 본인) 점수제 자체 심사표(붙임7 양식)
+    3. (외국인 본인) 신상 기술서(붙임8 양식)
+    4. (외국인 본인) 표준근로계약서 : E-7-4 계약서 제출
+    5. (외국인 본인) 세무서 발행 소득금액증명원(최근 2년간 평균소득 확인용)
+    6. (외국인 본인) 한국어능력 입증서류
+- related_visa_codes:
 - expected_questions: |
-    숙련기능 자격변경할 때 어떤 서류를 내요?
-    회사에서 어떤 서류를 같이 준비해줘야 해요?
-    자격증 있으면 따로 제출해야 돼요?
+    숙련기능인력 신청할 때 어떤 서류를 내야 해요?
+    소득은 어떤 서류로 증명해요?
+    회사 쪽에서는 뭐를 준비해야 해요?
+
+### row E-7 / 체류자격 변경 / 기간
+- manual_type: 사증민원
+- visa_code: E-7
+- visa_name_ko: 특정활동
+- item_type: visa_rule
+- section_title: K-point E74 / 행정사항 (허가 기간·수수료·시행일)
+- subtype_or_program: E-7-4
+- petition_type: 체류자격 변경
+- subsection_type: 기간
+- applicant_context: |
+    K-point E74 자격변경 허가 후 부여 기간과 수수료 등 행정사항.
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions: |
+    허가 내용: 체류자격 변경만 허용 (신규 비자발급 대상 아님).
+- exceptions:
+- fees: 일반적인 자격변경 수수료 적용 (전자민원 감면 포함)
+- duration_or_validity: 1회 부여 체류 기간 2년 이내 (고용계약 범위 내)
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: K-point E74 행정사항, 체류기간 2년, 자격변경 수수료, 시행일자, 2024-11-27
+- source_page:
+- source_excerpt: |
+    ○ 허가 내용 : 체류자격 변경만 허용(신규 비자발급 대상 아님)
+    - (허가 기간) 1회 부여 체류 기간 2년 이내(고용계약 범위 내)
+    ○ 수수료 : 일반적인 자격변경 수수료 적용(전자민원 감면 포함)
+    ○ 시행 일자 : '24. 11. 27.(수)
+- related_visa_codes:
+- expected_questions: |
+    숙련기능인력으로 자격 바꾸면 몇 년 머물 수 있어요?
+    신규 비자로도 받을 수 있어요?
+    수수료는 얼마예요?
 
 <!-- end chunk: visa_011 -->
 
@@ -6441,11 +5950,12 @@
 - visa_code: E-7
 - visa_name_ko: 특정활동
 - item_type: visa_rule
-- section_title: E-7-4 숙련기능인력 / 추천 절차 안내
+- section_title: K-point E74 / 추천 절차 (중앙부처·광역지자체·고용기업)
 - subtype_or_program: E-7-4
 - petition_type: 체류자격 변경
 - subsection_type: 절차
-- applicant_context:
+- applicant_context: |
+    K-point E74 추천을 받기 위한 세 가지 경로 (중앙부처 / 광역지방자치단체 / 고용기업) 절차 안내.
 - eligibility:
 - target_persons:
 - common_documents:
@@ -6453,11 +5963,77 @@
 - other_documents:
 - requirements:
 - procedure: |
-    중앙부처 추천: 고용기업 추천자 중 부처별 지정된 영역에 한해 추천 가능, 추천 명단을 주 단위로 법무부(체류관리과)에 공문 송부, 외국인은 별도 추천서 제출 없이 자체심사표에 추천 여부 표시
-    부처별 영역: 고용부·중기부 → 제조업, 산업부 → 뿌리산업·조선업, 농식품부 → 농축산업, 해수부 → 어업·내항상선, 국토부 → 건설업
-    광역지자체 추천: 1년 이상 해당 광역지자체 소재 기업에 근무 중인 외국인을 추천, E-7-4 전환 후 2년간 해당 광역지자체에 체류(비수도권 특례 전환자는 의무기간 3년)
-    17개 광역지자체 중 추천 희망 지자체가 추천(산하 기초지자체 추천 취합), 직종(영역) 상관없이 E-7-4 전환 가능 영역 추천
-    고용기업 추천: 현재 1년 이상 근무 중인 기업의 대표가 추천, 기업 직종(영역)에 맞게 추천, E-7-4 신청 시 추천서 및 추천자 신분증 사본 직접 제출
+    [중앙부처 추천]
+    - '고용기업 추천자' 중 부처별 지정된 영역에 한해 추천 가능
+    - 추천 명단을 주 단위로 법무부(체류관리과)로 공문 송부 → 외국인 본인은 별도로 추천서를 제출할 필요 없고 자체심사표에 추천 여부 표시
+    - 부처-영역: 고용부 제조업 / 산업부 뿌리산업·조선업 / 농식품부 농축산업 / 해수부 어업·내항상선 / 국토부 건설업 / 중기부 제조업
+    [광역지방자치단체 추천]
+    - '고용기업 추천자' 중 1년 이상 해당 광역지자체 소재 기업에 근무 중인 외국인을 추천 (E-7-4 전환 후 2년간 해당 광역지자체에서 계속 체류해야 함, 비수도권 특례 전환자는 의무거주 3년)
+    - 17개 광역지자체 중 추천을 희망하는 광역지자체가 추천. 산하 기초지자체의 추천을 취합해 쿼터 범위 내에서 추천.
+    - 추천은 직종(영역)에 상관없이 E-7-4 전환 가능 영역 추천
+    - 추천 명단을 주 단위로 법무부(체류관리과)로 공문 송부
+    [고용기업 추천]
+    - 현재 1년 이상 근무 중인 기업의 대표가 추천
+    - 추천은 해당 기업 직종(영역)에 맞게 추천
+    - 외국인이 E-7-4 신청 시 추천서 및 추천자 신분증 사본을 직접 제출
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary: K-point E74 부처별 추천 영역과 소관 부서
+- table_rows: |
+    - 고용부 외국인력담당관실 044-202-7737 → 제조업
+    - 산업부 산업공급망정책과 044-203-4907 → 뿌리산업
+    - 산업부 조선해양플랜트과 044-203-4333 → 조선업
+    - 농식품부 농업경영정책과 044-201-1720 → 농축산업
+    - 해수부 소득복지과 044-200-6013 → 어업
+    - 해수부 선원정책과 044-200-5744 → 내항상선·연근해어업(20톤 이상)
+    - 국토부 건설산업과 044-201-3546 → 건설업
+    - 중기부 인력정책과 044-204-7450 → 제조업
+- inviter_context:
+- recommendation_or_approval: 중앙부처/광역지자체/고용기업 3종 추천 트랙
+- keywords: K-point E74 추천절차, 중앙부처 추천, 광역지자체 추천, 고용기업 추천, 의무거주
+- source_page:
+- source_excerpt: |
+    중앙부처 추천
+    ㅇ 아래 ' 고용기업 추천자' 중 부처별 지정된 영역에 한 해 추천 가능
+    ㅇ 추천 명단을 주 단위로 법무부(체류관리과)로 공문 송부
+    광역지방자치단체 추천
+    ㅇ 아래 ' 고용기업 추천자' 중 1년 이상 해당 광역지자체 소재 기업에 근무 중인 외국인을 추천[해당 외국인은 E-7-4 전환 후 2년간 해당 광역지자체에서 계속 체류(주소)해야 함]
+    고용기업 추천
+    ㅇ 현재 1년 이상 근무 중인 기업의 대표가 추천
+- related_visa_codes:
+- expected_questions: |
+    중앙부처 추천이랑 지자체 추천 중 어디로 받아야 해요?
+    추천 받으면 추천서를 직접 제출해야 해요?
+    지방에서 일하다가 자격 바꾸면 그 지방에 계속 살아야 해요?
+
+### row E-7 / 체류자격 변경 / 제출서류
+- manual_type: 사증민원
+- visa_code: E-7
+- visa_name_ko: 특정활동
+- item_type: required_documents
+- section_title: K-point E74 / 한국어능력 입증 참고 (KIIP·TOPIK)
+- subtype_or_program: E-7-4
+- petition_type: 체류자격 변경
+- subsection_type: 제출서류
+- applicant_context: |
+    K-point E74 점수표의 한국어능력 항목을 입증하는 시험 안내.
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents: |
+    - 사회통합프로그램 사전평가(KIIP TEST) 성적표 — www.kiiptest.org
+    - 사회통합프로그램 이수증 — www.socinet.go.kr
+    - 한국어능력시험(TOPIK) 성적표 — www.topik.go.kr
+- requirements:
+- procedure: |
+    KIIP 사전평가 PBT(전국동시) 차수별 일정 운영. 광명·대전 CBT센터는 주중 수시 평가 후 평균 2일 후 결과발표.
+    - 광명: 매주 월·화·수·금
+    - 대전: 매주 금·토·일·월
 - restrictions:
 - exceptions:
 - fees:
@@ -6467,37 +6043,49 @@
 - table_summary:
 - table_rows:
 - inviter_context:
-- recommendation_or_approval: |
-    추천 유형 3종: 중앙부처 추천(부처별 영역 한정), 광역지자체 추천(17개 시·도), 고용기업 추천(현 근무 기업 대표)
-    중앙부처 연락처: 농식품부 농업경영정책과 044-201-1720, 산업부 조선해양플랜트과 044-203-4333 / 산업공급망정책과 044-203-4907, 고용부 외국인력담당관실 044-202-7737, 국토부 건설산업과 044-201-3546, 해수부 소득복지과 044-200-6013 / 선원정책과 044-200-5744, 중기부 인력정책과 044-204-7450
-    광역지자체 소관 부서 연락처: 서울 경제정책과 02-2133-5214, 부산 경제정책과 051-888-4374, 인천 디아스포라유산과 032-440-1563, 대구 고용노동정책과 053-803-3245, 광주 외국인주민과 062-613-3072, 울산 경제정책관 052-229-2743, 세종 기업지원과 044-300-4813, 경기 외국인정책과 031-8030-4662, 경남 경제인력과 055-211-3404, 경북 외국인공동체과 054-880-4550, 충남 일자리노동정책과 041-635-3414, 전남 인구청년정책관 061-286-2571, 전북 대외협력과 063-280-2116·2082, 충북 인구청년정책담당관 043-220-4792, 강원 균형발전과 033-249-2197, 제주 고용센터 064-710-4408~10, 대전 일자리경제과 042-270-4592
+- recommendation_or_approval:
+- keywords: K-point E74 한국어, KIIP, 사전평가, TOPIK, 광명 CBT, 대전 CBT
+- source_page:
+- source_excerpt: |
+    □ 사회통합프로그램 사전평가(KIIP TEST)
+    ㅇ 평가 홈페이지 : www.kiiptest.org
+    □ 사회통합프로그램 이수(KIIP)
+    ㅇ 법무부 사회통합정보망 : www.socinet.go.kr
+    □ 한국어능력시험(TOPIK)
+    ㅇ 토픽 홈페이지 : www.topik.go.kr
+- related_visa_codes:
 - expected_questions: |
-    숙련기능 비자 전환할 때 어느 부처에 추천받아야 해요?
-    회사 추천 말고 지자체에서도 추천을 받을 수 있어요?
-    추천서를 받으면 직접 제출해야 하나요 아니면 부처가 보내주나요?
+    한국어 시험은 어디서 봐요?
+    KIIP 사전평가는 어떤 사이트에서 신청해요?
+    광명이나 대전 평가장은 자주 시험 봐요?
 
-### row E-7 / 체류자격 변경 / 요건
+### row E-7 / 체류자격 변경 / 제출서류
 - manual_type: 사증민원
 - visa_code: E-7
 - visa_name_ko: 특정활동
-- item_type: visa_rule
-- section_title: E-7-4 숙련기능인력 / 한국어능력 입증
+- item_type: required_documents
+- section_title: K-point E74 / 고용계약서(E-7-4용) 요구사항
 - subtype_or_program: E-7-4
 - petition_type: 체류자격 변경
-- subsection_type: 요건
-- applicant_context:
+- subsection_type: 제출서류
+- applicant_context: |
+    K-point E74 신청 시 제출하는 E-7-4용 표준 근로계약서 작성 요건.
 - eligibility:
 - target_persons:
 - common_documents:
-- mandatory_documents:
+- mandatory_documents: |
+    - 근로계약서(Labor Contract): 사용자(업체명·소재지·대표자·사업자등록번호) + 근로자(성명·생년월일·본국주소)
 - other_documents:
 - requirements: |
-    한국어능력 입증 가능 시험·이수 과정
-    사회통합프로그램 사전평가(KIIP TEST): 평가 홈페이지 www.kiiptest.org, PBT 전국동시 평가는 연중 다수 차수 운영, 광명·대전 CBT센터는 주 4회 평가 후 평균 2일 후 결과발표
-    광명 CBT: 매주 월·화·수·금 평가
-    대전 CBT: 매주 금·토·일·월 평가
-    사회통합프로그램 이수(KIIP): 법무부 사회통합정보망 www.socinet.go.kr 교육일정 확인
-    한국어능력시험(TOPIK): 토픽 홈페이지 www.topik.go.kr 평가일정 확인
+    1. 근로계약기간: 계약기간이 최소 2년 이상 (E-7-4 전환 요건)
+    2. 근로장소: 계약서에서 정한 장소 외에서 근로 금지
+    3. 업무내용: 업종, 사업내용, 직무내용 구체적으로 기재
+    4. 근로시간 / 5. 휴게시간 / 6. 휴일
+    7. 임금: 연봉 2,600만원 이상 (E-7-4 전환 요건). 기본급·고정수당·상여금 기재. 연장·야간·휴일근로는 통상임금 50% 가산(상시근로자 4인 이하 사업장 제외)
+    8. 임금지급일 / 9. 지급방법 (사용자는 근로자 명의 통장·도장 관리 금지)
+    10. 숙식제공 (제공 시 유형·근로자 부담금액 명시)
+    11. 사용자·근로자는 근로계약·취업규칙·단체협약을 지키고 성실하게 이행
+    12. 본 계약에서 정하지 않은 사항은 「근로기준법」에 따름
 - procedure:
 - restrictions:
 - exceptions:
@@ -6509,343 +6097,435 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: K-point E74 근로계약서, 2년 이상 계약, 연봉 2600만원, 표준 근로계약, E-7-4
+- source_page:
+- source_excerpt: |
+    1. 근로계약기간 - 년 월 일 ~ 년 월 일
+    ※(E-7-4 전환 요건) 계약기간이 최소 2년 이상 되어야 함
+    7. 임금 1) 월 임금 ( )원, ※(E-7-4 전환 요건) 연봉 2,600만원 이상 되어야 함
+    2) 연장, 야간, 휴일근로에 대해서는 통상임금의 50%를 가산하여 수당 지급(상시근로자 4인 이하 사업장에는 해당되지 않음)
+    9. 지급방법 ※ 사용자는 근로자 명의로 된 예금통장 및 도장을 관리해서는 안 됨.
+- related_visa_codes:
 - expected_questions: |
-    한국어 실력은 어디서 시험을 봐야 인정이 돼요?
-    사회통합프로그램 사전평가는 어디서 신청해요?
-    CBT 평가는 며칠에 한 번씩 열려요?
+    숙련기능인력 비자 계약서는 몇 년으로 써야 해요?
+    연봉을 얼마부터 적어야 비자가 나와요?
+    야간 근로하면 수당이 얼마나 붙어요?
+
+### row E-7 / 체류자격 변경 / 예외
+- manual_type: 사증민원
+- visa_code: E-7
+- visa_name_ko: 특정활동
+- item_type: visa_rule
+- section_title: K-point E74 / 여권 유효기간 짧을 때 확인서 처리
+- subtype_or_program: E-7-4
+- petition_type: 체류자격 변경
+- subsection_type: 예외
+- applicant_context: |
+    K-point E74 신청 시 잔여 여권 유효기간이 6개월 미만인 경우 처리.
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: |
+    잔여 여권 유효기간이 6개월 미만인 경우, 1회에 한하여 붙임10의 확인서 징구 후 여권 유효기간을 6개월로 간주하여 체류기간을 부여 (단, 고용계약기간은 2년 이상 되어 있어야 함).
+    붙임10의 확인서는 전자민원 신청의 필요증빙서류 목록 중 '21. 기타' 항목에 첨부.
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 여권 유효기간, 6개월 미만, 확인서 1회 한정, E-7-4 전환
+- source_page:
+- source_excerpt: |
+    9. 잔여 여권 유효기간이 짧은 경우 어떻게 해야 하나요?
+    ⇒ 잔여 여권 유효기간이 6개월 미만인 경우, 1회에 한하여 붙임10의 확인서 징구 후 여권 유효기간을 6개월로 간주하여 체류기간을 부여합니다. (단, 고용계약기간은 2년이상 되어있어야 함)
+- related_visa_codes:
+- expected_questions: |
+    여권 유효기간이 얼마 안 남았는데 자격변경 신청할 수 있어요?
+    여권을 새로 만들어야 해요?
 
 <!-- end chunk: visa_012 -->
 
 
 <!-- vizabridge-normalize v1 chunk: visa_013 hash: 76c0e8c88603a959 lines: 4642-4695 -->
 
-### row E-8 / 사증발급인정서 / 대상
+### row E-8 / 사증발급 / 대상
 - manual_type: 사증민원
 - visa_code: E-8
 - visa_name_ko: 계절근로
 - item_type: visa_rule
-- section_title: E-8 계절근로
+- section_title: E-8 계절근로 / 제도 개요
 - subtype_or_program:
-- petition_type: 사증발급인정서
+- petition_type: 사증발급
 - subsection_type: 대상
 - applicant_context: |
-    농·어번기 일손부족 해결을 위해 최대 8개월간 합법적으로 고용되는 외국인 계절근로자
-    단기취업 계절근로(C-4-1~4)는 최대 90일 고용 가능했으나 2025년부터 비자 발급 중단
+    농·어번기의 고질적 일손부족 해결을 위하여 8개월 동안 외국인을 합법적으로 고용할 수 있는 「외국인 계절근로자 프로그램」.
 - eligibility: |
-    법무부장관이 관계 중앙행정기관의 장과 협의해 정하는 농작물 재배·수확(연계 원시가공 포함) 및 수산물 원시가공 분야 취업 활동을 하려는 사람으로서 법무부장관이 인정하는 사람
-- target_persons: |
-    E-8-1: MOU 체결 외국지자체 주민 (농업)
-    E-8-2: 결혼이민자의 해외 거주 4촌 이내 친척 (농업)
-    E-8-3: MOU 체결 외국지자체 주민 (어업)
-    E-8-4: 결혼이민자의 해외 거주 4촌 이내 친척 (어업)
-    E-8-5: 기타(G-1) 자격으로 농업분야 계절근로 후 재입국한 자
-    E-8-6: 기타(G-1) 자격으로 어업분야 계절근로 후 재입국한 자
-    E-8-7: 유학생(D-2)의 부모 (농업)
-    E-8-8: 유학생(D-2)의 부모 (어업)
-    E-8-99: 언어소통 도우미 등 기타 보조 인력
+    법무부장관이 관계 중앙행정기관의 장과 협의하여 정하는 농작물 재배·수확(재배·수확과 연계된 원시가공 분야 포함) 및 수산물 원시가공 분야에서 취업 활동을 하려는 사람으로서 법무부장관이 인정하는 사람.
+- target_persons: 외국인 계절근로자
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements: |
-    내국인 사전 구인 절차 의무화, 외국인 인권침해 및 불법체류 방지, 고용허가제와 상충되지 않도록 운영, 농·어촌 상황 반영 지자체 자율성 부여
-    신청 주체: 기초자치단체장
-    허용 업종: 계절성으로 8개월 동안 노동력이 집중 필요한 농·어업(농업분야 농림축산식품부, 어업분야 해양수산부 심사 후 법무부 최종 결정)
-- procedure:
-- restrictions:
+    [기본 원칙]
+    - 내국인 사전 구인 절차를 의무화하여 내국인 일자리 잠식 방지
+    - 외국인 계절근로자의 인권침해 및 불법체류 방지
+    - 고용허가제와 상충되지 않도록 운영
+    - 농·어촌 상황을 반영할 수 있도록 지자체에 최대한 자율성 부여
+- procedure: |
+    (신청 주체) 기초자치단체장
+    (허용 업종) 계절성으로 8개월 동안 노동력이 집중적으로 필요한 농·어업 (농업분야는 농림축산식품부, 어업분야는 해양수산부에서 심사 후 법무부에서 최종 결정)
+    (계절근로 외국인 도입 경로)
+    ① 국내 지자체와 MOU를 체결한 외국 지자체가 추천한 외국인
+    ② 지자체 관내 결혼이민자의 해외 거주 가족(4촌)
+    (외국인 배정) 배정심사협의회(법무부·행안부·농식품부·해수부·고용부)에서 관리능력, 이탈·인권침해 방지 대책 등을 감안하여 지자체별 총인원 배정 → 지자체에서 별도 기준에 따라 농·어가, 농업·어업 조합 법인, 농업회사당 배정 (연간 최대 14명까지: 면적 기준 9명 + 추가 5명 가능)
+    (비자 신청) 지자체가 사증 신청 절차를 대행함으로써 농·어가 부담 제거
+- restrictions: |
+    '25년부터 단기취업 계절근로(C-4-1~4) 비자 발급 중단.
 - exceptions:
 - fees:
-- duration_or_validity:
+- duration_or_validity: 1회에 부여할 수 있는 체류기간 상한 8개월 (총 체류기간 8개월을 초과할 수 없음). 단기취업 계절근로(C-4-1~4)는 최대 90일.
 - quota_or_limit: |
-    배정심사협의회(법무부·행안부·농식품부·해수부·고용부)가 지자체별 총인원 배정, 지자체가 농·어가별 배정
-    농·어가당 연간 최대 14명까지 배정 가능(면적 기준 9명 + 추가 5명 가능)
+    지자체별 총인원 배정 → 연간 최대 14명까지 (면적 기준 9명 + 추가 5명).
 - score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: |
-    지자체가 사증 신청 절차를 대행하여 농·어가 부담 제거
-- recommendation_or_approval: |
-    국내지자체-외국지자체 MOU 체결, 결혼이민자 추천, 유학생 부모 초청, G-1-19 재고용 추천 등 다양한 선정 경로
+- table_summary: 계절근로 세부약호
+- table_rows: |
+    - E-8-1: MOU 방식 농업 / E-8-2: 결혼이민자 4촌 친척 농업
+    - E-8-3: MOU 방식 어업 / E-8-4: 결혼이민자 4촌 친척 어업
+    - E-8-5: G-1으로 농업 계절근로 후 재입국 / E-8-6: G-1으로 어업 계절근로 후 재입국
+    - E-8-7: 유학생의 부모 농업 / E-8-8: 유학생의 부모 어업
+    - E-8-99: 언어소통 도우미 등 기타 보조 인력
+- inviter_context: 기초자치단체장
+- recommendation_or_approval: 농림축산식품부(농업)·해양수산부(어업) 심사 후 법무부 최종 결정
+- keywords: 계절근로, 8개월, 농업, 어업, MOU 지자체, 결혼이민자 4촌, E-8
+- source_page:
+- source_excerpt: |
+    ◦ 농·어번기의 고질적 일손부족 해결을 위하여 8개월 동안 외국인을 합법적으로 고용할 수 있는 ｢외국인 계절근로자 프로그램」시행
+    * 단기취업 계절근로(C-4-1~4)의 경우는 최대 90일 고용 가능
+    ※'25년부터 단기취업 계절근로(C-4-1~4) 비자 발급 중단
+    ◦ (신청 주체) 기초자치단체장
+    ◦ (허용 업종) 계절성으로 8개월 동안 노동력이 집중적으로 필요한 농·어업
+- related_visa_codes: C-4-1, E-8-1, E-8-2, E-8-3, E-8-4, E-8-5, E-8-6, E-8-7, E-8-8, E-8-99, G-1, D-2
 - expected_questions: |
-    농사일 도와줄 외국인은 어떤 자격으로 데려와요?
-    한국인이랑 결혼한 사람의 외국 친척도 농어업으로 들어올 수 있어요?
-    유학 중인 자녀가 부모님을 농장 일하러 부를 수 있나요?
-
-### row E-8 / 사증발급인정서 / 쿼터
-- manual_type: 사증민원
-- visa_code: E-8
-- visa_name_ko: 계절근로
-- item_type: quota
-- section_title: E-8 계절근로 / 허용업종 및 허용인원
-- subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 쿼터
-- applicant_context:
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit: |
-    농업분야 허용 작물 및 재배면적별 허용인원(5~9명 이하, 영세 농가는 지자체장/관할 청장 판단으로 조정 가능)
-    시설원예·특작: 2.6 미만 5명 / 2.6~3.9 6명 / 3.9~5.2 7명 / 5.2~6.5 8명 / 6.5 이상 9명 (단위 1000㎡)
-    버섯: 5.2 미만 5명 / 5.2~7.8 6명 / 7.8~10.4 7명 / 10.4~13 8명 / 13 이상 9명
-    과수: 16 미만 5명 / 16~24 6명 / 24~32 7명 / 32~38 8명 / 38 이상 9명
-    인삼·일반채소: 12 미만 5명 / 12~18 6명 / 18~24 7명 / 24~30 8명 / 30 이상 9명
-    종묘재배: 0.35 미만 5명 / 0.35~0.65 6명 / 0.65~0.86 7명 / 0.86~1.06 8명 / 1.06 이상 9명
-    기타원예·특작: 7.8 미만 5명 / 7.8~11.7 6명 / 11.7~15.6 7명 / 15.6~19.5 8명 / 19.5 이상 9명
-    곡물: 50 미만 5명 / 50~300 6명 / 300~400 7명 / 400~500 8명 / 500 이상 9명
-    기타 식량작물: 7 미만 5명 / 7~10 6명 / 10~13 7명 / 13~16 8명 / 16 이상 9명
-    곶감 가공: 70접 미만 5명 / 70~80접 6명 / 80~90접 7명 / 90~100접 8명 / 100접 이상 9명
-    어업분야 허용 수산물: 해조류(김 건조 등), 어패류(멸치·가자미·오징어·명태·과메기 건조, 굴 선별 등), 피낭류(멍게류 양식)
-    어업 생산규모별 허용인원: 마른김 30만속 미만 5명~70만속 이상 9명 / 멸치 건조 8만박스 미만 5명~20만박스 이상 9명
-    피낭류 양식: 어가별 2명 이하 / 가리비 양식(고성군 5ha 미만, 시범) 어가별 2명 이하 / 전복종자 양식 어가별 3명 이하
-- score_criteria:
-- table_summary: |
-    농업·어업 분야 작물·수산물별 재배·생산 규모에 따라 5~9명 단계로 허용인원 배정
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    농장 규모가 크면 외국인 몇 명까지 데려올 수 있어요?
-    어업 분야는 어떤 일에 외국인을 쓸 수 있어요?
-    영세한 농가는 인원 조정이 가능한가요?
-
-### row E-8 / 사증발급인정서 / 기간
-- manual_type: 사증민원
-- visa_code: E-8
-- visa_name_ko: 계절근로
-- item_type: visa_rule
-- section_title: E-8 계절근로 / 1회 부여 체류기간 상한
-- subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 기간
-- applicant_context:
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: |
-    1회 부여 체류기간 상한: 8개월(총 체류기간 8개월 초과 불가)
-    E-8 사증은 모두 단수 사증
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    계절근로 비자는 한 번에 얼마나 머물 수 있어요?
-    8개월 이상 일하는 것도 가능해요?
+    한국에서 계절근로자로 농사일하려면 어떤 비자 받아요?
+    몇 개월까지 머물 수 있어요?
+    결혼이민자의 친척도 농업 근로로 부를 수 있나요?
+    계절근로 비자는 누가 신청해줘요?
 
 ### row E-8 / 사증발급인정서 / 절차
 - manual_type: 사증민원
 - visa_code: E-8
 - visa_name_ko: 계절근로
 - item_type: visa_rule
-- section_title: E-8 계절근로 / 사증발급인정서 신청
+- section_title: E-8 계절근로 / 사증발급인정서 신청 절차
 - subtype_or_program:
 - petition_type: 사증발급인정서
 - subsection_type: 절차
-- applicant_context:
+- applicant_context: |
+    계절근로(E-8) 사증은 청장·사무소장 또는 출장소장이 발급한 사증발급인정서에 의해서만 발급.
 - eligibility:
-- target_persons: |
-    지자체가 고용주에게 배정한 해외 체류 외국인(국내 체류 가족은 사증발급인정서 신청 대상이 아니며 체류자격 외 활동허가 신청 대상)
+- target_persons: 지자체가 고용주에게 배정한 해외 체류 외국인
 - common_documents:
-- mandatory_documents:
+- mandatory_documents: |
+    ① 표준근로계약서
+    ② 내국인 구인노력 증빙자료 (구인 광고내용 사본 및 최종 구인실적 등)
+    ③ 외국인 계절근로자 관련 서류
+      - 외국인 계절근로자 여권 사본
+      - MOU 외국인: 본국에서의 농‧어업 종사 이력
+      - 결혼이민자의 4촌 이내 친척(배우자 포함): 결혼이민자 신분증, (국내용) 혼인관계증명서, (국내용) 가족관계증명서(혼인귀화자 해당), 기본증명서(혼인귀화자 해당), 결혼이민자의 친척 관계도, 거주국(체류국)에서 발급한 가족관계증명서
+      - 유학생의 부모: 유학생 외국인등록증, 재학증명서, 출생증명서 또는 가족관계증명서 등
+    ④ (계절근로자에게 제공 예정인) 숙소시설표
+    ⑤ 업무협약(MOU) 체결 결과서 등
 - other_documents:
 - requirements:
 - procedure: |
-    계절근로(E-8) 사증은 청장·사무소장 또는 출장소장이 발급한 사증발급인정서에 의해서만 발급
-    신청자: 시·군·구 기초자치단체장
-    신청 시기: 농·어업 작업시기, 사증발급인정서 발급 소요 기간(신청일로부터 약 10일), 외국인 사증 준비 및 자국 출국 행정절차 소요 기간 고려
-    신청 방법: 비자포털(www.visa.go.kr)을 통하여 신청
-    비자포털에 부정확한 정보 입력으로 반려되는 경우 적정 시기에 계절근로자를 초청하지 못하는 문제 발생, 추천자 및 허용분야를 확인해 정확한 사증 종류를 신청하고 필요 정보를 정확히 입력할 것
+    (신청자) 기초자치단체장 시·군·구
+    (신청시기) 농·어업 작업시기, 사증발급인정서 발급 소요 기간(신청일로부터 약 10일 소요), 외국인 계절근로자 사증 준비 및 자국 출국을 위한 행정 절차 소요 기간 등을 고려하여 결정.
+    (신청 방법) 비자포털(www.visa.go.kr)을 통하여 신청.
+    ※ 결혼이민자 등의 국내 체류 가족은 사증발급인정서 신청 대상이 아니고 체류자격 외 활동허가 신청 대상.
+    국내 결혼이민자와의 가족(친척)관계가 입증되어야 하며 영어 이외의 외국어로 되어있을 때는 번역자 확인서 및 번역문을 첨부(공증불요).
 - restrictions:
 - exceptions:
 - fees:
-- duration_or_validity:
+- duration_or_validity: 단수사증
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context:
-- recommendation_or_approval:
+- inviter_context: 기초자치단체장 (시·군·구)
+- recommendation_or_approval: 지자체 추천
+- keywords: E-8 사증발급인정서, 비자포털, 표준근로계약서, 내국인 구인노력, MOU 외국인, 4촌 친척
+- source_page:
+- source_excerpt: |
+    □ 계절근로(E-8) 사증은 청장ㆍ사무소장 또는 출장소장이 발급한 사증발급인정서에 의해서만 발급
+    □ 사증발급인정서 신청
+    ◦ 신청자
+    - (시·군·구) 기초자치단체장
+    ◦ 신청 방법 : 비자포털(www.visa.go.kr)을 통하여 신청
+    ◦ 제출서류(비자포털에 첨부)
+    ① 표준근로계약서
+    ② 내국인 구인노력 증빙자료(구인 광고내용 사본 및 최종 구인실적 등)
+- related_visa_codes: E-8-1, E-8-2, E-8-3, E-8-4, E-8-5, E-8-6, E-8-7, E-8-8, E-8-99
 - expected_questions: |
-    계절근로 비자는 어디로 신청해요?
-    신청부터 받기까지 얼마나 걸려요?
-    신청은 누가 해야 하는 거예요 농장주인가요 지자체인가요?
+    계절근로 사증발급인정서는 누가 신청해요?
+    구청에서 받아주려면 어떤 서류 내야 해요?
+    결혼이민자 친척이면 어떤 서류가 추가로 필요해요?
 
-### row E-8 / 사증발급인정서 / 제출서류
+### row E-8 / 사증발급 / 쿼터
 - manual_type: 사증민원
 - visa_code: E-8
 - visa_name_ko: 계절근로
-- item_type: required_documents
-- section_title: E-8 계절근로 / 사증발급인정서 제출서류
+- item_type: quota
+- section_title: E-8 계절근로 / 농업 허용 작물·재배면적별 허용인원
 - subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 제출서류
-- applicant_context:
+- petition_type: 사증발급
+- subsection_type: 쿼터
+- applicant_context: |
+    농업분야 계절근로 허용 작물별 재배면적에 따른 외국인 허용인원.
 - eligibility:
 - target_persons:
 - common_documents:
-- mandatory_documents: |
-    - 표준근로계약서
-    - 내국인 구인노력 증빙자료(구인 광고내용 사본 및 최종 구인실적 등)
-    - 외국인 계절근로자 여권 사본
-    - (계절근로자에게 제공 예정인) 숙소시설표
-- other_documents: |
-    MOU 외국인: 본국에서의 농·어업 종사 이력
-    결혼이민자의 4촌 이내 친척(배우자 포함): 결혼이민자 신분증, (국내용) 혼인관계증명서, (국내용) 가족관계증명서(혼인귀화자 해당), 기본증명서(혼인귀화자 해당), 결혼이민자의 친척 관계도, 거주국(체류국)에서 발급한 가족관계증명서
-    유학생의 부모: 유학생 외국인등록증, 재학증명서, 출생증명서 또는 가족관계증명서 등
-    업무협약(MOU) 체결 결과서 등
-    국내 결혼이민자와의 가족(친척)관계가 입증되어야 하며 영어 이외 외국어 문서는 번역자 확인서 및 번역문 첨부(공증 불요)
+- mandatory_documents:
+- other_documents:
 - requirements:
 - procedure:
 - restrictions:
 - exceptions:
 - fees:
 - duration_or_validity:
-- quota_or_limit:
+- quota_or_limit: |
+    재배면적별 허용인원 5명 이하 → 9명 이하 (5단계). 지자체장 또는 관할 출입국‧외국인관서의 장 판단 하에 영세 농가 등의 허용인원 조정 가능.
 - score_criteria:
-- table_summary:
-- table_rows:
+- table_summary: 농업 허용 작물 및 재배면적별 허용인원 5단계
+- table_rows: |
+    - 시설원예·특작 (천㎡): 2.6 미만→5명, 2.6~3.9→6명, 3.9~5.2→7명, 5.2~6.5→8명, 6.5↑→9명
+    - 버섯: 5.2 미만→5명, ~7.8→6명, ~10.4→7명, ~13→8명, 13↑→9명
+    - 과수: 16 미만→5명, ~24→6명, ~32→7명, ~38→8명, 38↑→9명
+    - 인삼·일반채소: 12 미만→5명, ~18→6명, ~24→7명, ~30→8명, 30↑→9명
+    - 종묘재배: 0.35 미만→5명 ~ 1.06↑→9명
+    - 기타원예·특작: 7.8 미만→5명 ~ 19.5↑→9명
+    - 곡물: 50 미만→5명, 50~300→6명, 300~400→7명, 400~500→8명, 500↑→9명
+    - 기타 식량작물: 7 미만 ~ 16↑
+    - 곶감 가공: 70접 미만 ~ 100접 이상
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 계절근로 농업, 재배면적, 허용인원, 시설원예, 버섯, 과수, E-8
+- source_page:
+- source_excerpt: |
+    □ 농업분야 허용 작물
+    재배면적 허용작물 재배면적(단위 : 1000㎡)
+    ① 시설원예·특작 2.6미만 2.6~3.9미만 3.9~5.2미만 5.2∼6.5미만 6.5이상
+    허용인원 5명 이하* 6명 이하 7명 이하 8명 이하 9명 이하
+    * 지자체장 또는 관할 출입국‧외국인관서의 장 판단 하에 영세 농가 등의 허용인원 조정 가능
+- related_visa_codes:
 - expected_questions: |
-    계절근로 비자 신청할 때 어떤 서류를 내야 해요?
-    한국인 배우자의 친척을 부를 때는 어떤 가족 서류가 필요해요?
-    외국어 서류는 공증을 받아야 하나요?
+    농사 짓는 땅이 얼마면 외국인 몇 명까지 부를 수 있어요?
+    버섯 농장은 면적이 얼마면 9명까지 받을 수 있어요?
+    영세 농가도 허용인원 조정 받을 수 있어요?
 
-### row E-9 / 사증발급인정서 / 대상
+### row E-8 / 사증발급 / 쿼터
+- manual_type: 사증민원
+- visa_code: E-8
+- visa_name_ko: 계절근로
+- item_type: quota
+- section_title: E-8 계절근로 / 어업 허용 수산물·생산규모별 허용인원
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 쿼터
+- applicant_context: |
+    어업분야 계절근로 허용 수산물별 생산규모에 따른 외국인 허용인원.
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: |
+    '23년 상반기 배정심사협의회에서 시범운영하기로 결정된 가리비 양식은 고성군(5ha 미만 양식장)에서 어가별 2명 이하 고용으로 한정 (2023. 7. 1.부).
+- fees:
+- duration_or_validity:
+- quota_or_limit: |
+    생산규모별 5명 이하 ~ 9명 이하. 양식은 어가별 5명 이하. 시범운영 양식 어가별 3명 이하. 피낭류 양식 어가별 2명 이하. 지자체장 또는 관할 출입국 관서장의 판단으로 영세 어가 조정 가능.
+- score_criteria:
+- table_summary: 어업 허용 수산물 및 생산규모별 허용인원
+- table_rows: |
+    - 해조류 마른김: 30만속 미만~70만속 이상 / 기타 5천톤 미만~1.2만톤 이상
+    - 어패류 멸치 건조: 8만박스 미만~20만박스 이상 / 기타 12톤 미만~40톤 이상
+    - 전복종자: 250만 마리~450만 마리 (파판 50~90만장)
+    - 양식 어가별 5명 이하 (시범 운영: 어가별 3명 이하)
+    - 피낭류 양식 어가별 2명 이하
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 계절근로 어업, 해조류, 어패류, 양식, 가리비, 피낭류, E-8
+- source_page:
+- source_excerpt: |
+    □ 어업분야 허용 수산물
+    ① 해조류 / 육상 가공·생산 / ㉠ 김 건조 ㉡ 기타
+    양식(해상 채취, 육상 가공) / ㉢ 해조류 ㉣ 해조류종자
+    ② 어패류 / 육상 가공·생산 / ㉠ 멸치 건조
+    ③ 피낭류 / 양식(해상 채취, 육상 가공) / ㉠ 멍게류 ㉡ 멍게류종자
+    '23년 상반기 배정심사협의회에서 시범운영하기로 결정된 가리비 양식은 고성군(5ha미만 양식장)에서 어가별 2명 이하 고용으로 한정(2023. 7. 1.부)
+- related_visa_codes:
+- expected_questions: |
+    어업으로 외국인 계절근로자 몇 명까지 부를 수 있어요?
+    멸치 건조나 김 가공도 받을 수 있어요?
+    가리비 양식장은 몇 명까지 가능해요?
+
+### row E-9 / 사증발급 / 대상
 - manual_type: 사증민원
 - visa_code: E-9
 - visa_name_ko: 비전문취업
 - item_type: visa_rule
-- section_title: E-9 비전문취업 / 고용허가제
+- section_title: E-9 비전문취업 / 고용허가제 개요
 - subtype_or_program:
-- petition_type: 사증발급인정서
+- petition_type: 사증발급
 - subsection_type: 대상
 - applicant_context: |
-    외국인근로자의 고용 등에 관한 법률에 의거, 사업주에게 외국인근로자 고용을 허가하고 외국인근로자에게는 해당 사업주 고용 조건으로 최장 4년 10개월간 취업을 허용하는 인력제도
+    「외국인근로자의 고용 등에 관한 법률」에 의거 사업주에게 외국인근로자의 고용을 허가하고, 외국인 근로자에게는 당해 사업주에게 고용되는 조건으로 최장 4년 10개월간 취업을 허용하는 인력제도(고용허가제). '04. 8월 제도 시행 이후 16개국과 MOU 체결 운영.
 - eligibility: |
-    외국인근로자의 고용 등에 관한 법률 규정에 의한 국내 취업요건을 갖춘 자 (다만, 일정 자격이나 경력 등이 필요한 전문직종 종사자는 제외)
+    외국인근로자의 고용 등에 관한 법률의 규정에 의한 국내 취업요건을 갖춘 자. 다만, 일정 자격이나 경력 등이 필요한 전문직종에 종사하고자 하는 자는 제외.
 - target_persons: |
-    상시근로자(고용보험 기준) 300인 미만 또는 자본금 80억원 이하 중소기업에 고용 허가
+    상시근로자(고용보험 기준) 300인 미만 또는 자본금 80억원 이하 중소기업에 외국인 고용허가.
     고용허가제 선정국가(17개국): 태국, 필리핀, 스리랑카, 베트남, 인도네시아, 몽골, 파키스탄, 우즈베키스탄, 캄보디아, 중국, 방글라데시, 네팔, 미얀마, 키르기스스탄, 동티모르, 라오스, 타지키스탄
 - common_documents:
 - mandatory_documents:
 - other_documents:
-- requirements: |
-    제도 시행: 2004년 8월 이후 16개국과 MOU 체결 운영(현재 17개국 선정)
+- requirements:
 - procedure:
 - restrictions:
 - exceptions:
 - fees:
-- duration_or_validity: |
-    1회 부여 체류기간 상한 3년 (총 4년 10개월 취업)
+- duration_or_validity: 1회 부여 체류기간의 상한 3년. 최장 4년 10개월간 취업 허용.
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context:
-- recommendation_or_approval:
+- inviter_context: 상시근로자 300인 미만 또는 자본금 80억원 이하 중소기업
+- recommendation_or_approval: 고용허가서 (고용노동부)
+- keywords: 비전문취업, 고용허가제, 4년 10개월, 17개국 MOU, 중소기업, E-9
+- source_page:
+- source_excerpt: |
+    고용허가제란? ｢외국인근로자의 고용 등에 관한 법률｣에 의거, 사업주에게 외국인근로자의 고용을 허가하고, 외국인 근로자에게는 당해 사업주에게 고용되는 조건으로 최장 4년 10개월간 취업을 허용하는 인력제도로, '04. 8월 제도 시행이후 현재까지 16개국과 MOU를 체결하여 운영
+    - 상시근로자(고용보험 기준) 300인 미만 또는 자본금 80억원 이하 중소기업에 외국인 고용허가
+    고용허가제 선정국가(17개국)
+    태국, 필리핀, 스리랑카, 베트남, 인도네시아, 몽골, 파키스탄, 우즈베키스탄, 캄보디아, 중국, 방글라데시, 네팔, 미얀마, 키르기스스탄, 동티모르, 라오스, 타지키스탄
+- related_visa_codes: E-9-1, E-9-2, E-9-3, E-9-4, E-9-5, E-9-9, E-9-10
 - expected_questions: |
-    비전문취업 비자는 어느 나라 사람이 받을 수 있어요?
-    이 비자로는 한국에서 얼마나 일할 수 있어요?
-    어떤 규모의 회사가 외국인을 고용할 수 있어요?
+    고용허가제로 한국에서 일하려면 어떤 비자 받아요?
+    몇 년까지 일할 수 있어요?
+    어떤 나라 사람들이 신청할 수 있어요?
+    어떤 회사에서 비전문취업자를 뽑을 수 있어요?
 
-### row E-9 / 사증발급인정서 / 요건
+### row E-9 / 사증발급 / 대상
 - manual_type: 사증민원
 - visa_code: E-9
 - visa_name_ko: 비전문취업
 - item_type: visa_rule
 - section_title: E-9 비전문취업 / 허용업종 및 체류자격 약호
 - subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 요건
-- applicant_context:
+- petition_type: 사증발급
+- subsection_type: 대상
+- applicant_context: |
+    E-9 허용업종 6개 분야와 세부 체류자격 코드.
 - eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents:
 - other_documents:
-- requirements: |
-    제조업(E-9-1): 상시근로자 300인 미만 또는 자본금 80억원 이하 제조업(중소기업확인서·뿌리기업확인서·중견기업확인서·U턴기업 선정확인서 제출 시 인정), 뿌리산업 포함
-    건설업(E-9-2): 모든 건설공사(발전소·제철소·석유화학 건설현장 중 건설면허가 산업환경 설비인 경우 적용 제외)
-    농축산업(E-9-3): 작물재배업, 축산업, 작물재배 및 축산관련 서비스업
-    어업(E-9-4): 연안어업·근해어업(20톤 미만 어선), 양식어업, 소금채취업
-    임업(E-9-9): 임업 종묘 생산업·육림업·벌목업·임업 관련 서비스업(산림사업시행업자·종묘생산업자 중 법인에 한함, 표준직업분류상 임업 단순 종사원 고용에 한함)
-    광업(E-9-10): 금속 광업, 비금속광물 광업(연간 생산량 15만톤 이상 채굴권·조광권 설정 업체에 한함, 광업 단순 종사원 고용에 한함)
-    서비스업(E-9-5): 건설폐기물 처리업, 냉장·냉동 창고업(내륙), 호텔·휴양콘도·호스텔업(서울·부산·강원·전북·경북·제주 한정, 건물 청소원·주방 보조원에 한함), 한식 음식점업(시범지역 한정), 재생용 재료수집 및 판매업, 서적·잡지 출판업, 음악 출판업, 폐기물 수집·운반·처리업, 음식료품 도매업, 택배업, 항공기하역업체, 식육 운반·택배서비스업체
-    한식 음식점업·호텔·숙박업·임업·광업은 2024년도 고용허가서 발급 시점 이후부터 사증발급인정서 발급 신청 가능
+- requirements:
 - procedure:
-- restrictions:
-- exceptions:
+- restrictions: |
+    - 비전문취업자 중 연근해어업(E-9-4)은 선원법 적용을 받지 않는 20톤 미만 어선 종사자에 한함.
+    - 신규 추가된 '한식 음식점업', '호텔·숙박업', '임업', '광업'은 '24년도 고용허가서 발급 시점 이후부터 사증발급인정서 발급 신청 가능.
+- exceptions: |
+    제조업 E-9-1: 상기 기준에 충족하지 않더라도 아래 증빙서류 제출 시 인정
+    - 중소기업(지방중소기업청 발급 '중소기업확인서')
+    - 비수도권 소재 뿌리산업 중견기업 (한국생산기술연구원 '뿌리기업 확인서' + 한국중견기업연합회 '중견기업 확인서')
+    - 비수도권 제조업 U턴기업 (산업통상부 '지원대상 국내복귀기업 선정확인서')
 - fees:
 - duration_or_validity:
 - quota_or_limit:
 - score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
+- table_summary: E-9 허용업종 6개 + 세부약호
+- table_rows: |
+    - E-9-1 제조업: 상시근로자 300인 미만 또는 자본금 80억원 이하 제조업 / 뿌리산업
+    - E-9-2 건설업: 모든 건설공사 (발전소·제철소·석유화학 건설현장의 산업환경설비 면허 제외)
+    - E-9-3 농축산업: 작물재배업, 축산업, 농‧축산서비스업
+    - E-9-4 어업: 연안·근해어업(20톤 미만 어선), 양식어업, 소금채취업
+    - E-9-9 임업: 임업 종묘 생산업, 육림업, 벌목업, 임업 관련 서비스업 (산림사업시행업자 법인, 종묘생산업자 법인에 한함, '임업 단순 종사원' 고용)
+    - E-9-10 광업: 금속/비금속광물 광업 (연간 생산량 15만톤 이상, '광업 단순 종사원' 고용)
+    - E-9-5 서비스업: 건설폐기물 처리업, 냉장‧냉동 창고업, 호텔업·휴양콘도 운영업·호스텔업 (서울·부산·강원·전북·경북·제주 소재), 한식 음식점업, 재생용 재료수집판매업, 출판업, 폐기물·식품·택배·항공/육상화물 단순종사
+- inviter_context: 한국 내 중소기업·건설·농어업·임광업·서비스업
+- recommendation_or_approval: 고용허가서 + 표준근로계약서
+- keywords: E-9 허용업종, E-9-1 제조업, E-9-2 건설업, E-9-3 농축산업, E-9-4 어업, E-9-5 서비스업, E-9-9 임업, E-9-10 광업
+- source_page:
+- source_excerpt: |
+    제조업 E-9-1
+    - 상시근로자 300인 미만 또는 자본금 80억원 이하 제조업
+    건설업 E-9-2 - 모든 건설공사
+    농축산업 E-9-3 - 작물재배업 / 축산업 / 작물재배 및 축산관련 서비스업
+    어업 E-9-4 - 연안어업ㆍ근해어업 / 양식어업 / 소금채취업
+    임업 E-9-9
+    광업 E-9-10
+    서비스업 E-9-5
+    ※ 비전문취업자 중 연근해어업(E-9-4)은 선원법 적용을 받지 않는 20톤 미만 어선 종사자에 한함
+- related_visa_codes:
 - expected_questions: |
-    비전문취업 비자로 일할 수 있는 업종이 어떻게 돼요?
-    호텔에서 청소 일하는 것도 이 비자로 가능해요?
-    음식점에서 일하려면 어디 지역에서 가능해요?
+    한국에서 비전문취업으로 어떤 업종에서 일할 수 있어요?
+    음식점에서 일하려면 어떤 비자 받아요?
+    20톤 이상 어선에서도 비전문취업 비자로 일할 수 있어요?
+    임업이나 광업도 외국인 받아요?
 
 ### row E-9 / 사증발급인정서 / 제출서류
 - manual_type: 사증민원
 - visa_code: E-9
 - visa_name_ko: 비전문취업
 - item_type: required_documents
-- section_title: E-9 비전문취업 / 사증발급인정서 발급 첨부서류
+- section_title: E-9 비전문취업 / 사증발급인정서 제출서류 (업종별)
 - subtype_or_program:
 - petition_type: 사증발급인정서
 - subsection_type: 제출서류
-- applicant_context:
+- applicant_context: |
+    E-9 사증발급인정서 신청 시 공통 및 업종별 추가 서류.
 - eligibility:
-- target_persons:
+- target_persons: 비전문취업자를 초청하고자 하는 사업장의 장
 - common_documents: |
-    - 사증발급인정신청서(별지 제21호 서식)
-    - 여권
-    - 표준규격사진 1매
+    - 사증발급인정신청서 (별지 제21호 서식)
+    - 여권, 표준규격사진 1매
     - 사업자등록증 사본
     - 고용허가서 및 표준근로계약서 사본
     - 사업장실태조사서
 - mandatory_documents:
 - other_documents: |
-    제조업: 추가서류 없음
-    건설업: 건설업등록증, 도급(하도급) 계약서, 건설현장에 대한 근무 중 외국인력 현황표(원도급업체 작성)
-    농축산업: 농업경영체등록(변경등록)확인서(국립농산물품질관리원장 발급, 유효기간 1년)
-    어업 - 연근해어업: 선박(어선)검사증서, 어업허가증(연안어업·근해어업·구획어업) 또는 어업면허증 및 관리선사용지정증(정치망어업)
-    어업 - 양식어업: 선박(어선)검사증서, 어업허가증 또는 어업면허증 또는 내수면어업신고필증
-    어업 - 천일염 생산 및 암염 채취업: 염제조업허가증사본 (염전임차인은 시장·군수 발급 염제조업 확인서와 임대차계약서, 임대인의 염제조허가증)
-    한식 음식점업: 사업자등록증 또는 영업신고증, 위탁계약서·가맹계약서(필요시 부가가치세 과세표준증명원)
-    호텔·숙박업: 관광사업 등록증(건축물일반청소업의 경우 호텔 등과 맺은 위탁계약서)
-    임업: 산림사업시행법인·국유림영림단·산림조합·원목생산업자·종묘생산법인별 사업자등록증 및 등록증 또는 위탁계약서
-    광업: 광업원부(광업등록사무소 발급) 및 광물생산보고서
-    범죄경력증명서: 국적국 권한 있는 기관이 발급, 자국 내 모든 범죄경력 포함(또는 거주지 관할 내무기관 증명서로 대체 가능, 중국은 호구지 관할), 사증발급 신청일로부터 3개월 이내 발급
-    건강상태 확인서: 사증신청인이 자필 기재한 양식으로 결핵·B형간염·매독 등 감염 여부 및 마약복용 경험·정신질환 치료경험 등 기재
+    [업종별 추가서류]
+    - 제조업: 추가서류 없음
+    - 건설업: 건설업등록증, 도급(하도급) 계약서, 건설현장에 대한 근무 중 외국인력 현황표(원도급업체 작성)
+    - 농축산업: 농업경영체등록(변경등록)확인서(국립농산물품질관리원장 발급, 유효기간 1년)
+    - 어업:
+      · 연근해어업: 선박(어선)검사증서, 어업허가증(연안어업·근해어업·구획어업) 또는 어업면허증 및 관리선사용지정증(정치망어업)
+      · 양식어업: 선박(어선)검사증서, 어업허가증 또는 어업면허증 또는 내수면어업신고필증
+      · 천일염 생산 및 암염 채취업: 염제조업허가증사본 (염전임차인은 시장·군수 발급 염제조업 확인서 + 임대차계약서 + 임대인의 염제조허가증)
+    - 서비스업:
+      · 한식 음식점업: 사업자등록증 또는 영업신고증, 위탁/가맹계약서 (해당자), 필요시 부가가치세 과세표준증명원
+      · 호텔·숙박업: 관광사업 등록증, 호텔 위탁계약서(해당)
+    - 임업: 사업자등록증 + 산림사업법인 등록증 / 국유림영림단 등록증 / 위탁계약서 / 목재생산업 등록증
+    - 광업: 광업원부(광업등록사무소 발급) + 광물생산보고서
+    범죄경력증명서 (사증발급 신청일로부터 3개월 이내 발급, 자국 내 모든 범죄경력 포함) + 건강상태 확인서 (결핵·B형간염·매독·마약·정신질환 자필 기재).
 - requirements:
 - procedure: |
-    접수: 비전문취업자 초청 사업장의 장이 사업장 주소지 관할 출입국·외국인청(사무소·출장소)장에게 직접 방문 또는 비자포털(www.visa.go.kr)에 접속하여 사증발급인정서 발급 신청
-    건설업의 경우 공사현장 소재지 관할 청·사무소·출장소에 접수
-    초청업무 대행을 위임한 경우 업무 대행기관 또는 그 지사 등에서 신청 가능
-    업종별 대행기관: 제조업 중소기업중앙회 / 건설업 대한건설협회 / 어업·냉장·냉동창고업 수협중앙회 / 농축산업 농협중앙회
-    출입국·외국인청장은 초청의 진정성, 초청자 및 피초청자의 자격 확인 등 심사를 위해 첨부서류의 일부를 가감할 수 있음
+    비전문취업자를 초청하고자 하는 사업장의 장이 사업장 주소지 관할 출입국·외국인청에 직접 방문 또는 대한민국비자포털(www.visa.go.kr)에 접속하여 사증발급인정서 발급신청.
+    ※ 건설업의 경우 공사현장 소재지 관할 청·사무소·출장소에 접수.
+    초청업무 대행 위임 시 대행기관 또는 그 지사 등에서 신청 가능.
+    [업종별 대행기관] 제조업 중소기업중앙회 / 건설업 대한건설협회 / 어업·냉장냉동창고업 수협중앙회 / 농축산업 농협중앙회.
 - restrictions:
 - exceptions:
 - fees:
@@ -6854,79 +6534,62 @@
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: |
-    상시근로자 300인 미만 또는 자본금 80억원 이하 중소기업 사업주, 업종별 대행기관(중소기업중앙회·대한건설협회·수협중앙회·농협중앙회) 활용 가능
-- recommendation_or_approval:
+- inviter_context: 사업장의 장 (제조업·건설업·농축산업·어업·서비스업·임업·광업)
+- recommendation_or_approval: 고용허가서
+- keywords: E-9 사증발급인정서, 사업장실태조사서, 고용허가서, 범죄경력증명서, 건강상태확인서, 비자포털
+- source_page:
+- source_excerpt: |
+    첨부서류
+    공통서류
+    - 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
+    - 사업자등록증 사본
+    - 고용허가서 및 표준근로계약서 사본
+    - 사업장실태조사서
+    가. 확인 서류 국적국의 권한 있는 기관이 발급한 범죄경력증명서 제출
+    2) 사증발급 신청일로부터 3개월 이내에 발급된 증명서 일 것
+- related_visa_codes:
 - expected_questions: |
-    회사가 외국인 직원을 부르려면 어떤 서류를 준비해야 해요?
-    범죄경력증명서는 언제 발급받은 게 인정돼요?
-    업종별로 추가로 내야 하는 서류가 있어요?
+    비전문취업 비자 신청할 때 어떤 서류 내야 해요?
+    범죄경력증명서는 언제 발급된 거 내야 해요?
+    건강상태 확인서는 어디서 받아요?
+    회사가 대신 비자 신청해줄 수 있어요?
 
-### row E-9 / 사증발급인정서 / 예외
-- manual_type: 사증민원
-- visa_code: E-9
-- visa_name_ko: 비전문취업
-- item_type: exception
-- section_title: E-9 비전문취업 / 재입국 취업 제한의 특례 (성실외국인)
-- subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 예외
-- applicant_context: |
-    일정 요건을 갖춘 성실외국인 근로자가 취업활동 기간 만료 후 출국 전 사용자가 재입국 후 고용허가 신청 시, 출국한 날로부터 1개월이 지나면 다시 취업할 수 있는 특례
-- eligibility: |
-    ① 외국인근로자의 고용 등에 관한 법률 제18조의4 해당자
-    - 취업활동기간(5년 미만 또는 직권 연장 시 6년 미만) 중 사업장을 변경하지 않은 경우 또는 최초 근무 업종과 동일 업종 내에서 사업장 변경하여 4년 10개월 근속(사용자와 취업활동기간 종료일까지 근로계약 기간이 1년 이상)
-    - 휴업·폐업 등 외국인근로자 책임이 아닌 사유로 사업장을 변경한 경우로서 근로계약 1년 이상 또는 1년 미만이나 고용노동부(고용센터)가 재입국 특례 적용을 인정한 경우
-    ② 재입국하여 근로 시작일부터 효력이 발생하는 1년 이상의 근로계약 체결
-    ③ 사업장별 외국인 고용한도 등 고용허가서 발급요건 충족(내국인 구인노력은 요하지 않음)
-- target_persons:
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements: |
-    허용 업종: 농축산업, 어업, 서비스업, 300인 미만 제조업(뿌리산업 포함)
-    허용 인원: 업종별·사업장별 고용허용 기준에 의하며 사업장별 총 고용허용인원 초과 불가
-- procedure: |
-    접수: 해당 외국인근로자의 출국사실 확인 후 접수·심사 가능, 대행기관에 의한 사증발급인정서 신청 가능
-    사증발급인정서 발급: 외국인등록증 반납 후 완전출국자임을 확인한 후 심사
-    사증 신청은 송출기관에 의한 단체 신청만 가능(개별 발급 불가), 외국인근로자는 귀국 후 송출기관 안내에 따라 건강검진 후 사증발급 신청, 지정된 날짜에 단체로 입국
-- restrictions:
-- exceptions: |
-    우대 내용 - 사업주: 내국인 구인노력 면제, 한 사업장에서 장기 근속하여 숙련도가 향상된 외국인근로자를 단기 출국시킨 후 재고용 가능
-    우대 내용 - 외국인근로자: 한국어능력시험 및 입국 전·후 취업교육 면제(입국연령 제한 없음), 다른 재입국 근로자(6개월 제한)와 달리 출국 1개월 경과 후 재입국하여 종전 사업장에서 근무
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    성실히 일했는데 출국 후에 다시 빨리 들어올 수 있어요?
-    재입국할 때도 한국어 시험을 다시 봐야 하나요?
-    예전 회사에 다시 취업할 수 있어요?
-
-### row E-9 / 사증발급인정서 / 요건
+### row E-9 / 사증발급 / 예외
 - manual_type: 사증민원
 - visa_code: E-9
 - visa_name_ko: 비전문취업
 - item_type: visa_rule
-- section_title: E-9 비전문취업 / 건설업 비숙련 외국인력 업무수행 범위
+- section_title: E-9 비전문취업 / 재입국 취업특례 (구 성실근로자)
 - subtype_or_program:
-- petition_type: 사증발급인정서
-- subsection_type: 요건
-- applicant_context:
-- eligibility:
+- petition_type: 사증발급
+- subsection_type: 예외
+- applicant_context: |
+    일정한 요건을 갖춘 성실외국인 근로자가 취업활동 기간 만료 출국 전 사용자가 재입국 후의 고용허가를 신청하면, 그 외국인근로자에 대하여 출국한 날로부터 1개월이 지나면 다시 취업할 수 있는 특례.
+- eligibility: |
+    ① 외국인근로자의 고용 등에 관한 법률 제18조의4 규정에 해당하는 자
+    - 취업활동기간(5년 미만 또는 직권 연장 시 6년 미만) 중에 사업장을 변경하지 아니한 경우 또는 최초 근무한 업종과 동일 업종 내에서 사업장 변경하여 4년 10개월 근속한 경우 (사용자와 취업활동기간 종료일까지의 근로계약 기간이 1년 이상)
+    - 휴업·폐업 등 외국인근로자의 책임이 아닌 사유로 사업장 변경한 경우로서 사용자와 취업활동기간 종료일까지의 근로계약 기간이 1년 이상일 것 또는 1년 미만이나 고용노동부(고용센터)가 재입국 특례 적용을 인정한 경우
+    ② 재입국하여 근로를 시작하는 날부터 효력이 발생하는 1년 이상의 근로계약을 체결하고 있을 것
+    ③ 사업장별 외국인 고용한도 등 고용허가서 발급요건을 갖추고 있을 것 (다만, 내국인 구인노력은 요하지 않음)
 - target_persons:
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements: |
-    건설업 비숙련 외국인력(E-9) 업무수행 가능 직종 40종: 도장, 건축배관, 방수, 조적, 타일, 형틀목공, 강구조, 건축기계설비, 건축목공, 견출, 미장, 비계, 석공, 일반용접, 조경, 철거, 철근, 콘크리트, 토공, 특수용접, 도배, 수장, 지붕, 패널조립, 코킹, 창호, 유리, 보일러, 보온, 포장, 준설, 보링, 발파, 궤도, 벌목, 일반기계설비, 잠수, 제관, 덕트, 상하수도배관
-    각 직종 공통: 자재 취급 방법과 공구 사용처를 이해, 현장 공사 용어 및 안전수칙 등 해당 시공에 대한 기초적 지식을 습득한 자
-    공사 과정에서 작업반장이나 숙련공의 지시에 따라 자재운반, 간단한 조립·결속·정리·바탕작업 등 기능공의 보조적 작업 수행
-- procedure:
+    허용업종: 농축산업, 어업, 서비스업, 300인 미만의 제조업(뿌리산업 포함).
+    뿌리산업: 주조, 금형, 소성가공, 용접, 표면처리, 열처리 등 공정기술 활용 사업.
+    허용인원: 업종별·사업장별 고용허용 기준에 의함. 사업장별 총 고용허용인원 초과 불가.
+    [우대 내용]
+    사업주
+    - 내국인 구인노력 면제 (고용허가서 발급 시)
+    - 한 사업장에서 장기 근속하여 숙련도가 향상된 외국인근로자를 단기 출국시킨 후 재고용 가능
+    외국인근로자
+    - 한국어능력시험 및 입국 전·후 취업교육 면제 (입국연령 제한 없음)
+    - 출국 1개월 경과 후 재입국하여 종전 사업장에서 근무 (일반 재입국 외국인근로자는 6개월 제한)
+- procedure: |
+    해당 외국인근로자의 출국사실을 확인한 후 접수·심사.
+    대행기관에 의한 사증발급인정서 신청 가능.
+    성실근로자 재입국 취업 대상자가 출국 시 외국인등록증을 반납하여야 하므로 완전출국자임을 확인한 후 심사하여 사증발급인정서 발급.
 - restrictions:
 - exceptions:
 - fees:
@@ -6936,91 +6599,157 @@
 - table_summary:
 - table_rows:
 - inviter_context:
-- recommendation_or_approval:
+- recommendation_or_approval: 재입국 고용허가
+- keywords: 재입국 취업특례, 성실근로자, 출국 1개월, 4년 10개월, 한국어시험 면제, 내국인 구인노력 면제, E-9
+- source_page:
+- source_excerpt: |
+    < 재입국 취업 제한의 특례 제도 >
+    일정한 요건을 갖춘 성실외국인 근로자가 취업활동 기간이 만료되어 출국하기 전에 사용자가 재입국 후의 고용허가를 신청하면 그 외국인근로자에 대하여 출국한 날로부터 1개월이 지나면 다시 취업할 수 있는 특례
+    - (한국어능력시험 및 취업교육 면제) 외국인근로자는 귀국 후 한국어 능력시험 및 입국 전·후 취업교육 면제
+    - (출국 1개월 경과 후 재입국) 다른 재입국 외국인근로자(재입국 제한기간 6개월)와는 달리 출국 1개월 경과 후 재입국하여 종전 사업장에서 근무
+- related_visa_codes:
 - expected_questions: |
-    건설현장에서 외국인이 할 수 있는 일이 뭐예요?
-    용접이나 배관 일도 비전문취업으로 가능해요?
-    숙련공만 하는 일을 외국인이 직접 할 수 있어요?
+    비전문취업으로 4년 10개월 일한 후에도 다시 한국 와서 일할 수 있어요?
+    재입국 특례는 출국하고 얼마나 지나야 돌아올 수 있어요?
+    한국어 시험 다시 봐야 해요?
+    회사 옮긴 적 있어도 특례 받을 수 있나요?
+
+### row E-9 / 사증발급 / 대상
+- manual_type: 사증민원
+- visa_code: E-9
+- visa_name_ko: 비전문취업
+- item_type: visa_rule
+- section_title: E-9 비전문취업 / 건설업 비숙련 외국인력 업무수행가능 범위 (40개 직종)
+- subtype_or_program: E-9-2
+- petition_type: 사증발급
+- subsection_type: 대상
+- applicant_context: |
+    건설업(E-9-2)에서 비숙련 외국인력이 작업반장이나 숙련공의 지시에 따라 수행할 수 있는 보조적 작업 범위. 40개 직종에 대한 기초적 지식 보유자.
+- eligibility:
+- target_persons: 건설업 비숙련 외국인력 (도장, 건축배관, 방수, 조적, 타일, 형틀목공, 강구조, 건축기계설비, 건축목공, 견출, 미장, 비계, 석공, 일반용접, 조경, 철거, 철근, 콘크리트, 토공, 특수용접, 도배, 수장, 지붕, 패널조립, 코킹, 창호, 유리, 보일러, 보온, 포장, 준설, 보링, 발파, 궤도, 벌목, 일반기계설비, 잠수, 제관, 덕트, 상하수도배관 등 40개 직종)
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    각 직종별 자재의 취급 방법, 공구 사용처, 현장 공사용어, 안전수칙 등 해당 시공에 대한 기초적 지식을 습득한 자. 공사 과정에서 작업반장이나 숙련공의 지시에 따라 자재운반, 간단한 조립·결속·정리 등 기능공들의 보조적 작업 수행.
+- procedure:
+- restrictions: |
+    역할은 기능공(숙련공)의 '보조적 작업'에 한정. 자재운반·간단한 조립·결속·정리·바탕작업 등.
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary: 건설업 E-9 비숙련 외국인력 업무수행 가능 40개 직종
+- table_rows: |
+    - 도장, 건축배관, 방수, 조적, 타일, 형틀목공, 강구조, 건축기계설비, 건축목공, 견출, 미장, 비계, 석공, 일반용접, 조경, 철거, 철근, 콘크리트, 토공, 특수용접, 도배, 수장, 지붕, 패널조립, 코킹, 창호, 유리, 보일러, 보온, 포장, 준설, 보링, 발파, 궤도, 벌목, 일반기계설비, 잠수, 제관, 덕트, 상하수도배관
+- inviter_context:
+- recommendation_or_approval:
+- keywords: E-9 건설업, 비숙련 외국인력, 40개 직종, 보조적 작업, 작업반장 지시, E-9-2
+- source_page:
+- source_excerpt: |
+    붙임 건설업 비숙련 외국인력(E-9) 업무수행가능 범위
+    1 도장 도장 공사와 관련된 자재의 취급 방법과 공구 사용처를 이해하고, 현장에서 사용하는 공사 용어 및 안전수칙 등 '도장 시공에 대한 기초적 지식을 습득한 자로서, 공사 과정에서 작업반장이나 숙련공의 지시에 따라 간단한 간단한 바탕손질, 자재를 운반하는 등 기능공들의 보조적 작업을 수행한다.
+    2 건축배관 건축 배관공사와 관련된 자재의 취급 방법과 공구 사용처를 이해하고, 현장의 공사 용어와 안전수칙 등 상하수도 배관의 기초 지식을 습득한 자로서...
+- related_visa_codes:
+- expected_questions: |
+    건설현장에서 외국인이 할 수 있는 일이 정해져 있어요?
+    도장이나 미장 같은 보조 작업도 비전문취업으로 할 수 있어요?
+    숙련공이 아니어도 일할 수 있는 직종이 뭐가 있어요?
 
 <!-- end chunk: visa_013 -->
 
 
 <!-- vizabridge-normalize v1 chunk: visa_014 hash: dabeead7db427e40 lines: 4696-4722 -->
 
-### row E-10 / 사증발급인정서 / 대상
+### row E-10 / 사증발급 / 대상
 - manual_type: 사증민원
 - visa_code: E-10
 - visa_name_ko: 선원취업
 - item_type: visa_rule
-- section_title: E-10 선원취업
+- section_title: E-10 선원취업 / 활동범위 및 해당자 (E-10-1·E-10-2·E-10-3)
 - subtype_or_program:
-- petition_type: 사증발급인정서
+- petition_type: 사증발급
 - subsection_type: 대상
 - applicant_context: |
-    내항선원(E-10-1), 어선원(E-10-2), 순항여객선원(E-10-3) 등 선원법 제2조제6호의 부원에 해당하는 자
+    선원법 적용 선박에 6개월 이상 선원근로계약을 체결한 부원(部員)에 해당하는 외국인 선원.
 - eligibility: |
-    내항선원(E-10-1): 해운법 제3조제1호·제2호 및 제23조제1호 사업체에서 6개월 이상 선원근로계약 체결, 어선 제외 총톤수 5톤 이상 내항상선 승선 부원
-    어선원(E-10-2): 수산업법상 정치망어업·근해어업·어획물운반업 사업체(20톤 이상 어선)에서 6개월 이상 선원근로계약 체결
-    순항여객선원(E-10-3): 국적 크루즈 사업자가 운영하는 총톤수 2천톤 이상 크루즈선 승선
-- target_persons: 외국인 선원
+    내항선원(E-10-1): 해운법 제3조제1호(내항정기여객운송사업)·제2호(내항부정기여객운송사업) 및 제23조제1호(내항화물운송)의 사업을 영위하는 자와 그 사업체에서 6개월 이상 선원근로계약을 체결한 선원법 제2조제6호의 부원. 선원법이 적용되는 어선을 제외한 총톤수 5톤 이상의 내항상선에 승선하는 부원에 한함.
+    어선원(E-10-2): 수산업법 제7조제1항제1호(정치망어업), 제40조제1항(동력어선을 이용한 근해어업), 제51조제1항(어획물운반업)의 사업을 영위하는 자와 20톤 이상의 어선에서 6개월 이상 선원근로계약을 체결한 부원.
+    순항여객선원(E-10-3): 크루즈산업의 육성 및 지원에 관한 법률 제2조제7호에 따른 국적 크루즈 사업자의 사업체에서 6개월 이상 노무 제공할 것을 조건으로 선원근로계약 체결한 자로서 총톤수 2천톤 이상의 크루즈선에 승선하는 부원.
+- target_persons: |
+    부원(部員) = 船長·航海士·機關長·機關士·通信長·通信士·運航長·運航士 등 직원과 어로장·사무장·의사 등을 제외한 海員 (선원법 제2조)
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
 - procedure:
-- restrictions:
+- restrictions: |
+    선원취업(E-10) 자격은 고용허가제 적용 대상에서 제외되며, 20톤 미만 어선에서 연근해어업에 종사하는 경우는 비전문취업(E-9-4) 자격에 해당.
+    외국인선원의 총원 및 척당 승선인원, 취업분야 등은 한국해운조합·수협중앙회 등 사용자단체와 선원노동조합연합단체가 노사 합의로 결정한 후 해양수산부에 통보 (선원법 제115조, 외국인선원관리지침).
 - exceptions:
 - fees:
-- duration_or_validity: 3년
+- duration_or_validity: 1회 부여 체류기간의 상한 3년
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context:
+- inviter_context: |
+    내항선원(E-10-1) 및 순항여객선원(E-10-3)의 외국인 운영기관은 한국해운조합이며, 어선원(E-10-2)의 경우 수협중앙회가 담당.
 - recommendation_or_approval:
+- keywords: 선원취업, 내항선원, 어선원, 순항여객선원, 부원, 한국해운조합, 수협중앙회, E-10
+- source_page:
+- source_excerpt: |
+    내항선원(E-10-1)
+    - 해운법 제3조제1호(내항정기여객운송사업)․제2호(내항부정기여객운송 사업) 및 제23조제1호 (내항화물운송)의 사업을 영위하는 자와 그 사업체에서 6개월 이상 선원근로계약을 체결한 선원법 제2조제6호의 부원(部員)*에 해당하는 자
+    - 선원법이 적용되는 선박** 중 어선을 제외한 총톤수 5톤 이상의 내항상선에 승선하는 부원에 한함
+    어선원(E-10-2)
+    - 수산업법 제7조제1항제1호(정치망어업), 제40조제1항(동력어선을 이용한 근해어업), 제51조제1항(어획물운반업)의 규정에 의한 사업을 영위하는 자와 그 사업체(20톤 이상의 어선)에서 6개월 이상 선원근로계약을 체결한 자
+- related_visa_codes: E-9-4
 - expected_questions: |
-    한국 배에서 선원으로 일하려면 어떤 비자를 받아야 하나요?
-    크루즈선에서 일하려고 하는데 가능한가요?
-    어선에서 일하는 외국인 선원도 비자 받을 수 있나요?
+    한국 배에서 선원으로 일하려면 어떤 비자 받아요?
+    내항선원과 어선원은 뭐가 달라요?
+    20톤 미만 어선이면 비자가 달라지나요?
+    몇 년까지 한국에서 머물 수 있어요?
 
 ### row E-10 / 사증발급인정서 / 제출서류
 - manual_type: 사증민원
 - visa_code: E-10
 - visa_name_ko: 선원취업
 - item_type: required_documents
-- section_title: E-10 선원취업
+- section_title: E-10 선원취업 / 사증발급인정서 첨부서류
 - subtype_or_program:
 - petition_type: 사증발급인정서
 - subsection_type: 제출서류
-- applicant_context:
+- applicant_context: |
+    E-10 사증발급인정서 신청 시 공통 및 업종별 추가 서류.
 - eligibility:
-- target_persons:
+- target_persons: 초청업체의 장 (고용주)
 - common_documents: |
-    - 사증발급인정신청서(별지 제21호 서식), 여권, 사업자 등록증, 표준규격사진 1매
-    - 표준근로계약서 사본
-    - 신원보증서
-    - 외국인선원고용신고수리서(지방해양항만청장 발급)
-- mandatory_documents: |
-    내항선원(E-10-1) 추가서류:
-    - 내항여객운송사업면허증·내항화물운송사업등록증 사본(최초 신청 또는 등록사항 변경 시)
-    - 외국인선원고용추천서(지방해양수산청장 발급)
-    - 승선정원증서 또는 500톤 미만 선박검사증서
-    - 노사합의 선사별 T/O 운영승인서(해당 시)
-    어선원(E-10-2) 추가서류:
-    - 정치망어업면허증 및 관리선사용지정증·근해어업허가증 사본
-    - 선박검사증서
-    - 외국인선원고용추천서(지방해양수산청장 발급)
-    - 어획물운반업등록증(해당시)
-    순항여객선원(E-10-3) 추가서류:
-    - 외국인선원고용추천서
-    - 순항여객운송사업면허증 사본
+    ① 사증발급인정신청서 (별지 제21호 서식), 여권, 사업자 등록증, 표준규격사진 1매
+    ② 표준근로계약서 사본
+    ③ 신원보증서
+    ④ 외국인선원고용신고수리서 (지방해양항만청장 발급)
+    범죄경력증명서 (사증발급 신청일로부터 3개월 이내) + 건강상태확인서 (자필 기재).
+- mandatory_documents:
 - other_documents: |
-    - 범죄경력증명서(국적국 기관 발급, 신청일로부터 3개월 이내, '12.8.1.부터)
-    - 건강상태 확인서(붙임 3 양식, 결핵·B형간염·매독 등 감염 여부, 마약·정신질환 기재)
+    [업종별 추가서류]
+    내항선원 (E-10-1):
+    ⑤ 해운법에 따른 내항여객운송사업면허증·내항화물운송사업등록증 사본 (최초 신청 또는 등록사항 변경 시)
+    ⑥ 외국인선원고용추천서 (지방해양수산청장 발급)
+    ⑦ '승선정원증서' 또는 '500톤 미만 선박검사증서' 등
+    ⑧ 노사합의 선사별 T/O 운영승인서 (선사별 총 정원제 적용 업체)
+    어선원 (E-10-2):
+    ⑤ 수산업법에 따른 정치망어업면허증 및 관리선사용지정(어선사용승인)증·근해어업허가증 사본 (최초 신청 또는 변경 시)
+    ⑥ 선박검사증서
+    ⑦ 외국인선원고용추천서 (지방해양수산청장 발급)
+    ⑧ 어획물운반업등록증 (어획물운반업만 해당)
+    순항여객선원 (E-10-3):
+    ⑤ 외국인선원고용추천서 (지방해양수산청장 발급)
+    ⑥ 순항여객운송사업면허증 사본 (최초 신청 또는 변경 시)
 - requirements:
 - procedure: |
-    면허증 또는 등록증상의 회사소재지 관할 출입국·외국인청에 사증발급인정서 신청
-    업종별 대행기관 신청 허용(내항상선·순항여객선: 한국해운조합, 어선: 수협중앙회)
+    면허증 또는 등록증 상의 회사소재지 또는 동 회사의 '주된 영업소'가 있는 지역 관할 출입국·외국인청에 사증발급인정서 신청. 대행기관: 내항상선·순항여객선 → 한국해운조합, 어선 → 수협중앙회.
 - restrictions:
 - exceptions:
 - fees:
@@ -7029,30 +6758,40 @@
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 면허·등록업체 고용주
-- recommendation_or_approval: 지방해양수산청장 외국인선원고용추천서, 해양수산부 도입규모 결정
+- inviter_context:
+- recommendation_or_approval: 외국인선원고용추천서 (지방해양수산청장 발급)
+- keywords: E-10 사증발급인정서, 외국인선원고용추천서, 한국해운조합, 수협중앙회, 외국인선원고용신고수리서
+- source_page:
+- source_excerpt: |
+    첨부서류
+    공통서류
+    ① 사증발급인정신청서 (별지 제21호 서식), 여권, 사업자 등록증, 표준규격사진 1매
+    ② 표준근로계약서 사본
+    ③ 신원보증서
+    ④ 외국인선원고용신고수리서(지방해양항만청장 발급)
+- related_visa_codes:
 - expected_questions: |
-    선원 비자 받으려면 어떤 서류가 필요해요?
-    배 회사가 외국인 선원 데려오려면 어떻게 신청해요?
-    범죄경력증명서랑 건강확인서는 어떻게 준비하나요?
+    선원 비자 신청할 때 어떤 서류 내야 해요?
+    어업이랑 내항선원이 내는 서류가 달라요?
+    선원 비자도 회사가 대신 신청해줄 수 있어요?
 
 ### row F-1 / 사증발급 / 대상
 - manual_type: 사증민원
 - visa_code: F-1
 - visa_name_ko: 방문동거
 - item_type: visa_rule
-- section_title: F-1 방문동거
+- section_title: F-1 방문동거 / 활동범위 및 해당자
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
 - applicant_context: |
-    친척방문, 가족동거, 피부양, 가사정리 등 유사 목적으로 체류하려는 자
+    친척방문, 가족동거, 피부양, 가사정리, 기타 이와 유사한 목적의 체류.
 - eligibility: |
-    주한 외국공관원의 가사보조인
-    외교(A-1) 내지 협정(A-3) 자격자의 동거인으로서 그 세대에 속하지 아니한 자
-    고등학교 이하 교육기관에 입학 예정 또는 재학 중인 미성년 외국인 유학생과 동반 체류하려는 부모
-    SOFA해당자의 21세 이상 동반자녀 또는 기타 가족
-    그밖에 부득이한 사유로 직업활동 없이 장기 체류 필요성 인정자(체류자격 변경허가 대상)
+    - 주한 외국공관원의 가사보조인
+    - 외교(A-1) 내지 협정(A-3) 자격에 해당하는 자의 동거인으로서 그 세대에 속하지 아니한 자
+    - 고등학교 이하의 교육기관에 입학 예정이거나 재학 중인 미성년외국인 유학생과 동반 체류하려는 부모
+    - SOFA 해당자의 21세 이상의 동반자녀 또는 기타 가족
+    - 그밖에 부득이한 사유로 직업 활동에 종사하지 아니하고 대한민국에 장기간 체류하여야 할 사정이 있다고 인정되는 자 (체류자격 변경허가 대상)
 - target_persons:
 - common_documents:
 - mandatory_documents:
@@ -7062,86 +6801,230 @@
 - restrictions:
 - exceptions:
 - fees:
-- duration_or_validity: 2년
+- duration_or_validity: 1회 부여 체류기간의 상한 2년
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 방문동거, 친척방문, 가족동거, 가사보조인, F-1
+- source_page:
+- source_excerpt: |
+    ◦ 친척방문, 가족동거, 피부양, 가사정리, 기타 이와 유사한 목적의 체류
+    - 주한 외국공관원의 가사보조인
+    - 외교(A-1) 내지 협정(A-3) 자격에 해당하는 자의 동거인으로서 그 세대에 속하지 아니한 자
+    - 고등학교 이하의 교육기관에 입학 예정이거나 재학 중인 미성년외국인 유학생과 동반 체류하려는 부모
+    - SOFA해당자의 21세 이상의 동반자녀 또는 기타 가족
+- related_visa_codes: A-1, A-3, F-1-13, F-1-21, F-1-22, F-1-23, F-1-24, F-1-5, F-1-D, F-1-51
 - expected_questions: |
-    한국에 있는 가족을 만나러 장기간 머물려면 어떤 비자를 받아요?
-    유학 중인 미성년 자녀를 돌보러 같이 가려면 어떤 비자를 받나요?
-    외교관 가정의 가사도우미는 어떻게 입국하나요?
+    한국에 사는 가족 만나러 오려면 어떤 비자 받아요?
+    유학생 자녀 따라가서 같이 살려면 어떤 비자가 필요해요?
+    가사도우미로 일하려면 비자가 어떻게 돼요?
 
-### row F-1 / 사증발급 / 제출서류
+### row F-1 / 사증발급 / 요건
 - manual_type: 사증민원
 - visa_code: F-1
 - visa_name_ko: 방문동거
-- item_type: required_documents
-- section_title: F-1 방문동거 / 미성년 유학생 동반 부모(F-1-13) 등
+- item_type: visa_rule
+- section_title: F-1-13 외국인 유학생 동반 부모 (미성년 유학생)
 - subtype_or_program: F-1-13
 - petition_type: 사증발급
-- subsection_type: 제출서류
+- subsection_type: 요건
 - applicant_context: |
-    자비 부담 외국인유학생의 2촌 이내 친인척으로 동반 부모(F-1-13), 유학생 1명당 1명 허용
+    초·중·고등학교, 외국인학교·대안학교·외국교육기관 등에서 입학허가를 받고 입학 예정이거나 재학 중인 자비 부담 외국인 유학생의 2촌 이내 친인척이 동반체류하기 위한 자격.
 - eligibility: |
-    국내 체류 비용 부담능력(연간 생활비: 유학생 기준액의 2배)
-    21개 불법체류 다발국 국민은 재정능력 입증(연 소득 전년도 GNI 이상 또는 자산 중위 수준 이상)
-    최근 5년 이내 출입국관리법 위반 200만원 이상 벌금형·강제퇴거·출국명령 자는 발급 제한
-- target_persons:
-- common_documents: |
-    - 사증발급신청서(별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    - 입학허가서 또는 재학증명서
-    - 가족관계 입증서류(원본·번역본, 호구부, 출생증명서 등)
-    - 국내 체류비용 부담능력 입증서류(3개월 이상 예치된 잔고증명서 등)
-- mandatory_documents:
-- other_documents: |
-    - 재정능력 입증서류(21개 불법체류 다발국 국민에 한함): 원천징수영수증, 부동산소유증명, 예금잔고증명 등
+    해당 교육기관에서 입학허가를 받고 입학 예정이거나 재학 중인 자비 부담 외국인유학생의 2촌 이내의 친인척으로서 재정요건 등 아래 요건을 갖춘 자로서 외국인유학생 1명당 1명 허용 (정부기관 및 지방자치단체의 초청 장학생은 원칙적으로 동반 부모 사증 발급 불가).
+    국내 체류 비용 부담능력: 1년 간 생활비 = 외국인 유학생의 연간 생활비 기준액의 2배 상당 금액(1인 기준).
+    일정 수준 이상의 재정능력 보유 (21개 국가 국민): 연간 소득이 전년도 GNI 이상이거나, 자산이 「국민기초생활보장법」에 따른 중위 수준 이상 (부부 합산 가능).
+- target_persons: 유학생의 2촌 이내 친인척 (보통 부모)
+- common_documents:
+- mandatory_documents: |
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 입학허가서 또는 재학증명서
+    ③ 가족관계 입증서류 (원본 및 번역본 첨부, 호구부, 출생증명서 등)
+    ④ 국내 체류비용 부담능력 입증서류 (3개월 이상 계속 예치된 기준 이상 금액의 잔고증명서 등)
+    ⑤ 재정능력 입증서류 (불법체류 다발국가 국민에 한함) - 원천징수영수증, 부동산소유증명, 부동산거래계약서, 예금잔고증명 등
+- other_documents:
 - requirements:
-- procedure:
-- restrictions:
+- procedure: |
+    재외공관장이 직접 발급. 신청인의 거주국 또는 외국인유학생의 최종학교 소재지 관할 공관에서 신청 원칙. 체류기간 1년 이내, 단수.
+- restrictions: |
+    최근 5년 이내 출입국관리법 등 위반으로 200만원 이상의 벌금형 또는 통고처분을 받거나, 강제퇴거 또는 출국명령 처분을 받은 사실이 있는 자는 사증(사증발급인정서) 발급 제한.
+    21개 불법체류 다발국가: 중국, 필리핀, 인도네시아, 방글라데시, 베트남, 몽골, 태국, 파키스탄, 스리랑카, 인도, 미얀마, 네팔, 이란, 우즈베키스탄, 카자흐스탄, 키르기즈스탄, 우크라이나, 나이지리아, 가나, 이집트, 페루.
 - exceptions:
 - fees:
-- duration_or_validity: 체류기간 1년 이내, 단수
-- quota_or_limit: 유학생 1명당 동반부모 1명
+- duration_or_validity: 체류기간 1년 이내, 단수사증
+- quota_or_limit: 유학생 1명당 1명
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 자비 부담 외국인 유학생
+- inviter_context: 미성년 외국인 유학생 (자비 부담)
 - recommendation_or_approval:
+- keywords: F-1-13, 유학생 동반 부모, 자비 부담, 2촌 이내 친인척, 21개 불법체류 다발국, GNI
+- source_page:
+- source_excerpt: |
+    1. 외국인 유학생(고등학교 이하) 동반 부모(F-1-13)
+    가. 해당자
+    해당 교육기관에서 입학허가를 받고 입학 예정이거나 재학 중인 자비 부담 외국인유학생의 2촌 이내의 친인척으로서 재정요건 등 아래 요건을 갖춘 자로서 외국인유학생 1명당 1명 허용
+    - 국내 체류 비용 부담능력이 있을 것
+    * 1년 간 생활비 : 외국인 유학생의 연간 생활비 기준액의 2배 상당 금액(1인 기준)
+- related_visa_codes:
 - expected_questions: |
-    아이가 한국 학교 다니는데 부모가 같이 살러 가려면 어떤 서류가 필요해요?
-    유학생 부모로 가는 비자에 잔고증명이 얼마나 필요한가요?
-    벌금이나 강제퇴거 기록이 있어도 부모 비자 받을 수 있나요?
+    한국 초중고 다니는 외국인 자녀 따라와 같이 살 수 있어요?
+    부모 둘 다 같이 올 수 있나요?
+    소득이나 자산이 얼마나 있어야 비자가 나와요?
 
-### row F-1 / 사증발급 / 제출서류
+### row F-1 / 사증발급 / 요건
 - manual_type: 사증민원
 - visa_code: F-1
 - visa_name_ko: 방문동거
-- item_type: required_documents
-- section_title: F-1 방문동거 / 디지털노마드(F-1-D)
+- item_type: visa_rule
+- section_title: F-1-22/23/24 투자가 및 전문인력의 외국인 가사보조인
+- subtype_or_program: F-1-22, F-1-23, F-1-24
+- petition_type: 사증발급
+- subsection_type: 요건
+- applicant_context: |
+    투자가 및 전문인력이 신청시점 기준 최소 1년 이상 국외에서 고용한 가사보조인.
+- eligibility:
+- target_persons: 고액투자자(F-1-22) / 첨단투자자(F-1-23) / 전문인력(F-1-24)의 외국인 가사보조인
+- common_documents:
+- mandatory_documents: |
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 외국인투자신고서(법인등기사항전부증명서 또는 사업자등록증사본) 또는 투자기업등록증사본
+       (단, 영 별표 1의 17. 기업투자(D-8) 나목 해당자는 벤처기업확인서/예비벤처기업확인서 + 산업재산권 등 보유 입증서류로 갈음)
+    ③ 고용주의 재직증명서 (신분증명서)
+    ④ 고용주의 소득 요건 입증 자료 (근로소득원천징수영수증, 소득금액 증명원, 급여명세서, 통장사본 등)
+    ⑤ 고용중인 내국인 상시근로자 입증 서류 (투자금액 미화 50만불 미만자)
+    ⑥ 가사보조인 고용계약서
+    ⑦ 신원보증서
+    ⑧ 가사보조인의 졸업증명서 등 학력 입증서류
+    ⑨ 1년 이상 고용주의 가사보조인으로 근무한 사실 입증서류 (고용계약서, 급여명세서, 통장사본 등)
+- other_documents:
+- requirements: |
+    최소 1년 이상 국외에서 가사보조인을 고용한 사실 입증.
+- procedure: |
+    자국 소재 한국공관 (영주권 취득 또는 취업 등으로 제3국에서 장기 거주 중인 경우 거주국 소재 한국공관 신청 가능).
+    공관장 재량으로 체류자격 방문동거(F-1), 체류기간 1년 이하의 단수사증 발급. 단 '우수 전문인력' 중 법무부장관의 승인 사항은 승인을 받은 후 사증 발급.
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity: 체류기간 1년 이하의 단수사증
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: 고액투자자, 첨단투자자(벤처), 전문인력
+- recommendation_or_approval:
+- keywords: F-1-22, F-1-23, F-1-24, 외국인 가사보조인, 50만불, 고용계약서, 1년 이상 고용
+- source_page:
+- source_excerpt: |
+    3. 투자가 및 전문인력의 외국인 가사보조인(F-1-22, F-1-23, F-1-24)
+    신청대상
+    - 투자가 및 전문인력이 신청시점 기준 최소 1년 이상 국외에서 고용한 가사보조인
+    사증발급 (고액투자자 : F-1-22, 첨단투자자 : F-1-23, 전문인력 : F-1-24)
+    - 공관장 재량으로 체류자격 방문동거(F-1), 체류기간 1년 이하의 단수사증 발급
+- related_visa_codes: D-8
+- expected_questions: |
+    외국에서 고용하던 가사도우미를 한국에서 같이 데려와도 되나요?
+    투자자가 가사보조인을 부르려면 어떤 서류 내야 해요?
+    가사보조인은 얼마나 오래 일했어야 인정 받아요?
+
+### row F-1 / 사증발급 / 요건
+- manual_type: 사증민원
+- visa_code: F-1
+- visa_name_ko: 방문동거
+- item_type: visa_rule
+- section_title: F-1-5 결혼이민자의 부모 등 가족 (자녀양육 지원·인도적 사유)
+- subtype_or_program: F-1-5
+- petition_type: 사증발급
+- subsection_type: 요건
+- applicant_context: |
+    자녀양육 지원 등 목적으로 입국하는 결혼이민자의 부모 등 가족에 대한 방문동거(F-1-5) 단수사증 (90일 이하).
+- eligibility: |
+    [초청 자격]
+    - 한국인 배우자 또는 국적·영주(F-5) 자격을 취득한 결혼이민자
+    - 한부모 가족 결혼이민자
+    - (인도적 사유) 결혼이민자, 한국인 배우자, 자녀 중 '중증질환자' 또는 '중증장애인'이 있는 경우
+    [피초청 대상]
+    - 결혼이민자의 부 또는 모
+    - (결혼이민자의 부모 모두 국내에 입국할 수 없고, 피초청인 본인에게 미성년 자녀가 없는 경우) 형제자매, 전혼관계 출생 자녀
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    [자녀 양육지원]
+    ① (신청인) 사증발급신청서, 여권, 표준규격사진 1매, 수수료
+    ② (초청인) 신분증 사본, 초청장, 신원보증서(보증기간: 입국한 날로부터 3년), 불법체류·취업 방지 서약서
+    ③ (국내 가족관계 입증서류) 초청인의 기본증명서, 가족관계증명서, 혼인관계증명서, 주민등록표(등본), 자녀명의 가족관계증명서 (임신한 경우 임신진단서 또는 산모수첩)
+    ④ (본국 가족관계 입증서류) 결혼이민자의 직계가족 및 형제자매 모두를 확인할 수 있는 가족관계 증명서류 (해당 국가 정부 발급 공적 서류)
+    ⑤ (자녀가 취학연령인 경우) 재학증명서
+    [인도적 사정] 위 ①~④ + 중증질환·장애 증명서류 ('중증질환(중증난치질환)' 또는 '산정특례' 사실 기재된 진료비 영수증 / 장애인증명서의 '종합 장애 정도'에 '중증장애' 또는 '장애 정도가 심한 장애')
+- other_documents:
+- requirements:
+- procedure: |
+    초청 시기: 신청일 기준, 결혼이민자(또는 그 배우자)가 임신하였거나, 자녀가 만 9세가 되는 해의 9월말까지 초청 가능.
+    (특례) 한부모 가족·다자녀 가족은 자녀가 만 12세가 되는 해의 9월말까지 초청 가능.
+- restrictions: |
+    [법위반 사실 유무 및 제한기간 경과]
+    - 초청인이 「출입국관리법」제7조의2, 제12조의3, 제18조제3항부터 제5항, 제21조 제2항 또는 제33조의3제1호 위반 시 일정 기간 F-1-5 비자 발급 제한
+    - 과거 초청인의 초청을 받고 입국한 외국인이 불법체류·불법취업·형사범으로 출국명령 또는 강제퇴거명령을 받은 경우 제한
+    - 피초청인이 국내법 위반 또는 출국명령·강제퇴거명령을 받은 경우 일정 기간 발급 제한
+- exceptions:
+- fees:
+- duration_or_validity: 90일 이하 단수사증
+- quota_or_limit: |
+    초청 횟수: 자녀 1명당 최대 2회 (부와 모를 동시·순차 초청 시 각각 적용).
+    초청 인원: 1명, 다만 부모에 한해 동시·순차 초청 가능. 입국한 부 또는 모가 국내에 체류 중일 때는 다른 본국 가족 추가 초청 불가.
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: 한국인 배우자 또는 국적·영주 취득 결혼이민자
+- recommendation_or_approval:
+- keywords: F-1-5, 결혼이민자 부모, 자녀양육 지원, 한부모 가족, 다자녀, 중증질환, 신원보증
+- source_page:
+- source_excerpt: |
+    7. 자녀양육 지원 등 목적으로 입국하는 결혼이민자의 부모 등 가족에 대한 방문동거(F-1-5, 90일 이하) 단수 사증
+    가. 자녀양육 지원
+    1) 초청 자격
+    ◦ 한국인 배우자 또는 국적･영주(F-5) 자격을 취득한 결혼이민자
+    ◦ 한부모 가족 결혼이민자
+    3) 초청 시기
+    ◦ 신청일 기준, △ 결혼이민자(또는 그 배우자)가 임신하였거나, △ 자녀가 만 9세가 되는 해의 9월말까지 초청 가능
+- related_visa_codes: F-5
+- expected_questions: |
+    한국에서 결혼한 외국인이 본국 부모를 부르려면 어떻게 해요?
+    자녀가 몇 살까지 부모 초청이 가능해요?
+    중증질환자 가족이 있으면 부모 초청이 쉬워져요?
+    한 자녀당 부모를 몇 번까지 부를 수 있어요?
+
+### row F-1 / 사증발급 / 요건
+- manual_type: 사증민원
+- visa_code: F-1
+- visa_name_ko: 방문동거
+- item_type: visa_rule
+- section_title: F-1-D 디지털노마드(워케이션) 비자
 - subtype_or_program: F-1-D
 - petition_type: 사증발급
-- subsection_type: 제출서류
+- subsection_type: 요건
 - applicant_context: |
-    해외 사업체 소유자 또는 해외 기업 소속 외국인으로 원격근무 가능한 자 및 그 가족
+    해외 사업체 소유자 또는 해외 기업에 소속된 외국인으로서 원격근무가 가능한 자가 한국에서 워케이션할 수 있도록 발급되는 비자.
 - eligibility: |
-    1년 이상 동일 업종 근무
-    만 18세 이상(동반가족 자녀는 예외)
-    한국은행 고시 전년도 1인당 GNI의 2배 이상 소득
-    보장액 1억원 이상의 개인 의료보험 가입
-- target_persons:
-- common_documents: |
-    - 사증발급신청서(별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    - 재직증명서(동일 업종 1년 이상 종사 입증)
-    - 급여명세서, 잔고증명 등 소득 증빙 서류
-    - 범죄경력증명서, 의료보험 가입 증명서
-- mandatory_documents:
-- other_documents: |
-    - 가족관계 입증서류(가족 동반시)
-    - 기타 재외공관장이 필요하다고 인정하는 서류
-- requirements:
+    - (대상) 해외 사업체 소유자 또는 해외 기업에 소속된 외국인으로서 원격근무가 가능한 자 중 1년 이상 동일 업종에 근무한 자 및 그 가족
+    - (연령) 만 18세 이상 (동반가족 자녀는 예외)
+    - (소득) 한국은행 고시 전년도 1인당 국민총소득(GNI)의 2배 이상인 자
+    - (의료보험) 병원 치료 및 본국 후송을 위한 보장액 1억원 이상의 개인 의료보험 가입 필요
+- target_persons: 원격근무 가능 외국인 + 동반가족
+- common_documents:
+- mandatory_documents: |
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 재직증명서 (동일 업종에 1년 이상 종사 입증 필요)
+    ③ 급여명세서, 잔고증명 등 소득 증빙 서류
+    ④ 범죄경력증명서, 의료보험 가입 증명서
+    ⑤ 가족관계 입증서류 (가족 동반시)
+    ⑥ 기타 재외공관장이 필요하다고 인정하는 서류
+- other_documents:
+- requirements: |
+    GNI 2배 이상 소득 + 1년 이상 동일업종 근무 + 만 18세 이상 + 1억원 이상 의료보험.
 - procedure:
 - restrictions:
 - exceptions:
@@ -7151,144 +7034,251 @@
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context:
+- inviter_context: 해외 기업 또는 본인 사업체
 - recommendation_or_approval:
+- keywords: F-1-D, 디지털노마드, 워케이션, 원격근무, GNI 2배, 의료보험 1억, 18세 이상
+- source_page:
+- source_excerpt: |
+    8. 디지털노마드(워케이션) 비자(F-1-D)
+    1) 발급 대상
+    ◦ (대상) 해외 사업체 소유자 또는 해외 기업에 소속된 외국인으로서 원격근무가 가능한 자 중 1년 이상 동일 업종에 근무한 자 및 그 가족
+    ◦ (연령) 만 18세 이상 (동반가족 자녀는 예외)
+    ◦ (소득) 한국은행 고시 전년도 1인당 국민총소득(GNI)의 2배 이상인 자
+    ◦ (의료보험) 병원 치료 및 본국 후송을 위한 보장액 1억원 이상의 개인 의료보험 가입 필요
+- related_visa_codes:
 - expected_questions: |
-    원격근무 하면서 한국에서 장기간 지내려면 어떤 비자를 받나요?
-    디지털노마드 비자 받으려면 소득이 얼마나 되어야 해요?
-    가족도 같이 데려갈 수 있나요?
+    한국에서 원격근무하면서 살려면 어떤 비자 받아요?
+    디지털노마드 비자는 소득 얼마부터 가능해요?
+    가족도 같이 와도 되나요?
+    의료보험은 얼마짜리 들어야 해요?
+
+### row F-1 / 사증발급인정서 / 요건
+- manual_type: 사증민원
+- visa_code: F-1
+- visa_name_ko: 방문동거
+- item_type: visa_rule
+- section_title: F-1-15 우수인재·투자자·유학생 부모 (사증발급인정서)
+- subtype_or_program: F-1-15
+- petition_type: 사증발급인정서
+- subsection_type: 요건
+- applicant_context: |
+    국내에서 활동 중인 우수인재·고액투자자·석박사 유학생이 본인 또는 배우자의 부모를 90일 이하 단기 초청.
+- eligibility: |
+    [초청자 요건]
+    - (우수인재) 취재(D-5), 주재(D-7), 기업투자(D-8), 무역경영(D-9), 교수(E-1)~특정활동(E-7) 자격자로서 연간 소득이 전년도 GNI 2배 이상인 자. (해당 자격의 활동범위를 유지하며 다른 체류자격(F-2, F-5 등)으로 변경한 경우 포함)
+    - (투자자) 외국인투자촉진법, 외국환거래법, 투자이민제 등에 따라 국내에 3억원 이상 투자한 후 외국인등록을 하고 계속해서 6개월 이상 국내 체류 중인 자
+    - (유학생) 국내 대학의 석·박사과정에서 6개월 이상 유학하며 체류 중인 자. 단, 피초청자 포함 초청자 동반가족이 3명 이상인 경우, 학비 외에 전년도 GNI 50% 이상에 해당하는 연간 체류경비를 국내에 보유하고 있음을 입증.
+    [피초청자 요건]
+    - 초청자 또는 그 배우자의 부모
+    - 허용 인원: 최대 2명 이내 동시 체류 허용
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    ① 사증발급인정신청서 (별지 제21호 서식), 여권, 표준규격사진 1매
+    ② 초청사유서 (취업활동을 하지 않겠다는 내용 기재)
+    ③ 신원보증서
+    ④ 가족관계입증서류
+    ⑤ 소득/투자금/체류경비 입증서류
+- other_documents:
+- requirements:
+- procedure: |
+    초청자가 관할 출입국·외국인청(사무소·출장소)에 방문동거(F-1-15), 90일 이하 단수 사증발급인정서 신청.
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity: 90일 이하 단수사증
+- quota_or_limit: 최대 2명 이내 동시 체류 허용
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: 우수인재(D-5~E-7)·투자자(3억원+6개월 체류)·석박사 유학생(6개월+체류)
+- recommendation_or_approval:
+- keywords: F-1-15, 우수인재 부모, 투자자 부모, 유학생 부모, GNI 2배, 3억원 투자, 90일 이하
+- source_page:
+- source_excerpt: |
+    1. 우수인재, 투자자 및 유학생 부모(F-1-15)
+    가. 초청자 요건
+    (우수인재) 취재(D-5), 주재(D-7), 기업투자(D-8), 무역경영(D-9), 교수(E-1) ~ 특정활동(E-7) 자격자로서, 연간 소득이 전년도 GNI 2배 이상인 자
+    (투자자) 외국인투자촉진법, 외국환거래법, 투자이민제 등에 따라 국내에 3억원 이상을 투자한 후 외국인등록을 하고 계속해서 6개월 이상 국내 체류 중인 자
+    (유학생) 국내 대학의 석･박사과정에서 6개월 이상 유학하며 체류 중인 자
+- related_visa_codes: D-5, D-7, D-8, D-9, E-1, E-2, E-3, E-4, E-5, E-6, E-7, F-2, F-5
+- expected_questions: |
+    한국에서 일하는 외국인이 부모님을 부르려면 어떻게 해요?
+    투자자 부모는 어떤 조건으로 비자 받아요?
+    유학생도 부모님을 한국에 부를 수 있나요?
+    부모님 둘 다 같이 올 수 있어요?
 
 ### row F-2 / 사증발급 / 대상
 - manual_type: 사증민원
 - visa_code: F-2
 - visa_name_ko: 거주
 - item_type: visa_rule
-- section_title: F-2 거주
+- section_title: F-2 거주 / 활동범위 및 해당자
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
 - applicant_context: |
-    영주자격 부여받기 위해 국내 장기체류하려는 자
+    영주자격을 부여받기 위하여 국내 장기체류하려는 자.
 - eligibility: |
-    국민의 미성년 외국인 자녀 또는 영주(F-5) 자격자의 배우자·미성년 자녀
-    국민과 혼인관계(사실혼 포함)에서 출생한 자로 법무부장관이 인정하는 자
-    난민의 인정을 받은 자
-    외국인투자가(미화 50만달러 이상 투자+D-8로 3년 이상 체류, 또는 외투기업 파견 임직원 3년 이상, 또는 30만달러 투자+국민 2명 이상 고용)
-    영주(F-5) 상실자 중 법무부장관이 인정한 자(강제퇴거자 제외)
-    A-1~A-3 이외 자격으로 7년 이상 계속 체류(E-1~E-5, E-7은 5년)
-    국가·지방공무원 임용자
-    점수제 우수인재(나이·학력·소득 기준 충족)
-    부동산 등 자산 투자자
-    대한민국에 특별 기여한 자
-    인구감소지역 활성화 대상자
-- target_persons: F-2 자격 해당자 11개 항목
+    가. 국민의 미성년 외국인 자녀 또는 영주(F-5) 체류자격자의 배우자 및 그의 미성년 자녀
+    나. 국민과 혼인관계(사실상의 혼인관계 포함)에서 출생한 사람으로서 법무부장관이 인정하는 사람
+    다. 난민의 인정을 받은 사람
+    라. 「외국인투자 촉진법」에 따른 외국투자가 등으로:
+       1) 미화 50만 달러 이상 투자한 외국인으로 D-8 자격으로 3년 이상 계속 체류
+       2) 미화 50만 달러 이상 투자 외국법인이 국내 외국인투자기업에 파견한 임직원으로 3년 이상 계속 체류
+       3) 미화 30만 달러 이상 투자 + 2명 이상 국민 고용
+    마. 영주(F-5) 체류자격을 상실한 사람 중 법무부장관 인정 (강제퇴거자 제외)
+    바. A-1~A-3 외 체류자격으로 대한민국에 7년 이상 계속 체류하여 생활 근거지가 국내에 있는 사람 (E-1~E-5 또는 E-7은 5년 이상)
+    아. 「국가공무원법」 또는 「지방공무원법」에 따라 공무원으로 임용된 사람
+    자. 나이, 학력, 소득 등 법무부장관 고시 기준 해당자 (점수제 우수인재 F-2-7)
+    차. 투자지역, 투자대상, 투자금액 등 법무부장관 고시 기준 부동산 등 자산 투자자
+    카. 법무부장관 대한민국에 특별한 기여·공익 증진 인정자
+    타. 자~카목 해당자의 배우자 및 자녀
+    파. 「국가균형발전 특별법」 제2조제9호 인구감소지역 등 인력 수급/지역 활력 회복 대상자
+- target_persons:
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
 - procedure:
-- restrictions:
+- restrictions: |
+    난민인정을 받은 자, 고액투자자, 영주자격 상실자, 7년 이상 장기체류자는 체류자격 부여 또는 체류자격 변경 대상이므로 재외공관에서 사증발급 불가.
 - exceptions:
 - fees:
-- duration_or_validity: 5년
+- duration_or_validity: 1회 부여 체류기간의 상한 5년
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 거주, F-2, 영주 준비, 결혼이민, 난민, 외국인투자가, 점수제, 인구감소지역
+- source_page:
+- source_excerpt: |
+    영주자격을 부여받기 위하여 국내 장기체류하려는 자
+    가. 국민의 미성년 외국인 자녀 또는 영주(F-5) 체류자격을 가지고 있는 사람의 배우자 및 그의 미성년 자녀
+    바. 외교(A-1)부터 협정(A-3)까지의 체류자격 외의 체류자격으로 대한민국에 7년 이상 계속 체류하여 생활 근거지가 국내에 있는 사람으로서 법무부장관이 인정하는 사람[다만, 교수(E-1)부터 전문직업(E-5)까지 또는 특정활동(E-7) 체류자격을 가진 사람에 대해서는 최소 체류기간을 5년으로 한다]
+    1회 부여 체류기간의 상한 5년
+- related_visa_codes: F-5, A-1, A-3, E-1, E-5, E-7, D-8, F-2-3, F-2-2, F-2-7
 - expected_questions: |
-    영주권 받기 전에 한국에 오래 살 수 있는 비자는 뭐예요?
-    한국인이랑 결혼해서 낳은 아이는 어떤 비자를 받아요?
-    난민으로 인정받으면 어떤 자격이 주어지나요?
+    한국 영주권 받기 전에 거주비자는 어떤 사람이 받아요?
+    한국에서 7년 이상 살면 거주비자로 바꿀 수 있나요?
+    부동산 투자해도 거주비자가 가능해요?
+    난민으로 인정받으면 어떤 비자가 나와요?
 
-### row F-2 / 사증발급 / 제출서류
+### row F-2 / 사증발급 / 요건
 - manual_type: 사증민원
 - visa_code: F-2
 - visa_name_ko: 거주
-- item_type: required_documents
-- section_title: F-2 거주 / 영주자격자 배우자(F-2-3)
+- item_type: visa_rule
+- section_title: F-2-3 영주자격자의 배우자 거주사증
 - subtype_or_program: F-2-3
 - petition_type: 사증발급
-- subsection_type: 제출서류
+- subsection_type: 요건
 - applicant_context: |
-    영주(F-5) 자격 소지자의 배우자, 체류기간 1년 이하 단수사증
+    영주(F-5) 자격 소지자의 배우자에 대한 체류기간 1년 이하의 거주(F-2-3) 단수사증.
 - eligibility:
-- target_persons:
-- common_documents: |
-    - 사증발급신청서(별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    - 국내 배우자의 신원보증서
-    - 초청장(붙임1), 혼인배경 진술서(붙임2)
-    - 양국 간 혼인관계 입증서류(결혼증명서, 가족관계 기록에 관한 증명서 등)
-    - 재정(소득) 입증서류(소득금액증명원, 재직증명서, 계좌거래내역 등)
-    - 초청인의 신용정보조회서(전국은행연합회)
-    - 양국 발급 초청인·피초청인 쌍방의 범죄경력 증명서
-    - 초청인·피초청인 쌍방의 건강진단서
-- mandatory_documents:
-- other_documents: |
-    - 과거 혼인기록이 있는 경우 혼인 해소 입증서류(이혼증 등)
+- target_persons: 영주(F-5) 자격 소지자의 외국인 배우자
+- common_documents:
+- mandatory_documents: |
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 국내 배우자의 신원보증서
+    ③ 초청장(붙임1 양식), 혼인배경 진술서(붙임2 양식)
+    ④ 초청인 및 피초청인 양국 간 혼인관계 입증서류 (결혼증명서, 가족관계 기록에 관한 증명서 등)
+    ⑤ 재정(소득) 입증서류 (소득금액증명원, 재직증명서, 계좌거래내역 등)
+    ⑥ 초청인의 신용정보조회서 (전국은행연합회 발행)
+    ⑦ 국적국 또는 거주국의 관할 기관 발급 초청인 및 피초청인 쌍방의 '범죄경력에 관한 증명서' (영주(F-5)자격 소지자 본인이 영주자격 변경 시 '범죄 경력에 관한 증명서'를 이미 제출한 경우 본인은 생략 가능, 단 영주자격 변경 후 해외에서 6개월 이상 체류한 경우 해외 체류기간 동안의 범죄경력증명서 제출 필요)
+    ⑧ 초청인 및 피초청인 쌍방의 건강진단서 (의료법 제3조제2항제3호 병원급 의료기관 또는 지역보건법 제7조 보건소 발행)
+    ⑨ 과거 혼인기록이 있는 경우 혼인 해소 여부 입증서류 (이혼증 등)
+- other_documents:
 - requirements:
 - procedure:
 - restrictions:
 - exceptions:
 - fees:
-- duration_or_validity: 체류기간 1년 이하, 단수
+- duration_or_validity: 체류기간 1년 이하의 단수사증
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 국내 영주(F-5) 자격 소지자
+- inviter_context: 영주(F-5) 자격 소지자
 - recommendation_or_approval:
+- keywords: F-2-3, 영주자 배우자, 신원보증서, 혼인관계, 범죄경력, 건강진단서
+- source_page:
+- source_excerpt: |
+    1. 영주(F-5) 자격 소지자의 배우자에 대한 체류기간 1년 이하의 거주(F-2-3) 단수사증
+    첨부서류
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 국내 배우자의 신원보증서
+    ③ 초청장(붙임1 양식), 혼인배경 진술서(붙임2 양식)
+    ④ 초청인 및 피초청인 양국 간 혼인관계 입증서류
+- related_visa_codes: F-5
 - expected_questions: |
-    영주권자랑 결혼했는데 한국에 같이 살러 가려면 어떤 서류 내요?
-    배우자 비자 받을 때 범죄경력증명서도 필요한가요?
-    초청장이랑 혼인배경 진술서는 어디서 받나요?
+    영주권자랑 결혼했으면 어떤 비자를 받아요?
+    배우자 비자 신청할 때 어떤 서류가 필요해요?
+    혼인 한 적 있으면 어떻게 증명해요?
 
-### row F-2 / 사증발급인정서 / 제출서류
+### row F-2 / 사증발급인정서 / 요건
 - manual_type: 사증민원
 - visa_code: F-2
 - visa_name_ko: 거주
-- item_type: required_documents
-- section_title: F-2 거주 / 점수제 우수인재(F-2-7)
+- item_type: visa_rule
+- section_title: F-2-7 점수제 우수인재 (상장법인·유망산업분야)
 - subtype_or_program: F-2-7
 - petition_type: 사증발급인정서
-- subsection_type: 제출서류
+- subsection_type: 요건
 - applicant_context: |
-    점수제 우수인재(상장법인·유망산업분야 종사자) 및 그 배우자·미성년 자녀
+    점수제 우수인재 (F-2-7) 사증발급인정서 발급 대상.
 - eligibility: |
-    상장법인 종사자: KOSPI/KOSDAQ 상장법인 종사자 또는 취업 확정자로 관리자·전문가 직종
-    유망산업분야 종사자: 산업통상자원부 고시 첨단기술·제품 분야(IT, 나노, 바이오 등) 종사자, 전년도 소득이 1인당 GNI 1.5배 이상
-    배우자·미성년 자녀: F-2-7 주체류자의 법률상 배우자 또는 친권·양육권 있는 미성년 자녀
-- target_persons:
-- common_documents: |
-    - 사증발급인정신청서(별지 제21호 서식), 여권, 외국인등록증(해당시), 표준규격사진 1매
-    - 결핵 진단서
-    - 고용계약서, 재직증명서, 사업자등록증, 법인등기부등본, 소득금액증명, 학위·졸업증명서 등
-    - 신청인이 해당하는 점수표
-    - 평가 항목별 점수 입증서류
-    - 체류지 입증서류
-- mandatory_documents:
-- other_documents: |
-    - 배우자·미성년 자녀의 경우: 가족관계 소명 서류(법률상 가족관계 입증)
-    - 심사관 추가 요구 서류
+    [상장법인 종사자]
+    ① 국내 유가증권시장(KOSPI) 또는 코스닥(KOSDAQ)에 상장된 법인 종사자 또는 고용계약을 체결하여 취업이 확정된 외국인
+    ② 통계청 고시 '한국표준직업분류'에 따른 관리자, 전문가 및 관련 종사자에 해당하는 직종에 취업 중이거나 고용계약을 체결하여 취업이 확정된 외국인
+    [유망산업분야 종사자]
+    산업통상자원부 고시 「첨단기술 및 제품의 범위」에 따른 IT, 기술경영, 나노, 디지털전자, 바이오, 수송 및 기계, 신소재, 환경 및 에너지 등의 산업 분야 종사자 또는 고용계약 체결자로 소득금액증명원 상의 전년도 소득이 국민 1인당 GNI 1.5배 이상 (취업 예정자는 고용계약서상의 연봉으로 갈음).
+    [점수제 우수인재의 배우자 및 미성년 자녀]
+    점수제 평가항목별 합산 점수가 80점 이상임을 검증 받고 F-2-7을 받은 사람의 배우자 또는 미성년 자녀. (법률상 배우자, 사실혼 불인정. 미성년 자녀는 친권·양육권 보유 필요)
+- target_persons: 상장법인 종사자 / 유망산업분야 종사자 / 점수제 우수인재의 배우자·미성년 자녀
+- common_documents:
+- mandatory_documents: |
+    ① 사증발급인정신청서 (별지 제21호 서식), 여권, 외국인등록증(주체류자가 외국인등록을 마친 사람만), 표준규격사진 1매
+    ② 결핵 진단서 (「외국인 결핵환자 사증발급 및 체류관리 지침」에 따름)
+    ③ 신청자의 고용계약서, 재직증명서, 사업자등록증, 법인등기부등본, 소득금액증명, 학위취득(예정)증명서, 졸업(예정)증명서 등
+    ④ 신청인이 해당하는 점수를 기재한 점수표
+    ⑤ 평가 항목별 점수를 입증하는 서류
+    ⑥ 체류지 입증서류
+    ⑦ 심사관이 추가 제출을 요구한 서류
+    [배우자·자녀 추가] 가족관계 소명 서류 (주체류자와의 법률상 가족관계 입증)
+- other_documents:
 - requirements: |
-    평가항목 합산 80점 이상
+    합산 점수 80점 이상 (배우자·자녀 사증발급인정서는 주체류자가 F-2-7 보유). 유망산업분야는 전년도 소득 GNI 1.5배 이상.
 - procedure: |
-    사업장 또는 주소지 관할 출입국·외국인청 방문 신청 또는 비자포털 온라인 신청(F-2-7 또는 F-2-71, 단수, 90일)
+    상장 법인·유망산업분야 종사자: 사업장 주소지 관할 출입국·외국인청 방문 신청 또는 온라인(대한민국비자포털) 신청 — F-2-7 단수 90일.
+    배우자 및 미성년 자녀: 초청자(F-2-7) 주소지 관할 출입국·외국인청 방문 또는 온라인 신청 — F-2-71 단수 90일.
+    초청자가 F-2-7S인 경우: 자격변경허가받은 날부터 5년 동안 소득요건 심사 없이 F-2-71 (단수 90일), 5년 경과 후 소득요건 심사 후 충족 시 F-2-71.
+    주체류자의 소득기준(GNI 이상) 미충족 시 다른 허가요건 충족 시 F-1-12 (단수 90).
 - restrictions:
 - exceptions:
 - fees:
-- duration_or_validity: 단수, 90일
+- duration_or_validity: 단수 90일
 - quota_or_limit:
-- score_criteria: 80점 이상(평가항목별 합산)
+- score_criteria: 80점 이상 (점수표는 별도 행 참고)
 - table_summary:
 - table_rows:
-- inviter_context: 상장법인 또는 유망산업분야 기업
+- inviter_context:
 - recommendation_or_approval:
+- keywords: F-2-7, 점수제 우수인재, KOSPI, KOSDAQ, 유망산업, GNI 1.5배, 80점, F-2-71
+- source_page:
+- source_excerpt: |
+    1. 점수제 우수인재(상장법인·유망산업분야 종사자에 한함) 및 점수제 우수인재의 배우자 및 미성년 자녀
+    대상
+    - 상장법인 종사자 : ① 국내 유가증권시장(KOSPI) 또는 코스닥(KOSDAQ)에 상장된 법인 종사자 또는 고용계약을 체결하여 취업이 확정된 외국인
+    - 유망산업분야 종사자 : 산업통상자원부 고시 제2020-40호, 2020.3.31., 「첨단기술 및 제품의 범위」에 따른 IT, 기술경영, 나노, 디지털전자, 바이오, 수송 및 기계, 신소재, 환경 및 에너지 등의 산업 분야 종사자 또는 고용계약을 체결하여 취업이 확정된 외국인으로 소득금액증명원 상의 전년도 소득이 국민 1인당 GNI 1.5배 이상일 것
+- related_visa_codes: F-1-12, F-2-71, F-2-7S
 - expected_questions: |
-    상장기업에 취업했는데 점수제로 장기체류 비자 받을 수 있나요?
-    점수제 우수인재 비자는 몇 점부터 되나요?
-    우수인재 비자 받으면 배우자랑 자녀도 같이 데려갈 수 있나요?
+    한국 상장기업에 취업했는데 거주비자 받을 수 있어요?
+    점수제로 거주비자 받으려면 몇 점 이상 받아야 해요?
+    배우자도 같이 비자 받을 수 있나요?
+    유망산업분야는 소득이 얼마부터 가능해요?
 
 <!-- end chunk: visa_014 -->
 
@@ -7304,72 +7294,38 @@
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    동반가족
+- applicant_context:
 - eligibility: |
-    문화예술(D-1)부터 특정활동(E-7)까지, 거주(F-2), 재외동포(F-4) 및 방문취업(H-2) 자격에 해당하는 사람의 배우자 및 미성년 자녀로서 배우자가 없는 사람(단, 기술연수(D-3)는 제외)
-- target_persons: 동반가족(배우자 및 미성년 자녀)
+    동반가족
+    - 문화예술(D-1)부터 특정활동(E-7)까지, 거주(F-2), 재외동포(F-4) 및 방문취업(H-2)의 체류자격에 해당하는 사람의 배우자 및 미성년 자녀로서 배우자가 없는 사람(단, 기술연수(D-3) 체류자격에 해당하는 사람은 제외한다.)
+- target_persons: 동반가족 (D-1~E-7, F-2, F-4, H-2 자격자의 배우자 및 미성년 자녀)
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
 - procedure:
-- restrictions:
+- restrictions: |
+    기술연수(D-3) 체류자격에 해당하는 사람은 제외
 - exceptions: |
-    결핵진단서 제출 의무(외국인 결핵환자 사증발급 및 체류관리 지침에 따름)
+    등록외국인과 동거할 목적으로 입국하는 자 및 취재(D-5), 기업투자(D-8) 자격에 해당하는 자와 동반 입국하고자 하는 자에 대한 체류기간 1년 이하의 단수사증은 공관장 재량 발급
 - fees:
-- duration_or_validity: 출입국관리법 시행규칙 별표 1 체류자격별 체류기간 상한에 따름
+- duration_or_validity: 출입국관리법 시행규칙 [별표 1] 체류자격별 체류기간 상한에 따름
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 동반, 동반가족, 배우자, 미성년 자녀, F-3
+- source_page:
+- source_excerpt: |
+    동반가족
+    - 문화예술(D-1)부터 특정활동(E-7)까지, 거주(F-2), 재외동포(F-4) 및 방문취업(H-2)의 체류자격에 해당하는 사람의 배우자 및 미성년 자녀로서 배우자가 없는 사람(단, 기술연수(D-3) 체류자격에 해당하는 사람은 제외한다.)
+- related_visa_codes: D-1, D-3, D-5, D-8, E-1, E-3, E-4, E-5, E-7, F-2, F-4, H-2
 - expected_questions: |
-    한국에 일하러 온 가족이 있는데 같이 살러 가려면 어떤 비자를 받아요?
-    배우자랑 자녀를 데리고 한국에 같이 갈 수 있나요?
-    기술연수로 한국에 있는 사람의 가족도 동반 비자 받을 수 있나요?
-
-### row F-3 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: F-3
-- visa_name_ko: 동반
-- item_type: required_documents
-- section_title: F-3 동반
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    D-1, D-2, D-4~E-7, F-2, F-4, H-2 자격자의 배우자·미성년 자녀, 체류기간 1년 이하 단수사증
-- eligibility:
-- target_persons:
-- common_documents: |
-    - 사증발급신청서(별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    - 가족관계입증서류(결혼·출생증명서 등, 본국 공적서류 원본 + 번역자 확인서)
-    - 협약국은 아포스티유, 미체약국은 영사확인 필요
-    - 신원보증서
-- mandatory_documents:
-- other_documents: |
-    - 생계유지능력 입증서류: 초청자 재직증명서·납세사실증명서 등 (E-1·E-3·E-4·E-5·F-4·H-2 제출 면제)
-    - 체류지 등 주거지 입증서류 (E-1·E-3·E-4·E-5·F-4·H-2·E-7-T·E-7-S1·D-8 중 50만 불 이상 고액투자자 제출 면제)
-- requirements:
-- procedure: |
-    취재(D-5) 동반 입국자에 대한 F-3 사증발급은 국내 지사(국)가 개설되어 있어야 함
-- restrictions:
-- exceptions: |
-    E-1·E-3·E-4·E-5·F-4·H-2 자격자는 생계유지능력·체류지 입증서류 제출 면제
-- fees:
-- duration_or_validity: 체류기간 1년 이하, 단수
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 원자격자(D~E 계열 등)
-- recommendation_or_approval:
-- expected_questions: |
-    동반 비자 받으려면 어떤 서류를 준비해야 해요?
-    초청인 소득 증명서가 꼭 필요한가요?
-    어느 자격은 가족동반 서류가 면제되나요?
+    한국에서 일하는 사람의 가족이 같이 살러 가려면 어떻게 해요?
+    배우자랑 자녀가 같이 따라가는 비자는 어떤 자격에서 받을 수 있어요?
+    기술연수로 한국 가는데 가족이 따라갈 수 있어요?
 
 ### row F-3 / 전자사증 / 대상
 - manual_type: 사증민원
@@ -7377,21 +7333,21 @@
 - visa_name_ko: 동반
 - item_type: visa_rule
 - section_title: F-3 동반 / 전자사증
-- subtype_or_program:
+- subtype_or_program: 전자사증
 - petition_type: 전자사증
 - subsection_type: 대상
-- applicant_context: |
-    전문인력 동반자에 대한 전자사증 발급
+- applicant_context: 전문인력의 동반자
 - eligibility: |
-    교수(E-1), 연구(E-3), 기술지도(E-4), 전문직업(E-5) 및 GOLD CARD 발급 특정활동(E-7) 자격 외국인의 배우자 및 미성년 자녀로 배우자가 없는 사람
-    첨단분야 최우수인재(E-7-T)의 배우자 및 미성년 자녀
+    전문 인력의 동반자
+    - 교수(E-1), 연구(E-3), 기술지도(E-4), 전문직업(E-5) 및 첨단과학기술분야 고용추천서(GOLD CARD)를 발급받은 특정활동(E-7) 자격 외국인의 배우자 및 미성년 자녀로서 배우자가 없는 사람
+    - 첨단분야 최우수인재(E-7-T)의 배우자 및 미성년 자녀
 - target_persons:
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
 - procedure: |
-    재외공관 방문 없이 온라인으로 동반(F-3) 자격 사증발급 심사 기준 및 절차에 따라 신청
+    동반(F-3) 자격 사증발급 심사 기준 및 절차에 따라 서류제출 및 사증발급
 - restrictions:
 - exceptions:
 - fees:
@@ -7400,12 +7356,269 @@
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 교수·연구원·전문인력·첨단분야 우수인재
-- recommendation_or_approval: GOLD CARD 고용추천서(E-7 대상자 한정)
+- inviter_context:
+- recommendation_or_approval: |
+    첨단과학기술분야 고용추천서(GOLD CARD) 발급자
+- keywords: 동반, 전자사증, GOLD CARD, 전문인력, F-3, E-7-T
+- source_page:
+- source_excerpt: |
+    전자사증 제도는 해외 우수인력 및 관광객 유치지원 등을 위한 사증발급 절차 간소화의 일환으로 교수 등, 연구원 등에 대해 재외공관 방문 없이 온라인으로 사증을 발급 받을 수 있는 제도
+    - 교수(E-1), 연구(E-3), 기술지도(E-4), 전문직업(E-5) 및 첨단과학기술분야 고용추천서(GOLD CARD)를 발급받은 특정활동(E-7) 자격 외국인의 배우자 및 미성년 자녀로서 배우자가 없는 사람
+- related_visa_codes: E-1, E-3, E-4, E-5, E-7, E-7-T
 - expected_questions: |
-    연구원으로 한국에 가는데 가족도 온라인으로 비자 받을 수 있나요?
-    전자사증으로 받는 동반 비자는 누가 신청할 수 있어요?
-    최우수인재 가족이면 비자가 더 빨리 나오나요?
+    전문직 비자로 한국 가는데 가족도 온라인으로 비자 받을 수 있어요?
+    교수 비자 가족도 전자비자 신청이 되나요?
+
+### row F-3 / 사증발급 / 제출서류
+- manual_type: 사증민원
+- visa_code: F-3
+- visa_name_ko: 동반
+- item_type: required_documents
+- section_title: F-3 동반 / 공관장 재량 단수사증 (1년 이하)
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 제출서류
+- applicant_context: |
+    D-1, D-2, D-4 ~ E-7, F-2, F-4, H-2 자격자의 배우자 및 미성년 자녀 (1년 이하 단수사증)
+    취재(D-5) 자격 해당자의 동반 입국자는 국내 지사(국)가 개설되어 있어야 함
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    - 가족관계입증서류(결혼 또는 출생증명서 등)
+    - 생계유지능력 입증서류 (E-1, E-3, E-4, E-5, F-4, H-2의 경우 제출 면제)
+    - 신원보증서
+    - 체류지 등 주거지 입증서류
+- other_documents: |
+    배우자의 경우:
+    - 본국의 결혼증명서 원본(공적 서류 입증 필수) 등
+    - 중국의 경우 거민신분증, 결혼증, 호구부 등
+    미성년 자녀의 경우:
+    - 본국의 출생증명서 원본(공적 서류 입증 필수) 등
+    - 국내 출생증명서(대한민국 내 출생 시)
+    - 본국의 가족관계증명서 등 친자관계 입증서류
+    본국의 공적 서류:
+    - 번역자 확인서 필수 첨부
+    - 협약국인 경우 아포스티유 확인 필요
+    - 미체약국인 경우 주재국 대한민국 공관의 영사확인 필요
+- requirements: |
+    결핵 진단서(「외국인 결핵환자 사증발급 및 체류관리 지침 등」에 따름)
+- procedure:
+- restrictions:
+- exceptions: |
+    생계유지능력 입증서류 및 체류지 입증서류 제출면제: E-1, E-3, E-4, E-5, F-4, H-2, E-7-T, E-7-S1, 기업투자(D-8) 자격 중 50만 불 이상 고액투자자
+- fees:
+- duration_or_validity: 체류기간 1년 이하의 단수사증
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: |
+    초청자의 재직증명서 및 납세사실증명서 등으로 생계유지능력 입증
+- recommendation_or_approval:
+- keywords: 동반, 단수사증, 신원보증서, 결혼증명서, 출생증명서, F-3
+- source_page:
+- source_excerpt: |
+    ① 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    ② 가족관계입증서류(결혼 또는 출생증명서 등)
+    ③ 생계유지능력 입증서류 (E-1, E-3, E-4, E-5, F-4, H-2의 경우 제출 면제)
+    ④ 신원보증서
+    ⑤ 체류지 등 주거지 입증서류
+- related_visa_codes: E-1, E-3, E-4, E-5, F-4, H-2, E-7-T, E-7-S1, D-8
+- expected_questions: |
+    동반비자 받으려면 어떤 서류 내야 해요?
+    배우자랑 자녀 비자 신청할 때 본국 서류는 뭐 준비해요?
+    소득증명서나 재직증명서도 꼭 내야 하나요?
+    아포스티유는 어떤 경우에 받아야 해요?
+
+### row F-3 / 사증발급 / 대상
+- manual_type: 사증민원
+- visa_code: F-3
+- visa_name_ko: 동반
+- item_type: visa_rule
+- section_title: F-3 동반 / 재외동포(F-4) 가족 복수사증 (F-3-19)
+- subtype_or_program: F-3-19
+- petition_type: 사증발급
+- subsection_type: 대상
+- applicant_context: 재외동포(F-4) 자격 취득자의 가족
+- eligibility: |
+    재외동포(F-4) 자격을 취득한 사람의 배우자 및 미성년 자녀
+- target_persons:
+- common_documents: |
+    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    - 재외동포(F-4) 자격을 취득한 사람의 국내거소신고증 또는 사증발급 사항 사본(여권사본 포함)
+    - 가족관계 입증서류
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity: 1년간 유효한 방문동거(F-3-19, 01년) 복수사증 발급
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 동반, 재외동포 가족, 복수사증, F-3-19, F-3, F-4
+- source_page:
+- source_excerpt: |
+    2. 재외동포(F-4) 자격을 취득한 자의 가족에 대한 1년간 유효한 동반(F-3-19, 01년) 복수사증
+    ◦ 대상 : 재외동포(F-4) 자격을 취득한 사람의 배우자 및 미성년 자녀
+    ◦ 사증발급 : 1년간 유효한 방문동거(F-3-19, 01년) 복수사증 발급
+- related_visa_codes: F-4
+- expected_questions: |
+    재외동포 비자 받은 가족이 한국 자주 오려면 어떤 비자 받아요?
+    재외동포 가족 동반비자는 얼마나 유효해요?
+
+### row F-3 / 사증발급 / 대상
+- manual_type: 사증민원
+- visa_code: F-3
+- visa_name_ko: 동반
+- item_type: visa_rule
+- section_title: F-3 동반 / 방문취업(H-2) 가족 복수사증 (F-3-20)
+- subtype_or_program: F-3-20
+- petition_type: 사증발급
+- subsection_type: 대상
+- applicant_context: 방문취업(H-2) 자격 취득자의 가족
+- eligibility: |
+    방문취업(H-2) 자격을 취득한 사람의 배우자 및 미성년 자녀
+- target_persons:
+- common_documents: |
+    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    - 방문취업(H-2) 자격을 취득한 사람의 외국인등록증 또는 사증발급 사항 사본(여권사본 포함)
+    - 가족관계 입증서류
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity: 1년간 유효한 방문동거(F-3-20, 090일) 복수사증 발급
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 동반, 방문취업 가족, 복수사증, F-3-20, F-3, H-2
+- source_page:
+- source_excerpt: |
+    3. 방문취업(H-2) 자격을 취득한 자의 가족에 대한 1년간 유효한 동반(F-3-20, 090일) 복수사증
+    ◦ 대상 : 방문취업(H-2) 자격을 취득한 사람의 배우자 및 미성년 자녀
+    ◦ 사증발급 : 1년간 유효한 방문동거(F-3-20, 090일) 복수사증 발급
+- related_visa_codes: H-2
+- expected_questions: |
+    방문취업 비자 받은 사람 가족도 동반비자 받을 수 있어요?
+    방문취업 가족 동반비자는 한 번에 며칠까지 머물 수 있어요?
+
+### row F-3 / 사증발급 / 제출서류
+- manual_type: 사증민원
+- visa_code: F-3
+- visa_name_ko: 동반
+- item_type: required_documents
+- section_title: F-3 동반 / 점수제 우수인재(F-2-7) 가족 단수사증 (F-3-18)
+- subtype_or_program: F-3-18
+- petition_type: 사증발급
+- subsection_type: 제출서류
+- applicant_context: |
+    상장법인·유망산업분야·전문직 종사자, 유학인재로서의 점수제 우수인재 체류자격(F-2-7)을 받은 사람(주체류자)의 배우자 또는 미성년 자녀
+    * 점수제 평가항목별 합산 점수가 80점 이상임을 검증 받고 점수제 우수인재 체류자격(F-2-7)을 받은 사람 (즉, F-2-71은 대상 아님)
+    ** 법률상 배우자로서 진정한 혼인관계를 유지하여야 함(사실혼 불인정)
+    *** 주체류자가 미성년 자녀에 대한 친권 및 양육권을 가지고 있어야 함
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    - 사증발급신청서 (별지 제17호 서식), 여권, 외국인등록증(주체류자가 외국인등록을 마친 사람만 해당), 표준규격사진 1매
+    - 결핵 진단서(「외국인 결핵환자 사증발급 및 체류관리 지침 등」에 따름)
+    - 주체류자의 고용계약서 사본, 재직증명서, 사업자등록증, 법인등기부등본, 소득금액증명, 학위취득(예정)증명서, 졸업(예정)증명서 등(해당자)
+    - 가족관계 소명 서류(주체류자와의 법률상 가족관계 입증서류여야 함)
+    - 점수제 평가를 위한 점수를 기재한 점수표
+    - 신청인 본인이 기재한 평가 항목별 점수를 소명하는 서류
+    - 체류지 입증서류
+    - 심사관이 추가 제출을 요구한 서류
+- other_documents:
+- requirements:
+- procedure:
+- restrictions: |
+    F-2-71은 대상 아님
+    사실혼 불인정 (법률상 배우자만 인정)
+- exceptions:
+- fees:
+- duration_or_validity: 90일간 유효한 단수사증(F-3-18)
+- quota_or_limit:
+- score_criteria: |
+    점수제 평가항목별 합산 점수 80점 이상
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 동반, 점수제 우수인재, F-3-18, F-2-7, 단수사증, F-3
+- source_page:
+- source_excerpt: |
+    2. 점수제 우수인재(F-2-7)의 배우자 및 미성년자녀에 대한 90일간 유효한 단수사증(F-3-18)
+    ◦ 대상 - 상장법인·유망산업분야·전문직 종사자, 유학인재로서의 점수제 우수인재 체류자격*을 받은 사람(이하 '주체류자'라 함)의 배우자** 또는 미성년 자녀***
+    * 점수제 평가항목별 합산 점수가 80점 이상임을 검증 받고 점수제 우수인재 체류자격(F-2-7)을 받은 사람을 의미함(즉, F-2-71은 대상 아님)
+- related_visa_codes: F-2-7, F-2-71
+- expected_questions: |
+    점수제로 거주비자 받은 사람의 가족도 비자 받을 수 있어요?
+    우수인재 동반비자 신청할 때 점수표도 내야 해요?
+    사실혼 관계여도 동반비자 받을 수 있나요?
+
+### row F-3 / 사증발급인정서 / 제출서류
+- manual_type: 사증민원
+- visa_code: F-3
+- visa_name_ko: 동반
+- item_type: required_documents
+- section_title: F-3 동반 / 사증발급인정서
+- subtype_or_program: 사증발급인정서
+- petition_type: 사증발급인정서
+- subsection_type: 제출서류
+- applicant_context: |
+    D-1, D-2, D-4 ~ E-7, F-2, F-4, H-2 자격자의 배우자 및 미성년 자녀
+    원칙적으로 동반하는 본인(원자격자)과 함께 사증발급인정신청을 하는 경우에 한하여 사증발급인정서 발급
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    - 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
+    - 가족관계입증서류(결혼 또는 출생증명서 등)
+    - 생계유지능력 입증서류 (E-1, E-3, E-4, E-5, F-4, H-2의 경우 제출 면제)
+    - 신원보증서
+    - 체류지 입증서류 (E-1, E-3, E-4, E-5, F-4, H-2의 경우 제출 면제)
+- other_documents: |
+    배우자의 경우: 본국의 결혼증명서 원본, 중국의 경우 거민신분증, 결혼증, 호구부 등
+    미성년 자녀의 경우: 본국의 출생증명서 원본, 국내 출생증명서(대한민국 내 출생 시), 본국의 가족관계증명서 등 친자관계 입증서류
+    본국의 공적 서류: 공인된 번역자 확인서 필수 첨부, 협약국인 경우 아포스티유 확인 필요, 미체약국인 경우 주재국 대한민국 공관의 영사확인 필요
+- requirements:
+- procedure: |
+    동반하는 본인(원자격자)과 함께 사증발급인정신청
+- restrictions:
+- exceptions: |
+    E-1, E-3, E-4, E-5, F-4, H-2의 경우 생계유지능력 입증서류 및 체류지 입증서류 제출 면제
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 동반, 사증발급인정서, 가족관계입증, 신원보증서, F-3
+- source_page:
+- source_excerpt: |
+    원칙적으로 동반하는 본인(원자격자)과 함께 사증발급인정신청을 하는 경우에 한하여 사증발급인정서 발급
+    ① 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
+    ② 가족관계입증서류(결혼 또는 출생증명서 등)
+- related_visa_codes: E-1, E-3, E-4, E-5, F-4, H-2
+- expected_questions: |
+    동반비자 사증발급인정서는 누가 신청해요?
+    가족이 본인이랑 같이 사증발급인정서 신청해야 하나요?
 
 ### row F-5 / 사증발급 / 대상
 - manual_type: 사증민원
@@ -7416,24 +7629,26 @@
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    체류자격 구분에 따른 활동 제한을 받지 않는 영주자격자
+- applicant_context:
 - eligibility: |
-    민법상 성년으로 D-7~E-7 또는 F-2 자격으로 5년 이상 체류한 자
-    국민·F-5 자격자의 배우자·미성년 자녀로 2년 이상 체류 또는 국내 출생자
-    외국인투자가로 미화 50만 달러 투자 + 국민 5명 이상 고용
-    F-4 자격으로 2년 이상 계속 체류
-    외국국적동포로 국적취득 요건 갖춘 사람
-    국외 박사학위 취득 후 국내기업 고용자 또는 국내 대학원 박사학위 취득자
-    국내 학사 이상 학위·기술자격증 + 3년 이상 체류 + 일정 임금 이상
-    과학·경영·교육·문화예술·체육 등 탁월한 능력 보유자
-    대한민국에 특별한 공로가 있는 자
-    60세 이상 일정 금액 이상 연금 수령자
-    H-2 자격으로 거주(F-2) 사목 요건 충족자
-    F-2 자목·차목·다목 일정 기간 충족자
-    D-8 다목으로 3년 이상 + 투자유치·국민 고용 요건 충족자
-    5년 이상 투자 상태 유지 고시 금액 이상 투자자
-    D-8 가목 R&D시설 필수전문인력으로 3년 이상 체류자
+    법 제46조제1항 각 호의 어느 하나에 해당하지 않는 사람으로서 다음 각 호의 어느 하나에 해당하는 사람
+    1. 대한민국 「민법」에 따른 성년으로서 별표 1의2 중 10. 주재(D-7)부터 20. 특정활동(E-7)까지의 체류자격이나 별표 1의2 중 24. 거주(F-2) 체류자격으로 5년 이상 대한민국에 체류하고 있는 사람
+    2. 국민 또는 영주자격(F-5)을 가진 사람의 배우자 또는 미성년 자녀로서 대한민국에 2년 이상 체류하고 있는 사람 및 대한민국에서 출생한 것을 이유로 법 제23조에 따라 체류자격 부여 신청을 한 사람
+    3. 「외국인투자 촉진법」에 따라 미화 50만 달러를 투자한 외국인투자가로서 5명 이상의 국민을 고용하고 있는 사람
+    4. 재외동포(F-4) 체류자격으로 대한민국에 2년 이상 계속 체류하고 있는 사람으로서 법무부장관이 인정하는 사람
+    5. 외국국적동포로서 「국적법」에 따른 국적 취득 요건을 갖춘 사람
+    7. 국외에서 일정 분야의 박사 학위를 취득한 사람으로서 영주자격(F-5) 신청 시 국내 기업 등에 고용된 사람 또는 국내 대학원에서 정규과정을 마치고 박사학위를 취득한 사람
+    8. 학사 학위 이상의 학위증 또는 법무부장관이 정하는 기술자격증이 있는 사람으로서 국내 체류기간이 3년 이상이고 영주자격(F-5) 신청 시 국내기업에 고용되어 법무부장관이 정하는 금액 이상의 임금을 받는 사람
+    9. 과학·경영·교육·문화예술·체육 등 특정 분야에서 탁월한 능력이 있는 사람
+    10. 대한민국에 특별한 공로가 있다고 법무부장관이 인정하는 사람
+    11. 60세 이상으로서 법무부장관이 정하는 금액 이상의 연금을 국외로부터 받고 있는 사람
+    12. 방문취업(H-2) 체류자격으로 취업활동을 하고 있는 사람으로서 거주(F-2) 사목 요건을 갖춘 사람
+    13. 거주(F-2) 자목 체류자격으로 3년 이상 체류
+    14. 거주(F-2) 차목 체류자격을 받은 후 5년 이상 계속 투자 상태를 유지
+    15. 기업투자(D-8) 다목 체류자격으로 3년 이상 체류하면서 투자자로부터 3억원 이상의 투자금을 유치하고 2명 이상의 국민을 고용
+    16. 5년 이상 투자 상태를 유지할 것을 조건으로 법무부장관이 정하여 고시하는 금액 이상을 투자한 사람
+    17. 기업투자(D-8) 가목 체류자격을 가지고 연구개발시설의 필수전문인력으로 3년 이상 계속 체류
+    18. 거주(F-2) 다목 체류자격으로 2년 이상 체류
 - target_persons:
 - common_documents:
 - mandatory_documents:
@@ -7441,73 +7656,148 @@
 - requirements:
 - procedure:
 - restrictions: |
-    법 제46조제1항 각 호 강제퇴거 대상자는 제외
+    법 제46조제1항 각 호의 어느 하나에 해당하는 사람은 제외
 - exceptions:
 - fees:
-- duration_or_validity: 체류기간 상한 없음
+- duration_or_validity: 상한 없음 (1회 부여 체류기간 상한 없음)
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
-- recommendation_or_approval: 법무부장관 인정 필요
+- recommendation_or_approval:
+- keywords: 영주, 영주자격, 영주권, 장기체류, F-5
+- source_page:
+- source_excerpt: |
+    1. 대한민국 「민법」에 따른 성년으로서 별표 1의2 중 10. 주재(D-7)부터 20. 특정활동(E-7)까지의 체류자격이나 별표 1의2 중 24. 거주(F-2) 체류자격으로 5년 이상 대한민국에 체류하고 있는 사람
+    2. 국민 또는 영주자격(F-5)을 가진 사람의 배우자 또는 미성년 자녀로서 대한민국에 2년 이상 체류하고 있는 사람
+    3. 「외국인투자 촉진법」에 따라 미화 50만 달러를 투자한 외국인투자가로서 5명 이상의 국민을 고용하고 있는 사람
+- related_visa_codes: D-7, D-8, E-7, F-2, F-4, H-2
 - expected_questions: |
-    한국에서 영주권 받으려면 어떤 조건을 채워야 하나요?
-    오래 일했는데 영주자격을 신청할 수 있는 기간은 얼마예요?
-    투자로 영주권을 받으려면 얼마를 투자해야 하나요?
+    한국에 오래 살았는데 영주권 어떻게 받아요?
+    한국인이랑 결혼해서 자녀 있는데 영주자격 받을 수 있어요?
+    한국에서 박사학위 받으면 영주권 신청이 가능한가요?
+    영주자격은 체류기간 상한이 따로 있나요?
 
 ### row F-5 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: F-5
 - visa_name_ko: 영주
 - item_type: required_documents
-- section_title: F-5 영주 / 고액투자외국인(F-5-5) 및 특정분야 능력소유자(F-5-11)
+- section_title: F-5 영주 / 고액투자외국인 영주사증
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 제출서류
 - applicant_context: |
-    1) 고액투자외국인: 외국인투자촉진법상 미화 50만 불 이상 투자 + 국민 5인 이상 고용
-    2) 특정분야 능력소유자: 과학·경영·교육·문화예술·체육 분야 탁월 능력 보유자(법무부장관 승인 필요, 생계유지능력 면제)
+    영주자격 신청 시 외국인투자촉진법에 따라 미화 50만 불 이상을 투자한 외국투자가로 국민을 5인 이상 고용한 자
 - eligibility: |
-    특정분야 능력소유자: 필수항목 1개 이상 + 합산 점수 충족
-    - 필수항목 30점+선택항목 50점 이상(국내 체류기간 무관)
-    - 필수항목 20~29점+합계 100점 이상(국내 체류기간 무관)
-    - 필수항목 10~19점+합계 100점 이상(외국인등록 후 1년 이상 국내 체류)
+    출입국관리법 시행령 별표 1의3의 3호 해당자
 - target_persons:
-- common_documents: |
-    - 사증발급신청서(별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    - 신원보증서
+- common_documents:
 - mandatory_documents: |
-    고액투자외국인:
+    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
     - 외국인투자기업 등록증명서 사본
-    - 사업자등록증 사본 및 법인 등기사항전부증명서
-    - 신청자 본인 소득금액 증명원
-    - 고용 내국인 5인 이상의 소득금액 증명원
-    - 정규직(전일제 상용고용) 입증서류(고용계약서, 정규직 고용확인서 등)
-    특정분야 능력소유자:
-    - 점수제 해당항목 입증서류
+    - 신원보증서
+    - 사업자 등록증 사본 및 법인 등기사항전부증명서
+    - 신청자 본인의 소득금액 증명원(세무서 발급) 및 고용 내국인 5인 이상의 소득금액 증명원(세무서 발급)
+    - 고용 내국인의 정규직(전일제 상용고용 형태) 고용 입증서류(고용계약서, 정규직 고용확인서 등)
 - other_documents:
-- requirements:
+- requirements: |
+    미화 50만 불 이상 투자
+    국민 5인 이상 정규직(전일제 상용고용 형태) 고용
 - procedure:
 - restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 영주, 고액투자, 외국인투자, 국민고용, F-5
+- source_page:
+- source_excerpt: |
+    1. 고액투자외국인에 대한 영주사증 발급
+    가. 대상(출입국관리법 시행령 별표 1의3의 3호)
+    영주자격 신청 시 외국인투자촉진법에 따라 미화 50만 불 이상을 투자한 외국투자가로 국민을 5인 이상 고용한 자
+- related_visa_codes:
+- expected_questions: |
+    한국에 50만 달러 이상 투자하고 직원 5명 고용하면 영주권 받을 수 있어요?
+    고액투자 영주사증 신청할 때 어떤 서류가 필요해요?
+    외국인투자기업 등록증명서는 어디서 발급받아요?
+
+### row F-5 / 사증발급 / 점수표
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: score_table
+- section_title: F-5 영주 / 특정분야 능력소유자 점수제
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 점수표
+- applicant_context: |
+    과학·경영·교육·문화예술·체육 등 특정 분야에서 탁월한 능력이 있는 사람 중 법무부장관이 인정하는 사람
+- eligibility: |
+    출입국관리법 시행령 별표1의3 9호 해당자
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    - 신청서, 여권, 표준규격사진 1매, 수수료
+    - 신원보증서
+    - 점수제 해당항목 입증서류
+- other_documents:
+- requirements: |
+    필수항목 중 1개 이상의 요건을 갖추고, 필수항목과 선택항목의 합산 점수가 다음 어느 하나에 해당할 것
+    - 필수항목 30점 이상 + 합산 50점 이상 (국내 체류기간 관계없이 취득)
+    - 필수항목 20~29점 + 합산 100점 이상
+    - 필수항목 10~19점 + 합산 100점 이상 (외국인등록 후 1년 이상 국내 체류)
+- procedure: |
+    법무부장관 승인 필요
+- restrictions:
 - exceptions: |
-    특정분야 능력소유자는 생계유지능력 요건 면제
+    생계유지능력요건 면제
 - fees:
 - duration_or_validity:
 - quota_or_limit:
 - score_criteria: |
-    필수항목 총 245점(세계적 저명인사 50, 세계적 연구실적 30, 세계적 스포츠스타 30, 세계적 대학강의 30, 세계적 기업 근무 30, 대기업 근무 25, 지식재산권 25, 우수재능 25)
-    선택항목 총 205점(연간소득 30, 국내자산 30, 학력 20, 기본소양 15, 가점 110)
-- table_summary: 특정분야 능력소유자 점수제: 필수+선택 합산으로 영주자격 부여
+    필수항목 총 245점:
+    - 세계적 저명 인사 (50점): 전직 국가원수/국제기구 전직대표 50점, 노벨상·퓰리처상·서울평화상·괴테상 등 수상자 40점
+    - 세계적 연구실적 (30점): SCI/SCIE/SSCI/A&HCI 논문 게재 + 정교수/연구 경력
+    - 세계적 스포츠 스타 (30점): 올림픽 동메달 이상 30점, 세계선수권/아시안게임 동메달 이상 20점
+    - 세계적 대학 강의 경력 (30점): QS/THE/ARWU/CWUR 200대 대학 근무
+    - 세계적 기업 근무경력 (30점): UNCTAD/FORTUNE/FORBES/BUSINESS WEEK/ECONOMIST 세계 500대 기업
+    - 대기업 근무경력 (25점): 국내 상시 근로자 300인 이상, 자본금 80억 초과 기업
+    - 지식재산권 보유 (25점): 특허권 2개 이상 25점, 1개 20점, 실용신안권/디자인권 1개 이상 + 사업체 운영경력 15점
+    - 우수 재능 보유 (25점)
+    선택항목 총 205점:
+    - 국내 연간소득 (30점): GNI 4배 이상 30점, 3배 이상 20점, 2배 이상 10점, GNI 이상 5점
+    - 국내자산 (30점): 10억원 이상 30점, 7억 이상 20점, 5억 이상 10점, 3억 이상 5점
+    - 학력 (20점): 박사 20점, 석사 15점, 학사 10점
+    - 기본소양 (15점): 사회통합프로그램 5단계 이수 15점, 종합평가 합격 10점, 4단계 이수 8점, 3단계 이수 5점
+    - 가점 (110점): 국민 고용 5~30점, 경영 경력 5~30점, 추천서 20점, 납세 실적 10점, 사회 봉사 5/10점, 국내 유학 5점, 일·학습연계유학 5점
+- table_summary: 특정분야 능력소유자에 대한 점수제 항목 및 점수 (필수 245점, 선택 205점)
 - table_rows: |
-    국내 체류 무관: 필수 30+선택 50 또는 필수 20-29+합계 100
-    외국인등록 후 1년 이상: 필수 10-19+합계 100
+    국민고용 가점: 1~5명 5점, 6~10명 10점, 11~15명 15점, 16~20명 20점, 21~25명 25점, 26명 이상 30점
+    경영경력 가점: 자본금 1~5억 5점, 6~10억 10점, 11~15억 15점, 16~20억 20점, 21~25억 25점, 26억 이상 30점
 - inviter_context:
-- recommendation_or_approval: 특정분야는 법무부장관 승인 필요
+- recommendation_or_approval: |
+    추천서 가점: 헌법기관장, 중앙부처 장관(급), 국회의원, 광역자치단체장
+    가점 부여에 대한 최종적인 판단은 법무부 장관이 결정
+- keywords: 영주, 특정분야 능력소유자, 점수제, 필수항목, 선택항목, F-5
+- source_page:
+- source_excerpt: |
+    2. 특정분야의 능력소유자에 대한 영주사증 발급 : 법무부장관 승인 필요
+    가. 대상(출입국관리법 시행령 별표1의3 9호)
+    과학․경영․교육․문화예술․체육 등 특정 분야에서 탁월한 능력이 있는 사람 중 법무부장관이 인정하는 사람
+    나. 요건(생계유지능력요건 면제)
+- related_visa_codes:
 - expected_questions: |
-    50만 달러 투자하고 직원 다섯 명 고용했는데 영주권 신청 가능한가요?
-    특정 분야에서 탁월한 능력으로 영주권 받으려면 점수가 얼마 필요해요?
-    영주권 신청할 때 소득증명원도 내야 하나요?
+    특정분야 탁월한 능력으로 영주권 받으려면 몇 점이 필요해요?
+    노벨상이나 올림픽 메달리스트면 영주권 점수가 어떻게 되나요?
+    영주권 점수제에서 국민 고용 가점은 어떻게 계산해요?
+    추천서는 누구한테 받아야 점수 가산되나요?
 
 ### row F-6 / 사증발급 / 대상
 - manual_type: 사증민원
@@ -7518,87 +7808,189 @@
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    국민의 배우자, 자녀양육자, 혼인단절자
+- applicant_context:
 - eligibility: |
-    F-6-1(국민의 배우자): 한국에 혼인이 유효하게 성립되어 우리 국민과 결혼생활을 지속하기 위해 국내 체류하려는 외국인
-    F-6-2(자녀양육): 국민과 혼인관계(사실상의 혼인관계 포함)에서 출생한 미성년 자녀를 혼인관계 단절 후 국내에서 양육하거나 양육하려는 부 또는 모
-    F-6-3(혼인단절): 국민인 배우자와 혼인 상태로 국내 체류 중 배우자의 사망·실종 등 자신에게 책임 없는 사유로 정상적 혼인관계 유지 불가한 사람
-- target_persons: 국민의 외국인 배우자 및 자녀양육자
+    국민의 배우자
+    국민과 혼인관계(사실상의 혼인관계*를 포함한다)에서 출생한 자녀를 양육하고 있는 부 또는 모로서 법무부장관이 인정하는 사람
+    국민인 배우자와 혼인한 상태로 국내에 체류하던 중 그 배우자의 사망이나 실종, 그 밖에 자신에게 책임이 없는 사유로 정상적인 혼인관계를 유지할 수 없는 사람으로서 법무부장관이 인정하는 사람
+- target_persons: |
+    F-6-1 (국민의 배우자): 한국에 혼인이 유효하게 성립되어 있고, 우리 국민과 결혼생활을 지속하기 위해 국내 체류를 하고자 하는 외국인
+    F-6-2 (자녀양육): 국민과 혼인관계(사실상의 혼인관계를 포함)에서 출생한 미성년 자녀를 혼인관계 단절 후 국내에서 양육하거나 양육하려는 부 또는 모
+    F-6-3 (혼인단절): 국민인 배우자와 혼인한 상태로 국내에 체류하던 중 그 배우자의 사망·실종, 그 밖에 자신에게 책임이 없는 사유로 정상적인 혼인관계를 유지할 수 없는 사람
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
 - procedure:
 - restrictions: |
-    혼인의사 없는 단순 동거, 중혼적 사실혼은 사실혼 관계로 인정 안 됨
+    사실혼은 주관적으로 혼인의 의사가 있고, 또 객관적으로는 사회통념상 가족질서의 면에서 부부공동생활을 인정할 만한 실체가 있는 경우에 성립
+    혼인의사 없이 단순 동거를 한 경우, 법률상 보호를 받을 수 없는 중혼적 사실혼 관계인 경우에는 사실혼 관계로 볼 수 없음
 - exceptions:
 - fees:
-- duration_or_validity: 3년
+- duration_or_validity: 1회 부여 체류기간의 상한 3년
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 한국인 배우자
-- recommendation_or_approval: 법무부장관 인정 필요
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 결혼이민, 국민의 배우자, 자녀양육, 혼인단절, F-6, F-6-1, F-6-2, F-6-3
+- source_page:
+- source_excerpt: |
+    국민의 배우자
+    국민과 혼인관계(사실상의 혼인관계*를 포함한다)에서 출생한 자녀를 양육하고 있는 부 또는 모로서 법무부장관이 인정하는 사람
+    국민인 배우자와 혼인한 상태로 국내에 체류하던 중 그 배우자의 사망이나 실종, 그 밖에 자신에게 책임이 없는 사유로 정상적인 혼인관계를 유지할 수 없는 사람으로서 법무부장관이 인정하는 사람
+- related_visa_codes:
 - expected_questions: |
-    한국 사람이랑 결혼했는데 어떤 비자를 받아요?
-    배우자가 돌아가셨는데 한국에서 계속 살 수 있나요?
-    한국인 자녀를 혼자 키우는 외국인은 어떤 자격으로 체류하나요?
+    한국인이랑 결혼했는데 어떤 비자 받아야 해요?
+    한국인 배우자와 사별했는데 한국에서 계속 살 수 있어요?
+    한국인이랑 결혼해서 낳은 아이를 한국에서 키우려면 어떤 비자가 필요해요?
+    사실혼 관계도 결혼이민 비자 받을 수 있어요?
 
 ### row F-6 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: F-6
 - visa_name_ko: 결혼이민
 - item_type: required_documents
-- section_title: F-6 결혼이민 / 국민의 배우자(F-6-1)
+- section_title: F-6 결혼이민 / F-6-1 국민의 배우자 / 국제결혼 안내프로그램 대상 국가
 - subtype_or_program: F-6-1
 - petition_type: 사증발급
 - subsection_type: 제출서류
 - applicant_context: |
-    국민의 배우자(F-6-1), 체류기간 90일 이하 단수사증(미국인은 복수사증), 입국 후 90일 이내 외국인등록 및 체류기간 연장
-- eligibility: |
-    소득요건: 초청인 과거 1년간 연간소득(세전)이 가구원수별 기준 이상 (2026년 기준: 2인 25,195,752원 등, 가구원 추가 1인당 5,755,188원 증가)
-    의사소통 요건: 한국어 또는 외국인 배우자 언어 또는 제3언어 입증
-    주거요건: 자가/임대 등기부등본, 임대차계약서 (주민등록상 주소지와 일치)
-    국제결혼 안내프로그램 이수
+    국민의 배우자(F-6-1)에 대한 체류기간 90일 이하의 단수사증
+    국제결혼 안내프로그램 대상 국가
+- eligibility:
 - target_persons:
 - common_documents: |
-    - 비자 신청서, 여권용 사진 1매, 신청인 여권 원본·사본 1부, 비자 신청 수수료
-    - 외국인 배우자 초청장(한국인 배우자 한글 작성)
+    1. 기본서류
+    - 비자 신청서(사증발급 신청서)
+    - 여권용 사진 1매
+    - 신청인(외국인 배우자) 여권 원본 (잔여 유효기간 6개월 이상) 및 사본 1부
+    - 비자 신청 수수료
+    - 외국인 배우자 초청장 (한국인 배우자가 한글로 작성)
     - 신원보증서
-    - 외국인 배우자의 결혼배경진술서(영어 작성)
-    - 한국인 배우자: 여권 사본, 기본증명서(상세), 혼인관계증명서(상세), 가족관계증명서(상세), 주민등록등본 원본(발급일 3개월 이내)
-    - 한국인 배우자: 국제결혼 안내프로그램 이수증(면제 대상 제외), 건강진단서(면제 대상 제외)
-    - 외국인 배우자: 결혼증명서 원본(필요시), 범죄경력증명서 원본(발급일 3개월 이내), 건강진단서 원본, 해당 국가별 특별 적용 서류
-- mandatory_documents:
+    - 외국인 배우자의 결혼배경진술서 (외국인 배우자가 영어로 작성)
+    (한국인 배우자 준비 서류)
+    - 한국인 배우자 여권 사본 1부
+    - 기본증명서(상세), 혼인관계증명서(상세), 가족관계증명서(상세), 주민등록등본 (발급일로부터 3개월 이내)
+    - 국제결혼 안내프로그램 이수증
+    - 건강진단서 원본
+    (외국인 배우자 준비 서류)
+    - 결혼증명서 원본 (필요 시)
+    - 범죄경력증명서 원본 (발급일로부터 3개월 이내)
+    - 건강진단서 원본
+    - 해당 국가에 특별히 적용되는 서류 (예: 필리핀 CFO 교육이수증)
+- mandatory_documents: |
+    2. 한국인 배우자의 소득요건 관련 서류
+    - 소득금액증명 원본 (국세청 홈택스 또는 세무서 발급)
+    - 신용정보조회서 1부 (한국신용정보원)
+    - 근로/사업/기타소득/재산 활용 시 각각 입증서류
+    3. 외국인 배우자의 의사소통 요건 관련 서류 (택1)
+    - 한국교육원 한국어강좌 2단계 또는 세종학당 초급1A+1B 수료증 (120시간 이상)
+    - 한국어능력시험(TOPIK) 1급 이상
+    - 지정된 한국어 교육기관 이수증
+    - 한국어 관련 대학(원) 학위증
+    - 외국국적동포 입증서류
+    - 한국 1년 이상 체류 입증서류
+    4. 한국인 배우자의 주거요건 관련 서류
+    - 자가인 경우: 등기부등본
+    - 임대인 경우: 등기부등본 + 임대차계약서 사본 1부
+    5. 교제 입증 서류
+    - 교제 경위, 혼인의 진정성을 입증할 수 있는 서류 (5쪽 이내)
+    - 결혼중개업체를 통한 경우: 등록증 사본, 보증보험증권 사본, 계약서 사본
+    - 지인 소개의 경우: 소개자 신분증 사본
 - other_documents: |
-    소득요건 입증: 소득금액증명 원본(공통 필수), 신용정보조회서, 근로/사업/기타소득별 추가 서류
-    의사소통 요건: 한국어 수료증·TOPIK 성적·교육기관 이수증·학위증 등
-    주거요건: 자가는 등기부등본, 임대는 등기부등본+임대차계약서
-    교제 입증: 교제 사진·SNS 대화 내역 등 (5쪽 이내), 결혼중개업체 등록증·보증보험증권·계약서(중개업체 통한 경우), 소개자 신분증(지인 소개)
-- requirements:
+    본국의 공적 서류는 협약국인 경우 아포스티유, 미체약국인 경우 영사확인 필요
+    번역자 확인서 필수 첨부
+- requirements: |
+    2026년 기준 소득요건 (초청인 과거 1년간 연간소득 세전):
+    - 2인 가구 25,195,752원
+    - 3인 가구 32,154,216원
+    - 4인 가구 38,968,428원
+    - 5인 가구 45,340,314원
+    - 6인 가구 51,335,712원
+    - 7인 가구 57,090,900원
+    - 8인 가구 이상: 1인당 5,755,188원씩 증가
 - procedure: |
-    입국 후 90일 이내 외국인등록 및 체류기간 연장 (체류기간 90일 초과 시)
-    재외공관장은 심사 정확성·효율성을 위해 추가서류 요구 가능
-    제출서류 유효기간은 작성일·발급일로부터 3개월 이내
+    입국 후 90일 이내에 외국인등록 및 체류기간 연장
 - restrictions:
 - exceptions: |
-    국제결혼 안내프로그램 면제: 외국인 배우자국 또는 제3국에서 6개월 이상 장기사증 체류 중 교제 입증자, 외국인 배우자가 91일 이상 합법 체류 중 교제 입증자, 임신·출산·인도적 고려자
-    소득요건 면제: 부부 사이 자녀가 있는 경우, 1년 이상 외국 동거로 국내 소득 없는 경우, 과거 F-6 자격으로 체류한 적 있는 경우
-    의사소통 요건 면제: 부부 사이 자녀가 있는 경우, 과거 F-6 자격으로 체류한 적 있는 경우
+    소득요건 면제: ① 부부 사이에 태어난 자녀가 있는 경우 ② 비자 신청일로부터 1년 이상 외국에서 동거 ③ 과거 외국인 배우자가 F-6 자격으로 한국 체류한 적이 있는 경우
+    의사소통 면제: ① 부부 사이에 태어난 자녀가 있는 경우 ② 과거 F-6 자격으로 체류한 적이 있는 경우
+    국제결혼안내프로그램 면제: ① 외국인 배우자 국가에서 6개월 이상 또는 제3국 장기사증 계속 체류로 교제 입증 ② 외국인 배우자가 91일 이상 합법 체류로 교제 입증 ③ 임신, 출산, 인도적 고려
+    소개 경위 서류 면제: ① 자녀 있음 ② 과거 F-6 체류 경험
 - fees:
-- duration_or_validity: 90일 이하 단수사증 (미국인은 복수사증)
+- duration_or_validity: 체류기간 90일 이하의 단수사증 (미국인은 복수사증)
+- quota_or_limit:
+- score_criteria:
+- table_summary: 결혼이민 사증 제출서류 및 소득요건 (2026년 기준)
+- table_rows:
+- inviter_context: |
+    한국인 배우자가 한글로 외국인 배우자 초청장 작성 및 소득·주거·의사소통 요건 입증
+- recommendation_or_approval:
+- keywords: 결혼이민, F-6-1, 국민의 배우자, 국제결혼 안내프로그램, 소득요건, 의사소통 요건, F-6
+- source_page:
+- source_excerpt: |
+    1. 국민의 배우자(F-6-1)에 대한 체류기간 90일 이하의 단수사증 발급
+    (단, 미국인에 대해서는 복수사증 발급)
+    ☞ 입국 후 90일 이내에 외국인등록 및 체류기간 연장
+    가. 국제결혼 안내프로그램 대상 국가
+- related_visa_codes:
+- expected_questions: |
+    한국인이랑 결혼했는데 결혼이민 비자 받으려면 어떤 서류 내요?
+    한국어 시험 점수가 얼마면 결혼이민 비자가 나와요?
+    소득요건은 얼마부터 충족되는 거예요?
+    자녀가 있으면 소득요건 안 봐도 되나요?
+
+### row F-6 / 사증발급 / 제출서류
+- manual_type: 사증민원
+- visa_code: F-6
+- visa_name_ko: 결혼이민
+- item_type: required_documents
+- section_title: F-6 결혼이민 / F-6-2 자녀양육
+- subtype_or_program: F-6-2
+- petition_type: 사증발급
+- subsection_type: 제출서류
+- applicant_context: |
+    자녀양육(F-6-2)을 위해 입국하고자 하는 자에 대한 체류기간 90일 이하의 단수사증
+- eligibility:
+- target_persons: |
+    국민과 혼인관계(사실상의 혼인관계 포함)에서 출생한 미성년 자녀를 양육하거나 양육하려는 부 또는 모
+- common_documents:
+- mandatory_documents: |
+    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    - 가족(친자)관계 입증서류: 자녀의 기본증명서, 출생증명서, 유전자 검사 확인서류 등
+    - 자녀양육을 입증할 수 있는 서류: 양육권내용이 포함된 판결문 등, 자녀의 5촌 이내의 한국인 친척(부 또는 모 포함)의 양육 입증 확인서 등
+    - 범죄경력증명서 및 건강진단서
+- other_documents: |
+    사실혼 관계에서 자녀가 출생한 경우 그 사실을 증명하는 서류
+- requirements:
+- procedure: |
+    입국 후 90일 이내에 외국인등록 및 체류기간 연장 고지
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity: 체류기간 90일 이하의 단수사증 (미국인은 복수사증)
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 한국인 배우자
-- recommendation_or_approval:
+- inviter_context:
+- recommendation_or_approval: |
+    재외공관장은 특히 필요하다고 인정되는 경우 제출서류 일부 가감 및 추가 서류 징구 가능
+- keywords: 결혼이민, 자녀양육, F-6-2, 친자관계, 양육권, F-6
+- source_page:
+- source_excerpt: |
+    2. 자녀양육 (F-6-2)을 위해 입국하고자 하는 자에 대한 체류기간 90일 이하의 단수사증 발급
+    ② 가족(친자)관계 입증서류
+    - 자녀의 기본증명서, 출생증명서, 유전자 검사 확인서류 등 가족관계를 확인할 수 있는 서류
+    ③ 자녀양육을 입증할 수 있는 서류
+    - 양육권내용이 포함된 판결문 등, 자녀의 5촌 이내의 한국인 친척(부 또는 모 포함)의 양육 입증 확인서 등 기타 이에 준하는 서류
+- related_visa_codes:
 - expected_questions: |
-    한국인이랑 결혼했는데 결혼이민 비자 받을 때 어떤 서류가 필요해요?
-    초청인 소득이 얼마나 되어야 결혼비자 신청할 수 있어요?
-    한국어 시험 안 봤으면 결혼비자 못 받나요?
+    한국인 배우자랑 헤어졌는데 아이를 키우려고 한국 들어가려면 어떤 비자 받아요?
+    자녀양육 비자 신청할 때 어떤 서류가 필요해요?
+    유전자 검사 확인서도 필요해요?
 
 <!-- end chunk: visa_015 -->
 
@@ -7614,112 +8006,193 @@
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    외교(A-1)부터 결혼이민(F-6)까지, 관광취업(H-1) 또는 방문취업(H-2) 체류자격에 해당하지 않는 활동
+- applicant_context:
 - eligibility: |
-    A-1~F-6, H-1, H-2 체류자격에 해당하지 않는 사람으로서 법무부장관이 인정하는 사람
-- target_persons: 다른 체류자격에 해당하지 않는 외국인
+    외교(A-1)부터 결혼이민(F-6)까지, 관광취업(H-1) 또는 방문취업(H-2) 체류자격에 해당하지 않는 사람으로서 법무부장관이 인정하는 사람
+- target_persons:
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
 - procedure:
-- restrictions:
+- restrictions: |
+    외교(A-1) 내지 결혼이민(F-6), 관광취업(H-1) 및 방문취업(H-2) 자격에 해당하는 활동은 G-1 활동범위에서 제외
 - exceptions:
 - fees:
-- duration_or_validity: 1년
+- duration_or_validity: 1회 부여 체류기간의 상한 1년
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
-- recommendation_or_approval: 법무부장관 인정 필요
+- recommendation_or_approval:
+- keywords: 기타, G-1, 잔여 자격, 인도적 체류
+- source_page:
+- source_excerpt: |
+    외교(A-1)부터 결혼이민(F-6)까지, 관광취업(H-1) 또는 방문취업(H-2) 체류자격에 해당하지 않는 사람으로서 법무부장관이 인정하는 사람
+- related_visa_codes: A-1, F-6, H-1, H-2
 - expected_questions: |
-    어느 비자에도 해당하지 않는데 한국에 머무를 방법이 있나요?
-    기타 체류자격은 어떤 사람이 받나요?
-    법무부장관이 인정하면 얼마나 머무를 수 있어요?
+    다른 비자에 안 맞는 경우에는 어떤 체류자격을 받을 수 있어요?
+    기타 체류자격은 얼마나 머물 수 있어요?
 
 ### row G-1 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: G-1
 - visa_name_ko: 기타
 - item_type: required_documents
-- section_title: G-1 기타 / 외국인 환자 의료관광(C-3-3)
+- section_title: G-1 기타 / 외국인 환자 의료관광 (C-3-3)
 - subtype_or_program: C-3-3
 - petition_type: 사증발급
 - subsection_type: 제출서류
 - applicant_context: |
-    외국인 환자 유치기관 초청 없이 국내 의료기관에서 진료·요양 목적으로 입국하려는 외국인 환자 및 동반가족·간병인 (의료관광 C-3-3 단수사증)
+    외국인 환자 유치기관의 초청을 받지 않고, 국내 의료기관에서 진료 또는 요양할 목적으로 입국하고자 하는 외국인 환자
+    외국인 환자의 간병 등을 위해 동반입국이 필요한 배우자 등 동반가족 및 간병인
 - eligibility:
 - target_persons:
-- common_documents: |
-    - 사증발급신청서(별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
-    - 국내외 의료기관·요양기관 발급 치료·요양 소명 자료(병원진단서, 의사소견서 등)
-    - 국내 의료·요양기관 치료·요양 예약 입증자료
+- common_documents:
+- mandatory_documents: |
+    - 사증발급신청서 (별지 제17호 서식), 여권, 표준규격사진 1매, 수수료
+    - 국·내외 의료기관 또는 요양기관에서 발급한 치료 또는 요양을 소명할 수 있는 병원진단서, 의사소견서 등 입증자료
+    - 국내 의료기관 또는 요양기관에서 치료 또는 요양관련 예약 입증자료
     - 치료비·체재비 등 부담능력 또는 재정능력 입증서류
     - 가족관계 및 간병인 입증서류
-- mandatory_documents:
 - other_documents:
-- requirements:
+- requirements: |
+    국내 병원과 송출국가간 환자송출계약을 체결하고 송출국가에서 진료비 등을 지원하는 외국인환자에 대하여 간병인 동반입국 허용
 - procedure:
 - restrictions:
-- exceptions: |
-    국내 병원과 송출국가 간 환자송출계약 체결, 송출국가에서 진료비 등 지원 외국인환자에 대해 간병인 동반입국 허용
+- exceptions:
 - fees:
-- duration_or_validity: 단수사증
+- duration_or_validity: 의료관광(C-3-3) 단수사증
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: (유치기관 초청 없는 경우)
-- recommendation_or_approval:
+- inviter_context:
+- recommendation_or_approval: |
+    재외공관장은 초청의 진정성, 초청자 및 피초청자의 자격 확인 등을 심사하기 위해 추가 서류를 요구할 수 있음
+- keywords: 의료관광, 외국인 환자, 간병인, C-3-3, G-1
+- source_page:
+- source_excerpt: |
+    1. 외국인 환자에 대한 의료관광(C-3-3) 단수사증 발급
+    가. 발급 대상
+    외국인 환자 유치기관의 초청을 받지 않고, 국내 의료기관에서 진료 또는 요양할 목적으로 입국하고자 하는 외국인 환자
+    외국인 환자의 간병 등을 위해 동반입국이 필요한 배우자 등 동반가족 및 간병인
+- related_visa_codes: C-3-3
 - expected_questions: |
-    한국 병원에서 치료받으려면 어떤 비자를 받아요?
-    의료관광 비자 신청할 때 가족이나 간병인도 같이 들어갈 수 있나요?
-    치료비 부담능력을 어떻게 입증해요?
+    한국에서 치료받으러 오는데 어떤 비자 받아야 해요?
+    외국인 환자 의료관광 비자 신청할 때 무슨 서류가 필요해요?
+    가족이 간병하러 같이 오는 경우 비자가 같이 나오나요?
 
 ### row G-1 / 사증발급인정서 / 제출서류
 - manual_type: 사증민원
 - visa_code: G-1
 - visa_name_ko: 기타
 - item_type: required_documents
-- section_title: G-1 기타 / 외국인환자(C-3-3, G-1-10)
-- subtype_or_program: G-1-10
+- section_title: G-1 기타 / 외국인환자 (C-3-3, G-1-10) 사증발급인정서
+- subtype_or_program: C-3-3, G-1-10
 - petition_type: 사증발급인정서
 - subsection_type: 제출서류
 - applicant_context: |
-    외국인 환자 유치기관(의료법상 등록자)의 초청으로 국내 의료기관에서 진료·요양 목적 입국 외국인 환자 및 동반가족·간병인
-- eligibility: |
-    초청자는 의료법상 외국인 환자 유치의료기관 또는 유치업자로 등록한 자
-    동반가족은 환자의 배우자 또는 직계가족 (환자송출협약 체결국은 4촌 이내 방계가족까지)
-    간병인은 환자송출협약 체결국가 환자 한정
+    외국인 환자 유치기관의 초청에 의해 국내 의료기관에서 진료 또는 요양할 목적으로 입국하고자 하는 외국인 환자
+    외국인 환자의 간병 등을 위해 동반입국이 필요한 배우자 등 동반 가족 및 간병인
+    초청자: 「의료법」상 외국인 환자 유치의료기관 또는 유치업자로 등록한 자
+- eligibility:
 - target_persons:
-- common_documents: |
-    - 사증발급인정신청서(별지 제21호 서식), 여권사본, 표준규격사진 1매
-    - 의료기관 발급 의료목적 입증서류
-    - 치료 및 체류 비용 조달 능력 입증서류
-    - 사업자등록증 사본 및 유치기관 등록증 사본(비자포털 유치기관 등록 시 생략)
-    - 동반가족·간병인 입증서류(본국 또는 국내 본국대사관 발행 가족관계 확인서류)
-- mandatory_documents:
-- other_documents:
+- common_documents:
+- mandatory_documents: |
+    - 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
+    - 의료기관에서 발급한 의료목적 입증서류
+    - 치료 및 체류 비용 조달 능력을 입증할 수 있는 서류
+    - 사업자등록증 사본 및 유치기관 등록증 사본
+    - 동반가족 입증서류 및 간병인 입증서류
+- other_documents: |
+    동반가족 입증 서류: 본국 또는 국내 소재 본국대사관에서 발행한 가족관계 확인서류 (결혼증명서, 가족관계기록사항에 관한 증명서 또는 출생증명서 등)
 - requirements:
 - procedure: |
-    온라인(대한민국 비자포털) 신청만 허용, 초청자 사업장 소재지 관할 출입국·외국인청 신청
+    외국인 환자(가족) 초청은 유치기관으로 등록한 초청자가 온라인(대한민국 비자포털)신청을 통해서만 허용
+    신청기관: 초청자의 사업장 소재지 관할 출입국·외국인청(사무소·출장소)
 - restrictions:
 - exceptions: |
-    유치기관이 피초청인 신원보증 시 치료·체류비용 조달능력 입증서류 제출 생략 가능(단, 최초 초청자 또는 불법체류자 다수 발생 유치기관은 제외)
+    유치기관이 피초청인에 대하여 신원보증을 하는 경우 치료 및 체류 비용 조달 능력 서류 제출 생략
+    대한민국비자포털을 통해 유치기관으로 등록한 경우 사업자등록증 등 생략
 - fees:
 - duration_or_validity:
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: 외국인 환자 유치의료기관 또는 유치업자
-- recommendation_or_approval: 보건복지부장관 유치기관 등록 필요
+- inviter_context: |
+    외국인 환자 유치의료기관 또는 외국인 환자 유치업자가 초청
+- recommendation_or_approval:
+- keywords: 외국인환자, 사증발급인정서, 유치기관, C-3-3, G-1-10, G-1
+- source_page:
+- source_excerpt: |
+    1. 외국인환자(C-3-3, G-1-10)에 대한 사증발급인정서 발급
+    가. 신청대상
+    외국인 환자 유치기관의 초청에 의해 국내 의료기관에서 진료 또는 요양 할 목적으로 입국하고자 하는 외국인 환자
+    외국인 환자의 간병 등을 위해 동반입국이 필요한 배우자 등 동반 가족* 및 간병인
+- related_visa_codes: C-3-3, G-1-10
 - expected_questions: |
-    한국 병원에 정식 초청받아 치료받으려면 어떤 절차로 비자 받아요?
-    의료기관이 외국인 환자 초청하려면 어떤 등록을 해야 하나요?
-    환자 가족이나 간병인이 같이 한국에 갈 수 있나요?
+    외국인 환자가 유치기관 초청으로 한국 오려면 사증발급인정서 어떻게 신청해요?
+    유치기관은 누가 등록할 수 있어요?
+    환자 가족이나 간병인도 같이 사증발급인정서를 받을 수 있나요?
+
+### row G-1 / 사증발급인정서 / 제한
+- manual_type: 사증민원
+- visa_code: G-1
+- visa_name_ko: 기타
+- item_type: restriction
+- section_title: G-1 기타 / 의료관광 유치기관 행정제재
+- subtype_or_program:
+- petition_type: 사증발급인정서
+- subsection_type: 제한
+- applicant_context: 외국인환자 유치기관
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions: |
+    회원자격 정지 및 취소, 회원 재가입 제한
+    출입국관리법 위반 범칙금:
+    - 101~300만원: 1월 정지
+    - 301~500만원: 3월 정지
+    - 501만원 이상 통고처분 또는 고발: 회원자격 취소
+    고액 부당 수수료 요구: 1회 적발 1월 정지, 2회 적발 회원자격 취소
+    개인정보 누설: 1회 적발 1월 정지, 2회 적발 회원자격 취소
+    허위서류 제출 (출입국관리법 제7조의2 또는 제26조 위반): 과실 1월 정지, 고의적 회원자격 취소
+    유치기관 등록 취소: 보건복지부장관이 유치기관 등록을 취소한 경우
+    불법체류율에 따른 제재 (최근 6개월 기준):
+    - 입국인원 1~10명: 1명 발생 서면경고, 2명 1월 정지, 3명 3월 정지, 4명 이상 회원자격 취소
+    - 11~20명: 2명 서면경고, 3명 1월 정지, 4명 3월 정지, 5명 이상 회원자격 취소
+    - 21명 이상: 불법체류율 5~15% 서면경고, 16~20% 1월 정지, 21~30% 3월 정지, 31% 이상 회원자격 취소
+    회원자격이 취소된 유치기관은 취소일로부터 2년간 재가입 제한
+- exceptions: |
+    취소사유가 있더라도 사무소장이 인정하는 경우 본부 승인을 받아 회원자격 취소 면제 가능
+    보건복지부장관이 등록을 취소하였으나 유치기관등록증을 재발급받은 경우 등록증 발급일부터 회원자격 다시 부여
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary: 의료관광 유치기관 행정제재 기준 (불법체류율 및 위반 종류별)
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 의료관광, 유치기관, 행정제재, 회원자격 취소, 불법체류율, G-1
+- source_page:
+- source_excerpt: |
+    1. 회원자격 정지 및 취소, 회원 재가입 제한
+    가. 일반적 행정제재
+    회원자격이 취소된 유치기관은 취소일로부터 2년간 재가입 제한
+    2. 불법체류자 발생에 따른 초청자의 행정제재
+- related_visa_codes: C-3-3, G-1-10
+- expected_questions: |
+    의료관광 유치기관이 위반하면 어떤 제재를 받아요?
+    불법체류자가 발생하면 유치기관 회원자격이 어떻게 되나요?
+    회원자격 취소되면 언제 다시 가입할 수 있어요?
 
 ### row H-1 / 사증발급 / 대상
 - manual_type: 사증민원
@@ -7730,11 +8203,50 @@
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    관광취업(워킹홀리데이) 활동
+- applicant_context:
 - eligibility: |
-    대한민국과 관광취업에 관한 협정이나 양해각서를 체결한 국가의 국민
-    관광을 주된 목적으로 하면서 관광경비 충당을 위해 단기간 취업활동을 하려는 자
+    대한민국과 관광취업에 관한 협정이나 양해각서를 체결한 국가의 국민으로서 관광을 주된 목적으로 하면서 이에 수반되는 관광경비 충당을 위하여 단기간 취업 활동을 하려는 자
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure: |
+    신청기관: 협정체결국을 관할하는 재외공관
+    오스트리아 국민은 협정에 따라 주일본 대사관, 주중국 대사관, 주상하이 총영사관, 주홍콩 총영사관, 주타이베이 대표부에서 사증발급 신청 가능
+- restrictions:
+- exceptions:
+- fees: |
+    상대 국가에서 우리나라 국민에게 수수료(워킹홀리데이 사증 관련)를 징수할 경우 상호주의에 따라 상대 국가 국민에게도 수수료 징수
+    2018년 기준 일본, 프랑스, 칠레, 홍콩, 스페인은 우리나라 국민에게 워킹홀리데이 사증 심사 수수료를 받지 않고 있어, 해당국가 국민에게도 동일하게 사증 심사수수료 면제
+- duration_or_validity: 협정상의 체류기간 (국가별 상이)
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 관광취업, 워킹홀리데이, 협정국가, H-1
+- source_page:
+- source_excerpt: |
+    대한민국과 관광취업에 관한 협정이나 양해각서를 체결한 국가의 국민 으로서 관광을 주된 목적으로 하면서 이에 수반되는 관광경비 충당을 위하여 단기간 취업 활동을 하려는 자
+- related_visa_codes:
+- expected_questions: |
+    워킹홀리데이 비자는 어떤 나라 사람이 받을 수 있어요?
+    관광취업 비자는 어디서 신청해요?
+    워킹홀리데이 비자 수수료는 얼마예요?
+
+### row H-1 / 사증발급 / 기간
+- manual_type: 사증민원
+- visa_code: H-1
+- visa_name_ko: 관광취업
+- item_type: visa_rule
+- section_title: H-1 관광취업 / 국가별 사증종류 및 유효기간
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 기간
+- applicant_context:
+- eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents:
@@ -7744,17 +8256,91 @@
 - restrictions:
 - exceptions:
 - fees:
-- duration_or_validity: 협정상의 체류기간
+- duration_or_validity: |
+    국가별 사증종류, 유효기간, 체류기간:
+    - 홍콩: H-1(복수), 유효기간 3개월, 체류기간 1년
+    - 일본: H-1(단수), 유효기간 1년, 체류기간 1년
+    - 미국: H-1(복수), 유효기간 1년 6개월, 체류기간 1년 6개월
+    - 캐나다, 영국: H-1(복수), 유효기간 2년(24개월), 체류기간 2년(24개월)
+    - 그 외 국가: H-1(복수), 유효기간 1년, 체류기간 1년
+- quota_or_limit: |
+    국가별 사증발급 수량(쿼터):
+    - 호주, 독일, 스웨덴, 덴마크, 무제한
+    - 캐나다 12,000명
+    - 영국 5,000명
+    - 뉴질랜드 3,000명, 일본 10,000명
+    - 미국, 프랑스 2,000명
+    - 스페인 1,000명
+    - 아일랜드, 홍콩 1,000/800명
+    - 대만 800명, 이탈리아 500명, 체코 300명, 오스트리아 300명, 헝가리 100명
+    - 이스라엘, 네덜란드, 포르투갈, 벨기에, 폴란드, 아르헨티나 200명
+    - 칠레 100명, 안도라 50명
+- score_criteria:
+- table_summary: 협정체결 국가별 사증종류·유효기간·체류기간·쿼터
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 관광취업, 워킹홀리데이, 국가별 쿼터, 유효기간, H-1
+- source_page:
+- source_excerpt: |
+    협정체결 국가별 사증종류, 유효기간, 체류기간
+    홍 콩 H-1(복수) 3개월 1년
+    일 본 H-1(단수) 1년 1년
+    미 국 H-1(복수) 1년 6개월 1년 6개월
+    캐나다, 영국 H-1(복수) 2년(24개월) 2년(24개월)
+- related_visa_codes:
+- expected_questions: |
+    나라마다 워킹홀리데이 비자 유효기간이 다르나요?
+    캐나다 워킹홀리데이는 얼마나 머물 수 있어요?
+    워킹홀리데이 쿼터가 정해진 나라는 어디예요?
+
+### row H-1 / 사증발급 / 제출서류
+- manual_type: 사증민원
+- visa_code: H-1
+- visa_name_ko: 관광취업
+- item_type: required_documents
+- section_title: H-1 관광취업 / 제출서류
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 제출서류
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    - 사증발급신청서, 사진, 여권, 왕복항공권 (왕복항공권이 없는 경우 상당금액 예치서류 인정)
+    - 예금잔고증명서 등 일정기간(3개월) 체류할 수 있는 경비 입증서류
+    - 범죄경력증명서, 건강진단서 (상호주의에 따라 제출 여부 결정)
+    - 보험증서
+    - 재학증명서 또는 최종학력증명서 (단, 미국은 한-미 WEST 프로그램 양해각서에 따름)
+    - 관광취업 활동계획서 (대략적인 내용도 가능하며 인터뷰 등을 통하여 확인된 경우에는 제출 생략 가능)
+- other_documents: |
+    기타 재외공관장이 필요하다고 인정하는 서류
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 관광취업, 워킹홀리데이, 활동계획서, 왕복항공권, H-1
+- source_page:
+- source_excerpt: |
+    ❍ 사증발급신청서, 사진, 여권, 왕복항공권
+    ❍ 왕복항공권이 없는 경우 상당금액 예치서류 인정
+    ❍ 예금잔고증명서 등 일정기간(3개월) 체류할 수 있는 경비 입증서류
+    ❍ 범죄경력증명서, 건강진단서
+    ❍ 보험증서
+- related_visa_codes:
 - expected_questions: |
-    워킹홀리데이로 한국에 가려면 어떤 비자를 받아야 해요?
-    관광하면서 잠깐 일하려면 어떤 비자가 맞나요?
-    관광취업 비자는 어떤 나라 국민이 받을 수 있어요?
+    워킹홀리데이 신청할 때 어떤 서류가 필요해요?
+    예금잔고증명서는 얼마 정도 있어야 해요?
+    활동계획서는 자세히 써야 하나요?
 
 ### row H-1 / 사증발급 / 요건
 - manual_type: 사증민원
@@ -7767,81 +8353,156 @@
 - subsection_type: 요건
 - applicant_context:
 - eligibility: |
-    협정국가 국민(난민·무국적자·영주권자는 제외)
-    뉴질랜드: 사증 신청 시 6개월 이상 거주
-    홍콩: 중화인민공화국 홍콩특별행정구 일반 거주자
-    대만: 호구등록되어 있을 것
-    미국: 고등교육 과정 재학 또는 최근 1년 이내 대학 졸업
+    가. 협정국가 국민일 것 (난민, 무국적자, 영주권자 등은 협정국 국적이 아니므로 대상 아님)
+    추가 요건:
+    - 뉴질랜드: 사증 신청 시 6개월 이상 뉴질랜드 거주
+    - 홍콩: 중화인민공화국 홍콩특별행정구 일반 거주자
+    - 대만: 대만에 호구등록(household registration)
+    - 미국: 고등교육 과정 재학 중이거나 최근 1년 이내 대학 졸업
+    나. 협정국가의 유효한 여권 소지 (잔여 유효기간 6개월 이상, 칠레는 협정문에 따라 3개월 이상)
+    다. 사증발급 신청시 18세 이상 30세 이하
+    - 대만, 포르투갈, 아일랜드, 아르헨티나: 34세까지 신청 가능
+    - 미국: 연령기준 없음
+    - 영국, 캐나다: 35세까지 신청 가능
+    라. 중대한 범죄경력이 없을 것: 벌금 300만원 이상 선고 확정 시 불허
+    마. 신체 건강할 것 (건강검진 서류로 확인)
+    바. 보장액 4,000만원 이상 의료보험 등에 가입 (병원치료와 본국 후송 비용 보장 목적)
+    사. 부양가족 등을 동반하지 않을 것
+    아. 관광취업프로그램에 참여한 경험이 없을 것 (단, 아일랜드, 스웨덴, 미국은 유경험자도 가능)
+    자. 체재비 등 재정 능력 (한화 기준 300만원 이상)
+    차. 관광이 주된 목적일 것
 - target_persons:
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements: |
-    유효한 협정국 여권 소지(잔여 유효기간 신청 당시 6개월 이상)
-    사증발급 신청 시 18세 이상 30세 이하 (대만·포르투갈·아일랜드·아르헨티나 34세까지, 영국·캐나다 35세까지, 미국 연령기준 미적용)
-    중대한 범죄경력 없을 것(벌금 300만원 이상 선고 시 발급 불허)
-    신체 건강(공중위생상 위해 우려 시 불허)
-    체류기간 중 보장액 4,000만원 이상 의료보험 가입
-    부양가족 동반 불가
-    관광취업프로그램 참여 경험 없을 것(쿼터 무제한 국가 등 일부 예외)
-    왕복항공권 + 3개월 체류 가능 경비(한화 300만원 이상)
-    관광이 주된 목적일 것(취업·학업 전념·취재·정치활동 등 사증발급 제한)
+    취업 형태: 계약직, 시간제 아르바이트 등 고용형태와 무관
+    국가별 취업기간 및 최대 취업 가능 시간:
+    - 이스라엘: 3개월, 1주 25시간, 최대 300시간
+    - 호주, 이탈리아, 벨기에: 6개월, 1주 25시간, 최대 625시간
+    - 덴마크: 9개월, 1주 25시간, 최대 950시간
+    - 캐나다: H-1 체류기간, 1주 40시간, 최대 2,080시간
+    - 그 외: H-1 체류기간, 1주 25시간, 최대 1,300시간
 - procedure:
 - restrictions: |
-    취업 제한 직종: E-6 유흥접객업소(접객원·무용수·가수 등), 의사·변호사·교수 등 전문직 E-1~E-7, 사행행위·풍속영업·개인과외교습 등 청소년 출입·고용 금지 업소
-    학업 제한: D-2 유학 정규 학업과정, 회화강사 활동 겸한 학업
+    취업 제한 직종 (E-1 ~ E-7자격):
+    - 접객원, 무용수, 가수, 악사, 곡예사 등 유흥접객업소 종사 직종 (E-6)
+    - 의사, 변호사, 교수, 항공기조종사, 회화강사 등 전문 직종과 E-7 직종
+    - 사행행위, 단란주점, 유흥주점, 풍속영업 등 선량한 풍속에 반하는 업종
+    - 청소년 출입·고용 금지 업소 (키스방, 대딸방, 전립선마사지, 유리방, 성인PC방, 휴게텔, 인형체험방 등)
+    - 학원의 설립·운영 및 과외교습에 관한 법률에서 규정하고 있는 개인과외 교습 행위
+    학업 제한:
+    - D-2(유학)활동에 해당하는 정규 학업과정 불가
+    - 외국어 교육 보조 활동을 겸하면서 행하는 학업 불가 (예: 회화지도 활동)
+    국가별 학업기간 제한:
+    - 호주: 4개월
+    - 캐나다, 아일랜드, 덴마크, 홍콩, 오스트리아, 이스라엘, 벨기에, 뉴질랜드: 6개월
+    - 그 외: H-1 체류기간
 - exceptions: |
-    1주당 최대 취업가능시간: 캐나다 40시간, 그 외 25시간
-    국가별 취업기간: 이스라엘 3개월, 호주·이탈리아·벨기에 6개월, 덴마크 9개월, 캐나다·그 외 H-1 체류기간
-    국가별 학업기간: 호주 4개월, 캐나다·아일랜드·덴마크·홍콩·오스트리아·이스라엘·벨기에·뉴질랜드 6개월, 그 외 H-1 체류기간
-- fees: |
-    상호주의에 따라 수수료 결정(일본·프랑스·칠레·홍콩·스페인은 면제)
-- duration_or_validity: |
-    홍콩 H-1(복수) 유효기간 3개월/체류 1년
-    일본 H-1(단수) 1년/1년
-    미국 H-1(복수) 1년 6개월/1년 6개월
-    캐나다·영국 H-1(복수) 2년/2년
-    그 외 국가 H-1(복수) 1년/1년
-- quota_or_limit: |
-    호주·독일·스웨덴·덴마크·네덜란드·기타 일부 무제한
-    캐나다 12,000, 일본 10,000, 영국 5,000, 뉴질랜드 3,000, 미국·프랑스 2,000, 스페인 1,000, 홍콩 1,000, 아일랜드 800, 대만 800, 이탈리아 500, 체코 300, 오스트리아 300, 폴란드 200, 포르투갈 200, 벨기에 200, 네덜란드 200, 아르헨티나 200, 이스라엘 200, 헝가리 100, 칠레 100, 안도라 50
+    호주, 일본은 협정문상 18~25세이나 상호협의에 따라 30세 이하로 확대
+    상대 국가에서 우리나라 국민에게 범죄경력증명서를 요구하지 않는 나라(호주, 홍콩, 체코, 폴란드)는 범죄경력증명서 요구 생략 및 인터뷰/진술서로 대체 가능
+    상대 국가에서 건강검진 서류 요구하지 않는 경우 인터뷰로 대체 가능
+    대한민국 내 보장이 가능한 의료보험 가입자는 신체 건강한 사람으로 간주
+- fees:
+- duration_or_validity:
+- quota_or_limit:
 - score_criteria:
-- table_summary: 관광취업(H-1) 협정국별 사증·체류·쿼터 표
+- table_summary: 국가별 워킹홀리데이 취업·학업 기간 및 추가 요건
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 관광취업, 워킹홀리데이, 연령제한, 취업제한 직종, 의료보험, H-1
+- source_page:
+- source_excerpt: |
+    가. 협정국가 국민일 것
+    다. 사증발급 신청시 18세 이상 30세 이하일 것
+    바. 의료보험 등에 가입할 것
+    ○ 대한민국 체류기간 중 보장액 4,000만원 이상 의료보험 등에 가입
+    아. 관광취업프로그램에 참여한 경험이 없을 것
+- related_visa_codes: D-2, E-1, E-6, E-7
 - expected_questions: |
-    워킹홀리데이는 나이 제한이 있나요?
-    워킹홀리데이로 한국에서 일할 수 있는 시간은 얼마나 돼요?
-    어떤 업종에서는 일할 수 없나요?
+    워킹홀리데이 비자는 몇 살부터 몇 살까지 받을 수 있어요?
+    워킹홀리데이로 한국 가는데 무슨 일은 못 해요?
+    워킹홀리데이로 한국어 학원 다닐 수 있어요?
+    워킹홀리데이 의료보험은 얼마짜리 들어야 해요?
 
-### row H-1 / 사증발급 / 제출서류
+### row D-3 / 사증발급인정서 / 대상
 - manual_type: 사증민원
-- visa_code: H-1
-- visa_name_ko: 관광취업
-- item_type: required_documents
-- section_title: H-1 관광취업
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 제출서류
+- visa_code: D-3
+- visa_name_ko: 기술연수
+- item_type: visa_rule
+- section_title: D-3 기술연수 / 해외투자기업 기술연수생 (D-3-11~13)
+- subtype_or_program: D-3-11, D-3-12, D-3-13
+- petition_type: 사증발급인정서
+- subsection_type: 대상
 - applicant_context: |
-    협정체결국을 관할하는 재외공관에서 신청 (오스트리아 국민은 일본·중국·홍콩·타이베이 공관 신청 가능)
-- eligibility:
+    「출입국관리법」제9조(사증발급인정서) 및 제19조의2(외국인의 기술연수활동)에 근거하여 산업체에서 연수하고자 하는 외국인
+- eligibility: |
+    체류자격 약호:
+    - D-3-11: 해외직접투자업체 연수생
+    - D-3-12: 기술투자(기술수출업체) 연수생
+    - D-3-13: 플랜트수출업체 연수생
+    1. 해당국 정부의 법령에 의해 합법적으로 설립되고 가동되어 3개월이 경과된 해외합작투자법인 또는 우리기업의 해외현지법인의 생산직 직원으로 그 나라에서 기술습득이 불가능하거나 어려워 연수가 필요하다고 인정되는 외국인
+    2. 우리나라 기업과 미화 10만불 이상의 기술 도입 또는 기술제휴 계약을 체결하여 기술을 수입하였거나 우리나라 기업으로부터 본선 인도가격 미화 50만불 상당액 이상의 플랜트를 수입한 외국기업의 생산직 직원
 - target_persons:
-- common_documents: |
-    - 사증발급신청서, 사진, 여권, 왕복항공권 (왕복항공권 없는 경우 상당금액 예치서류)
-    - 예금잔고증명서 등 3개월 체류 가능 경비 입증서류
-    - 보험증서
+- common_documents:
 - mandatory_documents:
-- other_documents: |
-    - 범죄경력증명서, 건강진단서 (상호주의에 따라 제출 여부 결정, 미국은 한-미 WEST 프로그램 양해각서에 따름)
-    - 재학증명서 또는 최종학력증명서 (상호주의에 따라)
-    - 관광취업 활동계획서 (대략적 가능, 인터뷰 등으로 확인 시 생략 가능)
-    - 기타 재외공관장이 필요하다고 인정하는 서류
+- other_documents:
 - requirements:
 - procedure:
-- restrictions:
+- restrictions: |
+    시행령 제24조의4제3항에 따라 기술연수 제한대상 외국인:
+    - 대한민국에서 금고이상의 형을 선고받은 사실이 있거나 외국에서 이에 준하는 형을 선고받은 사실이 있는 사람
+    - 대한민국에서 출국명령 또는 강제퇴거명령을 받고 출국한 사람
+    - 대한민국에서 6개월 이상 불법으로 체류한 사실이 있는 사람
+    - 불법취업할 목적으로 입국할 염려가 있다고 인정되는 사람
+    - 출입국관리법 제11조제1항 각호의 어느 하나에 해당하는 사람
 - exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary: 기술연수 체류자격 세분류 (D-3-11/12/13)
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 기술연수, 해외투자기업, 해외직접투자, 기술수출, 플랜트수출, D-3, D-3-11, D-3-12, D-3-13
+- source_page:
+- source_excerpt: |
+    1. 해당국 정부의 법령에 의해 합법적으로 설립되고 가동되어 3개월이 경과된 해외합작투자법인 또는 우리기업의 해외현지법인의 생산직 직원으로 그 나라에서 기술습득이 불가능하거나 어려워 연수가 필요하다고 인정되는 외국인
+    2. 우리나라 기업과 미화 10만불 이상의 기술 도입 또는 기술제휴 계약을 체결하여 기술을 수입하였거나 우리나라 기업으로부터 본선 인도가격 미화 50만불 상당액 이상의 플랜트를 수입한 외국기업의 생산직 직원
+- related_visa_codes:
+- expected_questions: |
+    해외 공장에서 일하는데 한국 본사에서 기술연수 받으려면 어떤 비자가 필요해요?
+    해외투자 기술연수 비자는 누가 신청할 수 있어요?
+    플랜트 수출 받는 외국 기업 직원도 한국 와서 연수 받을 수 있어요?
+
+### row D-3 / 사증발급인정서 / 요건
+- manual_type: 사증민원
+- visa_code: D-3
+- visa_name_ko: 기술연수
+- item_type: visa_rule
+- section_title: D-3 기술연수 / 연수생 요건
+- subtype_or_program:
+- petition_type: 사증발급인정서
+- subsection_type: 요건
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    제3조(연수생 요건):
+    1. 18세 이상 40세 이하의 신체 건강한 자일 것
+    2. 현지 법인의 근무경력이 3개월 이상일 것 (다만, 핵심기능인력은 제외)
+    3. 과거 연수생 자격으로 체류한 경우 출국한지 1년 이상일 것
+    4. 국립국제교육원의 한국어능력시험(TOPIK) 2급 이상 취득 또는 세종학당재단의 세종학당 초급2 이상 과정 수료
+    - 다만, 국내 대학에서 학사학위 이상 취득한 자 또는 한국어교육 이행각서 제출 기술연수업체에서 연수받고자 하는 자는 제외
+- procedure:
+- restrictions:
+- exceptions: |
+    한국어능력 면제: 국내 대학에서 학사학위 이상의 학위를 취득한 자 또는 한국어교육 이행각서를 제출한 기술연수업체에서 연수받고자 하는 자
 - fees:
 - duration_or_validity:
 - quota_or_limit:
@@ -7850,58 +8511,229 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 기술연수, 연수생 요건, TOPIK, 한국어능력, 현지법인 근무경력, D-3
+- source_page:
+- source_excerpt: |
+    1. 18세 이상 40세 이하의 신체 건강한 자일 것
+    2. 현지 법인의 근무경력이 3개월 이상일 것 (다만, 제2조제2항의 규정에 의한 핵심기능인력은 제외)
+    3. 과거 연수생 자격으로 체류한 경우 출국한지 1년 이상일 것
+    4. 국립국제교육원의 한국어능력시험(TOPIK)에서 2급 이상 취득 또는 세종학당재단의 세종학당 초급2 이상 과정을 수료할 것
+- related_visa_codes:
 - expected_questions: |
-    워킹홀리데이 비자 신청할 때 어떤 서류가 필요해요?
-    왕복항공권이 없으면 비자 신청을 못 하나요?
-    의료보험은 얼마짜리에 들어야 해요?
+    기술연수 비자 받으려면 나이가 어떻게 돼야 해요?
+    한국어 시험은 어느 정도 점수가 필요해요?
+    해외 법인에서 얼마나 일했어야 연수생으로 갈 수 있어요?
 
-### row D-3 / 사증발급인정서 / 대상
+### row D-3 / 사증발급인정서 / 쿼터
+- manual_type: 사증민원
+- visa_code: D-3
+- visa_name_ko: 기술연수
+- item_type: quota
+- section_title: D-3 기술연수 / 연수허용인원 기준
+- subtype_or_program:
+- petition_type: 사증발급인정서
+- subsection_type: 쿼터
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure: |
+    출입국·외국인관서의 장은 연수허용인원기준을 초과하여 연수인원을 허가하고자 하는 경우에는 그 사유를 명시하여 법무부장관의 승인을 받아야 함 (다만, 연수허용인원의 50%를 초과할 수 없음)
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit: |
+    1. 내국인 상시 근로자(임시직 및 기술연수생 제외) 총수의 8% 이내
+    단, 최대 200명을 초과할 수 없고, 부득이한 사유로 200명 초과시 법무부장관의 승인 필요
+    3. 외국국적 동포 기술연수생 초청 시: 제1호 허용인원 외에 외국국적동포 기술연수생 수의 50% 범위 내에서 초과 허용 (단, 총 초과허용인원은 제1호의 허용인원 상한의 50%를 초과하지 못함)
+    4. 연수생 관리 우수업체 (신청일 기준 최근 2년 이내 3회 이상 연수생 초청, 이탈자 없음, 출입국관리법 등 위반 없음): 제1호 허용인원 상한의 30% 범위 내에서 초과 허용
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 기술연수, 연수허용인원, 쿼터, 우수업체, 외국국적동포, D-3
+- source_page:
+- source_excerpt: |
+    1. 내국인 상시 근로자(임시직 및 기술연수생 제외) 총수의 8% 이내 단, 최대 200명을 초과할 수 없고, 부득이한 사유로 200명 초과시 법무부장관의 승인 필요
+    3. 외국국적 동포를 기술연수생으로 초청하는 경우
+    4. 연수생 관리 우수업체에서 기술연수생을 초청하는 경우
+- related_visa_codes:
+- expected_questions: |
+    한 회사에서 기술연수생은 몇 명까지 초청할 수 있어요?
+    외국국적 동포를 연수생으로 부르면 인원이 더 늘어나나요?
+    우수업체로 인정받으면 연수생을 더 부를 수 있어요?
+
+### row D-3 / 사증발급인정서 / 기간
 - manual_type: 사증민원
 - visa_code: D-3
 - visa_name_ko: 기술연수
 - item_type: visa_rule
-- section_title: D-3 기술연수 / 해외투자기업 기술연수생 훈령
+- section_title: D-3 기술연수 / 연수기간
 - subtype_or_program:
 - petition_type: 사증발급인정서
-- subsection_type: 대상
-- applicant_context: |
-    해외투자기업 기술연수생(D-3-11 해외직접투자, D-3-12 기술수출, D-3-13 플랜트수출) 사증발급인정서 발급
-- eligibility: |
-    1. 해외 합작투자법인 또는 우리기업의 해외현지법인 생산직 직원(설립·가동 3개월 경과)
-    2. 미화 10만 불 이상 기술도입·기술제휴 또는 미화 50만 불 상당 플랜트 수입 외국기업 생산직 직원
-    핵심기능 인력은 정상 가동 전이라도 연수 허용(연수허용인원의 30% 한도)
+- subsection_type: 기간
+- applicant_context:
+- eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements: |
-    18세 이상 40세 이하 신체 건강한 자
-    현지 법인 근무경력 3개월 이상 (핵심기능인력 제외)
-    과거 연수생 자격으로 체류한 경우 출국 후 1년 이상 경과
-    TOPIK 2급 이상 또는 세종학당 초급2 이상 수료(국내 학사학위 이상 취득자 또는 한국어교육 이행각서 제출 업체 연수생은 제외)
+    실무연수비율: 전체연수시간의 70%를 초과할 수 없음
 - procedure: |
-    외국 직접투자 미화 10만 불 미만 업체의 최초 연수허가는 법무부장관 승인 필요
-- restrictions: |
-    금고 이상 형 선고자, 출국명령·강제퇴거 받고 출국한 자, 6개월 이상 불법체류 사실자, 불법취업 목적 입국 우려자, 출입국관리법 제11조제1항 해당자는 연수 제한
+    체류기간 연장 시 제출서류:
+    - 신청서(별지34호 서식), 여권원본, 외국인등록증, 수수료
+    - 연수기간 연장신청 사유서
+    - 사업자등록증 및 공장등록증
+    - 국내법인 납세증명서
+    - 현지법인 납세사실 관련 증명 서류
+    - 연수생 임금 및 연수수당 지급 여부 확인서류
+    - 연수활동 입증서류(연수실적평가서류) - 연수일지, 면담일지, 한국어 교육 일지
+    - 신원보증서 원본
+    - 산업재해보상보험, 국민건강보험 가입증명서류 및 연수수당 등 체불에 대비한 보증보험 가입증명서류
+    - 체류지 입증서류
+- restrictions:
 - exceptions:
 - fees:
-- duration_or_validity:
-- quota_or_limit: |
-    한 기술연수업체가 여러 해외기업에 투자한 경우에도 총 연수허용인원은 제4조 기준 초과 불가
-    핵심기능인력은 연수허용인원의 30% 한도
+- duration_or_validity: |
+    기술연수생의 연수기간은 원칙적으로 입국한 날로부터 6개월을 초과할 수 없음
+    다만, 출입국·외국인관서의 장이 추가로 연수가 필요하다고 인정하는 경우 입국한 날부터 2년을 초과하지 않는 한도 내에서 그 연수기간을 연장할 수 있음
+    체류기간 6개월 이내의 사증발급인정서 발급 (D-3-11~13)
+- quota_or_limit:
 - score_criteria:
-- table_summary: 기술연수 체류자격 약호 분류표
-- table_rows: |
-    D-3-1: 06.12.31.까지 D-3-1 자격 등록자
-    D-3-11: 해외직접투자
-    D-3-12: 기술투자
-    D-3-13: 플랜트수출
-- inviter_context: 해외직접투자 산업체, 기술수출 산업체, 플랜트수출 산업체
-- recommendation_or_approval: 법무부장관 승인(직접투자 10만 불 미만 업체 최초 연수)
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 기술연수, 연수기간, 체류기간 연장, 실무연수비율, D-3
+- source_page:
+- source_excerpt: |
+    ② 기술연수생의 연수기간은 원칙적으로 입국한 날로부터 6개월을 초과할 수 없다. 다만, 출입국․외국인관서의 장이 추가로 연수가 필요하다고 인정하는 경우 입국한 날부터 2년을 초과하지 않는 한도 내에서 그 연수기간을 연장할 수 있다.
+    제6조(실무연수비율) 기술연수생의 실무연수비율은 전체연수시간의 70%를 초과할 수 없다.
+- related_visa_codes:
 - expected_questions: |
-    해외에 투자한 한국 회사 직원이 기술 배우러 한국 오려면 어떤 자격을 받아요?
-    기술연수 비자는 한국어 능력이 필요한가요?
-    어떤 나이대의 외국인이 기술연수생으로 올 수 있어요?
+    기술연수 비자는 한 번에 얼마나 받을 수 있어요?
+    연수기간 연장은 최대 얼마까지 가능해요?
+    실무연수는 전체 시간의 어느 정도까지 할 수 있어요?
+
+### row D-3 / 사증발급인정서 / 제출서류
+- manual_type: 사증민원
+- visa_code: D-3
+- visa_name_ko: 기술연수
+- item_type: required_documents
+- section_title: D-3 기술연수 / 사증발급인정서 신청서류
+- subtype_or_program:
+- petition_type: 사증발급인정서
+- subsection_type: 제출서류
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    - 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
+    - 피초청자가 기술연수생 요건을 구비하였음을 입증하는 서류
+      ① 현지법인등록증(또는 설립인가서) 사본 (영사확인 必)
+      ② 현지법인의 장이 발급한 피초청자 재직증명서 및 여권사본 (영사확인 必)
+      ③ 한국어능력입증자료
+    - 연수내용을 확인할 수 있는 연수계획서
+    - 초청자의 신원보증서
+    - 초청업체가 연수허용대상 업체임을 입증할 수 있는 서류:
+      ① 해외직접투자산업체: 해외직접투자신고(수리)서, 송금영수증/송금사실확인서, (현물투자 시) 세관 발행 수출면장
+      ② 기술수출산업체: 기술수출계약서(국문) 사본, 지식경제부 장관 승인서
+      ③ 플랜트수출산업체: 플랜트수출승인서(변경승인서 포함)
+    - 연수허용인원 산정에 필요한 초청업체의 내국인 상시 근로자 수 입증서류
+    - 기타 자체 연수시설(공정)과 적정한 숙박시설 구비 등 연수환경을 확인할 수 있는 자료
+- other_documents:
+- requirements:
+- procedure: |
+    초청자가 사업장 주소지를 관할하는 출입국·외국인관서의 장에게 사증발급인정서 발급을 신청
+    공관장 재량으로 사증을 발급할 수 없음
+- restrictions:
+- exceptions: |
+    서류간소화: 과거 1년 이내에 서류를 제출한 적이 있는 기술연수업체에 대해서는 특별한 사유가 없는 한 동일한 서류 제출 면제
+    공신력 있는 기관 홈페이지에서 확인 가능한 상장기업 또는 전자공시업체의 서류는 원칙적으로 제출 면제, 팩스 또는 전자우편으로도 제출 허용
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: |
+    초청자: 기술연수업체의 장 (그 업체의 주소지를 관할하는 출입국·외국인관서의 장에게 신청)
+- recommendation_or_approval:
+- keywords: 기술연수, 사증발급인정서, 신원보증서, 연수계획서, 해외직접투자, D-3
+- source_page:
+- source_excerpt: |
+    1. 사증발급인정신청서 (별지 제21호 서식), 여권사본, 표준규격사진 1매
+    2. 피초청자가 기술연수생 요건을 구비하였음을 입증하는 서류
+    3. 연수내용을 확인할 수 있는 연수계획서
+    4. 초청자의 신원보증서
+    5. 초청업체가 연수허용대상 업체임을 입증할 수 있는 서류
+- related_visa_codes:
+- expected_questions: |
+    기술연수 사증발급인정서 신청할 때 어떤 서류를 내야 해요?
+    영사확인은 어떤 서류에 받아야 해요?
+    연수계획서는 누가 작성해요?
+
+### row D-3 / 사증발급인정서 / 제한
+- manual_type: 사증민원
+- visa_code: D-3
+- visa_name_ko: 기술연수
+- item_type: restriction
+- section_title: D-3 기술연수 / 연수업체 행정제재
+- subtype_or_program:
+- petition_type: 사증발급인정서
+- subsection_type: 제한
+- applicant_context: 기술연수업체
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions: |
+    실태조사 대상 업체:
+    1. 「출입국관리법」제19조제1항 규정에 의한 신고의무를 이행하지 않은 업체
+    2. 국내 기술연수업체 또는 연수생을 파견한 현지법인·외국기업의 가동상태가 중단된 업체
+    3. 사증발급인정서 발급 또는 체류기간연장을 위하여 허위로 작성한 서류 또는 위·변조된 서류를 제출한 업체
+    4. 연수수당 체불 또는 1일 8시간 초과 실무연수/야간 실무연수에 기본급 150%를 지급하지 않은 업체
+    5. 기술연수생의 여권, 금품 또는 임금 등을 강제로 보관하거나 저축한 업체
+    6. 입국항공료 등의 입국 비용을 기술연수생에게 부담시킨 업체
+    7. 기술연수생이 해외현지법인에서 근무한 업종과 다른 업종에서 연수시킨 업체
+    8. 실무연수비율(70%)을 위반한 업체
+    조치:
+    - 제1호: 과태료 부과
+    - 제2,4,5,6,7,8호: 체류기간 연장 불허
+    - 제3호: 통고처분(또는 형사고발) 및 기술연수생 체류허가 취소
+    - 제5호: 형사고발
+    - 제8호: 적발된 날로부터 1년간 연수생 초청 금지
+    연수생 관리 부실업체 (이탈률 10% 이상, 이탈인원 2명 이상): 이탈 기술연수생 수를 연수허용인원에서 제외
+- exceptions: |
+    이탈 연수생에 대해 「출입국관리법」제19조 및 동 훈령에서 정한 의무를 성실히 이행하고 이탈 방지를 위한 상당한 주의의무를 다한 업체는 제외
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 기술연수, 행정제재, 이탈자, 연수업체 제한, 실태조사, D-3
+- source_page:
+- source_excerpt: |
+    1.「출입국관리법」제19조제1항 규정에 의한 신고의무를 이행하지 않은 업체
+    4. 국내 연수업체에서 연수수당(연수생이 소속된 해외법인에서 지급한 기본급 이외에 국내연수업체가 지급하는 별도 수당)을 체불하거나, 1일 8시간을 초과하여 실시한 실무연수 또는 정규 근무시간 이외의 야간에 실시한 실무연수에 대해 기본급의 150%를 지급하지 않은 업체
+- related_visa_codes:
+- expected_questions: |
+    기술연수업체가 위반하면 어떤 제재를 받나요?
+    연수생이 이탈하면 회사에 어떤 불이익이 있어요?
+    허위서류를 제출한 연수업체는 어떻게 되나요?
 
 <!-- end chunk: visa_016 -->
 
@@ -7913,72 +8745,45 @@
 - visa_code: C-3
 - visa_name_ko: 단기방문
 - item_type: visa_rule
-- section_title: C-3 단기방문 / 동포방문(C-3-8)
+- section_title: C-3 단기방문 / 동포방문 (C-3-8)
 - subtype_or_program: C-3-8
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    모국을 방문하고자 하는 외국국적동포에 대한 동포방문(C-3-8) 사증
+- applicant_context: 모국을 방문하고자 하는 외국국적동포
 - eligibility: |
-    재외동포의 출입국과 법적 지위에 관한 법률 제2조제2호에 해당되는 외국국적동포
-- target_persons: 외국국적동포
+    「재외동포의 출입국과 법적 지위에 관한 법률」제2조제2호에 해당되는 외국국적동포
+- target_persons:
 - common_documents:
-- mandatory_documents:
+- mandatory_documents: |
+    - 사증발급신청서(별지 제17호 서식), 여권 및 사본, 표준규격사진 1매, 수수료
+    - 외국국적동포임을 입증하는 국적국의 공적서류
 - other_documents:
 - requirements:
 - procedure: |
     국가, 출생지, 호구부 관할에 관계없이 사증발급 신청 가능
 - restrictions: |
-    국내에서 특정강력범죄처벌법 제2조 특정강력범죄 중 제1항 제1호~제6호 범죄, 마약, 보이스피싱, 상습음주운전(3회 이상) 형 선고자
-    기타 범죄로 금고 이상 형 선고자는 입국규제 여부와 관계없이 실질심사로 사증발급 제한 가능
+    국내에서 「특정강력범죄의 처벌에 관한 특별법」제2조에서 규정한 '특정강력범죄'중 제1항 제1호부터 제6호까지의 범죄 및 마약, 보이스피싱, 상습음주운전(3회 이상)에 해당하는 범죄로 형을 선고받은 사실이 있는 사람과 기타 범죄로 금고 이상의 형을 선고받은 사실이 있는 사람은 입국규제 여부에 관계없이 실질심사를 통하여 사증발급 제한 가능
+    단기방문(C-3) 자격으로 취업활동은 불가
 - exceptions:
 - fees:
-- duration_or_validity: 5년 유효 동포방문(C-3-8, 090일) 복수사증
+- duration_or_validity: 5년 유효한 동포방문(C-3-8, 090일) 복수사증
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 단기방문, 동포방문, 외국국적동포, 복수사증, C-3, C-3-8
+- source_page:
+- source_excerpt: |
+    ○「재외동포의 출입국과 법적 지위에 관한 법률」제2조제2호에 해당되는 외국국적동포
+    ○ 5년 유효한 동포방문(C-3-8, 090일) 복수사증
+    ※ 단기방문(C-3) 자격으로 취업활동은 불가
+- related_visa_codes: F-4, H-2
 - expected_questions: |
-    한국 동포인데 모국을 방문하려면 어떤 비자가 필요해요?
-    동포방문 비자는 한 번 받으면 얼마나 쓸 수 있나요?
-    범죄 기록이 있어도 동포방문 비자 받을 수 있나요?
-
-### row C-3 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: C-3
-- visa_name_ko: 단기방문
-- item_type: required_documents
-- section_title: C-3 단기방문 / 동포방문(C-3-8)
-- subtype_or_program: C-3-8
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    외국국적동포 동포방문(C-3-8) 사증 신청
-- eligibility:
-- target_persons:
-- common_documents: |
-    - 사증발급신청서(별지 제17호 서식), 여권 및 사본, 표준규격사진 1매, 수수료
-    - 외국국적동포임을 입증하는 국적국의 공적서류
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity: 5년 유효 복수사증, 1회 체류기간 90일
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    동포방문 비자 받으려면 어떤 서류를 준비해요?
-    외국국적동포임을 어떻게 증명해요?
-    국적국 공적서류는 어떤 게 인정되나요?
+    외국 국적 동포가 모국 방문하려면 어떤 비자 받아요?
+    동포방문 비자는 한 번에 얼마나 머물 수 있어요?
+    동포방문 비자로 한국에서 일할 수 있어요?
 
 ### row H-2 / 사증발급 / 제한
 - manual_type: 사증민원
@@ -7989,157 +8794,316 @@
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 제한
-- applicant_context: |
-    동포 체류자격 통합으로 방문취업(H-2) 사증의 신규 발급 중단
+- applicant_context:
 - eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
-- procedure: |
-    26. 2. 12.부터 방문취업(H-2)과 재외동포(F-4)로 이원화된 동포 체류자격을 재외동포(F-4)로 통합
-    중국 및 CIS 지역 동포들에게도 재외동포(F-4) 사증 발급
+- procedure:
 - restrictions: |
-    방문취업(H-2) 사증의 신규 발급 중단(2026.2.12.부터)
-    다른 체류자격에서 방문취업(H-2) 자격으로 자격변경 불가
+    '26. 2. 12.부터 방문취업(H-2)과 재외동포(F-4)로 이원화된 동포 체류자격을 재외동포(F-4) 자격으로 통합하여 중국 및 CIS 지역 동포들에게도 재외동포(F-4) 사증을 발급하고, 방문취업(H-2) 사증의 신규 발급을 중단합니다.
+    다른 체류자격에서 방문취업(H-2) 자격으로 자격변경할 수 없음
 - exceptions: |
-    기존 방문취업(H-2) 사증을 받은 동포는 외국인 등록 시 체류기간 최대 3년 부여
-    일정 요건 충족 시 체류기간 연장 가능
+    기존에 방문취업(H-2) 사증을 받은 동포에게는 외국인 등록을 하면 체류기간 최대 3년이 부여되며, 일정한 요건을 충족할 경우 허용범위 내에서 체류기간 연장이 가능
+    취업 목적: 고용부 "취업기간 만료자 취업활동 기간연장" 확인서 받은 경우 추가 1년 10개월 연장
 - fees:
-- duration_or_validity: 외국인등록 시 최대 3년 (한국어능력 입증서류 제출 시), 미제출 시 1년
+- duration_or_validity:
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 방문취업, 신규 발급 중단, 동포 체류자격 통합, F-4 통합, H-2
+- source_page:
+- source_excerpt: |
+    □ 동포 체류자격 통합에 따라 방문취업(H-2) 사증의 신규 발급 중단
+    ○ '26. 2. 12.부터 방문취업(H-2)과 재외동포(F-4)로 이원화된 동포 체류자격을 재외동포(F-4) 자격으로 통합하여 중국 및 CIS 지역 동포들에게도 재외동포(F-4) 사증을 발급하고, 방문취업(H-2) 사증의 신규 발급을 중단합니다.
+- related_visa_codes: F-4
 - expected_questions: |
-    방문취업 비자는 지금도 새로 받을 수 있나요?
-    동포 체류자격이 통합되었다는데 무슨 뜻이에요?
-    예전에 방문취업 비자를 받았는데 계속 일할 수 있나요?
+    방문취업 비자는 이제 새로 발급 안 되나요?
+    중국 동포가 한국에서 일하고 싶으면 어떤 비자 받아야 해요?
+    기존 방문취업 비자 가진 사람은 어떻게 되나요?
+
+### row H-2 / 외국인등록 / 절차
+- manual_type: 사증민원
+- visa_code: H-2
+- visa_name_ko: 방문취업
+- item_type: stay_status_rule
+- section_title: H-2 방문취업 / 외국인등록 및 체류관리
+- subtype_or_program:
+- petition_type: 외국인등록
+- subsection_type: 절차
+- applicant_context: '26. 2. 12. 이전 방문취업(H-2) 사증을 발급받아 국내에 입국한 동포
+- eligibility:
+- target_persons:
+- common_documents: |
+    - 한국어능력 입증서류 (별첨 2)
+    - 해외 범죄경력증명서 (별첨 1)
+- mandatory_documents: |
+    - 여권, 천연색 사진 1매(6개월 이내 촬영), 외국인등록신청서, 수수료, 조기적응프로그램 교육 이수증
+    - 법무부 지정 병원에서 발급한 건강진단서 (별첨 4)
+    - 유학생 부모의 경우: 유학자격 소지자의 재학증명서 및 외국인등록증 사본 (유학생과 동반신청시 제출 생략)
+- other_documents:
+- requirements:
+- procedure: |
+    방문취업 사증으로 입국한 동포는 입국일로부터 90일 이내에 체류지 관할 출입국·외국인청(사무소·출장소)에 외국인등록 신고
+- restrictions:
+- exceptions: |
+    종전, 취업희망 방문취업자가 취업교육 시 받았던 건강진단은 생략 (중복 방지)
+- fees:
+- duration_or_validity: |
+    외국인등록 시 체류기간 최대 3년 부여
+    한국어능력 입증서류를 제출한 경우에 한하여 체류기간 3년 부여, 미제출 시 체류기간 1년 부여
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 방문취업, 외국인등록, 한국어능력, 건강진단서, 조기적응프로그램, H-2
+- source_page:
+- source_excerpt: |
+    ○ 방문취업 사증으로 입국한 동포는 입국일로부터 90일 이내에 체류지 관할 출입국ㆍ외국인청(사무소ㆍ출장소)에 아래 서류를 준비하여 외국인등록을 신고하시면 됩니다.
+    ⇒ 여권, 천연색 사진 1매(6개월 이내 촬영), 외국인등록신청서, 수수료, 조기적응프로그램 교육 이수증
+    ※ 한국어능력 입증서류를 제출한 경우에 한하여 체류기간 3년을 부여하고, 한국어능력 입증서류를 제출하지 않는 경우 체류기간 1년 부여
+- related_visa_codes: F-4
+- expected_questions: |
+    방문취업 비자로 입국하면 외국인등록은 언제까지 해야 해요?
+    외국인등록할 때 어떤 서류를 가져가야 해요?
+    한국어 시험 점수가 있으면 체류기간이 더 길어지나요?
+
+### row H-2 / 고용변동 신고 / 절차
+- manual_type: 사증민원
+- visa_code: H-2
+- visa_name_ko: 방문취업
+- item_type: stay_status_rule
+- section_title: H-2 방문취업 / 취업개시 및 근무처 변경 신고
+- subtype_or_program:
+- petition_type: 고용변동 신고
+- subsection_type: 절차
+- applicant_context: |
+    방문취업 허용업종에 최초 취업을 개시한 방문취업(H-2) 자격 소지자
+    최초 취업개시 후 근무처를 변경한 방문취업(H-2) 자격 소지자
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    - 특례고용가능확인서 사본
+    - 표준근로계약서 사본
+    - 사업자등록증 사본
+- other_documents:
+- requirements:
+- procedure: |
+    신고시기:
+    - 최초로 취업을 개시한 경우: 취업을 개시한 날로부터 15일 이내
+    - 근무처를 변경한 경우: 근무처를 변경한 날로부터 15일 이내
+    신고방법:
+    - 사전예약, 인터넷 신고 또는 팩스신고, 대행신고 가능
+    - 인터넷 신고: 【Hi-korea】> 전자민원 > 민원사무명 【H-2의 취업개시신고 또는 근무처변경신고】
+    - 팩스 신고: 방문취업 동포 취업개시 등 신고서를 작성, 대표 팩스번호(1577-1346)로 송부
+    - 대행신고: 청(사무소·출장소)에 등록된 대행사를 통해 신청
+    '14.10.13. 이후 법무부와 고용노동부의 취업개시 및 근로개시 신고방식 일원화에 따라 고용노동부에서 전송된 취업개시신고 인정
+- restrictions: |
+    신고의무를 위반한 자는 출입국관리법 제100조제2항에 의거 100만원 이하 과태료 부과대상
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: |
+    사용자는 내국인 구인노력(15일간) 등을 하였음에도 인력을 채용하지 못한 경우, 고용노동부 고용지원센터에 "특례고용가능확인서" 발급 신청
+    사용자는 고용지원센터의 "외국인구직자 명부"에 등재된 자 중에서 "특례고용가능확인서"에 기재된 허용인원의 범위 내에서 동포 고용
+- recommendation_or_approval:
+- keywords: 방문취업, 취업개시신고, 근무처변경, 특례고용가능확인서, 표준근로계약서, H-2
+- source_page:
+- source_excerpt: |
+    ○ 신고시기
+    - 최초로 취업을 개시한 경우 ⇒ 취업을 개시한 날로부터 15일 이내
+    - 근무처를 변경한 경우 ⇒ 근무처를 변경한 날로부터 15일 이내
+    ○ 신고의무를 위반한 자는 다음과 같이 처벌을 받습니다.
+    - 출입국관리법 제100조제2항에 의거 100만원 이하 과태료 부과대상임
+- related_visa_codes:
+- expected_questions: |
+    방문취업으로 일 시작하면 신고는 언제까지 해야 해요?
+    근무처가 바뀌면 어떻게 신고해요?
+    취업개시 신고 안 하면 어떻게 되나요?
 
 ### row H-2 / 체류기간 연장 / 요건
 - manual_type: 사증민원
 - visa_code: H-2
 - visa_name_ko: 방문취업
-- item_type: visa_rule
-- section_title: H-2 방문취업 / 체류관리
+- item_type: stay_status_rule
+- section_title: H-2 방문취업 / 체류기간 연장
 - subtype_or_program:
 - petition_type: 체류기간 연장
 - subsection_type: 요건
-- applicant_context: |
-    기존 방문취업(H-2) 자격 소지자의 체류기간 연장 및 체류관리
+- applicant_context:
 - eligibility: |
-    고용부에서 '취업기간 만료자 취업활동 기간연장 확인서'를 받은 경우 입국일(또는 체류자격변경허가일)로부터 4년 10개월 내에서 허가
-    감염병 확산·천재지변 등 사유로 직권 연장 시 6년 이내 연장 가능
+    고용부에서 "취업기간 만료자 취업활동 기간연장 확인서"를 받은 경우 입국일(또는 체류자격변경허가일)로부터 4년 10개월 내에서 허가
+    (감염병 확산, 천재지변 등의 사유로 체류기간 직권 연장 시 6년 이내 연장 가능)
+    결핵(결핵의심 포함) 등 진단을 받았지만, 외국인등록을 하고 체류기간 연장허가를 신청할 경우에는 "외국인 결핵환자 사증발급 및 체류관리 지침"에 따라 처리
 - target_persons:
 - common_documents:
 - mandatory_documents:
 - other_documents:
-- requirements: |
-    한국어능력 입증서류 제출 시 체류기간 3년, 미제출 시 1년
-    결핵 진단 시 외국인 결핵환자 사증발급 및 체류관리 지침에 따라 처리
-- procedure: |
-    입국일로부터 90일 이내 체류지 관할 출입국·외국인청에 외국인등록 신고
-    외국인등록 시 법무부 지정 병원 발급 건강진단서 제출
+- requirements:
+- procedure:
 - restrictions: |
-    원칙적 기준: 초범은 범칙금 500만 원 이상, 재범은 최근 3년 이내 합산 700만 원 이상 시 체류 불허 후 출국 조치
-    최근 3년 이내 3회 이상 범칙금 처분 시 금액 무관 체류 불허 후 출국 조치
-    취업 목적 외 활동 시 범칙금 부과 가능
-    신고의무 위반 시 100만원 이하 과태료(출입국관리법 제100조제2항)
+    원칙적 기준: 초범은 범칙금 500만 원 이상, 재범은 최근 3년 이내 합산 금액이 700만원 이상이면 체류 불허 후 출국조치
+    최근 3년 이내에 3회 이상 범칙금 처분을 받은 경우 금액에 관계없이 체류불허 후 출국조치
+    취업 목적 외 방문취업 자격 소지자가 취업 활동을 한 경우 출입국관리법에 따라 범칙금 부과 가능
 - exceptions:
 - fees:
-- duration_or_validity: 입국일로부터 최대 4년 10개월(직권 연장 시 6년)
+- duration_or_validity: 입국일로부터 4년 10개월 이내 (특별한 경우 6년 이내)
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
-- recommendation_or_approval:
+- recommendation_or_approval: |
+    고용부 "취업기간 만료자 취업활동 기간연장 확인서" 필요
+- keywords: 방문취업, 체류기간 연장, 취업기간 만료, 4년 10개월, H-2
+- source_page:
+- source_excerpt: |
+    ○ 고용부에서 "취업기간 만료자 취업활동 기간연장 확인서"를 받은 경우 입국일(또는 체류자격변경허가일)로부터 4년 10개월 내에서 허가
+    ○ (원칙적 기준) 초범은 범칙금 500만 원 이상, 재범은 최근 3년 이내 합산 금액이 700만원 이상이면 체류 불허 후 출국조치
+- related_visa_codes:
 - expected_questions: |
-    방문취업으로 한국에 있는데 얼마까지 더 머무를 수 있어요?
-    한국어 시험 점수가 있으면 체류기간이 더 길어지나요?
-    범칙금 받았는데 체류 연장 못 받을 수도 있나요?
+    방문취업 비자 연장은 최대 얼마까지 받을 수 있어요?
+    취업기간 만료자 확인서는 어디서 받아요?
+    벌금이 있으면 비자 연장이 안 되나요?
 
 ### row F-4 / 사증발급 / 대상
 - manual_type: 사증민원
 - visa_code: F-4
 - visa_name_ko: 재외동포
 - item_type: visa_rule
-- section_title: F-4 재외동포 / 자격부여 제도
-- subtype_or_program:
+- section_title: F-4 재외동포 / 자격 기본 대상
+- subtype_or_program: F-4-41, F-4-42
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    외국국적동포에 대한 재외동포(F-4) 자격 부여
+- applicant_context: 외국국적동포
 - eligibility: |
-    출생에 의하여 대한민국 국적을 보유하였던 사람(대한민국 정부 수립 전 국외 이주 동포 포함)으로 외국국적 취득자
-    위에 해당하는 사람의 직계비속으로 외국국적 취득자
-    F-4-41: 출생에 의해 대한민국 국적을 보유했던 자로 외국국적 취득자
-    F-4-42: F-4-41의 직계비속으로 외국국적 취득자
-- target_persons: 외국국적동포(중국·고려인 동포 포함)
+    출생에 의하여 대한민국의 국적을 보유하였던 사람(대한민국정부 수립 전에 국외로 이주한 동포를 포함)으로서 외국국적을 취득한 사람 (F-4-41)
+    위에 해당하는 사람의 직계비속으로서 외국국적을 취득한 사람 (F-4-42)
+    동포 체류자격(F-4) 통합에 따라, 모든 국가에 동일한 기준을 적용하여 동포에게 재외동포(F-4) 체류자격을 부여
+- target_persons:
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
-- procedure: |
-    동포 체류자격(F-4) 통합에 따라 모든 국가에 동일한 기준 적용
+- procedure:
 - restrictions: |
-    18.5.1. 개정 재외동포법 시행으로 18.5.1. 이후 최초로 대한민국 국적을 이탈·상실한 남성은 병역이행 또는 면제처분 없으면 40세 되는 해 12월 31일까지 F-4 부여 제한
-    재외동포법 제5조 제2항 제1호·제2호 해당자
-    국내 특정강력범죄, 사회적 중대범죄(마약·보이스피싱·상습음주운전 3회 이상) 금고 이상 형 선고자
-    기타 범죄로 금고 이상 형 또는 집행유예 선고 후 5년 미경과자
-    국내법 벌금 총액 700만 원 이상이며 완납일로부터 3년 미경과자
-    출입국관리법 범칙금 총액 700만 원 이상이며 완납일로부터 3년 미경과자(봉사실적 100시간 이상 시 1년으로 감경)
+    '18.5.1. 개정 재외동포법 시행으로 '18.5.1. 이후 최초로 대한민국 국적을 이탈하였거나 국적을 상실한 남성은 병역이행 또는 면제처분이 없으면 40세 되는 해 12월 31일까지 재외동포(F-4) 체류자격 부여 제한
 - exceptions:
 - fees:
-- duration_or_validity: 한국어능력 입증서류 제출기준 등에 따라 최대 3년까지
+- duration_or_validity:
 - quota_or_limit:
 - score_criteria:
-- table_summary: 재외동포(F-4) 사증발급 세부대상 및 추가서류 표(F-4-41, F-4-42)
-- table_rows: |
-    F-4-41: 본인 국민이었던 사실 증명서류, 외국국적 취득원인·연월일 증명서류
-    F-4-42: 직계존속 국민이었던 증명서류, 본인·직계존속 외국국적 취득원인·연월일, 직계존비속 관계 증명서류(출생증명서 등)
+- table_summary:
+- table_rows:
 - inviter_context:
-- recommendation_or_approval: 법무부장관 인정
+- recommendation_or_approval:
+- keywords: 재외동포, 외국국적동포, F-4-41, F-4-42, 직계비속, F-4
+- source_page:
+- source_excerpt: |
+    ○ 출생에 의하여 대한민국의 국적을 보유하였던 사람(대한민국정부 수립 전에 국외로 이주한 동포를 포함)으로서 외국국적을 취득한 사람
+    ○ 위에 해당하는 사람의 직계비속으로서 외국국적을 취득한 사람입니다.
+    ※ '18.5.1. 개정 재외동포법 시행으로 '18.5.1. 이후 최초로 대한민국 국적을 이탈하였거나 국적을 상실한 남성은 병역이행 또는 면제처분이 없으면 40세 되는 해 12월 31일까지 재외동포(F-4) 체류자격 부여 제한
+- related_visa_codes: C-3-8, H-2, F-5
 - expected_questions: |
-    한국 동포인데 자유롭게 한국에서 살고 일하려면 어떤 자격을 받아요?
-    재외동포 자격은 부모님이 한국인이었던 경우도 받을 수 있나요?
-    재외동포 자격이 안 되는 경우는 어떤 때예요?
+    재외동포 비자는 누가 받을 수 있어요?
+    부모님이 한국 사람이었던 외국 국적자도 재외동포 비자 받을 수 있나요?
+    재외동포 자격이 모든 국적에 똑같이 적용되나요?
 
 ### row F-4 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: F-4
 - visa_name_ko: 재외동포
 - item_type: required_documents
-- section_title: F-4 재외동포 / 사증발급 및 체류자격 변경
-- subtype_or_program:
+- section_title: F-4 재외동포 / 사증발급 세부대상 및 추가 신청서류
+- subtype_or_program: F-4-41, F-4-42
 - petition_type: 사증발급
 - subsection_type: 제출서류
-- applicant_context: |
-    재외동포(F-4) 사증발급 및 체류자격 변경 공통 서류
+- applicant_context:
 - eligibility:
 - target_persons:
 - common_documents: |
-    - 한국어능력 입증서류(별첨 2 제출기준)
-    - 해외 범죄경력증명서(별첨 1 제출기준)
-    - 외국국적동포임을 증명하는 서류(가족관계기록사항에 관한 증명서, 제적등본, 호구부, 거민증, 출생증명서 등)
-    - 재외동포 통합신청서(별지 제1호서식), 여권 및 사본, 표준규격사진 1매, 체류지 입증서류, 결핵진단서, 수수료
-    - 조기적응프로그램 이수증
-- mandatory_documents:
-- other_documents: |
-    F-4-41(출생 본인 국적): 본인이 대한민국 국민이었던 사실 증명서류, 외국국적 취득원인·연월일 증명서류
-    F-4-42(직계비속): 직계존속 국민이었던 증명서류, 본인·직계존속 외국국적 취득원인·연월일, 직계존비속 관계 증명서류(출생증명서 등)
+    - 한국어능력 입증서류 (별첨 2)
+    - 해외 범죄경력증명서 (별첨 1)
+    - 가족관계기록사항에 관한 증명서, 제적등본, 호구부, 거민증 및 출생증명서 등으로 외국국적동포임을 증명하는 서류
+- mandatory_documents: |
+    F-4-41 (대한민국 국민이었던 자):
+    - 본인이 대한민국의 국민이었던 사실을 증명하는 서류 (가족관계기록사항에 관한 증명서, 제적등본 또는 폐쇄등록부 등)
+    - 외국국적을 취득한 원인 및 연월일을 증명하는 서류
+    F-4-42 (직계비속):
+    - 직계존속이 대한민국의 국민이었던 사실을 증명하는 서류
+    - 여권 등 본인과 직계존속의 외국국적 취득원인 및 연월일을 증명하는 서류
+    - 직계존비속의 관계임을 증명하는 서류(출생증명서 등)
+- other_documents:
 - requirements:
-- procedure: |
-    국내 체류자격 변경: 대상별 제출서류가 국내에서 발급 가능하거나 출입국정보시스템 확인 가능 시 가능
-    CIS 지역 동포가 과거 동포 사증(C-3-8, H-2, F-4) 발급받은 적이 있는 경우 동포 입증자료 제출 시 국내 변경 가능
-    지역특화동포(F-4-R) 자격자가 일반 F-4(F-4-41, F-4-42)로 변경 희망 시 가능
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary: 재외동포 사증발급 세부대상별 추가 서류 (F-4-41 / F-4-42)
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 재외동포, 가족관계기록사항, 제적등본, 외국국적 취득, F-4-41, F-4-42, F-4
+- source_page:
+- source_excerpt: |
+    ① 출생에 의하여 대한민국 국적을 보유하였던 자로서 외국국적을 취득한 사람(F-4-41)
+    • 본인이 대한민국의 국민이었던 사실을 증명하는 서류
+    ② ①의 직계비속으로서 외국국적을 취득한 사람 (F-4-42)
+    • 직계존속이 대한민국의 국민이었던 사실을 증명하는 서류
+- related_visa_codes:
+- expected_questions: |
+    재외동포 사증 신청할 때 어떤 서류를 내야 해요?
+    부모가 한국인이었다는 증명은 어떻게 해요?
+    제적등본은 어디서 떼나요?
+
+### row F-4 / 체류자격 변경 / 제출서류
+- manual_type: 사증민원
+- visa_code: F-4
+- visa_name_ko: 재외동포
+- item_type: required_documents
+- section_title: F-4 재외동포 / 자격 변경 절차
+- subtype_or_program:
+- petition_type: 체류자격 변경
+- subsection_type: 제출서류
+- applicant_context:
+- eligibility: |
+    대상별 제출서류가 국내에서 발급되거나 출입국정보시스템으로 확인이 가능한 경우에 한하여 국내에서 자격변경 가능
+    CIS 지역 국가 동포가 과거에 동포 사증(C-3-8, H-2, F-4)을 발급받은 적이 있는 경우에는 동포 입증자료 제출 시 국내에서 체류자격 변경 가능
+    지역특화동포(F-4-R) 자격을 소지한 사람이 특례 적용을 포기하고 일반 재외동포(F-4-41, F-4-42) 자격으로 변경을 희망하는 경우 변경 가능
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    - 재외동포 통합신청서(별지 제1호서식), 여권 및 사본, 표준규격사진 1매
+    - 체류지 입증서류
+    - 결핵진단서
+    - 조기적응프로그램 이수증
+    - 수수료
+    - 동포임을 입증할 수 있는 서류
+    - 해외 범죄경력증명서 (별첨 1)
+    - 한국어 능력 입증서류 (별첨 2)
+- other_documents:
+- requirements: |
+    조기적응프로그램: 재외동포(F-4) 자격변경 신청이나 거소신고증 발급 시 의무 이수
+    과거 범죄 경력이 없는 경우 1회에 한해 제출 유예 허용
+- procedure:
 - restrictions:
 - exceptions: |
-    조기적응프로그램 이수 면제: 국내 초중고 재학·졸업자, 만 6세 이하·만 65세 이상, 장기체류 자격으로 국내 3년 이상 체류자, 이전 조기적응프로그램 이수자, 사회통합프로그램 1단계 이상 이수·이수자, 중증장애인
-    과거 범죄 경력이 없으면 조기적응프로그램 1회 한해 제출 유예 허용
+    조기적응프로그램 이수 면제대상: 국내 초·중·고교에 재학 중이거나 졸업한 사람, 만 6세 이하 또는 만 65세 이상인 사람, 장기체류 자격으로 국내에서 3년 이상 체류한 사람, 이전에 조기적응프로그램을 이수한 사람, 사회통합프로그램 1단계 이상 이수 중이거나 이수한 사람, 중증장애인
 - fees:
 - duration_or_validity:
 - quota_or_limit:
@@ -8148,123 +9112,379 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 재외동포, 체류자격 변경, 통합신청서, 조기적응프로그램, 결핵진단서, F-4
+- source_page:
+- source_excerpt: |
+    ○ 재외동포 통합신청서(별지 제1호서식), 여권 및 사본, 표준규격사진 1매, 체류지 입증서류, 결핵진단서, 조기적응프로그램* 이수증, 수수료
+    - 동포임을 입증할 수 있는 서류, 해외 범죄경력증명서(별첨 1), 한국어 능력 입증서류(별첨 2)
+    * (조기적응프로그램) 재외동포(F-4) 자격변경 신청이나 거소신고증 발급 시 조기적응프로그램을 의무적으로 이수한 후 자격변경 신청이 가능
+- related_visa_codes:
 - expected_questions: |
-    재외동포 비자 받으려면 어떤 서류를 준비해야 해요?
-    한국어 시험 안 봤어도 재외동포 자격 받을 수 있나요?
-    조기적응프로그램은 꼭 들어야 하나요?
+    국내에서 재외동포 자격으로 바꾸려면 어떤 서류가 필요해요?
+    조기적응프로그램은 꼭 이수해야 하나요?
+    어떤 경우에 조기적응프로그램이 면제되나요?
 
-### row F-4 / 체류자격외 활동허가 / 요건
+### row F-4 / 거소신고 / 절차
 - manual_type: 사증민원
 - visa_code: F-4
 - visa_name_ko: 재외동포
-- item_type: visa_rule
-- section_title: F-4 재외동포 / 취업활동 및 자격외 활동허가
+- item_type: stay_status_rule
+- section_title: F-4 재외동포 / 국내 거소신고 및 체류기간 연장
 - subtype_or_program:
-- petition_type: 체류자격외 활동허가
-- subsection_type: 요건
-- applicant_context: |
-    재외동포(F-4) 자격으로 변경한 동포가 과거 방문취업(H-2) 자격으로 취업개시 신고를 한 사업장에서 계속 일하려는 경우
-- eligibility: |
-    방문취업(H-2)으로 체류하며 취업개시 신고 사실이 있는 동포
+- petition_type: 거소신고
+- subsection_type: 절차
+- applicant_context: 재외동포(F-4) 사증으로 입국한 동포
+- eligibility:
 - target_persons:
-- common_documents: |
-    - 재외동포 통합신청서(별지 제1호서식), 여권 및 사본, 거소신고증, 수수료
-    - 단순노무 업종 취업사실 입증 공적서류(건강보험 가입내역, 소득금액증명원 등)
-    - 근로계약서, 사업자등록증
-- mandatory_documents:
+- common_documents:
+- mandatory_documents: |
+    - 재외동포 통합신청서(별지 제1호서식), 여권 및 사본, 표준규격사진 1매
+    - 체류지 입증서류
+    - 조기적응프로그램 이수증
+    - 수수료
 - other_documents:
 - requirements:
 - procedure: |
-    1회 부여기간은 재외동포(F-4) 자격 체류기간 범위 내에서 근로계약 기간에 따라 부여
+    국내 거소신고: 90일 이상 체류하고자 하는 경우 입국일부터 90일 이내 거소신고
+    체류기간연장 신청 시 제출서류:
+    - 신청서, 수수료, 한국어능력 입증서류, 체류지 입증서류(임대차 계약서 등)
 - restrictions: |
-    F-4 자격자 취업 제한: 단순노무행위, 사행행위 등 선량한 풍속·사회질서 반하는 행위, 공공이익·국내 취업질서 유지를 위해 제한 필요 인정 직종
-- exceptions: |
-    상기 제한 외에는 취업활동 제한 없음
-    출입국관리정보시스템(ICRM)으로 확인되는 경우 일부 서류 제출 면제 가능
+    법을 위반한 사람은 체류기간연장허가가 제한될 수 있음
+- exceptions:
 - fees:
-- duration_or_validity: 재외동포(F-4) 자격 체류기간 범위 내 근로계약 기간
+- duration_or_validity: |
+    체류기간은 '한국어능력 입증서류 제출기준(별첨2) 등'에 따라 최대 3년까지 부여
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 재외동포, 거소신고, 체류기간 연장, 한국어능력, F-4
+- source_page:
+- source_excerpt: |
+    ○ 90일 이상 체류하고자 하는 경우 입국일부터 90일 이내 거소신고
+    ○ 제출서류 : 재외동포 통합신청서(별지 제1호서식), 여권 및 사본, 표준규격사진 1매, 체류지 입증서류, 조기적응프로그램 이수증*, 수수료
+    ○ 체류기간은 '한국어능력 입증서류 제출기준(별첨2) 등'에 따라 최대 3년까지 부여됩니다.
+- related_visa_codes:
 - expected_questions: |
-    재외동포 비자로 바꿨는데 예전 일하던 곳에서 계속 일할 수 있나요?
-    단순노무 업종에서 일하려면 어떤 허가가 필요해요?
-    재외동포는 어떤 일은 못 하나요?
+    재외동포로 한국 들어왔는데 거소신고는 어떻게 해요?
+    재외동포 비자 연장은 최대 얼마까지 가능해요?
+    거소신고는 입국 후 며칠 안에 해야 해요?
 
-### row F-5 / 사증발급 / 대상
+### row F-4 / 사증발급 / 제한
 - manual_type: 사증민원
-- visa_code: F-5
-- visa_name_ko: 영주
-- item_type: visa_rule
-- section_title: F-5 영주 / 외국국적동포 영주자격 부여
+- visa_code: F-4
+- visa_name_ko: 재외동포
+- item_type: restriction
+- section_title: F-4 재외동포 / 자격 부여 제한대상 및 취업제한
 - subtype_or_program:
 - petition_type: 사증발급
-- subsection_type: 대상
-- applicant_context: |
-    외국국적동포에 대한 영주자격(F-5) 부여(국내 체류 및 취업활동 자유)
-- eligibility: |
-    재외동포(F-4) 자격으로 2년 이상 체류 중이며 소득·재산 등 일정 요건 충족
-    방문취업(H-2) 자격 동포가 제조업·농축산업·어업 분야에서 장기 근속 및 일정 요건 충족
-- target_persons: 외국국적동포
+- subsection_type: 제한
+- applicant_context:
+- eligibility:
+- target_persons:
 - common_documents:
 - mandatory_documents:
 - other_documents:
-- requirements: |
-    기본요건: 본인 또는 동반가족 생계유지 능력, 기본 소양, 품행 단정
-    생계유지 능력: 소득 주체(신청인·배우자·자녀·부모 중 생계 같이하는 사람, 사실혼 배우자·배우자 부모 제외), 소득 산정기간은 신청일 전년도 1년
-    신청자 본인 소득·자산이 기준액의 50% 이상(미성년 자녀 양육·미성년 자녀 본인은 제외)
-    인정 소득: 소득세법 제4조제1항 종합소득 중 소득세 납부한 소득(비과세소득은 증빙자료 검토, 근로소득공제로 소득세 미발생 소득도 인정)
-    자산은 소득으로 인정하지 않음(단, 자산 통해 소득세 납부 시 인정)
+- requirements:
 - procedure:
-- restrictions:
-- exceptions:
+- restrictions: |
+    재외동포(F-4) 자격부여 제한대상:
+    - 재외동포법 제5조 제2항 제1호 및 제2호에 해당하는 경우
+    - 「특정강력범죄의 처벌에 관한 특례법」제2조에서 규정한 특정강력범죄로 형을 선고받은 사람
+    - 사회적 중대범죄(마약, 보이스피싱, 상습(3회 이상) 음주운전)로 금고 이상의 형 선고
+    - 기타 범죄로 금고 이상의 형 선고 또는 집행유예 선고 후 5년 미경과
+    - 국내법 위반으로 선고받은 벌금 총액이 700만 원 이상인 사람으로 완납일로부터 3년이 경과하지 않은 사람
+    - 출입국관리법 위반으로 처분받은 범칙금 총액이 700만 원 이상인 사람으로 완납일로부터 3년이 경과하지 않은 사람
+    - 해외 범죄경력이 있는 경우 (별첨 1)
+    재외동포(F-4) 취업 제한:
+    - 단순노무행위를 하는 경우
+    - 사행행위 등 선량한 풍속 기타 사회질서에 반하는 행위
+    - 기타 공공의 이익이나 국내 취업질서 등의 유지를 위하여 그 취업을 제한할 필요가 있다고 인정되는 경우
+    - 상기 경우를 제외하고는 취업 활동의 제한을 받지 않음
+- exceptions: |
+    범칙금 처분: 한국중앙자원봉사센터(☏1365) 발급 실적확인서로 6개월 이상에 걸쳐 봉사시간 100시간 이상 확인되는 경우(1일 봉사시간 최대 6시간)에는 자격부여 제한 기간을 1년으로 감경
+    허용되는 취업활동이라도 국내법령에 의하여 일정한 자격을 요하는 때에는 그 자격을 갖추어야 함
 - fees:
-- duration_or_validity: 체류기간 상한 없음
+- duration_or_validity:
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
-- recommendation_or_approval: 법무부장관 인정
+- recommendation_or_approval:
+- keywords: 재외동포, 취업제한, 단순노무, 범죄경력, 자격부여 제한, F-4
+- source_page:
+- source_excerpt: |
+    ○ 재외동포(F-4) 소지자는 아래의 경우 취업할 수 없습니다. (별첨7 참조)
+    - 단순노무행위를 하는 경우
+    - 사행행위 등 선량한 풍속 기타 사회질서에 반하는 행위를 하는 경우
+    - 기타 공공의 이익이나 국내 취업질서 등의 유지를 위하여 그 취업을 제한할 필요가 있다고 인정되는 경우
+- related_visa_codes:
 - expected_questions: |
-    외국국적동포가 영주권 받으려면 어떤 조건을 채워야 해요?
-    재외동포 자격으로 몇 년 살면 영주권 신청할 수 있어요?
-    영주권 신청할 때 소득은 얼마나 있어야 해요?
+    재외동포는 한국에서 어떤 일을 못 해요?
+    단순노무는 왜 재외동포가 못 하나요?
+    범죄경력이 있으면 재외동포 자격을 못 받나요?
+
+### row F-4 / 체류자격외 활동허가 / 절차
+- manual_type: 사증민원
+- visa_code: F-4
+- visa_name_ko: 재외동포
+- item_type: stay_status_rule
+- section_title: F-4 재외동포 / 체류자격외 활동허가 (방문취업 사업장 계속 근무)
+- subtype_or_program:
+- petition_type: 체류자격외 활동허가
+- subsection_type: 절차
+- applicant_context: |
+    재외동포(F-4) 체류자격으로 변경한 동포가 과거 방문취업(H-2) 자격으로 취업개시 신고를 한 사업장에서 계속하여 일하고자 하는 경우
+- eligibility: |
+    방문취업(H-2)으로 체류하며 취업개시 신고를 한 사실이 있는 동포
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    - 재외동포 통합신청서(별지 제1호서식), 여권 및 사본, 거소신고증
+    - 단순노무 업종 취업사실을 입증할 수 있는 공적서류(건강보험 가입내역, 소득금액증명원 등)
+    - 근로계약서, 사업자등록증, 수수료
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: |
+    출입국관리정보시스템(ICRM)으로 확인되는 경우 제출 면제 가능
+- fees:
+- duration_or_validity: |
+    1회 부여 기간은 재외동포(F-4) 자격의 체류기간의 범위 내에서 근로계약 기간에 따라 부여
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 재외동포, 체류자격외 활동허가, 방문취업 사업장, 단순노무, F-4, H-2
+- source_page:
+- source_excerpt: |
+    □ 방문취업(H-2)으로 체류하며 취업개시 신고를 한 사실이 있는 동포는 다음의 서류를 제출하여 체류자격 외 활동허가를 받을 수 있습니다.
+    ○ 재외동포 통합신청서(별지 제1호서식), 여권 및 사본, 거소신고증, 단순노무 업종 취업사실을 입증할 수 있는 공적서류(건강보험 가입내역, 소득금액증명원 등)*, 근로계약서, 사업자등록증, 수수료
+- related_visa_codes: H-2
+- expected_questions: |
+    방문취업으로 일하다가 재외동포 되면 같은 회사에서 계속 일할 수 있나요?
+    재외동포가 단순노무 사업장에서 계속 일하려면 어떤 허가가 필요해요?
+
+### row F-5 / 체류자격 변경 / 요건
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: visa_rule
+- section_title: F-5 영주 / 외국국적동포 영주자격 기본요건
+- subtype_or_program:
+- petition_type: 체류자격 변경
+- subsection_type: 요건
+- applicant_context: 외국국적동포
+- eligibility: |
+    영주자격 부여 기본요건:
+    1. 본인 또는 동반가족이 생계를 유지할 능력이 있을 것
+    2. 대한민국에 계속 체류하는데 필요한 기본 소양을 갖출 것
+    3. 품행이 단정할 것
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    [생계유지 능력]
+    소득 주체: 신청인, 배우자(사실혼 제외), 자녀, 부모(배우자의 부모 제외) 중 생계를 같이 하는 사람
+    - 신청자 본인의 소득 또는 자산이 기준액의 50% 이상이어야 함 (미성년 자녀 양육/미성년 자녀 제외)
+    소득 산정기간: 신청일이 속하는 연도의 이전 1년
+    인정되는 소득: 「소득세법」제4조제1항(종합소득) 합산하여 인정, 소득세 납부한 경우만 인정
+    연간소득 심사 기준: 신청일 기준 전년도 1인당 국민총소득(GNI), 예외적으로 전전년도 GNI
+    자산 기준: 전년도 '가계금융·복지조사' 가구당 평균 순자산
+    [기본 소양]
+    - 사회통합프로그램 5단계 이수한 사람
+    - 영주용 또는 귀화용 종합평가에서 60점(100점 만점) 이상 득점한 사람
+- procedure:
+- restrictions:
+- exceptions: |
+    [생계유지 능력 면제]
+    - 재외동포 2년 이상 자격소지(F-5-6) 중: 대한민국 기업과 연간 교역실적 20억 원 이상, 미화 50만 불 이상 투자, 동포단체 대표/법인기업체 대표로 재외공관장 추천
+    - 국적취득 요건 구비 동포(F-5-7) 중: 국적회복 요건/특별귀화 요건
+    [생계유지 능력 완화]
+    - 방문취업 4년 이상 자격 소지자(F-5-14): GNI 70% 이상인 경우 인정
+    - 사회통합프로그램 5단계 이수, 국내 초·중·고교 모두 졸업하거나 국내 학사 이상 학위 취득자: GNI 70% 이상 인정
+    - 자원봉사 실적(6개월 이상에 걸쳐 봉사시간 100시간 이상): GNI 80% 이상 인정
+    [기본 소양 면제]
+    - 재외동포 2년 이상 자격 소지자 (F-5-6)
+    - 국적취득 요건 구비 동포(F-5-7) 중 국적회복 요건/특별귀화 요건 갖춘 사람
+    - 방문취업 4년 이상 자격 소지자(F-5-14)
+    - 비면제 영주자격 신청자 중 미성년외국인 또는 면제 영주자격 요건 갖춘 사람
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary: 외국국적동포 영주자격 기본요건 및 면제·완화 대상
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 영주, 외국국적동포, F-5-6, F-5-7, F-5-14, 생계유지능력, 기본소양, F-5
+- source_page:
+- source_excerpt: |
+    ○ 본인 또는 동반가족이 생계를 유지할 능력이 있을 것
+    ○ 대한민국에 계속 체류하는데 필요한 기본 소양을 갖출 것
+    ○ 품행이 단정할 것
+    - 방문취업 4년 이상 자격 소지자(F-5-14)는 GNI 70% 이상인 경우 인정
+- related_visa_codes: F-4, H-2
+- expected_questions: |
+    재외동포 동포가 영주권 받으려면 소득 요건이 어떻게 되나요?
+    방문취업으로 오래 일했으면 영주 신청할 때 혜택이 있나요?
+    사회통합프로그램은 영주 신청에 꼭 필요해요?
+    어떤 사람은 생계유지능력 요건이 면제되나요?
+
+### row F-5 / 체류자격 변경 / 제출서류
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: required_documents
+- section_title: F-5 영주 / 재외동포 2년 이상 영주자격 (F-5-6)
+- subtype_or_program: F-5-6
+- petition_type: 체류자격 변경
+- subsection_type: 제출서류
+- applicant_context: |
+    재외동포(F-4) 자격으로 대한민국에 2년 이상 계속 체류하고 있는 사람
+    국내 거소신고한 경우 국외에서 거주한 기간도 2년 이상 계속 체류기간에 포함
+- eligibility: |
+    아래 어느 하나의 요건을 갖춘 사람:
+    - 영주자격신청 시 연간 소득이 한국은행고시 전년도 일인당 국민총소득(GNI) 이상인 사람 (동거가족과 합산하는 경우 신청인의 소득이 연간 소득요건 기준액의 50% 이상)
+    - 해외로부터 연금을 받는 60세 이상의 자로서 연간 연금액이 한국은행 고시 전년도 일인당 국민총소득(GNI) 이상인 사람
+    - 전년도 재산세 납부실적이 50만 원 이상인 자 또는 본인명의 순자산이 전년도 '가계금융·복지조사 결과'의 평균순자산 이상을 보유하고 있는 사람
+    - 대한민국 기업과의 연간 교역실적이 20억 원 이상인 사람
+    - 대한민국에 미화 50만 불 이상을 투자한 사람
+    - 거주국 정부가 공인한 동포단체 대표 또는 법인기업체 대표로서 재외공관의 장이 추천한 사람
+- target_persons:
+- common_documents: |
+    - 해외 범죄경력증명서 (별첨 1)
+- mandatory_documents: |
+    소득 요건 충족 시: 소득금액 증명
+    연금 요건 충족 시: 연금증서(사본) 및 연금입금통장
+    자산 요건 충족 시: 부동산 등기부 등본, 부동산 매매계약서, 임대차 계약서, 재산세 납세내역증명 또는 전·월세계약서, 신용정보조회서 등
+    교역실적 요건 충족 시: 재직증명서, 등기부등본 또는 사업자등록증 사본, 수출입 실적 증명서(선하증권 또는 송장 등), 연간 납세 증명서
+    투자 요건 충족 시: 사업자 등록증사본 또는 등기부 등본, 사업장 및 주택임대차계약서 기타 외국인투자기업증명서 등 국내투자 증빙자료
+    추천 요건 충족 시: 재외공관장 추천서
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary: F-5-6 재외동포 2년 이상 영주자격 부여 대상별 제출서류
+- table_rows:
+- inviter_context:
+- recommendation_or_approval: |
+    동포단체 대표 또는 법인기업체 대표: 재외공관장 추천서
+- keywords: 영주, 재외동포, F-5-6, GNI, 교역실적, 투자, 재외공관장 추천, F-5
+- source_page:
+- source_excerpt: |
+    □ 재외동포(F-4) 자격으로 대한민국에 2년 이상 계속 체류하고 있는 사람으로서 아래 어느 하나의 요건을 갖춘 사람 (체류자격 약호 : F-5-6)
+    ○ 영주자격신청 시 연간 소득이 한국은행고시 전년도 일인당 국민총소득(GNI) 이상인 사람
+    ○ 대한민국에 미화 50만 불 이상을 투자한 사람
+- related_visa_codes: F-4
+- expected_questions: |
+    재외동포로 2년 이상 살았는데 영주권은 어떻게 받아요?
+    소득이 GNI 이상이면 영주권 신청 가능해요?
+    50만 달러 투자하면 재외동포에서 영주권으로 바꿀 수 있나요?
 
 <!-- end chunk: visa_017 -->
 
 
 <!-- vizabridge-normalize v1 chunk: visa_018 hash: c98686a906882c01 lines: 6182-6796 -->
 
-### row F-5 / 사증발급 / 요건
+### row F-5 / 체류자격 변경 / 제출서류
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: required_documents
+- section_title: F-5 영주 / 외국국적동포 국적취득 요건 구비 (F-5-7)
+- subtype_or_program: F-5-7
+- petition_type: 체류자격 변경
+- subsection_type: 제출서류
+- applicant_context: |
+    「재외동포의 출입국과 법적지위에 관한 법률」제2조제2호의 외국국적동포로 「국적법」에 따른 국적취득요건을 갖춘 사람
+- eligibility: |
+    국적법상 다음 어느 하나의 귀화·국적회복 요건을 갖춘 사람:
+    ① 일반귀화 대상자 (국적법 제5조)
+    ② 간이귀화 대상자 (국적법 제6조제1항제1호) - 부 또는 모가 대한민국 국민이었던 사람
+    ③ 간이귀화 대상자 (국적법 제6조제2항) - 혼인귀화
+    ④ 특별귀화 대상자 (국적법 제7조제1항제1호) - 국적회복 동포의 자녀, 혼인귀화자의 자녀, 독립유공자 후손
+    ⑤ 국적회복 대상자 (국적법 제9조제1항)
+- target_persons:
+- common_documents: |
+    공통 제출서류:
+    - 신청서
+    - 여권 및 본국 신분증 사본(원본 제시) 등 외국국적동포 입증서류
+    - 외국인등록증(거소신고증)
+    - 사회통합프로그램 한국이민영주적격과정이수증 또는 한국이민영주적격시험 합격증 (국적회복, 특별귀화대상자는 제출면제)
+    - 생계유지능력 입증서류 (국적회복, 특별귀화대상자는 제출면제)
+- mandatory_documents: |
+    ① 일반귀화: 가족관계등록부 등 가족관계 증빙자료
+    ② 간이귀화(제6조제1항제1호): 부 또는 모가 대한민국 국민이었음을 입증하는 서류, 친자관계 입증서류(원본제시), 국내 거주 혈족(8촌 이내) 1인 이상의 친척관계확인서, 가계도, 보증인 친척들의 제적등본·족보, 상봉 경위서, 주민등록등본, 주민등록증 사본, 편지·KBS 이산가족 결연 확인서·유전자 감정 결과(선택)
+    ③ 간이귀화(혼인): 외국국적동포입증서류 및 결혼증 사본, 한국인 배우자의 기본증명서·혼인관계증명서·가족관계증명서·주민등록등본·주민등록증 사본, 혼인 진정성 입증자료
+    ④ 특별귀화: 외국국적동포 입증서류(호구부, 친척관계공증), 친자관계 입증서류, 직계존속·귀화허가자·독립유공자 후손 입증서류
+    ⑤ 국적회복: 신청인의 기본증명서·가족관계증명서·제적등본, 외국국적 취득 관련 서류
+- other_documents: |
+    혼인파탄자: 혼인관계증명서(이혼사실 기재), 배우자 유책사유 판결문 또는 공인된 여성단체 확인서
+    이름·생년월일 불일치 시: 외국 대사관 동일인 확인증명서, NAME CHANGE 증서, 국내 친척 동일인 확인 공증, 본인 및 부모관계 입증서류 중 택1
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: |
+    국적회복, 특별귀화 대상자: 사회통합프로그램·생계유지능력 입증서류 제출 면제
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary: F-5-7 국적취득 요건 구비 동포의 귀화 유형별 추가 서류
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 영주, 외국국적동포, 국적취득 요건, 귀화, 국적회복, F-5-7, F-5
+- source_page:
+- source_excerpt: |
+    □「재외동포의 출입국과 법적지위에 관한 법률」제2조제2호의 외국국적동포로 「국적법」에 따른 국적취득요건을 갖춘 사람(F-5-7)
+    ① 일반귀화 대상자 (국적법 제5조, 단, 국적법 제5조 제1의2호 요건은 제외)
+    ⑤ 국적회복 대상자 (국적법 제9조제1항)
+- related_visa_codes: F-4
+- expected_questions: |
+    국적 취득 요건 갖춘 동포가 영주권 신청하려면 어떤 서류가 필요해요?
+    혼인귀화 대상자도 영주권 받을 수 있나요?
+    국적회복 동포는 사회통합프로그램 면제되나요?
+
+### row F-5 / 체류자격 변경 / 요건
 - manual_type: 사증민원
 - visa_code: F-5
 - visa_name_ko: 영주
 - item_type: visa_rule
-- section_title: F-5 영주 / 방문취업 동포 영주(F-5-14)
+- section_title: F-5 영주 / 방문취업 4년 이상 영주자격 (F-5-14)
 - subtype_or_program: F-5-14
-- petition_type: 사증발급
+- petition_type: 체류자격 변경
 - subsection_type: 요건
 - applicant_context: |
-    방문취업(H-2) 자격으로 제조업·농축산업·어업·간병인·가사보조인 취업활동 중인 외국국적동포
+    방문취업(H-2) 자격으로 제조업, 농·축산업, 어업, 간병인, 가사보조인으로 취업활동을 하고 있는 사람
 - eligibility: |
-    동일업체에서 근무처를 변경하지 않고 4년 이상 계속 근무(재외동포 F-4 자격 변경자 포함)
-    소속업체 임금체불·휴폐업 등 불가피 사유로 3개월 이내 동일 업종 근무처 변경은 계속 취업 인정
-    고용관계 지속 중 산재 등 업무상 부상·질병 휴업기간은 1년 범위 내 인정
-    4년 이상 근무 후 완전출국 1년 이내 H-2로 재입국하여 동일업체·업종에서 2년 이상 종사 시 4년 이상 계속 근무 인정
-- target_persons: 방문취업 동포로 제조업·농축산업·어업·간병·가사 종사자
+    아래 모든 요건을 충족하는 사람:
+    - 동일업체에서 근무처를 변경하지 않고 4년 이상 계속 근무하고 있는 경우 (재외동포(F-4) 자격 변경자 포함)
+    - 한국산업인력공단 등에서 실시하는 기술·기능 자격(별첨 18)을 취득한 경우 또는 영주자격신청 시 연간 소득이 한국은행고시 전년도 일인당 국민총소득(GNI) 70% 이상인 경우(본인의 소득만 인정)
+- target_persons:
 - common_documents:
 - mandatory_documents:
 - other_documents:
-- requirements: |
-    한국산업인력공단 등 실시 기술·기능 자격(별첨 18) 취득
-    또는 영주자격 신청 시 연간 소득이 한국은행 고시 전년도 1인당 GNI 70% 이상(본인 소득만 인정)
+- requirements:
 - procedure:
 - restrictions:
-- exceptions:
+- exceptions: |
+    소속업체의 임금체불, 휴폐업 등 불가피한 사유로 3개월 이내 동일 업종으로 근무처를 변경한 경우 계속 취업으로 인정
+    고용관계가 지속되면서 산재 등 업무 상의 부상 또는 질병으로 휴업한 기간은 1년의 범위 내에서 기간 인정
+    4년 이상 근무하고 완전출국 후 1년 이내 방문취업(H-2) 자격으로 재입국하여 동일업체 또는 동일업종에서 2년 이상 종사하고 있는 경우 4년 이상 계속 근무한 경우로 인정
 - fees:
 - duration_or_validity:
 - quota_or_limit:
@@ -8273,22 +9493,29 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 영주, 방문취업, F-5-14, 4년 이상, 제조업, 농축산업, 어업, F-5, H-2
+- source_page:
+- source_excerpt: |
+    □ 방문취업(H-2) 자격으로 제조업, 농․축산업, 어업, 간병인, 가사보조인으로 취업활동을 하고 있는 사람으로서 아래 모든 요건을 충족하는 사람(체류자격 약호 : F-5-14)
+    ○ 동일업체에서 근무처를 변경하지 않고 4년 이상 계속 근무하고 있는 경우 (재외동포(F-4) 자격 변경자 포함)
+    ○ 한국산업인력공단 등에서 실시하는 기술․기능 자격(별첨 18)을 취득한 경우 또는 영주자격신청 시 연간 소득이 한국은행고시 전년도 일인당 국민총소득(GNI) 70%이상인 경우(본인의 소득만 인정)
+- related_visa_codes: F-4, H-2
 - expected_questions: |
-    방문취업으로 4년 일했는데 영주권 신청 가능한가요?
-    영주권 받으려면 소득이 얼마나 되어야 해요?
-    같은 업종 안에서 회사를 옮겨도 4년 근무로 인정되나요?
+    방문취업으로 4년 일했는데 영주권 받을 수 있어요?
+    영주권 신청에 어떤 업종에서 일해야 해요?
+    임금체불로 회사 옮긴 경우는 4년 인정이 안 되나요?
+    기술자격증이 있으면 소득요건이 낮아져요?
 
 ### row F-5 / 사증발급 / 제한
 - manual_type: 사증민원
 - visa_code: F-5
 - visa_name_ko: 영주
-- item_type: visa_rule
-- section_title: F-5 영주 / 자격 상실 및 취소
+- item_type: restriction
+- section_title: F-5 영주 / 영주자격 상실 및 취소 사유
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 제한
-- applicant_context: |
-    영주(F-5) 자격 상실 및 취소 사유
+- applicant_context:
 - eligibility:
 - target_persons:
 - common_documents:
@@ -8297,121 +9524,69 @@
 - requirements:
 - procedure:
 - restrictions: |
-    상실사유: 재입국면제 기간(출국일로부터 2년 이내) 또는 재입국허가 기간까지 미입국 시 상실
-    취소사유(① 필수 취소, 그 외 가능):
-    ① 거짓·부정한 방법으로 영주자격 취득
-    ② 형법·폭력행위처벌법·성폭력특례법·아동청소년 성보호법·특가법·특경법·마약류관리법·보건범죄단속법 위반 2년 이상 징역·금고형 확정
-    ③ 최근 5년 이내 법률 위반 징역·금고 합산 3년 이상
-    ④ 강제퇴거 사유(내란·외환의 죄, 살인·강간·강도 5년 이상, 성폭력특례법·마약류관리법·특가법·국가보안법·폭력행위처벌법·보건범죄단속법 5년 이상, 출입국관리법 제12조의3 위반)
-    ⑤ 국가안보·외교관계·국민경제 등 국익 반하는 행위
+    [상실사유]
+    재입국면제 기간(출국한 날부터 2년 이내) 또는 재입국허가 기간까지 대한민국에 미입국한 경우
+    [취소사유]
+    1) 거짓이나 그 밖의 부정한 방법으로 영주자격을 취득한 경우 (반드시 취소)
+    2) 형법·폭력행위 등 처벌에 관한 법률·성폭력범죄·아동청소년의 성보호·특정범죄 가중처벌·특정경제범죄 가중처벌·마약류관리·보건범죄단속 중 어느 하나에 규정된 죄로 2년 이상의 징역 또는 금고의 형이 확정된 경우
+    3) 최근 5년 이내에 대한민국 법률을 위반하여 징역 또는 금고의 형을 선고받고 확정된 형기의 합산기간이 3년 이상인 경우
+    4) 강제 퇴거 사유:
+    - 형법 내란·외환의 죄
+    - 살인·강간·강도·성폭력·마약류·특정범죄가중처벌·국가보안법·폭력행위·보건범죄 5년 이상 징역/금고 후 석방된 사람
+    - 출입국관리법 제12조의3 제1항·제2항 위반 또는 교사·방조
+    5) 국가안보, 외교관계 및 국민경제 등에 있어서 대한민국의 국익에 반하는 행위를 한 경우
 - exceptions: |
-    부득이한 사유로 영주자격 상실된 사람은 영주자격으로의 체류자격변경 가능:
-    감염병·천재지변 불가항력 사유로 초과 입국
-    급작스런 질병·사고로 초과 입국
-    항공기·선박 결항·지연으로 10일 초과하지 않은 경우
-    그 밖의 부득이한 사유로 6개월 이내 입국한 경우
+    "부득이한 사유"로 영주자격이 상실된 사람은 영주자격으로의 체류자격변경 가능:
+    - 감염병, 천재지변과 같은 불가항력의 사유
+    - 급작스런 질병, 사고 등
+    - 항공기, 선박 등의 결항 또는 지연으로 입국한 날이 재입국허가 면제 또는 허가기간보다 10일을 초과하지 않은 경우
+    - 그 밖에 부득이한 사유로 허가기간 만료일로부터 6개월 이내에 입국한 경우
 - fees:
-- duration_or_validity: 영주증 유효기간 발급일로부터 10년, 만료 전 재발급 (도과 시 과태료)
+- duration_or_validity: |
+    영주증 유효기간: 발급일로부터 10년
+    유효기간 만료일 전 영주증을 재발급 받아야 함 (기간 도과 시 과태료 처분)
+    2018. 9. 21. 이전 영주자격을 취득한 사람:
+    - 영주자격 취득일부터 10년 경과한 사람은 2020. 9. 20.까지 발급
+    - 10년 미경과자는 10년 경과한 날부터 2년 이내
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 영주, 영주자격 상실, 취소사유, 강제퇴거, 영주증, 재입국허가, F-5
+- source_page:
+- source_excerpt: |
+    상실사유
+    ○ 재입국면제 기간(출국한 날부터 2년 이내) 또는 재입국허가 기간까지 대한민국에 미입국한 경우
+    취소사유
+    1) 거짓이나 그 밖의 부정한 방법으로 영주자격을 취득한 경우
+    ○ 영주증 유효기간 : 발급일로부터 10년
+- related_visa_codes:
 - expected_questions: |
-    영주권 가지고 있는데 어떤 경우에 잃을 수 있어요?
-    범죄로 벌받으면 영주권이 취소되나요?
-    오랫동안 해외에 있으면 영주권이 없어지나요?
+    영주권은 어떤 경우에 취소되나요?
+    영주증은 얼마나 자주 갱신해야 해요?
+    영주권 가진 사람이 오래 외국에 있으면 영주권이 없어지나요?
 
 ### row F-3 / 사증발급 / 대상
 - manual_type: 사증민원
 - visa_code: F-3
 - visa_name_ko: 동반
 - item_type: visa_rule
-- section_title: F-3 동반 / 외국국적동포 가족
+- section_title: F-3 동반 / 외국국적동포 가족 동반
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 대상
-- applicant_context: |
-    외국국적동포 가족 동반(F-3) 자격 기본 대상
+- applicant_context: 외국국적동포의 가족
 - eligibility: |
-    재외동포(F-4) 자격을 취득한 자의 배우자 및 미성년 자녀
-    방문취업(H-2) 자격을 취득한 자의 배우자 및 미성년 자녀
-- target_persons: 재외동포·방문취업 동포의 배우자 및 미성년 자녀
+    재외동포(F-4) 자격을 취득한 자의 가족 (배우자 및 미성년 자녀)
+    방문취업(H-2) 자격을 취득한 자의 가족 (배우자 및 미성년 자녀)
+- target_persons: 배우자 및 미성년 자녀
 - common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 재외동포(F-4) 또는 방문취업(H-2) 자격 소지자
-- recommendation_or_approval:
-- expected_questions: |
-    재외동포 비자로 한국에 있는데 가족도 같이 살러 갈 수 있나요?
-    방문취업 동포의 배우자와 자녀는 어떤 비자를 받아요?
-    동반 비자는 어떤 가족이 받을 수 있어요?
-
-### row F-1 / 사증발급 / 대상
-- manual_type: 사증민원
-- visa_code: F-1
-- visa_name_ko: 방문동거
-- item_type: visa_rule
-- section_title: F-1 방문동거 / 외국국적동포 부모
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 대상
-- applicant_context: |
-    외국국적동포 가족 방문동거(F-1) 자격 기본 대상
-- eligibility: |
-    재외동포(F-4) 자격을 취득한 자의 부모
-- target_persons: 재외동포(F-4) 자격자의 부모
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure: |
-    기존에 영주(F-5-7) 신청자의 배우자와 미성년 자녀에게 부여하던 방문동거(F-1-72)는 폐지
-    영주(F-5-7) 신청자가 가족 동거를 희망하는 경우 영주 신청자가 재외동포(F-4) 자격 변경 후 가족에게 동반(F-3) 자격 부여
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: 재외동포(F-4) 자격 소지자
-- recommendation_or_approval:
-- expected_questions: |
-    재외동포 비자로 살고 있는데 부모님을 모실 수 있는 비자가 있나요?
-    동포 자녀의 부모는 어떤 자격을 받아요?
-    영주권 신청자가 가족과 같이 살려면 어떻게 해야 해요?
-
-### row F-3 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: F-3
-- visa_name_ko: 동반
-- item_type: required_documents
-- section_title: F-3 동반 / 외국국적동포 가족
-- subtype_or_program:
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    재외동포(F-4)·방문취업(H-2) 자격자 가족의 동반(F-3)·방문동거(F-1) 사증발급
-- eligibility:
-- target_persons:
-- common_documents: |
+- mandatory_documents: |
     - 사증발급신청서, 여권, 표준규격사진 1매, 수수료
-    - 재외동포(F-4) 자격자의 국내거소신고증 또는 방문취업(H-2) 자격자의 외국인등록증 또는 사증발급사항 사본(여권 포함)
+    - 재외동포(F-4) 자격을 취득한 사람의 국내거소신고증, 방문취업(H-2) 자격을 취득한 사람의 외국인 등록증 또는 사증발급사항 사본(여권포함)
     - 가족관계 입증서류
-- mandatory_documents:
 - other_documents:
 - requirements:
 - procedure:
@@ -8425,33 +9600,85 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 동반, 외국국적동포 가족, 배우자, 미성년 자녀, F-3, F-4, H-2
+- source_page:
+- source_excerpt: |
+    가. 외국국적동포가족 동반(F-3) 자격 기본 대상
+    ○ 재외동포(F-4) 자격을 취득한 자의 가족 (배우자 및 미성년 자녀)
+    ○ 방문취업(H-2) 자격을 취득한 자의 가족 (배우자 및 미성년 자녀)
+- related_visa_codes: F-4, H-2
 - expected_questions: |
-    동포 가족 동반 비자 신청할 때 어떤 서류가 필요해요?
-    가족관계 입증은 어떻게 해요?
-    초청인의 거소신고증이나 등록증도 내야 하나요?
+    재외동포 비자 받은 사람의 배우자도 비자 받을 수 있어요?
+    동포 가족 동반비자 신청할 때 어떤 서류가 필요해요?
+
+### row F-1 / 사증발급 / 대상
+- manual_type: 사증민원
+- visa_code: F-1
+- visa_name_ko: 방문동거
+- item_type: visa_rule
+- section_title: F-1 방문동거 / 외국국적동포 가족 방문동거
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 대상
+- applicant_context: 외국국적동포의 가족 (부모)
+- eligibility: |
+    재외동포(F-4) 자격을 취득한 자의 가족 (부모)
+- target_persons: 부모
+- common_documents:
+- mandatory_documents: |
+    - 사증발급신청서, 여권, 표준규격사진 1매, 수수료
+    - 재외동포(F-4) 자격을 취득한 사람의 국내거소신고증 또는 사증발급사항 사본(여권포함)
+    - 가족관계 입증서류
+- other_documents:
+- requirements:
+- procedure:
+- restrictions: |
+    기존에 영주(F-5-7) 신청자의 배우자와 미성년 자녀에게 부여하던 방문동거(F-1-72)는 폐지
+    영주(F-5-7) 신청자가 가족 동거를 희망하는 경우에는 영주(F-5-7) 신청자가 재외동포(F-4) 자격 변경 후 가족에게 동반(F-3) 자격 부여
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 방문동거, 재외동포 부모, F-1-72 폐지, F-1, F-4
+- source_page:
+- source_excerpt: |
+    나. 외국국적동포가족 방문동거(F-1) 자격 기본 대상
+    ○ 재외동포(F-4) 자격을 취득한 자의 가족 (부모)
+    ※ 기존에 영주(F-5-7) 신청자의 배우자와 미성년 자녀에게 부여하던 방문동거(F-1-72)는 폐지하고, 영주(F-5-7) 신청자가 가족 동거를 희망하는 경우에는 영주(F-5-7) 신청자가 재외동포(F-4) 자격 변경 후 가족에게 동반(F-3) 자격 부여
+- related_visa_codes: F-4, F-5-7, F-3
+- expected_questions: |
+    재외동포 비자 받은 사람의 부모님이 한국 오려면 어떤 비자가 필요해요?
+    F-1-72 방문동거 비자는 지금도 발급되나요?
 
 ### row F-3 / 외국인등록 / 절차
 - manual_type: 사증민원
 - visa_code: F-3
 - visa_name_ko: 동반
-- item_type: visa_rule
+- item_type: stay_status_rule
 - section_title: F-3 동반 / 외국국적동포 가족 체류관리
 - subtype_or_program:
 - petition_type: 외국인등록
 - subsection_type: 절차
-- applicant_context: |
-    재외동포·방문취업 동포 가족 동반(F-3)·방문동거(F-1) 자격 체류관리 절차
+- applicant_context: 외국국적동포가족 동반(F-3) 및 방문동거(F-1) 자격자
 - eligibility:
 - target_persons:
-- common_documents: |
-    - 여권, 통합신청서, 표준규격사진 1매, 가족관계입증서류, 수수료, 체류지 입증서류 등
-- mandatory_documents:
+- common_documents:
+- mandatory_documents: |
+    - 여권, 통합신청서, 표준규격사진 1매
+    - 가족관계입증서류
+    - 수수료
+    - 체류지 입증서류
 - other_documents:
 - requirements:
 - procedure: |
-    외국인등록: 90일 이상 체류 시 입국일부터 90일 이내 외국인 등록
+    외국인등록: 90일 이상 체류하고자 하는 경우 입국일부터 90일 이내 외국인 등록
     체류기간 연장: 주 체류자격자의 체류기간 범위 내에서 연장
-    체류자격 변경: 재외동포(F-4)·방문취업(H-2) 자격자 가족(배우자, 미성년 자녀, 부모) 대상, 사증발급이 원칙이며 국내 자격변경은 제한적 허용
+    체류자격 변경: 사증발급이 원칙이며, 국내 자격변경은 제한적으로 허용
 - restrictions:
 - exceptions:
 - fees:
@@ -8462,38 +9689,163 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 동반, 방문동거, 외국인등록, 체류기간 연장, 가족관계입증, F-3, F-1
+- source_page:
+- source_excerpt: |
+    □ 외국인등록
+    ○ 90일 이상 체류하고자 하는 경우 입국일부터 90일 이내 외국인 등록
+    ○ 제출서류 : 여권, 통합신청서, 표준규격사진 1매, 가족관계입증서류, 수수료, 체류지 입증서류 등
+    □ 체류기간 연장
+    ○ 주 체류자격자의 체류기간 범위 내에서 연장
+- related_visa_codes: F-1, F-4, H-2
 - expected_questions: |
-    동포 가족 비자로 한국 왔는데 외국인등록은 언제까지 해야 해요?
-    체류기간 연장 신청할 때 어떤 서류 내요?
-    동반 비자에서 다른 자격으로 바꿀 수 있나요?
+    동포 가족 동반비자로 한국 들어왔는데 외국인등록은 언제까지 해요?
+    동반비자 체류기간 연장은 어떻게 받아요?
 
 ### row F-4 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: F-4
 - visa_name_ko: 재외동포
 - item_type: required_documents
-- section_title: F-4 재외동포 / 해외 범죄경력증명서 제출기준(별첨1)
+- section_title: F-4 재외동포 / 해외 범죄경력증명서 제출기준
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 제출서류
-- applicant_context: |
-    재외동포(F-4) 사증 신청자 및 국내 F-4·F-5 자격 변경·외국인등록·거소신고 신청자의 해외 범죄경력증명서 제출
-- eligibility:
+- applicant_context:
+- eligibility: |
+    제출 대상:
+    - 재외공관에서 재외동포(F-4) 사증을 신청하는 사람
+    - 국내에서 재외동포(F-4), 영주(F-5) 자격으로 체류자격 변경허가, 외국인 등록 또는 거소신고를 신청하는 사람
+    제출 범위:
+    - 국적국
+    - 제3국 (신청일 기준 최근 5년 이내 1년 이상 연속 거주한 경우에 한함)
 - target_persons:
 - common_documents:
 - mandatory_documents: |
-    - 국적국 범죄경력증명서
-    - 제3국 범죄경력증명서 (신청일 기준 최근 5년 이내 1년 이상 연속 거주한 경우 한함)
+    - 범죄경력증명서 원본과 공증된 번역본 (번역자 인적사항·연락처 기재 및 신분증 사본 첨부)
+    - 범죄경력이 없는 경우: 번역본, 번역자 확인서(신청인 본인 불가) 및 번역자 신분증 사본으로 '공증된 번역본' 대신 제출 가능
+    - 발급기관: 제출 대상자의 국적국(제3국)에 소재하는 권한 있는 기관이 발급한 공적문서 (국적국/제3국 내 모든 범죄경력 포함)
+    - 미국: FBI본부의 범죄경력증명서 원칙, 주정부에서 발급한 미국 전역 포함 증명서도 인정
+    - 캐나다: 캐나다 연방경찰(RCMP) 지문 기반 범죄경력증명서(Certificated Criminal record checks)만 인정
+    - 중국: 발급기관·양식·명칭 통일되어 있지 않아 "범죄경력 증명에 상응하는 모든 문서(파출소 발급본 포함)" 인정
 - other_documents:
-- requirements:
+- requirements: |
+    인증 절차:
+    - 아포스티유 협약 미가입국가: 범죄경력증명서 발급 국가 주재 대한민국 공관의 영사 확인
+    - 아포스티유 협약 가입국가: 범죄경력증명서 발급 국가의 권한있는 기관의 아포스티유 확인
+    유효기간: 사증발급 또는 체류자격 변경 신청일로부터 6개월 이내 발급된 서류
 - procedure:
 - restrictions:
 - exceptions: |
     면제 대상 (공통):
     - 만 14세 미만인 사람
     - 대한민국 출생 또는 만 14세 미만에 입국하여 만 14세 이후 해외에서 6개월 이상 연속 체류하지 않은 사람
-    - 사증 발급 시 해외 범죄경력증명서를 제출하고 사증 발급일로부터 3개월 이내 국내 체류자격변경 신청자
-    - 재외공관 사증발급 또는 국내 자격변경 시 범죄경력증명서를 제출한 사람 중 국외에서 6개월 이상 체류하지 않은 등록(거소)외국인
+    - 사증 발급 시 해외 범죄경력증명서를 제출하고 사증 발급일로부터 3개월 이내 국내에서 체류자격변경을 신청하는 사람
+    - 발급 제한 연령 또는 거주요건 미충족으로 발급이 어려운 사람 (예: 만 18세 미만 캐나다인)
+    - 천재지변, 전쟁 등으로 발급 불가능한 경우 (소명 필요)
+    - 국가유공자/독립유공자, 그 유족 및 특별공로(국익증진) 동포
+    재외동포(F-4) 면제: 만 60세 이상인 사람
+    영주(F-5) 면제: 국내 10년 이상 계속 합법 체류, 고액 투자자(F-5-5), 첨단분야 박사(F-5-9), 일반분야 박사(F-5-15), 특정분야 능력소유자(F-5-11), 특별공로자(F-5-12) 신청자
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary: 해외 범죄경력증명서 제출 기준 및 면제 대상
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 재외동포, 해외 범죄경력증명서, 아포스티유, 영사확인, 면제 대상, F-4, F-5
+- source_page:
+- source_excerpt: |
+    ❍ 재외공관에서 재외동포(F-4) 사증을 신청하는 사람
+    ❍ 국내에서 재외동포(F-4), 영주(F-5) 자격으로 체류자격 변경허가, 외국인 등록 또는 거소신고를 신청하는 사람
+    ❍ 제출 대상자의 국적국(제3국)에 소재하는1) 권한 있는 기관2)이 발급한 공적문서로서, 국적국(제3국) 내에서의 모든 범죄경력이 포함되어 있는 증명서
+- related_visa_codes: F-5, F-5-5, F-5-9, F-5-11, F-5-12, F-5-15
+- expected_questions: |
+    재외동포 비자 받을 때 해외 범죄경력증명서는 어디서 받나요?
+    범죄경력증명서는 발급받고 언제까지 유효해요?
+    아포스티유는 어느 나라가 가입했어요?
+    14세 이하도 범죄경력증명서를 내야 하나요?
+
+### row F-4 / 사증발급 / 제한
+- manual_type: 사증민원
+- visa_code: F-4
+- visa_name_ko: 재외동포
+- item_type: restriction
+- section_title: F-4 재외동포 / 해외 범죄경력에 따른 처리기준
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 제한
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions: |
+    [특정 강력범죄]
+    재외동포(F-4): 사증발급 및 자격변경 불허
+    영주(F-5): 품행단정 미충족으로 허가제한
+    [사회적 중대 범죄 - 마약, 보이스 피싱, 3회 이상 음주운전]
+    재외동포(F-4): 선고일로부터 7년 간 사증발급 및 자격변경 불허
+    영주(F-5): 품행단정 미충족으로 허가제한
+    [협박, 공갈, 사기]
+    영주(F-5): 자격변경 불허
+    [기타 범죄로 금고 이상의 형에 준하는 형]
+    재외동포(F-4): 선고일로부터 5년 간 사증발급 및 자격변경 불허
+    영주(F-5): 선고일로부터 10년 간 품행단정 미충족으로 허가제한
+    방문취업(H-2), 재외동포(F-4) 신청자의 경우 협박, 공갈, 사기죄도 기타 범죄로 봄
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary: 해외 범죄경력 유형별 재외동포(F-4) 및 영주(F-5) 자격 처리기준
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 재외동포, 해외 범죄경력, 특정강력범죄, 마약, 보이스피싱, 음주운전, 처리기준, F-4, F-5
+- source_page:
+- source_excerpt: |
+    ❍ 「특정강력범죄의 처벌에 관한 특례법」제2조에서 규정한 "특정 강력범죄"로 국적국(제3국)에서 형을 선고받은 사실이 있는 사람
+    - (마약, 보이스 피싱, 3회 이상 음주운전) 다음의 자격별 기준으로 처리
+    ❍ 기타 범죄*로 외국에서 금고 이상의 형에 준하는 형을 선고받은 사람
+- related_visa_codes: F-5, H-2
+- expected_questions: |
+    해외에서 범죄 경력이 있으면 재외동포 비자 못 받나요?
+    마약 사건이 있으면 몇 년 동안 비자 신청이 안 되나요?
+    음주운전 3회면 비자에 영향이 있어요?
+
+### row F-4 / 사증발급 / 제출서류
+- manual_type: 사증민원
+- visa_code: F-4
+- visa_name_ko: 재외동포
+- item_type: required_documents
+- section_title: F-4 재외동포 / 한국어능력 입증서류 제출기준
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 제출서류
+- applicant_context: |
+    재외공관에서 재외동포(F-4) 사증을 신청하는 사람
+    국내에서 재외동포(F-4) 거소신고, 체류기간 연장 및 체류자격 변경허가를 신청하는 사람
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    한국어능력 입증서류 (택1):
+    - 사회통합프로그램 사전평가 점수표 (21점 이상)
+    - 사회통합프로그램 교육확인서 (1단계 이수 이상)
+    - 한국어능력시험(TOPIK) 성적증명서 (1급 이상)
+    - 세종학당 수료증 (초급 1B 과정 이상)
+- other_documents:
+- requirements: |
+    유효기간: 사회통합프로그램 사전평가 및 TOPIK 점수는 성적발표일로부터 2년 이내
+    영주(F-5) 자격변경시 제외 (별도 기준 적용)
+- procedure:
+- restrictions:
+- exceptions:
 - fees:
 - duration_or_validity:
 - quota_or_limit:
@@ -8502,10 +9854,18 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 재외동포, 한국어능력, TOPIK, 사회통합프로그램, 세종학당, F-4
+- source_page:
+- source_excerpt: |
+    ❍ 사회통합프로그램 사전평가 점수표 (21점 이상)
+    ❍ 사회통합프로그램 교육확인서 (1단계 이수 이상)
+    ❍ 한국어능력시험(TOPIK) 성적증명서 (1급 이상)
+    ❍ 세종학당 수료증 (초급 1B 과정 이상)
+- related_visa_codes:
 - expected_questions: |
-    재외동포 비자 신청할 때 범죄경력증명서는 어느 나라 거 내요?
-    14세 미만이면 범죄경력증명서 안 내도 되나요?
-    제3국에서 살았던 적이 있는데 그 나라 증명서도 필요해요?
+    재외동포 비자 받으려면 한국어 시험은 어느 정도여야 해요?
+    사회통합프로그램은 몇 단계 이수해야 인정되나요?
+    세종학당 어느 과정까지 다녀야 한국어 요건이 충족되나요?
 
 <!-- end chunk: visa_018 -->
 
@@ -8521,8 +9881,7 @@
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 제한
-- applicant_context: |
-    방문취업(H-2) 자격으로 서비스업에 취업하려는 외국국적동포
+- applicant_context:
 - eligibility:
 - target_persons:
 - common_documents:
@@ -8531,31 +9890,162 @@
 - requirements:
 - procedure:
 - restrictions: |
-    다음 산업 분야에서의 활동을 제외
-    - E. 수도, 하수 및 폐기물 처리, 원료 재생업(36~39) 중 수도업(36), 환경 정화 및 복원업(39)
-    - G. 도매 및 소매업(45~47) 중 자동차 및 부품 판매업(45)
-    - H. 운수 및 창고업(49~52): 육상 운송 및 파이프라인 운송업(49), 수상 운송업(50), 항공 운송업(51), 창고 및 운송 관련 서비스업(52). 다만 육상 여객 운송업(492), 택배업(49401, 하역·적재 단순종사원으로 한정), 냉장 및 냉동창고업(52102, 내륙 한정), 물류 터미널 운영업(52913), 기타 항공 운송지원 서비스업(52939, 항공기하역업 한정), 항공 및 육상 화물 취급업(52941, 식육 운반·택배 한정)은 허용
-    - J. 정보통신업(58~63) 중 출판업(58, 단 581 허용), 우편 및 통신업(61), 컴퓨터 프로그래밍·시스템 통합 및 관리업(62), 정보서비스업(63)
-    - K. 금융 및 보험업(64~66) 전체
-    - L. 부동산업(68)
-    - M. 전문, 과학 및 기술 서비스업(70~73) 중 연구개발업(70), 전문 서비스업(71), 건축기술·엔지니어링 및 기타 과학기술서비스업(72)
-    - N. 사업시설 관리, 사업 지원 및 임대 서비스업(74~76) 중 사업시설 관리 및 조경 서비스업(74, 단 741, 7421 허용), 고용 알선 및 인력 공급업(751, 단 가사서비스 제공기관 취업은 허용)
-    - O. 공공 행정, 국방 및 사회보장 행정(84)
-    - P. 교육 서비스업(85)
-    - U. 국제 및 외국기관(99)
+    H-2 취업 활동 제외업종 (한국표준산업분류 기준):
+    E. 수도, 하수 및 폐기물 처리, 원료 재생업:
+    - ① 수도업(36): 제외
+    - ② 환경 정화 및 복원업(39): 제외
+    - 단, 하수·폐수·분뇨 처리업(37)과 폐기물 수집·운반·처리·원료 재생업(38)은 허용
+    G. 도매 및 소매업:
+    - ③ 자동차 및 부품 판매업(45): 제외
+    - 단, 도매 및 상품 중개업(46), 소매업(47)은 허용
+    H. 운수 및 창고업:
+    - ④ 육상 운송 및 파이프라인 운송업(49): 제외, 단 육상 여객 운송업(492), 택배업(49401, 택배서비스사업체 하역·적재 단순종사원에 한함) 허용
+    - ⑤ 수상 운송업(50), ⑥ 항공 운송업(51): 제외
+    - ⑦ 창고 및 운송 관련 서비스업(52): 제외, 단 냉장·냉동창고업(내륙 한정), 물류 터미널 운영업(하역·적재 단순종사원), 기타 항공 운송지원 서비스업(하역·적재), 항공·육상 화물 취급업(식육 운반/택배 하역·적재) 허용
+    J. 정보통신업:
+    - ⑧ 출판업(58): 제외, 단 서적·잡지·기타 인쇄물 출판업(581)은 허용
+    - ⑨ 우편 및 통신업(61), ⑩ 컴퓨터 프로그래밍·시스템 통합 및 관리업(62), ⑪ 정보서비스업(63): 제외
+    - 단, 영상·오디오 기록물 제작 및 배급업(59), 방송 및 영상·오디오물 제공 서비스업(60)은 허용
+    K. 금융 및 보험업:
+    - ⑫ 금융업(64), ⑬ 보험업(65), ⑭ 금융 및 보험관련 서비스업(66): 제외
+    L. 부동산업(68): 제외
+    M. 전문, 과학 및 기술 서비스업:
+    - ⑯ 연구개발업(70), ⑰ 전문 서비스업(71), ⑱ 건축기술·엔지니어링 및 기타 과학기술서비스업(72): 제외
+    - 단, 기타 전문, 과학 및 기술 서비스업(73)은 허용
+    N. 사업시설 관리, 사업 지원 및 임대 서비스업:
+    - ⑲ 사업시설 관리 및 조경 서비스업(74): 제외, 단 사업시설 유지·관리 서비스업(741)과 건물·산업설비 청소업(7421)은 허용
+    - ⑳ 고용 알선 및 인력 공급업(751): 제외, 단 가사서비스 제공기관 취업은 허용
+    - 단, 여행사·기타 여행보조 서비스업(752), 경비·경호 및 탐정업(753), 기타 사업 지원 서비스업(759), 임대업; 부동산 제외(76)는 허용
+    O. ㉑ 공공 행정, 국방 및 사회보장 행정(84): 제외
+    P. ㉒ 교육 서비스업(85): 제외
+    U. ㉓ 국제 및 외국기관(99): 제외
+    허용 산업분류 (제외업종에 포함되지 않은 산업):
+    - I. 숙박 및 음식점업(55~56)
+    - Q. 보건업 및 사회복지 서비스업(86~87)
+    - R. 예술, 스포츠 및 여가관련 서비스업(90~91)
+    - S. 협회 및 단체, 수리 및 기타 개인 서비스업(94~96)
+    - T. 가구 내 고용활동 및 달리 분류되지 않은 자가소비 생산활동(97~98)
 - exceptions:
 - fees:
 - duration_or_validity:
 - quota_or_limit:
 - score_criteria:
-- table_summary: H-2 방문취업 서비스업 허용 제외업종 목록(KSIC 대·중·소분류 기준)
+- table_summary: H-2 방문취업 서비스업 허용 제외업종 일람 (대분류 E, G, H, J, K, L, M, N, O, P, U)
 - table_rows:
-- inviter_context: 가능업종 고용주는 외국인근로자의 고용에 관한 법률 제12조에 따라 내국인 구인노력을 하고 특례고용가능확인을 받은 후 H-2 동포를 고용해야 함
+- inviter_context: |
+    방문취업(H-2)의 취업활동은 가능업종의 고용주가 「외국인근로자의 고용에 관한 법률」 제12조에 따라 내국인 구인노력을 하고 특례고용가능확인을 받아 방문취업(H-2) 동포를 고용한 경우에 한함
 - recommendation_or_approval:
+- keywords: 방문취업, 취업 제외업종, 한국표준산업분류, 단순노무, 특례고용가능확인, H-2
+- source_page:
+- source_excerpt: |
+    2. 서비스업 (허용 제외업종 지정)
+    ❍ 다음 산업 분야에서의 활동을 제외
+    【주의】 방문취업(H-2)의 취업활동은 가능업종의 고용주가 「외국인근로자의 고용에 관한 법률」 제12조에 따라 내국인 구인노력을 하고 특례고용가능확인을 받아 방문취업(H-2) 동포를 고용한 경우에 한하며, 취업개시일로부터 15일 이내 방문취업(H-2) 자격자가 취업개시신고를 하거나 고용주가 근로개시신고를 하여야 함
+- related_visa_codes:
 - expected_questions: |
-    방문취업으로 들어왔는데 서비스업 어디서 일할 수 있어요?
-    동포 비자로 금융업이나 부동산업에 취업 가능한가요?
-    택배 일은 할 수 있어요?
+    방문취업 비자로 어떤 업종에서는 일 못 해요?
+    방문취업으로 카페나 식당에서는 일할 수 있나요?
+    내가 일하고 싶은 회사가 H-2 허용업종인지 어떻게 알아요?
+
+### row E-9 / 사증발급 / 제출서류
+- manual_type: 사증민원
+- visa_code: E-9
+- visa_name_ko: 비전문취업
+- item_type: required_documents
+- section_title: E-9/E-10/H-2 공통 / 건강상태 확인서
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 제출서류
+- applicant_context: |
+    대한민국의 비전문취업(E-9), 선원취업(E-10), 방문취업(H-2) 자격의 사증 또는 사증발급인정서의 발급을 신청한 외국인
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    E-9/E-10/H-2 자격 사증신청자 확인서 (체크리스트):
+    - 성명, 생년월일, 국적, 성별, 여권번호
+    - 공중보건에 위협이 되는 전염성 질환(매독, B형간염, 결핵) 감염 여부
+    - 최근 5년 이내 통제된 물질(마약류) 복용 또는 알코올 등 중독 여부
+    - 과거 정신적, 감정적 또는 신경적 혼란으로 의사 치료 여부
+    - 최근 5년 이내 심각한 질병, 상해 등 경험 여부
+- other_documents:
+- requirements: |
+    본인이 직접 확인하여야 함
+    기재할 사항을 누락하거나 허위사실을 기재한 경우 사증발급 불허, 체류허가 취소 또는 강제퇴거 등 불이익 가능
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary: 건강상태 확인서 (E-9, E-10, H-2 사증신청자 공통)
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 비전문취업, 건강상태 확인서, 전염성 질환, 마약, 정신질환, E-9, E-10, H-2
+- source_page:
+- source_excerpt: |
+    이 확인서는 대한민국의 비전문취업(E-9), 선원취업(E-10), 방문취업(H-2) 자격의 사증 또는 사증발급인정서의 발급을 신청한 외국인이 본인의 건강 및 심리상태를 직접 확인하여야 하는 체크리스트입니다.
+    6) 귀하는 공중보건에 위협이 되는 전염성 질환에 감염되었습니까?
+    예 □ (질환명: 매독, B형간염, 결핵), 아니오 □
+- related_visa_codes: E-10, H-2
+- expected_questions: |
+    비전문취업 비자 신청할 때 건강상태 확인서는 어떻게 써요?
+    어떤 질병이 있으면 비자를 못 받나요?
+    마약 복용 이력이 있으면 비자에 영향이 있어요?
+
+### row E-9 / 사증발급 / 제출서류
+- manual_type: 사증민원
+- visa_code: E-9
+- visa_name_ko: 비전문취업
+- item_type: required_documents
+- section_title: E-9/E-10/H-2 공통 / 건강진단서
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 제출서류
+- applicant_context: 대한민국 입국 후 90일 이상 체류하고자 하는 E-9/E-10/H-2 자격자
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    건강진단서 항목:
+    - 성명, 생년월일, 한국 내 주소, 전화번호
+    - 사진 (3cm × 4cm)
+    - 신장, 체중, 혈압
+    - (교정)시력, 색신(색각), (교정)청력
+    - 결핵, 매독, 정신질환, 간염(HBs Ag)
+    - 마약검사: 필로폰, 코카인, 아편, 대마, 기타
+    - 검사결과 (양호 / 불량) 및 불량 소견 시 사유
+    - 피검진자 체류에 대한 의견
+    - 정밀검사 필요 여부
+    - 의료기관의 장 인장
+- other_documents:
+- requirements: |
+    대한민국 정부가 지정하는 병원에서 발급
+    건강진단의료기관지정 번호 필요
+- procedure: |
+    외국인등록 신청 시 제출
+    외국인등록 시 대한민국 정부가 정하는 기초 법질서 교육 이수 필요
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary: 건강진단서 양식 항목
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 비전문취업, 건강진단서, 결핵, 매독, 정신질환, 마약검사, 외국인등록, E-9
+- source_page:
+- source_excerpt: |
+    귀하는 대한민국에 입국한 후 90일 이상 체류하고자 할 경우 입국 후 90일 이내에 외국인등록을 하여야 하며, 외국인등록을 신청할 때에는 반드시 대한민국 정부가 지정하는 병원에서 발급한 건강진단서를 제출해야 합니다.
+- related_visa_codes: E-10, H-2
+- expected_questions: |
+    비전문취업 건강진단서는 어디서 받나요?
+    건강진단서에는 어떤 검사 항목이 있어요?
+    한국에 들어와서 외국인등록할 때 건강진단서가 필요하나요?
 
 ### row F-4 / 사증발급 / 제한
 - manual_type: 사증민원
@@ -8566,8 +10056,7 @@
 - subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 제한
-- applicant_context: |
-    재외동포(F-4) 자격으로 국내 취업활동을 하려는 자
+- applicant_context:
 - eligibility:
 - target_persons:
 - common_documents:
@@ -8576,49 +10065,85 @@
 - requirements:
 - procedure:
 - restrictions: |
-    가. 단순노무행위를 하는 경우
-    나. 선량한 풍속이나 그 밖의 사회질서에 반하는 행위를 하는 경우
-    - 사행행위 영업장소 등에 취업하는 행위(사행행위 등 규제 및 처벌 특례법 제2조제1항제1호 등)
-    - 식품위생법상 유흥주점 등에서 유흥종사자로 근무하는 행위
-    - 풍속영업의 규제에 관한 법률상 선량한 풍속에 반하는 영업장소 등에 취업하는 행위
-    다. 그 밖에 공공의 이익이나 국내 취업질서 등을 유지하기 위하여 그 취업을 제한할 필요가 있다고 인정되는 경우(피부관리사 내 발관리사, 목욕관리사, 혼례 종사원, 노래방 서비스원, 그 외 오락시설 서비스원, 골프장 캐디, 주류 서비스 종사원, 노점 및 이동 판매원 등)
-    단순노무 종사자 세부 직업 예: 이삿짐 운반원, 우편 집배원, 택배원, 늘찬배달원, 식음료 정기배달원, 신문 정기배달원, 음식점 배달원, 그 외 배달원, 건물 청소원, 운송장비 청소원, 시설장비 청소원, 쓰레기 수거원, 거리 및 공공장소 청소원, 재활용품 수거원, 그 외 청소 관련 종사원, 아파트 경비원, 그 외 건물관리원, 전단지 배포원 및 벽보원, 그 외 판매 관련 단순 종사원, 산불 감시원, 계기 검침원, 가스 점검원, 주차 관리원, 구두 미화원, 세탁원 및 다림질원, 검표원, 환경 감시원, 그 외 서비스 관련 단순 종사원
-- exceptions:
+    재외동포(F-4) 자격의 취업활동 제한범위:
+    1. 일반 기준:
+    가. 단순노무행위를 하는 경우 (붙임 1 참조)
+    나. 선량한 풍속이나 그 밖의 사회질서에 반하는 행위:
+    - 사행행위 등 규제 및 처벌 특례법 제2조제1항제1호 등의 사행행위 영업장소 등에 취업
+    - 식품위생법 제36조제3항 등의 유흥주점 등에서 유흥종사자로 근무
+    - 풍속영업의 규제에 관한 법률 제2조 등 풍속영업 중 선량한 풍속에 반하는 영업장소 등에 취업
+    다. 그 밖에 공공의 이익이나 국내 취업질서 등을 유지하기 위하여 그 취업을 제한할 필요가 있다고 인정되는 경우 (붙임 2 참조)
+    단순노무 직업 (대분류 9):
+    - 이삿짐 운반원, 우편 집배원, 택배원, 늘찬배달원(퀵서비스), 식음료 정기배달원, 신문 정기배달원, 음식점 배달원
+    - 건물 청소원, 운송장비 청소원, 시설장비 청소원, 거리 및 공공장소 청소원
+    - 쓰레기 수거원, 재활용품 수거원
+    - 아파트 경비원, 그 외 건물관리원
+    - 전단지 배포원 및 벽보원
+    - 산불 감시원, 계기 검침원, 가스 점검원, 주차 관리원
+    - 구두 미화원, 세탁원 및 다림질원, 검표원, 환경 감시원
+    공공의 이익 제한 직업 (대분류 4 서비스, 5 판매):
+    - 발 관리사, 목욕 관리사, 혼례 종사원, 노래방 서비스원
+    - PC방·비디오방·만화방 종사원
+    - 골프장 캐디, 주류 서비스 종사원(소믈리에 등)
+    - 노점 및 이동 판매원
+- exceptions: |
+    예외 기준:
+    인구감소지역 중 법무부장관이 정한 지역특화형 비자 사업 대상 시·군·구에 거소를 두거나 거소가 속한 광역시 또는 도 내에서 제1호 가목 또는 다목의 취업활동을 하는 재외동포(F-4)는 취업활동의 제한을 받지 않음 (다만, 나목은 제한)
 - fees:
 - duration_or_validity:
 - quota_or_limit:
 - score_criteria:
-- table_summary: 재외동포(F-4) 취업활동 제한 직업 목록(단순노무 29종, 풍속·서비스 8종)
+- table_summary: F-4 취업활동 제한 직업 목록 (단순노무 + 공공이익 제한)
 - table_rows:
 - inviter_context:
-- recommendation_or_approval: 법무부고시 제2026-65호 (시행일 2026.2.12.). 재검토기한 2023.1.1. 기준 매 3년. 이전 고시(제2023-187호)는 폐지
+- recommendation_or_approval:
+- keywords: 재외동포, 취업활동 제한, 단순노무, 풍속영업, 지역특화형 비자, F-4
+- source_page:
+- source_excerpt: |
+    □ 재외동포(F-4) 자격의 취업활동 제한범위
+    1. 일반 기준
+    가. 단순노무행위를 하는 경우([붙임 1] 참조)
+    나. 선량한 풍속이나 그 밖의 사회질서에 반하는 행위를 하는 경우
+    다. 그 밖에 공공의 이익이나 국내 취업질서 등을 유지하기 위하여 그 취업을 제한할 필요가 있다고 인정되는 경우([붙임 2] 참조)
+- related_visa_codes:
 - expected_questions: |
-    동포 비자로 한국 와 있는데 어떤 일은 못 해요?
-    재외동포가 청소원이나 배달원으로 일할 수 있어요?
-    노래방이나 PC방에서 일해도 되나요?
+    재외동포는 어떤 직업이 못 하게 되어 있어요?
+    재외동포가 청소나 배달은 할 수 있나요?
+    인구감소지역에 살면 단순노무도 할 수 있어요?
+    소믈리에나 캐디 같은 직업은 재외동포도 가능해요?
 
-### row F-4 / 사증발급 / 예외
+### row F-4 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: F-4
 - visa_name_ko: 재외동포
-- item_type: exception
-- section_title: F-4 재외동포 / 지역특화형 비자 예외
-- subtype_or_program: 지역특화형
+- item_type: required_documents
+- section_title: F-4 재외동포 / 취업활동 제한직업 비취업 서약서
+- subtype_or_program:
 - petition_type: 사증발급
-- subsection_type: 예외
-- applicant_context: |
-    인구감소지역 중 법무부장관이 정한 지역특화형 비자 사업 대상 시·군·구에 거소를 두거나 거소가 속한 광역시 또는 도 내에서 취업활동을 하려는 재외동포(F-4)
+- subsection_type: 제출서류
+- applicant_context: 재외동포(F-4) 자격 신청자
 - eligibility:
 - target_persons:
 - common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements:
+- mandatory_documents: |
+    재외동포(F-4) 취업활동 제한직업 비취업 서약서:
+    - 성명, 국적, 성별, 생년월일, 휴대전화
+    - 여권번호, 여권 발급일자, 여권 유효기간
+    - 대한민국 안의 주소
+    - 신청인 서명 또는 인
+    행정정보 공동이용 동의서:
+    - 신청인 서명
+    - 신청인의 배우자 서명 (해당자)
+    - 신청인의 부 또는 모 서명 (해당자)
+- other_documents: |
+    서약서는 한글 또는 영문으로 작성
+- requirements: |
+    출입국관리법 제18조제1항, 동법 시행령 제23조제3항, 동법 시행규칙 제27조의 2에 따라 「재외동포(F-4) 자격의 취업활동 제한범위 고시」(법무부 고시 제2026-35호, 2026.2.12.)에서 정한 제한 직업에 취업하지 않을 것을 서약
+    위반할 경우 범칙금 처분 및 체류기간 연장 불허 등 출입국관리법에 따른 처벌 가능
 - procedure:
 - restrictions:
 - exceptions: |
-    출입국관리법 시행령 제23조제3항제1호 관련, 지방자치분권 및 지역균형발전에 관한 특별법 제2조제12호에 따른 인구감소지역 중 지역특화형 비자 사업 대상 시·군·구에 거소를 두거나 그 거소가 속한 광역시·도 내에서 단순노무행위(제1호 가목) 또는 공공의 이익·취업질서 유지 관련 제한 직업(제1호 다목)의 취업활동을 하는 재외동포(F-4)는 취업활동의 제한을 받지 않음
-    다만 선량한 풍속·사회질서에 반하는 행위(제1호 나목)는 여전히 제한됨
+    지역특화형 비자 시범지역에 거주하는 재외동포(F-4)로서 사전에 체류자격 외 활동허가를 신청하는 경우는 예외
 - fees:
 - duration_or_validity:
 - quota_or_limit:
@@ -8627,212 +10152,206 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 재외동포, 비취업 서약서, 취업활동 제한, 행정정보 공동이용, F-4
+- source_page:
+- source_excerpt: |
+    상기 본인은 출입국관리법 제18조제1항, 동법 시행령 제23조제3항, 동법 시행규칙 제27조의 2에 따라 「재외동포(F-4) 자격의 취업활동 제한범위 고시」(법무부 고시 제2026-35호, 2026.2.12.)에서 정한 재외동포(F-4) 자격의 취업활동 제한 직업에 취업하지 않을 것을 서약합니다.
+    이를 위반할 경우 범칙금 처분 및 체류기간 연장 불허 등 출입국관리법에 따른 처벌을 받을 수 있음을 안내받았습니다.
+- related_visa_codes:
 - expected_questions: |
-    동포 비자로 인구감소지역에 살면 단순노무도 할 수 있어요?
-    지역특화형 비자 지역에서는 어떤 일이 허용되나요?
-    지방에서 살면 풍속업소에서도 일할 수 있어요?
+    재외동포 비자 받을 때 어떤 서약서를 써야 해요?
+    비취업 서약서를 어기면 어떻게 되나요?
+    지역특화형 비자는 비취업 서약서를 안 써도 되나요?
+
+### row H-2 / 사증발급 / 제출서류
+- manual_type: 사증민원
+- visa_code: H-2
+- visa_name_ko: 방문취업
+- item_type: required_documents
+- section_title: H-2 방문취업 / 기업대표 신원보증서
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 제출서류
+- applicant_context: 외국인이 단순노무업종에서 취업할 가능성이 있는 사증 신청자
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    기업대표 신원보증서 (피보증인 인적사항 + 신원보증인 정보):
+    1. 피보증인(소속직원) 인적사항:
+    - 국적, 성명(영문/한자), 생년월일, 성별
+    - 직위, 학력, 재직기간, 전화번호, 거주국 주소
+    2. 신원보증인(기업대표):
+    - 국적, 성명, 생년월일, 체류자격
+    - 회사명, 자본금, 직원 수, 전화번호, 회사 소재지
+    3. 보증내용: 피보증인이 단순노무업종에서 취업할 경우 체류허가 취소 및 입국제한 조치에 대해 이의 제기 불가
+    - 신원보증인 서명 또는 인
+- other_documents:
+- requirements:
+- procedure: |
+    법무부장관에게 제출
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: |
+    신원보증인은 기업대표로서 피보증인(소속 직원)의 단순노무 취업 시 체류허가 취소 및 입국제한 조치에 동의
+- recommendation_or_approval:
+- keywords: 방문취업, 기업대표 신원보증서, 단순노무, 체류허가 취소, H-2
+- source_page:
+- source_excerpt: |
+    1. 피보증인(소속직원) 인적사항
+    2. 신원보증인(기업대표)
+    3. 보증내용
+    ○ 신원보증인은 위 피보증인(소속 직원)이 대한민국에 입국하여 단순노무업종에서 취업할 경우 출입국관리법 상 체류허가 취소 및 입국제한 조치에 대해 이의를 제기하지 아니함
+- related_visa_codes:
+- expected_questions: |
+    기업대표 신원보증서는 누가 작성해요?
+    신원보증서를 내면 어떤 책임이 따라요?
 
 <!-- end chunk: visa_019 -->
 
 
 <!-- vizabridge-normalize v1 chunk: visa_020 hash: 9560c7df67082362 lines: 7049-7497 -->
 
+### row F-5 / 체류자격 변경 / 점수표
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: score_table
+- section_title: F-5-14 영주 / 부여 자격 종목 및 등급 (제조업·건설업·농업·어업)
+- subtype_or_program: F-5-14
+- petition_type: 체류자격 변경
+- subsection_type: 점수표
+- applicant_context: 방문취업(H-2) 4년 이상 자격 소지자
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    한국산업인력공단 등에서 실시하는 기술·기능 자격을 취득한 경우 또는 GNI 70% 이상 소득 조건
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria: |
+    F-5-14 영주자격 부여 자격 종목 및 등급:
+    제조업(62):
+    - 기계 분야: 공조냉동기계, 궤도장비정비, 사출금형, 프레스금형, 기계정비, 기계가공조립, 농업기계, 메카트로닉스, 생산자동화, 일반기계, 자동차정비, 전자부품장착, 정밀측정, 조선 (산업기사 이상), 사출금형설계, 프레스금형설계 (기사 이상)
+    - 재료 분야: 용접, 금속재료, 주조, 표면처리 (산업기사 이상), 금속가공 (기사 이상)
+    - 전기·전자: 전기, 전기철도, 전자, 전자계산기 (산업기사 이상)
+    - 건설: 건설재료시험, 콘크리트, 토목 (산업기사 이상)
+    - 섬유·의복: 섬유 (산업기사 이상)
+    - 환경·에너지: 폐기물처리, 에너지관리 (산업기사 이상)
+    건설업(17):
+    - 건설 분야: 콘크리트, 철도토목, 건축목공, 실내건축, 조경 (산업기사 이상)
+    - 기계: 공조냉동기계 (산업기사 이상)
+    - 재료: 용접 (산업기사 이상)
+    농업(5): 농림어업 - 유기농업, 축산 (산업기사 이상)
+    어업(8): 농림어업 - 수산양식, 어로 (산업기사 이상), 식품가공 - 수산제조 (산업기사 이상), 건설 - 잠수 (산업기사 이상)
+- table_summary: F-5-14 영주자격 부여 자격 종목 및 등급 (제조업 62종, 건설업 17종, 농업 5종, 어업 8종)
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 영주, F-5-14, 자격 종목, 산업기사, 기사, 제조업, 건설업, 농업, 어업, F-5
+- source_page:
+- source_excerpt: |
+    [별첨 9] 영주(F-5-14)부여 자격 종목 및 등급
+    제조업(62) - 기계, 재료, 전기·전자, 건설, 섬유·의복, 환경·에너지
+    건설업(17) - 건설, 기계, 재료
+    농업(5) - 농림어업
+    어업(8) - 농림어업, 식품가공, 건설
+- related_visa_codes:
+- expected_questions: |
+    방문취업으로 4년 일했는데 어떤 자격증이 있어야 영주권 받을 수 있어요?
+    제조업에서 영주권 신청 가능한 자격증은 무엇이 있어요?
+    농업이나 어업도 영주권 자격 종목이 정해져 있어요?
+
 ### row F-2 / 사증발급 / 요건
 - manual_type: 사증민원
 - visa_code: F-2
 - visa_name_ko: 거주
 - item_type: visa_rule
-- section_title: 첨단분야 해외 인재 탑티어(Top-Tier) 비자 / 자격 기준
-- subtype_or_program: 최우수인재(Top-Tier)
+- section_title: F-2 거주 / 최우수인재 거주(F-2-T) Top-Tier
+- subtype_or_program: F-2-T
 - petition_type: 사증발급
 - subsection_type: 요건
 - applicant_context: |
-    첨단분야(반도체, 바이오 등 산업, 벤처·창업, 연구 분야)에서 프로젝트 기획·연구·R&D 등을 주도하는 수석 엔지니어 또는 중견 연구자
-- eligibility:
-- target_persons: |
-    소득·학력·경력·한국어 능력·부처 추천 요건을 모두 충족한 최우수인재
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements: |
-    소득: 연간소득이 전년도 1인당 국민 총소득(GNI)의 3배 이상
-    학력: 최근 5년 내 아래 세계 대학평가 중 하나 이상에서 100위 이내에 선정된 대학의 석사 이상 학위 취득
-    - QS World University Ranking
-    - QS World University Ranking by Subject: Engineering and Technology
-    - Times Higher Education World University Rankings
-    - Times Higher Education World University Rankings by subject engineering
-    - US News & World Report Global University Rankings
-    - US News & World Report Global University Rankings by subject engineering
-    경력: 기업 근무 또는 연구기관 근무 중 하나를 충족
-    - 기업 근무: 세계적 기업(최근 3년 이내 Forbes Global 2000 500위 이내, Fortune Global 500 500위 이내, Time 100 World Most Influential Companies 100위 이내)에서 3년 이상 근무 포함 총 8년 이상 근무경력
-    - 연구기관 근무: 세계적 연구기관(세계대학 순위 100위 이내 대학 연구소, 세계적 기업 부설 연구소, 정부 주도 연구소)에서 3년 이상 근무 포함 박사학위 취득 후 5년 이상 첨단분야 관련 연구경력
-    한국어 능력: 사회통합프로그램 1단계 이수 또는 한국어능력시험(TOPIK) 1급 이상 취득
-    부처 추천: 관계 중앙행정기관의 장이 검증하고 추천한 사람
-- procedure: |
-    Top-Tier 자격 기준을 모두 충족한 경우: 최우수인재 거주(F-2) 자격 부여
-    학력·경력·한국어를 충족하였으나 소득 요건이 1인당 GNI 2배 이상인 경우: 관계부처 추천을 받아 최우수인재 특정활동(E-7) 자격 부여
-    학력 요건을 갖추었으나 취업 미확정 시: 최우수인재 구직(D-10) 자격 부여
-    F-2 자격으로 3년 경과, GNI 3배 이상 유지, KIIP 3단계 이수 등 요건 충족 시: 최우수인재 영주(F-5) 자격 부여
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary: 사증발급 시 GNI 충족 요건은 고용계약서상의 지급 예정금액이며 KIIP 한국어 요건은 사회통합프로그램 단계별 평가를 적용
-- table_rows:
-- inviter_context: |
-    국내 기업(첨단산업 경쟁력 강화 대상 기업)
-- recommendation_or_approval: |
-    관계 중앙행정기관의 장 검증 및 추천 필수
-- expected_questions: |
-    첨단분야 우수 인재가 한국에서 받을 수 있는 비자는 뭐예요?
-    탑티어 비자는 연봉이 얼마나 돼야 받을 수 있어요?
-    세계 100위 대학 졸업해야만 신청할 수 있어요?
-
-### row F-2 / 사증발급 / 절차
-- manual_type: 사증민원
-- visa_code: F-2
-- visa_name_ko: 거주
-- item_type: visa_rule
-- section_title: 첨단분야 해외 인재 탑티어 / 전자사증 발급
-- subtype_or_program: 최우수인재(Top-Tier)
-- petition_type: 전자사증
-- subsection_type: 절차
-- applicant_context: |
-    탑티어 비자 자격을 충족한 외국인 본인 또는 해당 인재를 고용하고자 하는 고용주
-- eligibility:
-- target_persons:
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure: |
-    ① 신청: 외국인 본인 또는 고용주가 대리하여 비자포털에서 전자사증 신청(기업 회원가입)
-    ② 접수·심사: 사증발급 심사기준에 따라 전담기관(서울출입국·외국인청 우수인재·투자지원센터)이 사증 심사. 비대면 방식이므로 탑티어 요건·관계부처 추천 여부·제출서류 확인 등을 심사
-    ③ 사증발급: 심사결정 후 결과 통보
-    ④ 입국: 전자사증발급확인서 소지하고 입국
-    해외 범죄경력 심사: 공적 확인(아포스티유 첨부 또는 대한민국 재외공관 영사확인)을 받은 자국정부 발급 범죄경력증명서(접수일 기준 6개월 이내 발급)
-- restrictions: |
-    자국 재외공관장이 발급한 범죄경력증명서는 원칙적으로 불허(단, 본국 정부의 확인을 거쳐 발급되었음이 명백하게 입증되는 경우 예외적 제출 허용)
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context: |
-    고용주가 외국인을 대리하여 전자사증 신청 가능
-- recommendation_or_approval: |
-    전담기관 지정: 서울출입국·외국인청 우수인재·투자지원센터
-- expected_questions: |
-    탑티어 비자 전자비자로 어떻게 신청해요?
-    회사가 대신 신청해줄 수 있나요?
-    범죄경력증명서는 어디서 발급받아야 해요?
-
-### row D-10 / 사증발급 / 대상
-- manual_type: 사증민원
-- visa_code: D-10
-- visa_name_ko: 구직
-- item_type: visa_rule
-- section_title: 최우수인재 구직(D-10-T)
-- subtype_or_program: D-10-T
-- petition_type: 사증발급
-- subsection_type: 대상
-- applicant_context: |
-    세계대학 순위 100위 이내 대학의 석사 이상 학위를 취득하고 국내 취업을 위해 연수나 구직활동을 하려는 사람
+    국내기업과 고용계약을 맺고, 연간 근로소득이 1인당 GNI 3배 이상인 자로서 법무부장관이 정한 요건을 모두 갖춘 사람
 - eligibility: |
-    부처추천 불요
-    재외공관 사증신청 가능(전자사증 불가)
+    최우수인재(Top-Tier) 자격 기준:
+    - (소득) 연간소득이 전년도 1인당 국민 총소득의 3배 이상
+    - (학력) 최근 5년 내 세계 대학평가(QS, Times Higher Education, US News & World Report 등) 중 하나 이상에서 100위 이내에 선정된 대학의 석사 이상 학위 취득
+    - (경력) 기업 근무: 세계적 기업(Forbes Global 2000 500위, Fortune Global 500, Time 100 World Most Influential Companies)에서 3년 이상 근무 포함하여 총 8년 이상 또는 연구기관 근무: 세계적 연구기관(세계대학 100위 이내 연구소, 세계적 기업 부설 연구소, 정부 주도 연구소)에서 3년 이상 근무 포함하여 박사학위 취득 후 5년 이상 첨단분야 관련 연구경력
+    - (한국어 능력) 사회통합프로그램 1단계 이수 또는 한국어능력시험(TOPIK) 1급 이상
+    - (부처 추천) 관계 중앙행정기관의 장이 검증하고 추천
 - target_persons:
-- common_documents: |
-    신청서, 표준규격 사진, 여권 사본, 체류지 입증서류, 수수료 등
+- common_documents:
 - mandatory_documents: |
-    - 공통서류
-    - 구직활동 계획서
-    - 우수대학(본교) 졸업(예정)증명서
+    제출서류:
+    - 공통서류(신청서, 표준규격 사진, 여권 사본, 체류지 입증서류, 수수료 등)
+    - 학위증 또는 졸업증명서
+    - 경력증명서
+    - 고용계약서
+    - 사업자등록증 및 법인등기부등본
+    - 해외 범죄경력증명서
+    - 한국어 능력 입증서류 또는 사회통합프로그램 이수 확약서
+    - 관계 중앙행정기관 추천서
 - other_documents:
 - requirements:
-- procedure:
+- procedure: |
+    전자사증 신청 가능 (자격변경 시 관할 출입국관서에 신청)
 - restrictions:
-- exceptions:
+- exceptions: |
+    소득 요건이 1인당 GNI 4배 이상인 사람은 학력 또는 경력을 완화하여 적용 가능
+    최우수인재 거주(F-2) 자격변경 특례: 주재(D-7) ~ 특정활동(E-7) 또는 거주(F-2) 자격으로 1년 이상 첨단분야에 취업한 사람 중 소득요건을 제외한 최우수인재 자격 기준을 모두 충족한 사람으로서, 1인당 GNI 2배 이상 소득을 유지하고, 관계 중앙행정기관의 추천을 받은 자
 - fees:
 - duration_or_validity:
 - quota_or_limit:
 - score_criteria:
-- table_summary:
+- table_summary: 최우수인재 거주(F-2-T) Top-Tier 자격 기준 및 제출서류
 - table_rows:
 - inviter_context:
-- recommendation_or_approval:
+- recommendation_or_approval: |
+    부처 추천 필수: 관계 중앙행정기관의 장이 검증하고 추천
+- keywords: 거주, 최우수인재, Top-Tier, F-2-T, 세계대학 100위, GNI 3배, 첨단분야, F-2
+- source_page:
+- source_excerpt: |
+    □ 최우수인재 거주(F-2-T)
+    ❍ 사증발급·자격변경
+    - (대상자) 국내기업과 고용계약을 맺고, 연간 근로소득이 1인당 GNI 3배 이상인 자로서 법무부장관이 정한 요건을 모두 갖춘 사람(부처 추천 필수)
+    ※ 단, 소득 요건이 1인당 GNI 4배 이상인 사람은 학력 또는 경력을 완화하여 적용 가능
+- related_visa_codes: D-10-T, E-7-T, F-5-T
 - expected_questions: |
-    세계 명문대 석사 졸업했는데 한국에서 구직 비자 어떻게 받아요?
-    탑티어 구직 비자는 부처 추천 없어도 신청할 수 있어요?
-    구직활동 계획서는 어떤 내용을 적어야 해요?
+    세계 100대 대학 석사 학위가 있으면 어떤 비자를 받을 수 있어요?
+    탑티어 비자 신청에 소득이 얼마나 있어야 해요?
+    한국에서 1년 이상 첨단분야 일하면 거주 비자 받을 수 있나요?
 
-### row D-10 / 체류기간 연장 / 제출서류
-- manual_type: 사증민원
-- visa_code: D-10
-- visa_name_ko: 구직
-- item_type: required_documents
-- section_title: 최우수인재 구직(D-10-T) / 체류기간 연장 및 연수 신고
-- subtype_or_program: D-10-T
-- petition_type: 체류기간 연장
-- subsection_type: 제출서류
-- applicant_context: |
-    D-10-T 자격으로 체류 중 기간을 연장하거나 연수를 개시·변경하려는 사람
-- eligibility:
-- target_persons:
-- common_documents: |
-    신청서, 표준규격 사진, 여권 사본, 체류지 입증서류, 수수료 등
-- mandatory_documents: |
-    체류기간 연장 시:
-    - 공통서류
-    - 구직활동 계획서(지난 1년간의 구직활동 내역 및 향후 계획 포함)
-    연수 개시·연수기관 변동 신고 시(사유 발생일로부터 15일 이내 관할 출입국관서에 신고):
-    - 연수(인턴) 계약서
-    - 사업자 등록증
-    - 기타 연수 개시(변경) 신고 수리를 위해 필요하다고 인정되는 서류
-- other_documents:
-- requirements: |
-    연수 분야는 교수(E-1) ~ 전문인력(E-7-1) 직종(단, 고용추천서가 필요한 직종도 고용추천서 제출 면제)
-    연수기관은 반도체·디스플레이·바이오 등 첨단분야 기업
-    근무시간: 1일 8시간, 주당 40시간 이내
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    탑티어 구직 비자 기간 연장할 때 어떤 서류 내요?
-    구직 비자로 연수받을 수 있는 분야가 정해져 있어요?
-    연수기관 바꾸면 신고해야 하나요?
-
-### row E-7 / 사증발급 / 제출서류
+### row E-7 / 사증발급 / 요건
 - manual_type: 사증민원
 - visa_code: E-7
 - visa_name_ko: 특정활동
-- item_type: required_documents
-- section_title: 최우수인재 특정활동(E-7-T)
+- item_type: visa_rule
+- section_title: E-7 특정활동 / 최우수인재 특정활동(E-7-T) Top-Tier
 - subtype_or_program: E-7-T
 - petition_type: 사증발급
-- subsection_type: 제출서류
+- subsection_type: 요건
 - applicant_context: |
     국내 기업과 고용계약을 맺고, 연간 근로소득이 1인당 GNI 2배 이상인 자로서 소득요건을 제외하고 법무부장관이 정한 요건을 모두 갖춘 사람
 - eligibility: |
-    부처 추천 필수
-    전자사증 신청 가능
+    최우수인재(Top-Tier) 자격 기준 중 학력, 경력, 한국어 능력을 충족하였으나 소득 요건이 1인당 GNI 2배 이상인 경우, 관계부처 추천을 받아 최우수인재 특정활동(E-7) 자격 부여
 - target_persons:
-- common_documents: |
-    신청서, 표준규격 사진, 여권 사본, 체류지 입증서류, 수수료 등
+- common_documents:
 - mandatory_documents: |
-    - 공통서류
+    제출서류 (사증발급·자격변경):
+    - 공통서류(신청서, 표준규격 사진, 여권 사본, 체류지 입증서류, 수수료 등)
     - 학위증 또는 졸업증명서
     - 경력증명서
     - 고용계약서
@@ -8840,10 +10359,19 @@
     - 해외 범죄경력증명서
     - 한국어 능력 입증서류 또는 사회통합프로그램 이수 확약서
     - 관계 중앙행정기관 추천서
-- other_documents: |
-    개별 심사 과정에서 심사의 정확성과 효율성을 위해 규정된 서류 이외에 추가서류 제출을 요구할 수 있음
+    체류기간 연장 제출서류:
+    - 공통서류
+    - 재직증명서 (이직한 경우 첨단 분야 해당 여부 확인)
+    - 사업자등록증 및 법인등기부등본
+    - 소득금액증명원
+    - 해외 범죄경력증명서 (6개월 이상 출국 시)
+    - 사회통합프로그램 1단계 이수(사전평가 21점 이상) 또는 TOPIK 1급 취득
+- other_documents:
 - requirements:
-- procedure:
+- procedure: |
+    전자사증 신청 가능
+    근무처 변경 및 추가 신고: 사유 발생일로부터 15일 이내 관할 출입국관서에 신고
+    근무처 변경 제출서류: 고용계약서, 사업자 등록증, 이적 동의서
 - restrictions:
 - exceptions:
 - fees:
@@ -8853,46 +10381,56 @@
 - table_summary:
 - table_rows:
 - inviter_context: |
-    국내 기업(첨단분야)과 고용계약 체결
+    국내 기업과 고용계약 체결 (고용주가 전자사증 대리 신청 가능)
 - recommendation_or_approval: |
     관계 중앙행정기관 추천서 필수
+- keywords: 특정활동, 최우수인재, Top-Tier, E-7-T, GNI 2배, 첨단분야, E-7
+- source_page:
+- source_excerpt: |
+    □ 최우수인재 특정활동(E-7-T)
+    ❍ 사증발급·자격변경
+    - (대상자) 국내 기업과 고용계약을 맺고, 연간 근로소득이 1인당 GNI 2배 이상인 자로서 소득요건을 제외하고 법무부장관이 정한 요건을 모두 갖춘 사람(부처 추천 필수)
+    ☞ 전자사증 신청 가능
+- related_visa_codes: D-10-T, F-2-T, F-5-T
 - expected_questions: |
-    탑티어 특정활동 비자 신청할 때 무슨 서류 내요?
-    연봉이 GNI 2배 정도면 신청할 수 있나요?
-    부처 추천서 어디서 받아요?
+    GNI 2배 소득이면 어떤 첨단분야 비자를 받을 수 있어요?
+    탑티어 특정활동 비자 신청할 때 어떤 서류가 필요해요?
+    근무처를 옮기면 며칠 안에 신고해야 해요?
 
-### row E-7 / 체류기간 연장 / 제출서류
+### row D-10 / 사증발급 / 요건
 - manual_type: 사증민원
-- visa_code: E-7
-- visa_name_ko: 특정활동
-- item_type: required_documents
-- section_title: 최우수인재 특정활동(E-7-T) / 체류기간 연장 및 근무처 변경·추가
-- subtype_or_program: E-7-T
-- petition_type: 체류기간 연장
-- subsection_type: 제출서류
+- visa_code: D-10
+- visa_name_ko: 구직
+- item_type: visa_rule
+- section_title: D-10 구직 / 최우수인재 구직(D-10-T) Top-Tier
+- subtype_or_program: D-10-T
+- petition_type: 사증발급
+- subsection_type: 요건
 - applicant_context: |
-    E-7-T 자격으로 체류 중 기간을 연장하거나 근무처를 변경·추가하려는 사람
-- eligibility:
+    세계대학 순위 100위 이내 대학의 석사 이상 학위를 취득하고 국내 취업을 위해 연수나 구직활동을 하려는 사람
+- eligibility: |
+    최우수인재(Top-Tier) 자격 기준 중 학력 요건을 갖추었으나, 취업 미확정 시 최우수인재 구직(D-10) 자격 부여
+    부처추천 불요
 - target_persons:
-- common_documents: |
-    신청서, 표준규격 사진, 여권 사본, 체류지 입증서류, 수수료 등
+- common_documents:
 - mandatory_documents: |
-    체류기간 연장 시:
+    사증발급·자격변경 제출서류:
+    - 공통서류(신청서, 표준규격 사진, 여권 사본, 체류지 입증서류, 수수료 등)
+    - 구직활동 계획서
+    - 우수대학(본교) 졸업(예정)증명서
+    체류기간 연장 제출서류:
     - 공통서류
-    - 재직증명서(이직한 경우 첨단 분야 해당 여부 확인)
-    - 사업자등록증 및 법인등기부등본
-    - 소득금액증명원
-    - 해외 범죄경력증명서(6개월 이상 출국 시)
-    - 사회통합프로그램 1단계 이수(사전평가 21점 이상) 또는 한국어능력시험(TOPIK) 1급 취득
-    근무처 변경 및 추가 신고 시(사유 발생일로부터 15일 이내 관할 출입국관서에 신고):
-    - 고용계약서
-    - 사업자 등록증
-    - 이적 동의서
+    - 구직활동 계획서 (지난 1년간의 구직활동 내역 및 향후 계획 포함)
 - other_documents:
 - requirements:
-- procedure:
-- restrictions: |
-    근무처가 변경된 경우 첨단분야 기업 해당 여부 등 개별 심사 과정에서의 정확성과 효율성을 위해 규정된 서류 이외에 추가서류 제출을 요구할 수 있음
+- procedure: |
+    재외공관 사증신청 가능 (전자사증 불가)
+    연수 개시 및 연수기관 변동 신고 (개시신고): 사유 발생일로부터 15일 이내 관할 출입국관서에 신고
+    - 연수분야: 교수(E-1) ~ 전문인력(E-7-1)에 해당하는 직종 (단, 고용추천서가 필요한 직종의 경우 고용추천서 제출 면제)
+    - 연수기관: 반도체, 디스플레이, 바이오 등 첨단분야 기업
+    - 근무시간: 1일 8시간, 주당 40시간 이내
+    - 연수기관 변경 신고: 15일 이내, 신청서류는 연수(인턴) 계약서, 사업자 등록증 등
+- restrictions:
 - exceptions:
 - fees:
 - duration_or_validity:
@@ -8902,89 +10440,190 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 구직, 최우수인재, Top-Tier, D-10-T, 우수대학, 연수, 첨단분야, D-10
+- source_page:
+- source_excerpt: |
+    □ 최우수인재 구직(D-10-T)
+    ❍ 사증발급·자격변경
+    - (대상자) 세계대학 순위 100위 이내 대학의 석사 이상 학위를 취득하고 국내 취업을 위해 연수나 구직활동을 하려는 사람(부처추천 불요)
+    ☞ 재외공관 사증신청 가능 (전자사증 불가)
+- related_visa_codes: E-1, E-7-1, E-7-T, F-2-T
 - expected_questions: |
-    탑티어 특정활동 비자 기간 연장할 때 무슨 서류 필요해요?
-    이직했는데 근무처 변경 신고 어떻게 해요?
-    한국어 시험은 어느 정도 등급이 필요해요?
+    세계 100대 대학 출신이 한국에서 구직활동하려면 어떤 비자 받아요?
+    구직 비자로 한국에서 인턴십도 할 수 있어요?
+    탑티어 구직 비자는 부처 추천이 필요해요?
 
-### row F-2 / 사증발급 / 제출서류
+### row F-5 / 사증발급 / 요건
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: visa_rule
+- section_title: F-5 영주 / 최우수인재 영주(F-5) Top-Tier
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 요건
+- applicant_context: 최우수인재 거주(F-2) 자격 보유자
+- eligibility: |
+    '최우수인재 거주(F-2)' 자격으로 3년 경과
+    GNI 3배 이상 유지
+    사회통합프로그램(KIIP) 3단계 이수 등 요건 충족
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    F-2 거주 3년 체류
+    GNI 3배 이상 유지
+    사회통합프로그램(KIIP) 3단계 이수
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary: 최우수인재 비자 단계별 전환 (D-10/E-7 → F-2 → F-5)
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 영주, 최우수인재, Top-Tier, F-2 3년, GNI 3배, KIIP 3단계, F-5
+- source_page:
+- source_excerpt: |
+    - `최우수인재 거주(F-2)' 자격으로 3년 경과, GNI 3배 이상 유지, 사회통합프로그램(KIIP) 3단계 이수 등 요건 충족 시 최우수인재 영주(F-5) 자격 부여
+- related_visa_codes: F-2-T, E-7-T, D-10-T
+- expected_questions: |
+    탑티어 거주 비자로 3년 살면 영주권 신청 가능해요?
+    영주권 받으려면 한국어 시험은 어느 정도 해야 해요?
+
+### row F-2 / 전자사증 / 절차
 - manual_type: 사증민원
 - visa_code: F-2
 - visa_name_ko: 거주
-- item_type: required_documents
-- section_title: 최우수인재 거주(F-2-T)
-- subtype_or_program: F-2-T
-- petition_type: 사증발급
-- subsection_type: 제출서류
-- applicant_context: |
-    국내기업과 고용계약을 맺고, 연간 근로소득이 1인당 GNI 3배 이상인 자로서 법무부장관이 정한 요건을 모두 갖춘 사람(부처 추천 필수)
-- eligibility: |
-    전자사증 신청 가능(자격변경 시 관할 출입국관서에 신청)
-    소득 요건이 1인당 GNI 4배 이상인 사람은 학력 또는 경력을 완화하여 적용 가능
+- item_type: visa_rule
+- section_title: F-2 거주 / Top-Tier 전자비자 발급 절차
+- subtype_or_program:
+- petition_type: 전자사증
+- subsection_type: 절차
+- applicant_context: 첨단분야 최우수인재 비자 (F-2-T, E-7-T 등) 신청자
+- eligibility:
 - target_persons:
-- common_documents: |
-    신청서, 표준규격 사진, 여권 사본, 체류지 입증서류, 수수료 등
-- mandatory_documents: |
-    - 공통서류
-    - 학위증 또는 졸업증명서
-    - 경력증명서
-    - 고용계약서
-    - 사업자등록증 및 법인등기부등본
-    - 해외 범죄경력증명서
-    - 한국어 능력 입증서류 또는 사회통합프로그램 이수 확약서
-    - 관계 중앙행정기관 추천서
-- other_documents: |
-    개별 심사 과정에서 심사의 정확성과 효율성을 위해 규정된 서류 이외에 추가서류 제출을 요구할 수 있음
-- requirements:
-- procedure:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    해외 범죄경력 심사기준:
+    - 공적 확인(아포스티유 첨부 또는 대한민국 재외공관 영사확인)을 받은 자국정부 발급 범죄경력증명서
+    - 접수일 기준 6개월 이내에 발급된 것
+    - 자국 재외공관장이 발급한 범죄경력증명서는 원칙적으로 불허 (단, 본국 정부의 확인을 거쳐 발급되었음이 명백하게 입증되는 경우, 예외적 제출 허용)
+- procedure: |
+    전담기관: 서울출입국·외국인청 '우수인재·투자지원센터'
+    처리업무: 전자사증발급 전담 심사, 출입국우대카드 신청 등
+    전자사증 발급 절차:
+    ① 신청: 외국인 본인 또는 고용주 대리 신청 (대한민국 비자포털 기업 회원가입)
+    ② 접수·심사: 사증발급 심사기준에 따라 전담기관이 사증 심사
+    ③ 사증발급: 심사결정 후 결과 통보
+    ④ 입국: 전자사증발급확인서 소지하고 입국
+    심사 원칙: 비대면 방식의 심사진행을 고려하여 탑티어 요건, 관계부처 추천 여부, 제출서류 확인 등
+    신청 방식: 입증 서류를 전자적 방식으로 첨부하되 누락 및 추가 서류 확인 철저
 - restrictions:
-- exceptions: |
-    최우수인재 거주(F-2) 자격변경 특례: 주재(D-7) ~ 특정활동(E-7) 또는 거주(F-2) 자격으로 1년 이상 첨단분야에 취업한 사람 중 소득요건을 제외한 최우수인재 자격 기준을 모두 충족한 사람으로서, 1인당 GNI 2배 이상 소득을 유지하고, 관계 중앙행정기관의 추천을 받은 자(고용계약서에 명시된 근무 개시일자 기준 산정)
+- exceptions:
 - fees:
 - duration_or_validity:
 - quota_or_limit:
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context:
-- recommendation_or_approval: |
-    관계 중앙행정기관 추천서 필수
+- inviter_context: |
+    외국인 본인 또는 해당 인재를 고용하고자 하는 고용주가 외국인을 대리하여 전자사증 신청
+- recommendation_or_approval:
+- keywords: 거주, Top-Tier, 전자사증, 우수인재·투자지원센터, 비자포털, F-2, E-7
+- source_page:
+- source_excerpt: |
+    □ 전담기관을 통한 전자적 방식의 사증발급
+    ❍ 전담기관 지정
+    - (전담기관) 서울출입국·외국인청 '우수인재·투자지원센터'
+    - (처리업무) 전자사증발급 전담 심사, 출입국우대카드 신청 등
+    ❍ 전자사증 발급
+- related_visa_codes: F-2-T, E-7-T, D-10-T
 - expected_questions: |
-    탑티어 거주 비자는 어떤 서류 내요?
-    연봉 GNI 3배 이상이면 거주 비자 받을 수 있어요?
-    이미 한국에서 일하고 있는데 거주 비자로 바꿀 수 있어요?
+    탑티어 비자는 어떻게 신청해요?
+    전자사증 신청은 누가 할 수 있어요?
+    탑티어 비자 심사하는 전담기관은 어디예요?
+    탑티어 비자 신청할 때 범죄경력증명서는 어떤 형식이어야 하나요?
 
 <!-- end chunk: visa_020 -->
 
 
 <!-- vizabridge-normalize v1 chunk: visa_021 hash: a8404370ff6ded5c lines: 7498-8282 -->
 
+### row F-5 / 체류기간 연장 / 제출서류
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: required_documents
+- section_title: F-5-T 최우수인재 영주 / 체류기간 연장
+- subtype_or_program: F-5-T
+- petition_type: 체류기간 연장
+- subsection_type: 제출서류
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents: |
+    신청서, 표준규격 사진, 여권 사본, 체류지 입증서류, 수수료
+- mandatory_documents: |
+    - 공통서류(신청서, 표준규격 사진, 여권 사본, 체류지 입증서류, 수수료 등)
+    - 재직증명서 (이직한 경우 첨단 분야 해당 여부 확인)
+    - 사업자등록증 및 법인등기부등본
+    - 소득금액증명원
+    - 해외 범죄경력증명서(6개월이상 출국 시)
+    - 사회통합프로그램 1단계 이수(사회통합프로그램 사전평가 21점 이상) 또는 한국어능력시험(TOPIK) 1급 취득
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: |
+    개별 심사 과정에서 심사의 정확성과 효율성을 위해 규정된 서류 이외에 추가서류 제출을 요구할 수 있음
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 최우수인재 영주, 체류기간 연장, 재직증명서, 소득금액증명원, 사회통합프로그램, F-5-T
+- source_page:
+- source_excerpt: |
+    ① 공통서류(신청서, 표준규격 사진, 여권 사본, 체류지 입증서류, 수수료 등)
+    ② 재직증명서
+    ⑥ 사회통합프로그램 1단계 이수(사회통합프로그램 사전평가 21점 이상) 또는 한국어능력시험(TOPIK) 1급 취득
+- related_visa_codes: F-2
+- expected_questions: |
+    최우수인재 영주 비자 연장하려면 무슨 서류 내요?
+    영주 연장할 때 한국어 시험 점수가 꼭 있어야 해요?
+    이직했는데 연장할 수 있어요?
+
 ### row F-5 / 체류자격 변경 / 대상
 - manual_type: 사증민원
 - visa_code: F-5
 - visa_name_ko: 영주
 - item_type: visa_rule
-- section_title: 최우수인재 영주(F-5-T)
+- section_title: F-5-T 최우수인재 영주 / 자격변경
 - subtype_or_program: F-5-T
 - petition_type: 체류자격 변경
 - subsection_type: 대상
-- applicant_context: |
-    최우수인재 거주(F-2) 자격으로 3년 이상 체류하며 연간 근로소득 1인당 GNI 3배 이상 및 사회통합프로그램 3단계 이상 이수한 자로, 법무부장관이 정한 요건을 모두 갖춘 사람
+- applicant_context:
 - eligibility: |
-    관할 출입국관서에 신청
-- target_persons:
-- common_documents: |
-    신청서, 표준규격 사진, 여권 사본, 체류지 입증서류, 수수료 등
-- mandatory_documents: |
-    - 공통서류
-    - 고용계약서, 재직증명서, 소득금액증명원
-    - 납부내역증명, 납세증명서, 지방세 납세증명서(세금체납여부확인)
-    - 사업자등록증 및 법인등기부등본
-    - 한국어 능력 입증서류(사회통합프로그램 3단계 이상 또는 한국어능력시험 TOPIK 3단계 이상)
-- other_documents: |
-    개별 심사 과정에서 심사의 정확성과 효율성을 위해 규정된 서류 이외에 추가서류 제출을 요구할 수 있음
+    최우수인재 거주(F-2) 자격으로 3년 이상 체류
+    연간 근로소득 1인당 GNI 3배 이상
+    사회통합프로그램 3단계 이상 이수
+    법무부장관이 정한 요건을 모두 갖춘 사람
+- target_persons: 최우수인재 거주(F-2) 자격자
+- common_documents:
+- mandatory_documents:
+- other_documents:
 - requirements:
-- procedure:
+- procedure: 관할 출입국관서 신청
 - restrictions:
 - exceptions:
 - fees:
@@ -8995,168 +10634,1472 @@
 - table_rows:
 - inviter_context:
 - recommendation_or_approval:
+- keywords: 최우수인재 영주, 자격변경, GNI 3배, 사회통합프로그램, F-5-T, F-2
+- source_page:
+- source_excerpt: |
+    최우수인재 거주(F-2) 자격으로 3년 이상 체류하며 연간 근로소득 1인당 GNI 3배 이상 및 사회통합프로그램 3단계 이상 이수한 자로, 법무부장관이 정한 요건을 모두 갖춘 사람
+- related_visa_codes: F-2
 - expected_questions: |
-    탑티어 거주 비자로 3년 살면 영주권 받을 수 있어요?
-    영주권 받으려면 한국어 등급 어느 정도 필요해요?
-    소득 조건은 얼마나 유지해야 하나요?
+    최우수인재 거주에서 영주로 바꾸려면 어떤 조건이 필요해요?
+    소득이 얼마나 있어야 영주로 바꿀 수 있어요?
+    사회통합프로그램은 몇 단계까지 들어야 해요?
 
-### row F-2 / 사증발급 / 제출서류
+### row F-5 / 체류자격 변경 / 제출서류
 - manual_type: 사증민원
-- visa_code: F-2
-- visa_name_ko: 거주
+- visa_code: F-5
+- visa_name_ko: 영주
 - item_type: required_documents
-- section_title: 최우수인재 동반가족
-- subtype_or_program: 최우수인재 동반가족
-- petition_type: 사증발급
+- section_title: F-5-T 최우수인재 영주 / 자격변경
+- subtype_or_program: F-5-T
+- petition_type: 체류자격 변경
 - subsection_type: 제출서류
-- applicant_context: |
-    탑티어(Top-Tier) 비자 자격자의 배우자 및 미성년 자녀, 부모(장인·장모 포함), 가사보조인(1인)
+- applicant_context:
 - eligibility:
-- target_persons: |
-    배우자 및 미성년 자녀, 부모(우수인재 기준 부모 포함 장인·장모도 포함), 가사보조인(1인 허용)
+- target_persons:
 - common_documents: |
-    신청서, 표준규격 사진, 여권 사본, 체류지 입증서류, 수수료 등
+    신청서, 표준규격 사진, 여권 사본, 체류지 입증서류, 수수료
 - mandatory_documents: |
-    동반가족(배우자·미성년 자녀):
-    - 공통서류
+    - 공통서류(신청서, 표준규격 사진, 여권 사본, 체류지 입증서류, 수수료 등)
+    - 고용계약서, 재직증명서, 소득금액증명원
+    - 납부내역증명, 납세증명서, 지방세 납세증명서(세금체납여부확인)
+    - 사업자등록증 및 법인등기부등본
+    - 한국어 능력 입증서류 (사회통합프로그램 3단계 이상 또는 한국어능력시험(TOPIK) 3단계 이상)
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: |
+    개별 심사 과정에서 심사의 정확성과 효율성을 위해 규정된 서류 이외에 추가서류 제출을 요구할 수 있음
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 최우수인재 영주, 자격변경, 고용계약서, 납세증명서, 한국어 능력, F-5-T
+- source_page:
+- source_excerpt: |
+    ② 고용계약서, 재직증명서, 소득금액증명원
+    ④ 납부내역증명, 납세증명서, 지방세 납세증명서(세금체납여부확인)
+    ⑥ 한국어 능력 입증서류*
+- related_visa_codes: F-2
+- expected_questions: |
+    최우수인재 자격변경 신청할 때 어떤 서류 챙겨요?
+    세금 관련 서류도 내야 해요?
+    한국어 능력은 어떻게 증명해요?
+
+### row F-5 / 사증발급 / 대상
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: visa_rule
+- section_title: F-5-T 최우수인재 영주 / 동반가족
+- subtype_or_program: F-5-T
+- petition_type: 사증발급
+- subsection_type: 대상
+- applicant_context: 최우수인재 동반가족
+- eligibility: |
+    배우자 및 미성년 자녀
+    체류자격은 각 자격에 따라 다름
+    구직(D-10)·특정활동(E-7) 자격은 동반(F-3) 부여
+    거주(F-2) 및 영주(F-5) 자격은 최우수인재와 동일하게 각각 거주(F-2), 영주(F-5) 부여 원칙
+- target_persons: 최우수인재의 배우자 및 미성년 자녀
+- common_documents:
+- mandatory_documents: |
+    - 공통서류(신청서, 표준규격 사진, 여권 사본, 체류지 입증서류, 수수료 등)
     - 주 자격자의 여권 사본 또는 외국인등록증
     - 본국 정부 발급 가족관계 입증서류(결혼증명서, 출생증명서 등)
     - 해외 범죄경력증명서(배우자의 경우)
-    부모:
-    - 공통서류
-    - 주 자격자의 여권 사본 또는 외국인등록증
-    - 본국 정부 발급 가족관계 입증서류
-    - 주 자격자 소득요건 입증서류(고용계약서 또는 소득금액증명원)
-    가사보조인:
-    - 공통서류
-    - 주 자격자의 여권 사본 또는 외국인등록증
-    - 가사보조인 고용계약서(해외에서 1년 이상 고용사실을 입증)
-    - 주 자격자 소득요건 입증서류
 - other_documents:
-- requirements: |
-    체류자격은 주 자격자에 따라 다름:
-    - 구직(D-10)·특정활동(E-7) 자격자의 동반가족은 동반(F-3) 부여
-    - 거주(F-2) 및 영주(F-5) 자격자의 동반가족은 각각 거주(F-2), 영주(F-5) 부여 원칙
-    - 영주(F-5) 자격자의 동반가족은 체류기간이 2년 미만일 경우 거주(F-2) 자격 부여 대상
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: |
+    영주(F-5) 자격자의 동반 가족은 체류기간이 2년 미만일 경우, 거주(F-2) 자격 부여 대상
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 최우수인재 동반가족, 배우자, 미성년 자녀, 가족관계 입증서류, F-5, F-3
+- source_page:
+- source_excerpt: |
+    ❍ (대상) 배우자 및 미성년 자녀
+    - 구직(D-10)․특정활동(E-7) 자격은 동반(F-3) 부여
+    - 거주(F-2) 및 영주(F-5) 자격은 최우수인재와 동일하게 각각 거주(F-2), 영주(F-5) 부여 원칙
+- related_visa_codes: D-10, E-7, F-2, F-3
+- expected_questions: |
+    최우수인재로 한국 와있는데 가족도 데려올 수 있어요?
+    배우자랑 아이는 어떤 비자 받게 되나요?
+    가족 비자 신청할 때 무슨 서류 내요?
+
+### row F-1 / 사증발급 / 대상
+- manual_type: 사증민원
+- visa_code: F-1
+- visa_name_ko: 방문동거
+- item_type: visa_rule
+- section_title: 최우수인재 부모/가사보조인 초청
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 대상
+- applicant_context: 최우수인재가 부모 또는 가사보조인 초청
+- eligibility: |
+    부모: 우수인재 기준 부모 포함 장인·장모도 포함
+    가사보조인: 1인 허용 (해외에서 1년 이상 고용사실 입증)
+- target_persons: 최우수인재 본인의 부모(장인·장모 포함) 또는 가사보조인 1인
+- common_documents:
+- mandatory_documents: |
+    - 공통서류(신청서, 표준규격 사진, 여권 사본, 체류지 입증서류, 수수료 등)
+    - 주 자격자의 여권 사본 또는 외국인등록증
+    - 본국 정부 발급 가족관계 입증서류(결혼증명서, 출생증명서 등) — 부모의 경우
+    - 가사보조인 고용계약서(해외에서 1년이상 고용사실을 입증) — 가사보조인의 경우
+    - 주 자격자 소득요건 입증서류(고용계약서 또는 소득금액증명원)
+- other_documents:
+- requirements:
 - procedure:
 - restrictions: |
     최우수인재 구직(D-10) 자격자는 부모·가사보조인 초청 불가
 - exceptions:
 - fees:
 - duration_or_validity:
-- quota_or_limit:
+- quota_or_limit: 가사보조인 1인 허용
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: |
-    주 자격자(탑티어 비자 보유자)
+- inviter_context: 최우수인재 본인
 - recommendation_or_approval:
+- keywords: 최우수인재 부모 초청, 가사보조인, 장인·장모, 가족관계 입증서류, F-1
+- source_page:
+- source_excerpt: |
+    - (대상) 우수인재 기준 부모 포함 장인․장모도 포함
+    ③ 가사보조인 고용계약서(해외에서 1년이상 고용사실을 입증)
+    ※ 단, 최우수인재 구직(D-10) 자격자는 부모·가사보조인 초청 불가
+- related_visa_codes: D-10
 - expected_questions: |
-    탑티어 비자로 한국에 가족 데려올 수 있어요?
-    부모님도 초청할 수 있나요?
-    가사도우미는 어떻게 데려와요?
+    최우수인재인데 부모님도 한국에 모셔올 수 있어요?
+    장인·장모도 초청 가능한가요?
+    가사도우미는 한 명만 데려올 수 있나요?
 
-### row F-2 / 사증발급 / 절차
+### row F-5 / 사증발급 / 절차
 - manual_type: 사증민원
-- visa_code: F-2
-- visa_name_ko: 거주
+- visa_code: F-5
+- visa_name_ko: 영주
 - item_type: visa_rule
 - section_title: 최우수인재 출입국 우대카드 발급
-- subtype_or_program: 최우수인재(Top-Tier)
+- subtype_or_program:
 - petition_type: 사증발급
 - subsection_type: 절차
-- applicant_context: |
+- applicant_context: 외국인등록 마친 최우수인재
+- eligibility: |
     관계부처가 최우수인재로 추천한 사람으로서 입국 이후 외국인등록을 마친 사람
-- eligibility:
-- target_persons:
+- target_persons: 최우수인재 본인(우대카드 1매 한정)
 - common_documents:
 - mandatory_documents:
 - other_documents:
 - requirements:
 - procedure: |
-    ① 신청: 최우수인재가 전담기관(서울출입국·외국인청 우수인재·투자지원센터)에 신청
+    ① 신청: 최우수인재가 직접 신청
     ② 접수·발급의뢰: 전담기관 접수 및 발급 의뢰
-    ③ 우대카드 발급: 발급기관에서 발급 후 전담기관 송부
+    ③ 우대카드 발급: 출입국 우대카드 발급 및 전담기관 송부
     ④ 송부: 신청인에게 송부
-    최우수인재 본인에 한하여 출입국 우대카드 1매 발급
+    전담기관: 서울출입국·외국인청 '우수인재·투자지원센터'
 - restrictions:
 - exceptions:
 - fees:
-- duration_or_validity: |
-    유효기간: 발급일로부터 3년 이내(유효기간 만료 이후 재발급 가능)
-    혜택: 출입국 우대심사대 및 공항 보안검색 전용통로 이용을 통한 간이한 출입국절차 적용. 우대카드 소지자와 동반하는 3명 이내의 사람도 우대심사대 및 보안검색 전용통로 이용 가능
-- quota_or_limit:
+- duration_or_validity: 발급일로부터 3년 이내 (만료 이후 재발급 가능)
+- quota_or_limit: 최우수인재 본인에 한하여 1매 발급
 - score_criteria:
-- table_summary:
+- table_summary: 출입국 우대카드 발급 절차 4단계 (신청 → 접수·발급의뢰 → 발급 → 송부)
 - table_rows:
 - inviter_context:
-- recommendation_or_approval:
+- recommendation_or_approval: 관계부처 추천
+- keywords: 출입국 우대카드, 우대심사대, 공항 보안검색, 전담기관, 최우수인재
+- source_page:
+- source_excerpt: |
+    ❍ (대상) 관계부처가 최우수인재로 추천한 사람으로서 입국 이후 외국인등록을 마친 사람
+    ❍ (혜택) 출입국 우대심사대 및 공항 보안검색 전용통로 이용을 통한 간이한 출입국절차 적용
+    ❍ (유효기간) 발급일로부터 3년 이내
+- related_visa_codes:
 - expected_questions: |
-    탑티어 비자로 들어오면 공항에서 빠르게 통과할 수 있어요?
-    출입국 우대카드는 누가 받을 수 있어요?
-    우대카드 유효기간은 얼마나 되나요?
+    최우수인재 우대카드는 어떻게 신청해요?
+    카드 받으면 어떤 혜택이 있나요?
+    유효기간은 얼마나 돼요?
 
 ### row F-2 / 체류자격 변경 / 대상
 - manual_type: 사증민원
 - visa_code: F-2
 - visa_name_ko: 거주
 - item_type: visa_rule
-- section_title: K-STAR 비자트랙 / K-STAR 거주(F-2-7S)
+- section_title: K-STAR 거주(F-2-7S) / 신청 대상
 - subtype_or_program: F-2-7S
 - petition_type: 체류자격 변경
 - subsection_type: 대상
-- applicant_context: |
-    국가 재정으로 양성한 해외 과학기술분야 우수인재 유치와 유출방지를 위한 K-STAR(Korea-Science & Technology Advanced Human-Resources) 비자트랙 참여대학의 석·박사 취득자 등(사증발급 신청 대상 아님)
+- applicant_context: K-STAR 비자트랙 참여대학 석·박사 학위 취득(예정)자
 - eligibility: |
-    법무부장관 선정 K-STAR 비자트랙 참여대학(KAIST, DGIST, UNIST, GIST, UST 등 32개교)의 석·박사 학위 취득(예정)인 자로서 다음 요건 중 어느 하나에 해당:
-    - 선정대학의 석사 학위 취득 예정자 또는 취득 후 1년 이내인 자
-    - 선정대학의 박사 학위과정 재학생·수료생 또는 박사학위 취득 후 1년 이내인 자(석·박사 통합과정생은 박사과정 재학 중인 경우 인정)
-    - 선정대학에서 박사학위 취득 후 선정대학의 '박사후연구원(Postdoc)' 자격으로 과학기술분야 연구에 참여 중인 자
-- target_persons:
-- common_documents: |
-    신청서, 여권, 외국인등록증, 사진, 수수료, 체류지 입증서류, 해외범죄경력증명서(연장은 6개월 이상 해외 체류 시에만 제출), 결핵 진단서(해당자), 대학 총장 추천서(발급일로부터 1년간 유효. 고려대 세종·연세대 미래·한양대 ERICA 캠퍼스는 부총장 명의의 추천서 가능)
-- mandatory_documents: |
-    - 공통서류
-    - 석·박사 학위 취득(예정)인 자: 학위취득(예정)증명서 또는 졸업(예정)증명서
-    - 석·박사 통합과정: 석사과정 수료를 확인할 수 있는 서류, 박사과정에 해당하는 통합과정 재학증명서
-    - 박사과정 수료생: 박사과정 수료증명서(학위취득증명서 제출 생략)
-    - 박사후연구원: 박사과정 학위취득증명서 또는 졸업증명서, 지정대학의 공식 자격으로 박사후연구원으로서 연구에 참여 중임을 입증할 수 있는 서류
+    법무부장관 선정 K-STAR 비자트랙 참여대학의 석·박사 학위 취득(예정)자
+    선정대학의 석사 학위 취득 예정자 또는 취득 후 1년 이내인 자
+    선정대학의 박사 학위과정 재학생·수료생 또는 박사학위 취득 후 1년 이내인 자
+    석·박사 통합과정 재학생 (석사과정 수료 + 박사과정 재학 중) 인정
+    선정대학에서 박사학위 취득 후 박사후연구원(Postdoc) 자격으로 과학기술분야 연구에 참여 중인 자
+- target_persons: K-STAR 비자트랙 참여대학 과학기술분야 석·박사
+- common_documents:
+- mandatory_documents:
 - other_documents:
-- requirements: |
-    품행단정: 신청일로부터 5년 이내 금고 이상의 형(집행유예 포함)을 선고받은 사실 없음, 3년 이내 출입국관리법 3회 이상 위반(통고처분 합계 500만 원 이상) 또는 300만 원 이상 벌금형 없음, 허위서류 제출 없음, 입국금지 사유 없음, 특정강력범죄 등 외국에서의 형 선고 없음 등
-    취업활동: 신청일 이전 3년 이내 취업 제한 분야 취업 사실 없을 것, 신청일 이전 6개월 이내 국내 노동시장·사회경제 질서에 부정적 영향을 미칠 수 있는 직종에 취업한 사실 없을 것
-    공중보건: 결핵 등 전염병 없을 것
+- requirements:
 - procedure:
 - restrictions:
 - exceptions:
 - fees:
-- duration_or_validity: |
-    1회 3년 이내 부여(최장 5년 이내)
-- quota_or_limit: |
-    대학별 인원 쿼터: 별도 제한 없음
+- duration_or_validity:
+- quota_or_limit: 대학별 인원 쿼터 별도 제한 없음
 - score_criteria:
 - table_summary:
 - table_rows:
-- inviter_context: |
-    K-STAR 비자트랙 참여대학(법무부장관 선정 32개교)
-- recommendation_or_approval: |
-    대학 총장 추천서 필수
+- inviter_context:
+- recommendation_or_approval: 법무부장관 선정 대학의 총장 추천
+- keywords: K-STAR 비자트랙, 과학기술분야, 석·박사, 박사후연구원, F-2-7S
+- source_page:
+- source_excerpt: |
+    ❍ 법무부장관 선정 K-STAR 비자트랙 참여대학【붙임 1】의 석·박사 학위 취득(예정)인 자로서 다음 요건 중 어느 하나에 해당할 것
+    - 선정대학의 석사 학위 취득 예정자 또는 취득 후 1년 이내인 자
+    - 선정대학에서 박사학위 취득 후 선정대학의 '박사후연구원(Postdoc)' 자격으로 과학기술분야 연구에 참여 중인 자
+- related_visa_codes: D-2, F-5-S1
 - expected_questions: |
-    과학기술 분야 석박사 졸업했는데 한국에서 어떤 거주 비자 받을 수 있어요?
-    K-STAR 비자는 어느 대학을 졸업해야 받을 수 있어요?
-    박사후연구원도 신청할 수 있나요?
+    한국 대학에서 과학기술 박사하고 있는데 K-STAR 비자로 바꿀 수 있어요?
+    석사 졸업한 지 얼마 안 됐는데 신청 가능한가요?
+    박사후연구원도 K-STAR 거주 받을 수 있어요?
+
+### row F-2 / 체류자격 변경 / 요건
+- manual_type: 사증민원
+- visa_code: F-2
+- visa_name_ko: 거주
+- item_type: visa_rule
+- section_title: K-STAR 거주(F-2-7S) / 자격요건
+- subtype_or_program: F-2-7S
+- petition_type: 체류자격 변경
+- subsection_type: 요건
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    (품행단정) 결격사유에 해당하지 않을 것
+    - 신청일로부터 5년 이내에 금고 이상의 형(집행유예 포함) 선고받은 사실이 없을 것 (외국 정부 처벌 포함)
+    - 신청일로부터 3년 이내에 출입국관리법 3회 이상 위반 + 통고처분 금액 합계 500만 원 이상이 아닐 것
+    - 신청일로부터 3년 이내에 대한민국 법률 위반으로 300만 원 이상 벌금형 선고받지 않을 것
+    - 신청 시 또는 신청일로부터 최근 3년 이내에 허위서류 제출하지 않을 것
+    - 출입국관리법 제11조에 따른 입국금지 사유에 해당하지 않을 것
+    (준법시민교육) 법 위반자(거주(F-2) 자격변경 및 연장 허가 예정자 중 국내법 위반 사실 확인된 자) 대상 시행
+    (취업활동) 취업 제한 분야에 종사한 사실이 없을 것 — 신청일 이전 3년 이내 취업 제한 분야에 취업한 사실이 없을 것
+    (공중보건) 결핵 등 전염병 등이 없을 것 — 외국인 결핵환자 사증발급 및 체류관리 지침 등에 따름
+- procedure:
+- restrictions: |
+    수사·재판이 진행 중인 경우 사법 당국 최종 판단까지 심사 지연 자제, 체류기간 6개월 이내로 허가
+    마약중독 등 공중위생에 직접적 위해를 끼칠 우려가 있는 자는 사증발급 및 체류 억제
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: K-STAR 거주, 품행단정, 결격사유, 취업제한 분야, 준법시민교육, F-2-7S
+- source_page:
+- source_excerpt: |
+    ❍ 신청일로부터 5년 이내에 금고 이상의 형(집행유예를 포함)을 선고받은 사실이 있는 경우(외국 정부로부터 처벌받은 경우를 포함)
+    ❍ 신청일로부터 3년 이내에 출입국관리법 3회 이상 위반한 사람 중 통고처분 금액의 합계가 500만 원 이상에 해당하는 경우
+    ❍ 신청일 이전 3년 이내 취업 제한 분야【붙임 3】에 취업한 사실이 없을 것
+- related_visa_codes:
+- expected_questions: |
+    K-STAR 거주 받으려면 어떤 결격사유에 걸리면 안 되나요?
+    출입국관리법 위반 이력이 있으면 신청 안 되나요?
+    취업 제한 분야는 어떤 거예요?
+
+### row F-2 / 체류자격 변경 / 기간
+- manual_type: 사증민원
+- visa_code: F-2
+- visa_name_ko: 거주
+- item_type: visa_rule
+- section_title: K-STAR 거주(F-2-7S) / 체류자격 및 기간
+- subtype_or_program: F-2-7S
+- petition_type: 체류자격 변경
+- subsection_type: 기간
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: 사증발급 신청 대상 아님
+- fees:
+- duration_or_validity: 1회 3년 이내 부여(최장 5년 이내)
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: K-STAR 거주, 체류기간, 1회 3년, 최장 5년, F-2-7S
+- source_page:
+- source_excerpt: |
+    ❍ (체류자격) K-STAR 거주(F-2-7S)
+    ❍ (체류기간) 1회 3년 이내 부여(최장 5년 이내)
+- related_visa_codes:
+- expected_questions: |
+    K-STAR 거주는 한 번에 얼마나 받을 수 있어요?
+    최대 몇 년까지 머물 수 있어요?
+
+### row F-2 / 체류자격 변경 / 제출서류
+- manual_type: 사증민원
+- visa_code: F-2
+- visa_name_ko: 거주
+- item_type: required_documents
+- section_title: K-STAR 거주(F-2-7S) / 제출서류
+- subtype_or_program: F-2-7S
+- petition_type: 체류자격 변경
+- subsection_type: 제출서류
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents: |
+    신청서, 여권, 외국인등록증, 사진, 수수료, 체류지 입증서류, 해외범죄경력증명서(연장은 6개월 이상 해외 체류 시에만), 결핵 진단서(해당자), 대학 총장 추천서(발급일로부터 1년간 유효)
+- mandatory_documents: |
+    - 석·박사 학위 취득(예정)자: 학위취득(예정)증명서 또는 졸업(예정)증명서
+    - 석·박사 통합과정: 석사과정 수료를 확인할 수 있는 서류, 박사과정에 해당하는 통합과정 재학증명서
+    - 박사과정 수료생: 박사과정 수료증명서
+    - 박사후연구원: 박사과정 학위취득증명서 또는 졸업증명서, 지정대학의 공식 자격으로 박사후연구원으로서 연구에 참여 중임을 입증할 수 있는 서류
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: |
+    박사과정 수료생 또는 석·박사 통합과정에 재학 중인 자는 학위취득(예정)증명서 제출 생략
+    국내 대학에 제출한 사본 교부받은 경우도 해외범죄경력증명서로 인정
+    고려대(세종), 연세대(미래), 한양대(ERICA) 캠퍼스의 경우, 부총장 명의의 추천서 가능
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval: 대학 총장 추천서 (발급일로부터 1년간 유효)
+- keywords: K-STAR 거주, 총장 추천서, 학위취득증명서, 박사후연구원, 해외범죄경력증명서, F-2-7S
+- source_page:
+- source_excerpt: |
+    ❍ (공통서류) 신청서, 여권, 외국인등록증, 사진, 수수료, 체류지 입증서류, 해외범죄경력증명서*(연장은 6개월 이상 해외 체류 시에만 제출), 결핵 진단서(해당자), 대학 총장 추천서**(발급일로부터 1년간 유효)
+    ❍ 박사후연구원: 박사과정 학위취득증명서 또는 졸업증명서, 지정대학의 공식 자격으로 박사후연구원으로서 연구에 참여 중임을 입증할 수 있는 서류
+- related_visa_codes:
+- expected_questions: |
+    K-STAR 거주 신청할 때 어떤 서류 내야 해요?
+    총장 추천서가 꼭 필요해요?
+    박사후연구원으로 신청하는 경우 어떤 서류 필요해요?
+
+### row F-5 / 체류자격 변경 / 대상
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: visa_rule
+- section_title: K-STAR 영주(F-5-S1) / 신청 대상
+- subtype_or_program: F-5-S1
+- petition_type: 체류자격 변경
+- subsection_type: 대상
+- applicant_context: K-STAR 거주 또는 점수제 우수인재 거주 자격자
+- eligibility: |
+    법무부장관 선정한 대학의 과학기술분야 석·박사 학위 소지자
+    점수제 요건 충족(90/200점)
+    K-STAR 거주(F-2-7S) 자격으로 3년 이상 국내에서 계속 체류
+    또는 점수제 우수인재 거주(F-2-7) 자격으로 3년 이상 국내에서 계속 체류
+- target_persons: 과학기술분야 석·박사 학위 소지자 중 K-STAR 거주 또는 점수제 우수인재 거주 3년 이상 체류자
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria: 점수제 요건 90/200점 충족 필요
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: K-STAR 영주, 과학기술분야, 점수제, 90점, F-5-S1, F-2-7S
+- source_page:
+- source_excerpt: |
+    ❍ 법무부장관 선정한 대학의 과학기술분야 석·박사 학위 소지자로서 아래의 요건 중 어느 하나에 해당하고 【붙임 5】 점수제 요건을 충족하는 사람(90/200점)
+    - K-STAR 거주(F-2-7S) 자격으로 3년 이상 국내에서 계속 체류
+    - 점수제 우수인재 거주(F-2-7) 자격으로 3년 이상 국내에서 계속 체류
+- related_visa_codes: F-2-7S, F-2
+- expected_questions: |
+    K-STAR 거주에서 영주로 바꾸려면 어떤 자격이 필요해요?
+    점수제는 몇 점 이상 받아야 영주 받을 수 있어요?
+    K-STAR 영주는 누가 신청할 수 있나요?
 
 ### row F-5 / 체류자격 변경 / 점수표
 - manual_type: 사증민원
 - visa_code: F-5
 - visa_name_ko: 영주
 - item_type: score_table
-- section_title: K-STAR 영주(F-5-S1) / 점수제
+- section_title: K-STAR 영주(F-5-S1) / 점수제 평가
 - subtype_or_program: F-5-S1
 - petition_type: 체류자격 변경
 - subsection_type: 점수표
-- applicant_context: |
-    법무부장관 선정 대학의 과학기술분야 석·박사 학위 소지자로서 K-STAR 거주(F-2-7S) 또는 점수제 우수인재 거주(F-2-7) 자격으로 3년 이상 국내에서 계속 체류하며 점수제 요건(90/200점 이상)을 충족하는 사람
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: |
+    가점 활용: 연구 경력 및 실적 등이 다소 미흡하더라도 지방 거주, 한국어 등 추가 가점 취득 시 영주자격 취득 기회 부여
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria: |
+    기본항목 (최대 150점): 학력 30점, 연구 경력 60점, 연구 실적 60점
+    가점항목 (최대 50점): 한국어 능력 10점, 연간소득 10점, 지방 거주 10점, 봉사 10점, 추천 10점
+    학력: 석사 20점, 박사 30점
+    연구경력: 4년이상~5년 60점, 3년이상~4년미만 50점, 2년이상~3년미만 40점, 1년이상~2년미만 30점
+    연구실적: SCI급/KCI급 논문, 국내·외 특허 등록 (단독·공동·발명자 구분, 신청일로부터 5년 이내, 합산 최대 60점)
+    한국어능력: 사회통합프로그램 5단계 및 토픽 5급 최대 10점, 사회통합프로그램 1단계 및 초급 1단계 1점
+    연간소득: 5천만 원 이상 10점, 4천만 원 이상 9점, 3천만 원 이상 8점, 2천5백만 원 이상 7점, 2천만 원 이상 6점, 2천만 원 미만~최저임금 이상 5점
+    추천: 중앙행정기관의 장 10점, 4년제 총장 등 7점, 상장기업의 장 5점
+    봉사: 신청일 기준 3년 내 실적, 150시간 이상 10점, 100시간 이상 7점, 50시간 이상 5점
+    지방 거주·근무(비수도권): 3년 이상 5점, 3년 미만~2년 이상 3점, 2년 미만~1년 이상 1점 (인구감소지역은 5점 가산)
+    감점항목 (최대 10점): 출입국관리법 위반 통고처분 300이상 -10/100~300미만 -7/50~100미만 -5, 형사처벌 전력 벌금형 200이상 -10/200미만 -7
+- table_summary: |
+    K-STAR 영주(F-5-S1) 점수제: 기본 150 + 가점 50 + 감점 최대 -10 = 200점 기준 90점 이상
+- table_rows: |
+    구분 | 기본항목(최대 150점) | 가점항목(최대 50점)
+    학력(30) / 연구경력(60) / 연구실적(60) | 한국어능력(10) / 연간소득(10) / 지방거주(10) / 봉사(10) / 추천(10)
+- inviter_context:
+- recommendation_or_approval:
+- keywords: K-STAR 영주, 점수제, 배점표, 학력, 연구경력, 연구실적, 한국어능력, 지방거주, F-5-S1
+- source_page:
+- source_excerpt: |
+    ❍ (기본 항목) 학력, 연구 경력, 연구 실적으로 구성
+    - (학력) 선정대학의 과학기술분야 석·박사 대상으로 적용되는 것으로 기본적으로 석사 20점, 박사 30점 부여
+    - (연구경력) 4년이상∼5년 60점, 3년이상∼4년미만 50점, 2년이상∼3년미만 40점, 1년이상∼2년미만 30점
+- related_visa_codes:
+- expected_questions: |
+    K-STAR 영주 점수제는 어떻게 점수가 매겨져요?
+    한국어능력 점수는 어떻게 받을 수 있어요?
+    지방에 살면 가점이 있나요?
+    감점 항목은 어떤 게 있나요?
+
+### row F-5 / 체류자격 변경 / 요건
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: visa_rule
+- section_title: K-STAR 영주(F-5-S1) / 자격요건
+- subtype_or_program: F-5-S1
+- petition_type: 체류자격 변경
+- subsection_type: 요건
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    (품행단정) 다음 어느 하나에 해당하지 않을 것
+    - 대한민국 법률 위반 금고 이상의 실형 선고받고 형 집행 종료/면제 5년 미경과
+    - 대한민국 법률 위반 금고 이상의 형 집행유예 선고받고 판결 확정 5년 미경과
+    - 대한민국 법률 위반 벌금형 선고받고 납부일로부터 3년 미경과
+    - 출입국관리법 제7조1항/4항 또는 제12조1항/2항 위반일로부터 5년 미경과
+    - 신청일부터 최근 5년간 출입국관리법 3회 이상 위반(과태료 제외)
+    - 강제퇴거명령 받고 출국한 날부터 7년 미경과 또는 출국명령 받고 출국한 날부터 5년 미경과
+    - 최근 3년간 출입국관리법 위반 500만원 이상 범칙금 처분 또는 합산 범칙금 700만원 이상
+    - 대한민국 법률 위반에 따른 벌금·추징금 등 미납자 (납부 의무 벗어난 후 3년 경과자 제외)
+    - 외국에서 특정강력범죄·협박·공갈·사기·보이스피싱·마약 등 범죄로 형 선고받은 사실 확인
+    (생계유지능력 및 기본소양) 점수제 항목 중 '한국어능력' 및 '연간 소득' 항목 심사로 대체
+    (준법시민교육) 법 위반자 대상 시행 (영주(F-5) 자격 취득 예정자 중 국내법 위반 확인자, 품행단정 결격사유자 제외)
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: K-STAR 영주, 품행단정, 결격사유, 생계유지, 준법시민교육, F-5-S1
+- source_page:
+- source_excerpt: |
+    ❍ 대한민국 법률을 위반하여 금고 이상의 실형의 선고를 받고 그 형의 집행이 종료되거나 집행이 면제된 날부터 5년이 경과되지 않은 사람
+    ❍ 최근 3년간 ｢출입국관리법｣을 위반하여 500만원 이상의 범칙금 처분을 받았거나, 합산한 범칙금 금액이 700만원 이상인 사람
+    (생계유지능력 및 기본소양) K-STAR 영주 점수제 항목 및 점수표[붙임 5]'(라) 한국어능력' 및 '(마) 연간 소득' 항목 심사로 대체
+- related_visa_codes:
+- expected_questions: |
+    K-STAR 영주 받으려면 어떤 자격요건이 있어요?
+    벌금형 받은 적 있으면 영주 신청 못 해요?
+    생계유지능력은 어떻게 심사돼요?
+
+### row F-5 / 체류자격 변경 / 제출서류
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: required_documents
+- section_title: K-STAR 영주(F-5-S1) / 제출서류
+- subtype_or_program: F-5-S1
+- petition_type: 체류자격 변경
+- subsection_type: 제출서류
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    (기본서류)
+    - 신청서, 여권, 외국인등록증, 수수료(수입인지), 체류지 입증서류, 해외범죄경력증명서, 신원보증서
+    (추가서류)
+    - 신청인이 해당하는 점수를 기재한 점수표【붙임 6】
+    - 신청인이 기재한 평가 항목별 점수를 입증하는 서류【붙임 7】
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees: 수수료(수입인지)
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: K-STAR 영주, 신원보증서, 점수표, 평가항목 입증서류, 해외범죄경력증명서, F-5-S1
+- source_page:
+- source_excerpt: |
+    ❍ (기본서류) 신청서, 여권, 외국인등록증, 수수료(수입인지), 체류지 입증서류, 해외범죄경력증명서, 신원보증서
+    ❍ (추가서류)
+    - 신청인이 해당하는 점수를 기재한 점수표【붙임 6】
+    - 신청인이 기재한 평가 항목별 점수를 입증하는 서류【붙임 7】
+- related_visa_codes:
+- expected_questions: |
+    K-STAR 영주 신청할 때 어떤 서류 내요?
+    점수표는 어떻게 작성해서 제출해요?
+    신원보증서도 필요해요?
+
+### row F-2 / 사증발급 / 대상
+- manual_type: 사증민원
+- visa_code: F-2
+- visa_name_ko: 거주
+- item_type: visa_rule
+- section_title: K-STAR 거주의 동반가족(F-2-71) / 범위·발급
+- subtype_or_program: F-2-71
+- petition_type: 사증발급
+- subsection_type: 대상
+- applicant_context: K-STAR 거주 자격자의 동반가족
+- eligibility: |
+    K-STAR 거주·영주 자격을 받은 사람의 배우자 또는 미성년자녀
+    진정한 혼인관계를 유지하고 있는 법률상 배우자
+    주체류자가 친권 및 양육권을 가지고 있는 미성년자녀
+- target_persons: K-STAR 거주(F-2-7S) 자격자의 배우자 및 미성년자녀
+- common_documents:
+- mandatory_documents: |
+    - 신청서, 여권, 외국인등록증, 사진, 수수료, 체류지 입증서류
+    - 가족관계 입증서류
+    - 결핵검진확인서(해당자에 한함)
+    - 해외범죄경력증명서(해당자에 한함)
+- other_documents:
+- requirements:
+- procedure: |
+    사증신청: 거주지 관할 재외공관 / 소득요건 심사 없이 F-2-71(단수, 90일) 발급
+    사증발급인정서 신청: 주체류자의 체류지 관할 출입국·외국인청(사무소·출장소)
+    신청방법: 직접 방문 또는 대한민국비자포털(www.visa.go.kr) 온라인 신청
+    사증발급인정서 발급: 소득요건 심사 없이 F-2-71(단수, 90일)
+- restrictions:
+- exceptions: |
+    소득요건 심사 없이 F-2-71(단수, 90일) 발급
+- fees:
+- duration_or_validity: 단수, 90일 (사증 및 사증발급인정서)
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: 주체류자(K-STAR 거주 자격자)
+- recommendation_or_approval:
+- keywords: K-STAR 동반가족, 배우자, 미성년자녀, 사증발급인정서, 가족관계 입증서류, F-2-71
+- source_page:
+- source_excerpt: |
+    ❍ (범위) K-STAR 거주·영주 자격을 받은 사람의 배우자 또는 미성년자녀
+    - (신청장소) 거주지 관할 재외공관
+    - (사증발급) 소득요건 심사 없이 F-2-71(단수, 90일)
+    - (사증발급인정서 발급) 소득요건 심사 없이 F-2-71(단수, 90일)
+- related_visa_codes: F-2-7S, F-5-S1, F-5-S2
+- expected_questions: |
+    K-STAR 거주로 와있는데 가족도 어떻게 데려와요?
+    배우자 사증발급인정서는 어디서 신청해요?
+    동반가족 사증은 얼마나 머물 수 있어요?
+
+### row F-2 / 체류자격 변경 / 요건
+- manual_type: 사증민원
+- visa_code: F-2
+- visa_name_ko: 거주
+- item_type: visa_rule
+- section_title: K-STAR 거주의 동반가족(F-2-71) / 체류관리
+- subtype_or_program: F-2-71
+- petition_type: 체류자격 변경
+- subsection_type: 요건
+- applicant_context: 단기사증 또는 합법적 체류자격 소지자
+- eligibility: |
+    Ⅱ. K-STAR 거주 자격 요건과 동일하게 적용
+    주체류자의 배우자가 단기사증을 소지하거나 합법적 체류자격을 소지한 경우 혼인관계 등 확인·심사 후 F-2-71로 자격변경 허가
+- target_persons: K-STAR 거주 자격자의 배우자·미성년자녀
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure: |
+    주체류자의 K-STAR 거주 체류자격 신청 시 동반 신청 가능
+    배우자 및 미성년자녀는 주체류자의 체류기간과 동일하게 F-2-71로 자격변경 허가 (주체류자의 체류만료일까지 기간 부여)
+    주체류자가 F-2-7S자격으로 5년 경과 후 점수제 거주(F-2-7), K-STAR 영주(F-5-S1) 또는 기타 취업자격 변경 시 그 변경된 자격에 따라 체류자격변경 허가
+- restrictions: |
+    주체류자가 허가 대상일지라도 배우자 및 미성년자녀가 범죄요건 등 결격사유에 해당하는 경우 불허
+    취업제한 분야 또는 국내 노동시장·사회경제질서에 부정적 영향을 미칠 수 있는 직종 취업 시 체류기간연장 제한 또는 체류허가 취소 가능
+- exceptions:
+- fees:
+- duration_or_validity: 주체류자의 체류기간과 동일
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: 주체류자(K-STAR 거주 F-2-7S)
+- recommendation_or_approval:
+- keywords: K-STAR 동반가족, 체류자격 변경, 혼인관계, 체류기간, 취업제한, F-2-71
+- source_page:
+- source_excerpt: |
+    ❍ Ⅱ. K-STAR 거주 2- 자격 요건과 동일하게 적용
+    ❍ 주체류자의 배우자가 단기사증을 소지하거나 합법적 체류자격을 소지한 경우 혼인관계 등을 확인 및 심사한 후 F-2-71로 체류자격 변경 허가
+    ❍ 주체류자가 허가 대상일지라도 배우자 및 미성년자녀가 범죄요건 등 결격사유에 해당하는 경우 불허
+- related_visa_codes: F-2-7S, F-2-7, F-5-S1
+- expected_questions: |
+    배우자가 단기사증으로 한국 들어왔는데 동반가족 자격으로 바꿀 수 있어요?
+    아이가 결격사유에 걸리면 같이 자격변경 못 받나요?
+    주체류자가 자격 바뀌면 가족 자격도 같이 바뀌나요?
+
+### row F-2 / 체류자격 부여 / 대상
+- manual_type: 사증민원
+- visa_code: F-2
+- visa_name_ko: 거주
+- item_type: visa_rule
+- section_title: K-STAR 거주의 동반가족(F-2-71) / 체류자격 부여
+- subtype_or_program: F-2-71
+- petition_type: 체류자격 부여
+- subsection_type: 대상
+- applicant_context: 국내 출생 미성년자녀
+- eligibility: |
+    국내에서 출생한 K-STAR 거주(F-2-7S)의 미성년자녀
+- target_persons: 국내 출생 K-STAR 거주(F-2-7S)의 미성년자녀
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity: 주체류자의 체류기간과 동일
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: K-STAR 동반가족, 체류자격 부여, 국내 출생, 미성년자녀, F-2-71
+- source_page:
+- source_excerpt: |
+    ❍ (대상) 국내에서 출생한 K-STAR 거주(F-2-7S)의 미성년자녀
+    ❍ (기준) 주체류자의 체류기간과 동일하게 K-STAR의 동반가족(F-2-71) 부여
+- related_visa_codes: F-2-7S
+- expected_questions: |
+    한국에서 아이가 태어났는데 K-STAR 동반가족 자격을 받을 수 있어요?
+    아이 체류기간은 어떻게 정해져요?
+
+### row F-2 / 체류기간 연장 / 기간
+- manual_type: 사증민원
+- visa_code: F-2
+- visa_name_ko: 거주
+- item_type: visa_rule
+- section_title: K-STAR 거주의 동반가족(F-2-71) / 체류기간연장
+- subtype_or_program: F-2-71
+- petition_type: 체류기간 연장
+- subsection_type: 기간
+- applicant_context:
+- eligibility: |
+    주체류자가 자격요건을 모두 갖추고 생계를 같이하는 경우
+- target_persons: K-STAR 거주 동반가족(F-2-71) 배우자·미성년자녀
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: |
+    주체류자가 자격요건을 모두 갖추고 생계를 같이하는 경우 미성년자녀가 성인이 되더라도 만 25세 미만까지 체류기간 연장 허가
+- fees:
+- duration_or_validity: 주체류자의 체류기간과 동일, 미성년자녀는 만 25세 미만까지 연장 가능
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: K-STAR 동반가족, 체류기간 연장, 미성년자녀, 만 25세, F-2-71
+- source_page:
+- source_excerpt: |
+    ❍ 배우자 및 미성년자녀는 주체류자의 체류기간과 동일하게 F-2-71 자격 유지
+    ❍ 주체류자가 자격요건을 모두 갖추고 생계를 같이하는 경우 미성년자녀가 성인이 되더라도 만 25세 미만까지 체류기간 연장 허가
+- related_visa_codes:
+- expected_questions: |
+    K-STAR 동반가족 자녀가 성인이 되면 비자가 어떻게 돼요?
+    25살까지 한국에 머물 수 있나요?
+    배우자 체류기간은 누구 기준으로 정해져요?
+
+### row F-5 / 체류자격 변경 / 대상
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: visa_rule
+- section_title: K-STAR 영주의 동반가족(F-5-S2)
+- subtype_or_program: F-5-S2
+- petition_type: 체류자격 변경
+- subsection_type: 대상
+- applicant_context: K-STAR 영주 자격자의 동반가족
+- eligibility: |
+    Ⅲ. K-STAR 영주 자격 요건과 동일하게 적용
+    점수제 영주자의 배우자·미성년자녀(F-5-18)에 대한 체류지침 적용
+- target_persons: K-STAR 영주(F-5-S1) 자격자의 배우자·미성년자녀
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context: 주체류자(K-STAR 영주)
+- recommendation_or_approval:
+- keywords: K-STAR 영주 동반가족, 배우자, 미성년자녀, 점수제 영주, F-5-S2, F-5-18
+- source_page:
+- source_excerpt: |
+    ❍ Ⅲ. K-STAR 영주 3- 자격 요건과 동일하게 적용
+    ❍ 점수제 영주자의 배우자·미성년자녀(F-5-18)에 대한 체류지침 적용
+- related_visa_codes: F-5-S1, F-5-18
+- expected_questions: |
+    K-STAR 영주 받은 사람의 가족은 어떤 자격이 돼요?
+    영주 동반가족도 영주 자격을 받을 수 있나요?
+
+### row F-5 / 사증발급 / 대상
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: visa_rule
+- section_title: 우수인재 특별귀화 (국적법 제7조 제1항 3호) / 신청 대상
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 대상
+- applicant_context: 우수인재 특별귀화 신청자
+- eligibility: |
+    K-STAR 거주(F-2-7S) 자격 및 K-STAR 영주(F-5-S1)를 거쳐 우수인재 평가기준을 충족한 사람
+    국적심의위원회에서 우수인재 특별귀화에 적합한 것으로 인정한 사람
+    다음 ① ~ ③ 중 하나에 해당:
+    ① 국회사무총장, 법원행정처장, 헌법재판소사무처장 또는 중앙행정기관의 장 등이 추천한 사람
+    ② 재외공관장, 지방자치단체의 장, 4년제 대학의 총장 등 추천권자가 추천하는 사람으로서 법무부장관이 심의에 부친 사람
+    ③ 수상, 실적, 경력 등으로 국제적 권위를 인정받고 있거나 우수인재 가점제도 등을 적용하여 법무부장관이 심의에 부친 사람
+- target_persons: 과학기술분야 우수인재 (K-STAR 트랙 경유)
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: |
+    위 '패스트트랙'과 상관없이, 연구 실적 등이 「국적법 시행령」의 "우수 인재 고시"에서 정한 요건을 충족하는 경우 즉시 특별귀화 가능
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval: |
+    추천권자: 국회사무총장/법원행정처장/헌법재판소사무처장/중앙행정기관의 장
+    재외공관의 장, 지방자치단체의 장, 4년제 대학의 총장
+    대한상공회의소 회장, 전국경제인연합회 회장, 한국무역협회 회장, 중소기업중앙회 회장
+    한국문화예술위원회 위원장, 한국콘텐츠진흥원 원장, 영화진흥위원회 위원장, 대한체육회 회장, 대한장애인체육회 회장
+    공기업/준정부기관/연구개발목적 공공기관의 장
+    다문화도시협의회 회원 도시의 장
+- keywords: 우수인재 특별귀화, 국적법 제7조, 국적심의위원회, K-STAR, 추천권자
+- source_page:
+- source_excerpt: |
+    ❍ K-STAR 거주(F-2-7S) 자격 및 K-STAR 영주(F-5-S1)를 거쳐 우수인재 평가기준을 충족한 사람으로서 국적심의위원회*에서 우수인재 특별귀화에 적합한 것으로 인정한 사람, 다음 ① ~ ③ 중 하나에 해당하는 사람
+    ① 국회사무총장, 법원행정처장, 헌법재판소사무처장 또는 중앙행정기관의 장 등이 추천한 사람
+- related_visa_codes: F-2-7S, F-5-S1
+- expected_questions: |
+    우수인재로 특별귀화 받으려면 누구한테 추천을 받아야 해요?
+    K-STAR 영주 받은 다음에 어떻게 귀화 신청해요?
+    국적심의위원회는 어떤 곳이에요?
+
+### row F-5 / 사증발급 / 요건
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: visa_rule
+- section_title: 우수인재 특별귀화 / 자격요건·절차
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 요건
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    - ｢국적법 시행규칙｣ 제3조(귀화허가 신청서의 서식 및 첨부서류)에 따른 서류 일체
+    - 우수인재 국적신청 상세기술서【붙임 10】 및 증빙자료 일체
+    - 우수인재 가점 항목별 점수표【붙임 11】 및 증빙자료 일체(해당자에 한함)
+- other_documents:
+- requirements: |
+    아래 사항을 모두 충족할 것:
+    국적심의위원회 심의·의결에 따라 '우수인재 특별귀화' 대상으로 적합할 것
+    법령을 준수하는 등 품행 단정의 요건을 갖출 것
+    국어능력과 대한민국의 풍습에 대한 이해 등 대한민국 국민으로서의 기본 소양 갖출 것 (면접 심사 합격 시 인정)
+    귀화 허가가 국가안전보장·질서유지 또는 공공복리를 해치지 아니한다고 법무부장관이 인정할 것
+- procedure: |
+    신청 및 접수 → 국적심의위원회 심의·의결 → 귀화 면접심사 → 귀화·국적회복 허가 → 국적증서 수여 → 외국국적 불행사서약
+- restrictions:
+- exceptions: |
+    요건을 현저히 충족하지 못한 경우 국적심의위원회 심의·의결 전에 불허 가능(「국적법」 제22조 제2항 단서)
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria: 우수인재 가점 항목별 점수표【붙임 11】 적용
+- table_summary: 우수인재 특별귀화 절차 6단계
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 우수인재 특별귀화, 국적심의위원회, 면접심사, 품행단정, 국적증서, 외국국적 불행사서약
+- source_page:
+- source_excerpt: |
+    ❍ 국적심의위원회 심의·의결에 따라 '우수인재 특별귀화' 대상으로 적합할 것
+    ❍ 국어능력과 대한민국의 풍습에 대한 이해 등 대한민국 국민으로서의 기본 소양(素養)을 갖추고 있을 것
+    ❍ ｢국적법 시행규칙｣ 제3조(귀화허가 신청서의 서식 및 첨부서류)에 따른 서류 일체
+- related_visa_codes:
+- expected_questions: |
+    우수인재 특별귀화는 어떻게 진행돼요?
+    면접 심사도 봐야 해요?
+    제출해야 하는 서류는 뭐예요?
+    심의위원회에서 통과 못 하면 어떻게 돼요?
+
+<!-- end chunk: visa_021 -->
+
+
+<!-- vizabridge-normalize v1 chunk: visa_022 hash: 2a8dfe1a7cdb500b lines: 8283-8657 -->
+
+### row F-2 / 체류자격 변경 / 요건
+- manual_type: 사증민원
+- visa_code: F-2
+- visa_name_ko: 거주
+- item_type: visa_rule
+- section_title: 준법시민교육 / F-2 자격변경·연장 적용
+- subtype_or_program:
+- petition_type: 체류자격 변경
+- subsection_type: 요건
+- applicant_context: F-2 자격 변경·연장 예정자 중 국내법 위반 사실 확인자
+- eligibility: |
+    '22.7월부터 거주(F-2)자격 취득 및 연장 예정자, 영주(F-5)자격 취득 예정자를 대상으로 법질서 교육 등 준법시민교육 실시
+    대상: 거주(F-2)자격 변경 및 연장 허가 예정자 중 국내법 위반 사실이 확인된 자
+    법 위반 기간: 자격변경 신청 시 신청일로부터 10년 이내, 체류기간 연장 시 신청일로부터 5년 이내
+- target_persons: 거주(F-2)자격 변경 및 연장 허가 예정자 중 국내법 위반 사실 확인자
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    교육이수 여부 확인: 이민통합지원센터 업무담당자가 교육이수자에 대한 이수확인서 발급, ICRM 참고사항에 '준법시민교육 교육이수 완료' 기재
+    체류담당자는 반드시 '교육이수 완료' 확인 후 자격변경 및 연장 허가
+    지침 시행 후 준법시민교육 대상자가 최초 연장 신청한 경우 다음 연장 시까지 준법시민교육 이수하도록 안내 (이후 2회부터 법 위반사항 적발 시 이수해야 연장 가능)
+- procedure: |
+    교육신청: 사회통합정보망(www.socinet.go.kr)에서 온라인 신청
+- restrictions:
+- exceptions: |
+    교육 제외 대상 (교육참여 불요):
+    1) 과거 '준법시민교육'을 이수한 자로서 추가 법위반 사실이 없는 자
+    2) 법 위반 횟수가 1회 이하이며 불기소처분 또는 100만 원 이하의 벌금·범칙금·과태료를 부과받은 자(처분·부과 면제 포함)
+    사건종결일(불기소처분일, 벌금 등 납부일)부터 위반기간을 계산하여 10년 경과(자격변경 신청자) 및 5년 경과(체류기간 연장 신청자) 시 제외
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 준법시민교육, 법질서 교육, 거주 자격변경, 사회통합정보망, F-2
+- source_page:
+- source_excerpt: |
+    '22.7월부터 거주(F-2)자격 취득 및 연장 예정자, 영주(F-5)자격 취득 예정자를 대상으로 법질서 교육 등 준법시민교육 실시
+    1-1) 대상 : 거주(F-2)자격 변경 및 연장 허가 예정자 중 국내법 위반 사실*이 확인된 자
+    1) 과거 "준법시민교육"을 이수한 자로서 추가 법위반 사실이 없는 자
+- related_visa_codes: F-5
+- expected_questions: |
+    거주 자격으로 바꾸려는데 준법시민교육은 누가 받아야 해요?
+    법 위반 이력이 있으면 무조건 교육 받아야 해요?
+    교육 신청은 어디서 해요?
+
+### row F-5 / 체류자격 변경 / 요건
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: visa_rule
+- section_title: 준법시민교육 / F-5 자격변경 적용
+- subtype_or_program:
+- petition_type: 체류자격 변경
+- subsection_type: 요건
+- applicant_context: F-5 자격변경 예정자 중 최근 10년 이내 국내법 위반 사실 확인자
+- eligibility: |
+    영주(F-5)자격 변경 허가 예정자 중 신청일로부터 최근 10년 이내 국내법 위반 사실이 확인된 자
+- target_persons: 영주(F-5)자격 변경 허가 예정자 중 국내법 위반 확인자
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure: |
+    교육신청: 사회통합정보망(www.socinet.go.kr)에서 온라인 신청
+- restrictions:
+- exceptions: |
+    교육 제외 대상 (교육참여 불요):
+    1) 과거 '준법시민교육'을 이수한 자로서 추가 법위반 사실이 없는 자
+    2) 법 위반 횟수가 1회 이하이며 불기소처분 또는 100만원 이하의 벌금·범칙금·과태료를 부과받은 자(처분·부과 면제 포함)
+    사건종결일(불기소처분일, 벌금 등 납부일)부터 위반 기간을 계산하여 10년 경과 시 제외
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 준법시민교육, 영주 자격변경, 법질서 교육, 위반 기간 10년, F-5
+- source_page:
+- source_excerpt: |
+    1-2) 대상 : 영주(F-5)자격 변경 허가 예정자 중 신청일로부터 최근 10년 이내 국내법 위반 사실이 확인된 자. 다만, 아래에 해당하는 자는 제외(교육참여 불요)
+    1) 과거 "준법시민교육"을 이수한 자로서 추가 법위반 사실이 없는 자
+- related_visa_codes: F-2
+- expected_questions: |
+    영주 자격변경 신청하는데 준법시민교육은 어떤 경우 받아야 해요?
+    벌금 100만원 이하면 면제되나요?
+    영주 신청자는 몇 년 이내 위반이 문제가 되나요?
+
+### row F-2 / 체류자격 변경 / 제한
+- manual_type: 사증민원
+- visa_code: F-2
+- visa_name_ko: 거주
+- item_type: restriction
+- section_title: 우수인재·K-STAR 거주 / 취업제한 분야
+- subtype_or_program:
+- petition_type: 체류자격 변경
+- subsection_type: 제한
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions: |
+    「사행행위 등 규제 및 처벌 특례법」 제2조제1항제1호 및 동법 시행령 제1조의2 등에서 규정하고 있는 사행행위 영업
+    「식품위생법」 제36조 및 동법시행령 제21조제8호 등에서 규정하고 있는 단란주점영업, 유흥주점영업
+    「풍속영업의 규제에 관한 법률」 제2조 및 동법시행령 제2조 등에서 규정하고 있는 풍속영업 중 선량한 풍속에 반하는 영업
+    - 단란주점영업 및 유흥주점영업
+    - 불특정인 사이의 신체적 접촉 또는 은밀한 부분의 노출 등 성적 행위가 이루어지는 영업으로 청소년 출입·고용금지업소
+    - 청소년유해매체물 및 청소년유해약물 등을 제작·생산·유통하는 청소년 출입·고용금지업소
+    기타 체류자의 신분을 벗어난 활동 및 법무부장관이 취업을 제한할 필요가 있다고 인정되는 분야
+    청소년 출입·고용금지업소 결정 고시[성평등가족부고시 제2025-1호, 2025. 12. 1., 일부개정] 영업 예시: 키스방, 대딸방, 전립선마사지, 유리방, 성인PC방, 휴게텔, 인형체험방 등
+- exceptions: |
+    룸카페 등 장소 제공을 주된 목적으로 하는 영업의 경우 벽면 투명·출입문 투명·잠금장치 없음·가림막 없음 4요건 충족 시 청소년 출입·고용금지업소에서 제외
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 취업 제한 분야, 사행행위 영업, 유흥주점, 풍속영업, 청소년 출입·고용금지업소
+- source_page:
+- source_excerpt: |
+    〇 「사행행위 등 규제 및 처벌 특례법」 제2조제1항제1호 및 동법 시행령 제1조의2 등에서 규정하고 있는 사행행위 영업
+    〇 「식품위생법」 제36조 및 동법시행령 제21조제8호 등에서 규정하고 있는 단란주점영업, 유흥주점영업
+    【영업 예시】 키스방, 대딸방, 전립선마사지, 유리방, 성인PC방, 휴게텔, 인형체험방 등
+- related_visa_codes: F-5
+- expected_questions: |
+    거주 비자 받으면 어디서 일하면 안 돼요?
+    유흥주점이나 풍속업소에서 일하면 안 되나요?
+    룸카페는 무조건 안 되는 건가요?
+
+### row F-2 / 체류자격 변경 / 제출서류
+- manual_type: 사증민원
+- visa_code: F-2
+- visa_name_ko: 거주
+- item_type: required_documents
+- section_title: 해외범죄경력증명서 제출기준
+- subtype_or_program:
+- petition_type: 체류자격 변경
+- subsection_type: 제출서류
+- applicant_context: 최근 5년 이내 연속 6개월 이상 해외체류 이력자
+- eligibility:
+- target_persons: 신청일 기준 최근 5년 이내 연속하여 6개월 이상 해외 체류 사실이 있는 사람
+- common_documents:
+- mandatory_documents: |
+    - 해당 체류국의 범죄경력증명서
+    - 최근 5년 이내 6개월 이상 체류 국가가 2개 이상일 경우 모두 제출
+    - 범죄경력증명서 원본과 공증된 번역본 (번역자 인적사항 및 연락처 기재, 신분증 사본 첨부)
+- other_documents:
+- requirements: |
+    범죄경력증명서 요건:
+    발급 대상 국가에 소재하는 권한 있는 기관이 발급한 공적 문서로서, 해당 국가에서의 모든 범죄경력이 포함되어야 함
+    아포스티유 협약 가입국가: 발급 국가의 아포스티유 확인
+    아포스티유 협약 미가입국가: 발급 국가 주재 대한민국 공관의 영사 확인
+    유효기간: 발급일로부터 6개월 이내 (발급일 이후 6개월 이상 해외 체류한 사실이 없는 경우 유효한 것으로 인정)
+- procedure:
+- restrictions:
+- exceptions: |
+    제출 면제 기준:
+    - 신청일 기준 만 14세 미만인 사람
+    - 대한민국 출생 또는 만 14세 미만에 입국하여 만 14세 이후 해외에서 6개월 이상 연속 체류하지 않은 사람
+    - 사증 발급 시 해외범죄경력증명서를 제출하고 사증 발급일로부터 3개월 이내 국내에서 체류자격변경을 신청하는 사람
+    - 재외공관 사증발급 또는 국내 자격변경 시 범죄경력증명서 제출한 사람(면제대상 포함)으로서 국내 체류허가 기간 중 해외 6개월 이상 체류하지 않은 사람
+    - 신청일까지 국내에서 10년 이상 계속하여 합법 체류한 사람 (6개월 이상 연속 해외 체류 없어야 함)
+    - 범죄경력증명서 발급대상 국가기준에 따라 발급 제한 연령이거나 거주요건 미충족으로 발급이 어려운 사람 (소명 필요, 예: 만 18세 미만 캐나다인 등)
+    - 천재지변, 전쟁 등으로 범죄경력증명서 발급이 불가능하거나 그에 준하는 사정이 있다고 재외공관의 장 또는 출입국·외국인청장 등이 인정하는 사람
+    개별 사안에 따라 해외범죄경력서 징구 필요성이 인정되는 경우, 해당 해외범죄경력서 제출
+- fees:
+- duration_or_validity: 발급일로부터 6개월 이내
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 해외범죄경력증명서, 6개월 이상 해외 체류, 아포스티유, 영사확인, 면제 기준
+- source_page:
+- source_excerpt: |
+    〇 신청일 기준 최근 5년 이내 연속하여 6개월 이상 해외 체류 사실이 있는 경우 해당 체류국의 범죄경력증명서 제출
+    - (아포스티유 협약 가입국가) 발급 국가의 아포스티유 확인
+    - (아포스티유 협약 미가입국가) 발급 국가 주재 대한민국 공관의 영사 확인
+    〇 발급일로부터 6개월 이내
+- related_visa_codes: F-5
+- expected_questions: |
+    해외에 6개월 이상 살았다 왔는데 범죄경력증명서를 꼭 내야 해요?
+    여러 나라에서 산 적 있으면 다 제출해요?
+    14살 미만은 면제되나요?
+    한국에서 10년 이상 산 사람도 내야 하나요?
+
+### row F-5 / 체류자격 변경 / 점수표
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: score_table
+- section_title: K-STAR 영주(F-5-S1) 점수제 세부 배점
+- subtype_or_program: F-5-S1
+- petition_type: 체류자격 변경
+- subsection_type: 점수표
+- applicant_context:
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: |
+    석·박사통합과정에서 석사과정 수료 및 박사과정 재학중으로 거주(F-2-7S) 자격을 받은 유학생은 통합과정 박사과정 학위 취득해야 함
+    소득금액증명 제출 불가능한 경우(최근 취업 등): 예외적으로 고용계약서상의 연봉 상담 금액으로 연간소득 산정
+    소득 소명서류 미제출, 미취업자, 최저임금 미만자는 0점
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria: |
+    평가항목별 배점(최대 총 200점) ※ 총 200점 중 90점 획득 필요
+    [기본 항목 최대 150점]
+    가. 학력 (최대 30점): 박사 30 / 석사 20 (법무부장관 선정 K-STAR 비자트랙 참여대학 32개교 학위증, 수료 및 명예 석·박사 제외)
+    나. 연구경력 (최대 60점): 4년이상~5년 60 / 3년이상~4년미만 50 / 2년이상~3년미만 40 / 1년이상~2년미만 30 (신산업·첨단기술분야 및 IT기업, 국가 연구기관, 산학협력단, 기업부설연구소 등 연구원, postdoc 포함, 최근 5년 내 합산, 1년 이상 제출 경력 없는 경우 0점)
+    다. 연구실적 (최대 60점): 논문 SCI/SSCI/A&HCI 단독·교신저자 20점/편, 공동저자 10점/편 (KCI급은 각 10/5); 특허 단독 20/건, 공동 10/건, 발명자 5/건 (5년 이내, 논문·특허 합산 최대 60점)
+    [가점 항목 최대 50점]
+    라. 한국어능력·사회통합프로그램 (최대 10점): 고급 TOPIK 5급 이상/사통 5단계 10, 4급/4단계 8, 3급/3단계 6, 2급/2단계 5, 1급/1단계 1
+    마. 연간소득 (최대 10점): 5천만원 이상 10, 4천만원 이상 9, 3천만원 이상 8, 2천5백 이상 7, 2천만원 이상 6, 2천만원 미만~최저임금 이상 5 (전년도 소득금액증명 기준)
+    바. 추천 (최대 10점): 중앙행정기관의 장 등 10, 4년제 총장 등 7, 상장기업의 장 등 5
+    바. 봉사 (최대 10점): 150시간 이상 10, 100시간 이상 7, 50시간 이상 5 (신청일 기준 최근 1~3년 이내 국내 봉사실적, 1365자원봉사포털·VMS 인증)
+    바. 지방 거주·근무 비수도권 (최대 10점): 3년 이상 5, 3년 미만~2년 이상 3, 2년 미만~1년 이상 1; 인구감소지역은 5점 가산
+    [감점 항목 최대 10점]
+    출입국관리법 통고처분: 300 이상 -10, 100~300 미만 -7, 50~100 미만 -5 (신청일로부터 5년 이내)
+    형사처벌 전력 벌금형: 200 이상 -10, 100~200 미만 -7, 200 미만 -5 (신청일로부터 3년 기준, 3년 이내 300만원 이상 벌금형/벌금형 이상 형사처벌은 결격사유)
+- table_summary: |
+    K-STAR 영주(F-5-S1) 점수제 - 기본 150 + 가점 50 - 감점 최대 10 = 최대 200점, 90점 이상 획득 필요
+- table_rows: |
+    학력 박사 30 / 석사 20
+    연구경력 60-50-40-30 (4년이상~5년 / 3년~4년 / 2년~3년 / 1년~2년)
+    연구실적 논문 단독·교신 20점/편(SCI), 공동 10/편 / 특허 단독 20, 공동 10, 발명자 5/건
+    한국어능력 10-8-6-5-1 (고급-중급-초급)
+    연간소득 10-9-8-7-6-5
+    지방거주 비수도권 5-3-1
+    감점 통고처분 -10/-7/-5, 벌금형 -10/-7/-5
+- inviter_context:
+- recommendation_or_approval:
+- keywords: K-STAR 영주, 점수제 200점, 90점 획득, 기본 150점, 가점 50점, 감점 10점, F-5-S1
+- source_page:
+- source_excerpt: |
+    (1) 평가항목별 배점(최대 총 200점) ※ 총 200점 중 90점 획득
+    가. 학력(최대 30점) — 박사 30 / 석사 20
+    나. 연구경력(최대 60점) — 4년이상∼5년 60 / 3년이상∼4년미만 50 / 2년이상∼3년미만 40 / 1년이상∼2년미만 30
+    라. 한국어능력·사회통합프로그램 이수(최대 10점) — 고급 10 / 중급 8·6 / 초급 5·1
+- related_visa_codes:
+- expected_questions: |
+    K-STAR 영주 점수표 세부 배점은 어떻게 매겨져요?
+    논문 한 편당 몇 점인가요?
+    봉사 시간은 어떻게 인정돼요?
+    소득이 최저임금 밑이면 점수가 어떻게 돼요?
+
+### row F-5 / 체류자격 변경 / 제출서류
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: required_documents
+- section_title: K-STAR 영주 점수제 / 평가항목별 입증서류
+- subtype_or_program: F-5-S1
+- petition_type: 체류자격 변경
+- subsection_type: 제출서류
+- applicant_context: K-STAR 영주 신청자
+- eligibility:
+- target_persons:
+- common_documents:
+- mandatory_documents: |
+    [공통]
+    - 학력: 학위취득증명서 등
+    - 연구경력: 경력증명, 재직증명, 계약서 등 (postdoc 및 연구 개발 등 경력 폭넓게 인정)
+    - 연구실적: 학술지 사본 (Web of Science 인용데이터베이스 검색)
+    - 기본소양: 한국어능력시험(TOPIK) 성적표 또는 사회통합프로그램 이수증 (사회통합프로그램 이수증은 사회통합정보망에서 확인하므로 제출 불요)
+    - 연간소득:
+      · 근로소득만 있는 경우: 소득금액증명원(근로소득자용)
+      · 사업소득만 있는 경우: 소득금액증명원(종합소득세 신고자용)
+      · 근로소득과 사업소득 모두 있는 경우: 소득금액증명원(근로소득자용) + 소득금액증명원(종합소득세 신고자용) + 종합소득세·농어촌특별세 과세표준확정신고 및 납부계산서
+      · 상장법인 취업(예정)자로서 소득금액증명 제출이 불가한 경우: 연봉이 기재된 고용계약서
+    [가점]
+    - 지방거주·근무: 주소지 입증자료 (ICRM상의 외국인등록기록 확인)
+    - 추천: 공문 또는 기관 직인이 날인된 추천서
+    - 봉사: 1365자원봉사포털 또는 VMS 출력 서류 등
+    [감점]
+    - 국내법 위반: 제출 불요 (경찰청 온라인범죄조회시스템, 필요시 관련 서류 제출 요구)
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: |
+    사회통합프로그램 이수증은 사회통합정보망에서 확인하므로 제출 불요
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: K-STAR 영주 입증서류, 학위취득증명서, 경력증명, 소득금액증명원, 봉사 인증, F-5-S1
+- source_page:
+- source_excerpt: |
+    〇 근로소득만 있는 경우: 소득금액증명원(근로소득자용)
+    〇 사업소득(자영업자, 사업자 등)만 있는 경우: 소득금액증명원(종합소득세 신고자용)
+    〇 상장법인 취업(예정)자로서 소득금액증명 제출이 불가한 경우: 연봉이 기재된 고용계약서 제출
+    봉사 - 1365자원봉사포털(www.1365.go.kr) 또는 사회복지자원봉사 인증관리시스템(www.vms.or.kr)을 통해 출력된 서류 등
+- related_visa_codes:
+- expected_questions: |
+    K-STAR 영주 점수 입증할 때 어떤 서류 내요?
+    연구실적은 어떻게 증명해요?
+    소득은 사업·근로 다 있으면 서류 어떻게 챙겨요?
+    봉사 점수는 어디서 발급받은 서류가 인정돼요?
+
+### row F-5 / 사증발급 / 대상
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: visa_rule
+- section_title: 우수인재 특별귀화 평가기준 / 저명인사
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 대상
+- applicant_context: 저명인사 우수인재
+- eligibility: |
+    ① 전직 국가원수, 정부 수반 및 각료급 이상, 전직 국제기구 대표 등
+    ② 노벨상, 퓰리처상, 괴테상, 공쿠르상, 맨부커상, 필즈상, 튜링상, 올림픽 동메달 이상 수상자 등
+- target_persons: 전직 국가원수·각료급, 노벨상 등 국제 권위 수상자
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: 소득요건 없음
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 우수인재 특별귀화, 저명인사, 노벨상, 전직 국가원수, 국제기구 대표
+- source_page:
+- source_excerpt: |
+    ① 전직 국가원수, 정부 수반 및 각료급 이상, 전직 국제기구 대표 등
+    ② 노벨상, 퓰리처상, 괴테상, 공쿠르상, 맨부커상, 필즈상, 튜링상, 올림픽 동메달 이상 수상자 등
+- related_visa_codes:
+- expected_questions: |
+    저명인사로 한국 귀화 신청하려면 어떤 자격이 있어야 해요?
+    노벨상 수상자도 우수인재 귀화 대상이에요?
+
+### row F-5 / 사증발급 / 대상
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: visa_rule
+- section_title: 우수인재 특별귀화 평가기준 / 학술분야 연구실적 우수자
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 대상
+- applicant_context: 학술분야 연구실적 우수자
+- eligibility: |
+    ① 국내·외 4년제 대학 부교수 이상으로 1년 이상 재직 + 최근 5년 이내 SCI/SSCI/A&HCI 1편 이상 또는 KCI 2편 이상 또는 권위 있는 저널·학술지·학술대회 2회 이상 발표
+    ② 국내·외 4년제 대학 교원(조교수·강사)으로 3년 이상 재직 + 최근 5년 이내 SCI/SSCI/A&HCI 3편 이상 또는 KCI 5편 이상 또는 권위 있는 저널·학술지·학술대회 5회 이상 발표 (외국국적동포는 2년 이상 경력)
+    ③ 최근 3년 이내 300대 대학(QS, THE 지표) 2년 이상 강의 경력 + 최근 5년 이내 SCI/SSCI/A&HCI 3편 이상 또는 KCI 5편 이상 또는 권위 있는 저널·학술지·학술대회 5회 이상 발표 (외국국적동포는 500대 대학)
+    ④ 국내 학술분야(인문·정치·사회·경제·과학) 국가 연구기관, 공공기관 지정 연구기관, 대학부설 산학협력단·연구소(과학 분야 한정), 기업부설연구소(과학 분야 한정) 연구원 3년 이상 + 최근 5년 이내 SCI/SSCI/A&HCI 3편 이상 또는 KCI 5편 이상 또는 권위 있는 저널·학술지·학술대회 5회 이상 발표 (외국국적동포는 2년 이상)
+    【패스트트랙 특례】
+    ⑤ 우수인재 패스트트랙 따라 예비 우수인재로서 거주(F-2) 자목 자격 취득 후 점수제 영주(F-5) 자격 취득자 중 SCI/SSCI/A&HCI 3편 이상 또는 KCI 5편 이상 또는 2편 이상의 국내·외 특허 등록 실적
+- target_persons: 4년제 대학 교원, 연구기관 연구원, 패스트트랙 영주 취득자 중 연구실적 우수자
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements:
+- procedure:
+- restrictions:
+- exceptions: 소득요건 없음
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 우수인재 특별귀화, 학술분야, 부교수, SCI, KCI, 패스트트랙
+- source_page:
+- source_excerpt: |
+    ① 국내·외 4년제 대학에서 부교수 이상*으로 1년 이상 재직한 경력이 있거나 재직 중인 사람으로서 최근 5년 이내 SCI, SSCI, A&HCI 등에 등재된 학술지에 1편 이상 논문 게재 또는 KCI 등재된 학술지 등에 2편 이상 논문 게재
+    【패스트트랙 특례】
+    ⑤ 우수인재 패스트트랙에 따라 예비 우수인재로서 출입국관리법 시행령 별표 1의2 24.거주(F-2) 자목 자격을 취득하였다가 점수제에 따른 영주(F-5) 자격을 취득한 자로서, SCI, SSCI, A&HCI 등에 등재된 학술지에 3편 이상 논문 게재
+- related_visa_codes: F-2
+- expected_questions: |
+    학술분야 연구원인데 우수인재 귀화 어떻게 신청해요?
+    논문 몇 편 정도 있어야 인정돼요?
+    부교수 외에 강사도 신청 가능해요?
+
+### row F-5 / 사증발급 / 대상
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: visa_rule
+- section_title: 우수인재 특별귀화 평가기준 / 문화·예술·스포츠 우수능력자
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 대상
+- applicant_context: 문화·예술·스포츠 분야 우수능력자
+- eligibility: |
+    [문화·예술 분야 우수능력자 - 아래 5개 중 2개 이상 충족]
+    ① 자신이 속한 분야에서 뛰어난 능력을 인정받아 국내·외 공신력 있는 단체·기관으로부터 수상 경력
+    ② 인지도 높은 저명 인사 심사를 통해 뛰어난 성과 이룬 사람만 가입할 수 있는 협회의 회원
+    ③ 전문출판물 또는 주요 대중매체에 자신의 우수한 재능 기사 게재 또는 학술기사 게재 경력
+    ④ 공신력 있는 전시회·박람회·경연대회·영화제 등에서 다른 사람 작품 심사하거나 심사위원단 참여 경력
+    ⑤ 국제적 권위있는 예술 전시회·박람회·공연·영화제·음악제 등에서 작품 전시·공연·수상 경력 또는 국제 권위 출판사·음반사와 계약 체결
+    [스포츠 분야 우수능력자 - 아래 6개 중 2개 이상 충족]
+    ⑤ 국제 권위 체육행사(올림픽, 월드컵 축구 U대회 포함, 세계선수권대회, 페럴림픽 등) 출전 경력 선수 또는 지도자
+    ⑥ 최근 3년 이내 국제 권위 체육대회 개인전 3위 이내, 단체전 8강 이내 입상, 또는 PGA/LPGA 등 20위 이내
+- target_persons: 문화·예술·스포츠 분야 국제급 수상자·심사위원·선수
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    소득요건: 일반외국인 GNI 2배 이상, 외국국적동포 GNI 1.5배 이상
+    또는 상기 기준에 상당하는 흥행수익, 출판, 음반판매, 각종 수상 등 상업적 성공 입증서류
+    대한장애인체육회 회장의 추천을 받은 우수인재(장애인)는 외국국적동포 기준 적용
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval: 대한장애인체육회 회장 추천 시 외국국적동포 기준 적용
+- keywords: 우수인재 특별귀화, 문화·예술, 스포츠, 올림픽, 페럴림픽, 상업적 성공
+- source_page:
+- source_excerpt: |
+    ⑤ 국제적으로 권위있는 예술 전시회, 박람회, 공연, 영화제, 음악제 등에서 작품을 전시, 공연 또는 수상한 경력이 있는 자 또는 국제적으로 권위 있는 출판사, 음반사 등과 계약을 체결한 사람
+    ⑤ 국제적으로 권위 있는 체육행사, 대회 등[예, 올림픽, 월드컵 축구(U대회 포함), 세계(주니어)선수권대회, 월드컵 대륙별·간(주니어)국제 대회, 페럴림픽]에 출전한 경력이 있는 선수 또는 지도자
+    일반외국인: GNI 2배 이상 / 외국국적동포: GNI 1.5배 이상
+- related_visa_codes:
+- expected_questions: |
+    예술가인데 우수인재 귀화 자격이 돼요?
+    올림픽 선수도 신청 가능한가요?
+    소득 요건은 얼마나 돼야 해요?
+    장애인 운동선수는 어떻게 적용돼요?
+
+### row F-5 / 사증발급 / 대상
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: visa_rule
+- section_title: 우수인재 특별귀화 평가기준 / 기업 근무자·외투기업 근무자
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 대상
+- applicant_context: 국내·외 기업 근무자, 외투기업 근무자
+- eligibility: |
+    ① FORTUNE, ECONOMIST 등 세계 유수 경제전문지가 최근 3년 이내 선정한 세계 300대 기업에서 3년 이상 근무 + 「독점규제 및 공정거래에 관한 법률」 적용 대기업 사내이사로 상시 근무 또는 근무 예정 확정 (외국국적동포는 500대 기업에서 1년 이상)
+    ② 세계 300대 기업 3년 이상 근무 + 「중견기업 성장촉진 및 경쟁력 강화에 관한 특별법」 적용 중견기업 사내이사 (외국국적동포는 500대 기업 2년 이상)
+    ③ 상시근로자 수 100인 이상 및 자본금 80억 원 초과 국내 기업에서 3년 이상 사내이사 이상 근무 (외국국적동포는 2년 이상)
+    ④ 3년간 대외수출 실적 연평균 미화 500만 달러 이상인 개인사업자·법인 대표 (중소기업기본법 적용 중소기업, 실질 경영주) (외국국적동포는 미화 200만 달러 이상)
+    ⑤ 외국인투자촉진법상 미화 50만달러 이상 투자한 외국인투자기업 대표이사 이상, 국내 3년 이상 거주, 납세실적 3억원 이상, 국민 30명 이상 고용
+- target_persons: 세계 300대 기업·국내 대기업·중견기업 임원, 수출 실적 기업 대표, 외국인투자기업 대표
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    소득요건: 일반외국인 GNI 2배 이상, 외국국적동포 GNI 1.5배 이상
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 우수인재 특별귀화, 세계 300대 기업, 사내이사, 외국인투자기업, 수출 실적
+- source_page:
+- source_excerpt: |
+    ① FORTUNE, ECONOMIST 등 세계 유수 경제전문지가 최근 3년 이내 선정한 세계 300대 기업에서 3년 이상 근무한 경력이 있는 사람으로서 「독점규제 및 공정거래에 관한 법률」을 적용받는 대기업에서 사내이사로 상시 근무하거나 근무 예정이 확정된 사람
+    ⑤ 「외국인투자촉진법」상 미화 50만달러 이상 투자한 외국인투자기업(개인 또는 법인)의 대표이사 이상의 직으로 국내 3년 이상 거주하고 납세실적 3억원 이상, 국민 30명 이상 고용하고 있는 사람
+- related_visa_codes:
+- expected_questions: |
+    대기업 임원인데 우수인재 귀화 어떻게 신청해요?
+    외국인투자기업 대표는 어떤 조건이 필요해요?
+    중소기업 사장도 가능해요?
+
+### row F-5 / 사증발급 / 대상
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: visa_rule
+- section_title: 우수인재 특별귀화 평가기준 / 신산업·첨단기술·지식재산권·전문분야·국제기구
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 대상
+- applicant_context: 신산업·첨단기술 분야 근무자 등 기타 우수인재
+- eligibility: |
+    [6. 신산업·첨단기술 분야 근무자]
+    신산업 분야(시스템반도체, 바이오헬스, 미래차, 인공지능 등) 또는 첨단기술 분야(신소재, IT, e-business, BT, NT, 수송기계, 환경·에너지, 디지털가전, 융·복합산업, 소프트웨어)에서 2년 이상 경력자 (외국국적동포 1년 이상) — 국내 소재 기업·연구기관 고용(예정)
+    [7. 신산업·첨단기술·과학 분야 원천기술 보유자]
+    상업화되지 않았으나 세계수준의 원천기술 보유자
+    [8. 국내·외 지식재산권 보유자]
+    국내·외 지식재산권(특허권·실용신안권·디자인권) 보유 + 특허권 등으로 인한 총 소득 1억원 이상 (양도 수입 포함)
+    [9. 전문분야 특별한 지식·기술 보유자]
+    의사·변호사·회계사·기술사 등 전문자격 소지자로 국내 3년 이상 체류 + 해당 분야에서 근무 중 또는 근무 예정 확정
+    [10. 국제기구 등 근무경력자]
+    UN·WHO·OECD·IAEA·UNESCO 등 국제기구에서 10년 이상 근무 경력 또는 이에 준하는 자격으로 활동 경력이 대한민국 국익에 기여
+- target_persons: 신산업·첨단기술 근무자, 원천기술 보유자, 지식재산권 보유자, 전문자격사, 국제기구 근무자
+- common_documents:
+- mandatory_documents:
+- other_documents:
+- requirements: |
+    소득요건:
+    - 신산업·첨단기술 분야 근무자: 일반외국인 GNI 2배 이상, 외국국적동포 GNI 1.5배 이상
+    - 원천기술 보유자: 없음
+    - 지식재산권 보유자: 특허권 등으로 인한 총 소득 1억원 이상
+    - 전문분야 자격사: 일반외국인 GNI 2배 이상, 외국국적동포 GNI 1.5배 이상
+    - 국제기구 근무자: 없음
+- procedure:
+- restrictions:
+- exceptions:
+- fees:
+- duration_or_validity:
+- quota_or_limit:
+- score_criteria:
+- table_summary:
+- table_rows:
+- inviter_context:
+- recommendation_or_approval:
+- keywords: 우수인재 특별귀화, 신산업, 첨단기술, 원천기술, 지식재산권, 전문자격, 국제기구
+- source_page:
+- source_excerpt: |
+    신산업 분야 또는 첨단기술 분야에서 2년 이상 경력이 있는 사람으로서 국내소재 기업 또는 연구기관에 고용된 사람
+    * 신산업 분야 : 시스템반도체, 바이오헬스, 미래차, 인공지능 등
+    ** 첨단기술 분야: 신소재분야, IT, e-business, BT, NT, 수송기계, 환경·에너지, 디지털가전, 융·복합산업, 소프트웨어
+    국내·외 지식재산권(특허권, 실용신안권, 디자인권)을 보유하고 특허권 등으로 인한 총 소득이 1억원 이상인 사람
+    UN, WHO, OECD, IAEA, UNESCO 등의 국제기구에서 10년 이상 근무한 경력이 있거나 이에 준하는 수준의 자격을 갖춘 자
+- related_visa_codes:
+- expected_questions: |
+    AI나 반도체 같은 첨단기술 분야는 몇 년 경력 있어야 우수인재 귀화 돼요?
+    원천기술만 있어도 귀화 신청할 수 있나요?
+    특허 보유자는 소득 조건이 어떻게 돼요?
+    의사나 변호사도 우수인재 귀화 대상이에요?
+    UN 같은 국제기구 출신은 어떤 조건이에요?
+
+<!-- end chunk: visa_022 -->
+
+
+<!-- vizabridge-normalize v1 chunk: visa_023 hash: 5ccac54298e93b62 lines: 8658-8869 -->
+
+### row F-5 / 사증발급 / 점수표
+- manual_type: 사증민원
+- visa_code: F-5
+- visa_name_ko: 영주
+- item_type: score_table
+- section_title: 우수인재 가점 항목별 점수표 / 종합 배점
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 점수표
+- applicant_context: 우수인재 특별귀화 가점 신청자
 - eligibility:
 - target_persons:
 - common_documents:
@@ -9170,63 +12113,59 @@
 - duration_or_validity:
 - quota_or_limit:
 - score_criteria: |
-    총 200점 만점(기본 150점 + 가점 50점), 90점 이상 시 영주자격 취득
-    기본항목(150점):
-    - 학력: 30점 (석사 20점, 박사 30점)
-    - 연구경력: 60점 (4년 이상~5년 60점, 3년~4년 50점, 2년~3년 40점, 1년~2년 30점. 박사후연구원 등 계약직 1년 이상 인정)
-    - 연구실적: 60점 (SCI급/KCI급 논문 차등 부여, 국내·외 특허 등록 단독·공동·발명자 구분 건당 점수. 신청일로부터 5년 이내 합산 최대 60점)
-    가점항목(50점):
-    - 한국어능력: 10점 (사회통합프로그램 5단계 및 TOPIK 5급 최대 10점, 1단계 1점부터)
-    - 연간소득: 10점 (5천만 원 이상 10점, 4천만 원 9점, 3천만 원 8점, 2천5백만 원 7점, 2천만 원 6점, 최저임금 이상 5점)
-    - 지방거주(비수도권): 10점 (3년 이상 5점, 2년 이상 3점, 1년 이상 1점. 인구감소지역은 5점 가산)
-    - 봉사: 10점 (3년 내 매년 50시간 이상 실적, 150시간 이상 10점, 100시간 이상 7점, 50시간 이상 5점)
-    - 추천: 10점 (중앙행정기관의 장 추천 10점, 4년제 총장 등 7점, 상장기업의 장 5점)
-    감점항목(최대 10점):
-    - 출입국관리법 위반 통고처분 300만 원 이상 -10점, 100만~300만 미만 -7점, 50만~100만 미만 -5점
-    - 형사처벌 전력 벌금형 200만 원 이상 -10점, 200만 미만 -5점(신청일로부터 3년 기준)
-    - 3년 이내 300만 원 이상 벌금형은 결격사유
-- table_summary: K-STAR 영주(F-5-S1) 점수제 평가 항목별 배점표(기본 150점, 가점 50점, 감점 최대 10점)
-- table_rows:
+    종합 점수표 8개 항목: 국민고용 / 납세실적 / 수출실적 / 사회기여 / 사회참여 / 국내유학 / 국내체류 / 추천서
+    각 항목별 최대 배점:
+    - 국민고용 (최대 40점) — 세부내역 및 입증자료 별첨
+    - 납세실적 (최대 30점) — 세부내역 및 입증자료 별첨
+    - 수출실적 (최대 30점) — 세부내역 및 입증자료 별첨
+    - 국내·외 학력 (최대 50점) — 입증자료 별첨
+    - 사회기여·기부 (최대 20점) — 세부내역 및 입증자료 별첨
+    - 추천서 (최대 15점) — 입증자료 별첨
+    - 사회봉사 (최대 15점) — 입증자료 별첨
+    - 장기간 합법 체류 (최대 10점)
+- table_summary: 우수인재 가점 항목별 점수표 — 국민고용/납세/수출/학력/사회기여/추천/봉사/장기체류 등 8개 항목 가점
+- table_rows: |
+    국민고용 40 / 납세실적 30 / 수출실적 30 / 학력 50 / 사회기여·기부 20 / 추천서 15 / 사회봉사 15 / 장기간 합법 체류 10
 - inviter_context:
-- recommendation_or_approval:
+- recommendation_or_approval: 추천서 항목 (최대 15점)
+- keywords: 우수인재 가점 점수표, 국민고용, 납세실적, 수출실적, 사회기여, 장기간 합법 체류
+- source_page:
+- source_excerpt: |
+    ￭ 국민고용(최대 40점)
+    ￭ 납세실적(최대 30점)
+    ￭ 수출실적(최대 30점)
+    ￭ 국내·외 학력(최대 50점)
+    ￭ 사회기여·기부(최대 20점)
+    ￭ 추천서(최대 15점)
+    ￭ 사회봉사(최대 15점)
+    ￭ 장기간 합법 체류(최대 10점)
+- related_visa_codes:
 - expected_questions: |
-    K-STAR 영주는 몇 점 이상 받아야 받을 수 있어요?
-    지방에 살면 점수 더 받을 수 있나요?
-    한국어 시험 어떤 등급이 영주권 점수에 인정돼요?
+    우수인재 가점 점수표는 어떤 항목들로 매겨져요?
+    국민 고용이나 납세 실적도 점수에 들어가나요?
+    추천서 점수 만점은 몇 점이에요?
 
-### row F-5 / 체류자격 변경 / 요건
+### row F-5 / 사증발급 / 제출서류
 - manual_type: 사증민원
 - visa_code: F-5
 - visa_name_ko: 영주
-- item_type: visa_rule
-- section_title: K-STAR 영주(F-5-S1) / 자격요건
-- subtype_or_program: F-5-S1
-- petition_type: 체류자격 변경
-- subsection_type: 요건
-- applicant_context: |
-    K-STAR 영주(F-5-S1)로 자격변경을 신청하는 사람
+- item_type: required_documents
+- section_title: 우수인재 추천서 / 작성 기준
+- subtype_or_program:
+- petition_type: 사증발급
+- subsection_type: 제출서류
+- applicant_context: 우수인재 추천 기관장
 - eligibility:
 - target_persons:
 - common_documents:
 - mandatory_documents: |
-    기본서류: 신청서, 여권, 외국인등록증, 수수료(수입인지), 체류지 입증서류, 해외범죄경력증명서, 신원보증서
-    추가서류:
-    - 신청인이 해당하는 점수를 기재한 점수표
-    - 신청인이 기재한 평가 항목별 점수를 입증하는 서류
+    - 우수인재 추천서 (법무부장관 귀하)
+    - 추천받는 사람: 성명(한글명·영문명), 생년월일, 국적
+    - 추천인: 기관명, 직위, 성명, 기관전화번호
 - other_documents:
 - requirements: |
-    품행단정: 다음에 해당하는 경우 원칙적으로 영주자격으로 자격변경 불가
-    - 대한민국 법률 위반으로 금고 이상 실형 선고 후 형 종료·면제일부터 5년 미경과
-    - 금고 이상 형의 집행유예 선고 후 판결 확정일부터 5년 미경과
-    - 벌금형 납부일부터 3년 미경과
-    - 출입국관리법 제7조제1항·제4항, 제12조제1항·제2항 위반일부터 5년 미경과
-    - 최근 5년간 출입국관리법 3회 이상 위반(과태료 처분 제외)
-    - 강제퇴거명령 출국일부터 7년 또는 출국명령 출국일부터 5년 미경과
-    - 최근 3년간 출입국관리법 위반 500만 원 이상 범칙금 또는 합산 700만 원 이상
-    - 벌금·추징금 등 미납(노역장 유치, 압류, 징수 등으로 납부의무 벗어난 후 3년 경과자 제외)
-    - 외국에서 특정강력범죄, 협박, 공갈, 사기, 보이스피싱, 마약 범죄로 형 선고 또는 그 외 범죄로 금고 이상 형 선고
-    생계유지능력 및 기본소양: K-STAR 영주 점수제 항목의 '한국어능력' 및 '연간 소득' 항목 심사로 대체
-    준법시민교육: 영주(F-5) 자격 취득 예정자 중 국내법 위반 사실이 확인된 자(품행단정 결격사유자 제외)
+    추천받는 사람의 연구실적, 주요경력 등 우수인재 평가기준 해당여부를 사전에 검토·확인한 후 추천서를 상세하게 작성하고, 기관의 종합의견 기재
+    추천서는 개인 자격이 아닌 기관의 장 자격으로 작성·제출
 - procedure:
 - restrictions:
 - exceptions:
@@ -9237,206 +12176,17 @@
 - table_summary:
 - table_rows:
 - inviter_context:
-- recommendation_or_approval:
+- recommendation_or_approval: 기관의 장 자격으로 작성·제출 (추천기관명·직인 필요)
+- keywords: 우수인재 추천서, 추천기관, 기관의 장, 법무부장관, 직인
+- source_page:
+- source_excerpt: |
+    ￭ 추천받는 사람의 연구실적, 주요경력 등 우수인재 평가기준
+    해당여부를 사전에 검토·확인한 후 추천서를 상세하게 작성 하고, 기관의 종합의견 기재
+    ￭ 추천서는 개인 자격이 아닌 기관의 장 자격으로 작성·제출
+- related_visa_codes:
 - expected_questions: |
-    K-STAR 영주 신청할 때 어떤 결격사유가 있어요?
-    벌금형 받은 적 있으면 영주권 못 받아요?
-    영주권 신청할 때 생계유지능력은 어떻게 증명해요?
+    우수인재 추천서는 어떻게 작성해요?
+    개인이 추천해줘도 되나요?
+    추천기관 직인이 꼭 있어야 해요?
 
-### row F-2 / 체류자격 변경 / 제출서류
-- manual_type: 사증민원
-- visa_code: F-2
-- visa_name_ko: 거주
-- item_type: required_documents
-- section_title: K-STAR 거주의 동반가족(F-2-71)
-- subtype_or_program: F-2-71
-- petition_type: 체류자격 변경
-- subsection_type: 제출서류
-- applicant_context: |
-    K-STAR 거주(F-2-7S) 자격을 받은 사람의 진정한 혼인관계를 유지하고 있는 법률상 배우자 또는 주체류자가 친권·양육권을 가지고 있는 미성년자녀
-- eligibility:
-- target_persons: |
-    배우자 및 미성년자녀
-    K-STAR 거주(F-2-7S)의 동반가족 → F-2-71
-    K-STAR 영주(F-5-S1)의 동반가족 → F-5-S2
-- common_documents:
-- mandatory_documents: |
-    - 신청서, 여권, 외국인등록증, 사진, 수수료, 체류지 입증서류
-    - 가족관계 입증서류
-    - 결핵검진확인서(해당자에 한함)
-    - 해외범죄경력증명서(해당자에 한함)
-- other_documents:
-- requirements: |
-    K-STAR 거주 자격 요건과 동일하게 적용
-    주체류자의 K-STAR 거주 체류자격 신청 시 동반 신청 가능
-    주체류자의 배우자가 단기사증을 소지하거나 합법적 체류자격을 소지한 경우 혼인관계 등 확인 후 F-2-71로 체류자격 변경 허가
-- procedure: |
-    사증신청: 거주지 관할 재외공관에서 소득요건 심사 없이 F-2-71(단수, 90일) 발급
-    사증발급인정서: 주체류자의 체류지 관할 출입국·외국인청에 방문 신청 또는 대한민국비자포털(www.visa.go.kr) 온라인 신청. 소득요건 심사 없이 F-2-71(단수, 90일) 발급
-    체류자격 부여: 국내에서 출생한 K-STAR 거주(F-2-7S)의 미성년자녀에게 주체류자의 체류기간과 동일하게 F-2-71 부여
-    체류기간연장: 배우자 및 미성년자녀는 주체류자의 체류기간과 동일하게 F-2-71 자격 유지. 주체류자가 자격요건을 모두 갖추고 생계를 같이하는 경우 미성년자녀가 성인이 되더라도 만 25세 미만까지 체류기간 연장 허가
-- restrictions: |
-    주체류자가 허가 대상일지라도 배우자 및 미성년자녀가 범죄요건 등 결격사유에 해당하는 경우 불허
-    취업제한 분야 또는 국내 노동시장·사회경제질서에 부정적 영향을 미칠 수 있는 직종에 취업한 경우 체류기간연장 제한 또는 체류허가 취소 가능
-- exceptions:
-- fees:
-- duration_or_validity: |
-    주체류자의 체류만료일까지 기간 부여
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    K-STAR 거주 비자 받으면 가족도 같이 데려올 수 있어요?
-    동반가족 비자는 소득 심사하나요?
-    아이가 성인이 돼도 같이 살 수 있어요?
-
-<!-- end chunk: visa_021 -->
-
-
-<!-- vizabridge-normalize v1 chunk: visa_022 hash: 2a8dfe1a7cdb500b lines: 8283-8657 -->
-
-### row F-2 / 체류자격 변경 / 요건
-- manual_type: 사증민원
-- visa_code: F-2
-- visa_name_ko: 거주
-- item_type: common_rule
-- section_title: 준법시민교육 (거주(F-2) 자격변경 및 연장 / 영주(F-5) 자격변경)
-- subtype_or_program: 준법시민교육
-- petition_type: 공통사항
-- subsection_type: 요건
-- applicant_context: |
-    2022년 7월부터 거주(F-2)자격 취득 및 연장 예정자, 영주(F-5)자격 취득 예정자 중 국내법 위반 사실이 확인된 자
-- eligibility:
-- target_persons: |
-    거주(F-2) 자격변경 및 연장 허가 예정자 중 국내법 위반 사실이 확인된 자
-    - 자격변경 신청 시: 신청일로부터 10년 이내 위반
-    - 체류기간 연장 시: 신청일로부터 5년 이내 위반
-    영주(F-5) 자격변경 허가 예정자 중 신청일로부터 최근 10년 이내 국내법 위반 사실이 확인된 자
-    사건종결일(불기소처분일, 벌금 등 납부일)부터 위반기간 계산
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements: |
-    교육이수 여부 확인:
-    - 이민통합지원센터 업무담당자가 교육이수자에 대한 이수확인서 발급, ICRM 참고사항에 '준법시민교육 교육이수 완료' 기재
-    - 체류담당자는 반드시 '교육이수 완료' 확인 후 자격변경 및 연장 허가
-    지침 시행 후 준법시민교육 대상자가 최초 연장 신청한 경우 다음 연장 시까지 준법시민교육을 이수하도록 안내, 그 이후(2회부터) 법 위반사항 적발 시 준법시민교육 이수해야 연장 가능
-- procedure: |
-    교육신청: 사회통합정보망(www.socinet.go.kr)에서 온라인 신청
-- restrictions:
-- exceptions: |
-    교육 제외 대상(교육참여 불요):
-    1) 과거 '준법시민교육'을 이수한 자로서 추가 법위반 사실이 없는 자
-    2) 법 위반 횟수가 1회 이하이며 불기소처분 또는 100만 원 이하의 벌금·범칙금·과태료를 부과받은 자(처분·부과 면제 포함)
-    사건종결일부터 위반기간 계산하여 10년 경과(자격변경 신청자) 및 5년 경과(체류기간 연장 신청자) 시 제외
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    거주 비자 연장하려는데 준법시민교육 받아야 하나요?
-    벌금 낸 적 있으면 영주권 신청할 때 교육 들어야 해요?
-    준법시민교육은 어디서 신청해요?
-
-### row F-2 / 사증발급 / 제출서류
-- manual_type: 사증민원
-- visa_code: F-2
-- visa_name_ko: 거주
-- item_type: common_rule
-- section_title: 해외범죄경력증명서 제출기준
-- subtype_or_program: 해외범죄경력증명서
-- petition_type: 공통사항
-- subsection_type: 제출서류
-- applicant_context: |
-    거주(F-2), 영주(F-5) 등 사증발급, 자격변경, 체류기간 연장 시 해외범죄경력증명서 제출이 필요한 외국인
-- eligibility:
-- target_persons: |
-    신청일 기준 최근 5년 이내 연속하여 6개월 이상 해외 체류 사실이 있는 경우 해당 체류국의 범죄경력증명서 제출(최근 5년 이내 6개월 이상 체류 국가가 2개 이상일 경우 모두 제출)
-- common_documents:
-- mandatory_documents: |
-    발급 대상 국가에 소재하는 권한 있는 기관이 발급한 공적 문서로서 해당 국가에서의 모든 범죄경력이 포함되어야 함
-    - 아포스티유 협약 가입국가: 발급 국가의 아포스티유 확인
-    - 아포스티유 협약 미가입국가: 발급 국가 주재 대한민국 공관의 영사 확인
-    범죄경력증명서 원본과 공증된 번역본 제출(번역자 인적사항 및 연락처 기재, 신분증 사본 첨부)
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions: |
-    제출 면제 기준(개별 사안에 따라 징구 필요성이 인정되는 경우 제출 요구 가능):
-    - 신청일 기준 만 14세 미만인 사람
-    - 대한민국 출생 또는 만 14세 미만에 입국하여 만 14세 이후 해외에서 6개월 이상 연속 체류하지 않은 사람
-    - 사증 발급 시 해외 범죄경력증명서를 제출하고 사증 발급일로부터 3개월 이내 국내에서 체류자격변경을 신청하는 사람
-    - 재외공관 사증발급 또는 국내 자격변경 시 범죄경력증명서를 제출한 사람으로서 국내 체류허가 기간 중 해외에서 6개월 이상 체류하지 않은 사람
-    - 신청일까지 국내에서 10년 이상 계속하여 합법 체류한 사람(6개월 이상 연속 해외 체류 사실 없을 것)
-    - 해당 국가의 발급 제한 연령(예: 만 18세 미만 캐나다인) 또는 거주요건 미충족으로 발급이 어려운 사람(신청인이 발급기준 등 소명 필요)
-    - 천재지변, 전쟁 등으로 발급 불가능하거나 그에 준하는 사정이 있다고 재외공관의 장 또는 출입국·외국인청장 등이 인정하는 사람
-- fees:
-- duration_or_validity: |
-    발급일로부터 6개월 이내(발급일 이후 6개월 이상 해외 체류한 사실이 없는 경우 유효한 것으로 인정)
-- quota_or_limit:
-- score_criteria:
-- table_summary:
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    해외 범죄경력증명서는 언제 내야 해요?
-    해외 살았는데 범죄경력 어디서 발급받아 한국에 제출해요?
-    범죄경력증명서 유효기간 얼마나 되나요?
-
-### row F-5 / 체류자격 변경 / 요건
-- manual_type: 사증민원
-- visa_code: F-5
-- visa_name_ko: 영주
-- item_type: visa_rule
-- section_title: 우수인재 특별귀화 평가기준 (국적법 시행령 제6조제2항)
-- subtype_or_program: 우수인재 특별귀화
-- petition_type: 체류자격 변경
-- subsection_type: 요건
-- applicant_context: |
-    국적법 시행령 제6조제2항에 해당하는 우수인재로서 우수인재 평가기준 및 추천 등에 관한 고시(2024.4.12.)에 따라 특별귀화를 신청하는 사람
-- eligibility:
-- target_persons: |
-    1. 저명인사: 전직 국가원수, 정부 수반, 각료급 이상, 국제기구 대표; 노벨상·퓰리처상·괴테상·공쿠르상·맨부커상·필즈상·튜링상·올림픽 동메달 이상 수상자 등 (소득요건 없음)
-    2. 학술분야 연구실적 우수자: 국내·외 4년제 대학 부교수 이상 1년 이상 재직, 최근 5년 이내 SCI/SSCI/A&HCI 등에 1편 이상 또는 KCI에 2편 이상 또는 권위 있는 학술대회에서 2회 이상 게재/발표 등 (소득요건 없음). 또는 패스트트랙 특례: 우수인재 패스트트랙 F-2(거주) → F-5(영주) 후 SCI/SSCI/A&HCI 3편 이상 또는 KCI 5편 이상 또는 국내·외 특허 등록 2편 이상 (소득요건 없음)
-    3. 문화·예술 분야 우수능력자: 국내·외 공신력 있는 단체 수상, 저명 협회 회원, 전문출판물 기사 게재, 국제 전시회 심사위원, 국제 권위 전시회 작품 전시·공연 등 2개 이상 충족 (일반외국인 GNI 2배, 외국국적동포 GNI 1.5배 또는 상업적 성공 입증서류)
-    4. 스포츠 분야 우수능력자: 국제 권위 체육행사 출전, 최근 3년 이내 개인전 3위·단체전 8강 입상, PGA/LPGA 20위 이내 등 2개 이상 충족 (일반외국인 GNI 2배, 외국국적동포 GNI 1.5배. 대한장애인체육회 회장 추천 우수인재(장애인)는 동포 기준 적용)
-    5. 국내·외 기업 근무자, 외투기업 근무자: 세계 300대 기업 3년 이상 근무 후 대기업 사내이사, 중견기업 사내이사, 상시근로자 100인 이상·자본금 80억 원 초과 국내 기업 사내이사 3년 이상, 3년간 대외수출 평균 500만 달러 이상 개인사업자/법인 대표, 외국인투자기업(50만 달러 이상) 대표이사 3년 이상 거주·납세 3억 원·국민 30명 이상 고용 등 (일반외국인 GNI 2배, 외국국적동포 GNI 1.5배)
-    6. 신산업분야·첨단기술 분야 근무자: 시스템반도체·바이오헬스·미래차·인공지능 등 신산업 분야 또는 신소재·IT·e-business·BT·NT·수송기계·환경에너지·디지털가전·융복합산업·소프트웨어 등 첨단기술 분야 2년 이상 경력 후 국내 기업·연구기관 고용 (외국국적동포는 1년 이상. 일반외국인 GNI 2배, 외국국적동포 GNI 1.5배)
-    7. 신산업분야·첨단기술·과학 등 분야 원천기술 보유자: 세계수준의 원천기술 보유 (소득요건 없음)
-    8. 국내·외 지식재산권 보유자: 특허권·실용신안권·디자인권 보유 및 총 소득 1억 원 이상 (소득요건 없음)
-    9. 전문분야 특별한 지식·기술 보유자: 의사·변호사·회계사·기술사 등 전문자격 소지자로서 국내 3년 이상 체류·근무 (일반외국인 GNI 2배, 외국국적동포 GNI 1.5배)
-    10. 국제기구 등 근무경력자: UN·WHO·OECD·IAEA·UNESCO 등 국제기구에서 10년 이상 근무 (소득요건 없음)
-- common_documents:
-- mandatory_documents:
-- other_documents:
-- requirements:
-- procedure:
-- restrictions:
-- exceptions:
-- fees:
-- duration_or_validity:
-- quota_or_limit:
-- score_criteria:
-- table_summary: 우수인재 특별귀화 평가기준 10개 분야(저명인사, 학술, 문화예술, 스포츠, 기업근무, 신산업·첨단기술, 원천기술, 지식재산권, 전문자격, 국제기구)
-- table_rows:
-- inviter_context:
-- recommendation_or_approval:
-- expected_questions: |
-    노벨상 받은 사람도 한국 우수인재 영주권 받을 수 있어요?
-    세계 300대 기업에서 일했으면 우수인재로 인정받나요?
-    국제기구에서 오래 근무하면 어떤 자격으로 영주권 받을 수 있어요?
-
-<!-- end chunk: visa_022 -->
-
-
-<!-- vizabridge-normalize v1 chunk: visa_023 hash: 5ccac54298e93b62 lines: 8658-8869 -->
 <!-- end chunk: visa_023 -->

@@ -65,7 +65,13 @@ Follow these steps strictly. Do not improvise around them.
 
 5. **Extract rows**. For each (visa_code, petition_type, subsection_type) triple that the chunk content meaningfully describes, emit one `### row ...` block following the rules in `references/extraction_rules.md` and the schema in `references/column_schema.md`. Use the noise filters in `references/noise_rules.md` to drop forms, cover, TOC, broken table fragments.
 
-6. **Self-check before appending**: for the chunk you just produced, verify each row's `visa_code` value appears in the chunk source text. If a value is invented, drop it. Verify required fields are present (`visa_code`, `visa_name_ko`, `item_type`, `petition_type`, `subsection_type`).
+6. **Self-check before appending**: for the chunk you just produced, verify each row passes these checks:
+   - `visa_code` / `stay_status_code` value appears in the chunk source text. If invented, drop it.
+   - Required fields are present (`visa_code`/`stay_status_code`, `visa_name_ko`/`stay_status_name_ko`, `item_type`, `petition_type`, `subsection_type`).
+   - `petition_type` is one of the 13 canonical enum values (see `references/extraction_rules.md`).
+   - `source_excerpt`, if filled, is **verbatim** from the chunk source (no paraphrase). Re-grep the chunk text to confirm.
+   - `related_visa_codes`, if filled, are codes that **actually appear** in the chunk source. No guessing.
+   - `keywords` includes the row's primary visa code at minimum (when filled).
 
 7. **Append**. Run `python .claude/skills/vizabridge-normalize/scripts/append_normalized.py {manual_key} {chunk_id}` with your block on stdin. The script verifies the chunk_id and hash match the index, that the chunk is not already in the output, and writes atomically.
 
@@ -75,9 +81,13 @@ Follow these steps strictly. Do not improvise around them.
 
 - **No invention.** If the source chunk does not state a fact (a document, an amount, a date), do not emit it. Empty string is better than a guess.
 - **One block per chunk, always**. Even if a chunk yields zero rows (pure noise/cover/TOC), emit the markers with no rows in between — this records that the chunk was processed.
+- **No row cap per chunk.** Emit as many `(petition_type, subsection_type)` rows as the source meaningfully supports — 1 or 30. The previous 8-row guideline is removed; only the source's actual content limits row count.
 - **Preserve original numbers and names verbatim** (수수료 금액, 점수, 서류명). Korean wording matters for downstream search.
+- **`source_excerpt` must be verbatim.** If you fill it, copy the source text exactly — no rewording, no paraphrase. It is the human reviewer's hallucination check.
+- **`petition_type` is a 13-value enum.** Use only canonical values from `references/extraction_rules.md` (사증발급 / 사증발급인정서 / 전자사증 / 체류자격 변경 / 체류자격 부여 / 체류기간 연장 / 외국인등록 / 거소신고 / 재입국허가 / 근무처 변경/추가 / 체류자격외 활동허가 / 고용변동 신고 / 공통사항).
+- **The 4 enrichment fields (`keywords`, `source_page`, `source_excerpt`, `related_visa_codes`) are not mandatory but should be filled when the source supports them.** They drive search and review quality.
 - **Do not edit existing blocks in the normalized file.** Append only. If a chunk's hash has changed, use the repair skill, not this one.
-- **No CSV fields with PDF page numbers, raw text, review flags, or debug data.** Final CSV must stay clean.
+- **No CSV fields with raw debug data or reviewer reasoning.** `source_page` and `source_excerpt` ARE allowed in v2 — they support human review. But do not invent review flags or commentary.
 
 ## Stop conditions
 

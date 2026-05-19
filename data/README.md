@@ -1,38 +1,36 @@
 # Data
 
-`data/`는 PDF가 최종 CSV가 되기까지 거치는 단계별 보관소입니다.
+`data/`는 정부 HWP 매뉴얼이 검수용 v3 CSV가 되기까지 거치는 단계별 보관소입니다.
 
 ## `raw/`
 
-원본 PDF를 보관합니다.
+원본 HWP와 페이지 매핑용 PDF 변환물을 둡니다.
 
-- 직접 수정하지 않습니다.
-- 새 매뉴얼이 나오면 기존 파일을 덮어쓸지, 새 파일명으로 둘지 먼저 정합니다.
-- 현재 기준 원본은 체류민원 PDF와 사증민원 PDF입니다.
+- `*.hwp`가 source of truth입니다.
+- 원본 HWP는 사람이 직접 수정하지 않습니다.
+- `raw/pdf/`는 HWP를 LibreOffice + H2Orestart로 변환한 PDF와 `pdfplumber` 캐시를 둘 수 있습니다.
+- 새 매뉴얼이 나오면 파일명을 유지할지, 날짜가 들어간 새 파일로 둘지 먼저 정합니다.
 
 ## `parsed/`
 
-LlamaParse가 PDF를 Markdown으로 변환한 결과입니다.
+파이프라인 중간 산출물을 둡니다.
 
-- 사람이 검토할 수 있는 중간 산출물입니다.
-- 최종 CSV 생성 스크립트는 여기의 최신 `agentic_plus` Markdown을 읽습니다.
-- 파싱 결과가 크게 깨진 경우에만 다시 생성합니다.
+- `raw/`: kordoc이 HWP를 Markdown/HTML table 형태로 변환한 결과
+- `chunks/`: top-level table 경계와 약 15K chars 기준으로 나눈 청크 인덱스
+- `normalized/`: Claude Code `/vizabridge-normalize` 스킬이 만든 정규화 Markdown
+- `validation/`: `scripts/validate_normalization.py`가 만든 원본 교차 검증 결과
+
+`normalized/`는 중요한 중간 표현입니다. CSV 컬럼 매핑을 바꾸거나 페이지 번호를 다시 붙일 때, LLM을 다시 실행하지 않고 여기서부터 재생성할 수 있습니다.
 
 ## `processed/`
 
-반복 생성 가능한 최종 CSV를 보관합니다. 사람이 직접 한 줄씩 수정하지 않고, `scripts/`의 생성 스크립트로 다시 만듭니다.
+검수자가 사용하는 최종 v3 CSV를 둡니다.
 
-Semantic clean CSV는 PDF 매뉴얼의 행정 의미를 정리한 기본 데이터입니다.
+- `체류매뉴얼_검수용_v3.csv`
+- `사증매뉴얼_검수용_v3.csv`
+- `체류매뉴얼_노션검수용_v3.csv`
+- `사증매뉴얼_노션검수용_v3.csv`
 
-- `stay_manual_semantic_clean.csv`
-- `visa_manual_semantic_clean.csv`
+한 행은 `(비자코드 × 신청종류)` 1조합입니다. 현재 기준 체류 233행, 사증 130행이며, 각 행은 27컬럼으로 구성됩니다.
 
-Chatbot-ready CSV는 사용자가 코드를 몰라도 자기 상황으로 검색할 수 있게 semantic clean CSV에서 파생한 데이터입니다.
-
-- `stay_manual_chatbot_ready.csv`
-- `visa_manual_chatbot_ready.csv`
-- `chatbot_intent_routes.csv`
-
-`chatbot_intent_routes.csv`는 "결혼비자", "유학생 알바", "외국인 직원 채용" 같은 질문을 어떤 코드군/민원유형으로 먼저 보낼지 정리한 작은 라우팅 색인입니다.
-
-이 폴더에는 검수용 CSV, 임시 CSV, debug 파일을 두지 않습니다. 검수 산출물은 `output/quality/`와 `output/review/`에 생성합니다.
+CSV는 사람이 직접 편집하기보다 `scripts/` 파이프라인으로 재생성하는 것을 기본으로 합니다. 검수 의견은 `검수상태`, `검수메모` 컬럼에 남기고, 구조적 오류는 `data/parsed/normalized/` 또는 `scripts/build_v3.py` 쪽에서 고치는 방식이 재현성이 좋습니다.

@@ -1,0 +1,33 @@
+%%{init: {'theme': 'base', 'themeVariables': {'fontFamily': 'Apple SD Gothic Neo, Noto Sans KR, sans-serif', 'fontSize': '14px'}}}%%
+flowchart TB
+    classDef source fill:#fef3c7,stroke:#f59e0b,stroke-width:2px,color:#92400e
+    classDef det fill:#dbeafe,stroke:#3b82f6,stroke-width:2px,color:#1e3a8a
+    classDef llm fill:#ede9fe,stroke:#8b5cf6,stroke-width:2.5px,color:#5b21b6
+    classDef out fill:#d1fae5,stroke:#10b981,stroke-width:2px,color:#064e3b
+    classDef tool fill:#f3f4f6,stroke:#6b7280,stroke-dasharray:5 5,color:#374151
+
+    HWP[("🗂️ data/raw/*.hwp<br/>정부 매뉴얼")]:::source
+
+    HWP --> S1["⚙️ Stage 1 · kordoc 변환<br/>scripts/parse_hwp_to_markdown.py"]:::det
+    S1 --> RAW["📝 data/parsed/raw/<br/>{stay,visa}_manual.md"]:::det
+
+    RAW --> S2["⚙️ Stage 2 · 청크 분할<br/>scripts/index_markdown_chunks.py"]:::det
+    S2 --> CHUNKS["📦 data/parsed/chunks/<br/>chunks_index.jsonl"]:::det
+
+    CHUNKS --> S3["🤖 Stage 3 · LLM 정규화<br/>/vizabridge-normalize<br/>(Claude Code 스킬)"]:::llm
+    S3 --> NORM["📋 data/parsed/normalized/<br/>{stay,visa}_manual.md<br/>(청크별 row 블록, 커밋됨)"]:::llm
+
+    NORM --> S4["⚙️ Stage 4 · 교차 검증<br/>scripts/validate_normalization.py"]:::det
+    S4 --> VAL["✅ data/parsed/validation/<br/>*.json"]:::det
+
+    NORM --> S5["⚙️ Stage 5 · v3 CSV 빌드<br/>scripts/build_v3.py<br/>(비자 × 신청종류) 병합 + 컬럼 매핑"]:::det
+    S5 --> CSV["📊 data/processed/<br/>{체류,사증}매뉴얼_검수용_v3.csv<br/>27컬럼"]:::out
+
+    HWP -.HWP→PDF.-> PDF["📄 data/raw/pdf/<br/>(gitignored)"]:::tool
+    PDF -.pdfplumber.-> CACHE["💾 .cache/<br/>pages.json"]:::tool
+
+    CACHE --> S6["⚙️ Stage 6 · 페이지 매칭<br/>scripts/fill_page_numbers.py<br/>NFC + 한글 중복 압축 + fuzzy"]:::det
+    CSV --> S6
+    S6 --> FINAL["📊 v3 CSV<br/>출처 컬럼에 (p. NNN) 통합<br/>100% 채움"]:::out
+
+    FINAL --> REV["👀 Notion 검수<br/>(행 단위 OK/NG)"]:::out

@@ -1,0 +1,24 @@
+%%{init: {'theme': 'base', 'themeVariables': {'fontFamily': 'Apple SD Gothic Neo, Noto Sans KR, sans-serif', 'fontSize': '14px'}}}%%
+flowchart TB
+    classDef bad fill:#fee2e2,stroke:#ef4444,stroke-width:2px,color:#7f1d1d
+    classDef good fill:#d1fae5,stroke:#10b981,stroke-width:2px,color:#064e3b
+    classDef note fill:#fef3c7,stroke:#f59e0b,stroke-width:1px,color:#92400e
+
+    subgraph BAD["❌ 한 셀에 다 넣기 — 검수·검색 모두 실패"]
+        direction TB
+        B1["🟥 F-6 결혼이민<br/><br/>핵심내용:<br/>[자격요건] 한국에서 혼인 성립...<br/>[제출서류] 통합신청서, 결혼증명서...<br/>[수수료] 변경 10만원, 연장 6만원...<br/>[제한] 단기사증, 불법체류자 제외...<br/>[예외] 임신·출산 시 변경 가능<br/>[기간] 변경 1년, 연장 최대 3년<br/>...<br/>(5,000자+ 한 셀)"]:::bad
+        B1 -.-> B2["검수자: '이 행이 맞다/틀리다 판단 불가'"]:::note
+        B1 -.-> B3["RAG: 자격변경 요건과 연장 서류가<br/>한 답변에 섞임"]:::note
+        B1 -.-> B4["원본 대조: 페이지가<br/>여러 곳에 흩어져 추적 불가"]:::note
+    end
+
+    subgraph GOOD["✅ (비자코드 × 신청종류) + 항목별 컬럼 — 검수 가능"]
+        direction TB
+        G1["🟩 F-6-1 / 체류자격 변경<br/><br/>자격요건: 2026년 소득요건...<br/>제출서류: [공통] [필수] [기타]<br/>수수료: 10만원<br/>기간: 1년 이내<br/>제한: 단기사증, 형사범 등<br/>예외: 사증면제 독일인 가능<br/>출처: F-6-1 변경허가 (p. 442)"]:::good
+        G2["🟩 F-6-1 / 체류기간 연장<br/><br/>자격요건: 정상 혼인 유지<br/>제출서류: [공통] [필수]<br/>수수료: 3만원<br/>기간: 최대 3년<br/>제한: 자녀 없을 시 1년<br/>출처: F-6-1 연장허가 (p. 451)"]:::good
+        G3["🟩 F-6-1 / 사증발급<br/>(해외에서 신청)<br/><br/>자격요건: 혼인 성립<br/>제출서류: ...<br/>출처: F-6-1 사증발급 (p. 426)"]:::good
+        G1 -.다른 신청.-> G2
+        G2 -.다른 신청.-> G3
+    end
+
+    BAD --> X{선택} --> GOOD

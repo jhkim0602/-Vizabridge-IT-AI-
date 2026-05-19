@@ -1,0 +1,35 @@
+%%{init: {'theme': 'base', 'themeVariables': {'fontFamily': 'Apple SD Gothic Neo, Noto Sans KR, sans-serif', 'primaryColor': '#fef3c7', 'primaryBorderColor': '#f59e0b', 'lineColor': '#6b7280', 'fontSize': '15px'}}}%%
+flowchart LR
+    classDef source fill:#fef3c7,stroke:#f59e0b,stroke-width:2px,color:#92400e
+    classDef llm fill:#ede9fe,stroke:#8b5cf6,stroke-width:2px,color:#5b21b6
+    classDef det fill:#dbeafe,stroke:#3b82f6,stroke-width:2px,color:#1e3a8a
+    classDef out fill:#d1fae5,stroke:#10b981,stroke-width:2px,color:#064e3b
+    classDef rev fill:#fce7f3,stroke:#ec4899,stroke-width:2px,color:#831843
+
+    subgraph S1["📥 입력"]
+        HWP["🗂️ 정부 HWP 매뉴얼<br/>체류·사증<br/>(source of truth)"]:::source
+    end
+
+    subgraph S2["⚙️ 컴파일 (LLM 1회 + 결정적 5단계)"]
+        direction TB
+        MD["📝 raw Markdown<br/>(kordoc)"]:::det
+        NORM["📋 normalized MD<br/>(행정 의미 단위 row)"]:::llm
+        CSV["📊 v3 CSV 27컬럼<br/>(비자 × 신청종류 단위)"]:::det
+        MD --> NORM --> CSV
+    end
+
+    subgraph S3["📐 페이지 매핑"]
+        direction TB
+        PDF["📄 PDF<br/>(LibreOffice 변환)"]:::det
+        PAGES["💾 페이지 인덱스<br/>(pdfplumber 캐시)"]:::det
+        PDF --> PAGES
+    end
+
+    subgraph S4["👀 사람 검수"]
+        REV["📋 Notion 검수 DB<br/>행 단위 OK/NG"]:::rev
+    end
+
+    HWP --> MD
+    HWP -.HWP→PDF.-> PDF
+    PAGES --> CSV
+    CSV --> REV

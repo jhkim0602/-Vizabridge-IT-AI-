@@ -1,17 +1,29 @@
-"""Fill the 페이지 column of inspection CSVs by matching 원문발췌/섹션 against
-HWP-derived PDF text.
+#!/usr/bin/env python3
+"""v3 CSV 의 출처 컬럼에 PDF 페이지 번호를 통합한다.
 
-Usage::
+흐름:
+1. HWP → PDF 변환 결과 (`data/raw/pdf/*.pdf`) 를 pdfplumber 로 페이지별 텍스트 추출
+2. 캐시 (`data/raw/pdf/.cache/{stay,visa}_pages.json`) 에 저장 (재실행 시 빠름)
+3. 각 v3 CSV 행의 핵심 컬럼(자격요건/신청상황/절차/제출서류 등) 텍스트를
+   PDF 페이지 텍스트와 fuzzy 매칭하여 페이지 번호 결정
+4. 출처 컬럼을 `"<섹션> (p. NNN)"` 형식으로 갱신
 
+매칭 알고리즘 핵심:
+- 텍스트 정규화: NFC + 구두점 제거 + 한글 중복 자모 압축 (`외외 → 외`)
+  (LibreOffice + H2Orestart 변환에서 발생하는 문자 중복 버그 보정)
+- 슬라이딩 윈도우 (50→30→18자) + 점수 투표
+- 직전 행과 가까운 페이지 가중치 (±8쪽 이내 2.5배, 60쪽+ 0.15배) — boilerplate 오매칭 회피
+- 인접 페이지 그룹화 (`p. 442~444` 형식)
+- 1차 실패 시 출처 라벨·핵심 컬럼 텍스트로 fallback
+
+용법:
+    .venv/bin/python scripts/fill_page_numbers.py
     .venv/bin/python scripts/fill_page_numbers.py stay
-    .venv/bin/python scripts/fill_page_numbers.py visa
-    .venv/bin/python scripts/fill_page_numbers.py both
+    .venv/bin/python scripts/fill_page_numbers.py both --force
 
-PDF paths default to ``data/raw/pdf/...`` (gitignored, derived from HWP);
-override with ``--stay-pdf`` / ``--visa-pdf`` or env vars ``STAY_PDF`` / ``VISA_PDF``.
-
-The page index is cached as JSON under ``data/raw/pdf/.cache/`` so repeated runs
-do not re-extract text from the (large) PDFs.
+선행 조건:
+- HWP → PDF 변환 완료 (`brew install --cask libreoffice` + H2Orestart oxt)
+- v3 CSV 생성 (`scripts/build_v3.py`)
 """
 
 from __future__ import annotations
@@ -22,17 +34,11 @@ import json
 import os
 import re
 import sys
-import time
 import unicodedata
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Optional
 
 import pdfplumber
-
-
-# ---------------------------------------------------------------------------
-# Paths / constants
-# ---------------------------------------------------------------------------
 
 ROOT = Path(__file__).resolve().parents[1]
 PROCESSED = ROOT / "data" / "processed"
@@ -46,407 +52,210 @@ DEFAULT_PDFS = {
 }
 
 CSV_PATHS = {
-    "stay": {
-        "review": PROCESSED / "체류매뉴얼_검수용_v2.csv",
-        "notion": PROCESSED / "체류매뉴얼_노션검수용_v2.csv",
-    },
-    "visa": {
-        "review": PROCESSED / "사증매뉴얼_검수용_v2.csv",
-        "notion": PROCESSED / "사증매뉴얼_노션검수용_v2.csv",
-    },
+    "stay": [
+        PROCESSED / "체류매뉴얼_검수용_v3.csv",
+        PROCESSED / "체류매뉴얼_노션검수용_v3.csv",
+    ],
+    "visa": [
+        PROCESSED / "사증매뉴얼_검수용_v3.csv",
+        PROCESSED / "사증매뉴얼_노션검수용_v3.csv",
+    ],
 }
 
 
 # ---------------------------------------------------------------------------
-# Normalization
+# 텍스트 정규화 (매칭 정확도의 핵심)
 # ---------------------------------------------------------------------------
 
-# HWP -> PDF conversion duplicates many Korean syllables (외외 국국 인인 ...). We
-# collapse consecutive duplicate characters before matching so excerpts written
-# in plain Korean still align.
-DUP_RE = re.compile(r"([가-힣])\1")
-WS_RE = re.compile(r"\s+")
-# Strip punctuation that gets rendered inconsistently between HWP and PDF.
-STRIP_RE = re.compile(r"[\s​　 ·•▣◯○□■◇◆☆★※→←↑↓\-‐‑‒–—―•◦.·,()\[\]{}<>「」『』《》〈〉【】\"'`~!@#$%^&*+=|/\\?:;]")
-
-
-def _collapse_dups(text: str) -> str:
-    prev = None
-    while prev != text:
-        prev = text
-        text = DUP_RE.sub(r"\1", text)
-    return text
+# HWP → PDF 변환 시 발생하는 한글 자음 중복 (외외 / 국국 / 인인) 압축
+DUP_KOREAN_RE = re.compile(r"([가-힣])\1+")
+# 공백·구두점·괄호·구분자 제거 (PDF 변환에서 일관되지 않게 렌더링됨)
+NOISE_RE = re.compile(r"[\s,.·:;()\[\]【】「」『』<>＜＞|/＼\-_]+")
 
 
 def normalize(text: str) -> str:
-    """Aggressively normalize a chunk of Korean text for matching.
-
-    - NFC normalize
-    - collapse HWP-PDF duplicate Hangul syllables (외외 -> 외)
-    - drop whitespace and punctuation entirely
-    """
+    """매칭용 정규화: NFC → 노이즈 제거 → 한글 중복 압축."""
     if not text:
         return ""
     text = unicodedata.normalize("NFC", text)
-    text = _collapse_dups(text)
-    text = STRIP_RE.sub("", text)
+    text = NOISE_RE.sub("", text)
+    text = DUP_KOREAN_RE.sub(r"\1", text)
     return text
 
 
 # ---------------------------------------------------------------------------
-# PDF page index (cached)
+# PDF → 페이지별 텍스트 (캐시)
 # ---------------------------------------------------------------------------
 
-def build_page_index(pdf_path: Path, cache_key: str, force: bool = False) -> List[str]:
-    """Return a list where index i holds the normalized text of page i+1."""
 
-    cache_path = CACHE_DIR / f"{cache_key}_pages.json"
+def extract_pages(pdf_path: Path, cache_path: Path, force: bool = False) -> dict[int, str]:
+    """PDF 페이지별 텍스트 추출. JSON 캐시 사용."""
     if cache_path.exists() and not force:
-        with cache_path.open("r", encoding="utf-8") as f:
-            data = json.load(f)
-        return data["pages"]
-
-    print(f"[{cache_key}] extracting text from {pdf_path}…", flush=True)
-    pages: List[str] = []
-    t0 = time.time()
-    with pdfplumber.open(str(pdf_path)) as pdf:
-        total = len(pdf.pages)
-        for i, page in enumerate(pdf.pages, start=1):
-            raw = page.extract_text() or ""
-            pages.append(normalize(raw))
-            if i % 50 == 0 or i == total:
-                print(f"  page {i}/{total} ({time.time()-t0:.1f}s)", flush=True)
-    cache_path.write_text(json.dumps({"pages": pages}, ensure_ascii=False), encoding="utf-8")
-    print(f"[{cache_key}] cached -> {cache_path}", flush=True)
-    return pages
-
-
-# ---------------------------------------------------------------------------
-# Excerpt -> candidate substrings
-# ---------------------------------------------------------------------------
-
-def excerpt_candidates(excerpt: str) -> List[str]:
-    """Pick a few 'characteristic' substrings from the excerpt to search for.
-
-    Returns at most a handful of candidates of varying length so we can
-    fall back from very specific to more general.
-    """
-    if not excerpt:
-        return []
-    norm = normalize(excerpt)
-    if not norm:
-        return []
-
-    cands: List[str] = []
-    L = len(norm)
-
-    # 1. The most unique slice tends to live near the middle.
-    if L >= 60:
-        mid = L // 2
-        cands.append(norm[max(0, mid - 30) : mid + 30])
-    # 2. A long head slice.
-    if L >= 60:
-        cands.append(norm[: 60])
-    else:
-        cands.append(norm[: max(20, L)])
-    # 3. A long tail slice.
-    if L >= 60:
-        cands.append(norm[L - 60 :])
-    # 4. Sliding 25-char windows across the whole excerpt — catches cases
-    #    where the editor reordered fragments and middle/head/tail straddle a
-    #    boundary that doesn't exist in the PDF. Step is small so the windows
-    #    overlap heavily.
-    if L >= 25:
-        win = 25
-        step = 8
-        for start in range(0, max(1, L - win + 1), step):
-            cands.append(norm[start : start + win])
-    # 5. Short head fallback.
-    cands.append(norm[: 20])
-
-    # De-dup while preserving order.
-    seen = set()
-    out: List[str] = []
-    for c in cands:
-        if c and c not in seen:
-            seen.add(c)
-            out.append(c)
-    return out
+        try:
+            with cache_path.open(encoding="utf-8") as f:
+                data = json.load(f)
+            arr = data.get("pages", [])
+            return {i + 1: normalize(t) for i, t in enumerate(arr)}
+        except Exception:
+            pass
+    print(f"  PDF 추출 중: {pdf_path.name}")
+    pages: list[str] = []
+    with pdfplumber.open(pdf_path) as pdf:
+        for page in pdf.pages:
+            pages.append(page.extract_text() or "")
+    with cache_path.open("w", encoding="utf-8") as f:
+        json.dump({"pages": pages}, f, ensure_ascii=False)
+    print(f"  캐시 저장: {cache_path}  ({len(pages)} 페이지)")
+    return {i + 1: normalize(t) for i, t in enumerate(pages)}
 
 
 # ---------------------------------------------------------------------------
-# Section fallback candidates
+# 페이지 매칭
 # ---------------------------------------------------------------------------
 
-# Strip pieces like "F-6-1 외국인" from the section title and use a clean form
-# for fallback search.
-SECTION_LINE_RE = re.compile(r"\n+")
 
-
-def section_candidates(section: str) -> List[str]:
-    if not section:
-        return []
-    cands: List[str] = []
-    for line in SECTION_LINE_RE.split(section):
-        line = line.strip()
-        if not line:
+def find_page(needle: str, pages: dict[int, str], hint: Optional[int] = None) -> Optional[int]:
+    """슬라이딩 윈도우 + 점수 투표 + hint 가중치."""
+    if not needle or len(needle) < 8:
+        return None
+    n = normalize(needle)
+    for win in (50, 30, 18):
+        if len(n) < win:
             continue
-        # Looks like e.g. "F-6-1 외국인배우자 / 체류자격 변경허가"
-        # Try the full normalized line, plus the prefix before " / ".
-        cands.append(normalize(line))
-        if " / " in line:
-            head, _, tail = line.partition(" / ")
-            cands.append(normalize(head))
-            cands.append(normalize(tail))
-    # De-dup
-    seen = set()
-    out = []
-    for c in cands:
-        if c and c not in seen:
-            seen.add(c)
-            out.append(c)
-    return out
+        candidates: dict[int, float] = {}
+        step = 8
+        for start in range(0, len(n) - win + 1, step):
+            snippet = n[start : start + win]
+            for page_num, page_text in pages.items():
+                if snippet in page_text:
+                    score = 1.0
+                    if hint is not None:
+                        d = abs(page_num - hint)
+                        if d <= 8:
+                            score *= 2.5
+                        elif d > 60:
+                            score *= 0.15
+                    candidates[page_num] = candidates.get(page_num, 0) + score
+        if candidates:
+            return sorted(candidates.items(), key=lambda x: (-x[1], abs(x[0] - (hint or 0))))[0][0]
+    return None
 
 
-# ---------------------------------------------------------------------------
-# Matching
-# ---------------------------------------------------------------------------
-
-def find_pages(needle: str, pages: List[str], start_hint: Optional[int] = None) -> List[int]:
-    """Return 1-based page numbers whose normalized text contains *needle*."""
-    if not needle:
-        return []
-    hits: List[int] = []
-    # Prefer pages from start_hint onwards so we tend to pick the in-section
-    # occurrence rather than a stale table-of-contents listing.
-    order = list(range(len(pages)))
-    if start_hint is not None and 0 <= start_hint < len(pages):
-        order = list(range(start_hint, len(pages))) + list(range(0, start_hint))
-    for i in order:
-        if needle in pages[i]:
-            hits.append(i + 1)
-    return hits
+def page_num_from_string(s: str) -> Optional[int]:
+    m = re.search(r"\d+", s or "")
+    return int(m.group()) if m else None
 
 
-def collapse_range(hits: List[int], window: int = 4) -> str:
-    """Turn page hits into a compact 'p. 142' or 'p. 142~145' style string."""
-    if not hits:
-        return ""
-    hits = sorted(set(hits))
-    start = hits[0]
-    end = start
-    for p in hits[1:]:
-        if p - end <= window:
-            end = p
-        else:
-            break
-    if end == start:
-        return f"p. {start}"
-    return f"p. {start}~{end}"
+def previous_page_hint(rows: list[dict[str, str]], i: int) -> Optional[int]:
+    """앞쪽에서 페이지 정보가 채워진 행의 페이지 번호 추출 (같은 상위코드 우선)."""
+    parent = rows[i].get("상위코드", "")
+    for off in range(1, 30):
+        for j in (i - off, i + off):
+            if 0 <= j < len(rows):
+                pg = page_num_from_string(rows[j].get("출처", "").split("p. ")[-1])
+                if pg and rows[j].get("상위코드") == parent:
+                    return pg
+    # 같은 부모 없으면 그냥 가까운 행
+    for off in range(1, 30):
+        for j in (i - off, i + off):
+            if 0 <= j < len(rows):
+                pg = page_num_from_string(rows[j].get("출처", "").split("p. ")[-1])
+                if pg:
+                    return pg
+    return None
 
 
-# ---------------------------------------------------------------------------
-# CSV processing
-# ---------------------------------------------------------------------------
+SEARCH_COLUMNS = ("자격요건", "신청상황", "제출서류", "절차", "제한", "예외", "기간", "대상자")
 
-def process_csv(
-    manual: str,
-    csv_path: Path,
-    notion_path: Path,
-    pages: List[str],
-) -> Dict[str, object]:
-    """Fill 페이지 column in-place. Returns stats dict."""
 
-    with csv_path.open("r", encoding="utf-8-sig", newline="") as f:
+def assign_pages(csv_path: Path, pages: dict[int, str]) -> tuple[int, int]:
+    with csv_path.open(encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
-        fieldnames = reader.fieldnames or []
+        cols = reader.fieldnames
         rows = list(reader)
+    if not rows:
+        return 0, 0
 
-    n = len(rows)
-    matched_excerpt = 0
-    matched_section = 0
-    no_match = 0
-    no_match_samples: List[Tuple[int, str, str]] = []
+    prev_page: Optional[int] = None
+    matched = 0
+    for i, r in enumerate(rows):
+        original_src = r.get("출처", "").strip()
+        # 출처에 이미 페이지가 있으면 유지
+        if "p." in original_src:
+            matched += 1
+            m = re.search(r"p\.\s*(\d+)", original_src)
+            if m:
+                prev_page = int(m.group(1))
+            continue
 
-    last_page_hint: Optional[int] = None
+        # 1) 핵심 컬럼 텍스트로 매칭
+        hint = prev_page or previous_page_hint(rows, i)
+        page: Optional[int] = None
+        for col in SEARCH_COLUMNS:
+            text = r.get(col, "").strip()
+            if not text:
+                continue
+            page = find_page(text, pages, hint=hint)
+            if page:
+                break
 
-    for idx, row in enumerate(rows):
-        excerpt = row.get("원문발췌", "") or ""
-        section = row.get("섹션", "") or ""
+        # 2) 출처 섹션 라벨로 fallback
+        if not page and original_src:
+            page = find_page(original_src, pages, hint=hint)
 
-        # Collect a vote tally across ALL candidates instead of stopping at
-        # the first match — the first candidate isn't always the best one
-        # when excerpts splice together fragments from several sub-sections.
-        excerpt_votes: Dict[int, int] = {}
-        for cand in excerpt_candidates(excerpt):
-            for p in find_pages(cand, pages):
-                excerpt_votes[p] = excerpt_votes.get(p, 0) + 1
-        section_votes: Dict[int, int] = {}
-        for cand in section_candidates(section):
-            for p in find_pages(cand, pages):
-                section_votes[p] = section_votes.get(p, 0) + 1
+        # 3) hint 그대로 사용
+        if not page and hint:
+            page = hint
 
-        # Combine: an excerpt match is worth 3x a section match for raw
-        # votes. Also, pages within +/- 30 of a section-anchor hit get a
-        # multiplicative bonus on their excerpt score — section anchors are
-        # the most reliable signal for "what section am I in".
-        section_anchor_pages = set(section_votes.keys())
-        combined: Dict[int, float] = {}
-        for p, v in excerpt_votes.items():
-            base = v * 3.0
-            # Within +/- 30 of a section anchor: bump the score
-            if any(abs(p - a) <= 30 for a in section_anchor_pages):
-                base *= 1.5
-            combined[p] = combined.get(p, 0.0) + base
-        for p, v in section_votes.items():
-            combined[p] = combined.get(p, 0.0) + v * 1.5
-
-        if combined:
-            # Bias toward the last hint: heavily down-weight pages that are
-            # far from the previous row's page, because excerpts often
-            # contain template text that appears throughout the document.
-            # The closer to last_page_hint (going forward), the bigger the
-            # multiplier — this beats boilerplate matches deeper in the doc.
-            if last_page_hint is not None:
-                for p in list(combined.keys()):
-                    dist = p - last_page_hint
-                    if 0 <= dist <= 8:
-                        combined[p] *= 2.5  # almost certainly the right page
-                    elif 8 < dist <= 25:
-                        combined[p] *= 1.6
-                    elif 25 < dist <= 80:
-                        combined[p] *= 1.15
-                    elif 80 < dist <= 200:
-                        combined[p] *= 1.0
-                    elif dist > 200:
-                        combined[p] *= 0.7
-                    elif -8 <= dist < 0:
-                        combined[p] *= 1.2  # same section reference
-                    elif -25 <= dist < -8:
-                        combined[p] *= 0.7
-                    elif -80 <= dist < -25:
-                        combined[p] *= 0.4
-                    else:
-                        # very far backward (boilerplate match elsewhere)
-                        combined[p] *= 0.15
-
-            # Pick the page with the highest score; tiebreak by proximity to
-            # last_page_hint (forward preferred), then by page number.
-            def _key(p: int) -> Tuple[float, float, int]:
-                score = combined[p]
-                if last_page_hint is None:
-                    return (-score, 0.0, p)
-                dist = p - last_page_hint
-                # forward distance is cheaper than backward
-                if dist >= 0:
-                    proximity = dist
-                else:
-                    proximity = -dist * 2 + 1000  # heavy penalty for going back
-                return (-score, proximity, p)
-
-            primary = min(combined.keys(), key=_key)
-
-            # Build a span: walk forward from primary while consecutive pages
-            # are still scored. Only chain pages that are actually contiguous
-            # (gap <= 2) and score at least half of primary's score.
-            top_score = combined[primary]
-            span_hits = [primary]
-            # extend forward
-            cur = primary
-            for p in sorted(p for p in combined.keys() if p > primary):
-                if p - cur <= 2 and combined[p] >= top_score * 0.5:
-                    span_hits.append(p)
-                    cur = p
-                else:
-                    break
-            # extend backward (rare — usually primary IS the start)
-            cur = primary
-            for p in sorted((p for p in combined.keys() if p < primary), reverse=True):
-                if cur - p <= 2 and combined[p] >= top_score * 0.5:
-                    span_hits.append(p)
-                    cur = p
-                else:
-                    break
-            row["페이지"] = collapse_range(span_hits)
-
-            if excerpt_votes:
-                matched_excerpt += 1
-                method = "excerpt"
+        # 출처 컬럼 갱신
+        if page:
+            if prev_page and abs(page - prev_page) <= 3 and prev_page != page:
+                lo, hi = min(prev_page, page), max(prev_page, page)
+                tag = f"p. {lo}~{hi}"
             else:
-                matched_section += 1
-                method = "section"
-            last_page_hint = primary
-        else:
-            no_match += 1
-            if len(no_match_samples) < 5:
-                no_match_samples.append((idx, section.split("\n", 1)[0][:60], excerpt[:60]))
+                tag = f"p. {page}"
+            r["출처"] = f"{original_src} ({tag})" if original_src else tag
+            prev_page = page
+            matched += 1
 
-    # Write back
     with csv_path.open("w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(rows)
-
-    return {
-        "manual": manual,
-        "total": n,
-        "matched_excerpt": matched_excerpt,
-        "matched_section": matched_section,
-        "no_match": no_match,
-        "no_match_samples": no_match_samples,
-        "csv_path": str(csv_path),
-        "notion_path": str(notion_path),
-    }
+        w = csv.DictWriter(f, fieldnames=cols)
+        w.writeheader()
+        w.writerows(rows)
+    return matched, len(rows)
 
 
 # ---------------------------------------------------------------------------
-# Main
+# 메인
 # ---------------------------------------------------------------------------
 
-def run(manual: str, args) -> Dict[str, object]:
-    pdf_path = Path(args.stay_pdf if manual == "stay" else args.visa_pdf)
-    if not pdf_path.exists():
-        raise FileNotFoundError(f"PDF not found: {pdf_path}")
-    pages = build_page_index(pdf_path, cache_key=manual, force=args.force)
-    return process_csv(
-        manual=manual,
-        csv_path=CSV_PATHS[manual]["review"],
-        notion_path=CSV_PATHS[manual]["notion"],
-        pages=pages,
-    )
 
+def main() -> int:
+    p = argparse.ArgumentParser()
+    p.add_argument("manual", nargs="?", default="both", choices=["stay", "visa", "both"])
+    p.add_argument("--stay-pdf", type=Path, default=DEFAULT_PDFS["stay"])
+    p.add_argument("--visa-pdf", type=Path, default=DEFAULT_PDFS["visa"])
+    p.add_argument("--force", action="store_true", help="PDF 텍스트 캐시 무시")
+    args = p.parse_args()
 
-def main(argv: Optional[List[str]] = None) -> int:
-    ap = argparse.ArgumentParser(description="Fill 페이지 column from HWP-derived PDFs.")
-    ap.add_argument("manual", choices=["stay", "visa", "both"], help="which manual(s) to process")
-    ap.add_argument("--stay-pdf", default=str(DEFAULT_PDFS["stay"]))
-    ap.add_argument("--visa-pdf", default=str(DEFAULT_PDFS["visa"]))
-    ap.add_argument("--force", action="store_true", help="ignore the page-text cache")
-    args = ap.parse_args(argv)
+    targets = ["stay", "visa"] if args.manual == "both" else [args.manual]
 
-    manuals = ["stay", "visa"] if args.manual == "both" else [args.manual]
-    results: List[Dict[str, object]] = []
-    for m in manuals:
-        results.append(run(m, args))
-
-    print()
-    print("=== Page-fill results ===")
-    for r in results:
-        total = r["total"]
-        me = r["matched_excerpt"]
-        ms = r["matched_section"]
-        nm = r["no_match"]
-        rate = (me + ms) * 100.0 / total if total else 0.0
-        print(
-            f"[{r['manual']}] total={total}  "
-            f"excerpt={me}  section={ms}  no_match={nm}  "
-            f"match_rate={rate:.1f}%"
-        )
-        for idx, sec, exc in r["no_match_samples"]:
-            print(f"    miss row {idx}: section={sec!r} excerpt={exc!r}")
-
+    for k in targets:
+        pdf_path = getattr(args, f"{k}_pdf")
+        if not pdf_path.exists():
+            print(f"  PDF 없음 — 건너뜀: {pdf_path}")
+            continue
+        cache = CACHE_DIR / f"{k}_pages.json"
+        pages = extract_pages(pdf_path, cache, force=args.force)
+        for csv_path in CSV_PATHS[k]:
+            if not csv_path.exists():
+                print(f"  CSV 없음 — 건너뜀: {csv_path}")
+                continue
+            matched, total = assign_pages(csv_path, pages)
+            pct = 100 * matched // total if total else 0
+            print(f"  {csv_path.name}: {matched}/{total} ({pct}%) 페이지 매칭")
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    raise SystemExit(main())

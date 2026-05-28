@@ -1,0 +1,150 @@
+vars: {
+  d2-config: {
+    layout-engine: elk
+  }
+}
+
+direction: right
+
+classes: {
+  source: {
+    style: {
+      fill: "#ecfdf5"
+      stroke: "#14532d"
+      stroke-width: 2
+      border-radius: 6
+      font-color: "#0f172a"
+    }
+  }
+  deterministic: {
+    style: {
+      fill: "#e7f5ff"
+      stroke: "#1971c2"
+      stroke-width: 2
+      border-radius: 6
+      font-color: "#0f172a"
+    }
+  }
+  llm: {
+    style: {
+      fill: "#f3e8ff"
+      stroke: "#9c36b5"
+      stroke-width: 2
+      border-radius: 6
+      font-color: "#0f172a"
+    }
+  }
+  output: {
+    style: {
+      fill: "#dcfce7"
+      stroke: "#15803d"
+      stroke-width: 2
+      border-radius: 6
+      font-color: "#052e16"
+    }
+  }
+  derived: {
+    style: {
+      fill: "#f1f5f9"
+      stroke: "#64748b"
+      stroke-width: 1
+      stroke-dash: 5
+      border-radius: 6
+      font-color: "#334155"
+    }
+  }
+  review: {
+    style: {
+      fill: "#fff0f6"
+      stroke: "#c2255c"
+      stroke-width: 2
+      border-radius: 6
+      font-color: "#0f172a"
+    }
+  }
+}
+
+hwp: {
+  label: "HWP 매뉴얼\n체류 · 사증"
+  shape: rectangle
+  class: source
+}
+
+md: {
+  label: "Stage 1\nparse_hwp_to_markdown\n\nraw Markdown\nkordoc 변환"
+  shape: rectangle
+  class: deterministic
+}
+
+chunks: {
+  label: "Stage 2\nindex_markdown_chunks\n\nchunks_index\n.jsonl"
+  shape: rectangle
+  class: deterministic
+}
+
+norm: {
+  label: "Stage 3\nvizabridge-normalize\n\nnormalized MD\nLLM 정규화"
+  shape: rectangle
+  class: llm
+}
+
+validate: {
+  label: "Stage 4\nvalidate_normalization\n\n구조·누락 검증"
+  shape: rectangle
+  class: deterministic
+}
+
+build: {
+  label: "Stage 5\nbuild_v4\n\n비자코드 × 신청종류\n행 생성"
+  shape: rectangle
+  class: deterministic
+}
+
+csv: {
+  label: "v4 CSV/XLSX\n26컬럼\n사증 158 · 체류 275"
+  shape: rectangle
+  class: output
+}
+
+review: {
+  label: "Notion 검수\n행 단위 검토"
+  shape: rectangle
+  class: review
+}
+
+pdf_path: {
+  label: "PDF\nLibreOffice"
+  shape: rectangle
+  class: derived
+}
+
+pages: {
+  label: "페이지 인덱스\npdfplumber"
+  shape: rectangle
+  class: derived
+}
+
+fill_pages: {
+  label: "Stage 6\nfill_page_numbers\n\n출처 page_no 매핑"
+  shape: rectangle
+  class: deterministic
+}
+
+hwp -> md
+md -> chunks
+chunks -> norm
+norm -> validate
+validate -> build
+build -> fill_pages
+fill_pages -> csv
+csv -> review: "import"
+
+hwp -> pdf_path: "HWP → PDF" {
+  style: {
+    stroke: "#64748b"
+    stroke-dash: 5
+  }
+}
+pdf_path -> pages: "페이지 텍스트 추출"
+pages -> fill_pages
+

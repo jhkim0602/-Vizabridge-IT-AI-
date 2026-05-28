@@ -1,0 +1,91 @@
+vars: {
+  d2-config: {
+    layout-engine: elk
+  }
+}
+
+direction: right
+
+classes: {
+  main: {
+    style: {
+      fill: "#ecfdf5"
+      stroke: "#14532d"
+      stroke-width: 2
+      border-radius: 6
+      font-color: "#052e16"
+    }
+  }
+  lookup: {
+    style: {
+      fill: "#e7f5ff"
+      stroke: "#1971c2"
+      stroke-width: 2
+      border-radius: 6
+      font-color: "#0f172a"
+    }
+  }
+  enum: {
+    style: {
+      fill: "#f3e8ff"
+      stroke: "#9c36b5"
+      stroke-width: 2
+      border-radius: 6
+      font-color: "#0f172a"
+    }
+  }
+  meta: {
+    style: {
+      fill: "#fff0f6"
+      stroke: "#c2255c"
+      stroke-width: 2
+      border-radius: 6
+      font-color: "#0f172a"
+    }
+  }
+}
+
+final_v4: {
+  label: "final_v4\n최종 v4 CSV / XLSX\n사증 158행 · 체류 275행 · 26컬럼\n\nPK visa_code\nFK parent_code → visa_dict.code\nmanual_kind\npetition_type\nkeywords\n\n신청조건: situation · target · eligibility\n기간: visa_validity · single_stay · total_stay\n절차·서류: procedure · fees · recommendation · obligations · documents · score_table\n관계·제한: quota · inviter · exceptions · restrictions · prereq · next_step · companion\n메타: expected_questions · source"
+  shape: sql_table
+  class: main
+}
+
+visa_dict: {
+  label: "visa_dict\n비자코드 사전\n37개 상위코드 + 비자 흐름\n\nPK code\nname_ko\ncategory\nprereq\nprimary_next\nprimary_companion"
+  shape: sql_table
+  class: lookup
+}
+
+manual_meta: {
+  label: "manual_meta\n매뉴얼 메타\n\nPK filename\nkind\nrow_count_v4\npdf_page_count\n\n체류 383p / 사증 482p\nHWP → PDF 변환 기준"
+  shape: sql_table
+  class: meta
+}
+
+manual_kind_enum: {
+  label: "manual_kind_enum\n\nvisa: 사증\nstay: 체류"
+  shape: rectangle
+  class: enum
+}
+
+petition_enum: {
+  label: "petition_enum\n\n사증발급\n사증발급인정서\n전자사증\n체류자격 변경\n체류자격 부여\n체류기간 연장\n외국인등록\n재입국허가\n근무처 변경·추가\n체류자격외 활동허가\n거소신고\n고용변동 신고\n공통사항"
+  shape: rectangle
+  class: enum
+}
+
+visa_category_enum: {
+  label: "visa_category_enum\n\n공무·외교\n단기 방문\n학업·연수\n취재·종교·주재\n투자·창업\n구직·취업\n거주·정착\n가족 결합\n재외동포\n영주\n기타·임시"
+  shape: rectangle
+  class: enum
+}
+
+final_v4 -> visa_dict: "parent_code"
+final_v4 -> manual_meta: "manual_kind ↔ kind"
+final_v4 -> manual_kind_enum: "manual_kind"
+final_v4 -> petition_enum: "petition_type"
+visa_dict -> visa_category_enum: "category"
+visa_dict -> visa_dict: "primary_next / primary_companion"
+manual_meta -> manual_kind_enum: "kind"
+

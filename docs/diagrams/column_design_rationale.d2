@@ -1,0 +1,129 @@
+vars: {
+  d2-config: {
+    layout-engine: elk
+  }
+}
+
+direction: right
+
+classes: {
+  bad: {
+    style: {
+      fill: "#fff0f3"
+      stroke: "#c2255c"
+      stroke-width: 2
+      border-radius: 6
+      font-color: "#0f172a"
+    }
+  }
+  good: {
+    style: {
+      fill: "#dcfce7"
+      stroke: "#15803d"
+      stroke-width: 2
+      border-radius: 6
+      font-color: "#052e16"
+    }
+  }
+  note: {
+    style: {
+      fill: "#e7f5ff"
+      stroke: "#1971c2"
+      stroke-width: 1
+      border-radius: 6
+      font-color: "#0f172a"
+    }
+  }
+  decision: {
+    style: {
+      fill: "#f3e8ff"
+      stroke: "#9c36b5"
+      stroke-width: 2
+      border-radius: 6
+      font-color: "#0f172a"
+    }
+  }
+}
+
+BAD: {
+  label: "BAD — 한 셀에 모두 담기\n검수와 검색 모두 실패"
+  direction: down
+  style: {
+    fill: "#fff5f7"
+    stroke: "#c2255c"
+    stroke-width: 1
+    border-radius: 8
+    font-color: "#14532d"
+  }
+
+  blob: {
+    label: "F-6 결혼이민\n\n핵심내용:\n[자격요건] 한국에서 혼인 성립\n[제출서류] 통합신청서, 결혼증명서\n[수수료] 변경 10만원, 연장 6만원\n[제한] 단기사증, 불법체류자 제외\n[예외] 임신 출산 시 변경 가능\n[기간] 변경 1년, 연장 최대 3년\n...\n5,000자 이상 한 셀"
+    shape: rectangle
+    class: bad
+  }
+
+  audit: {
+    label: "검수자\n이 행이 맞다 틀리다 판단 불가"
+    shape: rectangle
+    class: note
+  }
+
+  rag: {
+    label: "RAG\n자격변경 요건과 연장 서류가\n한 답변에 섞임"
+    shape: rectangle
+    class: note
+  }
+
+  trace: {
+    label: "원본 대조\n페이지가 여러 곳에 흩어져 추적 불가"
+    shape: rectangle
+    class: note
+  }
+
+  blob -> audit: "검수 실패"
+  blob -> rag: "검색 오염"
+  blob -> trace: "추적 불가"
+}
+
+decision: {
+  label: "v4 설계 선택\n행 = 비자코드 × 신청종류\n컬럼 = 항목별 의미 단위"
+  shape: diamond
+  class: decision
+}
+
+GOOD: {
+  label: "GOOD — (비자코드 × 신청종류) + 항목별 컬럼\n행 단위 검수 가능"
+  direction: down
+  style: {
+    fill: "#f0fdf4"
+    stroke: "#15803d"
+    stroke-width: 1
+    border-radius: 8
+    font-color: "#14532d"
+  }
+
+  change: {
+    label: "F-6-1 / 체류자격 변경\n\n자격요건: 2026년 소득요건\n제출서류: [공통] [필수] [기타]\n수수료: 10만원\n1회부여 체류기간: 1년 이내\n체류상한: 재임기간 범위\n제한: 단기사증, 형사범 등\n예외: 사증면제 독일인 가능\n출처: F-6-1 변경허가 (p. 442)"
+    shape: rectangle
+    class: good
+  }
+
+  extend: {
+    label: "F-6-1 / 체류기간 연장\n\n자격요건: 정상 혼인 유지\n제출서류: [공통] [필수]\n수수료: 3만원\n1회부여 체류기간: 3년\n제한: 자녀 없을 시 1년\n출처: F-6-1 연장허가 (p. 451)"
+    shape: rectangle
+    class: good
+  }
+
+  issue: {
+    label: "F-6-1 / 사증발급\n(해외에서 신청)\n\n자격요건: 혼인 성립\n제출서류: ...\n출처: F-6-1 사증발급 (p. 426)"
+    shape: rectangle
+    class: good
+  }
+
+  change -> extend: "다른 신청"
+  extend -> issue: "다른 신청"
+}
+
+BAD -> decision
+decision -> GOOD
+

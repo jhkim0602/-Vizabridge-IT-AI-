@@ -1,0 +1,158 @@
+vars: {
+  d2-config: {
+    layout-engine: elk
+  }
+}
+
+direction: right
+
+classes: {
+  source: {
+    style: {
+      fill: "#ecfdf5"
+      stroke: "#14532d"
+      stroke-width: 2
+      border-radius: 6
+      font-color: "#0f172a"
+    }
+  }
+  llm: {
+    style: {
+      fill: "#f3e8ff"
+      stroke: "#9c36b5"
+      stroke-width: 2
+      border-radius: 6
+      font-color: "#0f172a"
+    }
+  }
+  deterministic: {
+    style: {
+      fill: "#e7f5ff"
+      stroke: "#1971c2"
+      stroke-width: 2
+      border-radius: 6
+      font-color: "#0f172a"
+    }
+  }
+  output: {
+    style: {
+      fill: "#dcfce7"
+      stroke: "#15803d"
+      stroke-width: 2
+      border-radius: 6
+      font-color: "#052e16"
+    }
+  }
+  review: {
+    style: {
+      fill: "#fff0f6"
+      stroke: "#c2255c"
+      stroke-width: 2
+      border-radius: 6
+      font-color: "#0f172a"
+    }
+  }
+}
+
+input: {
+  label: "입력"
+  style: {
+    fill: "#f8fafc"
+    stroke: "#14532d"
+    stroke-width: 1
+    border-radius: 8
+    font-color: "#14532d"
+  }
+
+  hwp: {
+    label: "정부 HWP 매뉴얼\n체류 · 사증\nsource of truth"
+    shape: rectangle
+    class: source
+  }
+}
+
+compile: {
+  label: "컴파일 — LLM 1회 + 결정적 5단계"
+  direction: down
+  style: {
+    fill: "#f8fafc"
+    stroke: "#15803d"
+    stroke-width: 1
+    border-radius: 8
+    font-color: "#14532d"
+  }
+
+  md: {
+    label: "raw Markdown\nkordoc"
+    shape: rectangle
+    class: deterministic
+  }
+
+  norm: {
+    label: "normalized MD\n행정 의미 단위 row"
+    shape: rectangle
+    class: llm
+  }
+
+  csv: {
+    label: "v4 CSV/XLSX 26컬럼\n비자 × 신청종류\n사증 158 · 체류 275"
+    shape: rectangle
+    class: output
+  }
+
+  md -> norm
+  norm -> csv
+}
+
+page_mapping: {
+  label: "페이지 매핑"
+  direction: down
+  style: {
+    fill: "#f8fafc"
+    stroke: "#1971c2"
+    stroke-width: 1
+    border-radius: 8
+    font-color: "#14532d"
+  }
+
+  pdf: {
+    label: "PDF\nLibreOffice 변환"
+    shape: rectangle
+    class: deterministic
+  }
+
+  pages: {
+    label: "페이지 인덱스\npdfplumber 캐시"
+    shape: rectangle
+    class: deterministic
+  }
+
+  pdf -> pages
+}
+
+human_review: {
+  label: "사람 검수"
+  style: {
+    fill: "#f8fafc"
+    stroke: "#c2255c"
+    stroke-width: 1
+    border-radius: 8
+    font-color: "#14532d"
+  }
+
+  notion: {
+    label: "Notion 검수 DB\n행 단위 검토"
+    shape: rectangle
+    class: review
+  }
+}
+
+input.hwp -> compile.md: "HWP → Markdown"
+input.hwp -> page_mapping.pdf: "HWP → PDF" {
+  style: {
+    stroke: "#64748b"
+    stroke-dash: 5
+  }
+}
+page_mapping.pages -> compile.csv: "page_no 채움"
+compile.csv -> human_review.notion: "검수 import"

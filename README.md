@@ -240,7 +240,7 @@ sequenceDiagram
 
 ## v4 스키마 (26컬럼)
 
-![v4 schema](docs/diagrams/v4_schema.svg)
+![v4 schema](docs/diagrams/v4_schema.png)
 
 스키마 원본은 [`docs/diagrams/v4_schema.dbml`](docs/diagrams/v4_schema.dbml). dbdiagram.io 에 그대로 붙여넣으면 인터랙티브 ERD 를 볼 수 있다.
 
@@ -471,7 +471,7 @@ python -m pytest tests -q
 │   │   └── validation/            # 검증 결과
 │   └── processed/                 # 최종 v4 CSV/XLSX
 ├── docs/
-│   ├── diagrams/                  # 아키텍처·스키마 이미지 (v4_schema.dbml/svg 포함)
+│   ├── diagrams/                  # 아키텍처·스키마 이미지 (v4_schema.dbml/svg/png 포함)
 │   ├── report/                    # 결과보고서 PDF
 │   ├── pipeline_strategy.md       # 파이프라인 설계 배경
 │   └── project_structure.md       # 폴더 운영 정책

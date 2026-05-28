@@ -23,7 +23,7 @@ This skill is the only sanctioned way to modify an already-written chunk block. 
    This refreshes the validation JSON.
 
 2. **Pick the next flagged chunk**. Run
-   `python .Codex/skills/vizabridge-repair/scripts/show_flagged.py {manual_key}`.
+   `python .claude/skills/vizabridge-repair/scripts/show_flagged.py {manual_key}`.
    It lists chunks with issues, with a brief description of each issue
    type, ordered by severity. Pick the top one (or the chunk_id the user
    asked you to repair).
@@ -46,13 +46,13 @@ This skill is the only sanctioned way to modify an already-written chunk block. 
      content.
 
 5. **Emit a corrected block** following the same canonical format as the
-   normalize skill (see `.Codex/skills/vizabridge-normalize/references/output_format.md`).
+   normalize skill (see `.claude/skills/vizabridge-normalize/references/output_format.md`).
    Same open/close markers (`<!-- vizabridge-normalize v1 chunk: ... -->`
    and `<!-- end chunk: ... -->`), same chunk_id, same source_hash.
 
 6. **Replace, don't append**. Write the new block to
    `/tmp/vizabridge_repair_block.md` and run
-   `python .Codex/skills/vizabridge-repair/scripts/replace_block.py {manual_key} {chunk_id} /tmp/vizabridge_repair_block.md`.
+   `python .claude/skills/vizabridge-repair/scripts/replace_block.py {manual_key} {chunk_id} /tmp/vizabridge_repair_block.md`.
    The script:
    - Locates the old block by chunk_id
    - Validates the new block (schema + hash)

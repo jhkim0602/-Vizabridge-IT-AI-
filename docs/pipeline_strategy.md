@@ -92,27 +92,24 @@ kordoc 출력의 가장 안정적인 구조 단위는 **top-level `<table>` 블�
 4. 하위 항목: 대상, 요건, 서류, 제한, 절차, FAQ
 5. (챗봇 CSV에 한해) 사용자 의도 태그: 결혼/배우자, 유학/연수, 취업/고용 …
 
-## Final CSV Design Principle
+## Final CSV Design Principle (v4)
 
-고객은 보통 비자코드를 모릅니다. 그래서 두 CSV를 분리합니다.
+본 데이터셋은 「매뉴얼 원문이 ground truth」 원칙에 따라 임의의 요약·가공 없이 매뉴얼 원문 표현을 보존합니다. 임베딩·검색·챗봇 응답과 같은 후속 가공은 별도 단계에서 본 데이터셋을 입력으로 받아 수행하는 것을 전제로 합니다 (보고서 Abstract / 6.2).
 
-- **semantic clean CSV** — 매뉴얼의 행정 구조를 보존. 코드 + 민원유형 + 하위 항목별 정제 필드.
-- **chatbot-ready CSV** — semantic을 기반으로 사용자의 자연어 상황(`F-6` ↔ "한국인 배우자와 결혼했어요")을 보강.
+산출물은 1종 — `{사증,체류}매뉴얼_최종_v4_26col.csv/.xlsx`. 한 행 = `(비자코드 × 신청종류)` 1조합. 26컬럼은 보고서 2.1 「26 컬럼 한눈에」 카테고리 6 분류를 따릅니다.
 
-CSV에는 PDF 페이지 번호, 원문 근거, raw text, review/debug 컬럼을 넣지 않습니다. 원문 확인은 `data/raw/` HWP를 참조합니다.
-
-CSV의 주 목적은 downstream RAG 전처리의 입력입니다. 목차/표지/양식 노이즈는 정규화 단계에서 제거하고 semantic 필드 중심으로 보존합니다.
+CSV에는 raw text, review/debug 컬럼을 넣지 않습니다. 원문 페이지 출처는 `출처` 컬럼에 `(p. NNN)` 형식으로 통합되어 검수자가 PDF 페이지로 즉시 점프할 수 있습니다. 검수 워크플로용 컬럼(`검수상태`, `검수메모`)은 본 데이터 계층에 포함하지 않고, Notion import 후 별도 컬럼을 추가하는 방식으로 운영합니다.
 
 ## What changed vs the legacy pipeline
 
-| | 과거 (LlamaParse 기반) | 현재 |
+| | 과거 (LlamaParse 기반) | 현재 (v4) |
 | --- | --- | --- |
 | 원본 | PDF (OCR) | HWP (정확) |
 | 1차 도구 | LlamaParse API ($) | kordoc CLI (무료, 로컬) |
-| 의미 분류 | 999줄 정규식 (`scripts/legacy/build_semantic_manual_csvs.py`) | Claude Code 스킬 (`/vizabridge-normalize`) |
-| 챗봇 풍부화 | 하드코딩 키워드 규칙 | Claude Code 스킬 (`/vizabridge-enrich-chatbot`) |
+| 의미 분류 | 999줄 정규식 | Claude Code 스킬 (`/vizabridge-normalize`) |
 | 할루시네이션 방지 | 없음 (규칙 기반이라 불필요) | `scripts/validate_normalization.py` (결정적 cross-validation) |
 | 재실행 비용 | 정규식 다시 돌리기, OCR 변동성 | 0 (정규화 MD 커밋되어 있음) |
 | API 결제 | LlamaCloud $$ | 0 (Max 구독으로 흡수) |
+| 산출물 | semantic + chatbot 2 CSV (스키마 가변) | v4 26컬럼 CSV/XLSX 1종 (사증 158 / 체류 275) |
 
-기존 정규식 빌더는 `scripts/legacy/`에 보존했습니다. `quality_report`가 그 모듈의 상수와 분류기 함수를 재사용합니다.
+레거시 정규식 빌더와 옛 챗봇 풍부화 단계는 본 저장소에서 제거되었습니다 — 보고서 1차 전처리 결과만 ground truth 로 유지하고, 임베딩·검색·챗봇 응답 등 후속 단계는 본 데이터셋을 입력으로 받는 별도 단계로 분리합니다 (보고서 6.2 참조).

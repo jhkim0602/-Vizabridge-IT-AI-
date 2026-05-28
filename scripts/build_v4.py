@@ -1,25 +1,31 @@
 #!/usr/bin/env python3
-"""검수용 v3 CSV 빌더 — 정규화 MD → 28컬럼 CSV.
+"""v4 CSV 빌더 — 정규화 MD → 26컬럼 CSV (사증 158행 / 체류 275행).
+
+v4 변경점 (v3 대비):
+- 컬럼: 28 → **26** (검수상태/검수메모 제거)
+- 명명: `{label}매뉴얼_최종_v4_26col.csv` (검수용/노션검수용 분리 폐지)
+- 통합행 분리 정책을 정규화 MD가 정답(ground truth)으로 흡수
+  (사증 130 → 158, 체류 233 → 275 행. 보고서 4.3 「통합행 분리」 참고)
+- 산출물에 XLSX 동시 생성 (검수자가 Notion/Excel에서 바로 열 수 있도록)
 
 흐름:
 1. `data/parsed/normalized/{stay,visa}_manual.md` 의 row 블록을 파싱
 2. 같은 (비자코드, 신청종류) 묶음을 한 행으로 병합
-3. 정규화 row의 필드(applicant_context, eligibility, ...)를 v3 컬럼으로 분배
+3. 정규화 row의 필드(applicant_context, eligibility, ...)를 v4 컬럼으로 분배
    - `duration_or_validity` 는 사증유효기간 / 1회부여 체류기간 / 체류상한 3컬럼으로 분리
 4. 상위코드/사증·체류 derive
 5. 비자 흐름 매핑 (선행자격/다음단계/동반가족/키워드)
-6. 검수 컬럼 추가 (검수상태=미검수, 검수메모="")
 
 산출물:
-- data/processed/체류매뉴얼_검수용_v3.csv
-- data/processed/사증매뉴얼_검수용_v3.csv
-- data/processed/체류매뉴얼_노션검수용_v3.csv (=검수용과 동일)
-- data/processed/사증매뉴얼_노션검수용_v3.csv
+- data/processed/사증매뉴얼_최종_v4_26col.csv (158 행 × 26 컬럼)
+- data/processed/사증매뉴얼_최종_v4_26col.xlsx
+- data/processed/체류매뉴얼_최종_v4_26col.csv (275 행 × 26 컬럼)
+- data/processed/체류매뉴얼_최종_v4_26col.xlsx
 
 이후 `scripts/fill_page_numbers.py` 로 출처에 페이지 번호 통합.
 
 용법:
-    .venv/bin/python scripts/build_v3.py
+    .venv/bin/python scripts/build_v4.py
 """
 
 from __future__ import annotations
@@ -35,14 +41,21 @@ NORMALIZED_DIR = PROJECT_ROOT / "data" / "parsed" / "normalized"
 PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 
 # ---------------------------------------------------------------------------
-# 컬럼 스키마 (v3)
+# 컬럼 스키마 (v4 — 26컬럼)
 # ---------------------------------------------------------------------------
+#
+# 보고서 2.1 「26 컬럼 한눈에」 카테고리 6 분류:
+#   - 식별·자격 (5): 비자코드, 상위코드, 사증·체류, 신청종류, 키워드
+#   - 신청 조건 (3): 신청상황, 대상자, 자격요건
+#   - 기간       (3): 사증유효기간, 1회부여 체류기간, 체류상한
+#   - 절차·서류  (6): 절차, 수수료, 추천·승인기관, 의무사항, 제출서류, 점수표
+#   - 관계·제한  (7): 쿼터, 초청자, 예외, 제한, 선행자격, 다음단계, 동반가족
+#   - 메타       (2): 예상질문, 출처
 
-V3_COLUMNS = [
+V4_COLUMNS = [
     # 식별·분류 (4)
     "비자코드", "상위코드", "사증·체류", "신청종류",
-    # 행정 내용 (15) — 표 데이터는 v3.1 에서 폐기 (점수표/쿼터/동반가족/수수료/자격요건 라우팅).
-    # 기간은 v3.2 에서 3컬럼으로 분리 (사증유효기간 / 1회부여 체류기간 / 체류상한).
+    # 행정 내용 (15)
     "신청상황", "대상자", "자격요건", "절차", "수수료",
     "사증유효기간", "1회부여 체류기간", "체류상한",
     "제한", "예외", "의무사항", "점수표", "쿼터",
@@ -53,8 +66,6 @@ V3_COLUMNS = [
     "출처",
     # 흐름·검색 (4)
     "선행자격", "다음단계", "동반가족", "키워드",
-    # 검수 (2)
-    "검수상태", "검수메모",
 ]
 
 
@@ -124,10 +135,10 @@ def iter_row_blocks(text: str) -> Iterable[dict[str, str]]:
 
 
 # ---------------------------------------------------------------------------
-# 행 → v3 컬럼 매핑
+# 행 → v4 컬럼 매핑
 # ---------------------------------------------------------------------------
 
-# normalized 필드 → v3 컬럼 직접 매핑.
+# normalized 필드 → v4 컬럼 직접 매핑.
 # duration_or_validity 는 직접 매핑하지 않고 _split_duration 으로 3컬럼에 분배.
 DIRECT_MAP = {
     "applicant_context": "신청상황",
@@ -167,12 +178,10 @@ def merge_list(values: list[str], sep: str = "\n\n") -> str:
 # 기간 3분할 (사증유효기간 / 1회부여 체류기간 / 체류상한)
 # ---------------------------------------------------------------------------
 #
-# 매뉴얼의 기간 정보는 통상 세 축이 한 셀에 줄바꿈으로 혼재한다:
-#   - 사증유효기간: 사증 자체의 효력 기간 (단수/복수, 유효기간 N월/년)
-#   - 1회부여 체류기간: 입국 시마다 부여되는 체류허가 기간 (체류기간 상한)
-#   - 체류상한: 누적 또는 자격존속 상한 (재임기간·최장체류기간·범위 내)
-#
-# 라인 단위로 매칭하되, 한 라인이 두 축을 동시에 언급하면 양쪽에 모두 들어간다.
+# 매뉴얼의 기간 정보는 통상 세 축이 한 셀에 줄바꿈으로 혼재한다 (보고서 4.2):
+#   - 사증유효기간:   사증 자체의 효력 기간 (단수/복수, 유효기간 N월/년)
+#   - 1회부여 체류기간: 입국 1회마다 부여되는 체류허가 기간
+#   - 체류상한:       누적 또는 자격존속 상한 (재임기간·최장체류기간 등)
 
 _VISA_VALIDITY_RE = re.compile(
     r"단수사증|복수사증|단·복수\s*사증|단·복수재입국허가|복수재입국허가"
@@ -181,7 +190,7 @@ _VISA_VALIDITY_RE = re.compile(
     r"|유효기간\s*\d+\s*년\s*이내"
     r"|재입국허가\s*(?:면제|복수)"
     r"|단·복수\s*비자|단수\s*비자|복수\s*비자"
-    r"|단수\b|복수\b"  # "체류기간 1년 이내, 단수" 같은 trailing
+    r"|단수\b|복수\b"
 )
 
 _SINGLE_STAY_RE = re.compile(
@@ -206,7 +215,6 @@ _TOTAL_STAY_RE = re.compile(
     r"|재고용\s*특례"
 )
 
-# 라인이 사실상 숫자+기간단위로만 끝나면 (예: "2년", "90일", "2년 이내") → 1회부여
 _PLAIN_PERIOD_RE = re.compile(r"^\d+\s*(?:일|개월|년)(?:\s*이내|\s*이하)?$")
 
 
@@ -228,12 +236,10 @@ def _split_duration(text: str) -> tuple[str, str, str]:
         is_single = bool(_SINGLE_STAY_RE.search(line))
         is_total = bool(_TOTAL_STAY_RE.search(line))
 
-        # 어느 정규식에도 잡히지 않으면 휴리스틱 fallback
         if not (is_visa or is_single or is_total):
             if _PLAIN_PERIOD_RE.match(line):
-                is_single = True  # "2년" 같은 단독 표기는 통상 체류기간
+                is_single = True
             else:
-                # 잘 모르겠는 라인 — 체류상한으로 폴백 (가장 일반적 의미)
                 is_total = True
 
         if is_visa:
@@ -259,7 +265,7 @@ def _split_duration(text: str) -> tuple[str, str, str]:
     )
 
 
-# 표 내용 라우팅용 키워드 → 컬럼 매핑. 우선순위 위에서 아래로.
+# 표 본문 라우팅 (점수표 / 쿼터 / 동반가족 / 수수료 / 자격요건 catchall)
 _TABLE_ROUTING = [
     ("점수표", re.compile(r"점수|배점|만점|점 ?이상|합격선")),
     ("쿼터", re.compile(r"쿼터|허용인원|제재 ?기준|선발 ?인원|%|인원 ?\(|명 ?이내")),
@@ -269,11 +275,6 @@ _TABLE_ROUTING = [
 
 
 def _route_table_blob(text: str) -> str:
-    """표 본문을 분석해 점수표 / 쿼터 / 동반가족 / 수수료 / 자격요건 중 적절한 컬럼명을 리턴.
-
-    매뉴얼의 표는 종류가 다양해서 (점수표·쿼터표·국가 목록·약호 분류 등) v3 의 다른
-    컬럼이 이미 자기 목적을 가진 경우 그쪽으로 흘려보내고, 그 외는 자격요건이 catchall.
-    """
     for target, pat in _TABLE_ROUTING:
         if pat.search(text):
             return target
@@ -281,10 +282,15 @@ def _route_table_blob(text: str) -> str:
 
 
 def aggregate_rows(rows: list[dict[str, str]], manual_kind: str) -> list[dict[str, str]]:
-    """같은 (비자코드, 신청종류) 그룹을 한 v3 행으로 병합."""
+    """같은 (비자코드, 신청종류) 그룹을 한 v4 행으로 병합.
+
+    보고서 4.3 「통합행 분리」 정책에 따라, 정규화 MD가 이미 국가별·분야별·협정별·
+    지역별·sub-code별로 행을 분리해 두는 것을 ground truth 로 본다. 즉 build 단계에서
+    추가 분리하지 않고, 정규화 단계의 (visa_code, subtype_or_program, petition_type)
+    grouping 키를 그대로 보존한다.
+    """
     groups: "OrderedDict[tuple[str, str], list[dict[str, str]]]" = OrderedDict()
     for r in rows:
-        # 비자코드 정규화: subtype 이 있으면 "X (X-N)" 형식
         base = r.get("visa_code") or r.get("stay_status_code") or ""
         subtype = r.get("subtype_or_program", "").strip()
         if subtype and subtype != base:
@@ -298,28 +304,26 @@ def aggregate_rows(rows: list[dict[str, str]], manual_kind: str) -> list[dict[st
 
     out_rows: list[dict[str, str]] = []
     for (visa_code, petition), group in groups.items():
-        new = {c: "" for c in V3_COLUMNS}
+        new = {c: "" for c in V4_COLUMNS}
         new["비자코드"] = visa_code
         new["상위코드"] = derive_parent_code(visa_code)
         new["사증·체류"] = "사증" if manual_kind == "visa" else "체류"
         new["신청종류"] = petition
-        new["검수상태"] = "미검수"
 
-        # 내용 컬럼: 모든 row 의 같은 normalized 필드를 모아서 v3 컬럼에 결합
-        for col in [c for c in V3_COLUMNS if c in DIRECT_MAP.values()]:
+        # 내용 컬럼
+        for col in [c for c in V4_COLUMNS if c in DIRECT_MAP.values()]:
             keys = [k for k, v in DIRECT_MAP.items() if v == col]
             values = [r.get(k, "") for r in group for k in keys]
             new[col] = merge_list(values)
 
-        # 기간: duration_or_validity 를 3컬럼으로 분리.
-        # 그룹 안 여러 row 의 본문을 모은 뒤 라인 단위 분류.
+        # 기간 3분할
         duration_blob = merge_list([r.get("duration_or_validity", "") for r in group])
         v_valid, s_stay, t_stay = _split_duration(duration_blob)
         new["사증유효기간"] = v_valid
         new["1회부여 체류기간"] = s_stay
         new["체류상한"] = t_stay
 
-        # 제출서류 = common + mandatory + other documents (라벨 prefix)
+        # 제출서류 = [공통서류] + [필수서류] + [기타서류]
         docs_parts: list[str] = []
         common = merge_list([r.get("common_documents", "") for r in group])
         mandatory = merge_list([r.get("mandatory_documents", "") for r in group])
@@ -332,9 +336,7 @@ def aggregate_rows(rows: list[dict[str, str]], manual_kind: str) -> list[dict[st
             docs_parts.append(f"[기타서류]\n{other}")
         new["제출서류"] = "\n\n".join(docs_parts)
 
-        # 표 내용은 별도 컬럼이 아니라 라우팅 로직으로 적절한 v3 컬럼에 흡수.
-        # 표 요약(table_summary)과 표 항목(table_rows)을 합친 다음 키워드로
-        # 점수표 / 쿼터 / 동반가족 / 수수료 / 자격요건 중 한 곳에 append.
+        # 표 본문 라우팅
         ts = merge_list([r.get("table_summary", "") for r in group])
         tr = merge_list([r.get("table_rows", "") for r in group])
         table_blob = "\n\n".join([x for x in (ts, tr) if x])
@@ -342,9 +344,8 @@ def aggregate_rows(rows: list[dict[str, str]], manual_kind: str) -> list[dict[st
             target = _route_table_blob(table_blob)
             new[target] = merge_list([new[target], f"[표]\n{table_blob}"])
 
-        # 예상질문 (LLM 출력에 있으면)
+        # 예상질문 (1~4 cap)
         new["예상질문"] = merge_list([r.get("expected_questions", "") for r in group], sep="\n")
-        # 4개로 cap
         questions = [q for q in new["예상질문"].split("\n") if q.strip()][:4]
         new["예상질문"] = "\n".join(questions)
 
@@ -566,8 +567,18 @@ def visa_flow(visa_code: str, parent: str) -> dict[str, str]:
 
 
 # ---------------------------------------------------------------------------
-# 메인
+# 출력 (CSV + XLSX 동시 생성)
 # ---------------------------------------------------------------------------
+
+
+def _write_xlsx(csv_path: Path) -> Path:
+    """CSV → XLSX 동기화. pandas + openpyxl 사용."""
+    import pandas as pd  # lazy import — Stage 5 외에는 불필요
+
+    xlsx = csv_path.with_suffix(".xlsx")
+    df = pd.read_csv(csv_path, dtype=str, keep_default_na=False)
+    df.to_excel(xlsx, index=False, engine="openpyxl")
+    return xlsx
 
 
 def build(manual_kind: str) -> tuple[int, int]:
@@ -577,27 +588,26 @@ def build(manual_kind: str) -> tuple[int, int]:
     text = norm_path.read_text(encoding="utf-8")
     rows = list(iter_row_blocks(text))
 
-    v3_rows = aggregate_rows(rows, manual_kind)
+    v4_rows = aggregate_rows(rows, manual_kind)
 
     label = "체류" if manual_kind == "stay" else "사증"
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
-    # 검수용 + 노션검수용 (현재는 동일 내용)
-    for suffix in ("검수용", "노션검수용"):
-        out = PROCESSED_DIR / f"{label}매뉴얼_{suffix}_v3.csv"
-        with out.open("w", encoding="utf-8-sig", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=V3_COLUMNS)
-            w.writeheader()
-            w.writerows(v3_rows)
+    csv_path = PROCESSED_DIR / f"{label}매뉴얼_최종_v4_26col.csv"
+    with csv_path.open("w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=V4_COLUMNS)
+        w.writeheader()
+        w.writerows(v4_rows)
+    _write_xlsx(csv_path)
 
-    return len(rows), len(v3_rows)
+    return len(rows), len(v4_rows)
 
 
 def main() -> int:
     for manual in ("stay", "visa"):
         src_n, out_n = build(manual)
         label = "체류" if manual == "stay" else "사증"
-        print(f"  {label}: normalized rows {src_n} → v3 rows {out_n}")
+        print(f"  {label}: normalized rows {src_n} → v4 rows {out_n}")
     print("\n다음 단계: .venv/bin/python scripts/fill_page_numbers.py")
     return 0
 

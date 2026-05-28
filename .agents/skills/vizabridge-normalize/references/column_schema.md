@@ -103,3 +103,33 @@ For sub-codes (D-2-1, F-2-R, E-7-4, etc.) preserve the full code in `subtype_or_
 ## Forbidden fields
 
 Never emit any of: PDF page numbers, raw original text, evidence quotes, review flags, debug fields, or comments about your reasoning. The CSV is for downstream consumers and must stay clean.
+
+## v4 CSV 매핑 (참고)
+
+본 정규화 필드는 결정적 Python (`scripts/build_v4.py`) 에 의해 v4 26컬럼 CSV로 변환됩니다. 매핑은 다음과 같습니다.
+
+| normalized 필드 | v4 컬럼 |
+| --- | --- |
+| `applicant_context` | `신청상황` |
+| `target_persons` | `대상자` |
+| `eligibility`, `requirements` | `자격요건` |
+| `procedure` | `절차` |
+| `fees` | `수수료` |
+| `restrictions` | `제한` |
+| `exceptions` | `예외` |
+| `obligations` | `의무사항` |
+| `score_criteria` | `점수표` |
+| `quota_or_limit` | `쿼터` |
+| `inviter_context` | `초청자` |
+| `recommendation_or_approval` | `추천·승인기관` |
+| `duration_or_validity` | `사증유효기간` / `1회부여 체류기간` / `체류상한` (3컬럼 분할) |
+| `common_documents` + `mandatory_documents` + `other_documents` | `제출서류` (`[공통서류]`/`[필수서류]`/`[기타서류]` 라벨로) |
+| `table_summary` + `table_rows` | 키워드 라우팅으로 `점수표`/`쿼터`/`동반가족`/`수수료`/`자격요건` 중 하나로 흡수 |
+| `expected_questions` (1~4 cap) | `예상질문` |
+| `section_title` | `출처` (페이지는 Stage 6 가 추가) |
+| `visa_code` / `stay_status_code` + `subtype_or_program` | `비자코드` (`X (X-N)` 형식), `상위코드` 는 derive |
+| `petition_type` | `신청종류` |
+| (별도 매핑) | `사증·체류` = manual_kind |
+| (PARENT_FLOW / SUB_OVERRIDE) | `선행자격`, `다음단계`, `동반가족`, `키워드` |
+
+`keywords`, `source_page`, `source_excerpt`, `related_visa_codes` 는 정규화 단계의 검수 보조 필드이며 v4 CSV 컬럼으로 직접 전달되지 않습니다 (검증 단계와 후속 RAG 가공에서 활용).

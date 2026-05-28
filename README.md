@@ -6,10 +6,11 @@
 
 [![Pipeline](https://img.shields.io/badge/pipeline-6_stage-1971c2)]()
 [![LLM](https://img.shields.io/badge/LLM-1_stage_only-9c36b5)]()
-[![Schema](https://img.shields.io/badge/v3_CSV-26_columns-2f9e44)]()
+[![Schema](https://img.shields.io/badge/v4_CSV-26_columns-2f9e44)]()
 [![Source](https://img.shields.io/badge/source-HWP-e8590c)]()
 [![Page Match](https://img.shields.io/badge/page_match-100%25-2f9e44)]()
-[![Rows](https://img.shields.io/badge/rows-체류_233_·_사증_130-1971c2)]()
+[![Rows](https://img.shields.io/badge/rows-사증_158_·_체류_275-1971c2)]()
+[![Report](https://img.shields.io/badge/report-PDF-d6336c)](docs/report/Vizabridge_데이터전처리_결과보고서.pdf)
 
 [한국어](README.md) · [English](README_EN.md)
 
@@ -19,7 +20,9 @@
 
 ## 한 줄 정의
 
-> 700 페이지짜리 정부 HWP 매뉴얼을, **검수자가 행 단위로 OK·NG 판단할 수 있는 28컬럼 CSV** 로 컴파일한다.
+> 외교부 사증·체류민원 자격별 안내 매뉴얼 865페이지를, **검수자가 행 단위로 OK·NG 판단할 수 있는 26컬럼 CSV/XLSX** (사증 158행 · 체류 275행) 로 컴파일한다.
+>
+> 본 1차 데이터 전처리의 전체 설계 배경·작업 기준·향후 검토 사항은 [결과보고서 PDF](docs/report/Vizabridge_데이터전처리_결과보고서.pdf)에 정리되어 있다.
 
 ![Vizabridge architecture overview](docs/diagrams/architecture_overview.png)
 
@@ -54,7 +57,7 @@
 - `사증민원 자격별 안내 매뉴얼` — 베트남에서 결혼하고 처음 한국에 들어오려는 단계
 - `체류민원 자격별 안내 매뉴얼` — 이미 한국에 다른 자격으로 있다가 결혼해서 자격을 바꾸려는 단계
 
-→ 그래서 v3 CSV 의 `사증·체류` 컬럼이 두 매뉴얼을 구분하는 가장 큰 분기점이다.
+→ 그래서 v4 CSV 의 `사증·체류` 컬럼이 두 매뉴얼을 구분하는 가장 큰 분기점이다.
 
 ### 2. 비자코드 — 알파벳 + 숫자의 의미
 
@@ -89,7 +92,7 @@
   - `F-6-2` 자녀양육 (한부모)
   - `F-6-3` 혼인단절 (사별·이혼)
 
-→ v3 CSV 의 `상위코드` 와 `비자코드` 가 다른 이유다. 비자코드 = `F-6 (F-6-1)`, 상위코드 = `F-6`.
+→ v4 CSV 의 `상위코드` 와 `비자코드` 가 다른 이유다. 비자코드 = `F-6 (F-6-1)`, 상위코드 = `F-6`.
 
 ### 4. 신청종류 — 같은 비자라도 13가지 다른 절차
 
@@ -111,11 +114,11 @@
 | **고용변동 신고** | E-9·E-10 고용주 | 외국인근로자 퇴사·이직 신고 |
 | **공통사항** | 모든 자격 | 수수료·기간 기본 규칙 |
 
-→ v3 CSV 가 `(비자코드 × 신청종류)` 로 행을 나누는 이유다. F-6 한 명도 사증발급 → 외국인등록 → 체류기간 연장 → ... 단계마다 요건·서류가 다 다르다.
+→ v4 CSV 가 `(비자코드 × 신청종류)` 로 행을 나누는 이유다. F-6 한 명도 사증발급 → 외국인등록 → 체류기간 연장 → ... 단계마다 요건·서류가 다 다르다.
 
 ### 5. 비자의 흐름 — 한국 거주 라이프사이클
 
-사용자는 보통 한 자격에서 다음 자격으로 옮겨간다. v3 CSV 의 `선행자격` `다음단계` 컬럼이 이걸 잡는다.
+사용자는 보통 한 자격에서 다음 자격으로 옮겨간다. v4 CSV 의 `선행자격` `다음단계` 컬럼이 이걸 잡는다.
 
 ```
 유학       D-2  ─→  구직 D-10  ─→  취업 E-7  ─→  점수제 거주 F-2-7  ─→  영주 F-5
@@ -139,7 +142,7 @@
 | F-5 영주 (점수제 sub) | F-2-71 자녀 |
 | A-1 외교 | A-1 (가족도 같은 자격) |
 
-→ v3 CSV 의 `동반가족` 컬럼이 이 관계를 한 줄로 보여준다.
+→ v4 CSV 의 `동반가족` 컬럼이 이 관계를 한 줄로 보여준다.
 
 ---
 
@@ -162,7 +165,9 @@
 | 모델 | 행 단위 | 한 행의 셀 길이 | 검수 가능성 |
 | --- | --- | --- | --- |
 | ❌ Bad | 비자코드 1개 | 5,000자 이상 | 불가능 — 사증발급/자격변경/기간연장이 한 셀에 섞임 |
-| ✅ Good (v3) | (비자코드 × 신청종류) | 항목별 컬럼으로 분리 | 행 단위 OK·NG 즉시 판정 |
+| ✅ Good (v4) | (비자코드 × 신청종류) | 항목별 컬럼으로 분리 | 행 단위 OK·NG 즉시 판정 |
+
+v4 에서는 보고서 4.3 「통합행 분리」 정책에 따라 같은 자격 안에서도 매뉴얼이 별도 번호·국가·분야·협정·지역·sub-code 로 구분한 발급 기준은 각각 별도 행으로 추가 분리한다. 이 정책으로 v3 (사증 130 / 체류 233) → v4 (사증 158 / 체류 275) 행 수가 증가했다.
 
 ---
 
@@ -172,13 +177,14 @@
 | --- | --- |
 | 원본 | `data/raw/*.hwp` |
 | 중간 표현 | `data/parsed/normalized/{stay,visa}_manual.md` |
-| 최종 산출물 | `data/processed/{체류,사증}매뉴얼_검수용_v3.csv` |
+| 최종 산출물 | `data/processed/{사증,체류}매뉴얼_최종_v4_26col.csv` + `.xlsx` |
 | 행 단위 | `(비자코드 × 신청종류)` |
-| 스키마 | 28컬럼 |
+| 스키마 | **26컬럼** (보고서 2.1 「26 컬럼 한눈에」 카테고리 6 분류) |
 | LLM 호출 | Stage 3 정규화 1회 |
-| 결정적 처리 | HWP 변환, 청크 분할, 검증, CSV 빌드, 페이지 매핑 |
-| 현재 행 수 | 체류 233행, 사증 130행 |
+| 결정적 처리 | HWP 변환, 청크 분할, 검증, CSV/XLSX 빌드, 페이지 매핑 |
+| 현재 행 수 | **사증 158행, 체류 275행** |
 | 페이지 매핑 | 100% (모든 행의 `출처`에 `p. NNN`) |
+| 결과 보고서 | [`docs/report/Vizabridge_데이터전처리_결과보고서.pdf`](docs/report/Vizabridge_데이터전처리_결과보고서.pdf) |
 
 ---
 
@@ -194,10 +200,10 @@
 | --- | --- | --- | --- | --- |
 | 1 | HWP → Markdown | `scripts/parse_hwp_to_markdown.py`, kordoc | `data/raw/*.hwp` | `data/parsed/raw/*.md` |
 | 2 | 표 경계 기준 청크 분할 | `scripts/index_markdown_chunks.py` | raw Markdown | `data/parsed/chunks/*.jsonl` |
-| 3 | 행정 의미 단위 정규화 | `/vizabridge-normalize` Claude Code 스킬 | chunks | `data/parsed/normalized/*.md` |
+| 3 | 행정 의미 단위 정규화 (통합행 분리) | `/vizabridge-normalize` Claude Code 스킬 | chunks | `data/parsed/normalized/*.md` |
 | 4 | 원본 대조 검증 | `scripts/validate_normalization.py` | normalized + raw | `data/parsed/validation/*.json` |
-| 5 | v3 CSV 빌드 | `scripts/build_v3.py` | normalized MD | `data/processed/*_검수용_v3.csv` |
-| 6 | PDF 페이지 fuzzy 매칭 | `scripts/fill_page_numbers.py` | v3 CSV + PDF | 출처 페이지 보강 CSV |
+| 5 | v4 CSV + XLSX 빌드 | `scripts/build_v4.py` | normalized MD | `data/processed/*_최종_v4_26col.{csv,xlsx}` |
+| 6 | PDF 페이지 fuzzy 매칭 + XLSX 동기화 | `scripts/fill_page_numbers.py` | v4 CSV + PDF | 출처 페이지 보강 CSV/XLSX |
 
 ### 시퀀스 (개발자 시점)
 
@@ -211,43 +217,47 @@ sequenceDiagram
     participant LLM as /vizabridge-normalize
     participant Norm as normalized MD
     participant Validator as validate_normalization.py
-    participant Builder as build_v3.py
+    participant Builder as build_v4.py
     participant Pager as fill_page_numbers.py
-    participant CSV as v3 CSV
+    participant CSV as v4 CSV/XLSX
     participant Reviewer as Notion 검수
 
     Dev->>HWP: 정부 HWP 원본 배치
     Dev->>RawMD: Stage 1 — parse_hwp_to_markdown
     RawMD->>Chunks: Stage 2 — index_markdown_chunks
-    Dev->>LLM: Stage 3 — /vizabridge-normalize stay·visa
+    Dev->>LLM: Stage 3 — /vizabridge-normalize stay·visa (통합행 분리 포함)
     LLM->>Norm: 청크별 행정 의미 row 블록 생성
     Norm->>Validator: Stage 4 — 원본 교차 검증
     Validator-->>Dev: 비자코드·금액·서류명 누락/발명 리포트
-    Norm->>Builder: Stage 5 — v3 28컬럼 CSV 빌드
+    Norm->>Builder: Stage 5 — v4 26컬럼 CSV + XLSX 빌드
     HWP->>Pager: HWP → PDF 변환본
     Builder->>Pager: CSV 행의 핵심 텍스트
-    Pager->>CSV: 출처 컬럼에 p. NNN 부착
+    Pager->>CSV: 출처 컬럼에 p. NNN 부착 + XLSX 동기화
     CSV->>Reviewer: 행 단위 OK·NG 검수
 ```
 
 ---
 
-## v3 스키마 (28컬럼)
+## v4 스키마 (26컬럼)
 
-![v3 schema](docs/diagrams/v3_schema.png)
+![v4 schema](docs/diagrams/v4_schema.svg)
 
-스키마 원본은 [`docs/diagrams/v3_schema.dbml`](docs/diagrams/v3_schema.dbml). dbdiagram.io 에 그대로 붙여넣으면 인터랙티브 ERD 를 볼 수 있다.
+스키마 원본은 [`docs/diagrams/v4_schema.dbml`](docs/diagrams/v4_schema.dbml). dbdiagram.io 에 그대로 붙여넣으면 인터랙티브 ERD 를 볼 수 있다.
 
-| 그룹 | 개수 | 컬럼 |
-| --- | ---: | --- |
-| 식별·분류 | 4 | `비자코드`, `상위코드`, `사증·체류`, `신청종류` |
-| 행정 내용 | 15 | `신청상황`, `대상자`, `자격요건`, `절차`, `수수료`, `사증유효기간`, `1회부여 체류기간`, `체류상한`, `제한`, `예외`, `의무사항`, `점수표`, `쿼터`, `초청자`, `추천·승인기관` |
-| 자료 | 2 | `제출서류`, `예상질문` |
-| 출처 | 1 | `출처` (섹션 + 페이지) |
-| 흐름·검색 | 4 | `선행자격`, `다음단계`, `동반가족`, `키워드` |
-| 검수 | 2 | `검수상태`, `검수메모` |
+보고서 2.1 「26 컬럼 한눈에」 카테고리 6 분류:
 
-### 컬럼을 이렇게 나눈 이유 — 28개 각각의 존재 이유
+| 카테고리 | 개수 | 컬럼 | 역할 |
+| --- | ---: | --- | --- |
+| 식별·자격 | 5 | `비자코드`, `상위코드`, `사증·체류`, `신청종류`, `키워드` | 행 식별·분류 메타 |
+| 신청 조건 | 3 | `신청상황`, `대상자`, `자격요건` | 누가·언제·어떤 조건으로 |
+| 기간 | 3 | `사증유효기간`, `1회부여 체류기간`, `체류상한` | 비자의 시간 단위 |
+| 절차·서류 | 6 | `절차`, `수수료`, `추천·승인기관`, `의무사항`, `제출서류`, `점수표` | 처리 절차와 필요 서류 |
+| 관계·제한 | 7 | `쿼터`, `초청자`, `예외`, `제한`, `선행자격`, `다음단계`, `동반가족` | 자격 간 관계 및 제한 |
+| 메타 | 2 | `예상질문`, `출처` | 검색·검증용 메타 |
+
+> **v3 → v4 변경점**: 검수 워크플로용 컬럼(`검수상태`, `검수메모`)을 본 데이터 계층에서 제거하여 26컬럼만 남겼다. 검수자는 Notion import 후 별도 컬럼을 추가해 운영한다.
+
+### 컬럼을 이렇게 나눈 이유 — 26개 각각의 존재 이유
 
 #### 식별·분류 (4) — "이 행이 누구의 무엇인가"
 
@@ -312,14 +322,7 @@ sequenceDiagram
 
 > **왜 동반가족이 별도 컬럼인가** — 한국 가족 비자는 본인 자격에 종속된다. 본인이 E-7이면 가족은 F-3 으로 따로 발급받는다. 이걸 자격요건이나 제한 안에 묻으면 "취업 비자에 가족이 따라올 수 있나?" 질문에 챗봇이 헤매게 된다.
 
-#### 검수 (2) — Notion 검수 워크플로 진입점
-
-| 컬럼 | 왜 필요한가 |
-| --- | --- |
-| **검수상태** | Status enum: `미검수` / `검수중` / `검수완료` / `이슈있음`. Notion 에서 칸반·뷰 필터링. |
-| **검수메모** | 검수자가 발견한 이슈·코멘트. 자동 플래그 (`[자동 플래그] ...`) 도 여기. |
-
-→ CSV 를 Notion 에 import 하면 별도 DB 설계 없이 검수 워크플로가 즉시 시작된다.
+→ 검수 워크플로용 `검수상태`/`검수메모` 컬럼은 v4 부터 본 데이터 계층에서 제외했다. 「매뉴얼 원문이 ground truth」 원칙을 데이터·표시 계층 분리로 강화 — 검수자는 Notion import 후 Status 컬럼을 별도 추가해 운영한다.
 
 ---
 
@@ -328,12 +331,13 @@ sequenceDiagram
 | 결정 | 이유 |
 | --- | --- |
 | 행 = `(비자코드 × 신청종류)` | 사증발급·자격변경·기간연장은 요건과 서류가 완전히 다르다. 한 행으로 합치면 검수 불가능. |
+| 통합행 분리 (보고서 4.3) | 같은 자격 안에서 매뉴얼이 별도 번호·국가·분야·협정·지역·sub-code 로 구분한 발급 기준은 각각 별도 행. 24건 통합행을 93행으로 재구성. |
 | `자격요건` ↔ `제한` ↔ `예외` 분리 | RAG 답변에서 "할 수 있음/없음", "필수/예외"가 섞이는 사고를 막는다. |
 | `점수표`·`쿼터` 별도 컬럼 | 수치 표를 자격요건에 섞으면 출처 흐려짐. 분리하면 챗봇이 "200점 이상" 같은 정량 사실을 정확히 인용. |
 | `출처` 한 컬럼에 `(p. NNN)` 통합 | 검수자가 한 컬럼만 보고 원본 PDF 페이지로 즉시 점프. |
 | `선행자격`·`다음단계`·`동반가족` 별도 보강 | 사용자는 비자코드를 모르고 "결혼 후 영주는?" 처럼 묻는다. 흐름이 컬럼으로 잡혀 있어야 답할 수 있다. |
 | `키워드` 별도 컬럼 | RAG 시맨틱 검색에서 사용자 발화 매칭. 자격요건 본문보다 노이즈 적음. |
-| `검수상태`·`검수메모` CSV 에 포함 | Notion import 직후 검수 시작. 별도 DB 마이그레이션 없음. |
+| 검수 컬럼을 데이터 계층에서 분리 | v4 부터 `검수상태`/`검수메모` 제거. ground-truth 데이터와 검수·표시 워크플로를 분리. |
 | 정규화 MD 를 git 에 커밋 | LLM 비결정성을 동결. CSV 컬럼 매핑·페이지 매칭만 바뀌어도 LLM 재실행 불필요. |
 
 ---
@@ -360,9 +364,9 @@ python scripts/index_markdown_chunks.py
 #   /vizabridge-normalize stay
 #   /vizabridge-normalize visa
 
-# Stage 4·5 — 검증 + v3 CSV
+# Stage 4·5 — 검증 + v4 CSV + XLSX
 python scripts/validate_normalization.py
-python scripts/build_v3.py
+python scripts/build_v4.py
 
 # Stage 6 — HWP → PDF → 페이지 매핑
 brew install --cask libreoffice
@@ -385,7 +389,7 @@ python scripts/fill_page_numbers.py both --force
 | --- | --- |
 | HWP 원본 | 1 → 6 (전체) |
 | 정규화 규칙 | 3 → 6 |
-| v3 컬럼 매핑 | 5 → 6 |
+| v4 컬럼 매핑 | 5 → 6 |
 | 페이지 번호만 어긋남 | 6 |
 | 검수자가 오타 발견 | normalized MD 또는 빌더 규칙 수정 후 4 → 6 |
 
@@ -416,25 +420,25 @@ HWP  →  PDF  →  pdfplumber  →  페이지 텍스트 인덱스  →  fuzzy �
 6. **Fallback** — 출처 라벨 → hint 페이지 → 빈값
 7. **인접 페이지 그룹** — 한 (비자, 신청) 묶음이 여러 페이지에 걸치면 `p. 442~444`
 
-### 매칭 결과
+### 매칭 결과 (v4)
 
 | 매뉴얼 | 행 수 | 페이지 매칭 |
 | --- | ---: | ---: |
-| 체류 | 233 | **100%** |
-| 사증 | 130 | **100%** |
+| 사증 | 158 | **100%** |
+| 체류 | 275 | **100%** |
 
 ---
 
 ## 검수 워크플로 (Notion)
 
-1. `data/processed/체류매뉴얼_노션검수용_v3.csv` 또는 `사증매뉴얼_노션검수용_v3.csv` 다운로드
+1. `data/processed/사증매뉴얼_최종_v4_26col.csv` 또는 `체류매뉴얼_최종_v4_26col.csv` 다운로드
 2. Notion 에서 `+` → **Import** → CSV 선택
 3. 컬럼 type 전환
-   - `검수상태` → Status
    - `사증·체류`, `신청종류`, `상위코드` → Select
-4. 뷰 추가 — 필터 `검수상태 = 미검수`, 정렬 `상위코드`
-5. 각 행의 `출처` 컬럼 (`F-6-1 변경허가 (p. 442)`) → 원본 PDF·HWP 점프
-6. 검수 완료 시 `검수상태` `검수메모` 갱신
+4. **검수용 별도 컬럼 추가** (v4 에서는 데이터 계층 외부) — Status 컬럼 `검수상태` (미검수/검수중/검수완료/이슈있음), Text 컬럼 `검수메모`
+5. 뷰 추가 — 필터 `검수상태 = 미검수`, 정렬 `상위코드`
+6. 각 행의 `출처` 컬럼 (`F-6-1 변경허가 (p. 442)`) → 원본 PDF·HWP 점프
+7. 검수 완료 시 `검수상태` / `검수메모` 갱신
 
 ---
 
@@ -446,10 +450,11 @@ python -m pytest tests -q
 
 다음을 회귀로 잠근다:
 
+- v4 행 수(사증 158 / 체류 275)와 컬럼 수(26) 유지
+- 컬럼 채움률이 보고서 부록 B 기준 이상 유지
 - 정규화 row 의 비자코드·금액·서류명이 원본 청크에 실제 등장
-- 모든 v3 행에 출처 페이지 채움
-- 핵심 사실 8건 — F-6 2026 소득요건, E-7-4 200점/2,600만원, D-2-5 2년 초과 불가, F-5-1 5년 체류, F-2-7 80점, E-9 16개 송출국, H-1 만 18~30세, F-4 단순노무 제한
-- Notion 호환 컬럼 type 구조 유지
+- 모든 v4 행에 출처 페이지 채움
+- 핵심 사실 — F-6 2026 소득요건, E-7-4 200점/2,600만원, D-2-5 2년 초과 불가, F-5-1 5년 체류, F-2-7 80점, E-9 16개 송출국, H-1 만 18~30세, F-4 단순노무 제한
 
 ---
 
@@ -464,23 +469,27 @@ python -m pytest tests -q
 │   │   ├── chunks/                # 청크 인덱스
 │   │   ├── normalized/            # LLM 정규화 결과 (커밋)
 │   │   └── validation/            # 검증 결과
-│   └── processed/                 # 검수용 v3 CSV
+│   └── processed/                 # 최종 v4 CSV/XLSX
 ├── docs/
-│   ├── diagrams/                  # 아키텍처·스키마 이미지
+│   ├── diagrams/                  # 아키텍처·스키마 이미지 (v4_schema.dbml/svg 포함)
+│   ├── report/                    # 결과보고서 PDF
 │   ├── pipeline_strategy.md       # 파이프라인 설계 배경
 │   └── project_structure.md       # 폴더 운영 정책
 ├── scripts/                       # 결정적 Python 파이프라인 (6 stage)
 ├── tests/                         # CSV 품질 회귀 테스트
+├── .claude/skills/                # Claude Code 정규화·수리 스킬
+├── .agents/skills/                # 동일 스킬의 codex/copilot 위치
 ├── interview/                     # 별도 Next.js 인터뷰 앱 (관련 X)
 └── requirements.txt
 ```
 
 더 자세한 문서:
 
+- 1차 전처리 결과 보고서 (최종 제출본) → [`docs/report/Vizabridge_데이터전처리_결과보고서.pdf`](docs/report/Vizabridge_데이터전처리_결과보고서.pdf)
 - 스크립트별 사용법 → [`scripts/README.md`](scripts/README.md)
 - 파이프라인 설계 배경 → [`docs/pipeline_strategy.md`](docs/pipeline_strategy.md)
 - 폴더 운영 원칙 → [`docs/project_structure.md`](docs/project_structure.md)
-- DBML 스키마 → [`docs/diagrams/v3_schema.dbml`](docs/diagrams/v3_schema.dbml)
+- DBML 스키마 → [`docs/diagrams/v4_schema.dbml`](docs/diagrams/v4_schema.dbml)
 
 ---
 
@@ -500,13 +509,13 @@ IR           data/parsed/normalized/*.md
    ▼ Stage 6   (linker — 페이지 출처)
    │
    ▼
-Output       data/processed/*_v3.csv
+Output       data/processed/*_v4_26col.{csv,xlsx}
    │
    ▼
 Quality gate validator + pytest + Notion 검수
 ```
 
-새 컬럼을 추가하고 싶다면 `scripts/build_v3.py` 의 `V3_COLUMNS`, `DIRECT_MAP`, `PARENT_FLOW`, `SUB_OVERRIDE` 만 손대면 된다. 정규화 단계가 이미 의미 필드를 충분히 만들었다면 **LLM 을 다시 부르지 않고 Stage 5 부터 재생성**된다.
+새 컬럼을 추가하고 싶다면 `scripts/build_v4.py` 의 `V4_COLUMNS`, `DIRECT_MAP`, `PARENT_FLOW`, `SUB_OVERRIDE` 만 손대면 된다. 정규화 단계가 이미 의미 필드를 충분히 만들었다면 **LLM 을 다시 부르지 않고 Stage 5 부터 재생성**된다.
 
 ---
 

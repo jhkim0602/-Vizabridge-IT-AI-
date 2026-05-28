@@ -11,7 +11,7 @@ flowchart LR
     MD["raw Markdown&nbsp;&nbsp;<br/>kordoc 변환&nbsp;&nbsp;"]:::det
     CHK["chunks_index&nbsp;&nbsp;<br/>.jsonl"]:::det
     NORM["normalized MD&nbsp;&nbsp;<br/>LLM 정규화&nbsp;&nbsp;"]:::llm
-    CSV["v3 CSV&nbsp;&nbsp;<br/>28 컬럼&nbsp;&nbsp;"]:::out
+    CSV["v4 CSV/XLSX&nbsp;&nbsp;<br/>26 컬럼&nbsp;&nbsp;<br/>사증 158 · 체류 275&nbsp;&nbsp;"]:::out
     REV["Notion 검수&nbsp;&nbsp;<br/>행 단위 검토&nbsp;&nbsp;"]:::rev
 
     PDF["PDF&nbsp;&nbsp;<br/>LibreOffice"]:::derived
@@ -20,7 +20,7 @@ flowchart LR
     HWP -->|"Stage 1<br/>parse_hwp_to_markdown"| MD
     MD -->|"Stage 2<br/>index_markdown_chunks"| CHK
     CHK -->|"Stage 3<br/>vizabridge-normalize"| NORM
-    NORM -->|"Stage 4 · 5<br/>validate + build_v3"| CSV
+    NORM -->|"Stage 4 · 5<br/>validate + build_v4"| CSV
     CSV -->|"import"| REV
 
     HWP -.->|"HWP &rarr; PDF&nbsp;&nbsp;"| PDF

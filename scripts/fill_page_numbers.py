@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""v3 CSV 의 출처 컬럼에 PDF 페이지 번호를 통합한다.
+"""v4 CSV 의 출처 컬럼에 PDF 페이지 번호를 통합한다.
 
 흐름:
 1. HWP → PDF 변환 결과 (`data/raw/pdf/*.pdf`) 를 pdfplumber 로 페이지별 텍스트 추출
 2. 캐시 (`data/raw/pdf/.cache/{stay,visa}_pages.json`) 에 저장 (재실행 시 빠름)
-3. 각 v3 CSV 행의 핵심 컬럼(자격요건/신청상황/절차/제출서류 등) 텍스트를
+3. 각 v4 CSV 행의 핵심 컬럼(자격요건/신청상황/절차/제출서류 등) 텍스트를
    PDF 페이지 텍스트와 fuzzy 매칭하여 페이지 번호 결정
 4. 출처 컬럼을 `"<섹션> (p. NNN)"` 형식으로 갱신
+5. 동기화: CSV 갱신 후 동일 디렉토리의 xlsx 도 재생성
 
 매칭 알고리즘 핵심:
 - 텍스트 정규화: NFC + 구두점 제거 + 한글 중복 자모 압축 (`외외 → 외`)
@@ -23,7 +24,7 @@
 
 선행 조건:
 - HWP → PDF 변환 완료 (`brew install --cask libreoffice` + H2Orestart oxt)
-- v3 CSV 생성 (`scripts/build_v3.py`)
+- v4 CSV 생성 (`scripts/build_v4.py`)
 """
 
 from __future__ import annotations
@@ -52,14 +53,8 @@ DEFAULT_PDFS = {
 }
 
 CSV_PATHS = {
-    "stay": [
-        PROCESSED / "체류매뉴얼_검수용_v3.csv",
-        PROCESSED / "체류매뉴얼_노션검수용_v3.csv",
-    ],
-    "visa": [
-        PROCESSED / "사증매뉴얼_검수용_v3.csv",
-        PROCESSED / "사증매뉴얼_노션검수용_v3.csv",
-    ],
+    "stay": [PROCESSED / "체류매뉴얼_최종_v4_26col.csv"],
+    "visa": [PROCESSED / "사증매뉴얼_최종_v4_26col.csv"],
 }
 
 
@@ -222,6 +217,17 @@ def assign_pages(csv_path: Path, pages: dict[int, str]) -> tuple[int, int]:
         w = csv.DictWriter(f, fieldnames=cols)
         w.writeheader()
         w.writerows(rows)
+
+    # XLSX 동기화 — 검수자가 Excel/Notion 으로 바로 열 수 있도록.
+    try:
+        import pandas as pd
+
+        xlsx = csv_path.with_suffix(".xlsx")
+        df = pd.read_csv(csv_path, dtype=str, keep_default_na=False)
+        df.to_excel(xlsx, index=False, engine="openpyxl")
+    except Exception as e:  # pandas/openpyxl 미설치여도 csv는 갱신됐으므로 경고만
+        print(f"  (xlsx 동기화 실패: {e})")
+
     return matched, len(rows)
 
 

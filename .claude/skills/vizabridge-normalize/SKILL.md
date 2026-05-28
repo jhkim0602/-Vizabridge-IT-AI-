@@ -88,6 +88,14 @@ Follow these steps strictly. Do not improvise around them.
 - **The 4 enrichment fields (`keywords`, `source_page`, `source_excerpt`, `related_visa_codes`) are not mandatory but should be filled when the source supports them.** They drive search and review quality.
 - **Do not edit existing blocks in the normalized file.** Append only. If a chunk's hash has changed, use the repair skill, not this one.
 - **No CSV fields with raw debug data or reviewer reasoning.** `source_page` and `source_excerpt` ARE allowed in v2 — they support human review. But do not invent review flags or commentary.
+- **통합행 분리 (보고서 4.3).** 같은 자격 안에서 매뉴얼이 별도 번호·섹션·국가·분야·협정·지역·sub-code 로 구분한 발급 기준은 **각각 별도 행**으로 분리한다. 예시:
+  - C-3 복수사증 → 중국 / 한·몽골 / 동남아 / 자원외교 (국가별 4행)
+  - C-4-5 단기취업 → 첨단기술 / 수입기계 / 영어캠프 / 일시흥행 / 단기 강의 / 기타 (분야별 6행)
+  - D-7 주재 → 외국지사 / 해외진출 / 한·러 / 한·우즈벡 / 한·인도 (협정별 5행)
+  - D-2 광역형 → 인천 / 광주 / 강원 / 충북 / 충남 / 전북 (지역별 6행)
+  - D-10-1 변경 → 점수제 적용 + 면제 7개 카테고리 (sub-code별 8행)
+  매뉴얼이 가독성을 위해 한 챕터에 묶어 서술하더라도, 첨부서류·체류기간·대상자가 카테고리마다 다르면 `subtype_or_program` 을 달리하여 별도 행으로 emit 한다. v4 산출물 (사증 158 / 체류 275) 의 행 수는 이 정책을 적용한 결과다.
+- **사증·체류 단계 혼재 (보고서 4.4).** 사증 매뉴얼이라도 일부 자격은 사증발급이 불가하고 체류자격 변경만 허용된다 (예: E-7-4 K-point). 반대로 체류 매뉴얼에 사증발급인정서 기준이 포함된 챕터도 있다. `manual_type` 은 매뉴얼 출처를 나타내고, `petition_type` 은 실제 행정 단계를 나타내므로 두 값이 어긋날 수 있다 — 어긋나면 매뉴얼 본문이 실제로 다루는 행정 단계를 `petition_type` 에 적는다.
 
 ## Stop conditions
 

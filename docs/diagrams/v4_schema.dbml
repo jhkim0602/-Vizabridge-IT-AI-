@@ -1,0 +1,128 @@
+// Vizabridge 최종 v4 — 26컬럼 스키마
+//
+// dbdiagram.io 에 그대로 붙여넣으면 시각화됨:
+//   https://dbdiagram.io/d
+//
+// 또는 dbml-renderer 로 SVG 렌더링:
+//   npx -y @softwaretechnik/dbml-renderer -i docs/diagrams/v4_schema.dbml -o docs/diagrams/v4_schema.svg
+//
+// 식별자는 영문 (DBML 파서 제약), Korean 컬럼명은 [note] 로 표기.
+
+Project Vizabridge {
+  database_type: 'CSV'
+  Note: 'Vizabridge 최종 v4 — 한 행 = (비자코드 x 신청종류). 사증 158행, 체류 275행, 26컬럼.'
+}
+
+// ============================================================================
+// 메인 테이블 — 최종 v4 CSV
+// ============================================================================
+
+Table final_v4 [headercolor: #10b981, note: 'final CSV. 사증매뉴얼_최종_v4_26col.csv / 체류매뉴얼_최종_v4_26col.csv'] {
+  // === 식별·자격 (5: 비자코드, 상위코드, 사증·체류, 신청종류, 키워드) ===
+  visa_code varchar [pk, note: '비자코드. 예: F-6 (F-6-1)']
+  parent_code varchar [ref: > visa_dict.code, note: '상위코드. 비자코드 괄호 앞부분']
+  manual_kind manual_kind_enum [note: '사증·체류']
+  petition_type petition_enum [note: '신청종류']
+  keywords text [note: '키워드. 검색·라우팅용 명사 콤마 분리']
+
+  // === 신청 조건 (3: 신청상황, 대상자, 자격요건) ===
+  situation text [note: '신청상황. 언제·어떤 케이스에서 신청이 일어나는지']
+  target text [note: '대상자. 누가 이 자격을 받는 사람인가 (사람 카테고리)']
+  eligibility text [note: '자격요건. 대상자가 충족해야 하는 정량·정성 요건']
+
+  // === 기간 (3: 사증유효기간, 1회부여 체류기간, 체류상한) ===
+  visa_validity text [note: '사증유효기간. 비자 발급일~입국 가능한 기한']
+  single_stay text [note: '1회부여 체류기간. 입국 후 1회 부여받는 체류 길이']
+  total_stay text [note: '체류상한. 해당 자격으로 총 체류 가능한 상한']
+
+  // === 절차·서류 (6: 절차, 수수료, 추천·승인기관, 의무사항, 제출서류, 점수표) ===
+  procedure text [note: '절차. 신청·발급·허가의 단계별 행위']
+  fees text [note: '수수료. 원화 단위, 면제 표기 (예: 4만원, GKS 면제)']
+  recommendation text [note: '추천·승인기관. 외교부·출입국·외국인청·광역지자체장 등']
+  obligations text [note: '의무사항. 신청자가 이행해야 할 의무']
+  documents text [note: '제출서류. [필수서류] / [선택서류] 라벨, ①②③ 번호 보존']
+  score_table text [note: '점수표. 점수제 자격의 항목별 배점 (E-7-4 K-point, F-2-7 거주 등)']
+
+  // === 관계·제한 (7: 쿼터, 초청자, 예외, 제한, 선행자격, 다음단계, 동반가족) ===
+  quota text [note: '쿼터. 연간 발급 인원 제한']
+  inviter text [note: '초청자. 초청 주체 (기관/기업/개인). 주로 사증 단계']
+  exceptions text [note: '예외. 일반 규칙의 예외 조항']
+  restrictions text [note: '제한. 자격 변경·신청 제한 사항']
+  prereq text [note: '선행자격. 이 자격 신청 전 단계 자격 (변경·연장 행의 핵심)']
+  next_step text [note: '다음단계. 이후 변경 가능한 후속 자격 (F-5 영주는 시행령 별표 1의3 호수 함께)']
+  companion text [note: '동반가족. 이 자격 보유자의 가족이 받는 자격']
+
+  // === 메타 (2: 예상질문, 출처) ===
+  expected_questions text [note: '예상질문. 이 행에 해당하는 사용자 질문 예시 (1~3개)']
+  source varchar [note: '출처. PDF 매뉴얼 페이지. 예: A-1 외교 / 사증발급 (p. 7~8)']
+
+  indexes {
+    (parent_code, petition_type) [name: 'group_idx']
+    (manual_kind, petition_type) [name: 'manual_petition_idx']
+  }
+}
+
+// ============================================================================
+// Enum
+// ============================================================================
+
+Enum manual_kind_enum {
+  visa [note: '사증 - 입국 전 재외공관 발급']
+  stay [note: '체류 - 한국 내 출입국·외국인청 발급']
+}
+
+Enum petition_enum {
+  visa_issue [note: '사증발급']
+  visa_certificate [note: '사증발급인정서']
+  e_visa [note: '전자사증']
+  status_change [note: '체류자격 변경']
+  status_grant [note: '체류자격 부여']
+  stay_extension [note: '체류기간 연장']
+  alien_registration [note: '외국인등록']
+  re_entry [note: '재입국허가']
+  workplace_change [note: '근무처 변경·추가']
+  outside_activity [note: '체류자격외 활동허가']
+  residence_report [note: '거소신고 (F-4·H-2)']
+  employment_change_report [note: '고용변동 신고 (E-9·E-10)']
+  common [note: '공통사항']
+}
+
+// ============================================================================
+// 비자코드 사전 (37 부모 코드 + 비자 흐름)
+// ============================================================================
+
+Table visa_dict [headercolor: #f59e0b, note: '37개 상위코드 + 비자 흐름 매핑 (부록 A 한국 비자 자격 분류 체계)'] {
+  code varchar [pk, note: '예: F-6']
+  name_ko varchar [note: '한글명. 예: 결혼이민']
+  category visa_category_enum [note: '대분류']
+  prereq text [note: '선행자격']
+  primary_next varchar [ref: > visa_dict.code, note: '대표 다음 단계 비자']
+  primary_companion varchar [ref: > visa_dict.code, note: '대표 동반가족 자격 (F-3 등)']
+}
+
+Enum visa_category_enum {
+  diplomatic [note: '공무·외교 (A)']
+  short_visit [note: '단기 방문 (B, C)']
+  study [note: '학업·연수 (D-1~D-4)']
+  reporting [note: '취재·종교·주재 (D-5~D-7)']
+  business [note: '투자·창업 (D-8, D-9)']
+  employment [note: '구직·취업 (D-10, E)']
+  residence [note: '거주·정착 (F-1, F-2)']
+  family [note: '가족 결합 (F-3, F-6)']
+  diaspora [note: '재외동포 (F-4)']
+  permanent [note: '영주 (F-5)']
+  other [note: '기타·임시 (G, H)']
+}
+
+// ============================================================================
+// 매뉴얼 메타
+// ============================================================================
+
+Table manual_meta [headercolor: #6366f1] {
+  filename varchar [pk, note: '예: 260504 체류민원 자격별 안내 매뉴얼.hwp']
+  kind manual_kind_enum
+  row_count_v4 int [note: '사증 158 / 체류 275']
+  pdf_page_count int [note: 'HWP→PDF 변환 후 (체류 383 / 사증 482, 2026.05 판)']
+}
+
+Ref: final_v4.manual_kind < manual_meta.kind
